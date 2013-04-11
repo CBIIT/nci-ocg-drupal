@@ -1,0 +1,24 @@
+
+Design test 7.x-1.x, xxxx-xx-xx
+--------------------------------
+#1025956 by Jacine, sun: Added more elements to form test.
+#1025996 by sun: Fixed missing help text on HTML test page.
+#1025996 by Jacine, sun: Changed HTML test to use Render API; Added separate
+  Messages test.
+#1025924 by Jacine: Added Autocomplete and Buttons to Theme roller test.
+by sun: Fixed bogus "List" item on test overview pointing to an empty page.
+by Jacine: Fixed a spacing issue in list.inc and the CVS tag in table.inc.
+by sun: Changed markup_test into design_test for Design project.
+by jacine: Updated theme_status_message() output and added headings for them.
+by sun: Fixed basic category listing pages.
+#960490 by jacine: Added theme_links() examples.
+by jacine: Code clean-up in table.inc.
+by jacine: Moved $display_as_links to $options.
+by sun: Code clean-up.
+by sun: Added category support.
+by jacine, sun: Restructured include files.
+by jacine: Initial commit of Theme roller, list, table and html pages.
+#140783 by sun: Added normal form elements (select).
+#690980 by sun: Added disabled form elements.
+#676800 by sun: Initial commit for fieldsets.
+

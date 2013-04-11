@@ -1,0 +1,835 @@
+/**
+ * @file
+ * Block Styling
+ */
+/* line 9, ../sass/blocks.scss */
+.block {
+  /* Block wrapper */
+  margin-bottom: 1.5em;
+  overflow: hidden;
+}
+/* line 13, ../sass/blocks.scss */
+.block.first {
+  /* The first block in the region */
+}
+/* line 16, ../sass/blocks.scss */
+.block.last {
+  /* The last block in the region */
+}
+/* line 19, ../sass/blocks.scss */
+.block.odd {
+  /* Zebra striping for each block in the region */
+}
+/* line 22, ../sass/blocks.scss */
+.block.even {
+  /* Zebra striping for each block in the region */
+}
+/* line 25, ../sass/blocks.scss */
+.block h2.block-title {
+  /* Block title */
+}
+
+/* line 30, ../sass/blocks.scss */
+#block-aggregator-category-1 {
+  /* Block for the latest news items in the first category */
+}
+
+/* line 33, ../sass/blocks.scss */
+#block-aggregator-feed-1 {
+  /* Block for the latest news items in the first feed */
+}
+
+/* line 36, ../sass/blocks.scss */
+#block-block-1 {
+  /* First block created with "Add block" link */
+}
+
+/* line 39, ../sass/blocks.scss */
+#block-blog-recent {
+  /* "Recent blog posts" block */
+}
+
+/* line 42, ../sass/blocks.scss */
+#block-book-navigation {
+  /* "Book navigation" block for the current book's table of contents */
+}
+
+/* line 45, ../sass/blocks.scss */
+#block-comment-recent {
+  /* "Recent comments" block */
+}
+
+/* line 48, ../sass/blocks.scss */
+#block-forum-active {
+  /* "Active forum topics" block */
+}
+
+/* line 51, ../sass/blocks.scss */
+#block-forum-new {
+  /* "New forum topics" block */
+}
+
+/* line 54, ../sass/blocks.scss */
+#block-locale-language {
+  /* Language switcher block */
+}
+
+/* line 57, ../sass/blocks.scss */
+#block-menu-menu-NAME {
+  /* Custom menu block */
+}
+
+/* line 60, ../sass/blocks.scss */
+#block-node-recent {
+  /* "Recent content" block */
+}
+
+/* line 63, ../sass/blocks.scss */
+#block-node-syndicate {
+  /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */
+}
+
+/* line 66, ../sass/blocks.scss */
+#block-poll-recent {
+  /* "Most recent poll" block */
+}
+
+/* line 69, ../sass/blocks.scss */
+#block-profile-author-information {
+  /* "Author information" block for the profile of the page's author */
+}
+
+/* line 73, ../sass/blocks.scss */
+.block-search,
+#block-search-form {
+  /* "Search form" block */
+  float: right;
+  width: 250px;
+}
+/* line 76, ../sass/blocks.scss */
+.block-search input[type="submit"],
+#block-search-form input[type="submit"] {
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  color: #990000;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+}
+/* line 85, ../sass/blocks.scss */
+.block-search input[type="submit"]:hover,
+#block-search-form input[type="submit"]:hover {
+  text-decoration: underline;
+}
+/* line 90, ../sass/blocks.scss */
+.block-search input[type="text"],
+#block-search-form input[type="text"] {
+  width: 150px;
+  height: 20px;
+  background-image: url(../images/search-input.gif);
+  background-repeat: no-repeat;
+  background-position: 5px 7px;
+  padding: 3px 5px;
+  color: #774928;
+  border: 1px solid #cfcfcf;
+  box-shadow: inset 0px 1px 3px #404040;
+  padding-left: 25px;
+  padding-top: 3px;
+}
+/* line 104, ../sass/blocks.scss */
+.block-search ::-webkit-input-placeholder,
+#block-search-form ::-webkit-input-placeholder {
+  color: #774928;
+}
+/* line 108, ../sass/blocks.scss */
+.block-search :-moz-placeholder,
+#block-search-form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #774928;
+}
+/* line 112, ../sass/blocks.scss */
+.block-search ::-moz-placeholder,
+#block-search-form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #774928;
+}
+/* line 116, ../sass/blocks.scss */
+.block-search :-ms-input-placeholder,
+#block-search-form :-ms-input-placeholder {
+  color: #774928;
+}
+
+/* line 121, ../sass/blocks.scss */
+.block-search {
+  float: none;
+}
+
+/* line 125, ../sass/blocks.scss */
+#block-shortcut-shortcuts {
+  /* "Shortcuts" block */
+}
+
+/* line 128, ../sass/blocks.scss */
+#block-statistics-popular {
+  /* "Popular content" block */
+}
+
+/* line 131, ../sass/blocks.scss */
+#block-system-main-menu {
+  /* "Main menu" block */
+}
+
+/* line 134, ../sass/blocks.scss */
+#block-system-management {
+  /* "Management" block for Drupal management menu */
+}
+
+/* line 137, ../sass/blocks.scss */
+#block-system-navigation {
+  /* "Navigation" block for Drupal navigation menu */
+}
+
+/* line 140, ../sass/blocks.scss */
+#block-system-user-menu {
+  /* "User menu" block for Drupal user menu */
+}
+
+/* line 143, ../sass/blocks.scss */
+#block-system-help {
+  /* "System help" block */
+}
+
+/* line 146, ../sass/blocks.scss */
+#block-system-main {
+  /* "Main page content" block */
+}
+
+/* line 149, ../sass/blocks.scss */
+#block-system-powered-by {
+  /* "Powered by Drupal" block */
+}
+
+/* line 152, ../sass/blocks.scss */
+#block-user-login {
+  /* "User login form" block */
+}
+
+/* line 155, ../sass/blocks.scss */
+#block-user-new {
+  /* "Who's new" block for a list of the newest users */
+}
+
+/* line 158, ../sass/blocks.scss */
+#block-user-online {
+  /* "Who's online" block for a list of the online users */
+}
+
+/* line 161, ../sass/blocks.scss */
+.brown-block {
+  z-index: 1;
+}
+/* line 164, ../sass/blocks.scss */
+.brown-block h2.block-title {
+  color: #774928;
+}
+/* line 168, ../sass/blocks.scss */
+.brown-block .view {
+  margin-top: -4px;
+  padding-top: 25px;
+  position: relative;
+  z-index: 1;
+}
+/* line 174, ../sass/blocks.scss */
+.brown-block .view:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(radial, left top, 0, 100% 0%, 100, from(#9e9e9e), to(transparent));
+  background-image: -moz-radial-gradient(left top, farthest-corner, #9e9e9e 0%, transparent 72%);
+  z-index: -2;
+}
+/* line 186, ../sass/blocks.scss */
+.brown-block .view:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  z-index: -1;
+}
+
+/* line 201, ../sass/blocks.scss */
+.grey-block h2.block-title {
+  color: #646464;
+}
+/* line 205, ../sass/blocks.scss */
+.grey-block h3 {
+  font-size: 1.4em;
+  line-height: 1.1em;
+}
+/* line 210, ../sass/blocks.scss */
+.grey-block .view {
+  margin-top: -4px;
+  padding-top: 15px;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+/* line 217, ../sass/blocks.scss */
+.grey-block .view:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(radial, left top, 0, 100% 0%, 100, from(#9e9e9e), to(transparent));
+  background-image: -moz-radial-gradient(left top, farthest-corner, #9e9e9e 0%, transparent 72%);
+  z-index: -2;
+}
+/* line 229, ../sass/blocks.scss */
+.grey-block .view:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  z-index: -1;
+}
+/* line 240, ../sass/blocks.scss */
+.grey-block .view .more-link {
+  top: -15px;
+  right: 0;
+}
+/* line 247, ../sass/blocks.scss */
+.grey-block .view-projects h3 {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+/* line 255, ../sass/blocks.scss */
+.section-programs .grey-block.archive .view-news-and-publications .views-row {
+  border-bottom: none;
+  margin-bottom: 7px !important;
+}
+
+/*
+ * Secondary Nav Menu Block Styles
+ */
+/* line 264, ../sass/blocks.scss */
+#block-menu-block-3 {
+  overflow: visible;
+}
+
+/* line 270, ../sass/blocks.scss */
+.secondary-nav h2.block-title {
+  font-size: 16.5px;
+  color: #774928;
+  line-height: 16px;
+}
+/* line 276, ../sass/blocks.scss */
+.secondary-nav ul.menu {
+  padding-left: 0;
+  margin: 0;
+  padding-top: 20px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  font: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-weight: bold;
+}
+/* line 285, ../sass/blocks.scss */
+.secondary-nav ul.menu li {
+  padding-bottom: 7px;
+}
+/* line 288, ../sass/blocks.scss */
+.secondary-nav ul.menu li a:hover {
+  color: #990000;
+}
+/* line 293, ../sass/blocks.scss */
+.secondary-nav ul.menu li a.active-trail {
+  color: #990000;
+}
+/* line 298, ../sass/blocks.scss */
+.secondary-nav ul.menu li.collapsed {
+  list-style-image: url(../images/has-children.gif);
+}
+/* line 302, ../sass/blocks.scss */
+.secondary-nav ul.menu li.expanded {
+  list-style-image: url(../images/expanded.gif);
+  list-style-type: none;
+}
+/* line 305, ../sass/blocks.scss */
+.secondary-nav ul.menu li.expanded ul li {
+  list-style-image: none;
+}
+/* line 310, ../sass/blocks.scss */
+.secondary-nav ul.menu li ul {
+  border: none;
+  padding: 0;
+}
+/* line 314, ../sass/blocks.scss */
+.secondary-nav ul.menu li ul li {
+  padding: 5px 0 0 4px;
+  font-weight: normal;
+}
+/* line 321, ../sass/blocks.scss */
+.secondary-nav ul.menu a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+/*
+ * Sidebar Second Block Styles
+ */
+/* line 334, ../sass/blocks.scss */
+.region-sidebar-second .corner h2.block-title {
+  font-size: 15.6px;
+  font-weight: normal;
+  color: #fff;
+  padding: 7px 15px;
+  background: #796245;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #796245), color-stop(40%, #7b664c), color-stop(100%, #624f38));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE8+ */
+}
+/* line 350, ../sass/blocks.scss */
+.region-sidebar-second .corner .views-row {
+  padding: 10px 15px;
+  width: 190px;
+}
+/* line 354, ../sass/blocks.scss */
+.region-sidebar-second .corner .views-row a {
+  color: #323232;
+  text-decoration: none;
+}
+/* line 360, ../sass/blocks.scss */
+.region-sidebar-second .corner p {
+  margin-bottom: 7px;
+  line-height: 19px;
+}
+/* line 365, ../sass/blocks.scss */
+.region-sidebar-second .corner .view {
+  width: 220px;
+  min-height: 55px;
+  float: left;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f1f1f1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
+  /* IE6-9 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 381, ../sass/blocks.scss */
+.region-sidebar-second .corner .view:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-width: 23px 23px 0 0;
+  border-style: solid;
+  border-color: transparent #fff transparent #fff;
+  display: block;
+  width: 0;
+}
+/* line 394, ../sass/blocks.scss */
+.region-sidebar-second .corner .view .views-row {
+  margin-bottom: 5px;
+  background: none;
+  box-shadow: none;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+/* line 401, ../sass/blocks.scss */
+.region-sidebar-second .corner .view .views-row:before {
+  content: none;
+}
+/* line 405, ../sass/blocks.scss */
+.region-sidebar-second .corner .view .views-row:after {
+  content: none;
+}
+/* line 411, ../sass/blocks.scss */
+.region-sidebar-second .corner .view .views-row-even,
+.region-sidebar-second .corner .view .views-row-odd {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 416, ../sass/blocks.scss */
+.region-sidebar-second .corner .view .views-row-first {
+  padding-top: 10px;
+}
+/* line 420, ../sass/blocks.scss */
+.region-sidebar-second .corner .view .views-row-last {
+  padding-bottom: 10px;
+}
+
+/* line 427, ../sass/blocks.scss */
+.region-sidebar-second .corner.email h2 {
+  background: -moz-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #990000), color-stop(40%, #a22727), color-stop(100%, #810202));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #990000 0%, #a22727 40%, #810202 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#810202',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#810202',GradientType=0 );
+  /* IE8+ */
+}
+
+/* line 440, ../sass/blocks.scss */
+.region-sidebar-second .data-matrix {
+  position: static;
+}
+/* line 444, ../sass/blocks.scss */
+.region-sidebar-second .view-program-header .corner {
+  margin-top: 0;
+}
+
+/* line 452, ../sass/blocks.scss */
+.pubs .view img {
+  box-shadow: 3px 5px 7px #b4b4b4;
+}
+/* line 456, ../sass/blocks.scss */
+.pubs .view .program-tag {
+  float: none;
+  display: inline-block;
+}
+
+/*
+ * Utility Nav Styles
+ */
+/* line 466, ../sass/blocks.scss */
+#block-menu-menu-utility-menu {
+  margin-bottom: 16px;
+}
+
+/* line 471, ../sass/blocks.scss */
+.utility ul.menu {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+/* line 476, ../sass/blocks.scss */
+.utility ul.menu li {
+  float: left;
+  padding-left: 12px;
+  margin-right: 7px;
+  background-image: url(../images/utility.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+/* line 483, ../sass/blocks.scss */
+.utility ul.menu li a {
+  text-decoration: none;
+  color: #774928;
+}
+/* line 486, ../sass/blocks.scss */
+.utility ul.menu li a:hover {
+  color: #990000;
+  text-decoration: underline;
+}
+/* line 493, ../sass/blocks.scss */
+.utility ul.menu li:first-child {
+  background-image: none;
+}
+
+/*
+ * Datasets Block Styles
+ */
+/* line 503, ../sass/blocks.scss */
+.datasets {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+/* line 507, ../sass/blocks.scss */
+.datasets p {
+  margin-bottom: 0;
+}
+/* line 509, ../sass/blocks.scss */
+.datasets p a {
+  color: #774928;
+  text-decoration: none;
+  font-weight: normal;
+  display: block;
+  background-image: url(../images/datasets-arrow.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 25px;
+}
+
+/* line 522, ../sass/blocks.scss */
+#postscript-second .datasets {
+  width: 250px;
+  float: right;
+  margin-top: 20px;
+}
+
+/* line 528, ../sass/blocks.scss */
+.program-datasets {
+  position: absolute;
+  top: 121.5px;
+  right: 40px;
+  width: 250px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+/* line 536, ../sass/blocks.scss */
+.program-datasets .ui-accordion-header {
+  background-image: url(../images/datasets-diagonal.png) !important;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-color: #990000 !important;
+  color: #fff;
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  border: none;
+  background-image: none;
+  border-radius: 0;
+  padding: 0;
+  padding-bottom: 5px;
+}
+/* line 549, ../sass/blocks.scss */
+.program-datasets .ui-accordion-header a {
+  padding-left: 1em;
+  padding-top: .6em;
+  padding-bottom: .6em;
+  color: #fff !important;
+}
+/* line 554, ../sass/blocks.scss */
+.program-datasets .ui-accordion-header a:hover {
+  text-decoration: underline;
+}
+/* line 560, ../sass/blocks.scss */
+.program-datasets .ui-accordion-header.ui-state-active {
+  background-image: none !important;
+  padding-bottom: 0;
+  color: #fff;
+}
+/* line 566, ../sass/blocks.scss */
+.program-datasets .ui-accordion-content {
+  background-image: none;
+  background: #614e37;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #614e37 0%, #796245 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #614e37), color-stop(100%, #796245));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #614e37 0%, #796245 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #614e37 0%, #796245 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #614e37 0%, #796245 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #614e37 0%, #796245 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#614e37', endColorstr='#796245',GradientType=0 );
+  /* IE6-9 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#614e37', endColorstr='#796245',GradientType=0 );
+  /* IE6-9 */
+  border: none;
+  border-radius: 0;
+  padding: 10px 15px;
+  height: auto !important;
+}
+/* line 582, ../sass/blocks.scss */
+.program-datasets .ui-accordion-content div {
+  overflow: hidden;
+  padding: 1px 0;
+}
+/* line 587, ../sass/blocks.scss */
+.program-datasets .ui-accordion-content a {
+  color: #fff;
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 0;
+}
+/* line 594, ../sass/blocks.scss */
+.program-datasets .ui-accordion-content a:hover {
+  text-decoration: underline;
+}
+/* line 600, ../sass/blocks.scss */
+.program-datasets h3 a {
+  color: #fff;
+}
+/* line 604, ../sass/blocks.scss */
+.program-datasets span.ui-icon {
+  background-image: url(../images/datasets-dropdown.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  left: 14em !important;
+  top: 28% !important;
+  margin-top: 0 !important;
+}
+
+/* line 614, ../sass/blocks.scss */
+.logged-in .program-datasets .view-access-datasets {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  width: 250px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+/*
+ * Policy Block Styles
+ */
+/* line 627, ../sass/blocks.scss */
+#block-block-5 {
+  clear: both;
+  margin-top: -50px;
+}
+
+/* line 632, ../sass/blocks.scss */
+.policy {
+  font-size: 12px;
+  color: #fff;
+  padding-right: 20px;
+}
+/* line 636, ../sass/blocks.scss */
+.policy a {
+  color: #fff;
+  padding: 0 5px;
+  text-decoration: none;
+  font-weight: normal;
+}
+/* line 641, ../sass/blocks.scss */
+.policy a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * NIH Block Styles
+ */
+/* line 650, ../sass/blocks.scss */
+.NIH {
+  width: 360px;
+  padding-left: 20px;
+}
+/* line 654, ../sass/blocks.scss */
+.NIH a {
+  float: left;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+/* line 658, ../sass/blocks.scss */
+.NIH a img {
+  vertical-align: middle;
+}
+/* line 663, ../sass/blocks.scss */
+.NIH p {
+  clear: both;
+  color: #fff;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+/*
+ * Addthis Block Styles
+ */
+/* line 675, ../sass/blocks.scss */
+.addthis {
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 12px;
+  float: right;
+  margin-top: -45px;
+  margin-bottom: 0;
+}
+/* line 681, ../sass/blocks.scss */
+.addthis a {
+  padding-left: 5px;
+  margin-left: 5px;
+  border-left: 1px dotted #d2d2d2;
+  color: #323232;
+  text-decoration: none;
+}
+/* line 689, ../sass/blocks.scss */
+.addthis .addthis_button_compact {
+  border-left: none;
+}
+
+/*
+ * Lightbox Block Styles
+ */
+/* line 699, ../sass/blocks.scss */
+#cboxClose {
+  top: 0;
+  background: url(../images/x-button.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 32px;
+  width: 32px;
+}
+/* line 706, ../sass/blocks.scss */
+#cboxClose:hover {
+  background-position: 0 -32px;
+}
+
+/* line 711, ../sass/blocks.scss */
+#block-views-programs-block-3 {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+/*
+ * Last Updated Block Styles
+ */
+/* line 720, ../sass/blocks.scss */
+#block-views-last-updated-block {
+  clear: both;
+}
+
+/*
+ * Collaborators Block Styles
+ */
+/* line 728, ../sass/blocks.scss */
+.view-program-sidebar .views-field {
+  margin-bottom: 8px;
+}

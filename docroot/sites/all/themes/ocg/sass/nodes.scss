@@ -1,0 +1,134 @@
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+
+@import "base";
+
+
+.node { /* Node wrapper */
+
+  .preview & { /* Preview of the content before submitting new or updated content */
+    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+  }
+
+  .node-title { /* Node title */
+  }
+
+  .user-picture { /* The picture of the node author */
+  }
+
+  .submitted { /* The "posted by" information */
+  }
+
+  .content { /* Node's content wrapper */
+  }
+
+  ul.links { /* Node links. See also the ul.links declaration in the pages.css. */
+  }
+
+}
+
+.node-promoted { /* A node that has been promoted to the front page */
+}
+
+.node-sticky { /* A sticky node (displayed before others in a list) */
+}
+
+.node-by-viewer { /* A node created by the current user */
+}
+
+.node-teaser { /* A node displayed as teaser */
+}
+
+/*
+ * All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
+ */
+
+.node-page { /* Page content node */
+}
+
+.node-article { /* Article content node */
+}
+
+.node-unpublished { /* Unpublished nodes */
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+
+  p.unpublished { /* The word "Unpublished" displayed underneath the content. */
+    @include unpublished-div;
+  }
+}
+
+
+span.date-display-single{
+  font-size: 12px;
+  line-height: 15px;
+}
+
+h1,
+h2{
+  span.date-display-single{
+    font-size: inherit;
+  }
+}
+
+/*
+ * Resources Pages
+ */
+.page-resources{
+  .archive .views-row{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    h2{
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+/*
+ * Publications Node Pages
+ */
+.node-type-publication{
+  .field-name-title{
+    padding: 10px 0;
+    span{
+      font-size: $h4-font-size;
+      font-family: $franklin;
+      line-height: 1.1em;
+    }
+  }
+  
+  .field-name-field-publication-image-caption{
+    font-family: $helvetica;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: $link-brown;
+    float: left;
+    padding-bottom: 10px;
+  }
+  
+  .view-mode-full .field-type-image{
+    float: none;
+    padding: 0;
+  }
+} 
+ 
+ 
+
+
+
+
+
+
+
+
+
+

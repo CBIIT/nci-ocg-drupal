@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * Implements hook_form_alter
+ */
+function custom_form_alter(&$form, &$form_state, $form_id) {
+  //print_r($form);
+  unset($form['fld_title']['#title']);
+  if (!empty($form['fld_title']['#markup'])) {
+    $form['fld_title']['#markup'] = '<div class="page-mailed"><strong>'.t('Page to be mailed: ').'</strong>'.$form['fld_title']['#markup'].'</div>';
+  }
+}
+
+/**
+ * Implementation of hook_init()
+ */
+function custom_init() {
+  $plugin = context_get_plugin('conditions', 'status');
+  if ($plugin) {
+    $plugin->execute();
+  }
+}
+
+
+/**
+ * Implements hook_context_plugins().
+ *
+ */
+function custom_context_plugins() {
+  $plugins = array();
+  $plugins['custom_context_condition_status'] = array(
+    'handler' => array(
+      'path' => drupal_get_path('module', 'custom'),
+      'file' => 'custom_context_condition_status.inc',
+      'class' => 'custom_context_condition_status',
+      'parent' => 'context_condition',
+    ),
+  );
+  
+  return $plugins;
+}
+
+/**
+ * Implements hook_context_registry().
+ *
+ */
+function custom_context_registry() {
+  return array(
+    'conditions' => array(
+      'status' => array(
+        'title' => t('Status field'),
+        'description' => t('Set this context based on the value of Status field.'),
+        'plugin' => 'custom_context_condition_status',
+      ),
+    ),
+  );
+}
+

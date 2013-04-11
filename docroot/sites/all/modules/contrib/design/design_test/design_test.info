@@ -1,0 +1,12 @@
+name = Design test
+package = Testing
+core = 7.x
+dependencies[] = block
+files[] = design_test.module
+
+; Information added by drupal.org packaging script on 2011-02-25
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "design"
+datestamp = "1298619107"
+
