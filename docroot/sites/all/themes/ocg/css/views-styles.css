@@ -126,80 +126,91 @@
 /* line 115, ../sass/views-styles.scss */
 .corner.three-col h2.block-title {
   color: #774928;
-  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
-  font-weight: normal;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-weight: 700;
   padding-bottom: 30px;
   font-size: 36px;
 }
-/* line 123, ../sass/views-styles.scss */
+/* line 121, ../sass/views-styles.scss */
+.fontface .corner.three-col h2.block-title {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 127, ../sass/views-styles.scss */
 .corner.three-col .views-row {
   width: 297px;
   margin-right: 14px;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
-/* line 131, ../sass/views-styles.scss */
+/* line 135, ../sass/views-styles.scss */
 .corner.three-col .views-row .views-field-title,
 .corner.three-col .views-row .views-field-body,
 .corner.three-col .views-row .views-field-view-node {
   padding: 0 15px;
 }
-/* line 135, ../sass/views-styles.scss */
+/* line 139, ../sass/views-styles.scss */
 .corner.three-col .views-row .views-field-body {
   height: 190px;
 }
-/* line 137, ../sass/views-styles.scss */
+/* line 141, ../sass/views-styles.scss */
 .corner.three-col .views-row .views-field-body p {
   line-height: 18px;
 }
-/* line 142, ../sass/views-styles.scss */
+/* line 146, ../sass/views-styles.scss */
 .corner.three-col .views-row .views-field-view-node {
   padding-bottom: 20px;
 }
-/* line 147, ../sass/views-styles.scss */
+/* line 151, ../sass/views-styles.scss */
 .corner.three-col .views-row img {
   width: 290px;
   margin-left: 3px;
   box-shadow: 0 3px 4px #b4b4b4;
 }
-/* line 153, ../sass/views-styles.scss */
+/* line 157, ../sass/views-styles.scss */
 .corner.three-col .views-row .views-field-title {
   padding-top: 20px;
   font-size: 22.1px;
-  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-weight: 700;
   padding-bottom: 18px;
   line-height: 22px;
   height: 66px;
 }
-/* line 160, ../sass/views-styles.scss */
+/* line 165, ../sass/views-styles.scss */
+.fontface .corner.three-col .views-row .views-field-title {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 169, ../sass/views-styles.scss */
 .corner.three-col .views-row .views-field-title a {
   font-weight: normal;
 }
-/* line 164, ../sass/views-styles.scss */
+/* line 172, ../sass/views-styles.scss */
 .corner.three-col .views-row .views-field-title span {
   color: #990000;
 }
 
-/* line 171, ../sass/views-styles.scss */
+/* line 179, ../sass/views-styles.scss */
 .corner.three-col .views-row {
   background: url(../images/three-col-bkg.png) no-repeat left bottom;
 }
-/* line 173, ../sass/views-styles.scss */
+/* line 181, ../sass/views-styles.scss */
 .corner.three-col .views-row .data-matrix {
   right: 3px;
 }
 
-/* line 178, ../sass/views-styles.scss */
+/* line 186, ../sass/views-styles.scss */
 .two-col {
   margin-bottom: 10px;
 }
-/* line 180, ../sass/views-styles.scss */
+/* line 188, ../sass/views-styles.scss */
 .two-col h2.block-title {
   color: #774928;
   font-weight: normal;
   line-height: 30px;
 }
-/* line 186, ../sass/views-styles.scss */
+/* line 194, ../sass/views-styles.scss */
 .two-col .view {
   position: relative;
   padding-top: 16px;
@@ -223,46 +234,52 @@
   background-position: 0 0, 100% 0, 100% 100%;
   background-repeat: no-repeat;
 }
-/* line 222, ../sass/views-styles.scss */
+/* line 230, ../sass/views-styles.scss */
 .two-col .view .views-row {
   overflow: hidden;
 }
-/* line 226, ../sass/views-styles.scss */
+/* line 234, ../sass/views-styles.scss */
 .two-col .view .views-field-title .right {
   width: 360px;
   padding-left: 0;
 }
-/* line 229, ../sass/views-styles.scss */
+/* line 237, ../sass/views-styles.scss */
 .two-col .view .views-field-title .right .title {
-  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
   font-size: 18px;
+  font-weight: 700;
 }
-/* line 234, ../sass/views-styles.scss */
+/* line 241, ../sass/views-styles.scss */
+.fontface .two-col .view .views-field-title .right .title {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 247, ../sass/views-styles.scss */
 .two-col .view .views-field-title .right a .link {
   color: #323232;
 }
 
-/* line 241, ../sass/views-styles.scss */
+/* line 254, ../sass/views-styles.scss */
 #content .two-col .view {
   height: 121px;
 }
 
-/* line 245, ../sass/views-styles.scss */
+/* line 258, ../sass/views-styles.scss */
 .two-col.left {
   padding-right: 10px;
 }
 
-/* line 249, ../sass/views-styles.scss */
+/* line 262, ../sass/views-styles.scss */
 .two-col .view {
   background: url(../images/two-col-bkg.png) no-repeat left top;
 }
 
-/* line 253, ../sass/views-styles.scss */
+/* line 266, ../sass/views-styles.scss */
 .corner .views-row-last {
   margin-right: 0!important;
 }
 
-/* line 258, ../sass/views-styles.scss */
+/* line 271, ../sass/views-styles.scss */
 .view-projects h3 {
   color: #990000;
 }
@@ -270,46 +287,46 @@
 /*
  * Accordion Views Custom Styles
  */
-/* line 266, ../sass/views-styles.scss */
+/* line 279, ../sass/views-styles.scss */
 html.js fieldset.collapsible .fieldset-legend {
   padding-left: 0;
 }
 
-/* line 270, ../sass/views-styles.scss */
+/* line 283, ../sass/views-styles.scss */
 html.js fieldset.collapsed {
   height: auto;
   margin-bottom: 1px;
 }
 
-/* line 275, ../sass/views-styles.scss */
+/* line 288, ../sass/views-styles.scss */
 .ui-widget {
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 13px;
 }
 
-/* line 280, ../sass/views-styles.scss */
+/* line 293, ../sass/views-styles.scss */
 .view.view-taxonomy-term {
   overflow: visible;
 }
 
-/* line 285, ../sass/views-styles.scss */
+/* line 298, ../sass/views-styles.scss */
 .views-accordion p {
   font-size: 13px;
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
   line-height: 20px;
 }
-/* line 291, ../sass/views-styles.scss */
+/* line 304, ../sass/views-styles.scss */
 .views-accordion .views-row {
   margin-bottom: 0;
 }
-/* line 295, ../sass/views-styles.scss */
+/* line 308, ../sass/views-styles.scss */
 .views-accordion fieldset {
   border: none;
   padding: 0;
   margin: 0;
   height: 100%;
 }
-/* line 302, ../sass/views-styles.scss */
+/* line 315, ../sass/views-styles.scss */
 .views-accordion legend {
   background-image: none;
   border: none;
@@ -317,27 +334,32 @@ html.js fieldset.collapsed {
   overflow: hidden;
   border-radius: 0;
   line-height: 1em;
-  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-weight: 700;
   font-size: 18px;
 }
-/* line 312, ../sass/views-styles.scss */
+/* line 325, ../sass/views-styles.scss */
+.fontface .views-accordion legend {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 329, ../sass/views-styles.scss */
 .views-accordion legend a {
   color: #fff !important;
   padding-left: 1.3em;
   padding-top: 10px;
   display: block;
   padding-bottom: 10px;
-  font-weight: normal;
 }
-/* line 319, ../sass/views-styles.scss */
+/* line 335, ../sass/views-styles.scss */
 .views-accordion legend a:hover {
   color: #fff!important;
 }
-/* line 322, ../sass/views-styles.scss */
+/* line 338, ../sass/views-styles.scss */
 .views-accordion legend a a {
   padding: 0;
 }
-/* line 326, ../sass/views-styles.scss */
+/* line 342, ../sass/views-styles.scss */
 .views-accordion legend:hover {
   background: #796245;
   /* Old browsers */
@@ -358,11 +380,11 @@ html.js fieldset.collapsed {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
   /* IE8+ */
 }
-/* line 340, ../sass/views-styles.scss */
+/* line 356, ../sass/views-styles.scss */
 .views-accordion .fieldset-legend span.summary {
   display: none;
 }
-/* line 344, ../sass/views-styles.scss */
+/* line 360, ../sass/views-styles.scss */
 .views-accordion fieldset.collapsed legend {
   background: #969696;
   /* Old browsers */
@@ -383,7 +405,7 @@ html.js fieldset.collapsed {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#797979',GradientType=0 );
   /* IE8+ */
 }
-/* line 356, ../sass/views-styles.scss */
+/* line 372, ../sass/views-styles.scss */
 .views-accordion fieldset legend {
   background: #796245;
   /* Old browsers */
@@ -404,31 +426,31 @@ html.js fieldset.collapsed {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
   /* IE8+ */
 }
-/* line 368, ../sass/views-styles.scss */
+/* line 384, ../sass/views-styles.scss */
 .views-accordion .ui-accordion-content {
   border: none;
   font-size: 13px;
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
 }
-/* line 374, ../sass/views-styles.scss */
+/* line 390, ../sass/views-styles.scss */
 .views-accordion .fieldset-wrapper {
   padding: 20px 50px;
   width: 380px !important;
   overflow: visible;
 }
 
-/* line 382, ../sass/views-styles.scss */
+/* line 398, ../sass/views-styles.scss */
 fieldset.collapse-processed span.fieldset-legend {
   background: url(../images/expanded-accordion.png) no-repeat 5px 60% !important;
 }
 
-/* line 388, ../sass/views-styles.scss */
+/* line 404, ../sass/views-styles.scss */
 fieldset.collapsed span.fieldset-legend {
   background: url(../images/default-accordion.png) no-repeat 5px 50% !important;
   margin-left: 0;
 }
 
-/* line 396, ../sass/views-styles.scss */
+/* line 412, ../sass/views-styles.scss */
 .page-news-publications-e-newsletters .views-accordion h3 {
   background-image: none;
   border: none;
@@ -436,8 +458,9 @@ fieldset.collapsed span.fieldset-legend {
   overflow: hidden;
   border-radius: 0;
   line-height: 1em;
-  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
   font-size: 18px;
+  font-weight: 700;
   background: #796245;
   /* Old browsers */
   background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
@@ -457,28 +480,32 @@ fieldset.collapsed span.fieldset-legend {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
   /* IE8+ */
 }
-/* line 414, ../sass/views-styles.scss */
+/* line 431, ../sass/views-styles.scss */
+.fontface .page-news-publications-e-newsletters .views-accordion h3 {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 435, ../sass/views-styles.scss */
 .page-news-publications-e-newsletters .views-accordion h3 a {
   color: #fff !important;
   padding-left: 1.3em;
   padding-top: 10px;
   display: block;
   padding-bottom: 10px;
-  font-weight: normal;
 }
-/* line 421, ../sass/views-styles.scss */
+/* line 441, ../sass/views-styles.scss */
 .page-news-publications-e-newsletters .views-accordion h3 a:hover {
   color: #fff!important;
 }
-/* line 424, ../sass/views-styles.scss */
+/* line 444, ../sass/views-styles.scss */
 .page-news-publications-e-newsletters .views-accordion h3 a:first-child {
   padding: 0;
 }
-/* line 427, ../sass/views-styles.scss */
+/* line 447, ../sass/views-styles.scss */
 .page-news-publications-e-newsletters .views-accordion h3 a a {
   padding: 0;
 }
-/* line 431, ../sass/views-styles.scss */
+/* line 451, ../sass/views-styles.scss */
 .page-news-publications-e-newsletters .views-accordion h3:hover {
   background: #796245;
   /* Old browsers */
@@ -499,7 +526,7 @@ fieldset.collapsed span.fieldset-legend {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
   /* IE8+ */
 }
-/* line 445, ../sass/views-styles.scss */
+/* line 465, ../sass/views-styles.scss */
 .page-news-publications-e-newsletters .views-accordion h3.collapsed {
   background: #969696;
   /* Old browsers */
@@ -520,7 +547,7 @@ fieldset.collapsed span.fieldset-legend {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#797979',GradientType=0 );
   /* IE8+ */
 }
-/* line 455, ../sass/views-styles.scss */
+/* line 475, ../sass/views-styles.scss */
 .page-news-publications-e-newsletters .views-accordion h3.collapsed:hover {
   background: #796245;
   /* Old browsers */
@@ -541,11 +568,11 @@ fieldset.collapsed span.fieldset-legend {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
   /* IE8+ */
 }
-/* line 468, ../sass/views-styles.scss */
+/* line 488, ../sass/views-styles.scss */
 .page-news-publications-e-newsletters .views-accordion .view-grouping-content {
   padding: 20px 50px;
 }
-/* line 470, ../sass/views-styles.scss */
+/* line 490, ../sass/views-styles.scss */
 .page-news-publications-e-newsletters .views-accordion .view-grouping-content h4 {
   display: inline-block;
 }
@@ -553,12 +580,12 @@ fieldset.collapsed span.fieldset-legend {
 /*
  * Announcement Block Styles
  */
-/* line 482, ../sass/views-styles.scss */
+/* line 502, ../sass/views-styles.scss */
 .front .view-announcement,
 .view-announcement {
   position: relative;
 }
-/* line 484, ../sass/views-styles.scss */
+/* line 504, ../sass/views-styles.scss */
 .front .view-announcement .views-row,
 .view-announcement .views-row {
   width: 880px;
@@ -585,7 +612,7 @@ fieldset.collapsed span.fieldset-legend {
   /* IE8+ */
   background-size: 100%;
 }
-/* line 501, ../sass/views-styles.scss */
+/* line 521, ../sass/views-styles.scss */
 .front .view-announcement .views-row:before,
 .view-announcement .views-row:before {
   border-color: #E3830C #fcfeff #E3830C #fcfeff;
@@ -598,11 +625,12 @@ fieldset.collapsed span.fieldset-legend {
   display: block;
   width: 0;
 }
-/* line 514, ../sass/views-styles.scss */
+/* line 534, ../sass/views-styles.scss */
 .front .view-announcement span,
 .view-announcement span {
-  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
   font-size: 26px;
+  font-weight: 700;
   text-transform: uppercase;
   float: left;
   width: 44%;
@@ -613,7 +641,13 @@ fieldset.collapsed span.fieldset-legend {
   line-height: 30px;
   min-height: 40px;
 }
-/* line 528, ../sass/views-styles.scss */
+/* line 547, ../sass/views-styles.scss */
+.fontface .front .view-announcement span, .fontface
+.view-announcement span {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 553, ../sass/views-styles.scss */
 .front .view-announcement .views-field-body,
 .view-announcement .views-field-body {
   margin-bottom: 0;
@@ -623,12 +657,12 @@ fieldset.collapsed span.fieldset-legend {
   color: #fff;
   padding-right: 50px;
 }
-/* line 535, ../sass/views-styles.scss */
+/* line 560, ../sass/views-styles.scss */
 .front .view-announcement .views-field-body p,
 .view-announcement .views-field-body p {
   margin-bottom: 0;
 }
-/* line 540, ../sass/views-styles.scss */
+/* line 565, ../sass/views-styles.scss */
 .front .view-announcement .view-header,
 .view-announcement .view-header {
   position: absolute;
@@ -636,7 +670,7 @@ fieldset.collapsed span.fieldset-legend {
   right: 20px;
   z-index: 1;
 }
-/* line 545, ../sass/views-styles.scss */
+/* line 570, ../sass/views-styles.scss */
 .front .view-announcement .view-header a,
 .view-announcement .view-header a {
   background-image: url(../images/x-button.png);
@@ -646,13 +680,13 @@ fieldset.collapsed span.fieldset-legend {
   height: 32px;
   width: 32px;
 }
-/* line 552, ../sass/views-styles.scss */
+/* line 577, ../sass/views-styles.scss */
 .front .view-announcement .view-header a:hover,
 .view-announcement .view-header a:hover {
   background-position: 0 -32px;
 }
 
-/* line 561, ../sass/views-styles.scss */
+/* line 586, ../sass/views-styles.scss */
 .page-programs-cgci-projects .view-projects p {
   margin-bottom: 5px;
 }
@@ -660,26 +694,26 @@ fieldset.collapsed span.fieldset-legend {
 /*
  * Views on News and Pubs Landing Page Custom Styles
  */
-/* line 571, ../sass/views-styles.scss */
+/* line 596, ../sass/views-styles.scss */
 .landing-page.view-publications {
   width: 470px;
 }
-/* line 574, ../sass/views-styles.scss */
+/* line 599, ../sass/views-styles.scss */
 .landing-page.view-publications .right {
   width: 300px;
 }
 
-/* line 579, ../sass/views-styles.scss */
+/* line 604, ../sass/views-styles.scss */
 #block-views-e-newsletter-block-1.right {
   padding-left: 0;
 }
 
-/* line 583, ../sass/views-styles.scss */
+/* line 608, ../sass/views-styles.scss */
 #block-views-publications-block-2.left {
   padding-right: 0;
 }
 
-/* line 588, ../sass/views-styles.scss */
+/* line 613, ../sass/views-styles.scss */
 .landing-page.view-e-newsletter h2.block-title {
   font-size: 15.6px;
   font-weight: normal;
@@ -696,34 +730,40 @@ fieldset.collapsed span.fieldset-legend {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
   margin-bottom: 10px;
 }
-/* line 605, ../sass/views-styles.scss */
+/* line 630, ../sass/views-styles.scss */
 .landing-page.view-e-newsletter .views-row .field-content {
   padding: 5px 20px;
   margin-bottom: 0;
 }
-/* line 610, ../sass/views-styles.scss */
+/* line 635, ../sass/views-styles.scss */
 .landing-page.view-e-newsletter .views-row .views-field-field-issue-date .field-content {
   padding: 0;
 }
-/* line 614, ../sass/views-styles.scss */
+/* line 639, ../sass/views-styles.scss */
 .landing-page.view-e-newsletter p.field-content {
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
 }
-/* line 618, ../sass/views-styles.scss */
+/* line 643, ../sass/views-styles.scss */
 .landing-page.view-e-newsletter h3.field-content {
   color: #767676;
 }
-/* line 622, ../sass/views-styles.scss */
+/* line 647, ../sass/views-styles.scss */
 .landing-page.view-e-newsletter .views-field-title-1 a {
   color: #990000 !important;
 }
-/* line 626, ../sass/views-styles.scss */
+/* line 651, ../sass/views-styles.scss */
 .landing-page.view-e-newsletter .views-field-title p {
   color: #774928;
   font-size: 15px;
-  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-weight: 700;
 }
-/* line 632, ../sass/views-styles.scss */
+/* line 656, ../sass/views-styles.scss */
+.fontface .landing-page.view-e-newsletter .views-field-title p {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 662, ../sass/views-styles.scss */
 .landing-page.view-e-newsletter .views-row {
   padding-bottom: 20px;
 }
@@ -731,11 +771,11 @@ fieldset.collapsed span.fieldset-legend {
 /*
  * Resources Archive View Styles
  */
-/* line 641, ../sass/views-styles.scss */
+/* line 671, ../sass/views-styles.scss */
 .views-field-field-resource-link {
   padding-bottom: 10px;
 }
-/* line 643, ../sass/views-styles.scss */
+/* line 673, ../sass/views-styles.scss */
 .views-field-field-resource-link h3 {
   font-size: 18.2px;
 }
@@ -743,7 +783,7 @@ fieldset.collapsed span.fieldset-legend {
 /*
  * Last Updated View Styles
  */
-/* line 652, ../sass/views-styles.scss */
+/* line 682, ../sass/views-styles.scss */
 .view-last-updated {
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 12px;
@@ -753,7 +793,7 @@ fieldset.collapsed span.fieldset-legend {
 /*
  * Program tag with Abbreviated Title View Styles
  */
-/* line 662, ../sass/views-styles.scss */
+/* line 692, ../sass/views-styles.scss */
 .view-program-abbreviation {
   float: left;
   clear: both;
@@ -762,7 +802,7 @@ fieldset.collapsed span.fieldset-legend {
   text-transform: uppercase;
   padding: 5px 10px 5px 0;
 }
-/* line 669, ../sass/views-styles.scss */
+/* line 699, ../sass/views-styles.scss */
 .view-program-abbreviation a {
   width: 70px;
   display: inline-block;
@@ -772,7 +812,7 @@ fieldset.collapsed span.fieldset-legend {
   font-weight: bold;
   margin-right: 10px;
 }
-/* line 677, ../sass/views-styles.scss */
+/* line 707, ../sass/views-styles.scss */
 .view-program-abbreviation a:hover {
   color: #fff !important;
 }

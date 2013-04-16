@@ -114,10 +114,14 @@
 
   h2.block-title{
     color: $link-brown;
-    font-family: $franklin;
-    font-weight: normal;
+    font-family: $arial;
+    font-weight: 700;
     padding-bottom: 30px;
     font-size: 36px;
+    .fontface & {
+      font-family: $franklin;
+      font-weight: normal;
+    }
   }
    
   .views-row{
@@ -153,14 +157,18 @@
     .views-field-title{
       padding-top: 20px;
       font-size: $h3-font-size;
-      font-family: $franklin;
+      font-family: $arial;
+      font-weight: 700;
       padding-bottom: 18px;
       line-height: 22px;
       height: 66px;
+      .fontface & {
+        font-family: $franklin;
+        font-weight: normal;
+      }
       a{
       font-weight: normal;
       }
-      
       span{
         color: $callout-red;
       }
@@ -227,8 +235,13 @@
        width: 360px;
        padding-left: 0;
       .title{
-        font-family: $franklin;
+        font-family: $arial;
         font-size: 18px;
+        font-weight: 700;
+        .fontface & {
+          font-family: $franklin;
+          font-weight: normal;
+        }
       }
       
       a .link{
@@ -306,16 +319,19 @@ html.js fieldset.collapsed{
     overflow: hidden;
     border-radius: 0;
     line-height: 1em;
-    font-family: $franklin;
+    font-family: $arial;
+    font-weight: 700;
     font-size: 18px;
-    
+    .fontface & {
+      font-family: $franklin;
+      font-weight: normal;
+    }
      a{
         color: #fff !important;
         padding-left: 1.3em;
         padding-top: 10px;
         display: block;
         padding-bottom: 10px;
-        font-weight: normal;
         &:hover{
           color: #fff!important;
         }
@@ -400,8 +416,9 @@ fieldset.collapsed{
       overflow: hidden;
       border-radius: 0;
       line-height: 1em;
-      font-family: $franklin;
+      font-family: $arial;
       font-size: 18px;
+      font-weight: 700;
       background: rgb(121,98,69); /* Old browsers */
           background: -moz-linear-gradient(top,  rgba(121,98,69,1) 1%, rgba(123,102,76,1) 40%, rgba(98,79,56,1) 100%); /* FF3.6+ */
           background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(121,98,69,1)), color-stop(40%,rgba(123,102,76,1)), color-stop(100%,rgba(98,79,56,1))); /* Chrome,Safari4+ */
@@ -411,13 +428,16 @@ fieldset.collapsed{
           background: linear-gradient(to bottom,  rgba(121,98,69,1) 1%,rgba(123,102,76,1) 40%,rgba(98,79,56,1) 100%); /* W3C */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#796245', endColorstr='#624f38',GradientType=0 ); /* IE6-8 */
           -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#796245', endColorstr='#624f38',GradientType=0 ); /* IE8+ */
+      .fontface & {
+        font-family: $franklin;
+        font-weight: normal;
+      }
        a{
           color: #fff !important;
           padding-left: 1.3em;
           padding-top: 10px;
           display: block;
           padding-bottom: 10px;
-          font-weight: normal;
           &:hover{
             color: #fff!important;
           }
@@ -512,8 +532,9 @@ fieldset.collapsed{
   }
   
   span{
-    font-family: $franklin;
+    font-family: $arial;
     font-size: $h2-font-size; 
+    font-weight: 700;
     text-transform: uppercase;
     float: left;
     width: 44%;
@@ -523,6 +544,10 @@ fieldset.collapsed{
     padding-left: 40px;
     line-height: 30px;
     min-height: 40px;
+    .fontface & {
+      font-family: $franklin;
+      font-weight: normal;
+    }
   }
   
   .views-field-body{
@@ -626,7 +651,12 @@ fieldset.collapsed{
   .views-field-title p{
     color: $link-brown;
     font-size: 15px;
-    font-family: $franklin;
+    font-family: $arial;
+    font-weight: 700;
+    .fontface & {
+      font-family: $franklin;
+      font-weight: normal;
+    }
   }
   
   .views-row{

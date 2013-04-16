@@ -15,7 +15,7 @@
 /*
  * Center the page.
  */
-/* line 46, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/layouts/fixed-width.scss */
+/* line 46, ../../sass/layouts/fixed-width.scss */
 #main,
 #header,
 #footer,
@@ -31,7 +31,7 @@
 /*
  * Apply the shared properties of grid items in a single, efficient ruleset.
  */
-/* line 66, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/layouts/fixed-width.scss */
+/* line 66, ../../sass/layouts/fixed-width.scss */
 #header,
 #content,
 #navigation,
@@ -46,7 +46,7 @@
   word-wrap: break-word;
 }
 
-/* line 70, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/layouts/fixed-width.scss */
+/* line 70, ../../sass/layouts/fixed-width.scss */
 .front #postscript-first {
   padding-left: 0;
   padding-right: 0;
@@ -57,14 +57,14 @@
 /*
  * Containers for grid items and flow items.
  */
-/* line 83, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/layouts/fixed-width.scss */
+/* line 83, ../../sass/layouts/fixed-width.scss */
 #header,
 #main,
 #footer {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+/* line 52, ../../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 #header:before, #header:after,
 #main:before,
 #main:after,
@@ -73,7 +73,7 @@
   content: "";
   display: table;
 }
-/* line 56, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+/* line 56, ../../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 #header:after,
 #main:after,
 #footer:after {
@@ -83,12 +83,12 @@
 /*
  * Navigation bar
  */
-/* line 91, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/layouts/fixed-width.scss */
+/* line 91, ../../sass/layouts/fixed-width.scss */
 #main {
   position: relative;
 }
 
-/* line 94, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/layouts/fixed-width.scss */
+/* line 94, ../../sass/layouts/fixed-width.scss */
 #navigation {
   clear: both;
   width: 920px;
@@ -98,7 +98,7 @@
 /*
  * The layout when there is only one sidebar, the left one.
  */
-/* line 105, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/layouts/fixed-width.scss */
+/* line 105, ../../sass/layouts/fixed-width.scss */
 .sidebar-first #content {
   /* Span 4 columns, starting in 2nd column from left. */
   float: right;
@@ -106,7 +106,7 @@
   margin-right: 200px;
   margin-left: -960px;
 }
-/* line 109, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/layouts/fixed-width.scss */
+/* line 109, ../../sass/layouts/fixed-width.scss */
 .sidebar-first .region-sidebar-first {
   /* Span 1 column, starting in 1st column from left. */
   float: right;
@@ -118,7 +118,7 @@
 /*
  * The layout when there is only one sidebar, the right one.
  */
-/* line 119, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/layouts/fixed-width.scss */
+/* line 119, ../../sass/layouts/fixed-width.scss */
 .sidebar-second #content {
   /* Span 4 columns, starting in 1st column from left. */
   float: right;
@@ -126,7 +126,7 @@
   margin-right: 0px;
   margin-left: -720px;
 }
-/* line 123, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/layouts/fixed-width.scss */
+/* line 123, ../../sass/layouts/fixed-width.scss */
 .sidebar-second .region-sidebar-second {
   /* Span 1 column, starting in 5th column from left. */
   float: right;
@@ -138,7 +138,7 @@
 /*
  * The layout when there are two sidebars.
  */
-/* line 133, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/layouts/fixed-width.scss */
+/* line 133, ../../sass/layouts/fixed-width.scss */
 .two-sidebars #content {
   /* Span 3 columns, starting in 2nd column from left. */
   float: right;
@@ -146,7 +146,7 @@
   margin-right: 200px;
   margin-left: -720px;
 }
-/* line 137, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/layouts/fixed-width.scss */
+/* line 137, ../../sass/layouts/fixed-width.scss */
 .two-sidebars .region-sidebar-first {
   /* Span 1 column, starting in 1st column from left. */
   float: right;
@@ -154,7 +154,7 @@
   margin-right: 0px;
   margin-left: -200px;
 }
-/* line 141, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/layouts/fixed-width.scss */
+/* line 141, ../../sass/layouts/fixed-width.scss */
 .two-sidebars .region-sidebar-second {
   /* Span 1 column, starting in 5th column from left. */
   float: right;

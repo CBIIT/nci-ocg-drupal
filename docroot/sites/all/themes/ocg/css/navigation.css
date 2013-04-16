@@ -87,62 +87,69 @@ li a.active {
 /* line 77, ../sass/navigation.scss */
 #navigation ul.links li a,
 #navigation ul.megamenu-menu li a {
-  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-weight: 700;
   color: #774928;
   text-decoration: none;
   padding: 0;
   border: none;
 }
-/* line 83, ../sass/navigation.scss */
+/* line 84, ../sass/navigation.scss */
+.fontface #navigation ul.links li a, .fontface
+#navigation ul.megamenu-menu li a {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 88, ../sass/navigation.scss */
 #navigation ul.links li a:hover,
 #navigation ul.megamenu-menu li a:hover {
   color: #990000;
   background: none;
 }
-/* line 89, ../sass/navigation.scss */
+/* line 94, ../sass/navigation.scss */
 #navigation ul.links li a.active,
 #navigation ul.megamenu-menu li a.active {
   color: #990000;
 }
-/* line 93, ../sass/navigation.scss */
+/* line 98, ../sass/navigation.scss */
 #navigation ul.links li a:hover,
 #navigation ul.megamenu-menu li a:hover {
   color: #990000;
 }
-/* line 98, ../sass/navigation.scss */
+/* line 103, ../sass/navigation.scss */
 #navigation ul.links li.last,
 #navigation ul.megamenu-menu li.last {
   background-image: none;
 }
-/* line 102, ../sass/navigation.scss */
+/* line 107, ../sass/navigation.scss */
 #navigation ul.links li.first,
 #navigation ul.megamenu-menu li.first {
   padding-left: 0;
 }
-/* line 106, ../sass/navigation.scss */
+/* line 111, ../sass/navigation.scss */
 #navigation ul.links li.active-trail a,
 #navigation ul.megamenu-menu li.active-trail a {
   color: #990000;
 }
-/* line 110, ../sass/navigation.scss */
+/* line 115, ../sass/navigation.scss */
 #navigation ul.links li.hovering,
 #navigation ul.megamenu-menu li.hovering {
   background-color: none;
 }
-/* line 112, ../sass/navigation.scss */
+/* line 117, ../sass/navigation.scss */
 #navigation ul.links li.hovering h2.megamenu-active,
 #navigation ul.megamenu-menu li.hovering h2.megamenu-active {
   background-color: none;
 }
-/* line 118, ../sass/navigation.scss */
+/* line 123, ../sass/navigation.scss */
 #navigation ul.megamenu-items {
   padding: 5px 0 5px 10px;
 }
-/* line 120, ../sass/navigation.scss */
+/* line 125, ../sass/navigation.scss */
 #navigation ul.megamenu-items li {
   float: none;
 }
-/* line 125, ../sass/navigation.scss */
+/* line 130, ../sass/navigation.scss */
 #navigation li.sf-depth-1 ul {
   background: #614e37 url(../images/dropdown-top.gif) repeat-x;
   top: 1em;
@@ -153,25 +160,31 @@ li a.active {
   max-width: 11em;
   overflow: hidden;
 }
-/* line 134, ../sass/navigation.scss */
+/* line 139, ../sass/navigation.scss */
 #navigation li.sf-depth-1 ul li.sf-depth-2 {
   background-image: none;
   box-shadow: none;
   margin: 0;
   padding: 5px 0;
 }
-/* line 139, ../sass/navigation.scss */
+/* line 144, ../sass/navigation.scss */
 #navigation li.sf-depth-1 ul li.sf-depth-2 a {
   font-size: 16px;
-  font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-weight: 700;
   color: #fff;
 }
-/* line 143, ../sass/navigation.scss */
+/* line 149, ../sass/navigation.scss */
+.fontface #navigation li.sf-depth-1 ul li.sf-depth-2 a {
+  font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 153, ../sass/navigation.scss */
 #navigation li.sf-depth-1 ul li.sf-depth-2 a:hover {
   color: #fff;
   text-decoration: underline;
 }
-/* line 150, ../sass/navigation.scss */
+/* line 160, ../sass/navigation.scss */
 #navigation li.sf-depth-1 ul li.sf-depth-2 ul {
   position: static;
   font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
@@ -182,29 +195,29 @@ li a.active {
   padding-left: 20px;
   padding-bottom: 0;
 }
-/* line 159, ../sass/navigation.scss */
+/* line 169, ../sass/navigation.scss */
 #navigation li.sf-depth-1 ul li.sf-depth-2 ul li.sf-depth-3 {
   background-image: none;
   font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
   padding: 3px 0;
   text-transform: capitalize !important;
 }
-/* line 168, ../sass/navigation.scss */
+/* line 178, ../sass/navigation.scss */
 #navigation li.sf-depth-1.first ul {
   width: 800px !important;
   max-width: none!important;
 }
-/* line 171, ../sass/navigation.scss */
+/* line 181, ../sass/navigation.scss */
 #navigation li.sf-depth-1.first ul li.sf-depth-2 {
   width: 23% !important;
   overflow: hidden;
 }
-/* line 175, ../sass/navigation.scss */
+/* line 185, ../sass/navigation.scss */
 #navigation li.sf-depth-1.first ul li#menu-546-1 {
   width: 27% !important;
 }
 
-/* line 182, ../sass/navigation.scss */
+/* line 192, ../sass/navigation.scss */
 #navigation ul.links li.last {
   background-image: none;
 }
@@ -212,7 +225,7 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
-/* line 197, ../sass/navigation.scss */
+/* line 207, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */

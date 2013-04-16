@@ -134,18 +134,47 @@ h2 span.date-display-single {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   line-height: 1.1em;
 }
-/* line 108, ../sass/nodes.scss */
-.node-type-publication .field-name-field-publication-image-caption {
+
+/*
+ * Captions Fields
+ */
+/* line 115, ../sass/nodes.scss */
+.page-taxonomy-term .imgleft,
+.node-type-publication .imgleft,
+.node-type-news .imgleft {
+  /*     float: left; */
+  padding-right: 20px;
+  padding-bottom: 7px;
+}
+/* line 119, ../sass/nodes.scss */
+.page-taxonomy-term .imgleft img,
+.node-type-publication .imgleft img,
+.node-type-news .imgleft img {
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+/* line 127, ../sass/nodes.scss */
+.page-taxonomy-term .image-caption,
+.page-taxonomy-term .field-name-field-publication-image-caption,
+.page-taxonomy-term .field-name-field-news-image-caption,
+.node-type-publication .image-caption,
+.node-type-publication .field-name-field-publication-image-caption,
+.node-type-publication .field-name-field-news-image-caption,
+.node-type-news .image-caption,
+.node-type-news .field-name-field-publication-image-caption,
+.node-type-news .field-name-field-news-image-caption {
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: bold;
   font-size: 12px;
   line-height: 18px;
   color: #774928;
-  float: left;
+  /*     float: left; */
   padding-bottom: 10px;
 }
-/* line 118, ../sass/nodes.scss */
-.node-type-publication .view-mode-full .field-type-image {
+/* line 137, ../sass/nodes.scss */
+.page-taxonomy-term .view-mode-full .field-type-image,
+.node-type-publication .view-mode-full .field-type-image,
+.node-type-news .view-mode-full .field-type-image {
   float: none;
   padding: 0;
 }

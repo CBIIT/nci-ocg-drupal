@@ -78,6 +78,8 @@ stylesheets[all][] = css/fontface.css
 
 ; Optionally add some JavaScripts to your theme.
 
+scripts[] = js/modernizr.custom.97583.js
+scripts[] = js/fontdetect.js
 scripts[] = js/script.js
 ; scripts[] = js/my_jquery_plugin.js
 

@@ -106,7 +106,7 @@
     </header>
   <?php endif; ?>
   
-   <div class="left">
+   <div class="imgleft">
       <?php print render($content['field_image']); ?>
       <?php print render($content['field_publication_image_caption']); ?>
     </div>

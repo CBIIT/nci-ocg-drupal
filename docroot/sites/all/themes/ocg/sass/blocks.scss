@@ -77,11 +77,15 @@
     -webkit-appearance: none;
     background: none;
     border: none;
-    font-family: $franklin;
+    font-family: $arial;
+    font-weight: 700;
     color: $callout-red;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: normal;
+    .fontface & {
+      font-family: $franklin;
+      font-weight: normal;
+    }
     &:hover{
       text-decoration: underline;
     }
@@ -332,8 +336,9 @@
 
 .region-sidebar-second .corner{
   h2.block-title{
+    font-family: $arial;
     font-size: $h5-font-size;
-    font-weight: normal;
+    font-weight: 700;
     color: #fff;
     padding: 7px 15px;
     background: rgb(121,98,69); /* Old browsers */
@@ -345,6 +350,10 @@
     background: linear-gradient(to bottom,  rgba(121,98,69,1) 1%,rgba(123,102,76,1) 40%,rgba(98,79,56,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#796245', endColorstr='#624f38',GradientType=0 ); /* IE6-8 */
     -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#796245', endColorstr='#624f38',GradientType=0 ); /* IE8+ */
+    .fontface & {
+      font-family: $franklin;
+      font-weight: normal;
+    }
   }
   
   .views-row{
@@ -469,10 +478,15 @@
  
 .utility{
   ul.menu{
-  font-family: $franklin;
+  font-family: $arial;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 0;
+  .fontface & {
+    font-family: $franklin;
+    font-weight: normal;
+  }
     li{
       float: left;
       padding-left: 12px;
@@ -501,9 +515,14 @@
  */
 
 .datasets{
-  font-family: $franklin;
+  font-family: $arial;
   font-size: 16px;
+  font-weight: 700;
   margin-bottom: 10px;
+  .fontface & {
+    font-family: $franklin;
+    font-weight: normal;
+  }
   p{
     margin-bottom: 0;
     a{
@@ -539,13 +558,18 @@
     background-position: left bottom;
     background-color: $callout-red !important;
     color: #fff;
-    font-family: $franklin;
+    font-family: $arial;
     font-size: 16px;
+    font-weight: 700;
     border: none;
     background-image: none;
     border-radius: 0;
     padding: 0;
     padding-bottom: 5px;
+    .fontface & {
+      font-family: $franklin;
+      font-weight: normal;
+    }
     a{
       padding-left: 1em;
       padding-top: .6em;
@@ -586,11 +610,15 @@
     
     a{
       color: #fff;
-      font-family: $franklin;
+      font-family: $arial;
+      font-weight: 700;
       text-decoration: none;
       font-size: 14px;
       padding: 10px 0;
-      
+      .fontface & {
+        font-family: $franklin;
+        font-weight: normal;
+      }
       &:hover{
         text-decoration: underline;
       }

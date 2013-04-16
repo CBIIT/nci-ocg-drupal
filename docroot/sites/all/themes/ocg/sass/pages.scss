@@ -31,7 +31,7 @@ body {
   background-repeat: repeat;
 }
 
-:focus{
+a:focus{
   outline: 1px dotted $callout-red; 
 }
 
@@ -45,9 +45,11 @@ body {
   font-weight: normal;
 }
 
+/*
 .not-front #content img{
   box-shadow: 3px 5px 7px #b4b4b4;
 }
+*/
 
 .not-front .page-node #content img{
   box-shadow: none;
@@ -200,10 +202,9 @@ body {
   background: -o-linear-gradient(top,  rgba(255,255,255,0) 3%,rgba(255,245,155,0) 70%,rgba(255,241,112,0.25) 99%,rgba(255,241,110,0.25) 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top,  rgba(255,255,255,0) 3%,rgba(255,245,155,0) 70%,rgba(255,241,112,0.25) 99%,rgba(255,241,110,0.25) 100%); /* IE10+ */
   background: linear-gradient(to bottom,  rgba(255,255,255,0) 3%,rgba(255,245,155,0) 70%,rgba(255,241,112,0.25) 99%,rgba(255,241,110,0.25) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#40fff16e',GradientType=0 ); /* IE6-8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#40fff16e',GradientType=0 ); /* IE8+ */
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#40fff16e',GradientType=0 ); - IE6-8
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#40fff16e',GradientType=0 );  - IE8+ */
   width: 100%;
-  
   a:hover{
     color: $callout-red !important;
     text-decoration: underline !important;
@@ -311,9 +312,13 @@ h2.comment-form, /* Comment form heading */
 h3.title { /* Comment title */
   margin-top: 0;
   color: $callout-red;
-  font-family: $franklin;
+  font-family: $arial;
+  font-weight: 700;
   line-height: 30px;
-  
+  .fontface & {
+    font-family: $franklin;
+    font-weight: normal;
+  }
   a{
     color: $link-brown;
     text-decoration: none;
@@ -330,27 +335,36 @@ h2.block-title{
 h1{
   text-transform: uppercase;
   margin-bottom: 12px;
-  font-family: $franklin;
-  font-weight: normal;
+  font-family: $arial;
+  font-weight: 700;
   line-height: 30px;
+  .fontface & {
+    font-family: $franklin;
+    font-weight: normal;
+  }
 }
 
 h2{
   margin-bottom: 5px;
   text-transform: uppercase;
-  font-family: $franklin;
-  font-weight: normal;
+  font-family: $arial;
+  font-weight: 700;
   line-height: 28px;
   color: $callout-red;
+  .fontface & {
+    font-family: $franklin;
+    font-weight: normal;
+  }
 }
 
 h3, h4{
   margin-bottom: 5px;
-  font-family: $franklin;
-  font-weight: normal;
+  font-family: $arial;
+  font-weight: 700;
   line-height: 24px;
-  color: $callout-red;
-  a{
+  color: $callout-red;;
+  .fontface & {
+    font-family: $franklin;
     font-weight: normal;
   }
 }
@@ -525,12 +539,12 @@ span.field-label { /* The inline field label used by the Fences module */
   position: absolute;
   top: 10px;
   right: 20px;
+  color: $callout-red !important;
   a{
     color: $callout-red !important;
     font-style: normal;
   } 
 }
-
 
 /*
  * First sidebar (on left in LTR languages, on right in RTL)
@@ -583,9 +597,14 @@ span.field-label { /* The inline field label used by the Fences module */
     li{
      float: left;
      width: 200px;
-     font-family: $franklin;
+     font-family: $arial;
      font-size: 17px;
+     font-weight: 700;
      text-transform: uppercase;
+     .fontface & {
+       font-family: $franklin;
+       font-weight: normal;
+     }
      
      ul{
        padding-top: 8px;
@@ -595,9 +614,14 @@ span.field-label { /* The inline field label used by the Fences module */
       li{
         font-family: $helvetica;
         font-size: $base-font-size;
+        font-weight: normal;
         float: none;
         text-transform: none;
         line-height: 25px;
+        .fontface & {
+          font-family: $helvetica;
+          font-weight: normal;
+        }
       }
       
       a{
@@ -662,7 +686,12 @@ span.field-label { /* The inline field label used by the Fences module */
     
     a{
       font-size: 16px;
-      font-family: $franklin;
+      font-family: $arial;
+      font-weight: 700;
+      .fontface & {
+        font-family: $franklin;
+        font-weight: normal;
+      }
     }
     
     .email{
@@ -731,9 +760,16 @@ span.field-label { /* The inline field label used by the Fences module */
       .views-field-title{
         font-size: 18px;
         line-height: 20px;
-        font-family: $franklin; 
+        font-family: $arial;
+        font-weight: 700; 
         margin-top: 0;
-        a{font-style: normal;}
+        .fontface & {
+          font-family: $franklin;
+          font-weight: normal;
+        }
+        a{
+          font-style: normal;
+        }
       }
       
       p{margin: 0;}
@@ -814,12 +850,17 @@ span.field-label { /* The inline field label used by the Fences module */
   right: 0;
   background-color: $callout-red;
   text-transform: uppercase;
-  font-family: $franklin;
+  font-family: $arial;
+  font-weight: 700;
   width: 60px;
   background-image: none;
   line-height: 1em;
   padding: 5px;
   padding-top: 5px;
+  .fontface & {
+    font-family: $franklin;
+    font-weight: normal;
+  }
     
     a{
       color: #fff!important;
@@ -1079,7 +1120,12 @@ span.field-label { /* The inline field label used by the Fences module */
       color: #fff;
       text-decoration: none;
       font-size: 16px;
-      font-family: $franklin;
+      font-family: $arial;
+      font-weight: 700;
+      .fontface & {
+        font-family: $franklin;
+        font-weight: normal;
+      }
       &:hover{
         color: #fff !important;
         text-decoration: underline;
@@ -1228,11 +1274,18 @@ span.field-label { /* The inline field label used by the Fences module */
   padding-bottom: 10px;
 }
 
+span.noicon{
+  text-indent: -999999px;
+  display: inline-block;
+  margin-left: 10px;
+  width: 14px;
+  position: absolute;
+}
+
 span.newtab{
   text-indent: -999999px;
   background: url(../images/newtab.png) no-repeat;
   display: inline-block;
-  margin-left: 10px;
   width: 14px;
 }
 
@@ -1268,11 +1321,15 @@ span.newtab{
     -webkit-appearance: none;
     background: none;
     border: none;
-    font-family: $franklin;
+    font-family: $arial;
+    font-weight: 700;
     color: $callout-red;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: bold;
+    .fontface & {
+      font-family: $franklinbold;
+      font-weight: normal;
+    }
     &:hover{
       text-decoration: underline;
     }

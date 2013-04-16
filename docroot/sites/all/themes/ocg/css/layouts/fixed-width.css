@@ -60,7 +60,7 @@
   *position: relative;
   *zoom: 1;
 }
-/* line 52, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+/* line 52, ../../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 #header:before, #header:after,
 #main:before,
 #main:after,
@@ -69,7 +69,7 @@
   content: "";
   display: table;
 }
-/* line 56, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+/* line 56, ../../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 #header:after,
 #main:after,
 #footer:after {

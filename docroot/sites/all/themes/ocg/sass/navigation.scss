@@ -75,11 +75,16 @@ li a.active {
       background-position: right center;
     
       a{
-        font-family: $franklin;
+        font-family: $arial;
+        font-weight: 700;
         color: $link-brown;
         text-decoration: none;
         padding: 0;
         border: none;
+        .fontface & {
+          font-family: $franklin;
+          font-weight: normal;
+        }
         &:hover{
           color: $callout-red;
           background: none;
@@ -138,8 +143,13 @@ li a.active {
     padding: 5px 0;
     a{
       font-size: 16px;
-      font-family: $franklincond;
+      font-family: $arial;
+      font-weight: 700;
       color: #fff;
+      .fontface & {
+        font-family: $franklincond;
+        font-weight: normal;
+      }
       &:hover{
         color: #fff;
         text-decoration: underline;
