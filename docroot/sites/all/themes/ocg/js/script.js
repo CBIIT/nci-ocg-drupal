@@ -41,22 +41,22 @@ $(document).ready (function (){
 
   // Make image captions same width as the image
   
-   $('#content div.imgleft').each(function() {
-     var width = $(this).find('.field-type-image img').width();
-    $(this).css("width", width);
-     } );
+ //  $('#content div.imgleft').each(function() {
+ //    var width = $(this).find('.field-type-image img').width();
+ //   $(this).css("width", width);
+ //    } );
 
-  // Detect font and remove Modernizr's font face class if the font isn't being detected - controls for IE security settings
-  var detective = new Detector();
-  if (!detective.detect('FranklinGothicFSMedCdRegular')) {
-    $('html').removeClass('fontface');
-  }
+
 	
 }); // end doc ready
 
 // Detecting font
 window.onload = function() {
-    
+  // Detect font and remove Modernizr's font face class if the font isn't being detected - controls for IE security settings
+  var detective = new Detector();
+  if (!detective.detect('FranklinGothicFSMedCdRegular')) {
+    $('html').removeClass('fontface');
+  }    
 };
 	
 })(jQuery, Drupal, this, this.document);
