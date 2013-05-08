@@ -45,12 +45,6 @@ a:focus{
   font-weight: normal;
 }
 
-/*
-.not-front #content img{
-  box-shadow: 3px 5px 7px #b4b4b4;
-}
-*/
-
 .not-front .page-node #content img{
   box-shadow: none;
   float: left;
@@ -277,6 +271,9 @@ a:focus{
   p a{
     text-decoration: underline;
   }
+  li a{
+    text-decoration: underline;
+  }
 }
 
 .region-highlighted {
@@ -404,16 +401,20 @@ table{
   }
 }
 
-tr:nth-child(even),
-tr.even { /* Some tables have rows marked even or odd. */
-  background-color: #fcfcea;
-  border-bottom: 1px solid #ebebeb;
-}
-
-tr:nth-child(odd),
-tr.odd {
+.tablestyles tr.odd {
   background-color: #fff;
   border-bottom: 1px solid #ebebeb;
+  th{
+    border: none;
+  }
+}
+
+.tablestyles tr.even { /* Some tables have rows marked even or odd. */
+  background-color: #fcfcea !important;
+  border-bottom: 1px solid #ebebeb !important;
+  th{
+    border: none;
+  }
 }
 
 thead tr,
@@ -584,59 +585,62 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 .footer-wrap-inner{
-  background-image: url(../images/diagonal.png);
-  background-repeat: repeat;
+  background-image: url(../images/footer-bkg.png);
+  background-repeat: repeat-x;
   min-width: 960px;
 }
 
 #footer {
-  .block-menu-block ul{
-  overflow: hidden;
-  padding: 17px 30px;
-  
-    li{
-     float: left;
-     width: 200px;
-     font-family: $arial;
-     font-size: 17px;
-     font-weight: 700;
-     text-transform: uppercase;
-     .fontface & {
-       font-family: $franklin;
-       font-weight: normal;
-     }
-     
-     ul{
-       padding-top: 8px;
-       padding-left: 0;
-     }
-      
-      li{
-        font-family: $helvetica;
-        font-size: $base-font-size;
-        font-weight: normal;
-        float: none;
-        text-transform: none;
-        line-height: 25px;
-        .fontface & {
-          font-family: $helvetica;
-          font-weight: normal;
-        }
-      }
-      
-      a{
-      color: #ffffff;
-      text-decoration: none;
-        &:hover{
-          text-decoration: underline;
-        }
-      }
-    }
+  .block-menu-block {
+    margin-bottom: 0;
+    ul{
+    overflow: hidden;
+    padding: 12px 30px;
     
-    li.collapsed,
-    li.expanded{
-      list-style-type: none;
-      list-style-image: none;
+      li{
+       float: left;
+       width: 200px;
+       font-family: $arial;
+       font-size: 17px;
+       font-weight: 700;
+       text-transform: uppercase;
+       .fontface & {
+         font-family: $franklin;
+         font-weight: normal;
+       }
+       
+       ul{
+         padding-top: 5px;
+         padding-left: 0;
+       }
+        
+        li{
+          font-family: $helvetica;
+          font-size: $base-font-size;
+          font-weight: normal;
+          float: none;
+          text-transform: none;
+          line-height: 17px;
+          .fontface & {
+            font-family: $helvetica;
+            font-weight: normal;
+          }
+        }
+        
+        a{
+        color: #ffffff;
+        text-decoration: none;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+      
+      li.collapsed,
+      li.expanded{
+        list-style-type: none;
+        list-style-image: none;
+      }
     }
   }
 }
@@ -776,7 +780,7 @@ span.field-label { /* The inline field label used by the Fences module */
       
       .more-link{
       position: absolute;
-      top: 8px;
+      top: 10px;
       right: 20px;
         a{
           color: $callout-red !important;
@@ -787,7 +791,7 @@ span.field-label { /* The inline field label used by the Fences module */
     
     h2.block-title{
       color: #646464 !important;
-      line-height: 25px;
+      line-height: 28px;
     }
     
     .views-field-body p{
@@ -895,13 +899,11 @@ span.field-label { /* The inline field label used by the Fences module */
   overflow: hidden;
   .program-tag a{
     background-color: #767676;
-    width: 70px;
     line-height: 19px;
     text-align: center;
     color: #fff !important;
     font-weight: bold;
     display: block;
-    float: left;
     line-height: 20px;
     font-size: 12px;
     padding-top: 1px;
@@ -912,7 +914,6 @@ span.field-label { /* The inline field label used by the Fences module */
       text-decoration: none !important;
     }
   }
-  
   .program-tag{
     overflow: hidden;
     background-color: #767676;
@@ -924,6 +925,40 @@ span.field-label { /* The inline field label used by the Fences module */
     margin-right: 10px;
     float: left;
     font-size: 12px;
+  }
+  
+  .views-field-field-publication-program,
+  .views-field-field-news-program{
+    overflow: hidden;
+    float: none;
+    .node,
+    .program-all-programs{
+      overflow: hidden;
+      background-color: #767676;
+      width: 70px;
+      line-height: 19px;
+      text-align: center;
+      color: #fff !important;
+      font-weight: bold;
+      margin-right: 10px;
+      float: left !important;
+      font-size: 12px;
+      a{
+        color: #fff !important;
+        display: block;
+        &:hover{
+          background-color: $callout-red;
+          text-decoration: none !important;
+        }
+      }
+    }
+    .program-all-programs{
+      width: 118px;
+      text-transform: uppercase;
+      a{
+        color: #fff;
+      }
+    }
   }
 }
 

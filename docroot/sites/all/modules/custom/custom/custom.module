@@ -9,6 +9,20 @@ function custom_form_alter(&$form, &$form_state, $form_id) {
   if (!empty($form['fld_title']['#markup'])) {
     $form['fld_title']['#markup'] = '<div class="page-mailed"><strong>'.t('Page to be mailed: ').'</strong>'.$form['fld_title']['#markup'].'</div>';
   }
+  switch ($form_id) {
+  //alter the None option in form node/add/publication for programs field. 
+    case 'publication_node_form':
+      if (isset($form['field_publication_program']['und']['#options']['_none'])) {
+        $form['field_publication_program']['und']['#options']['_none'] = 'All Programs';
+      }
+    break;
+    //alter the None option in form node/add/news for programs field. 
+    case 'news_node_form':
+      if (isset($form['field_news_program']['und']['#options']['_none'])) {
+        $form['field_news_program']['und']['#options']['_none'] = 'All Programs';
+      }
+    break;
+  }
 }
 
 /**

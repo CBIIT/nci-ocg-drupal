@@ -340,3 +340,11 @@ function ocg_breadcrumb($variables) {
 
   return $output;
 }
+
+function ocg_preprocess_node(&$variables) {
+  if($variables['type'] == 'publication') {
+    $variables['author_journal'] = $variables['field_publication_authors'][0]['value'] . '<br /><em>' . $variables['field_publication_journal'][0]['title'] . '</em>';
+    // print $author_journal;
+
+  }
+}

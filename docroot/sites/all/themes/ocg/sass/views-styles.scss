@@ -188,7 +188,7 @@
   h2.block-title{
     color: $link-brown;
     font-weight: normal;
-    line-height: 30px
+    line-height: 28px
   }
   
   .view{
@@ -202,29 +202,6 @@
      margin-top: -5px;
      position: relative;
      overflow: hidden;
-     background:  #f2f2f2; 
-     background:
-        -webkit-linear-gradient(225deg,  rgba(242,242,242,1), rgba(242,242,242,1)),
-        -webkit-linear-gradient(45deg, rgba(242,242,242,1), rgba(242,242,242,1)),
-        -webkit-linear-gradient(135deg, transparent 25px,  rgba(242,242,242,1) 10px);
-    background:
-        -moz-linear-gradient(225deg,  rgba(242,242,242,1), rgba(242,242,242,1)),
-        -moz-linear-gradient(45deg, rgba(242,242,242,1), rgba(242,242,242,1)),
-        -moz-linear-gradient(135deg, transparent 25px,  rgba(242,242,242,1) 10px);
-    background:
-        -o-linear-gradient(225deg,  rgba(242,242,242,1), rgba(242,242,242,1)),
-        -o-linear-gradient(45deg, rgba(242,242,242,1), rgba(242,242,242,1)),
-        -o-linear-gradient(135deg, transparent 25px,  rgba(242,242,242,1) 10px);
-    background:
-        linear-gradient(225deg,  rgba(242,242,242,1), rgba(242,242,242,1)),
-        linear-gradient(45deg, rgba(242,242,242,1), rgba(242,242,242,1)),
-        linear-gradient(135deg,  rgba(242,242,242,1) 93%, transparent 10%);
-    border: none;
-     -webkit-background-size: 55% 100%, 55% 55%, 55% 55%;
-    -moz-background-size: 55% 100%, 55% 55%, 55% 55%;
-    background-size: 55% 100%, 55% 55%, 55% 55%;
-    background-position: 0 0, 100% 0, 100% 100%;
-    background-repeat: no-repeat;
 
     
     .views-row{
@@ -238,6 +215,7 @@
         font-family: $arial;
         font-size: 18px;
         font-weight: 700;
+        color: $callout-red;
         .fontface & {
           font-family: $franklin;
           font-weight: normal;
@@ -251,16 +229,8 @@
   }
 }
 
-#content .two-col .view{
-  height: 121px;
-}
-
 .two-col.left{
   padding-right: 10px;
-}
-
-.two-col .view{
-  background: url(../images/two-col-bkg.png) no-repeat left top;
 }
 
 .corner .views-row-last{
@@ -615,16 +585,18 @@ fieldset.collapsed{
     font-weight: normal;
     color: #fff;
     padding: 7px 15px;  
-    background: #796245;  
-    background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #796245), color-stop(40%, #7b664c), color-stop(100%, #624f38));
-    background: -webkit-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
-    background: -o-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
-    background: -ms-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
-    background: linear-gradient(to bottom, #796245 1%, #7b664c 40%, #624f38 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
     margin-bottom: 10px;
+    background: #bb4418; /* Old browsers */
+    background : -webkit-linear-gradient(top, rgb(213, 118, 34) 01%, rgb(208, 108, 32) 40%, rgb(187, 68, 24) 99%); /* Chrome 10+,Safari */ 
+    background : -moz-linear-gradient(top, rgb(213, 118, 34) 01%, rgb(208, 108, 32) 40%, rgb(187, 68, 24) 99%); /* Firefox 4+ */
+    background : -o-linear-gradient(top, rgb(213, 118, 34) 01%, rgb(208, 108, 32) 40%, rgb(187, 68, 24) 99%); /* Opera */
+    background : -ms-linear-gradient(top, rgb(213, 118, 34) 01%, rgb(208, 108, 32) 40%, rgb(187, 68, 24) 99%); /* IE 10+ */ 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d57622', endColorstr='#bb4418',GradientType=0 ); /* IE6-8 */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d57622', endColorstr='#bb4418',GradientType=0 ); /* IE8+ */
+    .fontface & {
+      font-family: $franklin;
+      font-weight: normal;
+    }
   }
   
   .views-row .field-content{

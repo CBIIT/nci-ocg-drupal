@@ -109,11 +109,16 @@
    <div class="imgleft">
       <?php print render($content['field_image']); ?>
       <?php print render($content['field_publication_image_caption']); ?>
+      <?php print render($content['group_publication_image']);?>
     </div>
+    
+    <div class="field-journal-name"><?php print $author_journal; ?></div>
+
 
   <?php
     // We hide the comments and links now so that we can render them later.
     hide($content['comments']);
+    hide($content['field_publication_authors']);
     hide($content['links']);
     print render($content);
   ?>
