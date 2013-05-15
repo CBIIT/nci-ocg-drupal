@@ -169,7 +169,7 @@ li a.active {
 }
 /* line 144, ../sass/navigation.scss */
 #navigation li.sf-depth-1 ul li.sf-depth-2 a {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
   font-weight: 700;
   color: #fff;

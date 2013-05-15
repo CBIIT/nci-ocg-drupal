@@ -142,12 +142,14 @@ h2 span.date-display-single {
 .node-type-publication .field-journal-name,
 .node-type-publication .field-name-field-publication-journal {
   padding-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 /*
  * Publications Landing Page
  */
-/* line 120, ../sass/nodes.scss */
+/* line 122, ../sass/nodes.scss */
 .page-news-publications .intro {
   border-bottom: 1px dotted #d7d7d7;
   padding-bottom: 25px;
@@ -157,7 +159,7 @@ h2 span.date-display-single {
 /*
  * Captions Fields
  */
-/* line 133, ../sass/nodes.scss */
+/* line 135, ../sass/nodes.scss */
 .page-taxonomy-term .imgleft,
 .node-type-publication .imgleft,
 .node-type-news .imgleft {
@@ -165,14 +167,14 @@ h2 span.date-display-single {
   padding-right: 20px;
   padding-bottom: 7px;
 }
-/* line 137, ../sass/nodes.scss */
+/* line 139, ../sass/nodes.scss */
 .page-taxonomy-term .imgleft img,
 .node-type-publication .imgleft img,
 .node-type-news .imgleft img {
   padding-bottom: 0;
   margin-bottom: 10px;
 }
-/* line 145, ../sass/nodes.scss */
+/* line 147, ../sass/nodes.scss */
 .page-taxonomy-term .image-caption,
 .page-taxonomy-term .field-name-field-publication-image-caption,
 .page-taxonomy-term .field-name-field-news-image-caption,
@@ -190,7 +192,7 @@ h2 span.date-display-single {
   /*     float: left; */
   padding-bottom: 10px;
 }
-/* line 155, ../sass/nodes.scss */
+/* line 157, ../sass/nodes.scss */
 .page-taxonomy-term .view-mode-full .field-type-image,
 .node-type-publication .view-mode-full .field-type-image,
 .node-type-news .view-mode-full .field-type-image {

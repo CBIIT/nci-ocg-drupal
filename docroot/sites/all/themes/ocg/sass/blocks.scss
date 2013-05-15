@@ -72,7 +72,7 @@
 .block-search,
 #block-search-form { /* "Search form" block */
   float: right;
-  width: 250px;
+  width: 235px;
   input[type="submit"]{
     -webkit-appearance: none;
     background: none;
@@ -82,6 +82,7 @@
     color: $callout-red;
     text-transform: uppercase;
     font-size: 14px;
+    padding-right: 0;
     .fontface & {
       font-family: $franklin;
       font-weight: normal;
@@ -164,6 +165,7 @@
 
 .brown-block{
   z-index: 1;
+  margin-bottom: 30px;
   
   h2.block-title{
     color: $link-brown;
@@ -216,7 +218,11 @@
     padding-top: 15px;
     position: relative;
     z-index: 1;
+    padding-bottom: 20px;
     overflow: visible;
+    .lt-ie9 & {
+      border-top: 1px solid #e1e1e1;
+    }
     
     &:before {
       content: "";
@@ -225,7 +231,7 @@
     	left: 0;
     	right: 0;
     	bottom: 0;
-    	background-image: -webkit-gradient(radial, left top, 0, 100% 0%, 100, from(#9e9e9e), to(transparent));
+    	background-image: -webkit-gradient(radial, left top, 5, 100% 0%, 100, from(#9e9e9e), to(transparent));
     	background-image: -moz-radial-gradient(left top, farthest-corner, #9e9e9e 0%, transparent 72%);
     	z-index: -2;
     }
@@ -287,7 +293,7 @@
     font-weight: bold;
     
     li{
-      padding-bottom: 7px;
+      padding-bottom: 5px;
       a{
        &:hover{
          color: $callout-red;
@@ -437,6 +443,7 @@
   h2{
     color: #fff;
     border-bottom: none;
+    padding: 10px 15px 5px;
     background: -moz-linear-gradient(top,  rgba(153,0,0,1) 0%, rgba(162,39,39,1) 40%, rgba(129,2,2,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(153,0,0,1)), color-stop(40%,rgba(162,39,39,1)), color-stop(100%,rgba(129,2,2,1))); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top,  rgba(153,0,0,1) 0%,rgba(162,39,39,1) 40%,rgba(129,2,2,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -476,7 +483,7 @@
  * Utility Nav Styles
  */
 #block-menu-menu-utility-menu{
-  margin-bottom: 16px;
+  margin-bottom: .8em;
 }
  
 .utility{
@@ -506,7 +513,9 @@
         }
       }
     }
-    
+    li:last-child{
+      margin-right: 0;
+    }
     li:first-child{
       background-image: none;
     }
@@ -521,7 +530,7 @@
   font-family: $arial;
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   .fontface & {
     font-family: $franklin;
     font-weight: normal;
@@ -574,9 +583,10 @@
       font-weight: normal;
     }
     a{
-      padding-left: 1em;
+      padding-left: 1em !important;
       padding-top: .6em;
       padding-bottom: .6em;
+      font-size: 15px;
       color: #fff !important;
       &:hover{
         text-decoration: underline;
@@ -616,7 +626,7 @@
       font-family: $arial;
       font-weight: 700;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 15px;
       padding: 10px 0;
       .fontface & {
         font-family: $franklin;
@@ -743,10 +753,7 @@
   }
 }
  
-#block-views-programs-block-3{
-  padding-right: 0;
-  margin-right: 0;
-} 
+
 
 /*
  * Last Updated Block Styles
@@ -764,6 +771,7 @@
     margin-bottom: 8px;
   }
 }
+
 
 
 

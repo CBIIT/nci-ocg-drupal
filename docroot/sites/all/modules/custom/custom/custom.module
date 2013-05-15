@@ -70,3 +70,48 @@ function custom_context_registry() {
   );
 }
 
+/**
+ * Implementation of hook_views_pre_view().
+ */
+function custom_views_pre_view(&$view, &$display_id, &$args) {
+  if (($view->name == 'news_and_publications') && ($display_id == 'block_2')) {
+    $customargs = get_nodes_of_type('programs');
+    //print $customargs;
+    $args[0] = $customargs;
+  }
+}
+
+/**
+ * Return a list of nodes by their content type.
+ *
+ * @param  String
+ *   $content_type The name of a content type.
+ * @return Array
+ *   A collection of nodes.
+ */
+function get_nodes_of_type($content_type) {
+
+  $efq = new EntityFieldQuery();
+
+  $result = $efq
+    ->entityCondition('entity_type', 'node', '=')
+    ->entityCondition('bundle', $content_type)
+    ->execute();
+
+  if (isset($result['node'])) {
+    $program_nodes = array_keys($result['node']);
+    $program_nids = '';
+    $key = 0;
+    foreach ($program_nodes as $programs) {
+      if (arg(0) == 'node' && is_numeric(arg(1))) {
+        if ($programs == arg(1)) {
+	    unset($program_nodes[$key]);
+      }
+      $key++;
+      }
+    }  
+    $program_nids = implode('+',$program_nodes);
+    return $program_nids;
+    }
+}
+

@@ -106,6 +106,20 @@
 
 }
 
+/* Demi Condensed */
+
+@font-face {
+    font-family: 'FranklinGothicFSCdBold';
+    src: url('../fontface/franklingothicfs_demicondensed_macroman/FranklinGothic-DemiCd-webfont.eot');
+    src: url('../fontface/franklingothicfs_demicondensed_macroman/FranklinGothic-DemiCd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontface/franklingothicfs_demicondensed_macroman/FranklinGothic-DemiCd-webfont.woff') format('woff'),
+         url('../fontface/franklingothicfs_demicondensed_macroman/FranklinGothic-DemiCd-webfont.ttf') format('truetype'),
+         url('../fontface/franklingothicfs_demicondensed_macroman/FranklinGothic-DemiCd-webfont.svg#FranklinGothicFSCdBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 /* Condensed */
 @font-face {

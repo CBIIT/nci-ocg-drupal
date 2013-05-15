@@ -229,7 +229,6 @@ a:focus{
 .front #main #postscript-first,
 .front #main #postscript-second,
 #main #content {
-  padding-bottom: 30px;
   
   a{
     color: $link-brown;
@@ -268,6 +267,7 @@ a:focus{
 .not-front #main #content{
   position: relative;
   min-height: 700px;
+  padding-bottom: 120px;
   p a{
     text-decoration: underline;
   }
@@ -292,7 +292,7 @@ a:focus{
     margin: 0;
     padding: 0;
     font-size: 12px;
-    color: #616161;
+    color: #716c61;
     
     a{
       color: #313131;
@@ -371,11 +371,27 @@ h3, h4{
   text-transform: none;
 }
 
-.page-node-22 h1.title,
-.page-node-211 h1.title,
-.page-node-1 h1.title,
-.page-node-21 h1.title{
-  text-transform: uppercase;
+.page-node-22,
+.page-node-211,
+.page-node-1,
+.page-node-21{
+  h1.title{
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 36px;
+    font-size: 36px;
+    margin-bottom: 5px;
+    .fontface & {
+      font-family: $franklinbold;
+      font-weight: normal;
+    }
+  }
+  .field-name-body{
+    padding-top: 0 !important;
+  }
+  .intro{
+    margin-bottom: 50px;
+  }
 }
 
 p,pre{
@@ -383,6 +399,7 @@ p,pre{
   line-height: 20px;
 }
 
+ol,
 ul{
   li{
     line-height: 20px;
@@ -404,16 +421,18 @@ table{
 .tablestyles tr.odd {
   background-color: #fff;
   border-bottom: 1px solid #ebebeb;
+  td,
   th{
-    border: none;
+    border-right: 1px solid #ebebeb !important;
   }
 }
 
 .tablestyles tr.even { /* Some tables have rows marked even or odd. */
   background-color: #fcfcea !important;
   border-bottom: 1px solid #ebebeb !important;
+  td,
   th{
-    border: none;
+    border-right: 1px solid #ebebeb !important;
   }
 }
 
@@ -507,19 +526,20 @@ span.field-label { /* The inline field label used by the Fences module */
   }
   
   li.pager-next{
-    background-image: url(../images/has-children.gif);
+    background-image: url(../images/next.gif);
     background-position: right center;
     background-repeat: no-repeat;
   }
   
   li.pager-last{
-    background-image: url(../images/last.png);
+    background-image: url(../images/last.gif);
     background-position: right center;
     background-repeat: no-repeat;
+    padding-right: 15px;
   }
   
   li.pager-previous{
-    background-image: url(../images/previous.png);
+    background-image: url(../images/previous.gif);
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 10px;
@@ -527,9 +547,11 @@ span.field-label { /* The inline field label used by the Fences module */
   }
   
   li.pager-first{
-    background-image: url(../images/first.png);
+    background-image: url(../images/first.gif);
     background-position: left center;
     background-repeat: no-repeat;
+    padding-left: 15px;
+    padding-right: 0;
   }
 }
 
@@ -610,7 +632,7 @@ span.field-label { /* The inline field label used by the Fences module */
        }
        
        ul{
-         padding-top: 5px;
+         padding-top: 10px;
          padding-left: 0;
        }
         
@@ -673,6 +695,7 @@ span.field-label { /* The inline field label used by the Fences module */
   
   .node-2{
     border-bottom: 1px solid #e1e1e1;
+    margin-top: -15px;
   
     img{
       margin-top: -35px;
@@ -681,11 +704,9 @@ span.field-label { /* The inline field label used by the Fences module */
     p{
       color: $link-brown;
       font-size: 15px;
-      margin-top: -15px;
     }
     
     p:last-child{
-      margin-top: -3px;
     }
     
     a{
@@ -710,8 +731,7 @@ span.field-label { /* The inline field label used by the Fences module */
   
   #postscript-first,
   #postscript-second{
-    padding-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     overflow: hidden;
     
     .views-row-last{
@@ -727,17 +747,15 @@ span.field-label { /* The inline field label used by the Fences module */
     
     .block.two-col{
       position: relative;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     
     .two-col .view{
       background: none;
       box-shadow: none;
       position: static;
-      padding: 15px 5px;
       border-top: 1px solid #e1e1e1;
       margin-bottom: 0;
-      padding-bottom: 0;
       
       &:after{
         box-shadow: none;
@@ -749,6 +767,7 @@ span.field-label { /* The inline field label used by the Fences module */
       
       .views-row{
         padding-bottom: 15px;
+        margin-bottom: 2px;
       }
       
       img{
@@ -781,7 +800,7 @@ span.field-label { /* The inline field label used by the Fences module */
       .more-link{
       position: absolute;
       top: 10px;
-      right: 20px;
+      right: 28px;
         a{
           color: $callout-red !important;
           font-style: normal;
@@ -799,6 +818,9 @@ span.field-label { /* The inline field label used by the Fences module */
       line-height: 18px;
     }
   }
+  #postscript-first{
+    padding-top: 22px;
+  }
   
   #postscript-second{
     border-top: none;
@@ -808,7 +830,7 @@ span.field-label { /* The inline field label used by the Fences module */
 
 #block-views-publications-block-1{
   .left{
-    padding-right: 10px;
+    padding-right: 20px;
   }
 }
 
@@ -899,14 +921,13 @@ span.field-label { /* The inline field label used by the Fences module */
   overflow: hidden;
   .program-tag a{
     background-color: #767676;
-    line-height: 19px;
+    line-height: 20px;
     text-align: center;
     color: #fff !important;
     font-weight: bold;
     display: block;
     line-height: 20px;
     font-size: 12px;
-    padding-top: 1px;
     
     &:hover{
       background-color: $callout-red;
@@ -918,7 +939,7 @@ span.field-label { /* The inline field label used by the Fences module */
     overflow: hidden;
     background-color: #767676;
     width: 70px;
-    line-height: 19px;
+    line-height: 20px;
     text-align: center;
     color: #fff !important;
     font-weight: bold;
@@ -936,11 +957,12 @@ span.field-label { /* The inline field label used by the Fences module */
       overflow: hidden;
       background-color: #767676;
       width: 70px;
-      line-height: 19px;
+      line-height: 20px;
       text-align: center;
       color: #fff !important;
       font-weight: bold;
       margin-right: 10px;
+      margin-bottom: 9px;
       float: left !important;
       font-size: 12px;
       a{
@@ -953,7 +975,7 @@ span.field-label { /* The inline field label used by the Fences module */
       }
     }
     .program-all-programs{
-      width: 118px;
+      width: 125px;
       text-transform: uppercase;
       a{
         color: #fff;
@@ -1066,7 +1088,6 @@ span.field-label { /* The inline field label used by the Fences module */
         img{
         position: absolute;
         margin-left: -20px;
-        box-shadow: 3px 5px 7px #b4b4b4;
       }
     }
     
@@ -1181,11 +1202,6 @@ span.field-label { /* The inline field label used by the Fences module */
   right: 15px;
 }
 
-.page-node-21 .node-21 .field-name-body p{
-  font-size: 15px;
-  margin-top: -20px;
-} 
-
 .page-node-21 .view-news-and-publications{
   border-bottom: 5px solid #e1e1e1;
 }
@@ -1268,7 +1284,9 @@ span.field-label { /* The inline field label used by the Fences module */
   
   a{
     background-color: #7d7d7d;
-    padding: 2px 10px;
+    padding: 1px 10px 0;
+/*     text-transform: uppercase; */
+    line-height: 19px;
     display: block;
     color: #fff !important;
     font-weight: bold;
@@ -1324,6 +1342,15 @@ span.newtab{
   width: 14px;
 }
 
+span.pdf{
+  text-indent: -999999px;
+  background: url(../images/pdf.gif) no-repeat;
+  display: inline-block;
+  width: 14px;
+  margin-left: 3px;
+}
+
+
 /*
  * Send Page by Email Styles
  */
@@ -1332,19 +1359,24 @@ span.newtab{
     padding: 3px 5px;
     border: none;
     border: 1px solid #cfcfcf;
-    box-shadow: inset 0px 1px 3px #404040;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 445px;
   }
   
   textarea{
-    max-width: 445px;
+    width: 445px;
+    margin-left: 174px;
     padding: 3px 5px;
     border: none;
     border: 1px solid #cfcfcf;
-    box-shadow: inset 0px 1px 3px #404040;
   }
-  
+  .grippie{
+    width: 445px;
+    margin-left: 174px;
+  }
   .description{
-    margin-left: 170px;
+    margin-left: 174px;
   }
   
   textarea#edit-txt-message{
@@ -1354,19 +1386,36 @@ span.newtab{
   input[type="reset"],
   input[type="submit"]{
     -webkit-appearance: none;
-    background: none;
     border: none;
     font-family: $arial;
     font-weight: 700;
-    color: $callout-red;
+    color: #fff;
     text-transform: uppercase;
     font-size: 14px;
+    padding: 5px 15px 5px;
+    margin-right: 10px;
+    background: #796245;
+    background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #796245), color-stop(40%, #7b664c), color-stop(100%, #624f38));
+    background: -webkit-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+    background: -o-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+    background: -ms-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+    background: linear-gradient(to bottom, #796245 1%, #7b664c 40%, #624f38 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
     .fontface & {
-      font-family: $franklinbold;
+      font-family: $franklin;
       font-weight: normal;
     }
     &:hover{
-      text-decoration: underline;
+      background: -moz-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #990000), color-stop(40%, #a22727), color-stop(100%, #810202));
+      background: -webkit-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+      background: -o-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+      background: -ms-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+      background: linear-gradient(to bottom, #990000 0%, #a22727 40%, #810202 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#810202',GradientType=0 );
+      -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#810202',GradientType=0 );
     }
   }
 }

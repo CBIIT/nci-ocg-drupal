@@ -194,11 +194,10 @@
   .view{
      position:relative;
      padding-top: 16px;
-     padding-bottom: 15px;
+     padding-bottom: 14px;
      width:440px;
      border-top: 1px solid #e1e1e1;
      float: left;
-     padding-left: 15px;
      margin-top: -5px;
      position: relative;
      overflow: hidden;
@@ -230,7 +229,7 @@
 }
 
 .two-col.left{
-  padding-right: 10px;
+  padding-right: 30px;
 }
 
 .corner .views-row-last{
@@ -240,6 +239,16 @@
 .view-projects{
   h3{
     color: $callout-red;
+  }
+}
+
+#block-views-project-features-block{
+  overflow: visible;
+  .view-project-features{
+    overflow: visible;
+    .views-row{
+      overflow: visible;
+    }
   }
 }
 
@@ -379,6 +388,12 @@ fieldset.collapsed{
 
 .page-news-publications-e-newsletters{
   .views-accordion{
+    h2{
+      color: $link-brown;
+      span{
+        color: $callout-red;
+      }
+    }
     h3{
       background-image: none;
       border: none;
@@ -457,8 +472,25 @@ fieldset.collapsed{
     
     .view-grouping-content{
       padding: 20px 50px;
+      .views-row{
+        margin-bottom: 15px;
+      }
       h4{
         display: inline-block;
+        font-family: $helvetica;
+        font-size: 15px;
+        line-height: 20px;
+        margin: 0;
+        a{
+          color: $link-brown !important;
+        }
+      }
+      .views-field-title{
+        font-size: 15px;
+        line-height: 20px;
+        a{
+          color: $callout-red !important;
+        }
       }
     }
   }
@@ -582,17 +614,19 @@ fieldset.collapsed{
 .landing-page.view-e-newsletter{
   h2.block-title{
     font-size: $h5-font-size;
-    font-weight: normal;
-    color: #fff;
-    padding: 7px 15px;  
+    font-weight: 700;
     margin-bottom: 10px;
-    background: #bb4418; /* Old browsers */
-    background : -webkit-linear-gradient(top, rgb(213, 118, 34) 01%, rgb(208, 108, 32) 40%, rgb(187, 68, 24) 99%); /* Chrome 10+,Safari */ 
-    background : -moz-linear-gradient(top, rgb(213, 118, 34) 01%, rgb(208, 108, 32) 40%, rgb(187, 68, 24) 99%); /* Firefox 4+ */
-    background : -o-linear-gradient(top, rgb(213, 118, 34) 01%, rgb(208, 108, 32) 40%, rgb(187, 68, 24) 99%); /* Opera */
-    background : -ms-linear-gradient(top, rgb(213, 118, 34) 01%, rgb(208, 108, 32) 40%, rgb(187, 68, 24) 99%); /* IE 10+ */ 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d57622', endColorstr='#bb4418',GradientType=0 ); /* IE6-8 */
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d57622', endColorstr='#bb4418',GradientType=0 ); /* IE8+ */
+    color: $link-brown;
+    padding: 9px 15px 5px;
+    border-bottom: 1px solid #fae21d;
+    background: #faf4bf; /* Old browsers */
+    background: -moz-linear-gradient(top,  #faf4bf 0%, #fef6d5 30%, #faec7a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#faf4bf), color-stop(30%,#fef6d5), color-stop(100%,#faec7a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #faf4bf 0%,#fef6d5 30%,#faec7a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #faf4bf 0%,#fef6d5 30%,#faec7a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #faf4bf 0%,#fef6d5 30%,#faec7a 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #faf4bf 0%,#fef6d5 30%,#faec7a 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faf4bf', endColorstr='#faec7a',GradientType=0 ); /* IE6-9 */
     .fontface & {
       font-family: $franklin;
       font-weight: normal;
@@ -651,10 +685,14 @@ fieldset.collapsed{
  * Last Updated View Styles
  */
 
-.view-last-updated{
-  font-family: $helvetica;
-  font-size: 12px;
-  color: #646464;
+#block-views-last-updated-block{
+  position: absolute;
+  bottom: 30px;
+  .view-last-updated{
+    font-family: $helvetica;
+    font-size: 12px;
+    color: #646464;
+  }
 }
 
 /*
@@ -683,7 +721,61 @@ fieldset.collapsed{
 }
 
 
-
+/*
+ * Individual E-Newsletter View Styles
+ */
+.view-taxonomy-term{
+  .view-content{
+    .views-row{
+      margin-bottom: 10px;
+      padding-bottom: 15px;
+      border-bottom: 5px solid #e1e1e1;
+      overflow: visible;
+      img{
+        float: left;
+        padding-right: 15px;
+        padding-bottom: 10px;
+      }
+    }
+    .views-row-last{
+      border-bottom: none;
+    }
+  }
+  .attachment-before{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #e1e1e1;
+    .views-row{
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    h3{
+      font-size: $h4-font-size;
+      line-height: 20px;
+      font-family: $helvetica;
+      font-size: 15px;
+      margin-bottom: 15px;
+      a{
+        color: $callout-red !important;
+        strong{
+          color: $link-brown;
+        }
+      }
+    }
+  }
+  .view-e-newsletter-issue-title{
+    .views-row{
+      padding-bottom: 0;
+      h1{
+        color: $link-brown;
+        span{
+          color: $callout-red;
+        }
+      }
+    }
+  }
+}
 
 
 
