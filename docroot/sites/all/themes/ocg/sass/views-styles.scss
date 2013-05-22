@@ -262,6 +262,8 @@ html.js fieldset.collapsible .fieldset-legend{
 html.js fieldset.collapsed{
   height: auto;
   margin-bottom: 1px;
+  overflow: hidden;
+  height: 38px;
 }
 
 .ui-widget{
@@ -295,6 +297,7 @@ html.js fieldset.collapsed{
     background-image: none;
     border: none;
     width: 100%;
+    margin-bottom: 1px;
     overflow: hidden;
     border-radius: 0;
     line-height: 1em;
@@ -394,7 +397,7 @@ fieldset.collapsed{
         color: $callout-red;
       }
     }
-    h3{
+    h3 a.toggle{
       background-image: none;
       border: none;
       width: 100%;
@@ -403,6 +406,11 @@ fieldset.collapsed{
       line-height: 1em;
       font-family: $arial;
       font-size: 18px;
+      padding-left: 1.3em;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: #fff !important;
+      display: block;
       font-weight: 700;
       background: rgb(121,98,69); /* Old browsers */
           background: -moz-linear-gradient(top,  rgba(121,98,69,1) 1%, rgba(123,102,76,1) 40%, rgba(98,79,56,1) 100%); /* FF3.6+ */
@@ -417,37 +425,20 @@ fieldset.collapsed{
         font-family: $franklin;
         font-weight: normal;
       }
-       a{
-          color: #fff !important;
-          padding-left: 1.3em;
-          padding-top: 10px;
-          display: block;
-          padding-bottom: 10px;
-          &:hover{
-            color: #fff!important;
-          }
-          &:first-child{
-            padding: 0;
-          }
-          a{
-            padding: 0;
-          }
-        }
-        &:hover{
-          background: rgb(121,98,69); /* Old browsers */
-          background: -moz-linear-gradient(top,  rgba(121,98,69,1) 1%, rgba(123,102,76,1) 40%, rgba(98,79,56,1) 100%); /* FF3.6+ */
-          background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(121,98,69,1)), color-stop(40%,rgba(123,102,76,1)), color-stop(100%,rgba(98,79,56,1))); /* Chrome,Safari4+ */
-          background: -webkit-linear-gradient(top,  rgba(121,98,69,1) 1%,rgba(123,102,76,1) 40%,rgba(98,79,56,1) 100%); /* Chrome10+,Safari5.1+ */
-          background: -o-linear-gradient(top,  rgba(121,98,69,1) 1%,rgba(123,102,76,1) 40%,rgba(98,79,56,1) 100%); /* Opera 11.10+ */
-          background: -ms-linear-gradient(top,  rgba(121,98,69,1) 1%,rgba(123,102,76,1) 40%,rgba(98,79,56,1) 100%); /* IE10+ */
-          background: linear-gradient(to bottom,  rgba(121,98,69,1) 1%,rgba(123,102,76,1) 40%,rgba(98,79,56,1) 100%); /* W3C */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#796245', endColorstr='#624f38',GradientType=0 ); /* IE6-8 */
-          -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#796245', endColorstr='#624f38',GradientType=0 ); /* IE8+ */
-        }    
-      
+      &:hover{
+        background: rgb(121,98,69); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(121,98,69,1) 1%, rgba(123,102,76,1) 40%, rgba(98,79,56,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(121,98,69,1)), color-stop(40%,rgba(123,102,76,1)), color-stop(100%,rgba(98,79,56,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(121,98,69,1) 1%,rgba(123,102,76,1) 40%,rgba(98,79,56,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(121,98,69,1) 1%,rgba(123,102,76,1) 40%,rgba(98,79,56,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(121,98,69,1) 1%,rgba(123,102,76,1) 40%,rgba(98,79,56,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(121,98,69,1) 1%,rgba(123,102,76,1) 40%,rgba(98,79,56,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#796245', endColorstr='#624f38',GradientType=0 ); /* IE6-8 */
+        -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#796245', endColorstr='#624f38',GradientType=0 ); /* IE8+ */
+      }    
     }
     
-    h3.collapsed{
+    h3.collapsed a{
       background: rgb(150,150,150); /* Old browsers */
       background: -moz-linear-gradient(top,  rgba(150,150,150,1) 1%, rgba(147,147,147,1) 40%, rgba(121,121,121,1) 100%); /* FF3.6+ */
       background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(150,150,150,1)), color-stop(40%,rgba(147,147,147,1)), color-stop(100%,rgba(121,121,121,1))); /* Chrome,Safari4+ */
@@ -475,21 +466,15 @@ fieldset.collapsed{
       .views-row{
         margin-bottom: 15px;
       }
+      .views-field-title,
       h4{
-        display: inline-block;
-        font-family: $helvetica;
-        font-size: 15px;
-        line-height: 20px;
+        display: inline;
+        font-family: $franklin;
+        font-size: $h4-font-size;
+        line-height: 1.1em;
         margin: 0;
         a{
           color: $link-brown !important;
-        }
-      }
-      .views-field-title{
-        font-size: 15px;
-        line-height: 20px;
-        a{
-          color: $callout-red !important;
         }
       }
     }
@@ -752,17 +737,19 @@ fieldset.collapsed{
     }
     h3{
       font-size: $h4-font-size;
-      line-height: 20px;
-      font-family: $helvetica;
-      font-size: 15px;
+      line-height: 1.1em;
+      font-family: $franklin;
+      font-size: $h4-font-size;
       margin-bottom: 15px;
       a{
-        color: $callout-red !important;
-        strong{
-          color: $link-brown;
-        }
+        color: $link-brown !important;
       }
     }
+  }
+  .views-field-field-enews-physician{
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
   }
   .view-e-newsletter-issue-title{
     .views-row{

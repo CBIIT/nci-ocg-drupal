@@ -257,6 +257,9 @@ a:focus{
     list-style-image: url(../images/bullet.gif);
     margin-top: 0;
     margin-bottom: 1.5em;
+    ul{
+      margin-bottom: 0;
+    }
   }
   
   .even{
@@ -265,7 +268,6 @@ a:focus{
 }
 
 .not-front #main #content{
-  position: relative;
   min-height: 700px;
   padding-bottom: 120px;
   p a{
@@ -436,8 +438,8 @@ table{
   }
 }
 
-thead tr,
-tr.header{
+.tablestyles thead tr,
+.tablestyles tr.header{
   background-color: $callout-red !important;
   color: #fff;  
 }
@@ -772,7 +774,7 @@ span.field-label { /* The inline field label used by the Fences module */
       
       img{
         box-shadow: 2px 2px 15px #b4b4b4;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
       }
       
       a{
@@ -910,6 +912,7 @@ span.field-label { /* The inline field label used by the Fences module */
   font-weight: bold;
   text-transform: uppercase;
   float: left;
+  display: inline;
   padding: 5px 10px 5px 0;
 }
 
@@ -919,6 +922,7 @@ span.field-label { /* The inline field label used by the Fences module */
 
 .views-row{
   overflow: hidden;
+  width: 100%;
   .program-tag a{
     background-color: #767676;
     line-height: 20px;
@@ -935,7 +939,23 @@ span.field-label { /* The inline field label used by the Fences module */
       text-decoration: none !important;
     }
   }
+
+  .program,
   .program-tag{
+    overflow: hidden;
+    background-color: #767676;
+    width: 70px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    color: #fff !important;
+    font-weight: bold;
+    margin-right: 10px;
+    float: left;
+    font-size: 12px;
+  }
+
+  .program-all-programs{
     overflow: hidden;
     background-color: #767676;
     width: 70px;
@@ -944,8 +964,19 @@ span.field-label { /* The inline field label used by the Fences module */
     color: #fff !important;
     font-weight: bold;
     margin-right: 10px;
-    float: left;
+    margin-bottom: 9px;
+    float: left !important;
     font-size: 12px;
+    width: 125px;
+    text-transform: uppercase;
+    a{
+      color: #fff !important;
+      display: block;
+      &:hover{
+        background-color: $callout-red;
+        text-decoration: none !important;
+      }
+    }
   }
   
   .views-field-field-publication-program,
