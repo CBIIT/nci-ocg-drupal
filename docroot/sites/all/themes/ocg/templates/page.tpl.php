@@ -75,6 +75,12 @@
   <div class="NCI-banner">
     <div class="NCI-inner">
       <a href="http://www.cancer.gov"><img src="/sites/all/themes/ocg/images/NCI-banner.jpg" alt="<?php print t('National Cancer Institute at the National Institutes of Health (www.cancer.gov)'); ?>" /></a>
+      <!--<img src="/sites/all/themes/ocg/images/NCI-banner.jpg" border=0 usemap="#bannermap">
+      <map name="bannermap">
+      <area shape=rect coords="13,1,257,33" href="http://www.cancer.gov" alt="National Cancer Institute">
+      <area shape=rect coords="698,10,847,24" href="http://www.nih.gov" alt="at the National Institutes of Health">
+      <area shape=rect coords="853,12,948,25" href="http://www.cancer.gov" alt="www.cancer.gov">
+      </map>-->
     </div><!-- /NCI-inner -->
   </div><!-- /NCI-banner -->
   
