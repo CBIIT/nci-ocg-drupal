@@ -263,7 +263,7 @@ html.js fieldset.collapsed{
   height: auto;
   margin-bottom: 1px;
   overflow: hidden;
-  height: 38px;
+  height: 38px !important;
 }
 
 .ui-widget{
@@ -466,15 +466,19 @@ fieldset.collapsed{
       .views-row{
         margin-bottom: 15px;
       }
-      .views-field-title,
-      h4{
-        display: inline;
-        font-family: $franklin;
-        font-size: $h4-font-size;
-        line-height: 1.1em;
-        margin: 0;
+      .views-field-title{
+        span{
+          text-transform: uppercase;
+          color: #646464;
+          font-size: 21px;
+          margin-bottom: 6px;
+        }
         a{
-          color: $link-brown !important;
+          color: $callout-red !important;
+          font-size: 19px;
+          text-transform: none;
+          line-height: 23px;
+          font-family: $franklin;
         }
       }
     }
@@ -526,11 +530,10 @@ fieldset.collapsed{
     float: left;
     width: 44%;
     color: #fff;
-    background-image: url(../images/alert.png);
-    background-repeat: no-repeat;
+    background: url(../images/alert.png) left center no-repeat;
     padding-left: 40px;
     line-height: 30px;
-    min-height: 40px;
+    line-height: 2;
     .fontface & {
       font-family: $franklin;
       font-weight: normal;
@@ -721,6 +724,19 @@ fieldset.collapsed{
         padding-right: 15px;
         padding-bottom: 10px;
       }
+      .views-field-title{
+        h2{
+          color: $callout-red;
+          font-size: 22px;
+          line-height: 25px;
+            span{
+            color: #646464;
+            font-size: 26px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+          }
+        }
+      }
     }
     .views-row-last{
       border-bottom: none;
@@ -736,13 +752,17 @@ fieldset.collapsed{
       border-bottom: none;
     }
     h3{
-      font-size: $h4-font-size;
-      line-height: 1.1em;
-      font-family: $franklin;
-      font-size: $h4-font-size;
-      margin-bottom: 15px;
+      margin-bottom: 22px;
+      span{
+        color: #646464;
+        font-size: 21px;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+      }
       a{
-        color: $link-brown !important;
+        color: $callout-red !important;
+        font-size: 19px;
+        line-height: 23px;
       }
     }
   }

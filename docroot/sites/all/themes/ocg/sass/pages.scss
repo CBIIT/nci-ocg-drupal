@@ -377,17 +377,6 @@ h3, h4{
 .page-node-211,
 .page-node-1,
 .page-node-21{
-  h1.title{
-    text-transform: uppercase;
-    margin-bottom: 0;
-    line-height: 36px;
-    font-size: 36px;
-    margin-bottom: 5px;
-    .fontface & {
-      font-family: $franklinbold;
-      font-weight: normal;
-    }
-  }
   .field-name-body{
     padding-top: 0 !important;
   }
@@ -923,22 +912,6 @@ span.field-label { /* The inline field label used by the Fences module */
 .views-row{
   overflow: hidden;
   width: 100%;
-  .program-tag a{
-    background-color: #767676;
-    line-height: 20px;
-    text-align: center;
-    color: #fff !important;
-    font-weight: bold;
-    display: block;
-    line-height: 20px;
-    font-size: 12px;
-    
-    &:hover{
-      background-color: $callout-red;
-      color: #fff;
-      text-decoration: none !important;
-    }
-  }
 
   .program,
   .program-tag{
@@ -946,20 +919,22 @@ span.field-label { /* The inline field label used by the Fences module */
     background-color: #767676;
     width: 70px;
     display: inline-block;
-    line-height: 20px;
+    line-height: auto;
     text-align: center;
     color: #fff !important;
     font-weight: bold;
     margin-right: 10px;
     float: left;
     font-size: 12px;
+    padding-bottom: 1px;
+    padding-top: 3px;
   }
 
   .program-all-programs{
     overflow: hidden;
     background-color: #767676;
     width: 70px;
-    line-height: 20px;
+    line-height: auto;
     text-align: center;
     color: #fff !important;
     font-weight: bold;
@@ -967,6 +942,8 @@ span.field-label { /* The inline field label used by the Fences module */
     margin-bottom: 9px;
     float: left !important;
     font-size: 12px;
+    padding-bottom: 1px;
+    padding-top: 3px;
     width: 125px;
     text-transform: uppercase;
     a{
@@ -983,12 +960,12 @@ span.field-label { /* The inline field label used by the Fences module */
   .views-field-field-news-program{
     overflow: hidden;
     float: none;
-    .node,
-    .program-all-programs{
+    .node .field-item,
+    .program-all-programs .field-item{
       overflow: hidden;
       background-color: #767676;
       width: 70px;
-      line-height: 20px;
+      line-height: auto;
       text-align: center;
       color: #fff !important;
       font-weight: bold;
@@ -996,6 +973,8 @@ span.field-label { /* The inline field label used by the Fences module */
       margin-bottom: 9px;
       float: left !important;
       font-size: 12px;
+      padding-top: 3px;
+      padding-bottom: 1px; 
       a{
         color: #fff !important;
         display: block;
@@ -1370,7 +1349,7 @@ span.newtab{
   text-indent: -999999px;
   background: url(../images/newtab.png) no-repeat;
   display: inline-block;
-  width: 14px;
+  width: 9px;
 }
 
 span.pdf{
