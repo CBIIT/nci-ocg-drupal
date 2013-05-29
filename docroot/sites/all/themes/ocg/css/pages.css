@@ -1082,9 +1082,6 @@ span.field-label {
   padding-bottom: 1px;
   padding-top: 3px;
 }
-.views-row .program-tag a {
-  color: #fff;
-}
 /* line 933, ../sass/pages.scss */
 .views-row .program-all-programs {
   overflow: hidden;
