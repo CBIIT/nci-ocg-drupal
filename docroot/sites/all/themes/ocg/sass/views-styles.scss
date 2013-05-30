@@ -178,6 +178,9 @@
 
 .corner.three-col .views-row{
   background: url(../images/three-col-bkg.png) no-repeat left bottom;
+  moz-background-size: 100%;
+  webkit-background-size: 100%;
+  background-size: 100%;
   .data-matrix{
     right: 3px;
   }
