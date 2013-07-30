@@ -300,9 +300,11 @@ function password_policy_admin_form($form, &$form_state, $policy = NULL) {
     '#required' => TRUE,
   );
   $form['policy']['description'] = array(
-    '#type' => 'textarea',
+    '#type' => 'textfield',
     '#title' => t('Description'),
     '#default_value' => isset($policy['description']) ? $policy['description'] : '',
+    '#size' => 128,
+    '#maxlength' => 255,
   );
 
   $form['roles'] = array(
@@ -412,6 +414,7 @@ function password_policy_admin_form_submit($form, &$form_state) {
     }
   }
 
+  $expiration = intval($form_state['values']['expiration']);
   // If we have an pid, update, else save.
   if (isset($form_state['values']['pid']) && $form_state['values']['pid']) {
     db_update('password_policy')
@@ -419,7 +422,7 @@ function password_policy_admin_form_submit($form, &$form_state) {
         'name' => $form_state['values']['name'],
         'description' => $form_state['values']['description'],
         'policy' => serialize($policy),
-        'expiration' => trim($form_state['values']['expiration']),
+        'expiration' => !empty($expiration) ? $expiration : 0,
         'warning' => str_replace(' ', '', $form_state['values']['warning']),
       ))
       ->condition('pid', $form_state['values']['pid'])
@@ -438,7 +441,7 @@ function password_policy_admin_form_submit($form, &$form_state) {
         'description' => $form_state['values']['description'],
         'enabled' => 0,
         'policy' => serialize($policy),
-        'expiration' => trim($form_state['values']['expiration']),
+        'expiration' => !empty($expiration) ? $expiration : 0,
         'warning' => str_replace(' ', '', $form_state['values']['warning']),
       ))
       ->execute();
@@ -455,7 +458,7 @@ function password_policy_admin_form_submit($form, &$form_state) {
       ->execute();
   }
 
-  drupal_goto('admin/config/people/password_policy/list');
+  $form_state['redirect'] = 'admin/config/people/password_policy/list';
 }
 
 /**
