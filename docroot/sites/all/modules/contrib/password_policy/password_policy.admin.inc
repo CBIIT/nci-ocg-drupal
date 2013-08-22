@@ -267,9 +267,9 @@ function password_policy_admin_view($policy) {
     $rows[] = array(t('Expiration'), $policy['expiration']);
   }
   if (!empty($policy['warning'])) {
-    $rows[] = array(t('Warning'), $policy['warning']);
+    $rows[] = array(t('Warning'), check_plain($policy['warning']));
   }
-  
+
   foreach ($policy['policy'] as $key => $val) {
     $desc = _password_policy_constraint_description($key);
     $rows[] = array($desc['name'], $val);
@@ -390,6 +390,9 @@ function password_policy_admin_form_validate($form, &$form_state) {
   $roles = array_filter($form_state['values']['roles']);
   if (empty($roles)) {
     form_set_error('roles', t('You must select at least one role for a policy to apply to.'));
+  }
+  if (!empty($form_state['values']['warning']) && !preg_match("/^[0-9,]+$/", $form_state['values']['warning'])) {
+    form_set_error('warning', t('Warning must only contain digits and commas'));
   }
 }
 
