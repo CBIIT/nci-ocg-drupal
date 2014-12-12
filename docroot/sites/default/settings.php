@@ -182,9 +182,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'dr_tm-template7_dev',
-      'username' => 'root',
-      'password' => 'tr352529',
+      'database' => 'ocg',
+      'username' => 'ocg',
+      'password' => 'orb99ital',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
@@ -245,7 +245,9 @@ $drupal_hash_salt = 'tQgSouIRQL-s3S7g3UPT0UWqs4s1Xoc-kohFDrw5H1E';
  * It is not allowed to have a trailing slash; Drupal will add it
  * for you.
  */
-# $base_url = 'http://www.example.com';  // NO trailing slash!
+if (isset($_ENV['AH_SITE_ENVIRONMENT']) && $_ENV['AH_SITE_ENVIRONMENT'] === 'prod') {
+ $base_url = 'https://ocg.cancer.gov/';
+}
 
 /**
  * PHP settings:
