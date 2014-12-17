@@ -245,9 +245,9 @@ $drupal_hash_salt = 'tQgSouIRQL-s3S7g3UPT0UWqs4s1Xoc-kohFDrw5H1E';
  * It is not allowed to have a trailing slash; Drupal will add it
  * for you.
  */
-if (isset($_ENV['AH_SITE_ENVIRONMENT']) && $_ENV['AH_SITE_ENVIRONMENT'] === 'prod') {
+/*if (isset($_ENV['AH_SITE_ENVIRONMENT']) && $_ENV['AH_SITE_ENVIRONMENT'] === 'prod') {
  $base_url = 'https://ocg.cancer.gov/';
-}
+}*/
 
 /**
  * PHP settings:
