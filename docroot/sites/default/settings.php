@@ -245,11 +245,13 @@ $drupal_hash_salt = 'tQgSouIRQL-s3S7g3UPT0UWqs4s1Xoc-kohFDrw5H1E';
  * It is not allowed to have a trailing slash; Drupal will add it
  * for you.
  */
+$base_protocol = empty($_SERVER['HTTPS']) || strtolower($_SERVER['HTTPS']) != 'on' ? 'http' : 'https';
+
 if (isset($_ENV['AH_SITE_ENVIRONMENT']) && $_ENV['AH_SITE_ENVIRONMENT'] === 'dev') {
- $base_url = 'https://ogcgovdev.devcloud.acquia-sites.com';
+ $base_url = $base_protocol . '://ogcgovdev.devcloud.acquia-sites.com';
 }
 if (isset($_ENV['AH_SITE_ENVIRONMENT']) && $_ENV['AH_SITE_ENVIRONMENT'] === 'prod') {
- $base_url = 'https://ocg.cancer.gov';
+ $base_url = $base_protocol . '://ocg.cancer.gov';
 }
 
 /**
