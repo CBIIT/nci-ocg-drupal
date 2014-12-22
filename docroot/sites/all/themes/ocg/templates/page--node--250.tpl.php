@@ -138,7 +138,7 @@
                 drupal_add_library('system', 'ui.accordion');
                 drupal_add_js('jQuery(document).ready(function(){jQuery("#accordion").accordion( {collapsible: true, active: false});});', 'inline');
               ?>
-              <div id="block-block-8" class="block block-block program-datasets contextual-links-region last even">
+              <div id="block-block-8" class="block block-block program-datasets last even">
                 
                 <div id="accordion">
                   <div class="ui-accordion-header"><a href="#">Access Program Datasets</a></div>

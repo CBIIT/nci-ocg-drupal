@@ -138,7 +138,7 @@
                 drupal_add_library('system', 'ui.accordion');
                 drupal_add_js('jQuery(document).ready(function(){jQuery("#accordion").accordion( {collapsible: true, active: false});});', 'inline');
               ?>
-              <div id="block-block-8" class="block block-block program-datasets contextual-links-region last even">
+              <div id="block-block-8" class="block block-block program-datasets last even">
                 
                 <div id="accordion">
                   <div class="ui-accordion-header"><a href="#">Access Program Datasets</a></div>
@@ -162,7 +162,7 @@
         <?php print render($page['highlighted']); ?>
         <?php print $breadcrumb; ?>
         <?php print render($page['pre_content']); ?>
-        <div id="block-block-7" class="block block-block addthis contextual-links-region first odd">
+        <div id="block-block-7" class="block block-block addthis first odd">
         <?php 
         if ((arg(0) == 'node') && (is_numeric(arg(1)))) {
           $nid = arg(1);
