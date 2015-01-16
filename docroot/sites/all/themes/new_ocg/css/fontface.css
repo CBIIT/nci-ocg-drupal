@@ -1,0 +1,143 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2012 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:  FontSite Inc.
+ * License URL: http://www.fontspring.com/fflicense/fontsite
+ *
+ *
+ */
+ 
+/* Medium */
+
+@font-face {
+  font-family: 'FranklinGothicFSMedRegular';
+  src: url('../fontface/franklingothicfs_medium_macroman/FranklinGothic-Med-webfont.eot');
+  src: url('../fontface/franklingothicfs_medium_macroman/FranklinGothic-Med-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fontface/franklingothicfs_medium_macroman/FranklinGothic-Med-webfont.woff') format('woff'),
+  url('../fontface/franklingothicfs_medium_macroman/FranklinGothic-Med-webfont.ttf') format('truetype'),
+  url('../fontface/franklingothicfs_medium_macroman/FranklinGothic-Med-webfont.svg#FranklinGothicFSMedRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FranklinGothicFSMedCdRegular';
+  src: url('../fontface/franklingothicfs_mediumcondensed_macroman/FranklinGothic-MedCd-webfont.eot');
+  src: url('../fontface/franklingothicfs_mediumcondensed_macroman/FranklinGothic-MedCd-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fontface/franklingothicfs_mediumcondensed_macroman/FranklinGothic-MedCd-webfont.woff') format('woff'),
+  url('../fontface/franklingothicfs_mediumcondensed_macroman/FranklinGothic-MedCd-webfont.ttf') format('truetype'),
+  url('../fontface/franklingothicfs_mediumcondensed_macroman/FranklinGothic-MedCd-webfont.svg#FranklinGothicFSMedCdRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FranklinGothicFSMedCdItalic';
+  src: url('../fontface/franklingothicfs_mediumcondenseditalic_macroman/FranklinGothic-MedCdIt-webfont.eot');
+  src: url('../fontface/franklingothicfs_mediumcondenseditalic_macroman/FranklinGothic-MedCdIt-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fontface/franklingothicfs_mediumcondenseditalic_macroman/FranklinGothic-MedCdIt-webfont.woff') format('woff'),
+  url('../fontface/franklingothicfs_mediumcondenseditalic_macroman/FranklinGothic-MedCdIt-webfont.ttf') format('truetype'),
+  url('../fontface/franklingothicfs_mediumcondenseditalic_macroman/FranklinGothic-MedCdIt-webfont.svg#FranklinGothicFSMedCdItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FranklinGothicFSMedItalic';
+  src: url('../fontface/franklingothicfs_mediumitalic_macroman/FranklinGothic-MedIt-webfont.eot');
+  src: url('../fontface/franklingothicfs_mediumitalic_macroman/FranklinGothic-MedIt-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fontface/franklingothicfs_mediumitalic_macroman/FranklinGothic-MedIt-webfont.woff') format('woff'),
+  url('../fontface/franklingothicfs_mediumitalic_macroman/FranklinGothic-MedIt-webfont.ttf') format('truetype'),
+  url('../fontface/franklingothicfs_mediumitalic_macroman/FranklinGothic-MedIt-webfont.svg#FranklinGothicFSMedItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Book */
+
+@font-face {
+  font-family: 'FranklinGothicFSBookRegular';
+  src: url('../fontface/franklingothicfs_book_macroman/FranklinGothic-Book-webfont.eot');
+  src: url('../fontface/franklingothicfs_book_macroman/FranklinGothic-Book-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fontface/franklingothicfs_book_macroman/FranklinGothic-Book-webfont.woff') format('woff'),
+  url('../fontface/franklingothicfs_book_macroman/FranklinGothic-Book-webfont.ttf') format('truetype'),
+  url('../fontface/franklingothicfs_book_macroman/FranklinGothic-Book-webfont.svg#FranklinGothicFSBookRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FranklinGothicFSBookItalic';
+  src: url('../fontface/franklingothicfs_bookitalic_macroman/FranklinGothic-BookIt-webfont.eot');
+  src: url('../fontface/franklingothicfs_bookitalic_macroman/FranklinGothic-BookIt-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fontface/franklingothicfs_bookitalic_macroman/FranklinGothic-BookIt-webfont.woff') format('woff'),
+  url('../fontface/franklingothicfs_bookitalic_macroman/FranklinGothic-BookIt-webfont.ttf') format('truetype'),
+  url('../fontface/franklingothicfs_bookitalic_macroman/FranklinGothic-BookIt-webfont.svg#FranklinGothicFSBookItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Demi */
+
+@font-face {
+  font-family: 'FranklinGothicFSBookBold';
+  src: url('../fontface/franklingothicfs_demi_macroman/FranklinGothic-Demi-webfont.eot');
+  src: url('../fontface/franklingothicfs_demi_macroman/FranklinGothic-Demi-webfont.eot?#iefix') format('embedded-opentype'),
+     url('../fontface/franklingothicfs_demi_macroman/FranklinGothic-Demi-webfont.woff') format('woff'),
+     url('../fontface/franklingothicfs_demi_macroman/FranklinGothic-Demi-webfont.ttf') format('truetype'),
+     url('../fontface/franklingothicfs_demi_macroman/FranklinGothic-Demi-webfont.svg#FranklinGothicFSBookBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* Demi Condensed */
+
+@font-face {
+    font-family: 'FranklinGothicFSCdBold';
+    src: url('../fontface/franklingothicfs_demicondensed_macroman/FranklinGothic-DemiCd-webfont.eot');
+    src: url('../fontface/franklingothicfs_demicondensed_macroman/FranklinGothic-DemiCd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontface/franklingothicfs_demicondensed_macroman/FranklinGothic-DemiCd-webfont.woff') format('woff'),
+         url('../fontface/franklingothicfs_demicondensed_macroman/FranklinGothic-DemiCd-webfont.ttf') format('truetype'),
+         url('../fontface/franklingothicfs_demicondensed_macroman/FranklinGothic-DemiCd-webfont.svg#FranklinGothicFSCdBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Condensed */
+@font-face {
+    font-family: 'FranklinGothicFSCdRegular';
+    src: url('../fontface/franklingothicfs_condensed_macroman/FranklinGothic-Cd-webfont.eot');
+    src: url('../fontface/franklingothicfs_condensed_macroman/FranklinGothic-Cd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontface/franklingothicfs_condensed_macroman/FranklinGothic-Cd-webfont.woff') format('woff'),
+         url('../fontface/franklingothicfs_condensed_macroman/FranklinGothic-Cd-webfont.ttf') format('truetype'),
+         url('../fontface/franklingothicfs_condensed_macroman/FranklinGothic-Cd-webfont.svg#FranklinGothicFSCdRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+

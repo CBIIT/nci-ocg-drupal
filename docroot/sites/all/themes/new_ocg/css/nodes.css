@@ -1,0 +1,201 @@
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+/* line 11, ../sass/nodes.scss */
+.node {
+  /* Node wrapper */
+}
+/* line 13, ../sass/nodes.scss */
+.preview .node {
+  /* Preview of the content before submitting new or updated content */
+  /* background-color: #ffffea; */
+  /* Drupal core uses a #ffffea background */
+}
+/* line 17, ../sass/nodes.scss */
+.node .node-title {
+  /* Node title */
+}
+/* line 20, ../sass/nodes.scss */
+.node .user-picture {
+  /* The picture of the node author */
+}
+/* line 23, ../sass/nodes.scss */
+.node .submitted {
+  /* The "posted by" information */
+}
+/* line 26, ../sass/nodes.scss */
+.node .content {
+  /* Node's content wrapper */
+}
+/* line 29, ../sass/nodes.scss */
+.node ul.links {
+  /* Node links. See also the ul.links declaration in the pages.css. */
+}
+
+/* line 34, ../sass/nodes.scss */
+.node-promoted {
+  /* A node that has been promoted to the front page */
+}
+
+/* line 37, ../sass/nodes.scss */
+.node-sticky {
+  /* A sticky node (displayed before others in a list) */
+}
+
+/* line 40, ../sass/nodes.scss */
+.node-by-viewer {
+  /* A node created by the current user */
+}
+
+/* line 43, ../sass/nodes.scss */
+.node-teaser {
+  /* A node displayed as teaser */
+}
+
+/*
+ * All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
+ */
+/* line 52, ../sass/nodes.scss */
+.node-page {
+  /* Page content node */
+}
+
+/* line 55, ../sass/nodes.scss */
+.node-article {
+  /* Article content node */
+}
+
+/* line 58, ../sass/nodes.scss */
+.node-unpublished {
+  /* Unpublished nodes */
+  /* background-color: #fff4f4; */
+  /* Drupal core uses a #fff4f4 background */
+}
+/* line 61, ../sass/nodes.scss */
+.node-unpublished p.unpublished {
+  /* The word "Unpublished" displayed underneath the content. */
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+}
+/* line 55, /Users/lbyrwa/Sites/rcsm-ocg/sites/all/themes/ocg/sass/_custom.scss */
+.lt-ie8 .node-unpublished p.unpublished > * {
+  position: relative;
+}
+
+/* line 67, ../sass/nodes.scss */
+span.date-display-single {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/* line 74, ../sass/nodes.scss */
+h1 span.date-display-single,
+h2 span.date-display-single {
+  font-size: inherit;
+}
+
+/*
+ * Resources Pages
+ */
+/* line 83, ../sass/nodes.scss */
+.page-resources .archive .views-row {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+/* line 86, ../sass/nodes.scss */
+.page-resources .archive .views-row h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*
+ * Publications Node Pages
+ */
+/* line 99, ../sass/nodes.scss */
+.node-type-publication .node {
+  margin-bottom: 20px;
+}
+/* line 102, ../sass/nodes.scss */
+.node-type-publication .field-name-title {
+  padding: 10px 0;
+}
+/* line 104, ../sass/nodes.scss */
+.node-type-publication .field-name-title span {
+  font-size: 18.2px;
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.1em;
+}
+/* line 111, ../sass/nodes.scss */
+.node-type-publication .field-journal-name,
+.node-type-publication .field-name-field-publication-journal {
+  padding-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/*
+ * Publications Landing Page
+ */
+/* line 122, ../sass/nodes.scss */
+.page-news-publications .intro {
+  border-bottom: 1px dotted #d7d7d7;
+  padding-bottom: 25px;
+  margin-bottom: 22px !important;
+}
+
+/*
+ * Captions Fields
+ */
+/* line 135, ../sass/nodes.scss */
+.page-taxonomy-term .imgleft,
+.node-type-publication .imgleft,
+.node-type-news .imgleft {
+  /*     float: left; */
+  padding-right: 20px;
+  padding-bottom: 7px;
+}
+/* line 139, ../sass/nodes.scss */
+.page-taxonomy-term .imgleft img,
+.node-type-publication .imgleft img,
+.node-type-news .imgleft img {
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+/* line 147, ../sass/nodes.scss */
+.page-taxonomy-term .image-caption,
+.page-taxonomy-term .field-name-field-publication-image-caption,
+.page-taxonomy-term .field-name-field-news-image-caption,
+.node-type-publication .image-caption,
+.node-type-publication .field-name-field-publication-image-caption,
+.node-type-publication .field-name-field-news-image-caption,
+.node-type-news .image-caption,
+.node-type-news .field-name-field-publication-image-caption,
+.node-type-news .field-name-field-news-image-caption {
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: #774928;
+  /*     float: left; */
+  padding-bottom: 10px;
+}
+/* line 157, ../sass/nodes.scss */
+.page-taxonomy-term .view-mode-full .field-type-image,
+.node-type-publication .view-mode-full .field-type-image,
+.node-type-news .view-mode-full .field-type-image {
+  float: none;
+  padding: 0;
+}

@@ -1,0 +1,922 @@
+/**
+ * @file
+ * Views Styling
+ */
+/*
+ * Views' admin tabs
+ *
+ * The views admin tabs use the same classes as the secondary tabs. We prevent
+ * some of our tab styling from bleeding into (and breaking) the Views admin
+ * pages. If your sub-theme isn't used for admin pages, you can remove this
+ * entire section.
+ */
+/* line 18, ../sass/views-styles.scss */
+.views-displays .secondary li {
+  float: none;
+  margin: 0 6px 0;
+}
+/* line 24, ../sass/views-styles.scss */
+.views-displays .secondary a:link,
+.views-displays .secondary a:visited {
+  text-shadow: none;
+  padding: 2px 7px 3px;
+}
+/* line 29, ../sass/views-styles.scss */
+.views-displays .secondary .open > a {
+  -webkit-border-radius: 7px 7px 0 0;
+  -moz-border-radius: 7px 7px 0 0;
+  -ms-border-radius: 7px 7px 0 0;
+  -o-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
+}
+/* line 31, ../sass/views-styles.scss */
+.views-displays .secondary .open > a:hover {
+  color: #333;
+}
+/* line 36, ../sass/views-styles.scss */
+.views-displays .secondary .action-list li {
+  margin: 0;
+}
+/* line 38, ../sass/views-styles.scss */
+.views-displays .secondary .action-list li:first-child {
+  -webkit-border-radius: 0 7px 0 0;
+  -moz-border-radius: 0 7px 0 0;
+  -ms-border-radius: 0 7px 0 0;
+  -o-border-radius: 0 7px 0 0;
+  border-radius: 0 7px 0 0;
+}
+/* line 41, ../sass/views-styles.scss */
+.views-displays .secondary .action-list li:last-child {
+  -webkit-border-radius: 0 0 7px 7px;
+  -moz-border-radius: 0 0 7px 7px;
+  -ms-border-radius: 0 0 7px 7px;
+  -o-border-radius: 0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
+}
+
+/* line 47, ../sass/views-styles.scss */
+.view {
+  overflow: hidden;
+}
+/* line 49, ../sass/views-styles.scss */
+.view .views-row {
+  margin-bottom: 10px;
+}
+
+/* background corner not showing on firefox */
+/* line 56, ../sass/views-styles.scss */
+.corner .views-row {
+  position: relative;
+  width: 230px;
+  float: left;
+  overflow: hidden;
+  background: #f2f2f2;
+  background: -webkit-linear-gradient(225deg, #f2f2f2, #f2f2f2), -webkit-linear-gradient(45deg, #f2f2f2, #f2f2f2), -webkit-linear-gradient(135deg, transparent 20px, #f2f2f2 15px);
+  background: -moz-linear-gradient(225deg, #f2f2f2, #f2f2f2), -moz-linear-gradient(45deg, #f2f2f2, #f2f2f2), -moz-linear-gradient(135deg, transparent 20px, #f2f2f2 15px);
+  background: -o-linear-gradient(225deg, #f2f2f2, #f2f2f2), -o-linear-gradient(45deg, #f2f2f2, #f2f2f2), -o-linear-gradient(135deg, transparent 20px, #f2f2f2 15px);
+  background-image: linear-gradient(225deg, #f2f2f2, #f2f2f2), linear-gradient(45deg, #f2f2f2, #f2f2f2), linear-gradient(135deg, #f2f2f2 95%, transparent 10%);
+  border: none;
+  -webkit-background-size: 55% 100%, 55% 55%, 55% 55%;
+  -moz-background-size: 55% 100%, 55% 55%, 55% 55%;
+  background-size: 55% 100%, 55% 55%, 55% 55%;
+  background-position: 0 0, 100% 0, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 86, ../sass/views-styles.scss */
+.corner .view-e-newsletter .views-row {
+  width: 223px;
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f1f1f1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
+  /* IE6-9 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 97, ../sass/views-styles.scss */
+.corner .view-e-newsletter .views-row:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-width: 23px 23px 0 0;
+  border-style: solid;
+  border-color: transparent #fff transparent #fff;
+  display: block;
+  width: 0;
+}
+
+/* line 110, ../sass/views-styles.scss */
+.corner.three-col {
+  margin-top: -25px;
+  overflow: visible;
+}
+/* line 115, ../sass/views-styles.scss */
+.corner.three-col h2.block-title {
+  color: #774928;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-weight: 700;
+  padding-bottom: 30px;
+  font-size: 36px;
+}
+/* line 121, ../sass/views-styles.scss */
+.fontface .corner.three-col h2.block-title {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 127, ../sass/views-styles.scss */
+.corner.three-col .views-row {
+  width: 297px;
+  margin-right: 14px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+/* line 135, ../sass/views-styles.scss */
+.corner.three-col .views-row .views-field-title,
+.corner.three-col .views-row .views-field-body,
+.corner.three-col .views-row .views-field-view-node {
+  padding: 0 15px;
+}
+/* line 139, ../sass/views-styles.scss */
+.corner.three-col .views-row .views-field-body {
+  height: 190px;
+}
+/* line 141, ../sass/views-styles.scss */
+.corner.three-col .views-row .views-field-body p {
+  line-height: 18px;
+}
+/* line 146, ../sass/views-styles.scss */
+.corner.three-col .views-row .views-field-view-node {
+  padding-bottom: 20px;
+}
+/* line 151, ../sass/views-styles.scss */
+.corner.three-col .views-row img {
+  width: 290px;
+  margin-left: 3px;
+  box-shadow: 0 3px 4px #b4b4b4;
+}
+/* line 157, ../sass/views-styles.scss */
+.corner.three-col .views-row .views-field-title {
+  padding-top: 20px;
+  font-size: 22.1px;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-weight: 700;
+  padding-bottom: 18px;
+  line-height: 22px;
+  height: 66px;
+}
+/* line 165, ../sass/views-styles.scss */
+.fontface .corner.three-col .views-row .views-field-title {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 169, ../sass/views-styles.scss */
+.corner.three-col .views-row .views-field-title a {
+  font-weight: normal;
+}
+/* line 172, ../sass/views-styles.scss */
+.corner.three-col .views-row .views-field-title span {
+  color: #990000;
+}
+
+/* line 179, ../sass/views-styles.scss */
+.corner.three-col .views-row {
+  background: url(../images/three-col-bkg.png) no-repeat left bottom;
+  moz-background-size: 100%;
+  webkit-background-size: 100%;
+  background-size: 100%;
+}
+/* line 184, ../sass/views-styles.scss */
+.corner.three-col .views-row .data-matrix {
+  right: 3px;
+}
+
+/* line 189, ../sass/views-styles.scss */
+.two-col {
+  margin-bottom: 10px;
+}
+/* line 191, ../sass/views-styles.scss */
+.two-col h2.block-title {
+  color: #774928;
+  font-weight: normal;
+  line-height: 28px;
+}
+/* line 197, ../sass/views-styles.scss */
+.two-col .view {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  width: 440px;
+  border-top: 1px solid #e1e1e1;
+  float: left;
+  margin-top: -5px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 209, ../sass/views-styles.scss */
+.two-col .view .views-row {
+  overflow: hidden;
+}
+/* line 213, ../sass/views-styles.scss */
+.two-col .view .views-field-title .right {
+  width: 360px;
+  padding-left: 0;
+}
+/* line 216, ../sass/views-styles.scss */
+.two-col .view .views-field-title .right .title {
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #990000;
+}
+/* line 221, ../sass/views-styles.scss */
+.fontface .two-col .view .views-field-title .right .title {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 227, ../sass/views-styles.scss */
+.two-col .view .views-field-title .right a .link {
+  color: #323232;
+}
+
+/* line 234, ../sass/views-styles.scss */
+.two-col.left {
+  padding-right: 30px;
+}
+
+/* line 238, ../sass/views-styles.scss */
+.corner .views-row-last {
+  margin-right: 0!important;
+}
+
+/* line 243, ../sass/views-styles.scss */
+.view-projects h3 {
+  color: #990000;
+}
+
+/* line 248, ../sass/views-styles.scss */
+#block-views-project-features-block {
+  overflow: visible;
+}
+/* line 250, ../sass/views-styles.scss */
+#block-views-project-features-block .view-project-features {
+  overflow: visible;
+}
+/* line 252, ../sass/views-styles.scss */
+#block-views-project-features-block .view-project-features .views-row {
+  overflow: visible;
+}
+
+/*
+ * Accordion Views Custom Styles
+ */
+/* line 261, ../sass/views-styles.scss */
+html.js fieldset.collapsible .fieldset-legend {
+  padding-left: 0;
+}
+
+/* line 265, ../sass/views-styles.scss */
+html.js fieldset.collapsed {
+  height: auto;
+  margin-bottom: 1px;
+  overflow: hidden;
+  height: 38px !important;
+}
+
+/* line 272, ../sass/views-styles.scss */
+.ui-widget {
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 13px;
+}
+
+/* line 277, ../sass/views-styles.scss */
+.view.view-taxonomy-term {
+  overflow: visible;
+}
+
+/* line 282, ../sass/views-styles.scss */
+.views-accordion p {
+  font-size: 13px;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  line-height: 20px;
+}
+/* line 288, ../sass/views-styles.scss */
+.views-accordion .views-row {
+  margin-bottom: 0;
+}
+/* line 292, ../sass/views-styles.scss */
+.views-accordion fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+/* line 299, ../sass/views-styles.scss */
+.views-accordion legend {
+  background-image: none;
+  border: none;
+  width: 100%;
+  margin-bottom: 1px;
+  overflow: hidden;
+  border-radius: 0;
+  line-height: 1em;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+/* line 310, ../sass/views-styles.scss */
+.fontface .views-accordion legend {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 314, ../sass/views-styles.scss */
+.views-accordion legend a {
+  color: #fff !important;
+  padding-left: 1.3em;
+  padding-top: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+/* line 320, ../sass/views-styles.scss */
+.views-accordion legend a:hover {
+  color: #fff!important;
+}
+/* line 323, ../sass/views-styles.scss */
+.views-accordion legend a a {
+  padding: 0;
+}
+/* line 327, ../sass/views-styles.scss */
+.views-accordion legend:hover {
+  background: #796245;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #796245), color-stop(40%, #7b664c), color-stop(100%, #624f38));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE8+ */
+}
+/* line 341, ../sass/views-styles.scss */
+.views-accordion .fieldset-legend span.summary {
+  display: none;
+}
+/* line 345, ../sass/views-styles.scss */
+.views-accordion fieldset.collapsed legend {
+  background: #969696;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #969696), color-stop(40%, #939393), color-stop(100%, #797979));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #969696 1%, #939393 40%, #797979 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#797979',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#797979',GradientType=0 );
+  /* IE8+ */
+}
+/* line 357, ../sass/views-styles.scss */
+.views-accordion fieldset legend {
+  background: #796245;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #796245), color-stop(40%, #7b664c), color-stop(100%, #624f38));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE8+ */
+}
+/* line 369, ../sass/views-styles.scss */
+.views-accordion .ui-accordion-content {
+  border: none;
+  font-size: 13px;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+}
+/* line 375, ../sass/views-styles.scss */
+.views-accordion .fieldset-wrapper {
+  padding: 20px 50px;
+  width: 380px !important;
+  overflow: visible;
+}
+
+/* line 383, ../sass/views-styles.scss */
+fieldset.collapse-processed span.fieldset-legend {
+  background: url(../images/expanded-accordion.png) no-repeat 5px 60% !important;
+}
+
+/* line 389, ../sass/views-styles.scss */
+fieldset.collapsed span.fieldset-legend {
+  background: url(../images/default-accordion.png) no-repeat 5px 50% !important;
+  margin-left: 0;
+}
+
+/* line 397, ../sass/views-styles.scss */
+.page-news-publications-e-newsletters .views-accordion h2 {
+  color: #774928;
+}
+/* line 399, ../sass/views-styles.scss */
+.page-news-publications-e-newsletters .views-accordion h2 span {
+  color: #990000;
+}
+/* line 403, ../sass/views-styles.scss */
+.page-news-publications-e-newsletters .views-accordion h3 a.toggle {
+  background-image: none;
+  border: none;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0;
+  line-height: 1em;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-size: 18px;
+  padding-left: 1.3em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff !important;
+  display: block;
+  font-weight: 700;
+  background: #796245;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #796245), color-stop(40%, #7b664c), color-stop(100%, #624f38));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE8+ */
+}
+/* line 427, ../sass/views-styles.scss */
+.fontface .page-news-publications-e-newsletters .views-accordion h3 a.toggle {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 431, ../sass/views-styles.scss */
+.page-news-publications-e-newsletters .views-accordion h3 a.toggle:hover {
+  background: #796245;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #796245), color-stop(40%, #7b664c), color-stop(100%, #624f38));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE8+ */
+}
+/* line 444, ../sass/views-styles.scss */
+.page-news-publications-e-newsletters .views-accordion h3.collapsed a {
+  background: #969696;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #969696), color-stop(40%, #939393), color-stop(100%, #797979));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #969696 1%, #939393 40%, #797979 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#797979',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#797979',GradientType=0 );
+  /* IE8+ */
+}
+/* line 454, ../sass/views-styles.scss */
+.page-news-publications-e-newsletters .views-accordion h3.collapsed a:hover {
+  background: #796245;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #796245), color-stop(40%, #7b664c), color-stop(100%, #624f38));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE8+ */
+}
+/* line 467, ../sass/views-styles.scss */
+.page-news-publications-e-newsletters .views-accordion .view-grouping-content {
+  padding: 20px 50px;
+}
+/* line 469, ../sass/views-styles.scss */
+.page-news-publications-e-newsletters .views-accordion .view-grouping-content .views-row {
+  margin-bottom: 15px;
+}
+/* line 473, ../sass/views-styles.scss */
+.page-news-publications-e-newsletters .views-accordion .view-grouping-content .views-field-title span {
+  text-transform: uppercase;
+  color: #646464;
+  font-size: 21px;
+  margin-bottom: 6px;
+}
+/* line 479, ../sass/views-styles.scss */
+.page-news-publications-e-newsletters .views-accordion .view-grouping-content .views-field-title a {
+  color: #990000 !important;
+  font-size: 19px;
+  text-transform: none;
+  line-height: 23px;
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+}
+
+/*
+ * Announcement Block Styles
+ */
+/* line 496, ../sass/views-styles.scss */
+.front .view-announcement,
+.view-announcement {
+  position: relative;
+}
+/* line 498, ../sass/views-styles.scss */
+.front .view-announcement .views-row,
+.view-announcement .views-row {
+  width: 880px;
+  padding: 20px;
+  background-repeat: repeat;
+  margin-bottom: 0;
+  background: #c45208;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #c45208 0%, #e3830c 75%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #c45208), color-stop(75%, #e3830c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #c45208 0%, #e3830c 75%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #c45208 0%, #e3830c 75%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #c45208 0%, #e3830c 75%);
+  /* IE10+ */
+  background: linear-gradient(to right, #c45208 0%, #e3830c 75%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c45208', endColorstr='#e3830c',GradientType=1 );
+  /* IE6-9 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c45208', endColorstr='#e3830c',GradientType=1 );
+  /* IE8+ */
+  background-size: 100%;
+}
+/* line 515, ../sass/views-styles.scss */
+.front .view-announcement .views-row:before,
+.view-announcement .views-row:before {
+  border-color: #E3830C #fcfeff #E3830C #fcfeff;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-width: 23px 23px 0 0;
+  border-style: solid;
+  display: block;
+  width: 0;
+}
+/* line 528, ../sass/views-styles.scss */
+.front .view-announcement span,
+.view-announcement span {
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  float: left;
+  width: 44%;
+  color: #fff;
+  background: url(../images/alert.png) left center no-repeat;
+  padding-left: 40px;
+  line-height: 30px;
+  line-height: 2;
+}
+/* line 540, ../sass/views-styles.scss */
+.fontface .front .view-announcement span, .fontface
+.view-announcement span {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 546, ../sass/views-styles.scss */
+.front .view-announcement .views-field-body,
+.view-announcement .views-field-body {
+  margin-bottom: 0;
+  float: right;
+  width: 45%;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  color: #fff;
+  padding-right: 50px;
+}
+/* line 553, ../sass/views-styles.scss */
+.front .view-announcement .views-field-body p,
+.view-announcement .views-field-body p {
+  margin-bottom: 0;
+}
+/* line 558, ../sass/views-styles.scss */
+.front .view-announcement .view-header,
+.view-announcement .view-header {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  z-index: 1;
+}
+/* line 563, ../sass/views-styles.scss */
+.front .view-announcement .view-header a,
+.view-announcement .view-header a {
+  background-image: url(../images/x-button.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: block;
+  height: 32px;
+  width: 32px;
+}
+/* line 570, ../sass/views-styles.scss */
+.front .view-announcement .view-header a:hover,
+.view-announcement .view-header a:hover {
+  background-position: 0 -32px;
+}
+
+/* line 579, ../sass/views-styles.scss */
+.page-programs-cgci-projects .view-projects p {
+  margin-bottom: 5px;
+}
+
+/*
+ * Views on News and Pubs Landing Page Custom Styles
+ */
+/* line 589, ../sass/views-styles.scss */
+.landing-page.view-publications {
+  width: 470px;
+}
+/* line 592, ../sass/views-styles.scss */
+.landing-page.view-publications .right {
+  width: 300px;
+}
+
+/* line 597, ../sass/views-styles.scss */
+#block-views-e-newsletter-block-1.right {
+  padding-left: 0;
+}
+
+/* line 601, ../sass/views-styles.scss */
+#block-views-publications-block-2.left {
+  padding-right: 0;
+}
+
+/* line 606, ../sass/views-styles.scss */
+.landing-page.view-e-newsletter h2.block-title {
+  font-size: 15.6px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #774928;
+  padding: 9px 15px 5px;
+  border-bottom: 1px solid #fae21d;
+  background: #faf4bf;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #faf4bf 0%, #fef6d5 30%, #faec7a 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #faf4bf), color-stop(30%, #fef6d5), color-stop(100%, #faec7a));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #faf4bf 0%, #fef6d5 30%, #faec7a 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #faf4bf 0%, #fef6d5 30%, #faec7a 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #faf4bf 0%, #fef6d5 30%, #faec7a 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #faf4bf 0%, #fef6d5 30%, #faec7a 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faf4bf', endColorstr='#faec7a',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 621, ../sass/views-styles.scss */
+.fontface .landing-page.view-e-newsletter h2.block-title {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 627, ../sass/views-styles.scss */
+.landing-page.view-e-newsletter .views-row .field-content {
+  padding: 5px 20px;
+  margin-bottom: 0;
+}
+/* line 632, ../sass/views-styles.scss */
+.landing-page.view-e-newsletter .views-row .views-field-field-issue-date .field-content {
+  padding: 0;
+}
+/* line 636, ../sass/views-styles.scss */
+.landing-page.view-e-newsletter p.field-content {
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+}
+/* line 640, ../sass/views-styles.scss */
+.landing-page.view-e-newsletter h3.field-content {
+  color: #767676;
+}
+/* line 644, ../sass/views-styles.scss */
+.landing-page.view-e-newsletter .views-field-title-1 a {
+  color: #990000 !important;
+}
+/* line 648, ../sass/views-styles.scss */
+.landing-page.view-e-newsletter .views-field-title p {
+  color: #774928;
+  font-size: 15px;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-weight: 700;
+}
+/* line 653, ../sass/views-styles.scss */
+.fontface .landing-page.view-e-newsletter .views-field-title p {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 659, ../sass/views-styles.scss */
+.landing-page.view-e-newsletter .views-row {
+  padding-bottom: 20px;
+}
+
+/*
+ * Resources Archive View Styles
+ */
+/* line 668, ../sass/views-styles.scss */
+.views-field-field-resource-link {
+  padding-bottom: 10px;
+}
+/* line 670, ../sass/views-styles.scss */
+.views-field-field-resource-link h3 {
+  font-size: 18.2px;
+}
+
+/*
+ * Last Updated View Styles
+ */
+/* line 679, ../sass/views-styles.scss */
+#block-views-last-updated-block {
+  position: absolute;
+  bottom: 30px;
+}
+/* line 682, ../sass/views-styles.scss */
+#block-views-last-updated-block .view-last-updated {
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 12px;
+  color: #646464;
+}
+
+/*
+ * Program tag with Abbreviated Title View Styles
+ */
+/* line 693, ../sass/views-styles.scss */
+.view-program-abbreviation {
+  float: left;
+  clear: both;
+  color: #7d7d7d;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px 5px 0;
+}
+/* line 700, ../sass/views-styles.scss */
+.view-program-abbreviation a {
+  width: 70px;
+  display: inline-block;
+  background-color: #767676;
+  text-align: center;
+  color: #fff !important;
+  font-weight: bold;
+  margin-right: 10px;
+}
+/* line 708, ../sass/views-styles.scss */
+.view-program-abbreviation a:hover {
+  color: #fff !important;
+}
+
+/*
+ * Individual E-Newsletter View Styles
+ */
+/* line 720, ../sass/views-styles.scss */
+.view-taxonomy-term .view-content .views-row {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  border-bottom: 5px solid #e1e1e1;
+  overflow: visible;
+}
+/* line 725, ../sass/views-styles.scss */
+.view-taxonomy-term .view-content .views-row img {
+  float: left;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+/* line 731, ../sass/views-styles.scss */
+.view-taxonomy-term .view-content .views-row .views-field-title h2 {
+  color: #990000;
+  font-size: 22px;
+  line-height: 25px;
+}
+/* line 735, ../sass/views-styles.scss */
+.view-taxonomy-term .view-content .views-row .views-field-title h2 span {
+  color: #646464;
+  font-size: 26px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+/* line 744, ../sass/views-styles.scss */
+.view-taxonomy-term .view-content .views-row-last {
+  border-bottom: none;
+}
+/* line 748, ../sass/views-styles.scss */
+.view-taxonomy-term .attachment-before {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #e1e1e1;
+}
+/* line 752, ../sass/views-styles.scss */
+.view-taxonomy-term .attachment-before .views-row {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+/* line 757, ../sass/views-styles.scss */
+.view-taxonomy-term .attachment-before h3 {
+  margin-bottom: 22px;
+}
+/* line 759, ../sass/views-styles.scss */
+.view-taxonomy-term .attachment-before h3 span {
+  color: #646464;
+  font-size: 21px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+/* line 765, ../sass/views-styles.scss */
+.view-taxonomy-term .attachment-before h3 a {
+  color: #990000 !important;
+  font-size: 19px;
+  line-height: 23px;
+}
+/* line 772, ../sass/views-styles.scss */
+.view-taxonomy-term .views-field-field-enews-physician {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+/* line 778, ../sass/views-styles.scss */
+.view-taxonomy-term .view-e-newsletter-issue-title .views-row {
+  padding-bottom: 0;
+}
+/* line 780, ../sass/views-styles.scss */
+.view-taxonomy-term .view-e-newsletter-issue-title .views-row h1 {
+  color: #774928;
+}
+/* line 782, ../sass/views-styles.scss */
+.view-taxonomy-term .view-e-newsletter-issue-title .views-row h1 span {
+  color: #990000;
+}
