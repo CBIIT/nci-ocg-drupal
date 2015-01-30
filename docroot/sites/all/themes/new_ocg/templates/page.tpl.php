@@ -115,9 +115,12 @@
 
   </div>
 
-  <?php print render($page['footer']); ?>
-
 </div>
+  <div class="footer-wrap">
+    <div class="footer-wrap-inner">
+      <?php print render($page['footer']); ?>
+    </div><!-- /footer-wrap-inner -->
+  </div><!-- /footer-wrap -->
 </div>
 
 <?php print render($page['bottom']); ?>
