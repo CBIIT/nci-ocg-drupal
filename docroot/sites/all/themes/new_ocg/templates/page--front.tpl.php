@@ -76,30 +76,6 @@
     <div id="pre-content">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
-      <?php print render($page['pre_content']); ?>
-      <div id="block-block-7" class="block block-block addthis first odd">
-        <?php 
-        if ((arg(0) == 'node') && (is_numeric(arg(1)))) {
-          $nid = arg(1);
-        } else {
-          $nid = '';
-        }
-        ?>
-        <?php 
-        if (!empty($nid)) { 
-          $mailurl = 'printmail/' . $nid;
-          $printurl = 'print/' . $nid;
-        } else { 
-          $mailurl = 'printmail';
-          $printurl = 'print';
-        }
-        $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-        if (!strpos($url,'printmail')) {
-          print '<a href="/' . $mailurl . '" style="border-left:none;border-right:1px dotted #d2d2d2;margin-right:0;padding-right:5px;">Email</a>';
-        }
-        print '<a href="/' . $printurl . '" style="border-left:none;padding-left:0;">Print</a>';
-        ?>
-      </div>
     </div>
     <div id="content" class="column" role="main">
       <a id="main-content"></a>
@@ -136,6 +112,14 @@
         <?php print $sidebar_second; ?>
       </aside>
     <?php endif; ?>
+    
+    <div id="postscript-first">
+        <?php print render($page['postscript_first']); ?>
+      </div><!-- /#postscript-first -->
+      
+      <div id="postscript-second">
+        <?php print render($page['postscript_second']); ?>
+      </div><!-- /#postscript-second -->
 
   </div>
 
