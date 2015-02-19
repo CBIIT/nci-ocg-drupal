@@ -53,7 +53,11 @@ $(document).ready (function (){
  //   $(this).css("width", width);
  //    } );
 
-
+// Center Pages tabs
+  var hash = window.location.hash;
+  var url = window.location.hash.slice(1);
+    
+  //$(document.getElementById(url)).removeClass('collapsed');
 	
 }); // end doc ready
 
