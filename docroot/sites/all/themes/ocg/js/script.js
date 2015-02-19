@@ -57,7 +57,7 @@ $(document).ready (function (){
   var hash = window.location.hash;
   var url = window.location.hash.slice(1);
     
-  //$(document.getElementById(url)).removeClass('collapsed');
+  $(document.getElementById(url)).removeClass('collapsed');
 	
 }); // end doc ready
 
