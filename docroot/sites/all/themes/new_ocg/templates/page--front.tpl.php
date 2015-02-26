@@ -96,7 +96,7 @@
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>
-      
+    
     <div id="navigation">
 
       <?php print render($page['navigation']); ?>
