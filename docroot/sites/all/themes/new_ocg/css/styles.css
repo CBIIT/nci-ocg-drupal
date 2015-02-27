@@ -3039,6 +3039,16 @@ span.date-display-single {
 }
 
 /* line 1914, ../sass/components/_misc.scss */
+.view-e-newsletter span.date-display-single {
+  font-size: inherit;
+}
+
+/* line 1918, ../sass/components/_misc.scss */
+.view-e-newsletter .field-content {
+  font-size: 0.750em;
+}
+
+/* line 1922, ../sass/components/_misc.scss */
 .front #postscript-first .two-col .view .views-field-title, .front #postscript-second .two-col .view .views-field-title {
   font-size: 1.125em;
   line-height: 1.250em;
@@ -3047,24 +3057,24 @@ span.date-display-single {
   margin-top: 0px;
 }
 
-/* line 1922, ../sass/components/_misc.scss */
+/* line 1930, ../sass/components/_misc.scss */
 .fontface .front #postscript-first .two-col .view .views-field-title, .fontface .front #postscript-second .two-col .view .views-field-title {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
-/* line 1927, ../sass/components/_misc.scss */
+/* line 1935, ../sass/components/_misc.scss */
 #header, #content, #navigation, #postscript-first, #postscript-second, .region-sidebar-first, .region-sidebar-second, #footer {
   word-wrap: break-word;
 }
 
-/* line 1931, ../sass/components/_misc.scss */
+/* line 1939, ../sass/components/_misc.scss */
 .front #postscript-first .two-col .view p, .front #postscript-second .two-col .view p {
   margin: 0px;
   font-size: 15px;
 }
 
-/* line 1936, ../sass/components/_misc.scss */
+/* line 1944, ../sass/components/_misc.scss */
 #footer {
   padding-left: 0;
 }
