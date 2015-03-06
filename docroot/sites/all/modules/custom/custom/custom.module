@@ -115,3 +115,9 @@ function get_nodes_of_type($content_type) {
     }
 }
 
+/**
+ * Implements hook_form_FORMID_alter
+ */
+function custom_form_views_ui_config_item_form_alter(&$form, &$form_state, $form_id) {
+  $form['options']['content']['#wysiwyg'] = TRUE;
+}
