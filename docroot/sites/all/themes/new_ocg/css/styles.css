@@ -2170,9 +2170,9 @@ header {
   background-repeat: repeat-x;
   background-position: left bottom;
   background-color: #900 !important;
-  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+  font-weight: normal;
   font-size: 1em;
-  font-weight: 700;
   padding-right: 1%;
   width: 250px;
 }
@@ -2187,9 +2187,9 @@ header {
 /* line 1172, ../sass/components/_misc.scss */
 #block-superfish-2 .menu li.firstandlast {
   color: #FFF;
-  font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+  font-weight: normal;
   font-size: 16px;
-  font-weight: 700;
   background: none;
 }
 
