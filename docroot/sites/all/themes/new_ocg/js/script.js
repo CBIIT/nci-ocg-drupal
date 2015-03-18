@@ -53,7 +53,20 @@ $(document).ready (function (){
  //   $(this).css("width", width);
  //    } );
 
-
+// Center Pages tabs
+  var hash = window.location.hash;
+  var url = window.location.hash.slice(1);
+  if(url){ 
+    $(document.getElementById(url)).removeClass('collapsed');
+  }
+  
+  $('.fieldset-title').click(function () {
+      console.log('Hello');
+      var $this = $(this);
+      $('fieldset').addClass('collapsed');
+      $this.parent().parent().parent().removeClass('collapsed');
+      history.replaceState(null, '', '#' + $this.parent().parent().parent().attr('id'));
+  });
 	
 }); // end doc ready
 
