@@ -2598,7 +2598,7 @@ span.noicon {
 
 /* line 1527, ../sass/components/_misc.scss */
 #footer {
-  width: 1260px;
+  max-width: 1260px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2816,11 +2816,6 @@ span.noicon {
   padding-bottom: 30px;
 }
 
-/* line 1718, ../sass/components/_misc.scss */
-.not-front .breadcrumb {
-  padding-top: 40px;
-}
-
 /* line 1722, ../sass/components/_misc.scss */
 .fontface h2 {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
@@ -2859,7 +2854,7 @@ span.noicon {
 
 /* line 1753, ../sass/components/_misc.scss */
 .not-front .addthis {
-  margin-top: -55px;
+  margin-top: -75px;
 }
 
 /* line 1757, ../sass/components/_misc.scss */
@@ -4072,6 +4067,78 @@ span.newtab {
   text-decoration: underline;
 }
 
+/* line 2811, ../sass/components/_misc.scss */
+.responsive-menus.responsified span.toggler {
+  background: #614E37;
+  border-radius: 0;
+  box-shadow: 2px 2px 2px #614E37;
+}
+
+/* line 2817, ../sass/components/_misc.scss */
+.responsive-menus.responsive-menus-0-0 span.toggler {
+  background: #900;
+  border-radius: 0;
+  box-shadow: 2px 2px 2px #900;
+}
+
+/* line 2823, ../sass/components/_misc.scss */
+.responsive-menus.responsified .responsive-menus-simple {
+  background: #614E37;
+}
+
+@media all and (max-width: 800px) {
+  /* line 2828, ../sass/components/_misc.scss */
+  #navigation {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+  }
+
+  /* line 2834, ../sass/components/_misc.scss */
+  #navigation li.sf-depth-1 ul {
+    background-image: none;
+    top: 0;
+    padding-left: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: inherit;
+    overflow: hidden;
+  }
+
+  /* line 2845, ../sass/components/_misc.scss */
+  #navigation li.sf-depth-1.first ul {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  /* line 2850, ../sass/components/_misc.scss */
+  #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1 {
+    margin-top: 0;
+  }
+
+  /* line 2854, ../sass/components/_misc.scss */
+  #menu-452-1, #menu-453-1, #menu-427-1, #menu-546-1 {
+    width: 100% !important;
+  }
+
+  /* line 2858, ../sass/components/_misc.scss */
+  .responsive-menus.responsive-menus-0-0 a.sf-depth-1.menuparent {
+    display: none;
+  }
+}
+@media all and (max-width: 980px) {
+  /* line 2865, ../sass/components/_misc.scss */
+  .nci-inner {
+    height: auto;
+    padding-bottom: 4%;
+  }
+
+  /* line 2870, ../sass/components/_misc.scss */
+  .nci-inner img {
+    width: 50%;
+  }
+}
 /**
  * @file
  * Print styling

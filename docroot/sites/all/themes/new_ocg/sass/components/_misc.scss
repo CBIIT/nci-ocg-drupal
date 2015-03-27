@@ -806,6 +806,24 @@ tr.selected td {
   }
 }
 
+h2 {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-weight: 700;
+    line-height: 28px;
+    color: #900;
+}
+
+.fontface h1.title, .fontface h2.node-title, .fontface h2.block-title, .fontface h2.title, .fontface h2.comment-form, .fontface h3.title {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+#page {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 3%, rgba(255, 245, 155, 0) 70%, rgba(255, 241, 112, 0.25) 99%, rgba(255, 241, 110, 0.25) 100%) repeat scroll 0% 0% transparent;
+}
+
 #page-inner {
   margin-left: auto;
   margin-right: auto;
@@ -836,6 +854,12 @@ tr.selected td {
   /* IE8+ */
 }
 
+.nci-inner {
+  max-width: 1260px;
+  margin: auto;
+  height: 39px;
+}
+
 .nci-inner a {
   text-align: center;
   width:100%;
@@ -854,12 +878,13 @@ tr.selected td {
   max-width: 100%;
   background-image: url(../images/continue-bkg.png);
   background-repeat: repeat;
-  height: 6.90em;
+  height: 5.2em;
 }
 
 .disappear {
-  background: url(../images/header.png) no-repeat center top;
-  height: 8em;
+  background: url(../images/header.png) no-repeat 70% top;
+  height: 130px;
+  border-bottom: solid 1px #EEDF6E;
 }
 
 header {
@@ -870,6 +895,7 @@ header {
 
 #logo {
   padding: 1em 0;
+  padding-top: 1.25em;
 }
 
 .region-header {
@@ -880,13 +906,23 @@ header {
   overflow: hidden;
 }
 
+#block-menu-menu-utility-menu.block {
+  margin-bottom: 0.5em;
+}
+
 #block-menu-menu-utility-menu {
   float: right;
 }
 
 #block-menu-menu-utility-menu ul {
   text-transform: uppercase;
-  font-size: .875em;
+  font-size: 14px;
+  margin-top: .75em;
+}
+
+.fontface .utility ul.menu {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
 }
 
 #block-menu-menu-utility-menu li {
@@ -921,12 +957,16 @@ header {
   text-decoration: underline;
 }
 
+#block-search-form {
+  line-height: 0.75em
+}
+
 #block-search-form form {
   float: right;
 }
 
 .block-search input[type="text"], #block-search-form input[type="text"] {
-    background-image: url("/sites/all/themes/new_ocg/images/search-input.gif");
+    background-image: url("../images/search-input.gif");
     background-repeat: no-repeat;
     background-position: 0.313em 0.438em;
     padding: 0.188em 0.313em 0.188em 1.563em;
@@ -947,8 +987,16 @@ header {
     font-weight: 700;
     color: #900;
     text-transform: uppercase;
-    font-size: 0.875em;
+    font-size: 14px;
     padding-right: 0;
+}
+
+#region-navigation {
+  position: relative;
+}
+
+#block-superfish-1 {
+  height: 2.750em;
 }
 
 #navigation .menu li {
@@ -957,8 +1005,16 @@ header {
     list-style-type: none;
     list-style-image: none;
     text-transform: uppercase;
-    font-size: 1.250em;
-    background: url("sites/all/themes/new_ocg/images/nav-link.png") no-repeat scroll right center transparent;
+    font-size: 20px;
+    background: url("../images/nav-link.png") no-repeat scroll right center transparent;
+}
+
+#menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1 {
+  margin-top: 1em;
+}
+
+#navigation .menu li#menu-451-1 {
+  padding-left: 0;
 }
 
 .fontface #navigation ul.links li a, .fontface #navigation ul.megamenu-menu li a {
@@ -994,11 +1050,6 @@ header {
 #navigation ul.links li.last,
 #navigation ul.megamenu-menu li.last {
   background-image: none;
-}
-
-#navigation ul.links li.first,
-#navigation ul.megamenu-menu li.first {
-  padding-left: 0;
 }
 
 #navigation ul.links li.active-trail a,
@@ -1040,11 +1091,19 @@ header {
   box-shadow: none;
   margin: 0;
   padding: 0.313em 0;
+  width: 100%
+}
+
+#navigation li.sf-depth-1 ul li.sf-depth-3 {
+  background-image: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0.313em 0.938em 0 0.313em;
 }
 
 #navigation li.sf-depth-1 ul li.sf-depth-2 a {
-  font-size: 0.625em;
-  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-size: 0.75em;
+  font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: 700;
   color: #fff;
 }
@@ -1078,17 +1137,13 @@ header {
 }
 
 #navigation li.sf-depth-1.first ul {
-  width: 800px !important;
+  width: 40em !important;
   max-width: none!important;
 }
 
-#navigation li.sf-depth-1.first ul li.sf-depth-2 {
+#menu-452-1, #menu-453-1, #menu-427-1, #menu-546-1 {
+  overflow: hidden;  
   width: 23% !important;
-  overflow: hidden;
-}
-
-#navigation li.sf-depth-1.first ul li#menu-546-1 {
-  width: 27% !important;
 }
 
 #navigation ul.links li.last {
@@ -1097,4 +1152,1723 @@ header {
 
 .right {
   float: right;
+}
+
+#block-superfish-2 {
+  position: absolute;
+  bottom: 0;
+  right: .75%;
+  /*height: 2.750em;*/
+  z-index: 2;
+  text-transform: uppercase;
+  background-image: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/datasets-diagonal.png") !important;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-color: #900 !important;
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  padding-right: 1%;
+  width: 250px;
+}
+
+#block-superfish-2 .menu li {
+  padding-bottom: 1em;
+  margin-left: 1em;
+  padding-top: .75em;
+}
+
+#block-superfish-2 .menu li.firstandlast {
+  color: #FFF;
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  background: none;
+}
+
+#menu-958-2 {
+  margin-top: 1em;
+
+}
+
+#block-superfish-2 .menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  padding-right: 1%;
+}
+
+#block-superfish-2 .menu li a > .sf-sub-indicator {
+  top: 0.3em;
+  background-position: 0px -100px;
+  right: -1em;
+}
+
+#block-superfish-2 li.sf-depth-1 ul {
+  margin-top: 1.4em;
+  max-width: 99%;
+  margin-left: 0.175%;
+}
+
+.fontface .block.program-datasets .ui-accordion-header {
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+  font-weight: normal;
+}
+
+#pre-content {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 3em;
+  padding-top: 1.6em;
+}
+
+.not-front #pre-content {
+  margin-bottom: 0;
+}
+
+#block-block-3 p {
+  margin: 0;
+}
+
+.fontface .datasets {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+.datasets {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.datasets p a {
+    color: #774928;
+    text-decoration: none;
+    font-weight: normal;
+    display: block;
+    background-image: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/datasets-arrow.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 25px;
+}
+
+h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
+    margin-top: 0px;
+    color: #900;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.fontface h1.title, .fontface h2.node-title, .fontface h2.block-title, .fontface h2.title, .fontface h2.comment-form, .fontface h3.title {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+}
+
+.front #page-title {
+    font-size: 22px;
+    display: inline-block;
+    color: #774928;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+
+.front .node-2 {
+    border-bottom: 1px solid #E1E1E1;
+    margin-top: -1em;
+    margin-bottom: -2.75em;
+}
+
+.front .node-2 p {
+    color: #774928;
+    font-size: 15px;
+}
+
+.front .node-2 img {
+    margin-top: -3em
+}
+
+#content a {
+    color: #774928;
+    text-decoration: none;
+}
+
+.fontface .front .node-2 a {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+.front .node-2 .email {
+    border-left: 2px solid #C7B3A4;
+    padding-left: 5px;
+}
+
+.front .node-2 .email a {
+    color: #900 !important;
+}
+
+#block-views-programs-block-1 {
+  margin-top: -2.25em
+}
+
+h2.block-title {
+    margin: 0;
+    line-height: 1.25em;
+    text-transform: uppercase !important;
+}
+
+.corner.three-col h2.block-title {
+    color: #774928;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-weight: 700;
+    padding-bottom: 0.5em;
+    font-size: 36px;
+}
+
+.corner.three-col .views-row .views-field-title span {
+    color: #900;
+}
+
+.views-row {
+    overflow: hidden;
+    width: 100%;
+}
+
+.view .views-row {
+    margin-bottom: 10px;
+}
+
+.corner .views-row {
+    position: relative;
+    width: 230px;
+    float: left;
+    overflow: hidden;
+    background-color: transparent;
+    background-attachment: scroll, scroll, scroll;
+    background-clip: border-box, border-box, border-box;
+    background-origin: padding-box, padding-box, padding-box;
+    background-image: linear-gradient(225deg, #F2F2F2, #F2F2F2), linear-gradient(45deg, #F2F2F2, #F2F2F2), linear-gradient(135deg, #F2F2F2 95%, transparent 10%);
+    border: medium none;
+    background-size: 55% 100%, 55% 55%, 55% 55%;
+    background-position: 0px 0px, 100% 0px, 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.corner.three-col .views-row {
+width: 32.5%;
+margin-right: 14px;
+padding-bottom: 15px;
+margin-bottom: 15px;
+}
+
+.corner .views-row-last {
+    margin-right: 0px !important;
+}
+
+.corner.three-col .views-row {
+    background: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/three-col-bkg.png") no-repeat scroll left bottom / 100% auto transparent;
+}
+
+.data-matrix {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #900;
+    text-transform: uppercase;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-weight: 700;
+    width: 80px;
+    background-image: none;
+    line-height: 1em;
+    padding: 5px;
+}
+
+.corner.three-col .views-row .data-matrix {
+    right: 1%;
+}
+
+.data-matrix a {
+    color: #FFF !important;
+    background-image: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/matrix-arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 15px 5px 5px;
+    width: 70px;
+    display: block;
+}
+
+span.noicon {
+    text-indent: -999999px;
+    display: inline-block;
+    margin-left: 10px;
+    width: 14px;
+    position: absolute;
+}
+
+#block-views-programs-block-1 .views-row {
+  height: 490px;
+}
+
+.corner.three-col .views-row .views-field-title, .corner.three-col .views-row .views-field-body, .corner.three-col .views-row .views-field-view-node {
+    padding: 0px 15px;
+}
+
+.corner.three-col .views-row .views-field-title {
+    padding-top: 20px;
+    font-size: 22.1px;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.corner.three-col .views-row .views-field-body {
+    font-size: 15px;
+}
+
+.fontface .corner.three-col .views-row .views-field-title {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+.views-row .views-field-view-node {
+  bottom: 30px;
+  position: absolute;
+}
+
+#block-views-programs-block-3, #block-views-programs-block-2, #block-views-publications-block-1, #block-views-news-and-publications-block-1, #block-views-resources-block-1, #block-views-e-newsletter-block-2 {
+  width: 50%;
+  float: left;
+  position: relative;
+  margin-bottom: 0;
+}
+
+#block-views-programs-block-3 .views-field-field-image, #block-views-programs-block-2 .views-field-field-image, #block-views-programs-block-1 .views-field-field-image {
+  padding-left: 1%;
+  padding-right: 1.25%;
+}
+
+.front #main #postscript-first a, .front #main #postscript-second a, #main #content a {
+    color: #774928;
+    text-decoration: none;
+}
+
+.not-front #main{
+  background-color: #fff;
+}
+
+.two-col h2.block-title {
+    color: #774928;
+    font-weight: normal;
+    line-height: 28px;
+    font-size: 2em;
+}
+
+.two-col .view {
+    padding-top: 16px;
+    padding-bottom: 14px;
+    border-top: 1px solid #E1E1E1;
+    margin-top: -3px;
+    padding-right: 3%;
+    margin-right: 5%;
+}
+
+#block-views-programs-block-3 .views-field-field-programs-abbreviated-title, #block-views-programs-block-2 .views-field-field-programs-abbreviated-title {
+  display: inline-block;
+  float: left;
+}
+
+#block-views-programs-block-3 .views-field-title, #block-views-programs-block-2 .views-field-title {
+  display: inline;
+}
+
+#block-views-programs-block-3 .views-field-title .field-content, #block-views-programs-block-2 .views-field-title .field-content {
+  float: left;
+}
+
+#block-views-programs-block-3 .views-field-title .field-content .right, #block-views-programs-block-2 .views-field-title .field-content .right{
+  float: none;
+}
+
+.views-row .program, .views-row .program-tag {
+    overflow: hidden;
+    background-color: #767676;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    color: #FFF !important;
+    font-weight: bold;
+    margin-right: 10px;
+    float: left;
+    font-size: 14px;
+    padding-top: 0.5%;
+}
+
+.two-col .view .views-field-title .right .title {
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #900;
+}
+
+.fontface .two-col .view .views-field-title .right .title {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+.footer-wrap {
+    border-top: 3px solid #D9D9D9;
+    background: linear-gradient(to bottom, #E3830C 0%, #C55208 100%) repeat scroll 0% 0% transparent;
+}
+
+.footer-wrap-inner {
+    background-image: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/footer-bkg.png");
+    background-repeat: repeat-x;
+}
+
+#footer {
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer #block-menu-block-2 {
+  float: right;
+}
+
+#footer .block-menu-block, #block-block-6 {
+    margin-bottom: 0;
+}
+
+#block-block-5 {
+    clear: both;
+    margin-top: -30px;
+}
+
+#footer .block-menu-block ul {
+    overflow: hidden;
+    padding: 12px 0px 12px 0px;
+}
+
+#footer .block-menu-block ul li {
+    float: left;
+    width: 270px;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.fontface #footer .block-menu-block ul li {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+#footer .block-menu-block ul li.collapsed, #footer .block-menu-block ul li.expanded {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+#footer .block-menu-block ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#footer .block-menu-block ul li ul {
+    padding-top: 10px;
+    padding-left: 0px;
+}
+
+#footer .block-menu-block ul li li {
+    font-family: Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    float: none;
+    text-transform: none;
+    line-height: 17px;
+}
+
+.fontface #footer .block-menu-block ul li li {
+    font-family: Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-weight: normal;
+}
+
+.NIH p {
+    clear: both;
+    color: #FFF;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.NIH a {
+    float: left;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+#block-block-5 {
+    clear: both;
+    margin-top: -50px;
+}
+
+.policy {
+    font-size: 12px;
+    color: #FFF;
+    padding-right: 5px;
+}
+
+.policy a {
+    color: #FFF;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/*.two-sidebars #main, .sidebar-first #main {
+    background: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/middleshadow.png") repeat-y scroll 15px top #FFF;
+}*/
+
+#block-views-program-header-block .view-program-header .data-matrix {
+    width: 20%;
+    padding: 1%;
+}
+
+.view-program-header .data-matrix a {
+    text-decoration: none;
+    font-size: 15.6px;
+    width: 100%;
+    height: 170px;
+    display: block;
+    background-image: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/program-matrix.png");
+    background-position: center 40px;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 15px 0px 0px;
+}
+
+.view-program-header .data-matrix a:hover {
+  background-image: url(../images/program-matrix.png);
+  background-position: center -10%;
+}
+
+.view-program-header .corner {
+    width: 20% !important;
+    height: 128px;
+    float: right;
+    padding: 1%;
+    position: relative;
+    overflow: hidden;
+    background-color: #776349;
+    color: #FFF;
+    margin-top: -140px;
+    font-size: 12px;
+}
+
+.view-program-header .corner:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-width: 23px 23px 0px 0px;
+    border-style: solid;
+    border-color: transparent #FFF;
+    display: block;
+    width: 0px;
+}
+
+.view-program-header .corner p {
+    line-height: 19px;
+    margin-bottom: 7px;
+}
+
+.view-program-header .corner a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-weight: 700;
+}
+
+.fontface .view-program-header .corner a {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+.view-program-header h1 {
+    color: #774928;
+    text-transform: capitalize;
+}
+
+.view-program-header .views-field-title h1 {
+    font-size: 2em;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.view-program-header h1 span {
+    color: #900;
+}
+
+.intro p {
+    font-size: 15px;
+}
+
+.breadcrumb {
+    padding-bottom: 30px;
+}
+
+.not-front .breadcrumb {
+
+}
+
+.fontface h2 {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+.not-front h1.title, .not-front h2 {
+    text-transform: none;
+}
+
+.breadcrumb li {
+    display: inline;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    color: #716C61;
+}
+
+.breadcrumb li a {
+    color: #313131;
+    text-decoration: none;
+}
+
+.addthis {
+    font-family: Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-size: 12px;
+    float: right;
+    margin-top: -45px;
+    margin-bottom: 0px;
+}
+
+.not-front .addthis {
+  margin-top: -75px;
+}
+
+.addthis a {
+    padding-left: 5px;
+    margin-left: 5px;
+    border-left: 1px dotted #D2D2D2;
+    color: #323232;
+    text-decoration: none;
+}
+
+.fontface h1.title, .fontface h2.node-title, .fontface h2.block-title, .fontface h2.title, .fontface h2.comment-form, .fontface h3.title {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+.secondary-nav h2.block-title {
+    font-size: 16.5px;
+    color: #774928;
+    line-height: 16px;
+}
+
+h1.title a, h2.node-title a, h2.block-title a, h2.title a, h2.comment-form a, h3.title a {
+    color: #774928;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.secondary-nav ul.menu {
+    padding-left: 0px;
+    margin: 0px;
+    padding-top: 20px;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    font-weight: bold;
+}
+
+block-menu-block-4 li {
+    list-style: none;
+}
+
+.menu__item.is-leaf {
+  list-style: none;
+}
+
+.menu__item.is-collapsed {
+  list-style: none;
+}
+
+.secondary-nav ul.menu li {
+    padding-bottom: 5px;
+}
+
+.secondary-nav ul.menu a {
+    text-decoration: none;
+    color: #4B4B4B;
+}
+
+.secondary-nav ul.menu li a.active-trail {
+    color: #900;
+}
+
+.region-sidebar-second .corner h2.block-title {
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-size: 15.6px;
+    font-weight: 700;
+    color: #774928;
+    padding: 9px 15px 5px;
+    border-bottom: 1px solid #FAE21D;
+    background: linear-gradient(to bottom, #FAF4BF 0%, #FEF6D5 30%, #FAEC7A 100%) repeat scroll 0% 0% transparent;
+}
+
+.fontface .region-sidebar-second .corner h2.block-title {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+.region-sidebar-second .corner .view {
+    width: 100%;
+    min-height: 55px;
+    float: left;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #FFF 0%, #F1F1F1 100%) repeat scroll 0% 0% transparent;
+}
+
+.region-sidebar-second .corner .view:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-width: 23px 23px 0px 0px;
+    border-style: solid;
+    border-color: transparent #FFF;
+    display: block;
+    width: 0px;
+}
+
+.region-sidebar-second .corner .view .views-row-first {
+    padding-top: 10px;
+}
+
+.region-sidebar-second .corner .views-row {
+    padding: 10px 15px;
+    width: 190px;
+}
+
+.region-sidebar-second .corner .view .views-row-even, .region-sidebar-second .corner .view .views-row-odd {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.region-sidebar-second .corner .view .views-row {
+    background: none repeat scroll 0% 0% transparent;
+    box-shadow: none;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.region-sidebar-second .corner .view .views-row:before {
+  content: none;
+}
+
+.region-sidebar-second .corner .view .views-row:after {
+  content: none;
+}
+
+.region-sidebar-second .corner .view .views-row-even,
+.region-sidebar-second .corner .view .views-row-odd {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.region-sidebar-second .corner .view .views-row-first {
+  padding-top: 10px;
+}
+
+.region-sidebar-second .corner .view .views-row-last {
+  padding-bottom: 10px;
+}
+
+
+.region-sidebar-second .corner.email h2 {
+  color: #fff;
+  border-bottom: none;
+  padding: 10px 15px 5px;
+  background: -moz-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #990000), color-stop(40%, #a22727), color-stop(100%, #810202));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #990000 0%, #a22727 40%, #810202 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#810202',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#810202',GradientType=0 );
+  /* IE8+ */
+}
+
+
+.region-sidebar-second .data-matrix {
+  position: static;
+}
+
+.region-sidebar-second .view-program-header .corner {
+  margin-top: 0;
+}
+
+.region-sidebar-second .corner .views-row a {
+  color: #323232;
+  text-decoration: none;
+}
+
+.region-sidebar-second .corner p {
+  margin-bottom: 7px;
+}
+
+.pubs .view img {
+  box-shadow: 3px 5px 7px #b4b4b4;
+}
+
+.pubs .view .program-tag {
+  float: none;
+  display: inline-block;
+}
+
+.front #postscript-first, .region-postscript-second {
+  float: left;
+}
+
+.front .region-postscript-first, .front .region-postscript-second {
+  border-top: 5px solid #E1E1E1 !important;
+  padding-top: 3%;
+}
+
+.front #postscript-first h2.block-title, .front #postscript-second h2.block-title {
+    color: #646464 !important;
+    
+}
+
+.front #postscript-first .two-col .view .more-link, .front #postscript-second .two-col .view .more-link {
+    position: absolute;
+    right: 5%;
+}
+
+.more-link a {
+    color: #900 !important;
+    font-style: normal;
+}
+
+.front #postscript-first .two-col .view a, .front #postscript-second .two-col .view a {
+    color: #774928;
+    text-decoration: none;
+}
+
+.front #postscript-first .two-col .view .more-link a, .front #postscript-second .two-col .view .more-link a {
+    color: #900 !important;
+    font-style: normal;
+}
+
+.front #main #postscript-first a, .front #main #postscript-second a, #main #content a {
+    color: #774928;
+    text-decoration: none;
+}
+
+.front #postscript-first .two-col .view .views-row, .front #postscript-second .two-col .view .views-row {
+  padding-bottom: 2%;
+  margin-bottom: 1%;
+}
+
+.left {
+  float: left;
+}
+
+.archive .left {
+    float: left;
+    padding-right: 20px;
+}
+
+#block-views-publications-block-1 .left, #block-views-resources-block-1 .left, #block-views-e-newsletter-block-2 .left {
+  padding-right: 3%;
+}
+
+.views-row .views-field-field-publication-program, .views-row .views-field-field-news-program {
+    overflow: hidden;
+    float: none;
+}
+
+.views-row .views-field-field-publication-program .node .field-item, .views-row .views-field-field-publication-program .program-all-programs .field-item, .views-row .views-field-field-news-program .node .field-item, .views-row .views-field-field-news-program .program-all-programs .field-item {
+    overflow: hidden;
+    background-color: #767676;
+    width: 70px;
+    text-align: center;
+    color: #FFF !important;
+    font-weight: bold;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    float: left !important;
+    font-size: 14px;
+    padding-top: 0.5%;
+}
+
+span.date-display-single {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.view-e-newsletter span.date-display-single {
+  font-size: inherit;
+}
+
+.front #postscript-first .two-col .view .views-field-title, .front #postscript-second .two-col .view .views-field-title {
+    font-size: 1.125em;
+    line-height: 1.250em;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+.fontface .front #postscript-first .two-col .view .views-field-title, .fontface .front #postscript-second .two-col .view .views-field-title {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+#header, #content, #navigation, #postscript-first, #postscript-second, .region-sidebar-first, .region-sidebar-second, #footer {
+    word-wrap: break-word;
+}
+
+.front #postscript-first .two-col .view p, .front #postscript-second .two-col .view p {
+    margin: 0px;
+    font-size: 15px;
+}
+
+#footer {
+  padding-left: 0;
+}
+
+.brown-block {
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.brown-block h2.block-title {
+  color: #774928;
+}
+
+.brown-block .view {
+  margin-top: -4px;
+  padding-top: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.brown-block .view:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(radial, left top, 0, 100% 0%, 100, from(#9e9e9e), to(transparent));
+  background-image: -moz-radial-gradient(left top, farthest-corner, #9e9e9e 0%, transparent 72%);
+  z-index: -2;
+}
+
+.brown-block .view:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  z-index: -1;
+}
+
+.archive .view {
+  padding-bottom: 4px;
+  border-bottom: 5px solid #e1e1e1;
+}
+
+.archive .view .right {
+  width: 62%;
+  padding-left: 0;
+}
+
+.archive .view p {
+  margin-bottom: 5px;
+}
+
+.archive .views-row {
+  position: relative;
+  border-bottom: 1px dotted #d7d7d7;
+  padding-bottom: 25px;
+  margin-bottom: 22px !important;
+}
+
+.archive .views-row .data-matrix {
+  top: 0;
+  left: 230px;
+}
+
+.archive .views-row .left img {
+  box-shadow: 3px 5px 7px #b4b4b4;
+}
+
+.archive .views-row h2 {
+  margin-top: 5px;
+  font-size: 18.2px;
+  line-height: 1.1em;
+}
+
+.archive .views-row h3 a span {
+  color: #990000;
+}
+
+.archive .views-row-last {
+  border-bottom: none;
+}
+
+.section-programs .view-news-and-publications .views-row {
+  padding-bottom: 0;
+}
+
+.intro p {
+  font-size: 15px;
+}
+
+.archive.last .view {
+  border-bottom: none;
+}
+
+.two-sidebars #main,
+.sidebar-first #main {
+  background: white url(../images/middleshadow.png) repeat-y 25% top;
+}
+
+.two-sidebars #content,
+.sidebar-first #content {
+  padding-left: 30px;
+}
+
+.not-front #pre-content {
+    background: none repeat scroll 0% 0% #FFF;
+}
+
+.not-front .data-matrix {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #900;
+    text-transform: uppercase;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-weight: 700;
+    width: 60px;
+    background-image: none;
+    line-height: 1em;
+    padding: 5px;
+}
+
+.not-front .data-matrix a {
+    color: #FFF !important;
+    background-image: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/matrix-arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 15px 5px 5px;
+    width: 50px;
+    display: block;
+}
+
+.not-front .views-row .views-field-view-node {
+    bottom: auto;
+    position: inherit;
+}
+
+#block-views-program-header-block img {
+    border: 0px none;
+    height: auto;
+    width: 100%;
+    max-width: 970px;
+}
+
+.view-program-header .data-matrix a {
+    text-decoration: none;
+    font-size: 15.6px;
+    width: 100%;
+    height: 170px;
+    display: block;
+    background-image: url("../images/program-matrix.png");
+    background-position: center 40px;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 15px 0px 0px;
+}
+
+.view-program-header .data-matrix a:hover {
+  background-image: url(../images/program-matrix.png);
+  background-position: center -110px;
+}
+
+.view-program-header .corner {
+    width: 20% !important;
+    height: 190px;
+    float: right;
+    padding: 1%;
+    position: relative;
+    overflow: hidden;
+    background-color: #776349;
+    color: #FFF;
+    margin-top: -220px;
+    font-size: 12px;
+}
+
+.fontface h1 {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+ol li, ul li {
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.secondary-nav ul.menu li {
+    padding-bottom: 5px;
+}
+
+.secondary-nav ul.menu li ul li {
+    padding: 5px 0px 0px 4px;
+    font-weight: normal;
+}
+
+.secondary-nav ul.menu li ul {
+    border: medium none;
+    padding: 0px;
+}
+
+.grey-block h2.block-title {
+    color: #646464;
+}
+
+.grey-block .view {
+    margin-top: -4px;
+    padding-top: 15px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20px;
+    overflow: visible;
+}
+
+.grey-block .view::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: radial-gradient(farthest-corner at left top , #9E9E9E 0%, transparent 72%);
+    z-index: -2;
+}
+
+.more-link {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #900 !important;
+}
+
+.grey-block .view .more-link {
+    top: -15px;
+    right: 0px;
+}
+
+.section-programs .view-news-and-publications .views-row {
+    padding-bottom: 0px;
+}
+
+.section-programs .grey-block.archive .view-news-and-publications .views-row {
+    border-bottom: medium none;
+    margin-bottom: 7px !important;
+}
+
+.grey-block h3 {
+    font-size: 1.4em;
+    line-height: 1.1em;
+}
+
+.grey-block .view::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: none repeat scroll 0% 0% #FFF;
+    z-index: -1;
+}
+
+h1 span.date-display-single, h2 span.date-display-single {
+    font-size: inherit;
+}
+
+h2 {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-weight: 700;
+    line-height: 28px;
+    color: #900;
+}
+
+.page-news-publications-e-newsletters .views-accordion h2 span {
+    color: #900;
+}
+
+h3 {
+    font-size: 1.7em;
+    line-height: 1.357em;
+    margin-top: 0em;
+    margin-bottom: 0.136em;
+}
+
+h3, h4 {
+    margin-bottom: 5px;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    color: #900;
+}
+
+.fontface h3, .fontface h4 {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+.region-sidebar-second .block {
+  overflow: hidden;
+}
+
+/*
+ * Accordion Views Custom Styles
+ */
+
+html.js fieldset.collapsible .fieldset-legend {
+  padding-left: 0;
+}
+
+html.js fieldset.collapsed {
+  height: auto;
+  margin-bottom: 1px;
+  overflow: hidden;
+  height: 38px !important;
+}
+
+.ui-widget {
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 13px;
+}
+
+.view.view-taxonomy-term {
+  overflow: visible;
+}
+
+.views-accordion p {
+  font-size: 13px;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  line-height: 20px;
+}
+
+.views-accordion .views-row {
+  margin-bottom: 0;
+}
+
+.views-accordion fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.views-accordion legend {
+  background-image: none;
+  border: none;
+  width: 100%;
+  margin-bottom: 1px;
+  overflow: hidden;
+  border-radius: 0;
+  line-height: 1em;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.fontface .views-accordion legend {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+
+.views-accordion legend a {
+  color: #fff !important;
+  padding-left: 1.3em;
+  padding-top: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.views-accordion legend a:hover {
+  color: white !important;
+}
+
+.views-accordion legend a a {
+  padding: 0;
+}
+
+.views-accordion legend:hover {
+  background: #796245;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #796245), color-stop(40%, #7b664c), color-stop(100%, #624f38));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE8+ */
+}
+
+.views-accordion .fieldset-legend span.summary {
+  display: none;
+}
+
+.views-accordion fieldset.collapsed legend {
+  background: #969696;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #969696), color-stop(40%, #939393), color-stop(100%, #797979));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #969696 1%, #939393 40%, #797979 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#797979',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#797979',GradientType=0 );
+  /* IE8+ */
+}
+
+.views-accordion fieldset legend {
+  background: #796245;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #796245), color-stop(40%, #7b664c), color-stop(100%, #624f38));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE8+ */
+}
+
+.views-accordion .ui-accordion-content {
+  border: none;
+  font-size: 13px;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+}
+
+.views-accordion .fieldset-wrapper {
+  padding: 20px 50px;
+  width: 80% !important;
+  overflow: visible;
+}
+
+fieldset.collapse-processed span.fieldset-legend {
+  background: url(../images/expanded-accordion.png) no-repeat 5px 60% !important;
+}
+
+
+fieldset.collapsed span.fieldset-legend {
+  background: url(../images/default-accordion.png) no-repeat 5px 50% !important;
+  margin-left: 0;
+}
+
+
+.page-news-publications-e-newsletters .views-accordion h2 {
+  color: #774928;
+}
+
+.page-news-publications-e-newsletters .views-accordion h2 span {
+  color: #990000;
+}
+
+.page-news-publications-e-newsletters .views-accordion h3 a.toggle {
+  background-image: none;
+  border: none;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 0;
+  line-height: 1em;
+  font-family: "Arial Narrow", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-size: 18px;
+  padding-left: 1.3em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff !important;
+  display: block;
+  font-weight: 700;
+  background: #796245;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #796245), color-stop(40%, #7b664c), color-stop(100%, #624f38));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE8+ */
+}
+
+.fontface .page-news-publications-e-newsletters .views-accordion h3 a.toggle {
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+
+.page-news-publications-e-newsletters .views-accordion h3 a.toggle:hover {
+  background: #796245;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #796245), color-stop(40%, #7b664c), color-stop(100%, #624f38));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE8+ */
+}
+
+.page-news-publications-e-newsletters .views-accordion h3.collapsed a {
+  background: #969696;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #969696), color-stop(40%, #939393), color-stop(100%, #797979));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #969696 1%, #939393 40%, #797979 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#797979',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#797979',GradientType=0 );
+  /* IE8+ */
+}
+
+.page-news-publications-e-newsletters .views-accordion h3.collapsed a:hover {
+  background: #796245;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #796245), color-stop(40%, #7b664c), color-stop(100%, #624f38));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #796245 1%, #7b664c 40%, #624f38 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE6-8 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#796245', endColorstr='#624f38',GradientType=0 );
+  /* IE8+ */
+}
+
+.page-news-publications-e-newsletters .views-accordion .view-grouping-content {
+  padding: 20px 50px;
+}
+
+.page-news-publications-e-newsletters .views-accordion .view-grouping-content .views-row {
+  margin-bottom: 15px;
+}
+
+.page-news-publications-e-newsletters .views-accordion .view-grouping-content .views-field-title span {
+  text-transform: uppercase;
+  color: #646464;
+  font-size: 21px;
+  margin-bottom: 6px;
+}
+
+.page-news-publications-e-newsletters .views-accordion .view-grouping-content .views-field-title a {
+  color: #990000 !important;
+  font-size: 19px;
+  text-transform: none;
+  line-height: 23px;
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+}
+
+.view {
+    overflow: hidden;
+}
+
+.view-program-header {
+    position: relative;
+}
+
+.region-sidebar-second .data-matrix {
+    position: static;
+}
+
+.view-program-header .data-matrix {
+    width: 100%;
+    padding: 0px;
+}
+
+.region-sidebar-second .view-program-header .corner {
+    width: 100% !important;
+}
+
+#block-views-program-header-block-1 .views-field-field-programs-using-data p {
+  padding: 0 20px;
+}
+
+.view-taxonomy-term .view-content .views-row {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #E1E1E1;
+    overflow: visible;
+}
+
+.view-taxonomy-term .view-e-newsletter-issue-title .views-row h1 {
+    color: #774928;
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+font-weight: normal;
+}
+
+.view-taxonomy-term .view-e-newsletter-issue-title .views-row h1 span {
+    color: #900;
+}
+
+.view-taxonomy-term .attachment-before h3 {
+    margin-bottom: 22px;
+}
+
+.fontface h3, .fontface h4 {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+}
+
+.view-taxonomy-term .attachment-before h3 a {
+    color: #900 !important;
+    font-size: 19px;
+    line-height: 23px;
+}
+
+.view-taxonomy-term .attachment-before h3 span {
+    color: #646464;
+    font-size: 21px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.view-taxonomy-term .attachment-before {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #E1E1E1;
+}
+
+.view-taxonomy-term .attachment-before .views-row {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: medium none;
+}
+
+.view-taxonomy-term .view-content .views-row .views-field-title h2 {
+    color: #900;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+.view-taxonomy-term .view-content .views-row .views-field-title h2 span {
+    color: #646464;
+    font-size: 26px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.view-taxonomy-term .view-content .views-row img {
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.view-taxonomy-term .views-field-field-enews-physician {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+table{
+  border: 1px solid #ebebeb;
+  th{
+    padding: 5px 10px;
+    border-right: 1px solid #ebebeb;
+  }
+  td{
+    padding: 5px 10px;
+  }
+}
+
+.tablestyles tr.odd {
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
+  td,
+  th{
+    border-right: 1px solid #ebebeb !important;
+  }
+}
+
+.tablestyles tr.even { /* Some tables have rows marked even or odd. */
+  background-color: #fcfcea !important;
+  border-bottom: 1px solid #ebebeb !important;
+  td,
+  th{
+    border-right: 1px solid #ebebeb !important;
+  }
+}
+
+.tablestyles thead tr,
+.tablestyles tr.header,
+thead tr {
+  background-color: #900 !important;
+  color: #fff;  
+}
+
+span.newtab {
+    text-indent: -999999px;
+    background: url("../images/newtab.png") no-repeat scroll 0% 0% transparent;
+    display: inline-block;
+    width: 9px;
+}
+
+.front #main #postscript-first ul, .front #main #postscript-second ul, #main #content ul {
+    list-style-type: none;
+    list-style-image: url("../images/bullet.gif");
+}
+
+.not-front #main #content p a {
+    text-decoration: underline;
+}
+
+.responsive-menus.responsified span.toggler {
+  background: #614E37;
+  border-radius: 0;
+  box-shadow: 2px 2px 2px #614E37;
+}
+
+.responsive-menus.responsive-menus-0-0 span.toggler {
+  background: #900;
+  border-radius: 0;
+  box-shadow: 2px 2px 2px #900;
+}
+
+.responsive-menus.responsified .responsive-menus-simple {
+  background: #614E37;
+}
+
+@media all and (max-width: 800px) {
+  #navigation {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+  }
+
+  #navigation li.sf-depth-1 ul {
+    background-image: none;
+    top: 0;
+    padding-left: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: inherit;
+    overflow: hidden;
+  }
+
+  #navigation li.sf-depth-1.first ul {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1 {
+    margin-top: 0;
+  }
+
+  #menu-452-1, #menu-453-1, #menu-427-1, #menu-546-1 {
+    width: 100% !important;
+  }
+
+  .responsive-menus.responsive-menus-0-0 a.sf-depth-1.menuparent {
+    display: none;
+  }
+
+}
+
+@media all and (max-width: 980px) {
+  .nci-inner {
+    height: auto;
+    padding-bottom: 4%;
+  }
+
+  .nci-inner img {
+    width: 50%;
+  }
+
 }

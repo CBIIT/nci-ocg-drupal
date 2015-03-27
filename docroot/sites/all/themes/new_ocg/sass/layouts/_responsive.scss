@@ -59,19 +59,24 @@ $zen-auto-include-item-base: false;
 @media all and (min-width: 480px) {
   #main {
     /* Move all the children of #main down to make room. */
+    margin-top: 4.85em;
     padding-top: $nav-height;
     position: relative;
   }
   #navigation {
     /* Move the navbar up inside #main's padding. */
     position: absolute;
-    top: 0;
+    top: -2.85em;
     height: $nav-height;
     width: $zen-grid-width;
   }
 }
 
-} // End of @if $zen-reverse-all-floats == true
+}// End of @if $zen-reverse-all-floats == true
+
+#main {
+  padding-top: 0;
+} 
 
 /**
  * Use 3 grid columns for smaller screens.
