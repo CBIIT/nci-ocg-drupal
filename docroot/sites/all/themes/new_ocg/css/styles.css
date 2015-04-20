@@ -4524,7 +4524,7 @@ span.newtab {
   }
 
   /* line 3204, ../sass/components/_misc.scss */
-  #menu-1379-2 > span {
+  #menu-1379-2 > span, #menu-1406-2 > span {
     display: none;
   }
 
