@@ -4647,25 +4647,33 @@ span.newtab {
   }
 
   /* line 3312, ../sass/components/_misc.scss */
+  .lt-ie9 #block-superfish-1 {
+    height: auto;
+    z-index: 2;
+    position: relative;
+    width: 100%;
+  }
+
+  /* line 3319, ../sass/components/_misc.scss */
   #block-superfish-1 {
     background-color: #614E37;
     border-radius: 0;
     box-shadow: 2px 2px 2px #614E37;
   }
 
-  /* line 3318, ../sass/components/_misc.scss */
+  /* line 3325, ../sass/components/_misc.scss */
   #block-superfish-1 .slicknav_menu {
     background-color: #614E37;
   }
 
-  /* line 3322, ../sass/components/_misc.scss */
+  /* line 3329, ../sass/components/_misc.scss */
   .js .slicknav_menu {
     display: table;
     margin: 0 auto;
     padding: 0;
   }
 
-  /* line 3328, ../sass/components/_misc.scss */
+  /* line 3335, ../sass/components/_misc.scss */
   .slicknav_btn {
     margin: 0;
     text-decoration: none;
@@ -4674,30 +4682,30 @@ span.newtab {
     padding: 0;
   }
 
-  /* line 3336, ../sass/components/_misc.scss */
+  /* line 3343, ../sass/components/_misc.scss */
   .slicknav_nav .slicknav_row:hover {
     background: none;
   }
 
-  /* line 3340, ../sass/components/_misc.scss */
+  /* line 3347, ../sass/components/_misc.scss */
   .slicknav_nav a:hover {
     background: none;
     color: #fff;
   }
 
-  /* line 3345, ../sass/components/_misc.scss */
+  /* line 3352, ../sass/components/_misc.scss */
   #block-superfish-2 .slicknav_menu a.sf-depth-1.menuparent {
     display: none;
   }
 
-  /* line 3349, ../sass/components/_misc.scss */
+  /* line 3356, ../sass/components/_misc.scss */
   .responsive-menus.responsified span.toggler {
     background-color: #614E37;
     border-radius: 0;
     box-shadow: 2px 2px 2px #614E37;
   }
 
-  /* line 3355, ../sass/components/_misc.scss */
+  /* line 3362, ../sass/components/_misc.scss */
   #block-superfish-2 {
     position: relative;
     width: 100%;
@@ -4708,7 +4716,7 @@ span.newtab {
     right: 0;
   }
 
-  /* line 3365, ../sass/components/_misc.scss */
+  /* line 3372, ../sass/components/_misc.scss */
   #block-superfish-2 .slicknav_menu {
     font-size: 16px;
     box-sizing: border-box;
@@ -4716,195 +4724,195 @@ span.newtab {
     padding: 5px;
   }
 
-  /* line 3372, ../sass/components/_misc.scss */
+  /* line 3379, ../sass/components/_misc.scss */
   #block-superfish-2 li.sf-depth-1 ul {
     background: #900;
   }
 
-  /* line 3376, ../sass/components/_misc.scss */
+  /* line 3383, ../sass/components/_misc.scss */
   .responsive-menus.responsified .responsive-menus-simple {
     background-color: #614E37;
   }
 
-  /* line 3380, ../sass/components/_misc.scss */
+  /* line 3387, ../sass/components/_misc.scss */
   .front .node-2 {
     margin-bottom: 0;
   }
 
-  /* line 3384, ../sass/components/_misc.scss */
+  /* line 3391, ../sass/components/_misc.scss */
   .front .node-2 img {
     width: 50%;
   }
 
-  /* line 3388, ../sass/components/_misc.scss */
+  /* line 3395, ../sass/components/_misc.scss */
   #block-views-programs-block-1 {
     margin-top: 0;
   }
 
-  /* line 3392, ../sass/components/_misc.scss */
+  /* line 3399, ../sass/components/_misc.scss */
   .view-programs .view-content {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  /* line 3397, ../sass/components/_misc.scss */
+  /* line 3404, ../sass/components/_misc.scss */
   #block-views-programs-block-1 .views-row {
     height: inherit;
     width: 49%;
     flex: none;
   }
 
-  /* line 3403, ../sass/components/_misc.scss */
+  /* line 3410, ../sass/components/_misc.scss */
   .corner.three-col h2.block-title {
     font-size: 2.250em;
   }
 
-  /* line 3407, ../sass/components/_misc.scss */
+  /* line 3414, ../sass/components/_misc.scss */
   .not-front .views-row .views-field-view-node, .not-front .views-row .views-field-field-program-website {
     float: left;
   }
 
-  /* line 3411, ../sass/components/_misc.scss */
+  /* line 3418, ../sass/components/_misc.scss */
   .ds-3col-stacked > .group-left {
     width: 40%;
     float: left;
   }
 
-  /* line 3416, ../sass/components/_misc.scss */
+  /* line 3423, ../sass/components/_misc.scss */
   .ds-3col-stacked > .group-middle {
     float: left;
     width: 50%;
   }
 
-  /* line 3421, ../sass/components/_misc.scss */
+  /* line 3428, ../sass/components/_misc.scss */
   .ds-3col-stacked > .group-right {
     float: right;
     width: 2%;
   }
 
-  /* line 3426, ../sass/components/_misc.scss */
+  /* line 3433, ../sass/components/_misc.scss */
   .page-node-314 #page-inner {
     width: 800px;
   }
 }
 @media all and (max-width: 600px) {
-  /* line 3433, ../sass/components/_misc.scss */
+  /* line 3440, ../sass/components/_misc.scss */
   #block-views-programs-block-3, #block-views-programs-block-2, #block-views-publications-block-1, #block-views-news-and-publications-block-1, #block-views-resources-block-1, #block-views-e-newsletter-block-2 {
     width: 100%;
   }
 
-  /* line 3437, ../sass/components/_misc.scss */
+  /* line 3444, ../sass/components/_misc.scss */
   .page-node-314 #page-inner {
     width: 600px;
   }
 }
 @media all and (max-width: 560px) {
-  /* line 3444, ../sass/components/_misc.scss */
+  /* line 3451, ../sass/components/_misc.scss */
   .outer-header {
     height: auto;
   }
 
-  /* line 3448, ../sass/components/_misc.scss */
+  /* line 3455, ../sass/components/_misc.scss */
   #logo {
     width: 100%;
     padding-top: 0;
     padding-bottom: 0;
   }
 
-  /* line 3454, ../sass/components/_misc.scss */
+  /* line 3461, ../sass/components/_misc.scss */
   #main {
     margin-top: 0;
   }
 
-  /* line 3458, ../sass/components/_misc.scss */
+  /* line 3465, ../sass/components/_misc.scss */
   #pre-content {
     padding-top: 5.5em;
   }
 
-  /* line 3462, ../sass/components/_misc.scss */
+  /* line 3469, ../sass/components/_misc.scss */
   #navigation {
     top: 0;
     margin-top: 0;
   }
 
-  /* line 3467, ../sass/components/_misc.scss */
+  /* line 3474, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu {
     float: left;
     margin: 0 auto;
     width: 100%;
   }
 
-  /* line 3473, ../sass/components/_misc.scss */
+  /* line 3480, ../sass/components/_misc.scss */
   #block-search-form {
     float: none;
     margin: 0 auto;
     width: 100%;
   }
 
-  /* line 3479, ../sass/components/_misc.scss */
+  /* line 3486, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu ul {
     margin-top: 0;
     margin-bottom: 0;
     float: left;
   }
 
-  /* line 3485, ../sass/components/_misc.scss */
+  /* line 3492, ../sass/components/_misc.scss */
   .front .node-2 img {
     display: none;
   }
 
-  /* line 3489, ../sass/components/_misc.scss */
+  /* line 3496, ../sass/components/_misc.scss */
   #block-views-programs-block-1 .views-row {
     height: inherit;
     width: 100%;
     flex: none;
   }
 
-  /* line 3495, ../sass/components/_misc.scss */
+  /* line 3502, ../sass/components/_misc.scss */
   .corner.three-col .views-row {
     margin-right: 0;
   }
 
-  /* line 3499, ../sass/components/_misc.scss */
+  /* line 3506, ../sass/components/_misc.scss */
   .data-matrix a {
     background-position: 90% top;
   }
 
-  /* line 3503, ../sass/components/_misc.scss */
+  /* line 3510, ../sass/components/_misc.scss */
   .menu-block-2 > .menu {
     flex-direction: column;
   }
 
-  /* line 3507, ../sass/components/_misc.scss */
+  /* line 3514, ../sass/components/_misc.scss */
   #block-views-last-updated-block {
     position: relative;
     bottom: 0;
   }
 }
 @media all and (max-width: 320px) {
-  /* line 3514, ../sass/components/_misc.scss */
+  /* line 3521, ../sass/components/_misc.scss */
   .archive .left {
     padding-right: 0;
   }
 
-  /* line 3518, ../sass/components/_misc.scss */
+  /* line 3525, ../sass/components/_misc.scss */
   .archive .views-row .data-matrix {
     top: 0;
     left: 215px;
   }
 }
 @media all and (max-width: 250px) {
-  /* line 3525, ../sass/components/_misc.scss */
+  /* line 3532, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu ul {
     font-size: 0.75em;
   }
 
-  /* line 3529, ../sass/components/_misc.scss */
+  /* line 3536, ../sass/components/_misc.scss */
   .corner.three-col .views-row .data-matrix {
     right: 1%;
   }
 
-  /* line 3533, ../sass/components/_misc.scss */
+  /* line 3540, ../sass/components/_misc.scss */
   .data-matrix a {
     width: 100%;
     font-size: 0.75em;
@@ -4913,12 +4921,12 @@ span.newtab {
     padding-right: 7%;
   }
 
-  /* line 3541, ../sass/components/_misc.scss */
+  /* line 3548, ../sass/components/_misc.scss */
   .front #postscript-first .two-col .view .more-link, .front #postscript-second .two-col .view .more-link {
     position: inherit;
   }
 
-  /* line 3545, ../sass/components/_misc.scss */
+  /* line 3552, ../sass/components/_misc.scss */
   .more-link {
     text-align: left;
   }
