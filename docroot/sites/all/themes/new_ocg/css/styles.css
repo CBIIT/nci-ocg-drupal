@@ -4641,7 +4641,7 @@ span.newtab {
   /* line 3305, ../sass/components/_misc.scss */
   #block-superfish-1 {
     height: auto;
-    z-index: 999;
+    z-index: 2;
     position: relative;
     width: 100%;
   }
