@@ -76,6 +76,12 @@
 <div id="page-inner">
   <div id="main">
     
+    <div id="navigation">
+
+      <?php print render($page['navigation']); ?>
+
+    </div>
+    
     <div id="pre-content">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
@@ -119,12 +125,6 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
-    </div>
-      
-    <div id="navigation">
-
-      <?php print render($page['navigation']); ?>
-
     </div>
 
     <?php

@@ -1,0 +1,4 @@
+name = Slick Nav Integration
+description = Adds the Slick Nav menu to the Responsive Menus module
+core = 7.x
+dependencies[] = responsive_menus

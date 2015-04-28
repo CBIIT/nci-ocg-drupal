@@ -1,0 +1,82 @@
+<?php
+
+/**
+ * Implementation of hook_responsive_menus_style_info().
+ *
+ */
+function slick_nav_responsive_menus_style_info() {
+  $path = drupal_get_path('module', 'slick_nav');
+  $styles = array(
+    'slick_nav' => array(
+      'name' => t('Slick Nav Responsive Menu style'),
+      'form' => 'slick_nav_style_settings',
+      'js_folder' => drupal_get_path('module', 'slick_nav') . '/js',
+      'css_folder' => drupal_get_path('module', 'slick_nav') . '/css',
+      'js_files' => array(
+        $path . '/js/jquery.slicknav.min.js',
+        $path . '/js/menu.js',
+      ),
+      'css_files' => array($path . '/css/slicknav.css'),
+      'js_settings' => 'slick_nav_js_settings',
+      'jquery_version' => 1.7,
+    ),
+  );
+
+  return $styles;
+}
+
+/**
+ * Additional style settings for the Responsive Menus admin form.
+ *
+ * @return array
+ *   Drupal FAPI formatted array.
+ */
+function slick_nav_style_settings() {
+  $form['slick_nav_css_selectors'] = array(
+    '#type' => 'textarea',
+    '#title' => t('CSS selectors for which menus to responsify'),
+    '#default_value' => variable_get('slick_nav_css_selectors', '.main-menu'),
+    '#description' => t('Enter CSS selectors of menus to responsify.  Comma separated or 1 per line'),
+  );
+  $form['slick_nav_text'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Text to display for menu toggle button'),
+    '#default_value' => variable_get('slick_nav_text', '☰ Menu'),
+  );
+  $form['slick_nav_media_size'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Screen width to respond to'),
+    '#size' => 10,
+    '#default_value' => variable_get('slick_nav_media_size', 768),
+    '#description' => t('Width in pixels when we swap out responsive menu e.g. 800'),
+  );
+  $form['slick_nav_prepend'] = array(
+    '#type' => 'textfield',
+    '#title' => t('The CSS selector to prepend to the menu'),
+    '#default_value' => variable_get('slick_nav_prepend', '#navigation'),
+  );
+  $form['slick_nav_children'] = array(
+    '#type' => 'textfield',
+    '#title' => t('TRUE or FALSE option to show all child menu items when clicking on the menu title. FALSE is the default setting.'),
+    '#default_value' => variable_get('slick_nav_children', 'FALSE'),
+  );
+  return $form;
+}
+
+/**
+ * Callback to generate settings to pass to javascript.
+ *
+ * @return array
+ *   Array of settings to pass to javascript, identified by their key.
+ *   They can be accessed in javascript by: settings.responsive_menus.your_key.
+ */
+function slick_nav_js_settings($js_defaults = array()) {
+  $js_settings = array();
+  $js_settings['selectors'] = responsive_menus_explode_list('slick_nav_css_selectors', '#main-menu', $js_defaults);
+  $js_settings['toggler_text'] = responsive_menus_explode_list('slick_nav_text', '☰ Menu', $js_defaults);
+  $js_settings['media_size'] = responsive_menus_explode_list('slick_nav_media_size', 768, $js_defaults);
+  $js_settings['prepend'] = responsive_menus_explode_list('slick_nav_prepend', '#navigation', $js_defaults);
+  $js_settings['children'] = responsive_menus_explode_list('slick_nav_children', 'FALSE', $js_defaults);
+
+  return $js_settings;
+}
