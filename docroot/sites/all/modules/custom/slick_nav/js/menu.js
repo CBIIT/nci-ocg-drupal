@@ -19,7 +19,6 @@
         var toggler_text = iteration.toggler_text.toString();
         $.each(iteration.selectors, function(index, value) {
           if (children == 'true') {
-            console.log(children);
             $(value).slicknav({
               label: toggler_text,
               prependTo: prepend,
