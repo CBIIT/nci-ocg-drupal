@@ -136,7 +136,6 @@ function custom_views_query_alter(&$view, &$query) {
   
   // this is the name of our View and Display
   if ($view->name == 'news_and_publications' && $view->current_display == 'featured_news_publications') {
-    dpm($view);
     // override the ordering
     // this is because the two different date fields are one or the other
     // but not both fields, so we coalesce.
