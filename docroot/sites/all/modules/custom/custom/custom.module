@@ -121,3 +121,30 @@ function get_nodes_of_type($content_type) {
 function custom_form_views_ui_config_item_form_alter(&$form, &$form_state, $form_id) {
   $form['options']['content']['#wysiwyg'] = TRUE;
 }
+
+/**
+ * Alter the query before executing the query.
+ *
+ * 
+ * @param $view
+ *   The view object about to be processed.
+ * @param $query
+ *   An object describing the query.
+ * @see hook_views_query_substitutions()
+ */
+function custom_views_query_alter(&$view, &$query) {
+  
+  // this is the name of our View and Display
+  if ($view->name == 'news_and_publications' && $view->current_display == 'featured_news_publications') {
+    dpm($view);
+    // override the ordering
+    // this is because the two different date fields are one or the other
+    // but not both fields, so we coalesce.
+    $query->orderby = array(
+      array(
+        'field' => 'COALESCE( field_data_field_publication_date_field_publication_date_val, field_data_field_news_date_field_news_date_value)',
+        'direction' => 'DESC',
+      )
+    );
+  }
+}
