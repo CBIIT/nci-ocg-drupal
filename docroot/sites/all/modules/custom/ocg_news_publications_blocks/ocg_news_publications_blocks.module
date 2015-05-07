@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OCG News & Publications Blocks feature.
+ */
+
+include_once 'ocg_news_publications_blocks.features.inc';

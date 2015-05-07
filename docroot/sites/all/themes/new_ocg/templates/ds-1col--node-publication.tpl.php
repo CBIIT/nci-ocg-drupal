@@ -120,6 +120,7 @@
     hide($content['comments']);
     hide($content['field_publication_authors']);
     hide($content['links']);
+    hide($content['field_home_page_feature']);
     print render($content);
   ?>
 
