@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the TARGET Methods feature.
+ */
+
+include_once 'target_methods.features.inc';

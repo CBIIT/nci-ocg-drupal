@@ -121,7 +121,7 @@ function new_ocg_preprocess_node(&$variables) {
   	}
   	
   	if (!empty($variables['field_publication_journal'])) {
-  		$auth_journal .= '<em>' . $variables['field_publication_journal'][0]['title'] . '</em>';
+  		$auth_journal .= '<p><em>' . $variables['field_publication_journal'][0]['title'] . '</em></p>';
   	}
   	
     $variables['author_journal'] = $auth_journal;
