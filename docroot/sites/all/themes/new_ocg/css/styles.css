@@ -4511,15 +4511,15 @@ span.newtab {
   padding-bottom: 20px;
   background-repeat: repeat;
   margin-bottom: 0;
-  background: #900;
-  background: -moz-linear-gradient(left, #990000 0%, #b81414 75%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #990000), color-stop(75%, #b81414));
-  background: -webkit-linear-gradient(left, #990000 0%, #b81414 75%);
-  background: -o-linear-gradient(left, #990000 0%, #b81414 75%);
-  background: -ms-linear-gradient(left, #990000 0%, #b81414 75%);
-  background: linear-gradient(to right, #990000 0%, #b81414 75%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#900',endColorstr='#B81414',GradientType=1);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#900',endColorstr='#B81414',GradientType=1);
+  background: #ae5d09;
+  background: -moz-linear-gradient(left, #ae5d09 0%, #d67a1a 75%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ae5d09), color-stop(75%, #d67a1a));
+  background: -webkit-linear-gradient(left, #ae5d09 0%, #d67a1a 75%);
+  background: -o-linear-gradient(left, #ae5d09 0%, #d67a1a 75%);
+  background: -ms-linear-gradient(left, #ae5d09 0%, #d67a1a 75%);
+  background: linear-gradient(to right, #ae5d09 0%, #d67a1a 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ae5d09',endColorstr='#d67a1a',GradientType=1);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ae5d09',endColorstr='#d67a1a',GradientType=1);
   background-size: 100%;
 }
 
@@ -4530,13 +4530,13 @@ span.newtab {
   padding-bottom: 20px;
   background-repeat: repeat;
   margin-bottom: 0;
-  background: #900;
+  background: #ae5d09;
   filter: none;
 }
 
 /* line 3239, ../sass/components/_misc.scss */
 .front .view-announcement .views-row:before, .view-announcement .views-row:before {
-  border-color: #B81414 #fcfeff #B81414 #fcfeff;
+  border-color: #d67a1a #fcfeff #d67a1a #fcfeff;
   content: "";
   position: absolute;
   bottom: 0;
@@ -4549,7 +4549,7 @@ span.newtab {
 
 /* line 3251, ../sass/components/_misc.scss */
 .front .view-announcement .views-row:before, .view-announcement a {
-  color: #FFC136;
+  color: #fcf1aa;
 }
 
 /* line 3260, ../sass/components/_misc.scss */
