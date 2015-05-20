@@ -4511,15 +4511,15 @@ span.newtab {
   padding-bottom: 20px;
   background-repeat: repeat;
   margin-bottom: 0;
-  background: #614e37;
-  background: -moz-linear-gradient(left, #614e37 0%, #91795c 75%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #614e37), color-stop(75%, #91795c));
-  background: -webkit-linear-gradient(left, #614e37 0%, #91795c 75%);
-  background: -o-linear-gradient(left, #614e37 0%, #91795c 75%);
-  background: -ms-linear-gradient(left, #614e37 0%, #91795c 75%);
-  background: linear-gradient(to right, #614e37 0%, #91795c 75%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#614e37',endColorstr='#91795c',GradientType=1);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#614e37',endColorstr='#91795c',GradientType=1);
+  background: #fcf1aa;
+  background: -moz-linear-gradient(left, #fcf1aa 0%, #fff8ce 75%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #fcf1aa), color-stop(75%, #fff8ce));
+  background: -webkit-linear-gradient(left, #fcf1aa 0%, #fff8ce 75%);
+  background: -o-linear-gradient(left, #fcf1aa 0%, #fff8ce 75%);
+  background: -ms-linear-gradient(left, #fcf1aa 0%, #fff8ce 75%);
+  background: linear-gradient(to right, #fcf1aa 0%, #fff8ce 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcf1aa',endColorstr='#fff8ce',GradientType=1);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcf1aa',endColorstr='#fff8ce',GradientType=1);
   background-size: 100%;
 }
 
@@ -4530,13 +4530,13 @@ span.newtab {
   padding-bottom: 20px;
   background-repeat: repeat;
   margin-bottom: 0;
-  background: #614e37;
+  background: #fcf1aa;
   filter: none;
 }
 
 /* line 3239, ../sass/components/_misc.scss */
 .front .view-announcement .views-row:before, .view-announcement .views-row:before {
-  border-color: #91795c #fcfeff #91795c #fcfeff;
+  border-color: #fff8ce #fcfeff #91795c #fcfeff;
   content: "";
   position: absolute;
   bottom: 0;
@@ -4549,7 +4549,7 @@ span.newtab {
 
 /* line 3251, ../sass/components/_misc.scss */
 .front .view-announcement .views-row:before, .view-announcement a {
-  color: #f6b92a;
+  color: #ae5d09;
 }
 
 /* line 3260, ../sass/components/_misc.scss */
@@ -4559,7 +4559,7 @@ span.newtab {
 .front .view-announcement span, .view-announcement h3,
 .front .view-announcement span, .view-announcement h4,
 .front .view-announcement span, .view-announcement h5 {
-  color: #fff;
+  color: #614e37;
 }
 
 /* line 3264, ../sass/components/_misc.scss */
