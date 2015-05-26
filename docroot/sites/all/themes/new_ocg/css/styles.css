@@ -4511,15 +4511,15 @@ span.newtab {
   padding-bottom: 20px;
   background-repeat: repeat;
   margin-bottom: 0;
-  background: #fcf1aa;
-  background: -moz-linear-gradient(left, #fcf1aa 0%, #fff8ce 75%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #fcf1aa), color-stop(75%, #fff8ce));
-  background: -webkit-linear-gradient(left, #fcf1aa 0%, #fff8ce 75%);
-  background: -o-linear-gradient(left, #fcf1aa 0%, #fff8ce 75%);
-  background: -ms-linear-gradient(left, #fcf1aa 0%, #fff8ce 75%);
-  background: linear-gradient(to right, #fcf1aa 0%, #fff8ce 75%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcf1aa',endColorstr='#fff8ce',GradientType=1);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcf1aa',endColorstr='#fff8ce',GradientType=1);
+  background: #C45208;
+  background: -moz-linear-gradient(left, #c45208 0%, #e3830c 75%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #c45208), color-stop(75%, #e3830c));
+  background: -webkit-linear-gradient(left, #c45208 0%, #e3830c 75%);
+  background: -o-linear-gradient(left, #c45208 0%, #e3830c 75%);
+  background: -ms-linear-gradient(left, #c45208 0%, #e3830c 75%);
+  background: linear-gradient(to right, #c45208 0%, #e3830c 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C45208',endColorstr='#E3830C',GradientType=1);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C45208',endColorstr='#E3830C',GradientType=1);
   background-size: 100%;
 }
 
@@ -4530,13 +4530,13 @@ span.newtab {
   padding-bottom: 20px;
   background-repeat: repeat;
   margin-bottom: 0;
-  background: #fcf1aa;
+  background: #C45208;
   filter: none;
 }
 
 /* line 3239, ../sass/components/_misc.scss */
 .front .view-announcement .views-row:before, .view-announcement .views-row:before {
-  border-color: #fff8ce #fcfeff #91795c #fcfeff;
+  border-color: #E3830C #fcfeff #91795c #fcfeff;
   content: "";
   position: absolute;
   bottom: 0;
@@ -4547,11 +4547,9 @@ span.newtab {
   width: 0;
 }
 
-/* line 3251, ../sass/components/_misc.scss */
-.front .view-announcement .views-row:before, .view-announcement a {
+/*.front .view-announcement .views-row:before, .view-announcement a {
   color: #ae5d09;
-}
-
+}*/
 /* line 3260, ../sass/components/_misc.scss */
 .front .view-announcement span, .view-announcement span,
 .front .view-announcement span, .view-announcement h1,
@@ -4559,7 +4557,7 @@ span.newtab {
 .front .view-announcement span, .view-announcement h3,
 .front .view-announcement span, .view-announcement h4,
 .front .view-announcement span, .view-announcement h5 {
-  color: #614e37;
+  color: #fff;
 }
 
 /* line 3264, ../sass/components/_misc.scss */
