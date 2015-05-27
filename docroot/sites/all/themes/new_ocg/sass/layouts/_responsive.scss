@@ -56,7 +56,7 @@ $zen-auto-include-item-base: false;
 }
 
 /* Navigation bar */
-@media all and (min-width: 480px) {
+@media all {
   #main {
     /* Move all the children of #main down to make room. */
     margin-top: 4.85em;
@@ -169,12 +169,12 @@ $zen-auto-include-item-base: false;
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     #content {
-      @include zen-grid-item(4, 2);
+      @include zen-grid-item(4.25, 1.75);
     }
 
     /* Span 1 column, starting in 1st column from left. */
     .region-sidebar-first {
-      @include zen-grid-item(1, 1);
+      @include zen-grid-item(0.75, 1);
     }
   }
 
@@ -199,12 +199,12 @@ $zen-auto-include-item-base: false;
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     #content {
-      @include zen-grid-item(3, 2);
+      @include zen-grid-item(3.25, 1.75);
     }
 
     /* Span 1 column, starting in 1st column from left. */
     .region-sidebar-first {
-      @include zen-grid-item(1, 1);
+      @include zen-grid-item(0.75, 1);
     }
 
     /* Span 1 column, starting in 5th column from left. */
