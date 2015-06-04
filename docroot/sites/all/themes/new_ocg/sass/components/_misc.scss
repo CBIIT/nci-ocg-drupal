@@ -2096,6 +2096,7 @@ block-menu-block-4 li {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  height: 600px;
 }
 
 .front #postscript-first h2.block-title, .front #postscript-second h2.block-title {
@@ -3617,6 +3618,16 @@ span.newtab {
     width: 800px;
   }
 
+}
+
+@media all and (max-width: 700px) {
+  .front .region-postscript-first {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 900px;
+    height: auto !important;
+  }
 }
 
 @media all and (max-width: 600px) {
