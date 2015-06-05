@@ -2114,6 +2114,7 @@ block-menu-block-4 li {
 
 .front #postscript-first, .region-postscript-second {
   float: left;
+  width: 100%;
 }
 
 .front .region-postscript-first, .front .region-postscript-second {
@@ -2132,10 +2133,6 @@ block-menu-block-4 li {
   flex-direction: column;
   flex-wrap: wrap;
   height: 600px;
-}
-
-.gtie9 .front .region-postscript-first {
-  width: 50%;
 }
 
 .front #postscript-first h2.block-title, .front #postscript-second h2.block-title {
