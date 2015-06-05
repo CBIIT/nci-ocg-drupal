@@ -1488,10 +1488,12 @@ margin-bottom: 15px;
   background-color: #900;
   text-transform: uppercase;
   width: 70px;
-  background-image: none;
+  background-image: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/matrix-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 95% 15%;
   line-height: 1em;
   color: #FFF !important;
-  padding: 15px 10px 5px;
+  padding: 20px 10px 10px;
   display: block;
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
@@ -1561,6 +1563,10 @@ span.noicon {
   float: left;
   position: relative;
   margin-bottom: 0;
+}
+
+#block-views-30ee87c9713e54cfa382e640694d1d45 {
+  margin-bottom: 60px;
 }
 
 #block-views-e-newsletter-block-2 {
@@ -2122,6 +2128,7 @@ block-menu-block-4 li {
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-direction: column;
   flex-direction: column;
   flex-wrap: wrap;
   height: 600px;
