@@ -1476,6 +1476,27 @@ margin-bottom: 15px;
     padding: 5px;
 }
 
+#block-views-programs-block-1 .views-field-views-conditional-1 .field-content {
+ 
+}
+
+#block-views-programs-block-1 .dashboard {
+  position: absolute;
+  right: 1%;
+  bottom: 0;
+  background-color: #900;
+  text-transform: uppercase;
+  width: 70px;
+  background-image: none;
+  line-height: 1em;
+  color: #FFF !important;
+  padding: 15px 10px 5px;
+  display: block;
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
 .corner.three-col .views-row .data-matrix {
     right: 1%;
 }
@@ -1548,6 +1569,7 @@ span.noicon {
 #block-views-programs-block-3 .views-field-field-image, #block-views-programs-block-2 .views-field-field-image, #block-views-programs-block-1 .views-field-field-image {
   padding-left: 1%;
   padding-right: 1.25%;
+  position: relative;
 }
 
 .front #main #postscript-first a, .front #main #postscript-second a, #main #content a {
