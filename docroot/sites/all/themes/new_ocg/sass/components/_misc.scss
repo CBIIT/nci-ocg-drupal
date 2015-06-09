@@ -1787,7 +1787,7 @@ span.noicon {
 }
 
 /*.two-sidebars #main, .sidebar-first #main {
-    background: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/middleshadow.png") repeat-y scroll 15px top #FFF;
+    background: url(../images/middleshadow.png) repeat-y scroll 15px top #FFF;
 }*/
 
 #block-views-program-header-block .view-program-header .data-matrix {
@@ -1802,11 +1802,18 @@ span.noicon {
     width: 100%;
     height: 170px;
     display: block;
-    background-image: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/program-matrix.png");
+    background-image: url(../images/program-matrix.png);
     background-position: center 40px;
     background-repeat: no-repeat;
     text-align: center;
     padding: 15px 0px 0px;
+}
+
+.view-program-header .data-matrix a:before {
+  content: url(../images/program-matrix.png);
+  width:0;
+  height:0;
+  visibility:hidden;
 }
 
 .view-program-header .data-matrix a:hover {
@@ -2420,6 +2427,14 @@ span.date-display-single {
     background-repeat: no-repeat;
     text-align: center;
     padding: 15px 0px 0px;
+}
+
+.view-program-header .data-matrix a:before {
+  position: absolute;
+  content: url(../images/program-matrix-hover.png);
+  width:0;
+  height:0;
+  visibility:hidden;
 }
 
 .view-program-header .data-matrix a:hover {
