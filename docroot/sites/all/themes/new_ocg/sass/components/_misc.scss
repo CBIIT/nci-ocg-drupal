@@ -1496,7 +1496,7 @@ margin-bottom: 15px;
   padding: 20px 10px 10px;
   display: block;
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 5px;
 }
 
@@ -2128,7 +2128,7 @@ block-menu-block-4 li {
   -webkit-flex-direction: column;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 600px;
+  height: 550px;
 }
 
 .front #postscript-first h2.block-title, .front #postscript-second h2.block-title {
@@ -3257,15 +3257,15 @@ span.newtab {
   padding-bottom: 20px;
   background-repeat: repeat;
   margin-bottom: 0;
-  background: #614e37;
-  background: -moz-linear-gradient(left,#614e37 0%,#91795c 75%);
-  background: -webkit-gradient(linear,left top,right top,color-stop(0%,#614e37),color-stop(75%,#91795c));
-  background: -webkit-linear-gradient(left,#614e37 0%,#91795c 75%);
-  background: -o-linear-gradient(left,#614e37 0%,#91795c 75%);
-  background: -ms-linear-gradient(left,#614e37 0%,#91795c 75%);
-  background: linear-gradient(to right,#614e37 0%,#91795c 75%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#614e37',endColorstr='#91795c',GradientType=1);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#614e37',endColorstr='#91795c',GradientType=1);
+  background: #f6b92a;
+  background: -moz-linear-gradient(left,#f6b92a 0%,#ffd87c 75%);
+  background: -webkit-gradient(linear,left top,right top,color-stop(0%,#f6b92a),color-stop(75%,#ffd87c));
+  background: -webkit-linear-gradient(left,#f6b92a 0%,#ffd87c 75%);
+  background: -o-linear-gradient(left,#f6b92a 0%,#ffd87c 75%);
+  background: -ms-linear-gradient(left,#f6b92a 0%,#ffd87c 75%);
+  background: linear-gradient(to right,#f6b92a 0%,#ffd87c 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b92a',endColorstr='#ffd87c',GradientType=1);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b92a',endColorstr='#ffd87c',GradientType=1);
   background-size: 100%;
 }
 
@@ -3275,12 +3275,12 @@ span.newtab {
   padding-bottom: 20px;
   background-repeat: repeat;
   margin-bottom: 0;
-  background: #614e37;
+  background: #f6b92a;
   filter: none;
 }
 
 .front .view-announcement .views-row:before, .view-announcement .views-row:before {
-  border-color: #91795c #fcfeff #91795c #fcfeff;
+  border-color: #ffd87c #fcfeff #ffd87c #fcfeff;
   content: "";
   position: absolute;
   bottom: 0;
@@ -3292,7 +3292,7 @@ span.newtab {
 }
 
 .front .view-announcement .views-row:before, .view-announcement a {
-  color: #f6b92a;
+  color: #990000;
 }
 
 .front .view-announcement span, .view-announcement span,
@@ -3301,7 +3301,7 @@ span.newtab {
 .front .view-announcement span, .view-announcement h3,
 .front .view-announcement span, .view-announcement h4,
 .front .view-announcement span, .view-announcement h5 {
-  color: #fff;
+  color: #614e37;
 }
 
 
