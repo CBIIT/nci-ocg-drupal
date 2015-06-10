@@ -1775,7 +1775,7 @@ h2 {
 }
 
 /* line 818, ../sass/components/_misc.scss */
-.fontface h1.title, .fontface h2.node-title, .fontface h2.block-title, .fontface h2.title, .fontface h2.comment-form, .fontface h3.title {
+h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -1899,7 +1899,7 @@ header {
 }
 
 /* line 927, ../sass/components/_misc.scss */
-.fontface .utility ul.menu {
+.utility ul.menu {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -1982,7 +1982,7 @@ header {
 }
 
 /* line 997, ../sass/components/_misc.scss */
-.fontface .block-search input[type="submit"], .fontface #block-search-form input[type="submit"] {
+.block-search input[type="submit"], #block-search-form input[type="submit"] {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -1991,7 +1991,7 @@ header {
 .block-search input[type="submit"], #block-search-form input[type="submit"] {
   background: none repeat scroll 0% 0% transparent;
   border: medium none;
-  font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: 700;
   color: #900;
   text-transform: uppercase;
@@ -2040,7 +2040,7 @@ header {
 
 /* line 1070, ../sass/components/_misc.scss */
 #navigation ul.links li a, #navigation ul.megamenu-menu li a {
-  font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: 700;
   color: #774928;
   text-decoration: none;
@@ -2145,7 +2145,7 @@ header {
 }
 
 /* line 1166, ../sass/components/_misc.scss */
-.fontface #navigation li.sf-depth-1 ul li.sf-depth-2 a {
+#navigation li.sf-depth-1 ul li.sf-depth-2 a {
   font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
@@ -2291,13 +2291,13 @@ header {
 }
 
 /* line 1294, ../sass/components/_misc.scss */
-.fontface .block.program-datasets .ui-accordion-header {
+.block.program-datasets .ui-accordion-header {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
 /* line 1299, ../sass/components/_misc.scss */
-.fontface .block.program-datasets .ui-accordion-content a {
+.block.program-datasets .ui-accordion-content a {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
@@ -2321,7 +2321,7 @@ header {
 }
 
 /* line 1319, ../sass/components/_misc.scss */
-.fontface .datasets {
+.datasets {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -2359,7 +2359,7 @@ h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
 }
 
 /* line 1352, ../sass/components/_misc.scss */
-.fontface h1.title, .fontface h2.node-title, .fontface h2.block-title, .fontface h2.title, .fontface h2.comment-form, .fontface h3.title {
+h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, .h3.title {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
 }
 
@@ -2403,7 +2403,7 @@ h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
 }
 
 /* line 1389, ../sass/components/_misc.scss */
-.fontface .front .node-2 a {
+.front .node-2 a {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -2584,7 +2584,7 @@ span.noicon {
 }
 
 /* line 1551, ../sass/components/_misc.scss */
-.fontface .corner.three-col .views-row .views-field-title {
+.corner.three-col .views-row .views-field-title {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -2719,7 +2719,7 @@ span.noicon {
 }
 
 /* line 1666, ../sass/components/_misc.scss */
-.fontface .two-col .view .views-field-title .right .title {
+.two-col .view .views-field-title .right .title {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -2778,7 +2778,7 @@ span.noicon {
 }
 
 /* line 1716, ../sass/components/_misc.scss */
-.fontface #footer .block-menu-block ul li {
+#footer .block-menu-block ul li {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -2817,8 +2817,8 @@ span.noicon {
 }
 
 /* line 1749, ../sass/components/_misc.scss */
-.fontface #footer .block-menu-block ul li li {
-  font-family: Helvetica,Arial,"Nimbus Sans L",sans-serif;
+#footer .block-menu-block ul li li {
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
@@ -2943,7 +2943,7 @@ span.noicon {
 }
 
 /* line 1861, ../sass/components/_misc.scss */
-.fontface .view-program-header .corner a {
+.view-program-header .corner a {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -2977,7 +2977,7 @@ span.noicon {
 }
 
 /* line 1893, ../sass/components/_misc.scss */
-.fontface h2 {
+h2 {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -3033,7 +3033,7 @@ span.noicon {
 }
 
 /* line 1941, ../sass/components/_misc.scss */
-.fontface h1.title, .fontface h2.node-title, .fontface h2.block-title, .fontface h2.title, .fontface h2.comment-form, .fontface h3.title {
+h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -3105,7 +3105,7 @@ block-menu-block-4 li {
 }
 
 /* line 2002, ../sass/components/_misc.scss */
-.fontface .region-sidebar-second .corner h2.block-title {
+.region-sidebar-second .corner h2.block-title {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -3383,8 +3383,8 @@ span.date-display-single {
 }
 
 /* line 2243, ../sass/components/_misc.scss */
-.fontface .front #postscript-first .two-col .view .views-field-title, .fontface .front #postscript-second .two-col .view .views-field-title,
-.fontface .front #postscript-first #block-views-30ee87c9713e54cfa382e640694d1d45 a {
+.front #postscript-first .two-col .view .views-field-title, .front #postscript-second .two-col .view .views-field-title,
+.front #postscript-first #block-views-30ee87c9713e54cfa382e640694d1d45 a {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -3634,7 +3634,7 @@ span.date-display-single {
 }
 
 /* line 2459, ../sass/components/_misc.scss */
-.fontface h1 {
+h1 {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -3770,7 +3770,7 @@ h3, h4 {
 }
 
 /* line 2576, ../sass/components/_misc.scss */
-.fontface h3, .fontface h4 {
+h3, h4 {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -3842,7 +3842,7 @@ html.js fieldset.collapsed {
 }
 
 /* line 2639, ../sass/components/_misc.scss */
-.fontface .views-accordion legend {
+.views-accordion legend {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
@@ -4009,7 +4009,7 @@ fieldset.collapsed span.fieldset-legend {
 }
 
 /* line 2793, ../sass/components/_misc.scss */
-.fontface .page-news-publications-e-newsletters .views-accordion h3 a.toggle {
+.page-news-publications-e-newsletters .views-accordion h3 a.toggle {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
@@ -4203,7 +4203,7 @@ fieldset.collapsed span.fieldset-legend {
 }
 
 /* line 2963, ../sass/components/_misc.scss */
-.fontface h3, .fontface h4 {
+h3, h4 {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -4618,7 +4618,7 @@ span.newtab {
 }
 
 /* line 3323, ../sass/components/_misc.scss */
-.fontface .front .view-announcement span, .fontface .view-announcement span {
+.front .view-announcement span, .view-announcement span {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -4637,32 +4637,32 @@ span.newtab {
 }
 
 /* line 3339, ../sass/components/_misc.scss */
-.fontface .data-matrix {
+.data-matrix {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
 /* line 3345, ../sass/components/_misc.scss */
-.fontface #print-mail-form input[type="reset"], .fontface
+#print-mail-form input[type="reset"],
 #print-mail-form input[type="submit"] {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
 /* line 3350, ../sass/components/_misc.scss */
-.fontface .corner.three-col h2.block-title {
+.corner.three-col h2.block-title {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
 /* line 3355, ../sass/components/_misc.scss */
-.fontface .landing-page.view-e-newsletter h2.block-title {
+.landing-page.view-e-newsletter h2.block-title {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
 /* line 3360, ../sass/components/_misc.scss */
-.fontface .landing-page.view-e-newsletter .views-field-title p {
+.landing-page.view-e-newsletter .views-field-title p {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }

@@ -815,7 +815,7 @@ h2 {
     color: #900;
 }
 
-.fontface h1.title, .fontface h2.node-title, .fontface h2.block-title, .fontface h2.title, .fontface h2.comment-form, .fontface h3.title {
+h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -924,7 +924,7 @@ header {
   margin-top: .75em;
 }
 
-.fontface .utility ul.menu {
+.utility ul.menu {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -994,7 +994,7 @@ header {
     box-shadow: 0 0.063em 0.188em #404040 inset;
 }
 
-.fontface .block-search input[type="submit"], .fontface #block-search-form input[type="submit"] {
+.block-search input[type="submit"], #block-search-form input[type="submit"] {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1002,7 +1002,7 @@ header {
 .block-search input[type="submit"], #block-search-form input[type="submit"] {
     background: none repeat scroll 0% 0% transparent;
     border: medium none;
-    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: 700;
     color: #900;
     text-transform: uppercase;
@@ -1068,7 +1068,7 @@ header {
 }
 
 #navigation ul.links li a, #navigation ul.megamenu-menu li a {
-    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: 700;
     color: #774928;
     text-decoration: none;
@@ -1163,7 +1163,7 @@ header {
   color: #fff;
 }
 
-.fontface #navigation li.sf-depth-1 ul li.sf-depth-2 a {
+#navigation li.sf-depth-1 ul li.sf-depth-2 a {
   font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
@@ -1291,12 +1291,12 @@ header {
   margin-left: 0.175%;
 }
 
-.fontface .block.program-datasets .ui-accordion-header {
+.block.program-datasets .ui-accordion-header {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
-.fontface .block.program-datasets .ui-accordion-content a {
+.block.program-datasets .ui-accordion-content a {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
@@ -1316,7 +1316,7 @@ header {
   margin: 0;
 }
 
-.fontface .datasets {
+.datasets {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1349,7 +1349,7 @@ h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
     line-height: 30px;
 }
 
-.fontface h1.title, .fontface h2.node-title, .fontface h2.block-title, .fontface h2.title, .fontface h2.comment-form, .fontface h3.title {
+h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, .h3.title {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
 }
 
@@ -1386,7 +1386,7 @@ h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
   text-decoration: underline;
 }
 
-.fontface .front .node-2 a {
+.front .node-2 a {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1548,7 +1548,7 @@ span.noicon {
     font-size: 15px;
 }
 
-.fontface .corner.three-col .views-row .views-field-title {
+.corner.three-col .views-row .views-field-title {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1663,7 +1663,7 @@ span.noicon {
     color: #900;
 }
 
-.fontface .two-col .view .views-field-title .right .title {
+.two-col .view .views-field-title .right .title {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1713,7 +1713,7 @@ span.noicon {
     padding-right: 10px;
 }
 
-.fontface #footer .block-menu-block ul li {
+#footer .block-menu-block ul li {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1746,8 +1746,8 @@ span.noicon {
     line-height: 17px;
 }
 
-.fontface #footer .block-menu-block ul li li {
-    font-family: Helvetica,Arial,"Nimbus Sans L",sans-serif;
+#footer .block-menu-block ul li li {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
 
@@ -1858,7 +1858,7 @@ span.noicon {
     font-weight: 700;
 }
 
-.fontface .view-program-header .corner a {
+.view-program-header .corner a {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1890,7 +1890,7 @@ span.noicon {
 
 }
 
-.fontface h2 {
+h2 {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1938,7 +1938,7 @@ span.noicon {
     text-decoration: none;
 }
 
-.fontface h1.title, .fontface h2.node-title, .fontface h2.block-title, .fontface h2.title, .fontface h2.comment-form, .fontface h3.title {
+h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1999,7 +1999,7 @@ block-menu-block-4 li {
     background: linear-gradient(to bottom, #FAF4BF 0%, #FEF6D5 30%, #FAEC7A 100%) repeat scroll 0% 0% transparent;
 }
 
-.fontface .region-sidebar-second .corner h2.block-title {
+.region-sidebar-second .corner h2.block-title {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -2239,8 +2239,8 @@ span.date-display-single {
     margin-top: 0px;
 }
 
-.fontface .front #postscript-first .two-col .view .views-field-title, .fontface .front #postscript-second .two-col .view .views-field-title,
-.fontface .front #postscript-first #block-views-30ee87c9713e54cfa382e640694d1d45 a {
+.front #postscript-first .two-col .view .views-field-title, .front #postscript-second .two-col .view .views-field-title,
+.front #postscript-first #block-views-30ee87c9713e54cfa382e640694d1d45 a {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -2456,7 +2456,7 @@ span.date-display-single {
     padding-top: 0.75em;
 }
 
-.fontface h1 {
+h1 {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -2573,7 +2573,7 @@ h3, h4 {
     color: #900;
 }
 
-.fontface h3, .fontface h4 {
+h3, h4 {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -2636,7 +2636,7 @@ html.js fieldset.collapsed {
   font-size: 18px;
 }
 
-.fontface .views-accordion legend {
+.views-accordion legend {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
@@ -2790,7 +2790,7 @@ fieldset.collapsed span.fieldset-legend {
   /* IE8+ */
 }
 
-.fontface .page-news-publications-e-newsletters .views-accordion h3 a.toggle {
+.page-news-publications-e-newsletters .views-accordion h3 a.toggle {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
@@ -2960,7 +2960,7 @@ font-weight: normal;
     margin-bottom: 22px;
 }
 
-.fontface h3, .fontface h4 {
+h3, h4 {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -3320,7 +3320,7 @@ span.newtab {
 }
 
 
-.fontface .front .view-announcement span, .fontface .view-announcement span {
+.front .view-announcement span, .view-announcement span {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -3336,28 +3336,28 @@ span.newtab {
    padding-top: 10px;
 }
 
-.fontface .data-matrix {
+.data-matrix {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-.fontface #print-mail-form input[type="reset"], .fontface
+#print-mail-form input[type="reset"],
 #print-mail-form input[type="submit"] {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-.fontface .corner.three-col h2.block-title {
+.corner.three-col h2.block-title {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-.fontface .landing-page.view-e-newsletter h2.block-title {
+.landing-page.view-e-newsletter h2.block-title {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-.fontface .landing-page.view-e-newsletter .views-field-title p {
+.landing-page.view-e-newsletter .views-field-title p {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
