@@ -815,7 +815,7 @@ h2 {
     color: #900;
 }
 
-.fontface h1.title, .fontface h2.node-title, .fontface h2.block-title, .fontface h2.title, .fontface h2.comment-form, .fontface h3.title {
+h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -924,7 +924,7 @@ header {
   margin-top: .75em;
 }
 
-.fontface .utility ul.menu {
+.utility ul.menu {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -994,7 +994,7 @@ header {
     box-shadow: 0 0.063em 0.188em #404040 inset;
 }
 
-.fontface .block-search input[type="submit"], .fontface #block-search-form input[type="submit"] {
+.block-search input[type="submit"], #block-search-form input[type="submit"] {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1002,7 +1002,7 @@ header {
 .block-search input[type="submit"], #block-search-form input[type="submit"] {
     background: none repeat scroll 0% 0% transparent;
     border: medium none;
-    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: 700;
     color: #900;
     text-transform: uppercase;
@@ -1068,7 +1068,7 @@ header {
 }
 
 #navigation ul.links li a, #navigation ul.megamenu-menu li a {
-    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: 700;
     color: #774928;
     text-decoration: none;
@@ -1163,7 +1163,7 @@ header {
   color: #fff;
 }
 
-.fontface #navigation li.sf-depth-1 ul li.sf-depth-2 a {
+#navigation li.sf-depth-1 ul li.sf-depth-2 a {
   font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
@@ -1291,12 +1291,12 @@ header {
   margin-left: 0.175%;
 }
 
-.fontface .block.program-datasets .ui-accordion-header {
+.block.program-datasets .ui-accordion-header {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
-.fontface .block.program-datasets .ui-accordion-content a {
+.block.program-datasets .ui-accordion-content a {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
@@ -1316,7 +1316,7 @@ header {
   margin: 0;
 }
 
-.fontface .datasets {
+.datasets {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1349,7 +1349,7 @@ h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
     line-height: 30px;
 }
 
-.fontface h1.title, .fontface h2.node-title, .fontface h2.block-title, .fontface h2.title, .fontface h2.comment-form, .fontface h3.title {
+h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, .h3.title {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
 }
 
@@ -1386,7 +1386,7 @@ h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
   text-decoration: underline;
 }
 
-.fontface .front .node-2 a {
+.front .node-2 a {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1476,6 +1476,30 @@ margin-bottom: 15px;
     padding: 5px;
 }
 
+#block-views-programs-block-1 .views-field-views-conditional-1 .field-content {
+ 
+}
+
+#block-views-programs-block-1 .dashboard,
+#block-views-programs-block-4 .dashboard {
+  position: absolute;
+  right: 1%;
+  bottom: 0;
+  background-color: #900;
+  text-transform: uppercase;
+  width: 70px;
+  background-image: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/matrix-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 95% 15%;
+  line-height: 1em;
+  color: #FFF !important;
+  padding: 20px 10px 10px;
+  display: block;
+  font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
 .corner.three-col .views-row .data-matrix {
     right: 1%;
 }
@@ -1524,7 +1548,7 @@ span.noicon {
     font-size: 15px;
 }
 
-.fontface .corner.three-col .views-row .views-field-title {
+.corner.three-col .views-row .views-field-title {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1534,11 +1558,15 @@ span.noicon {
   position: absolute;
 }
 
-#block-views-programs-block-3, #block-views-programs-block-2, #block-views-publications-block-1, #block-views-news-and-publications-block-1, #block-views-resources-block-1, #block-views-e-newsletter-block-2, #block-views-fe78d79853e84f0f15f21f1ffeee8437, #block-views-30ee87c9713e54cfa382e640694d1d45 {
+#block-views-programs-block-3, #block-views-programs-block-2, #block-views-publications-block-1, #block-views-news-and-publications-block-1, #block-views-resources-block-1, #block-views-e-newsletter-block-2, #block-views-fe78d79853e84f0f15f21f1ffeee8437, #block-views-30ee87c9713e54cfa382e640694d1d45, #block-views-e-newsletter-block-3 {
   width: 50%;
   float: left;
   position: relative;
   margin-bottom: 0;
+}
+
+#block-views-30ee87c9713e54cfa382e640694d1d45 {
+  margin-bottom: 60px;
 }
 
 #block-views-e-newsletter-block-2 {
@@ -1548,6 +1576,7 @@ span.noicon {
 #block-views-programs-block-3 .views-field-field-image, #block-views-programs-block-2 .views-field-field-image, #block-views-programs-block-1 .views-field-field-image {
   padding-left: 1%;
   padding-right: 1.25%;
+  position: relative;
 }
 
 .front #main #postscript-first a, .front #main #postscript-second a, #main #content a {
@@ -1579,8 +1608,14 @@ span.noicon {
     margin-right: 5%;
 }
 
+#block-views-30ee87c9713e54cfa382e640694d1d45.two-col .view,
+#block-views-e-newsletter-block-3.two-col .view {
+  padding-top: 0;
+  border-top: none;
+}
+
 #block-views-30ee87c9713e54cfa382e640694d1d45 .view {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 #block-views-fe78d79853e84f0f15f21f1ffeee8437 .view-footer,
@@ -1628,7 +1663,7 @@ span.noicon {
     color: #900;
 }
 
-.fontface .two-col .view .views-field-title .right .title {
+.two-col .view .views-field-title .right .title {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1678,7 +1713,7 @@ span.noicon {
     padding-right: 10px;
 }
 
-.fontface #footer .block-menu-block ul li {
+#footer .block-menu-block ul li {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1711,8 +1746,8 @@ span.noicon {
     line-height: 17px;
 }
 
-.fontface #footer .block-menu-block ul li li {
-    font-family: Helvetica,Arial,"Nimbus Sans L",sans-serif;
+#footer .block-menu-block ul li li {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
 
@@ -1752,7 +1787,7 @@ span.noicon {
 }
 
 /*.two-sidebars #main, .sidebar-first #main {
-    background: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/middleshadow.png") repeat-y scroll 15px top #FFF;
+    background: url(../images/middleshadow.png) repeat-y scroll 15px top #FFF;
 }*/
 
 #block-views-program-header-block .view-program-header .data-matrix {
@@ -1767,11 +1802,18 @@ span.noicon {
     width: 100%;
     height: 170px;
     display: block;
-    background-image: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/program-matrix.png");
+    background-image: url(../images/program-matrix.png);
     background-position: center 40px;
     background-repeat: no-repeat;
     text-align: center;
     padding: 15px 0px 0px;
+}
+
+.view-program-header .data-matrix a:before {
+  content: url(../images/program-matrix.png);
+  width:0;
+  height:0;
+  visibility:hidden;
 }
 
 .view-program-header .data-matrix a:hover {
@@ -1816,7 +1858,7 @@ span.noicon {
     font-weight: 700;
 }
 
-.fontface .view-program-header .corner a {
+.view-program-header .corner a {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1848,7 +1890,7 @@ span.noicon {
 
 }
 
-.fontface h2 {
+h2 {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1896,7 +1938,7 @@ span.noicon {
     text-decoration: none;
 }
 
-.fontface h1.title, .fontface h2.node-title, .fontface h2.block-title, .fontface h2.title, .fontface h2.comment-form, .fontface h3.title {
+h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -1957,7 +1999,7 @@ block-menu-block-4 li {
     background: linear-gradient(to bottom, #FAF4BF 0%, #FEF6D5 30%, #FAEC7A 100%) repeat scroll 0% 0% transparent;
 }
 
-.fontface .region-sidebar-second .corner h2.block-title {
+.region-sidebar-second .corner h2.block-title {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -2079,6 +2121,7 @@ block-menu-block-4 li {
 
 .front #postscript-first, .region-postscript-second {
   float: left;
+  width: 100%;
 }
 
 .front .region-postscript-first, .front .region-postscript-second {
@@ -2088,9 +2131,7 @@ block-menu-block-4 li {
 }
 
 .front .region-postscript-first {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+
 }
 
 .front #postscript-first h2.block-title, .front #postscript-second h2.block-title {
@@ -2141,6 +2182,14 @@ block-menu-block-4 li {
   padding-right: 3%;
 }
 
+#block-views-fe78d79853e84f0f15f21f1ffeee8437 .views-field-body-1 {
+  min-height: 102px;
+}
+
+#block-views-e-newsletter-block-2 > .view-display-id-block_2 > .view-content > .views-row-1 > .views-field-body {
+  min-height: 130px;
+}
+
 .views-row .views-field-field-publication-program, .views-row .views-field-field-news-program {
     overflow: hidden;
     float: none;
@@ -2186,16 +2235,17 @@ span.date-display-single {
   font-size: inherit;
 }
 
-.front #postscript-first .two-col .view .views-field-title, .front #postscript-second .two-col .view .views-field-title {
-    font-size: 1.125em;
+.front #postscript-first .two-col .view .views-field-title, .front #postscript-second .two-col .view .views-field-title,
+.view-display-id-featured_news_publications a {
+    font-size: 15px;
     line-height: 1.250em;
     font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
     font-weight: 700;
     margin-top: 0px;
 }
 
-.fontface .front #postscript-first .two-col .view .views-field-title, .fontface .front #postscript-second .two-col .view .views-field-title,
-.fontface .front #postscript-first #block-views-30ee87c9713e54cfa382e640694d1d45 a {
+.front #postscript-first .two-col .view .views-field-title, .front #postscript-second .two-col .view .views-field-title,
+.front #postscript-first #block-views-30ee87c9713e54cfa382e640694d1d45 a, .view-display-id-featured_news_publications a {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -2219,7 +2269,6 @@ span.date-display-single {
 
 .front #postscript-first .two-col .view p, .front #postscript-second .two-col .view p {
     margin: 0px;
-    font-size: 15px;
 }
 
 .brown-block {
@@ -2384,10 +2433,59 @@ span.date-display-single {
     padding: 15px 0px 0px;
 }
 
+.view-program-header .data-matrix a:before {
+  position: absolute;
+  content: url(../images/program-matrix-hover.png);
+  width:0;
+  height:0;
+  visibility:hidden;
+}
+
 .view-program-header .data-matrix a:hover {
   background-image: url(../images/program-matrix-hover.png);
   background-position: center 40px;
   background-size: 80%;
+}
+
+.view-program-header .views-field-views-conditional-1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.975em;
+    width: 100%;
+    height: 155px;
+    display: block;
+    background-image: url("../images/dashboard-first.png");
+    background-position: center 25px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 0;
+}
+
+.view-program-header .views-field-views-conditional-1 a:before {
+  position: absolute;
+  content: url(../images/dashboard-hover.png);
+  width:0;
+  height:0;
+  visibility:hidden;
+}
+
+.view-program-header .views-field-views-conditional-1 a:hover {
+  background-image: url(../images/dashboard-hover.png);
+  background-position: center 25px;
+  background-size: 80%;
+}
+
+.not-front .views-field-views-conditional-1 {
+    background-color: #900;
+    text-transform: uppercase;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-weight: 700;
+    width: 60px;
+    background-image: none;
+    line-height: 1em;
+    padding: 0px;
+    width: 100%;
 }
 
 .view-program-header .corner {
@@ -2403,7 +2501,7 @@ span.date-display-single {
     padding-top: 0.75em;
 }
 
-.fontface h1 {
+h1 {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -2520,7 +2618,7 @@ h3, h4 {
     color: #900;
 }
 
-.fontface h3, .fontface h4 {
+h3, h4 {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -2583,7 +2681,7 @@ html.js fieldset.collapsed {
   font-size: 18px;
 }
 
-.fontface .views-accordion legend {
+.views-accordion legend {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
@@ -2737,7 +2835,7 @@ fieldset.collapsed span.fieldset-legend {
   /* IE8+ */
 }
 
-.fontface .page-news-publications-e-newsletters .views-accordion h3 a.toggle {
+.page-news-publications-e-newsletters .views-accordion h3 a.toggle {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
@@ -2907,7 +3005,7 @@ font-weight: normal;
     margin-bottom: 22px;
 }
 
-.fontface h3, .fontface h4 {
+h3, h4 {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
@@ -3215,34 +3313,34 @@ span.newtab {
 
 .front .view-announcement .views-row, .view-announcement .views-row {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-repeat: repeat;
   margin-bottom: 0;
-  background: #614e37;
-  background: -moz-linear-gradient(left,#614e37 0%,#91795c 75%);
-  background: -webkit-gradient(linear,left top,right top,color-stop(0%,#614e37),color-stop(75%,#91795c));
-  background: -webkit-linear-gradient(left,#614e37 0%,#91795c 75%);
-  background: -o-linear-gradient(left,#614e37 0%,#91795c 75%);
-  background: -ms-linear-gradient(left,#614e37 0%,#91795c 75%);
-  background: linear-gradient(to right,#614e37 0%,#91795c 75%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#614e37',endColorstr='#91795c',GradientType=1);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#614e37',endColorstr='#91795c',GradientType=1);
+  background: #f6b92a;
+  background: -moz-linear-gradient(left,#f6b92a 0%,#ffd87c 75%);
+  background: -webkit-gradient(linear,left top,right top,color-stop(0%,#f6b92a),color-stop(75%,#ffd87c));
+  background: -webkit-linear-gradient(left,#f6b92a 0%,#ffd87c 75%);
+  background: -o-linear-gradient(left,#f6b92a 0%,#ffd87c 75%);
+  background: -ms-linear-gradient(left,#f6b92a 0%,#ffd87c 75%);
+  background: linear-gradient(to right,#f6b92a 0%,#ffd87c 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b92a',endColorstr='#ffd87c',GradientType=1);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b92a',endColorstr='#ffd87c',GradientType=1);
   background-size: 100%;
 }
 
-.lt-ie9 .front .view-announcement .views-row, .view-announcement .views-row {
+.lt-ie9 .front .view-announcement .views-row, .lt-ie9 .view-announcement .views-row {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-repeat: repeat;
   margin-bottom: 0;
-  background: #614e37;
+  background: #f6b92a;
   filter: none;
 }
 
 .front .view-announcement .views-row:before, .view-announcement .views-row:before {
-  border-color: #91795c #fcfeff #91795c #fcfeff;
+  border-color: #ffd87c #fcfeff #ffd87c #fcfeff;
   content: "";
   position: absolute;
   bottom: 0;
@@ -3254,7 +3352,7 @@ span.newtab {
 }
 
 .front .view-announcement .views-row:before, .view-announcement a {
-  color: #f6b92a;
+  color: #990000;
 }
 
 .front .view-announcement span, .view-announcement span,
@@ -3263,11 +3361,11 @@ span.newtab {
 .front .view-announcement span, .view-announcement h3,
 .front .view-announcement span, .view-announcement h4,
 .front .view-announcement span, .view-announcement h5 {
-  color: #fff;
+  color: #614e37;
 }
 
 
-.fontface .front .view-announcement span, .fontface .view-announcement span {
+.front .view-announcement span, .view-announcement span {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
@@ -3283,28 +3381,28 @@ span.newtab {
    padding-top: 10px;
 }
 
-.fontface .data-matrix {
+.data-matrix {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-.fontface #print-mail-form input[type="reset"], .fontface
+#print-mail-form input[type="reset"],
 #print-mail-form input[type="submit"] {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-.fontface .corner.three-col h2.block-title {
+.corner.three-col h2.block-title {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-.fontface .landing-page.view-e-newsletter h2.block-title {
+.landing-page.view-e-newsletter h2.block-title {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-.fontface .landing-page.view-e-newsletter .views-field-title p {
+.landing-page.view-e-newsletter .views-field-title p {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
@@ -3372,13 +3470,23 @@ span.newtab {
     padding-right: 5%;
   }
 
+.view-program-abbreviation {
+  float: left;
+  clear: both;
+  color: #7d7d7d;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px 5px 0;
 }
 
-@media all and (max-width: 980px) {
-  .nci-inner {
-    height: auto;
-    padding-bottom: 4%;
-  }
+.views-label, .field-label {
+  color: #7d7d7d;
+  font-weight: bold;
+  text-transform: uppercase;
+  float: left;
+  display: inline;
+  padding: 5px 10px 5px 0;
+}
 
   .nci-inner img, #logo {
     width: 50%;
@@ -3612,6 +3720,11 @@ span.newtab {
     width: 800px;
   }
 
+}
+
+@media all and (max-width: 700px) {
+  .front .region-postscript-first {
+  }
 }
 
 @media all and (max-width: 600px) {
