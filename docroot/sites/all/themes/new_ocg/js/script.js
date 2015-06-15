@@ -61,7 +61,6 @@ $(document).ready (function (){
   }
   
   $('.fieldset-title').click(function () {
-      console.log('Hello');
       var $this = $(this);
       $('fieldset').addClass('collapsed');
       $this.parent().parent().parent().removeClass('collapsed');
