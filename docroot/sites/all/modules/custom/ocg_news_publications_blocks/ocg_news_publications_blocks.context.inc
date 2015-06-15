@@ -56,23 +56,11 @@ function ocg_news_publications_blocks_context_default_contexts() {
           'region' => 'postscript_first',
           'weight' => '-10',
         ),
-        'views-30ee87c9713e54cfa382e640694d1d45' => array(
-          'module' => 'views',
-          'delta' => '30ee87c9713e54cfa382e640694d1d45',
-          'region' => 'postscript_first',
-          'weight' => '-9',
-        ),
         'views-e_newsletter-block_2' => array(
           'module' => 'views',
           'delta' => 'e_newsletter-block_2',
           'region' => 'postscript_first',
           'weight' => '-8',
-        ),
-        'views-e_newsletter-block_3' => array(
-          'module' => 'views',
-          'delta' => 'e_newsletter-block_3',
-          'region' => 'postscript_first',
-          'weight' => '-7',
         ),
         'block-3' => array(
           'module' => 'block',

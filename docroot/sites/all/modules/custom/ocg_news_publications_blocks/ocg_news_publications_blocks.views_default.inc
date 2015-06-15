@@ -11,6 +11,535 @@ function ocg_news_publications_blocks_views_default_views() {
   $export = array();
 
   $view = new view();
+  $view->name = 'e_newsletter';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'E-Newsletter';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'News';
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['use_more_text'] = 'View Current E-Newsletter';
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['tags']['first'] = 'first';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = 'previous';
+  $handler->display->display_options['pager']['options']['tags']['next'] = 'next';
+  $handler->display->display_options['pager']['options']['tags']['last'] = 'last';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_news_program_target_id']['id'] = 'field_news_program_target_id';
+  $handler->display->display_options['relationships']['field_news_program_target_id']['table'] = 'field_data_field_news_program';
+  $handler->display->display_options['relationships']['field_news_program_target_id']['field'] = 'field_news_program_target_id';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_enews_program_target_id']['id'] = 'field_enews_program_target_id';
+  $handler->display->display_options['relationships']['field_enews_program_target_id']['table'] = 'field_data_field_enews_program';
+  $handler->display->display_options['relationships']['field_enews_program_target_id']['field'] = 'field_enews_program_target_id';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_enews_issue_number_target_id']['id'] = 'field_enews_issue_number_target_id';
+  $handler->display->display_options['relationships']['field_enews_issue_number_target_id']['table'] = 'field_data_field_enews_issue_number';
+  $handler->display->display_options['relationships']['field_enews_issue_number_target_id']['field'] = 'field_enews_issue_number_target_id';
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_class'] = 'left';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => 'pubres_150x150',
+    'image_link' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h4';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Enews Issue Number */
+  $handler->display->display_options['fields']['field_enews_issue_number']['id'] = 'field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number']['table'] = 'field_data_field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number']['field'] = 'field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number']['label'] = '';
+  $handler->display->display_options['fields']['field_enews_issue_number']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_enews_issue_number']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Taxonomy term: Issue Date */
+  $handler->display->display_options['fields']['field_issue_date']['id'] = 'field_issue_date';
+  $handler->display->display_options['fields']['field_issue_date']['table'] = 'field_data_field_issue_date';
+  $handler->display->display_options['fields']['field_issue_date']['field'] = 'field_issue_date';
+  $handler->display->display_options['fields']['field_issue_date']['relationship'] = 'field_enews_issue_number_target_id';
+  $handler->display->display_options['fields']['field_issue_date']['label'] = '';
+  $handler->display->display_options['fields']['field_issue_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_issue_date']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '200',
+  );
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'e_newsletter_article' => 'e_newsletter_article',
+  );
+  /* Filter criterion: Content: Promoted to front page */
+  $handler->display->display_options['filters']['promote']['id'] = 'promote';
+  $handler->display->display_options['filters']['promote']['table'] = 'node';
+  $handler->display->display_options['filters']['promote']['field'] = 'promote';
+  $handler->display->display_options['filters']['promote']['value'] = '1';
+
+  /* Display: Featured eNewsletter (Home) */
+  $handler = $view->new_display('block', 'Featured eNewsletter (Home)', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'e-Newsletter';
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'View Current E-Newsletter';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_news_program_target_id']['id'] = 'field_news_program_target_id';
+  $handler->display->display_options['relationships']['field_news_program_target_id']['table'] = 'field_data_field_news_program';
+  $handler->display->display_options['relationships']['field_news_program_target_id']['field'] = 'field_news_program_target_id';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_enews_program_target_id']['id'] = 'field_enews_program_target_id';
+  $handler->display->display_options['relationships']['field_enews_program_target_id']['table'] = 'field_data_field_enews_program';
+  $handler->display->display_options['relationships']['field_enews_program_target_id']['field'] = 'field_enews_program_target_id';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_enews_issue_number_target_id']['id'] = 'field_enews_issue_number_target_id';
+  $handler->display->display_options['relationships']['field_enews_issue_number_target_id']['table'] = 'field_data_field_enews_issue_number';
+  $handler->display->display_options['relationships']['field_enews_issue_number_target_id']['field'] = 'field_enews_issue_number_target_id';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  /* Field: Content: Enews Issue Number */
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['id'] = 'field_enews_issue_number_1';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['table'] = 'field_data_field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['field'] = 'field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['label'] = '';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['text'] = 'View Entire e-Newsletter';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['path'] = 'news-publications/e-newsletter-issue/[field_enews_issue_number_1]';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['absolute'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['replace_spaces'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['path_case'] = 'lower';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['link_class'] = 'more-link';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Content: Enews Issue Number */
+  $handler->display->display_options['fields']['field_enews_issue_number']['id'] = 'field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number']['table'] = 'field_data_field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number']['field'] = 'field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number']['label'] = '';
+  $handler->display->display_options['fields']['field_enews_issue_number']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_enews_issue_number']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_image']['alter']['path'] = 'news-publications/e-newsletter-issue/[field_enews_issue_number]#[nid]';
+  $handler->display->display_options['fields']['field_image']['alter']['replace_spaces'] = TRUE;
+  $handler->display->display_options['fields']['field_image']['alter']['path_case'] = 'lower';
+  $handler->display->display_options['fields']['field_image']['element_class'] = 'left';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => 'pubres_150x150',
+    'image_link' => '',
+  );
+  /* Field: Taxonomy term: Issue Date */
+  $handler->display->display_options['fields']['field_issue_date']['id'] = 'field_issue_date';
+  $handler->display->display_options['fields']['field_issue_date']['table'] = 'field_data_field_issue_date';
+  $handler->display->display_options['fields']['field_issue_date']['field'] = 'field_issue_date';
+  $handler->display->display_options['fields']['field_issue_date']['relationship'] = 'field_enews_issue_number_target_id';
+  $handler->display->display_options['fields']['field_issue_date']['label'] = '';
+  $handler->display->display_options['fields']['field_issue_date']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_issue_date']['alter']['text'] = '[field_enews_issue_number], [field_issue_date]';
+  $handler->display->display_options['fields']['field_issue_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_issue_date']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = 'news-publications/e-newsletter-issue/[field_enews_issue_number]#[nid]';
+  $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path_case'] = 'lower';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_enews_physician']['id'] = 'field_enews_physician';
+  $handler->display->display_options['fields']['field_enews_physician']['table'] = 'field_data_field_enews_physician';
+  $handler->display->display_options['fields']['field_enews_physician']['field'] = 'field_enews_physician';
+  $handler->display->display_options['fields']['field_enews_physician']['label'] = '';
+  $handler->display->display_options['fields']['field_enews_physician']['element_label_colon'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['text'] = '<i>[body]</i>';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '120';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '160',
+  );
+  /* Field: Global: View */
+  $handler->display->display_options['fields']['view']['id'] = 'view';
+  $handler->display->display_options['fields']['view']['table'] = 'views';
+  $handler->display->display_options['fields']['view']['field'] = 'view';
+  $handler->display->display_options['fields']['view']['label'] = '';
+  $handler->display->display_options['fields']['view']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view']['view'] = 'e_newsletter';
+  $handler->display->display_options['fields']['view']['display'] = 'block_3';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Taxonomy term: Issue Date (field_issue_date) */
+  $handler->display->display_options['sorts']['field_issue_date_value']['id'] = 'field_issue_date_value';
+  $handler->display->display_options['sorts']['field_issue_date_value']['table'] = 'field_data_field_issue_date';
+  $handler->display->display_options['sorts']['field_issue_date_value']['field'] = 'field_issue_date_value';
+  $handler->display->display_options['sorts']['field_issue_date_value']['relationship'] = 'field_enews_issue_number_target_id';
+  $handler->display->display_options['sorts']['field_issue_date_value']['order'] = 'DESC';
+
+  /* Display: Latest eNewsletter (News & Pub) */
+  $handler = $view->new_display('block', 'Latest eNewsletter (News & Pub)', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'e-Newsletter';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'landing-page';
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'View Current E-Newsletter';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  /* Field: Content: Enews Issue Number */
+  $handler->display->display_options['fields']['field_enews_issue_number']['id'] = 'field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number']['table'] = 'field_data_field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number']['field'] = 'field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number']['label'] = '';
+  $handler->display->display_options['fields']['field_enews_issue_number']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number']['alter']['text'] = 'View entire e-Newsletter >';
+  $handler->display->display_options['fields']['field_enews_issue_number']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_enews_issue_number']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Taxonomy term: Issue Date */
+  $handler->display->display_options['fields']['field_issue_date']['id'] = 'field_issue_date';
+  $handler->display->display_options['fields']['field_issue_date']['table'] = 'field_data_field_issue_date';
+  $handler->display->display_options['fields']['field_issue_date']['field'] = 'field_issue_date';
+  $handler->display->display_options['fields']['field_issue_date']['relationship'] = 'field_enews_issue_number_target_id';
+  $handler->display->display_options['fields']['field_issue_date']['label'] = '';
+  $handler->display->display_options['fields']['field_issue_date']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_issue_date']['alter']['text'] = '<h2 class="block-title">[field_enews_issue_number], [field_issue_date]</h2>';
+  $handler->display->display_options['fields']['field_issue_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_issue_date']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Content: Enews Issue Number */
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['id'] = 'field_enews_issue_number_1';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['table'] = 'field_data_field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['field'] = 'field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['label'] = '';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['text'] = 'View entire e-Newsletter >';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['path'] = '/news-publications/e-newsletter-issue/[field_enews_issue_number]';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['absolute'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['replace_spaces'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['path_case'] = 'lower';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: Content: Enews Section */
+  $handler->display->display_options['fields']['field_enews_category']['id'] = 'field_enews_category';
+  $handler->display->display_options['fields']['field_enews_category']['table'] = 'field_data_field_enews_category';
+  $handler->display->display_options['fields']['field_enews_category']['field'] = 'field_enews_category';
+  $handler->display->display_options['fields']['field_enews_category']['label'] = '';
+  $handler->display->display_options['fields']['field_enews_category']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['field_enews_category']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_enews_category']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_image']['alter']['path'] = 'news-publications/e-newsletter-issue/[field_enews_issue_number]#[nid]';
+  $handler->display->display_options['fields']['field_image']['alter']['replace_spaces'] = TRUE;
+  $handler->display->display_options['fields']['field_image']['alter']['path_case'] = 'lower';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => 'pubres_150x150',
+    'image_link' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = 'news-publications/e-newsletter-issue/[field_enews_issue_number]#[nid]';
+  $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path_case'] = 'lower';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'p';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_enews_physician']['id'] = 'field_enews_physician';
+  $handler->display->display_options['fields']['field_enews_physician']['table'] = 'field_data_field_enews_physician';
+  $handler->display->display_options['fields']['field_enews_physician']['field'] = 'field_enews_physician';
+  $handler->display->display_options['fields']['field_enews_physician']['label'] = '';
+  $handler->display->display_options['fields']['field_enews_physician']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Taxonomy term: Issue Date (field_issue_date) */
+  $handler->display->display_options['sorts']['field_issue_date_value']['id'] = 'field_issue_date_value';
+  $handler->display->display_options['sorts']['field_issue_date_value']['table'] = 'field_data_field_issue_date';
+  $handler->display->display_options['sorts']['field_issue_date_value']['field'] = 'field_issue_date_value';
+  $handler->display->display_options['sorts']['field_issue_date_value']['relationship'] = 'field_enews_issue_number_target_id';
+  $handler->display->display_options['sorts']['field_issue_date_value']['order'] = 'DESC';
+
+  /* Display: Feed */
+  $handler = $view->new_display('feed', 'Feed', 'feed_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'e-Newsletters';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'rss';
+  $handler->display->display_options['row_plugin'] = 'node_rss';
+  $handler->display->display_options['path'] = 'rss/articles.xml';
+  $handler->display->display_options['sitename_title'] = 0;
+
+  /* Display: Two eNewsletters (Home) */
+  $handler = $view->new_display('block', 'Two eNewsletters (Home)', 'block_3');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'View Current E-Newsletter';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '2';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  /* Field: Content: Enews Issue Number */
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['id'] = 'field_enews_issue_number_1';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['table'] = 'field_data_field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['field'] = 'field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['label'] = '';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['text'] = 'View Entire e-Newsletter';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['path'] = 'news-publications/e-newsletter-issue/[field_enews_issue_number_1]';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['absolute'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['replace_spaces'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['path_case'] = 'lower';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['alter']['link_class'] = 'more-link';
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_enews_issue_number_1']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Content: Enews Issue Number */
+  $handler->display->display_options['fields']['field_enews_issue_number']['id'] = 'field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number']['table'] = 'field_data_field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number']['field'] = 'field_enews_issue_number';
+  $handler->display->display_options['fields']['field_enews_issue_number']['label'] = '';
+  $handler->display->display_options['fields']['field_enews_issue_number']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_enews_issue_number']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_enews_issue_number']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = 'news-publications/e-newsletter-issue/[field_enews_issue_number]#[nid]';
+  $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path_case'] = 'lower';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Taxonomy term: Issue Date */
+  $handler->display->display_options['fields']['field_issue_date']['id'] = 'field_issue_date';
+  $handler->display->display_options['fields']['field_issue_date']['table'] = 'field_data_field_issue_date';
+  $handler->display->display_options['fields']['field_issue_date']['field'] = 'field_issue_date';
+  $handler->display->display_options['fields']['field_issue_date']['relationship'] = 'field_enews_issue_number_target_id';
+  $handler->display->display_options['fields']['field_issue_date']['label'] = '';
+  $handler->display->display_options['fields']['field_issue_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_issue_date']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_issue_date']['alter']['text'] = '[field_enews_issue_number], [field_issue_date]';
+  $handler->display->display_options['fields']['field_issue_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_issue_date']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_enews_physician']['id'] = 'field_enews_physician';
+  $handler->display->display_options['fields']['field_enews_physician']['table'] = 'field_data_field_enews_physician';
+  $handler->display->display_options['fields']['field_enews_physician']['field'] = 'field_enews_physician';
+  $handler->display->display_options['fields']['field_enews_physician']['label'] = '';
+  $handler->display->display_options['fields']['field_enews_physician']['element_label_colon'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['text'] = '<i>[body]</i>';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '120';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '160',
+  );
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Taxonomy term: Issue Date (field_issue_date) */
+  $handler->display->display_options['sorts']['field_issue_date_value']['id'] = 'field_issue_date_value';
+  $handler->display->display_options['sorts']['field_issue_date_value']['table'] = 'field_data_field_issue_date';
+  $handler->display->display_options['sorts']['field_issue_date_value']['field'] = 'field_issue_date_value';
+  $handler->display->display_options['sorts']['field_issue_date_value']['relationship'] = 'field_enews_issue_number_target_id';
+  $handler->display->display_options['sorts']['field_issue_date_value']['order'] = 'DESC';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'e_newsletter_article' => 'e_newsletter_article',
+  );
+  /* Filter criterion: Content: Promoted to front page */
+  $handler->display->display_options['filters']['promote']['id'] = 'promote';
+  $handler->display->display_options['filters']['promote']['table'] = 'node';
+  $handler->display->display_options['filters']['promote']['field'] = 'promote';
+  $handler->display->display_options['filters']['promote']['value'] = '0';
+  $export['e_newsletter'] = $view;
+
+  $view = new view();
   $view->name = 'news_and_publications';
   $view->description = '';
   $view->tag = 'default';
@@ -388,7 +917,7 @@ function ocg_news_publications_blocks_views_default_views() {
   /* Display: Program News (Program Page) */
   $handler = $view->new_display('block', 'Program News (Program Page)', 'block_2');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'In the News';
+  $handler->display->display_options['title'] = 'News & Publications';
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
@@ -1322,6 +1851,14 @@ function ocg_news_publications_blocks_views_default_views() {
   $handler->display->display_options['fields']['body_1']['settings'] = array(
     'trim_length' => '300',
   );
+  /* Field: Global: View */
+  $handler->display->display_options['fields']['view']['id'] = 'view';
+  $handler->display->display_options['fields']['view']['table'] = 'views';
+  $handler->display->display_options['fields']['view']['field'] = 'view';
+  $handler->display->display_options['fields']['view']['label'] = '';
+  $handler->display->display_options['fields']['view']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view']['view'] = 'news_and_publications';
+  $handler->display->display_options['fields']['view']['display'] = 'featured_news_publications';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
