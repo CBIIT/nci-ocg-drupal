@@ -1,7 +1,7 @@
 name = OCG News & Publications Blocks
 core = 7.x
 package = OCG
-version = 7.x-1.0
+version = 7.x-1.1
 project = ocg_news_publications_blocks
 dependencies[] = block
 dependencies[] = context

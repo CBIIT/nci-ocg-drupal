@@ -415,6 +415,19 @@ function ocg_news_publications_blocks_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
+  /* Field: Content: Date */
+  $handler->display->display_options['fields']['field_publication_date']['id'] = 'field_publication_date';
+  $handler->display->display_options['fields']['field_publication_date']['table'] = 'field_data_field_publication_date';
+  $handler->display->display_options['fields']['field_publication_date']['field'] = 'field_publication_date';
+  $handler->display->display_options['fields']['field_publication_date']['label'] = '';
+  $handler->display->display_options['fields']['field_publication_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_publication_date']['settings'] = array(
+    'format_type' => 'medium',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -424,6 +437,17 @@ function ocg_news_publications_blocks_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Date (field_news_date) */
+  $handler->display->display_options['sorts']['field_news_date_value']['id'] = 'field_news_date_value';
+  $handler->display->display_options['sorts']['field_news_date_value']['table'] = 'field_data_field_news_date';
+  $handler->display->display_options['sorts']['field_news_date_value']['field'] = 'field_news_date_value';
+  $handler->display->display_options['sorts']['field_news_date_value']['order'] = 'DESC';
+  /* Sort criterion: Content: Date (field_publication_date) */
+  $handler->display->display_options['sorts']['field_publication_date_value']['id'] = 'field_publication_date_value';
+  $handler->display->display_options['sorts']['field_publication_date_value']['table'] = 'field_data_field_publication_date';
+  $handler->display->display_options['sorts']['field_publication_date_value']['field'] = 'field_publication_date_value';
+  $handler->display->display_options['sorts']['field_publication_date_value']['order'] = 'DESC';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Program (field_news_program) */
   $handler->display->display_options['arguments']['field_news_program_target_id']['id'] = 'field_news_program_target_id';
@@ -436,12 +460,20 @@ function ocg_news_publications_blocks_views_default_views() {
   $handler->display->display_options['arguments']['field_news_program_target_id']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_news_program_target_id']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['field_news_program_target_id']['validate']['fail'] = 'ignore';
-  $handler->display->display_options['arguments']['field_news_program_target_id']['break_phrase'] = TRUE;
-  $handler->display->display_options['arguments']['field_news_program_target_id']['not'] = TRUE;
+  /* Contextual filter: Content: Program (field_publication_program) */
+  $handler->display->display_options['arguments']['field_publication_program_target_id']['id'] = 'field_publication_program_target_id';
+  $handler->display->display_options['arguments']['field_publication_program_target_id']['table'] = 'field_data_field_publication_program';
+  $handler->display->display_options['arguments']['field_publication_program_target_id']['field'] = 'field_publication_program_target_id';
+  $handler->display->display_options['arguments']['field_publication_program_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_publication_program_target_id']['exception']['value'] = 'programs';
+  $handler->display->display_options['arguments']['field_publication_program_target_id']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['field_publication_program_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_publication_program_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_publication_program_target_id']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['filter_groups']['groups'] = array(
     1 => 'AND',
-    2 => 'AND',
+    2 => 'OR',
   );
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -458,7 +490,15 @@ function ocg_news_publications_blocks_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'news' => 'news',
   );
-  $handler->display->display_options['filters']['type']['group'] = 1;
+  $handler->display->display_options['filters']['type']['group'] = 2;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
+  $handler->display->display_options['filters']['type_1']['table'] = 'node';
+  $handler->display->display_options['filters']['type_1']['field'] = 'type';
+  $handler->display->display_options['filters']['type_1']['value'] = array(
+    'publication' => 'publication',
+  );
+  $handler->display->display_options['filters']['type_1']['group'] = 2;
 
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed_1');
@@ -485,7 +525,7 @@ function ocg_news_publications_blocks_views_default_views() {
   $handler->display->display_options['use_more_text'] = 'View In the News Page';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '2';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
@@ -494,12 +534,6 @@ function ocg_news_publications_blocks_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['footer'] = FALSE;
-  /* Footer: Global: Text area */
-  $handler->display->display_options['footer']['area']['id'] = 'area';
-  $handler->display->display_options['footer']['area']['table'] = 'views';
-  $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/news-publications/news">View In the News Page </a>';
-  $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: News Program */
@@ -931,8 +965,21 @@ function ocg_news_publications_blocks_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<div class="intro"><p>Included here is a list of publications from OCG programs.  All published data are available to the research community through the program-specific data matrices.</p></div>';
+  $handler->display->display_options['header']['area']['content'] = '<div class="intro">
+	<p>Included here is a list of publications from OCG programs. All published data are available to the research community through the program-specific data matrices.</p>
+	<p class="rtecenter">* denotes publications from the CTD<sup>2</sup> initiative that are results of intra-Network collaborations</p>
+</div>
+<p>&nbsp;</p>
+';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = '<p class="rtecenter">* denotes publications from the CTD<sup>2</sup> initiative that are results of intra-Network collaborations</p>
+';
+  $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Program */
   $handler->display->display_options['fields']['field_publication_program_1']['id'] = 'field_publication_program_1';
@@ -1048,6 +1095,10 @@ function ocg_news_publications_blocks_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['tags']['first'] = 'first';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = 'previous';
+  $handler->display->display_options['pager']['options']['tags']['next'] = 'next';
+  $handler->display->display_options['pager']['options']['tags']['last'] = 'last';
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Entity Reference: Referenced Entity */
@@ -1185,13 +1236,6 @@ function ocg_news_publications_blocks_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['footer'] = FALSE;
-  /* Footer: Global: Text area */
-  $handler->display->display_options['footer']['area']['id'] = 'area';
-  $handler->display->display_options['footer']['area']['table'] = 'views';
-  $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/news-publications/publications">View Publications Page </a>
-';
-  $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Program */
   $handler->display->display_options['fields']['field_publication_program_1']['id'] = 'field_publication_program_1';
