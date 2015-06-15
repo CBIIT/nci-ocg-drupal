@@ -2235,7 +2235,8 @@ span.date-display-single {
   font-size: inherit;
 }
 
-.front #postscript-first .two-col .view .views-field-title, .front #postscript-second .two-col .view .views-field-title {
+.front #postscript-first .two-col .view .views-field-title, .front #postscript-second .two-col .view .views-field-title,
+.view-display-id-featured_news_publications a {
     font-size: 15px;
     line-height: 1.250em;
     font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
@@ -2244,7 +2245,7 @@ span.date-display-single {
 }
 
 .front #postscript-first .two-col .view .views-field-title, .front #postscript-second .two-col .view .views-field-title,
-.front #postscript-first #block-views-30ee87c9713e54cfa382e640694d1d45 a {
+.front #postscript-first #block-views-30ee87c9713e54cfa382e640694d1d45 a, .view-display-id-featured_news_publications a {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
 }
