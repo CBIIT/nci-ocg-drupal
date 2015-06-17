@@ -1605,10 +1605,13 @@ span.noicon {
     margin-top: -3px;
     padding-right: 3%;
     margin-right: 5%;
+    border-top: 1px solid #E1E1E1;
 }
 
 #block-views-30ee87c9713e54cfa382e640694d1d45.two-col .view,
-#block-views-e-newsletter-block-3.two-col .view {
+#block-views-e-newsletter-block-3.two-col .view,
+.two-col .views-field-view .view,
+#block-views-fe78d79853e84f0f15f21f1ffeee8437 .views-field-view .view {
   padding-top: 0;
   border-top: none;
 }
@@ -2138,14 +2141,29 @@ block-menu-block-4 li {
     
 }
 
-.front #postscript-first .two-col .view .more-link, .front #postscript-second .two-col .view .more-link {
+.front #postscript-first .two-col .view .more-link,
+.front #postscript-second .two-col .view .more-link {
     position: absolute;
     right: 5%;
 }
 
+.front #postscript-first .two-col .view .views-field-nothing {
+    position: absolute;
+    right: 5%;
+    top: 10px;
+}
+
+.front #postscript-first .two-col .view .views-field-nothing a {
+    color: #900 !important;
+    font-weight: normal;
+    font-family: Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
 .more-link a {
     color: #900 !important;
-    font-style: normal;
+    font-weight: normal;
 }
 
 .front #postscript-first .two-col .view a, .front #postscript-second .two-col .view a {
@@ -3296,8 +3314,8 @@ span.newtab {
 
 .front .view-announcement .view-header, .view-announcement .view-header {
   position: absolute;
-  top: 35px;
-  right: 20px;
+  top: 25%;
+  right: 2%;
   z-index: 1;
 }
 
