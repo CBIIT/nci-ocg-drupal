@@ -2200,14 +2200,20 @@ block-menu-block-4 li {
 }
 
 #block-views-fe78d79853e84f0f15f21f1ffeee8437 .views-field-body-1 {
-  min-height: 102px;
+  min-height: 112px;
+}
+
+#block-views-fe78d79853e84f0f15f21f1ffeee8437 .views-field-view {
+  margin-top: 50px;
 }
 
 #block-views-e-newsletter-block-2 > .view-display-id-block_2 > .view-content > .views-row-1 > .views-field-body {
   min-height: 130px;
 }
 
-.views-row .views-field-field-publication-program, .views-row .views-field-field-news-program {
+.views-row .views-field-field-publication-program,
+.views-row .views-field-field-news-program,
+.view-display-id-featured_news_publications .views-field-views-conditional {
     overflow: hidden;
     float: none;
 }
