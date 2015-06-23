@@ -1480,8 +1480,7 @@ margin-bottom: 15px;
  
 }
 
-#block-views-programs-block-1 .dashboard,
-#block-views-programs-block-4 .dashboard {
+#block-views-programs-block-1 .dashboard {
   position: absolute;
   right: 1%;
   bottom: 0;
@@ -1498,6 +1497,25 @@ margin-bottom: 15px;
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
   margin-bottom: 5px;
+}
+
+#block-views-programs-block-4 .dashboard {
+  position: absolute;
+  bottom: 0px;
+  background-color: #900;
+  text-transform: uppercase;
+  width: 70px;
+  background-image: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/matrix-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 95% 15%;
+  line-height: 1em;
+  color: #FFF !important;
+  padding: 20px 10px 10px;
+  display: block;
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+  font-weight: normal;
+  margin-bottom: 5px;
+  left: 210px;
 }
 
 .corner.three-col .views-row .data-matrix {
@@ -2193,6 +2211,7 @@ block-menu-block-4 li {
 .archive .left, .section-news-publications .left {
     float: left;
     padding-right: 20px;
+    position: relative;
 }
 
 #block-views-publications-block-1 .left, #block-views-resources-block-1 .left, #block-views-e-newsletter-block-2 .left, #block-views-fe78d79853e84f0f15f21f1ffeee8437 .left {
@@ -2200,7 +2219,7 @@ block-menu-block-4 li {
 }
 
 #block-views-fe78d79853e84f0f15f21f1ffeee8437 .views-field-body-1 {
-  min-height: 112px;
+  min-height: 102px;
 }
 
 #block-views-fe78d79853e84f0f15f21f1ffeee8437 .views-field-view {
@@ -2356,7 +2375,7 @@ span.date-display-single {
 
 .archive .views-row .data-matrix {
   top: 0;
-  left: 230px;
+  left: 210px;
 }
 
 .archive .views-row .left img {
@@ -2411,7 +2430,7 @@ span.date-display-single {
     text-transform: uppercase;
     font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
     font-weight: 700;
-    width: 60px;
+    width: 80px;
     background-image: none;
     line-height: 1em;
     padding: 5px;
@@ -2423,7 +2442,7 @@ span.date-display-single {
     background-repeat: no-repeat;
     background-position: right top;
     padding: 15px 5px 5px;
-    width: 50px;
+    width: 70px;
     display: block;
     font-size: 12px;
 }
@@ -3518,6 +3537,10 @@ span.newtab {
 
   .view-programs .view-content {
     display: flex;
+  }
+
+  #block-views-programs-block-4 .view-programs .view-content {
+    display: inherit;
   }
 
   #block-views-programs-block-1 .views-row {
