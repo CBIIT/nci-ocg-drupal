@@ -25,6 +25,19 @@ function target_methods_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'description' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'protocol' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_description',
@@ -64,78 +77,14 @@ function target_methods_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_protocol',
-    'label' => 'Protocol',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 32,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'field_collection_item-field_projects-field_data_analysis_protocols'
-  $field_instances['field_collection_item-field_projects-field_data_analysis_protocols'] = array(
-    'bundle' => 'field_projects',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
+      'description' => array(
         'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => 'Add',
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 1,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_data_analysis_protocols',
-    'label' => 'Data Analysis Protocols',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'field_collection_embed',
-      'weight' => 33,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'field_collection_item-field_projects-field_general_methodology'
-  $field_instances['field_collection_item-field_projects-field_general_methodology'] = array(
-    'bundle' => 'field_projects',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
+      'protocol' => array(
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -143,8 +92,8 @@ function target_methods_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'field_collection_item',
-    'field_name' => 'field_general_methodology',
-    'label' => 'General Methodology',
+    'field_name' => 'field_protocol',
+    'label' => 'Protocol',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -262,10 +211,29 @@ function target_methods_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'description' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'legend' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'protocol' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 2,
       ),
     ),
@@ -288,7 +256,7 @@ function target_methods_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 33,
+      'weight' => 4,
     ),
   );
 
@@ -301,10 +269,29 @@ function target_methods_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'description' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'legend' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+      'protocol' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 1,
       ),
     ),
@@ -325,7 +312,7 @@ function target_methods_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 32,
+      'weight' => 2,
     ),
   );
 
@@ -338,7 +325,26 @@ function target_methods_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'description' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'legend' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'protocol' => array(
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -362,7 +368,7 @@ function target_methods_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 31,
+      'weight' => 1,
     ),
   );
 
@@ -375,7 +381,7 @@ function target_methods_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -412,7 +418,7 @@ function target_methods_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'field_collection',
         'settings' => array(
           'add' => 'Add',
@@ -487,51 +493,6 @@ function target_methods_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target_methods-field_projects'
-  $field_instances['node-target_methods-field_projects'] = array(
-    'bundle' => 'target_methods',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => 'Add',
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_projects',
-    'label' => 'Projects',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'field_collection_embed',
-      'weight' => 42,
-    ),
-  );
-
   // Exported field_instance: 'node-target_methods-field_sample_processing'
   $field_instances['node-target_methods-field_sample_processing'] = array(
     'bundle' => 'target_methods',
@@ -540,7 +501,7 @@ function target_methods_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'field_collection',
         'settings' => array(
           'add' => 'Add',
@@ -577,11 +538,97 @@ function target_methods_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-target_methods-field_target_methods_projects'
+  $field_instances['node-target_methods-field_target_methods_projects'] = array(
+    'bundle' => 'target_methods',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_target_methods_projects',
+    'label' => 'Projects',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 43,
+    ),
+  );
+
+  // Exported field_instance: 'node-target_methods_projects-field_table_row'
+  $field_instances['node-target_methods_projects-field_table_row'] = array(
+    'bundle' => 'target_methods_projects',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_row',
+    'label' => 'Table Row',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'field_collection_embed',
+      'weight' => 7,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
   t('Content');
-  t('Data Analysis Protocols');
   t('Description');
   t('Full Title');
   t('General Methodology');
@@ -590,6 +637,7 @@ function target_methods_field_default_field_instances() {
   t('Protocol');
   t('Sample Preparation Protocols');
   t('Sample Processing');
+  t('Table Row');
 
   return $field_instances;
 }
