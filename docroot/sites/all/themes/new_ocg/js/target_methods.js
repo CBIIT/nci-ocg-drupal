@@ -3,7 +3,7 @@
     attach: function(context, settings) {
       $('.view-display-id-description span').hide();
       $('.view-display-id-projects_description span').hide();
-      
+
       $(".views-field-field-sample-preparation-protoco a").click(function(e) {
         e.preventDefault();
         var $this = $(this);
@@ -21,6 +21,6 @@
         $(url).show();
       });
     }
-  }
+  };
 
 })(jQuery);

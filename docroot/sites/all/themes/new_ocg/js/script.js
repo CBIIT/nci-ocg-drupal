@@ -65,6 +65,7 @@ $(document).ready (function (){
       $('fieldset').addClass('collapsed');
       $this.parent().parent().parent().removeClass('collapsed');
       history.replaceState(null, '', '#' + $this.parent().parent().parent().attr('id'));
+      $('.view-display-id-projects_description span').hide();
   });
 	
 }); // end doc ready

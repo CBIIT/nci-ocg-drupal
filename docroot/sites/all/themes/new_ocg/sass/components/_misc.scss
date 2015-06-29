@@ -3449,6 +3449,20 @@ span.newtab {
   font-weight: normal;
 }
 
+.view-display-id-table {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding-right: 5%;
+}
+
+.view-display-id-legend {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 1.5em;
+  width: 45%;
+}
+
 @media all and (max-width: 1160px) {
   .front .view-announcement .views-field-body, .view-announcement .views-field-body {
     float: left;
@@ -3771,6 +3785,20 @@ span.newtab {
 
 @media all and (max-width: 700px) {
   .front .region-postscript-first {
+  }
+
+  .view-display-id-table {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding-right: 0%;
+  }
+
+  .view-display-id-legend {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1.5em;
+    width: 100%;
   }
 }
 
