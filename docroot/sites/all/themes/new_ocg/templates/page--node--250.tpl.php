@@ -92,7 +92,7 @@
       <header id="header" role="banner">
   
         <?php if ($logo): ?>
-          <a href="<?php print $front_page; ?>" title="<?php print t('OCG Home'); ?>" rel="home" id="logo"><img src="<?php print $base_url.$logo; ?>" alt="<?php print t('OCG Home'); ?>" /></a>
+          <a href="<?php print $front_page; ?>" title="<?php print t('OCG Home'); ?>" rel="home" id="logo"><img src="<?php print $GLOBALS['base_url'].base_path().$logo; ?>" alt="<?php print t('OCG Home'); ?>" /></a>
           <?php endif; ?>
   
           <?php if ($site_name || $site_slogan): ?>
