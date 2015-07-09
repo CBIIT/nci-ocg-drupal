@@ -3446,6 +3446,31 @@ span.newtab {
   width: 45%;
 }
 
+/*
+* Views slideshow for program landing pages
+*
+*/
+
+.view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2{
+  margin: auto;
+  width: 10%;
+}
+
+.view-id-news_and_publications .views-slideshow-pager-field-item {
+  float: left;
+  font-size: 20px;
+  margin-left: 10%;
+}
+
+#main #content .view-id-news_and_publications .views-slideshow-pager-field-item a {
+  text-decoration: none;
+  color: #900;
+}
+
+.view-id-news_and_publications #vscc_controls_next_news_and_publications-block_2 {
+  float: right;
+}
+
 @media all and (max-width: 1160px) {
   .front .view-announcement .views-field-body, .view-announcement .views-field-body {
     float: left;
