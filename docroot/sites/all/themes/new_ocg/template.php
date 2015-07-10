@@ -119,13 +119,7 @@ function new_ocg_preprocess_page(&$variables, $hook) {
 
   global $base_url;
   drupal_theme_initialize();
-  dpm($base_url);
-  $logo = theme_get_setting('logo');
-  dpm($logo);
-  if (strpos($logo, $base_url) === 0) {
-    $variables['new_logo'] = drupal_substr($logo, drupal_strlen($base_url));
-  }
-  dpm($variables['new_logo']);
+  $variables['new_logo'] = theme_get_setting('logo_path');
 }
 
 function new_ocg_preprocess_node(&$variables) {
