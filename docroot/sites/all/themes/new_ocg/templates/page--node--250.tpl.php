@@ -91,8 +91,8 @@
     <div class="disappear">
       <header id="header" role="banner">
   
-        <?php if ($logo): ?>
-          <a href="<?php print $front_page; ?>" title="<?php print t('OCG Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('OCG Home'); ?>" /></a>
+        <?php if ($new_logo): ?>
+          <a href="<?php print $front_page; ?>" title="<?php print t('OCG Home'); ?>" rel="home" id="logo"><img src="<?php print $new_logo; ?>" alt="<?php print t('OCG Home'); ?>" /></a>
           <?php endif; ?>
   
           <?php if ($site_name || $site_slogan): ?>
