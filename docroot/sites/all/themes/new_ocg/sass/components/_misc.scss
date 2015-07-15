@@ -1002,7 +1002,6 @@ header {
     background: none repeat scroll 0% 0% transparent;
     border: medium none;
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
-    font-weight: 700;
     color: #900;
     text-transform: uppercase;
     font-size: 14px;
@@ -1505,10 +1504,11 @@ margin-bottom: 15px;
   color: #FFF !important;
   padding: 20px 10px 10px;
   display: block;
-  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
-  font-weight: normal;
+  font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+  font-weight: 700;
   margin-bottom: 5px;
   left: 210px;
+  font-size: 12px;
 }
 
 .corner.three-col .views-row .data-matrix {
@@ -2356,7 +2356,7 @@ span.date-display-single {
   position: relative;
   border-bottom: 1px dotted #d7d7d7;
   padding-bottom: 25px;
-  margin-bottom: 22px !important;
+  margin-bottom: 0 !important;
 }
 
 .view-resources.archive .views-row {
@@ -2418,7 +2418,7 @@ span.date-display-single {
     right: 0px;
     background-color: #900;
     text-transform: uppercase;
-    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
     font-weight: 700;
     width: 80px;
     background-image: none;
@@ -2511,7 +2511,7 @@ span.date-display-single {
 .not-front .views-field-views-conditional-1 {
     background-color: #900;
     text-transform: uppercase;
-    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
     font-weight: 700;
     width: 60px;
     background-image: none;
@@ -2955,7 +2955,6 @@ fieldset.collapsed span.fieldset-legend {
 }
 
 .page-taxonomy-term .image-caption, .page-taxonomy-term .field-name-field-publication-image-caption, .page-taxonomy-term .field-name-field-news-image-caption, .node-type-publication .image-caption, .node-type-publication .field-name-field-publication-image-caption, .node-type-publication .field-name-field-news-image-caption, .node-type-news .image-caption, .node-type-news .field-name-field-publication-image-caption, .node-type-news .field-name-field-news-image-caption {
-    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: bold;
     font-size: 12px;
     line-height: 18px;

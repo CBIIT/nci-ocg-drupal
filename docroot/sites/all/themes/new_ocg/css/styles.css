@@ -1997,25 +1997,24 @@ header {
   background: none repeat scroll 0% 0% transparent;
   border: medium none;
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
-  font-weight: 700;
   color: #900;
   text-transform: uppercase;
   font-size: 14px;
   padding-right: 0;
 }
 
-/* line 1012, ../sass/components/_misc.scss */
+/* line 1011, ../sass/components/_misc.scss */
 #region-navigation {
   position: relative;
 }
 
-/* line 1020, ../sass/components/_misc.scss */
+/* line 1019, ../sass/components/_misc.scss */
 #block-superfish-1 {
   height: 2.750em;
   bottom: 1px;
 }
 
-/* line 1033, ../sass/components/_misc.scss */
+/* line 1032, ../sass/components/_misc.scss */
 #navigation .menu li {
   float: left;
   padding: 0 0.938em 0 0.313em;
@@ -2026,24 +2025,24 @@ header {
   background: url("../images/nav-link.png") no-repeat scroll right center transparent;
 }
 
-/* line 1047, ../sass/components/_misc.scss */
+/* line 1046, ../sass/components/_misc.scss */
 #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1 {
   margin-top: 1em;
 }
 
-/* line 1055, ../sass/components/_misc.scss */
+/* line 1054, ../sass/components/_misc.scss */
 #navigation .menu li#menu-451-1 {
   padding-left: 0;
 }
 
-/* line 1060, ../sass/components/_misc.scss */
+/* line 1059, ../sass/components/_misc.scss */
 .fontface #navigation ul.links li a, .lt-ie9 .fontface #navigation ul.megamenu-menu li a,
 .fontface #navigation ul.megamenu-menu li a {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
-/* line 1069, ../sass/components/_misc.scss */
+/* line 1068, ../sass/components/_misc.scss */
 #navigation ul.links li a, #navigation ul.megamenu-menu li a {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: 700;
@@ -2053,60 +2052,60 @@ header {
   border: medium none;
 }
 
-/* line 1084, ../sass/components/_misc.scss */
+/* line 1083, ../sass/components/_misc.scss */
 #navigation ul.links li a:hover,
 #navigation ul.megamenu-menu li a:hover {
   color: #990000;
   background: none;
 }
 
-/* line 1090, ../sass/components/_misc.scss */
+/* line 1089, ../sass/components/_misc.scss */
 #navigation ul.links li a.active,
 #navigation ul.megamenu-menu li a.active {
   color: #990000;
 }
 
-/* line 1095, ../sass/components/_misc.scss */
+/* line 1094, ../sass/components/_misc.scss */
 #navigation ul.links li a:hover,
 #navigation ul.megamenu-menu li a:hover {
   color: #990000;
 }
 
-/* line 1100, ../sass/components/_misc.scss */
+/* line 1099, ../sass/components/_misc.scss */
 #navigation ul.links li.last,
 #navigation ul.megamenu-menu li.last {
   background-image: none;
 }
 
-/* line 1105, ../sass/components/_misc.scss */
+/* line 1104, ../sass/components/_misc.scss */
 #navigation ul.links li.active-trail a,
 #navigation ul.megamenu-menu li.active-trail a {
   color: #990000;
 }
 
-/* line 1110, ../sass/components/_misc.scss */
+/* line 1109, ../sass/components/_misc.scss */
 #navigation ul.links li.hovering,
 #navigation ul.megamenu-menu li.hovering {
   background-color: none;
 }
 
-/* line 1115, ../sass/components/_misc.scss */
+/* line 1114, ../sass/components/_misc.scss */
 #navigation ul.links li.hovering h2.megamenu-active,
 #navigation ul.megamenu-menu li.hovering h2.megamenu-active {
   background-color: none;
 }
 
-/* line 1119, ../sass/components/_misc.scss */
+/* line 1118, ../sass/components/_misc.scss */
 #navigation ul.megamenu-items {
   padding: 0.313em 0 0.313em 0.625em;
 }
 
-/* line 1123, ../sass/components/_misc.scss */
+/* line 1122, ../sass/components/_misc.scss */
 #navigation ul.megamenu-items li {
   float: none;
 }
 
-/* line 1127, ../sass/components/_misc.scss */
+/* line 1126, ../sass/components/_misc.scss */
 #navigation li.sf-depth-1 ul {
   background: #614e37 url(../images/dropdown-top.gif) repeat-x;
   padding-left: 0.938em;
@@ -2117,14 +2116,14 @@ header {
   overflow: hidden;
 }
 
-/* line 1138, ../sass/components/_misc.scss */
+/* line 1137, ../sass/components/_misc.scss */
 .sf-menu li:hover > ul,
 .sf-menu li.sfHover > ul {
   left: 0;
   top: 1em;
 }
 
-/* line 1143, ../sass/components/_misc.scss */
+/* line 1142, ../sass/components/_misc.scss */
 #navigation li.sf-depth-1 ul li.sf-depth-2 {
   background-image: none;
   box-shadow: none;
@@ -2133,7 +2132,7 @@ header {
   width: 100%;
 }
 
-/* line 1151, ../sass/components/_misc.scss */
+/* line 1150, ../sass/components/_misc.scss */
 #navigation li.sf-depth-1 ul li.sf-depth-3 {
   background-image: none;
   box-shadow: none;
@@ -2141,7 +2140,7 @@ header {
   padding: 0.313em 0.938em 0 0.313em;
 }
 
-/* line 1158, ../sass/components/_misc.scss */
+/* line 1157, ../sass/components/_misc.scss */
 #navigation li.sf-depth-1 ul li.sf-depth-2 a {
   font-size: 0.75em;
   font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
@@ -2149,19 +2148,19 @@ header {
   color: #fff;
 }
 
-/* line 1165, ../sass/components/_misc.scss */
+/* line 1164, ../sass/components/_misc.scss */
 #navigation li.sf-depth-1 ul li.sf-depth-2 a {
   font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 1170, ../sass/components/_misc.scss */
+/* line 1169, ../sass/components/_misc.scss */
 #navigation li.sf-depth-1 ul li.sf-depth-2 a:hover, #menu-1379-2 span:hover {
   color: #fff;
   text-decoration: underline;
 }
 
-/* line 1175, ../sass/components/_misc.scss */
+/* line 1174, ../sass/components/_misc.scss */
 #navigation li.sf-depth-1 ul li.sf-depth-2 ul {
   position: static;
   font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
@@ -2173,7 +2172,7 @@ header {
   padding-bottom: 0;
 }
 
-/* line 1186, ../sass/components/_misc.scss */
+/* line 1185, ../sass/components/_misc.scss */
 #navigation li.sf-depth-1 ul li.sf-depth-2 ul li.sf-depth-3 {
   background-image: none;
   font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
@@ -2181,29 +2180,29 @@ header {
   text-transform: capitalize !important;
 }
 
-/* line 1193, ../sass/components/_misc.scss */
+/* line 1192, ../sass/components/_misc.scss */
 #navigation li.sf-depth-1.first ul {
   width: 40em !important;
   max-width: none !important;
 }
 
-/* line 1198, ../sass/components/_misc.scss */
+/* line 1197, ../sass/components/_misc.scss */
 #menu-452-1, #menu-453-1, #menu-427-1, #menu-546-1 {
   overflow: hidden;
   width: 23% !important;
 }
 
-/* line 1203, ../sass/components/_misc.scss */
+/* line 1202, ../sass/components/_misc.scss */
 #navigation ul.links li.last {
   background-image: none;
 }
 
-/* line 1207, ../sass/components/_misc.scss */
+/* line 1206, ../sass/components/_misc.scss */
 .right {
   float: right;
 }
 
-/* line 1211, ../sass/components/_misc.scss */
+/* line 1210, ../sass/components/_misc.scss */
 #block-superfish-2 {
   position: absolute;
   bottom: 1px;
@@ -2220,12 +2219,12 @@ header {
   width: 250px;
 }
 
-/* line 1227, ../sass/components/_misc.scss */
+/* line 1226, ../sass/components/_misc.scss */
 #block-superfish-2 .sf-depth-1 > a {
   display: none;
 }
 
-/* line 1231, ../sass/components/_misc.scss */
+/* line 1230, ../sass/components/_misc.scss */
 #menu-1379-2 > span {
   background-image: url(../images/datasets-dropdown.png);
   background-repeat: no-repeat;
@@ -2233,7 +2232,7 @@ header {
   padding-right: 20% !important;
 }
 
-/* line 1238, ../sass/components/_misc.scss */
+/* line 1237, ../sass/components/_misc.scss */
 .lt-ie9 #menu-1379-2 > span {
   background-image: url(../images/datasets-dropdown.png);
   background-repeat: no-repeat;
@@ -2241,14 +2240,14 @@ header {
   padding-right: 15% !important;
 }
 
-/* line 1245, ../sass/components/_misc.scss */
+/* line 1244, ../sass/components/_misc.scss */
 #block-superfish-2 .menu li {
   padding-bottom: 1em;
   margin-left: 1em;
   padding-top: .75em;
 }
 
-/* line 1251, ../sass/components/_misc.scss */
+/* line 1250, ../sass/components/_misc.scss */
 #block-superfish-2 .menu li.firstandlast {
   color: #FFF;
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
@@ -2258,7 +2257,7 @@ header {
   width: 100%;
 }
 
-/* line 1260, ../sass/components/_misc.scss */
+/* line 1259, ../sass/components/_misc.scss */
 .lt-ie9 #block-superfish-2 .menu li.firstandlast {
   color: #FFF;
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
@@ -2268,12 +2267,12 @@ header {
   width: 100%;
 }
 
-/* line 1269, ../sass/components/_misc.scss */
+/* line 1268, ../sass/components/_misc.scss */
 #menu-958-2 {
   margin-top: 1em;
 }
 
-/* line 1274, ../sass/components/_misc.scss */
+/* line 1273, ../sass/components/_misc.scss */
 #block-superfish-2 .menu li a {
   color: #fff;
   text-decoration: none;
@@ -2281,33 +2280,33 @@ header {
   padding-right: 1%;
 }
 
-/* line 1281, ../sass/components/_misc.scss */
+/* line 1280, ../sass/components/_misc.scss */
 #block-superfish-2 .menu li a > .sf-sub-indicator {
   top: 0.3em;
   background-position: 0px -100px;
   right: -1em;
 }
 
-/* line 1287, ../sass/components/_misc.scss */
+/* line 1286, ../sass/components/_misc.scss */
 #block-superfish-2 li.sf-depth-1 ul {
   margin-top: 1.4em;
   max-width: 99%;
   margin-left: 0.175%;
 }
 
-/* line 1293, ../sass/components/_misc.scss */
+/* line 1292, ../sass/components/_misc.scss */
 .block.program-datasets .ui-accordion-header {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
-/* line 1298, ../sass/components/_misc.scss */
+/* line 1297, ../sass/components/_misc.scss */
 .block.program-datasets .ui-accordion-content a {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 1303, ../sass/components/_misc.scss */
+/* line 1302, ../sass/components/_misc.scss */
 #pre-content {
   padding-left: 10px;
   padding-right: 10px;
@@ -2315,29 +2314,29 @@ header {
   padding-top: 1.6em;
 }
 
-/* line 1310, ../sass/components/_misc.scss */
+/* line 1309, ../sass/components/_misc.scss */
 .not-front #pre-content {
   margin-bottom: 0;
 }
 
-/* line 1314, ../sass/components/_misc.scss */
+/* line 1313, ../sass/components/_misc.scss */
 #block-block-3 p {
   margin: 0;
 }
 
-/* line 1318, ../sass/components/_misc.scss */
+/* line 1317, ../sass/components/_misc.scss */
 .datasets {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
-/* line 1323, ../sass/components/_misc.scss */
+/* line 1322, ../sass/components/_misc.scss */
 .datasets {
   font-size: 16px;
   margin-bottom: 14px;
 }
 
-/* line 1328, ../sass/components/_misc.scss */
+/* line 1327, ../sass/components/_misc.scss */
 .datasets p a {
   color: #774928;
   text-decoration: none;
@@ -2349,12 +2348,12 @@ header {
   padding-right: 25px;
 }
 
-/* line 1339, ../sass/components/_misc.scss */
+/* line 1338, ../sass/components/_misc.scss */
 .datasets p a:hover {
   text-decoration: underline;
 }
 
-/* line 1343, ../sass/components/_misc.scss */
+/* line 1342, ../sass/components/_misc.scss */
 h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
   margin-top: 0px;
   color: #900;
@@ -2363,7 +2362,7 @@ h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
   line-height: 30px;
 }
 
-/* line 1351, ../sass/components/_misc.scss */
+/* line 1350, ../sass/components/_misc.scss */
 .front #page-title {
   font-size: 22px;
   display: inline-block;
@@ -2373,65 +2372,65 @@ h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
   margin-bottom: 0px;
 }
 
-/* line 1360, ../sass/components/_misc.scss */
+/* line 1359, ../sass/components/_misc.scss */
 .front .node-2 {
   border-bottom: 1px solid #E1E1E1;
   margin-top: -1em;
   margin-bottom: -2.75em;
 }
 
-/* line 1366, ../sass/components/_misc.scss */
+/* line 1365, ../sass/components/_misc.scss */
 .front .node-2 p {
   color: #774928;
   font-size: 15px;
 }
 
-/* line 1371, ../sass/components/_misc.scss */
+/* line 1370, ../sass/components/_misc.scss */
 .front .node-2 img {
   margin-top: -3em;
 }
 
-/* line 1375, ../sass/components/_misc.scss */
+/* line 1374, ../sass/components/_misc.scss */
 #content a {
   color: #774928;
   text-decoration: none;
 }
 
-/* line 1380, ../sass/components/_misc.scss */
+/* line 1379, ../sass/components/_misc.scss */
 #content a:hover {
   text-decoration: underline;
 }
 
-/* line 1384, ../sass/components/_misc.scss */
+/* line 1383, ../sass/components/_misc.scss */
 .front .node-2 a {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
-/* line 1389, ../sass/components/_misc.scss */
+/* line 1388, ../sass/components/_misc.scss */
 .front .node-2 .email {
   border-left: 2px solid #C7B3A4;
   padding-left: 5px;
 }
 
-/* line 1394, ../sass/components/_misc.scss */
+/* line 1393, ../sass/components/_misc.scss */
 .front .node-2 .email a {
   color: #900 !important;
 }
 
-/* line 1398, ../sass/components/_misc.scss */
+/* line 1397, ../sass/components/_misc.scss */
 #block-views-programs-block-1 {
   margin-top: -2.25em;
 }
 
-/* line 1402, ../sass/components/_misc.scss */
+/* line 1401, ../sass/components/_misc.scss */
 h2.block-title {
   margin: 0;
   line-height: 1.25em;
   text-transform: uppercase !important;
 }
 
-/* line 1408, ../sass/components/_misc.scss */
+/* line 1407, ../sass/components/_misc.scss */
 .corner.three-col h2.block-title {
   color: #774928;
   font-weight: 700;
@@ -2439,23 +2438,23 @@ h2.block-title {
   font-size: 36px;
 }
 
-/* line 1415, ../sass/components/_misc.scss */
+/* line 1414, ../sass/components/_misc.scss */
 .corner.three-col .views-row .views-field-title span {
   color: #900;
 }
 
-/* line 1419, ../sass/components/_misc.scss */
+/* line 1418, ../sass/components/_misc.scss */
 .views-row {
   overflow: hidden;
   width: 100%;
 }
 
-/* line 1424, ../sass/components/_misc.scss */
+/* line 1423, ../sass/components/_misc.scss */
 .view .views-row {
   margin-bottom: 10px;
 }
 
-/* line 1428, ../sass/components/_misc.scss */
+/* line 1427, ../sass/components/_misc.scss */
 .corner .views-row {
   position: relative;
   width: 230px;
@@ -2472,7 +2471,7 @@ h2.block-title {
   background-repeat: no-repeat;
 }
 
-/* line 1444, ../sass/components/_misc.scss */
+/* line 1443, ../sass/components/_misc.scss */
 .corner.three-col .views-row {
   width: 32.5%;
   margin-right: 14px;
@@ -2480,17 +2479,17 @@ h2.block-title {
   margin-bottom: 15px;
 }
 
-/* line 1451, ../sass/components/_misc.scss */
+/* line 1450, ../sass/components/_misc.scss */
 .corner .views-row-last {
   margin-right: 0px !important;
 }
 
-/* line 1455, ../sass/components/_misc.scss */
+/* line 1454, ../sass/components/_misc.scss */
 .corner.three-col .views-row {
   background: url("../images/three-col-bkg.png") no-repeat scroll left bottom/100% auto transparent;
 }
 
-/* line 1459, ../sass/components/_misc.scss */
+/* line 1458, ../sass/components/_misc.scss */
 .data-matrix {
   position: absolute;
   top: 0px;
@@ -2504,7 +2503,7 @@ h2.block-title {
   padding: 5px;
 }
 
-/* line 1476, ../sass/components/_misc.scss */
+/* line 1475, ../sass/components/_misc.scss */
 #block-views-programs-block-1 .dashboard {
   position: absolute;
   right: 1%;
@@ -2524,7 +2523,7 @@ h2.block-title {
   margin-bottom: 5px;
 }
 
-/* line 1495, ../sass/components/_misc.scss */
+/* line 1494, ../sass/components/_misc.scss */
 #block-views-programs-block-4 .dashboard {
   position: absolute;
   bottom: 0px;
@@ -2538,10 +2537,11 @@ h2.block-title {
   color: #FFF !important;
   padding: 20px 10px 10px;
   display: block;
-  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
-  font-weight: normal;
+  font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+  font-weight: 700;
   margin-bottom: 5px;
   left: 210px;
+  font-size: 12px;
 }
 
 /* line 1514, ../sass/components/_misc.scss */
@@ -3518,7 +3518,7 @@ span.date-display-single {
   position: relative;
   border-bottom: 1px dotted #d7d7d7;
   padding-bottom: 25px;
-  margin-bottom: 22px !important;
+  margin-bottom: 0 !important;
 }
 
 /* line 2362, ../sass/components/_misc.scss */
@@ -3593,7 +3593,7 @@ span.date-display-single {
   right: 0px;
   background-color: #900;
   text-transform: uppercase;
-  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+  font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
   font-weight: 700;
   width: 80px;
   background-image: none;
@@ -3697,7 +3697,7 @@ span.date-display-single {
 .not-front .views-field-views-conditional-1 {
   background-color: #900;
   text-transform: uppercase;
-  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+  font-family: "Arial Narrow",Arial,Helvetica,"Nimbus Sans L",sans-serif;
   font-weight: 700;
   width: 60px;
   background-image: none;
@@ -4190,7 +4190,6 @@ fieldset.collapsed span.fieldset-legend {
 
 /* line 2957, ../sass/components/_misc.scss */
 .page-taxonomy-term .image-caption, .page-taxonomy-term .field-name-field-publication-image-caption, .page-taxonomy-term .field-name-field-news-image-caption, .node-type-publication .image-caption, .node-type-publication .field-name-field-publication-image-caption, .node-type-publication .field-name-field-news-image-caption, .node-type-news .image-caption, .node-type-news .field-name-field-publication-image-caption, .node-type-news .field-name-field-news-image-caption {
-  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: bold;
   font-size: 12px;
   line-height: 18px;
@@ -4198,67 +4197,67 @@ fieldset.collapsed span.fieldset-legend {
   padding-bottom: 10px;
 }
 
-/* line 2966, ../sass/components/_misc.scss */
+/* line 2965, ../sass/components/_misc.scss */
 .node-type-publication .field-journal-name, .node-type-publication .field-name-field-publication-journal {
   padding-bottom: 10px;
   font-size: 12px;
   line-height: 18px;
 }
 
-/* line 2972, ../sass/components/_misc.scss */
+/* line 2971, ../sass/components/_misc.scss */
 .node-type-publication .field-journal-name p {
   padding-top: 10px;
 }
 
-/* line 2976, ../sass/components/_misc.scss */
+/* line 2975, ../sass/components/_misc.scss */
 .node-type-publication .field-name-title span {
   font-size: 18.2px;
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   line-height: 1.1em;
 }
 
-/* line 2982, ../sass/components/_misc.scss */
+/* line 2981, ../sass/components/_misc.scss */
 .not-front.page-node .field-type-datetime {
   padding-bottom: 10px;
 }
 
-/* line 2986, ../sass/components/_misc.scss */
+/* line 2985, ../sass/components/_misc.scss */
 .not-front.page-node .field-name-body {
   padding-top: 10px;
 }
 
-/* line 2990, ../sass/components/_misc.scss */
+/* line 2989, ../sass/components/_misc.scss */
 .view {
   overflow: hidden;
 }
 
-/* line 2994, ../sass/components/_misc.scss */
+/* line 2993, ../sass/components/_misc.scss */
 .view-program-header {
   position: relative;
 }
 
-/* line 2998, ../sass/components/_misc.scss */
+/* line 2997, ../sass/components/_misc.scss */
 .region-sidebar-second .data-matrix {
   position: static;
 }
 
-/* line 3002, ../sass/components/_misc.scss */
+/* line 3001, ../sass/components/_misc.scss */
 .view-program-header .data-matrix {
   width: 100%;
   padding: 0px;
 }
 
-/* line 3007, ../sass/components/_misc.scss */
+/* line 3006, ../sass/components/_misc.scss */
 .region-sidebar-second .view-program-header .corner {
   width: 100% !important;
 }
 
-/* line 3011, ../sass/components/_misc.scss */
+/* line 3010, ../sass/components/_misc.scss */
 #block-views-program-header-block-1 .views-field-field-programs-using-data p {
   padding: 0 20px;
 }
 
-/* line 3015, ../sass/components/_misc.scss */
+/* line 3014, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-content .views-row {
   margin-bottom: 10px;
   padding-bottom: 15px;
@@ -4266,37 +4265,37 @@ fieldset.collapsed span.fieldset-legend {
   overflow: visible;
 }
 
-/* line 3022, ../sass/components/_misc.scss */
+/* line 3021, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-e-newsletter-issue-title .views-row h1 {
   color: #774928;
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
-/* line 3028, ../sass/components/_misc.scss */
+/* line 3027, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-e-newsletter-issue-title .views-row h1 span {
   color: #900;
 }
 
-/* line 3032, ../sass/components/_misc.scss */
+/* line 3031, ../sass/components/_misc.scss */
 .view-taxonomy-term .attachment-before h3 {
   margin-bottom: 22px;
 }
 
-/* line 3036, ../sass/components/_misc.scss */
+/* line 3035, ../sass/components/_misc.scss */
 h3, h4 {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
-/* line 3041, ../sass/components/_misc.scss */
+/* line 3040, ../sass/components/_misc.scss */
 .view-taxonomy-term .attachment-before h3 a {
   color: #900 !important;
   font-size: 19px;
   line-height: 23px;
 }
 
-/* line 3047, ../sass/components/_misc.scss */
+/* line 3046, ../sass/components/_misc.scss */
 .view-taxonomy-term .attachment-before h3 span {
   color: #646464;
   font-size: 21px;
@@ -4304,28 +4303,28 @@ h3, h4 {
   text-transform: uppercase;
 }
 
-/* line 3054, ../sass/components/_misc.scss */
+/* line 3053, ../sass/components/_misc.scss */
 .view-taxonomy-term .attachment-before {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 5px solid #E1E1E1;
 }
 
-/* line 3060, ../sass/components/_misc.scss */
+/* line 3059, ../sass/components/_misc.scss */
 .view-taxonomy-term .attachment-before .views-row {
   margin-bottom: 0px;
   padding-bottom: 0px;
   border-bottom: medium none;
 }
 
-/* line 3066, ../sass/components/_misc.scss */
+/* line 3065, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-content .views-row .views-field-title h2 {
   color: #900;
   font-size: 22px;
   line-height: 25px;
 }
 
-/* line 3072, ../sass/components/_misc.scss */
+/* line 3071, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-content .views-row .views-field-title h2 span {
   color: #646464;
   font-size: 26px;
@@ -4333,58 +4332,58 @@ h3, h4 {
   text-transform: uppercase;
 }
 
-/* line 3079, ../sass/components/_misc.scss */
+/* line 3078, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-content .views-row img {
   float: left;
   padding-right: 15px;
   padding-bottom: 10px;
 }
 
-/* line 3085, ../sass/components/_misc.scss */
+/* line 3084, ../sass/components/_misc.scss */
 .view-taxonomy-term .views-field-field-enews-physician {
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 10px;
 }
 
-/* line 3091, ../sass/components/_misc.scss */
+/* line 3090, ../sass/components/_misc.scss */
 table {
   border: 1px solid #ebebeb;
 }
-/* line 3093, ../sass/components/_misc.scss */
+/* line 3092, ../sass/components/_misc.scss */
 table th {
   padding: 5px 10px;
   border-right: 1px solid #ebebeb;
 }
-/* line 3097, ../sass/components/_misc.scss */
+/* line 3096, ../sass/components/_misc.scss */
 table td {
   padding: 5px 10px;
 }
 
-/* line 3102, ../sass/components/_misc.scss */
+/* line 3101, ../sass/components/_misc.scss */
 .tablestyles tr.odd {
   background-color: #fff;
   border-bottom: 1px solid #ebebeb;
 }
-/* line 3106, ../sass/components/_misc.scss */
+/* line 3105, ../sass/components/_misc.scss */
 .tablestyles tr.odd td,
 .tablestyles tr.odd th {
   border-right: 1px solid #ebebeb !important;
 }
 
-/* line 3111, ../sass/components/_misc.scss */
+/* line 3110, ../sass/components/_misc.scss */
 .tablestyles tr.even {
   /* Some tables have rows marked even or odd. */
   background-color: #fcfcea !important;
   border-bottom: 1px solid #ebebeb !important;
 }
-/* line 3115, ../sass/components/_misc.scss */
+/* line 3114, ../sass/components/_misc.scss */
 .tablestyles tr.even td,
 .tablestyles tr.even th {
   border-right: 1px solid #ebebeb !important;
 }
 
-/* line 3122, ../sass/components/_misc.scss */
+/* line 3121, ../sass/components/_misc.scss */
 .tablestyles thead tr,
 .tablestyles tr.header,
 thead tr {
@@ -4392,7 +4391,7 @@ thead tr {
   color: #fff;
 }
 
-/* line 3127, ../sass/components/_misc.scss */
+/* line 3126, ../sass/components/_misc.scss */
 span.newtab {
   text-indent: -999999px;
   background: url("../images/newtab.png") no-repeat scroll 0% 0% transparent;
@@ -4400,34 +4399,34 @@ span.newtab {
   width: 9px;
 }
 
-/* line 3134, ../sass/components/_misc.scss */
+/* line 3133, ../sass/components/_misc.scss */
 .front #main #postscript-first ul, .front #main #postscript-second ul, #main #content ul {
   list-style-type: none;
   list-style-image: url("../images/bullet.gif");
 }
 
-/* line 3139, ../sass/components/_misc.scss */
+/* line 3138, ../sass/components/_misc.scss */
 .not-front #main #content p a {
   text-decoration: underline;
 }
 
-/* line 3143, ../sass/components/_misc.scss */
+/* line 3142, ../sass/components/_misc.scss */
 .page-node-21 #block-views-publications-block-2 {
   width: 70%;
 }
 
-/* line 3147, ../sass/components/_misc.scss */
+/* line 3146, ../sass/components/_misc.scss */
 .page-node-21 #block-views-last-updated-block {
   float: left;
 }
 
-/* line 3151, ../sass/components/_misc.scss */
+/* line 3150, ../sass/components/_misc.scss */
 .landing-page.view-e-newsletter .views-row .field-content {
   padding: 5px 20px;
   margin-bottom: 0;
 }
 
-/* line 3156, ../sass/components/_misc.scss */
+/* line 3155, ../sass/components/_misc.scss */
 .landing-page.view-e-newsletter h2.block-title {
   font-size: 15.6px;
   font-weight: 700;
@@ -4445,33 +4444,33 @@ span.newtab {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faf4bf',endColorstr='#faec7a',GradientType=0);
 }
 
-/* line 3173, ../sass/components/_misc.scss */
+/* line 3172, ../sass/components/_misc.scss */
 .landing-page.view-e-newsletter .views-row .views-field-field-issue-date .field-content {
   padding: 0;
 }
 
-/* line 3177, ../sass/components/_misc.scss */
+/* line 3176, ../sass/components/_misc.scss */
 .landing-page.view-e-newsletter h3.field-content {
   color: #767676;
 }
 
-/* line 3182, ../sass/components/_misc.scss */
+/* line 3181, ../sass/components/_misc.scss */
 .sf-menu.sf-style-default li,
 .sf-menu.sf-style-default.sf-navbar {
   background: none;
 }
 
-/* line 3185, ../sass/components/_misc.scss */
+/* line 3184, ../sass/components/_misc.scss */
 .sf-menu.sf-style-default li li {
   background: none;
 }
 
-/* line 3188, ../sass/components/_misc.scss */
+/* line 3187, ../sass/components/_misc.scss */
 .sf-menu.sf-style-default li li li {
   background: none;
 }
 
-/* line 3195, ../sass/components/_misc.scss */
+/* line 3194, ../sass/components/_misc.scss */
 .sf-menu.sf-style-default li:hover,
 .sf-menu.sf-style-default li.sfHover,
 .sf-menu.sf-style-default a:focus,
@@ -4481,7 +4480,7 @@ span.newtab {
   outline: 0;
 }
 
-/* line 3200, ../sass/components/_misc.scss */
+/* line 3199, ../sass/components/_misc.scss */
 .field-type-entityreference .views-label, .field-type-entityreference .field-label {
   color: #7d7d7d;
   font-weight: bold;
@@ -4490,12 +4489,12 @@ span.newtab {
   padding: 5px 10px 5px 0;
 }
 
-/* line 3208, ../sass/components/_misc.scss */
+/* line 3207, ../sass/components/_misc.scss */
 .field-type-entityreference .field-items {
   float: none;
 }
 
-/* line 3212, ../sass/components/_misc.scss */
+/* line 3211, ../sass/components/_misc.scss */
 .field-type-entityreference a {
   background-color: #7d7d7d;
   padding: 1px 10px 0;
@@ -4509,7 +4508,7 @@ span.newtab {
   width: auto;
 }
 
-/* line 3225, ../sass/components/_misc.scss */
+/* line 3224, ../sass/components/_misc.scss */
 .view-program-abbreviation {
   float: left;
   clear: both;
@@ -4519,7 +4518,7 @@ span.newtab {
   padding: 5px 10px 5px 0;
 }
 
-/* line 3234, ../sass/components/_misc.scss */
+/* line 3233, ../sass/components/_misc.scss */
 .views-label, .field-label {
   color: #7d7d7d;
   font-weight: bold;
@@ -4529,7 +4528,7 @@ span.newtab {
   padding: 5px 10px 5px 0;
 }
 
-/* line 3243, ../sass/components/_misc.scss */
+/* line 3242, ../sass/components/_misc.scss */
 .views-row .program, .views-row .program-tag {
   overflow: hidden;
   background-color: #767676;
@@ -4546,31 +4545,31 @@ span.newtab {
   padding-top: 3px;
 }
 
-/* line 3259, ../sass/components/_misc.scss */
+/* line 3258, ../sass/components/_misc.scss */
 #block-views-last-updated-block {
   clear: both;
 }
 
-/* line 3263, ../sass/components/_misc.scss */
+/* line 3262, ../sass/components/_misc.scss */
 #block-views-last-updated-block .view-last-updated {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-size: 12px;
   color: #646464;
 }
 
-/* line 3269, ../sass/components/_misc.scss */
+/* line 3268, ../sass/components/_misc.scss */
 .not-front #main #content {
   min-height: 700px;
   padding-bottom: 120px;
 }
 
-/* line 3274, ../sass/components/_misc.scss */
+/* line 3273, ../sass/components/_misc.scss */
 #block-views-last-updated-block {
   position: absolute;
   bottom: 30px;
 }
 
-/* line 3279, ../sass/components/_misc.scss */
+/* line 3278, ../sass/components/_misc.scss */
 .views-row .program-all-programs {
   overflow: hidden;
   background-color: #767676;
@@ -4589,7 +4588,7 @@ span.newtab {
   text-transform: uppercase;
 }
 
-/* line 3297, ../sass/components/_misc.scss */
+/* line 3296, ../sass/components/_misc.scss */
 .view-display-id-featured_news_publications .all-programs {
   overflow: hidden;
   background-color: #767676;
@@ -4607,22 +4606,22 @@ span.newtab {
   text-transform: uppercase;
 }
 
-/* line 3314, ../sass/components/_misc.scss */
+/* line 3313, ../sass/components/_misc.scss */
 .front #block-views-announcement-block {
   padding-top: 40px;
 }
 
-/* line 3318, ../sass/components/_misc.scss */
+/* line 3317, ../sass/components/_misc.scss */
 .front #block-views-announcement-block h5 {
   margin-top: 0;
 }
 
-/* line 3322, ../sass/components/_misc.scss */
+/* line 3321, ../sass/components/_misc.scss */
 .front .view-announcement, .view-announcement {
   position: relative;
 }
 
-/* line 3326, ../sass/components/_misc.scss */
+/* line 3325, ../sass/components/_misc.scss */
 .front .view-announcement .view-header, .view-announcement .view-header {
   position: absolute;
   top: 25%;
@@ -4630,7 +4629,7 @@ span.newtab {
   z-index: 1;
 }
 
-/* line 3333, ../sass/components/_misc.scss */
+/* line 3332, ../sass/components/_misc.scss */
 .front .view-announcement .view-header a, .view-announcement .view-header a {
   background-image: url(../images/x-button.png);
   background-repeat: no-repeat;
@@ -4640,7 +4639,7 @@ span.newtab {
   width: 32px;
 }
 
-/* line 3342, ../sass/components/_misc.scss */
+/* line 3341, ../sass/components/_misc.scss */
 .front .view-announcement .views-row, .view-announcement .views-row {
   width: 100%;
   padding-top: 12px;
@@ -4659,7 +4658,7 @@ span.newtab {
   background-size: 100%;
 }
 
-/* line 3360, ../sass/components/_misc.scss */
+/* line 3359, ../sass/components/_misc.scss */
 .lt-ie9 .front .view-announcement .views-row, .lt-ie9 .view-announcement .views-row {
   width: 100%;
   padding-top: 12px;
@@ -4670,7 +4669,7 @@ span.newtab {
   filter: none;
 }
 
-/* line 3370, ../sass/components/_misc.scss */
+/* line 3369, ../sass/components/_misc.scss */
 .front .view-announcement .views-row:before, .view-announcement .views-row:before {
   border-color: #ffd87c #fcfeff #ffd87c #fcfeff;
   content: "";
@@ -4683,12 +4682,12 @@ span.newtab {
   width: 0;
 }
 
-/* line 3382, ../sass/components/_misc.scss */
+/* line 3381, ../sass/components/_misc.scss */
 .front .view-announcement .views-row:before, .view-announcement a {
   color: #990000;
 }
 
-/* line 3391, ../sass/components/_misc.scss */
+/* line 3390, ../sass/components/_misc.scss */
 .front .view-announcement span, .view-announcement span,
 .front .view-announcement span, .view-announcement h1,
 .front .view-announcement span, .view-announcement h2,
@@ -4698,13 +4697,13 @@ span.newtab {
   color: #614e37;
 }
 
-/* line 3396, ../sass/components/_misc.scss */
+/* line 3395, ../sass/components/_misc.scss */
 .front .view-announcement span, .view-announcement span {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
-/* line 3401, ../sass/components/_misc.scss */
+/* line 3400, ../sass/components/_misc.scss */
 .front .view-announcement .views-field-body, .view-announcement .views-field-body {
   margin: 0 auto;
   width: 100%;
@@ -4712,43 +4711,43 @@ span.newtab {
   color: #fff;
 }
 
-/* line 3408, ../sass/components/_misc.scss */
+/* line 3407, ../sass/components/_misc.scss */
 .front .view-announcement .views-field-body, .view-announcement .views-field-body .field-content {
   padding-top: 10px;
 }
 
-/* line 3412, ../sass/components/_misc.scss */
+/* line 3411, ../sass/components/_misc.scss */
 .data-matrix {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 3418, ../sass/components/_misc.scss */
+/* line 3417, ../sass/components/_misc.scss */
 #print-mail-form input[type="reset"],
 #print-mail-form input[type="submit"] {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 3423, ../sass/components/_misc.scss */
+/* line 3422, ../sass/components/_misc.scss */
 .corner.three-col h2.block-title {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 3428, ../sass/components/_misc.scss */
+/* line 3427, ../sass/components/_misc.scss */
 .landing-page.view-e-newsletter h2.block-title {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 3433, ../sass/components/_misc.scss */
+/* line 3432, ../sass/components/_misc.scss */
 .landing-page.view-e-newsletter .views-field-title p {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 3438, ../sass/components/_misc.scss */
+/* line 3437, ../sass/components/_misc.scss */
 .view-display-id-table {
   display: inline-block;
   vertical-align: top;
@@ -4756,7 +4755,7 @@ span.newtab {
   padding-right: 5%;
 }
 
-/* line 3445, ../sass/components/_misc.scss */
+/* line 3444, ../sass/components/_misc.scss */
 .view-display-id-legend {
   display: inline-block;
   vertical-align: top;
@@ -4768,49 +4767,49 @@ span.newtab {
 * Views slideshow for program landing pages
 *
 */
-/* line 3457, ../sass/components/_misc.scss */
+/* line 3456, ../sass/components/_misc.scss */
 .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2 {
   margin: auto;
   width: 10%;
 }
 
-/* line 3462, ../sass/components/_misc.scss */
+/* line 3461, ../sass/components/_misc.scss */
 .view-id-news_and_publications .views-slideshow-pager-field-item {
   float: left;
   font-size: 20px;
   margin-left: 10%;
 }
 
-/* line 3468, ../sass/components/_misc.scss */
+/* line 3467, ../sass/components/_misc.scss */
 #main #content .view-id-news_and_publications .views-slideshow-pager-field-item a {
   text-decoration: none;
   color: #900;
 }
 
-/* line 3473, ../sass/components/_misc.scss */
+/* line 3472, ../sass/components/_misc.scss */
 .view-id-news_and_publications #vscc_controls_next_news_and_publications-block_2 {
   float: right;
 }
 
 @media all and (max-width: 1160px) {
-  /* line 3478, ../sass/components/_misc.scss */
+  /* line 3477, ../sass/components/_misc.scss */
   .front .view-announcement .views-field-body, .view-announcement .views-field-body {
     float: left;
     padding-left: 40px;
     width: 80%;
   }
 
-  /* line 3484, ../sass/components/_misc.scss */
+  /* line 3483, ../sass/components/_misc.scss */
   .corner.three-col .views-row {
     margin-right: 1%;
   }
 
-  /* line 3492, ../sass/components/_misc.scss */
+  /* line 3491, ../sass/components/_misc.scss */
   .corner.three-col .views-row .data-matrix {
     right: 1%;
   }
 
-  /* line 3496, ../sass/components/_misc.scss */
+  /* line 3495, ../sass/components/_misc.scss */
   .data-matrix a {
     width: 100%;
     font-size: 1em;
@@ -4818,50 +4817,50 @@ span.newtab {
     padding-right: 7%;
   }
 
-  /* line 3503, ../sass/components/_misc.scss */
+  /* line 3502, ../sass/components/_misc.scss */
   #footer #block-menu-block-2 {
     float: none;
   }
 
-  /* line 3507, ../sass/components/_misc.scss */
+  /* line 3506, ../sass/components/_misc.scss */
   .menu-block-2 > .menu, .NIH {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  /* line 3516, ../sass/components/_misc.scss */
+  /* line 3515, ../sass/components/_misc.scss */
   #footer .block-menu-block ul li {
     width: auto;
   }
 
-  /* line 3520, ../sass/components/_misc.scss */
+  /* line 3519, ../sass/components/_misc.scss */
   #footer .block-menu-block ul li {
     font-size: 1.063em;
   }
 
-  /* line 3524, ../sass/components/_misc.scss */
+  /* line 3523, ../sass/components/_misc.scss */
   .not-front .addthis {
     margin-top: -1.563em;
   }
 
-  /* line 3528, ../sass/components/_misc.scss */
+  /* line 3527, ../sass/components/_misc.scss */
   #block-views-program-sidebar-block-2 img {
     width: 100%;
   }
 
-  /* line 3532, ../sass/components/_misc.scss */
+  /* line 3531, ../sass/components/_misc.scss */
   .two-sidebars #main, .sidebar-first #main {
     background: white;
   }
 
-  /* line 3536, ../sass/components/_misc.scss */
+  /* line 3535, ../sass/components/_misc.scss */
   .page-news-publications-e-newsletters .views-accordion .view-grouping-content {
     padding: 0;
     padding-right: 5%;
   }
 
-  /* line 3541, ../sass/components/_misc.scss */
+  /* line 3540, ../sass/components/_misc.scss */
   .view-program-abbreviation {
     float: left;
     clear: both;
@@ -4871,7 +4870,7 @@ span.newtab {
     padding: 5px 10px 5px 0;
   }
 
-  /* line 3550, ../sass/components/_misc.scss */
+  /* line 3549, ../sass/components/_misc.scss */
   .views-label, .field-label {
     color: #7d7d7d;
     font-weight: bold;
@@ -4881,85 +4880,85 @@ span.newtab {
     padding: 5px 10px 5px 0;
   }
 
-  /* line 3559, ../sass/components/_misc.scss */
+  /* line 3558, ../sass/components/_misc.scss */
   .nci-inner img, #logo {
     width: 50%;
   }
 
-  /* line 3563, ../sass/components/_misc.scss */
+  /* line 3562, ../sass/components/_misc.scss */
   .view-programs .view-content {
     display: flex;
   }
 
-  /* line 3567, ../sass/components/_misc.scss */
+  /* line 3566, ../sass/components/_misc.scss */
   #block-views-programs-block-4 .view-programs .view-content {
     display: inherit;
   }
 
-  /* line 3571, ../sass/components/_misc.scss */
+  /* line 3570, ../sass/components/_misc.scss */
   #block-views-programs-block-1 .views-row {
     height: inherit;
     flex: 1;
   }
 
-  /* line 3576, ../sass/components/_misc.scss */
+  /* line 3575, ../sass/components/_misc.scss */
   .corner.three-col .views-row .views-field-title {
     padding-top: 0.5em;
     font-size: 1.381em;
     line-height: 1.375em;
   }
 
-  /* line 3582, ../sass/components/_misc.scss */
+  /* line 3581, ../sass/components/_misc.scss */
   .corner.three-col .views-row .views-field-body {
     font-size: 0.938em;
   }
 
-  /* line 3586, ../sass/components/_misc.scss */
+  /* line 3585, ../sass/components/_misc.scss */
   .corner.three-col .views-row .views-field-title {
     padding: 0px 0.5em;
   }
 
-  /* line 3590, ../sass/components/_misc.scss */
+  /* line 3589, ../sass/components/_misc.scss */
   .corner.three-col .views-row .views-field-body, .corner.three-col .views-row .views-field-view-node {
     padding: 0 0.938em;
   }
 
-  /* line 3594, ../sass/components/_misc.scss */
+  /* line 3593, ../sass/components/_misc.scss */
   .views-row .views-field-view-node {
     font-size: 0.938em;
     bottom: 2%;
   }
 
-  /* line 3599, ../sass/components/_misc.scss */
+  /* line 3598, ../sass/components/_misc.scss */
   .two-sidebars #main, .sidebar-first #main {
     background: white;
   }
 
-  /* line 3603, ../sass/components/_misc.scss */
+  /* line 3602, ../sass/components/_misc.scss */
   .page-node-314 #page-inner {
     width: 980px;
   }
 
-  /* line 3607, ../sass/components/_misc.scss */
+  /* line 3606, ../sass/components/_misc.scss */
   .page-node-21 #block-views-publications-block-2 {
     width: 100%;
   }
 
-  /* line 3611, ../sass/components/_misc.scss */
+  /* line 3610, ../sass/components/_misc.scss */
   .page-node-21 #block-views-e-newsletter-block-1.right {
     float: left;
     width: 100%;
   }
 }
 @media all and (max-width: 800px) {
-  /* line 3619, ../sass/components/_misc.scss */
+  /* line 3618, ../sass/components/_misc.scss */
   #navigation {
     padding-left: 0;
     padding-right: 0;
     margin-top: 20px;
   }
 
-  /* line 3625, ../sass/components/_misc.scss */
+  /* line 3624, ../sass/components/_misc.scss */
   #navigation li.sf-depth-1 ul {
     background-image: none;
     top: 0;
@@ -4971,38 +4970,38 @@ span.newtab {
     overflow: hidden;
   }
 
-  /* line 3636, ../sass/components/_misc.scss */
+  /* line 3635, ../sass/components/_misc.scss */
   #navigation li.sf-depth-1.first ul {
     width: 100% !important;
     max-width: none !important;
   }
 
-  /* line 3641, ../sass/components/_misc.scss */
+  /* line 3640, ../sass/components/_misc.scss */
   #navigation li.sf-depth-1 ul li.sf-depth-2 a {
     font-size: 1em;
   }
 
-  /* line 3645, ../sass/components/_misc.scss */
+  /* line 3644, ../sass/components/_misc.scss */
   #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1 {
     margin-top: 0;
   }
 
-  /* line 3649, ../sass/components/_misc.scss */
+  /* line 3648, ../sass/components/_misc.scss */
   #menu-452-1, #menu-453-1, #menu-427-1, #menu-546-1 {
     width: 100% !important;
   }
 
-  /* line 3653, ../sass/components/_misc.scss */
+  /* line 3652, ../sass/components/_misc.scss */
   #menu-1379-2 > span, #menu-1406-2 > span {
     display: none;
   }
 
-  /* line 3657, ../sass/components/_misc.scss */
+  /* line 3656, ../sass/components/_misc.scss */
   .lt-ie9 #menu-1379-2 > span {
     display: none;
   }
 
-  /* line 3661, ../sass/components/_misc.scss */
+  /* line 3660, ../sass/components/_misc.scss */
   #block-superfish-1 {
     height: auto;
     z-index: 2;
@@ -5010,7 +5009,7 @@ span.newtab {
     width: 100%;
   }
 
-  /* line 3668, ../sass/components/_misc.scss */
+  /* line 3667, ../sass/components/_misc.scss */
   .lt-ie9 #block-superfish-1 {
     height: auto;
     z-index: 2;
@@ -5018,26 +5017,26 @@ span.newtab {
     width: 100%;
   }
 
-  /* line 3675, ../sass/components/_misc.scss */
+  /* line 3674, ../sass/components/_misc.scss */
   #block-superfish-1 {
     background-color: #614E37;
     border-radius: 0;
     box-shadow: 2px 2px 2px #614E37;
   }
 
-  /* line 3681, ../sass/components/_misc.scss */
+  /* line 3680, ../sass/components/_misc.scss */
   #block-superfish-1 .slicknav_menu {
     background-color: #614E37;
   }
 
-  /* line 3685, ../sass/components/_misc.scss */
+  /* line 3684, ../sass/components/_misc.scss */
   .js .slicknav_menu {
     display: table;
     margin: 0 auto;
     padding: 0;
   }
 
-  /* line 3691, ../sass/components/_misc.scss */
+  /* line 3690, ../sass/components/_misc.scss */
   .slicknav_btn {
     margin: 0;
     text-decoration: none;
@@ -5046,30 +5045,30 @@ span.newtab {
     padding: 0;
   }
 
-  /* line 3699, ../sass/components/_misc.scss */
+  /* line 3698, ../sass/components/_misc.scss */
   .slicknav_nav .slicknav_row:hover {
     background: none;
   }
 
-  /* line 3703, ../sass/components/_misc.scss */
+  /* line 3702, ../sass/components/_misc.scss */
   .slicknav_nav a:hover {
     background: none;
     color: #fff;
   }
 
-  /* line 3708, ../sass/components/_misc.scss */
+  /* line 3707, ../sass/components/_misc.scss */
   #block-superfish-2 .slicknav_menu a.sf-depth-1.menuparent {
     display: none;
   }
 
-  /* line 3712, ../sass/components/_misc.scss */
+  /* line 3711, ../sass/components/_misc.scss */
   .responsive-menus.responsified span.toggler {
     background-color: #614E37;
     border-radius: 0;
     box-shadow: 2px 2px 2px #614E37;
   }
 
-  /* line 3718, ../sass/components/_misc.scss */
+  /* line 3717, ../sass/components/_misc.scss */
   #block-superfish-2 {
     position: relative;
     width: 100%;
@@ -5081,7 +5080,7 @@ span.newtab {
     z-index: 2;
   }
 
-  /* line 3730, ../sass/components/_misc.scss */
+  /* line 3729, ../sass/components/_misc.scss */
   #block-superfish-2 .slicknav_menu {
     font-size: 16px;
     box-sizing: border-box;
@@ -5089,79 +5088,79 @@ span.newtab {
     padding: 5px;
   }
 
-  /* line 3737, ../sass/components/_misc.scss */
+  /* line 3736, ../sass/components/_misc.scss */
   #block-superfish-2 li.sf-depth-1 ul {
     background: #900;
   }
 
-  /* line 3741, ../sass/components/_misc.scss */
+  /* line 3740, ../sass/components/_misc.scss */
   .responsive-menus.responsified .responsive-menus-simple {
     background-color: #614E37;
   }
 
-  /* line 3745, ../sass/components/_misc.scss */
+  /* line 3744, ../sass/components/_misc.scss */
   .front .node-2 {
     margin-bottom: 0;
   }
 
-  /* line 3749, ../sass/components/_misc.scss */
+  /* line 3748, ../sass/components/_misc.scss */
   .front .node-2 img {
     width: 50%;
   }
 
-  /* line 3753, ../sass/components/_misc.scss */
+  /* line 3752, ../sass/components/_misc.scss */
   #block-views-programs-block-1 {
     margin-top: 0;
   }
 
-  /* line 3757, ../sass/components/_misc.scss */
+  /* line 3756, ../sass/components/_misc.scss */
   .view-programs .view-content {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  /* line 3762, ../sass/components/_misc.scss */
+  /* line 3761, ../sass/components/_misc.scss */
   #block-views-programs-block-1 .views-row {
     height: inherit;
     width: 49%;
     flex: none;
   }
 
-  /* line 3768, ../sass/components/_misc.scss */
+  /* line 3767, ../sass/components/_misc.scss */
   .corner.three-col h2.block-title {
     font-size: 2.250em;
   }
 
-  /* line 3772, ../sass/components/_misc.scss */
+  /* line 3771, ../sass/components/_misc.scss */
   .not-front .views-row .views-field-view-node, .not-front .views-row .views-field-field-program-website {
     float: left;
   }
 
-  /* line 3776, ../sass/components/_misc.scss */
+  /* line 3775, ../sass/components/_misc.scss */
   .ds-3col-stacked > .group-left {
     width: 40%;
     float: left;
   }
 
-  /* line 3781, ../sass/components/_misc.scss */
+  /* line 3780, ../sass/components/_misc.scss */
   .ds-3col-stacked > .group-middle {
     float: left;
     width: 50%;
   }
 
-  /* line 3786, ../sass/components/_misc.scss */
+  /* line 3785, ../sass/components/_misc.scss */
   .ds-3col-stacked > .group-right {
     float: right;
     width: 2%;
   }
 
-  /* line 3791, ../sass/components/_misc.scss */
+  /* line 3790, ../sass/components/_misc.scss */
   .page-node-314 #page-inner {
     width: 800px;
   }
 }
 @media all and (max-width: 700px) {
-  /* line 3801, ../sass/components/_misc.scss */
+  /* line 3800, ../sass/components/_misc.scss */
   .view-display-id-table {
     display: inline-block;
     vertical-align: top;
@@ -5169,7 +5168,7 @@ span.newtab {
     padding-right: 0%;
   }
 
-  /* line 3808, ../sass/components/_misc.scss */
+  /* line 3807, ../sass/components/_misc.scss */
   .view-display-id-legend {
     display: inline-block;
     vertical-align: top;
@@ -5178,7 +5177,7 @@ span.newtab {
   }
 }
 @media all and (max-width: 600px) {
-  /* line 3824, ../sass/components/_misc.scss */
+  /* line 3823, ../sass/components/_misc.scss */
   #block-views-programs-block-3,
   #block-views-programs-block-2,
   #block-views-publications-block-1,
@@ -5190,118 +5189,118 @@ span.newtab {
     width: 100%;
   }
 
-  /* line 3828, ../sass/components/_misc.scss */
+  /* line 3827, ../sass/components/_misc.scss */
   .page-node-314 #page-inner {
     width: 600px;
   }
 }
 @media all and (max-width: 560px) {
-  /* line 3835, ../sass/components/_misc.scss */
+  /* line 3834, ../sass/components/_misc.scss */
   .outer-header {
     height: auto;
   }
 
-  /* line 3839, ../sass/components/_misc.scss */
+  /* line 3838, ../sass/components/_misc.scss */
   #logo {
     width: 100%;
     padding-top: 0;
     padding-bottom: 0;
   }
 
-  /* line 3845, ../sass/components/_misc.scss */
+  /* line 3844, ../sass/components/_misc.scss */
   #main {
     margin-top: 0;
   }
 
-  /* line 3849, ../sass/components/_misc.scss */
+  /* line 3848, ../sass/components/_misc.scss */
   #pre-content {
     padding-top: 5.5em;
   }
 
-  /* line 3853, ../sass/components/_misc.scss */
+  /* line 3852, ../sass/components/_misc.scss */
   #navigation {
     top: 0;
     margin-top: 0;
   }
 
-  /* line 3858, ../sass/components/_misc.scss */
+  /* line 3857, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu {
     float: left;
     margin: 0 auto;
     width: 100%;
   }
 
-  /* line 3864, ../sass/components/_misc.scss */
+  /* line 3863, ../sass/components/_misc.scss */
   #block-search-form {
     float: none;
     margin: 0 auto;
     width: 100%;
   }
 
-  /* line 3870, ../sass/components/_misc.scss */
+  /* line 3869, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu ul {
     margin-top: 0;
     margin-bottom: 0;
     float: left;
   }
 
-  /* line 3876, ../sass/components/_misc.scss */
+  /* line 3875, ../sass/components/_misc.scss */
   .front .node-2 img {
     display: none;
   }
 
-  /* line 3880, ../sass/components/_misc.scss */
+  /* line 3879, ../sass/components/_misc.scss */
   #block-views-programs-block-1 .views-row {
     height: inherit;
     width: 100%;
     flex: none;
   }
 
-  /* line 3886, ../sass/components/_misc.scss */
+  /* line 3885, ../sass/components/_misc.scss */
   .corner.three-col .views-row {
     margin-right: 0;
   }
 
-  /* line 3890, ../sass/components/_misc.scss */
+  /* line 3889, ../sass/components/_misc.scss */
   .data-matrix a {
     background-position: 90% top;
   }
 
-  /* line 3894, ../sass/components/_misc.scss */
+  /* line 3893, ../sass/components/_misc.scss */
   .menu-block-2 > .menu {
     flex-direction: column;
   }
 
-  /* line 3898, ../sass/components/_misc.scss */
+  /* line 3897, ../sass/components/_misc.scss */
   #block-views-last-updated-block {
     position: relative;
     bottom: 0;
   }
 }
 @media all and (max-width: 320px) {
-  /* line 3905, ../sass/components/_misc.scss */
+  /* line 3904, ../sass/components/_misc.scss */
   .archive .left {
     padding-right: 0;
   }
 
-  /* line 3909, ../sass/components/_misc.scss */
+  /* line 3908, ../sass/components/_misc.scss */
   .archive .views-row .data-matrix {
     top: 0;
     left: 215px;
   }
 }
 @media all and (max-width: 250px) {
-  /* line 3916, ../sass/components/_misc.scss */
+  /* line 3915, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu ul {
     font-size: 0.75em;
   }
 
-  /* line 3920, ../sass/components/_misc.scss */
+  /* line 3919, ../sass/components/_misc.scss */
   .corner.three-col .views-row .data-matrix {
     right: 1%;
   }
 
-  /* line 3924, ../sass/components/_misc.scss */
+  /* line 3923, ../sass/components/_misc.scss */
   .data-matrix a {
     width: 100%;
     font-size: 0.75em;
@@ -5310,12 +5309,12 @@ span.newtab {
     padding-right: 7%;
   }
 
-  /* line 3932, ../sass/components/_misc.scss */
+  /* line 3931, ../sass/components/_misc.scss */
   .front #postscript-first .two-col .view .more-link, .front #postscript-second .two-col .view .more-link {
     position: inherit;
   }
 
-  /* line 3936, ../sass/components/_misc.scss */
+  /* line 3935, ../sass/components/_misc.scss */
   .more-link {
     text-align: left;
   }
