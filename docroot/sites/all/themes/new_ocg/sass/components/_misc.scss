@@ -2672,7 +2672,7 @@ html.js fieldset.collapsed {
 }
 
 .ui-widget {
-  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+  font-family: Helvetica,Arial,"Nimbus Sans L",sans-serif;
   font-size: 13px;
 }
 
@@ -3260,7 +3260,6 @@ span.newtab {
 }
 
 #block-views-last-updated-block .view-last-updated {
-  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-size: 12px;
   color: #646464;
 }
@@ -3471,6 +3470,15 @@ span.newtab {
 
 .view-id-news_and_publications #vscc_controls_next_news_and_publications-block_2 {
   float: right;
+}
+
+/*
+* Target Methods
+*
+*/
+
+.view-display-id-projects_table table {
+  width: 100%;
 }
 
 @media all and (max-width: 1160px) {
