@@ -3433,20 +3433,6 @@ span.newtab {
   font-weight: normal;
 }
 
-.view-display-id-table {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-  padding-right: 5%;
-}
-
-.view-display-id-legend {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 1.5em;
-  width: 45%;
-}
-
 /*
 * Views slideshow for program landing pages
 *
@@ -3476,6 +3462,36 @@ span.newtab {
 * Target Methods
 *
 */
+
+.view-display-id-table {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding-right: 5%;
+}
+
+.view-display-id-legend {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 1.5em;
+  width: 45%;
+}
+
+.node-target-methods .fixed-position {
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  width: 43%;
+}
+
+.node-type-target-methods .region-sidebar-first {
+  position: fixed;
+  width: 10%;
+}
+
+.node-type-target-methods .region-sidebar-first .view-display-id-legend {
+  width: 100%;
+}
 
 .view-display-id-projects_table table {
   width: 100%;
