@@ -102,10 +102,17 @@
     hide($content['links']);
     //print render($content);
     print render($content['body']);
-    print views_embed_view('target_methods', 'table');
-    print views_embed_view('target_methods', 'legend');
-    print views_embed_view('target_methods', 'description');
-    print views_embed_view('target_methods', 'projects');
+    ?>
+    <!-- div class="fixed-position" -->
+    <?php
+      print views_embed_view('target_methods', 'table');
+      //print views_embed_view('target_methods', 'legend');
+      print views_embed_view('target_methods', 'description');
+      print views_embed_view('target_methods', 'projects');
+    ?>
+    <!-- /div -->
+    <?php
+    
     ?>
   </div>
 

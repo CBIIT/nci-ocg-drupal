@@ -3462,7 +3462,7 @@ span.newtab {
 .view-display-id-table {
   display: inline-block;
   vertical-align: top;
-  width: 50%;
+  width: 100%;
   padding-right: 5%;
 }
 
@@ -3489,7 +3489,7 @@ span.newtab {
   width: 100%;
 }
 
-.view-display-id-projects_table table {
+.view-display-id-projects_table table, .view-display-id-table table {
   width: 100%;
 }
 
