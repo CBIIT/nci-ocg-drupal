@@ -1646,10 +1646,6 @@ span.noicon {
   display: inline;
 }
 
-#block-views-programs-block-3 .views-field-title .field-content, #block-views-programs-block-2 .views-field-title .field-content {
-  float: left;
-}
-
 #block-views-programs-block-3 .views-field-title .field-content .right, #block-views-programs-block-2 .views-field-title .field-content .right{
   float: none;
 }
@@ -3585,6 +3581,11 @@ span.newtab {
 
   .view-programs .view-content {
     display: flex;
+  }
+
+  #block-views-programs-block-3 .view-programs .view-content, #block-views-programs-block-2 .view-programs .view-content {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   #block-views-programs-block-4 .view-programs .view-content {
