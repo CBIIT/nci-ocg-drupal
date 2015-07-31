@@ -91,8 +91,9 @@ function target_methods_views_default_views() {
     'target_methods' => 'target_methods',
   );
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'legend');
+  /* Display: Legend */
+  $handler = $view->new_display('block', 'Legend', 'legend');
+  $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -112,13 +113,27 @@ function target_methods_views_default_views() {
   $handler->display->display_options['relationships']['field_sample_preparation_protoco_value']['relationship'] = 'field_sample_processing_value';
   $handler->display->display_options['relationships']['field_sample_preparation_protoco_value']['delta'] = '-1';
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Field collection item: Symbol */
+  $handler->display->display_options['fields']['field_symbol']['id'] = 'field_symbol';
+  $handler->display->display_options['fields']['field_symbol']['table'] = 'field_data_field_symbol';
+  $handler->display->display_options['fields']['field_symbol']['field'] = 'field_symbol';
+  $handler->display->display_options['fields']['field_symbol']['relationship'] = 'field_sample_preparation_protoco_value';
+  $handler->display->display_options['fields']['field_symbol']['label'] = '';
+  $handler->display->display_options['fields']['field_symbol']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_symbol']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_symbol']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_symbol']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
   /* Field: Field collection item: Legend */
   $handler->display->display_options['fields']['field_legend']['id'] = 'field_legend';
   $handler->display->display_options['fields']['field_legend']['table'] = 'field_data_field_legend';
   $handler->display->display_options['fields']['field_legend']['field'] = 'field_legend';
   $handler->display->display_options['fields']['field_legend']['relationship'] = 'field_sample_preparation_protoco_value';
   $handler->display->display_options['fields']['field_legend']['label'] = '';
-  $handler->display->display_options['fields']['field_legend']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_legend']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_legend']['alter']['text'] = '[field_symbol] [field_legend]';
   $handler->display->display_options['fields']['field_legend']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Field collection item: Legend (field_legend) */
@@ -143,8 +158,8 @@ function target_methods_views_default_views() {
     'target_methods' => 'target_methods',
   );
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'body');
+  /* Display: Body */
+  $handler = $view->new_display('block', 'Body', 'body');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -164,8 +179,8 @@ function target_methods_views_default_views() {
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'description');
+  /* Display: Description */
+  $handler = $view->new_display('block', 'Description', 'description');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -193,11 +208,36 @@ function target_methods_views_default_views() {
   $handler->display->display_options['fields']['field_sample_preparation_protoco']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_sample_preparation_protoco']['delta_offset'] = '0';
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'table');
+  /* Display: Table */
+  $handler = $view->new_display('block', 'Table', 'table');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Field collection item: General Methodology */
+  $handler->display->display_options['fields']['field_general_methodology']['id'] = 'field_general_methodology';
+  $handler->display->display_options['fields']['field_general_methodology']['table'] = 'field_data_field_general_methodology';
+  $handler->display->display_options['fields']['field_general_methodology']['field'] = 'field_general_methodology';
+  $handler->display->display_options['fields']['field_general_methodology']['relationship'] = 'field_sample_processing_value';
+  /* Field: Field collection item: Sample Preparation Protocols */
+  $handler->display->display_options['fields']['field_sample_preparation_protoco']['id'] = 'field_sample_preparation_protoco';
+  $handler->display->display_options['fields']['field_sample_preparation_protoco']['table'] = 'field_data_field_sample_preparation_protoco';
+  $handler->display->display_options['fields']['field_sample_preparation_protoco']['field'] = 'field_sample_preparation_protoco';
+  $handler->display->display_options['fields']['field_sample_preparation_protoco']['relationship'] = 'field_sample_processing_value';
+  $handler->display->display_options['fields']['field_sample_preparation_protoco']['alter']['text'] = '[field_sample_preparation_protoco-value]';
+  $handler->display->display_options['fields']['field_sample_preparation_protoco']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_sample_preparation_protoco']['alter']['path'] = '#[field_sample_preparation_protoco-value]';
+  $handler->display->display_options['fields']['field_sample_preparation_protoco']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_sample_preparation_protoco']['alter']['preserve_tags'] = '<img>';
+  $handler->display->display_options['fields']['field_sample_preparation_protoco']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_sample_preparation_protoco']['settings'] = array(
+    'edit' => '',
+    'delete' => '',
+    'add' => '',
+    'description' => 0,
+    'view_mode' => 'protocol',
+  );
+  $handler->display->display_options['fields']['field_sample_preparation_protoco']['delta_offset'] = '0';
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'projects');
+  /* Display: Projects */
+  $handler = $view->new_display('block', 'Projects', 'projects');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'views-accordion';
   $handler->display->display_options['defaults']['query'] = FALSE;
@@ -232,6 +272,7 @@ function target_methods_views_default_views() {
   $handler->display->display_options['fields']['fieldset']['children'] = array(
     0 => 'field_target_methods_projects',
   );
+  $handler->display->display_options['fields']['fieldset']['fieldset']['id'] = '[field_target_methods_projects_1]';
   $handler->display->display_options['fields']['fieldset']['fieldset']['collapsible'] = 1;
   $handler->display->display_options['fields']['fieldset']['fieldset']['collapsed'] = 1;
   /* Field: Content: Projects */
@@ -247,8 +288,8 @@ function target_methods_views_default_views() {
   );
   $handler->display->display_options['fields']['field_target_methods_projects']['delta_offset'] = '0';
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'projects_table');
+  /* Display: Projects Table */
+  $handler = $view->new_display('block', 'Projects Table', 'projects_table');
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Content: Table Row (field_table_row) */
   $handler->display->display_options['relationships']['field_table_row_value']['id'] = 'field_table_row_value';
@@ -269,6 +310,7 @@ function target_methods_views_default_views() {
   $handler->display->display_options['fields']['field_data_analysis_protocols']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_data_analysis_protocols']['alter']['path'] = '#[field_data_analysis_protocols-value]';
   $handler->display->display_options['fields']['field_data_analysis_protocols']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_data_analysis_protocols']['alter']['preserve_tags'] = '<img>';
   $handler->display->display_options['fields']['field_data_analysis_protocols']['settings'] = array(
     'edit' => '',
     'delete' => '',
@@ -309,8 +351,8 @@ function target_methods_views_default_views() {
     'target_methods_projects' => 'target_methods_projects',
   );
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'projects_description');
+  /* Display: Projects Description */
+  $handler = $view->new_display('block', 'Projects Description', 'projects_description');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
