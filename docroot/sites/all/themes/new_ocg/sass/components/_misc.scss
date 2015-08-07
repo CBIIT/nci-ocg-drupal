@@ -3434,6 +3434,11 @@ span.newtab {
 *
 */
 
+.views_slideshow_cycle_main {                                                      
+  width: 100%;                                                                     
+ .views-slideshow-cycle-main-frame {width: 100% !important; height: auto;}
+}
+
 .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2{
   margin: auto;
   width: 10%;
@@ -3448,6 +3453,10 @@ span.newtab {
 #main #content .view-id-news_and_publications .views-slideshow-pager-field-item a {
   text-decoration: none;
   color: #900;
+}
+
+#main #content .view-id-news_and_publications .views-slideshow-pager-field-item.active a {
+  color: black;
 }
 
 .view-id-news_and_publications #vscc_controls_next_news_and_publications-block_2 {
@@ -3637,6 +3646,11 @@ span.newtab {
     width: 100%
   }
 
+  .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2{
+    margin: auto;
+    width: 15%;
+  }
+
 }
 
 @media all and (max-width: 800px) {
@@ -3816,6 +3830,11 @@ span.newtab {
     width: 800px;
   }
 
+  .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2{
+    margin: auto;
+    width:20%;
+  }
+
 }
 
 @media all and (max-width: 700px) {
@@ -3851,6 +3870,11 @@ span.newtab {
 
   .page-node-314 #page-inner {
     width: 600px;
+  }
+
+  .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2{
+    margin: auto;
+    width: 25%;
   }
 }
 
@@ -3923,6 +3947,11 @@ span.newtab {
   position: relative;
   bottom: 0;
   }
+
+  .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2{
+    margin: auto;
+    width: 30%;
+  }
 }
 
 @media all and (max-width: 320px) {
@@ -3933,6 +3962,11 @@ span.newtab {
   .archive .views-row .data-matrix {
     top: 0;
     left: 215px;
+  }
+
+  .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2{
+    margin: auto;
+    width: 35%;
   }
 }
 
@@ -3959,5 +3993,10 @@ span.newtab {
 
   .more-link {
     text-align: left;
+  }
+
+  .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2{
+    margin: auto;
+    width: 40%;
   }
 }

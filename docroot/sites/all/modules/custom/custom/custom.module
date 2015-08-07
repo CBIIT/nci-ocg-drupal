@@ -79,6 +79,16 @@ function custom_views_pre_view(&$view, &$display_id, &$args) {
     //print $customargs;
     $args[0] = $customargs;
   }
+  if (($view->name == 'news_and_publications') && ($display_id == 'block_4')) {
+    $customargs = get_nodes_of_type('programs');
+    //print $customargs;
+    $args[0] = $customargs;
+  }
+  if (($view->name == 'news_and_publications') && ($display_id == 'block_5')) {
+    $customargs = get_nodes_of_type('programs');
+    //print $customargs;
+    $args[0] = $customargs;
+  }
 }
 
 /**
