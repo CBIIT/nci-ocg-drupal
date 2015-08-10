@@ -894,8 +894,7 @@ header, .region-navigation {
 }
 
 .region-navigation {
-  padding-left: 45px;
-  padding-right: 25px;
+  
 }
 
 #logo img{
@@ -1025,6 +1024,7 @@ header, .region-navigation {
   height: 2.750em;
   bottom: 1px;
   position: absolute;
+  margin-left: 10px;
 }
 
 .lt-ie9 #block-superfish-1 {
@@ -1214,9 +1214,7 @@ header, .region-navigation {
 }
 
 #block-superfish-2 {
-  position: absolute;
-  bottom: 0;
-  right: 16.25%;
+  margin-right: 10px;
   text-transform: uppercase;
   background-image: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/datasets-diagonal.png") !important;
   background-repeat: repeat-x;
@@ -1227,6 +1225,7 @@ header, .region-navigation {
   font-size: 1em;
   padding-right: 1%;
   width: 250px;
+  float: right;
 }
 
 #block-superfish-2 .sf-depth-1 > a {
