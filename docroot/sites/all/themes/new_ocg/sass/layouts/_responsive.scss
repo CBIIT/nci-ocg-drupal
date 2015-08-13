@@ -59,14 +59,13 @@ $zen-auto-include-item-base: false;
 @media all {
   #main {
     /* Move all the children of #main down to make room. */
-    margin-top: 4.85em;
+    margin-top: 4em;
     padding-top: $nav-height;
     position: relative;
   }
   #navigation {
     /* Move the navbar up inside #main's padding. */
     position: absolute;
-    top: -2.85em;
     height: $nav-height;
     width: $zen-grid-width;
   }

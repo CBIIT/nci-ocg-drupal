@@ -875,26 +875,30 @@ h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
 
 .outer-header {
   max-width: 100%;
-  background-image: url(../images/continue-bkg.png);
-  background-repeat: repeat;
-  height: 5.2em;
 }
 
-.disappear {
+#navigation {
   background: url(../images/header.png) no-repeat 70% top;
-  height: 130px;
+  height: 49px;
   border-bottom: solid 1px #EEDF6E;
 }
 
-header {
+#header {
+  background-color: white;
+}
+
+header, .region-navigation {
   margin-left: auto;
   margin-right: auto;
   max-width: 1260px;
 }
 
-#logo {
-  padding: 1em 0;
-  padding-top: 1.25em;
+.region-navigation {
+  
+}
+
+#logo img{
+  margin-left: -23px;
 }
 
 .region-header {
@@ -1019,6 +1023,8 @@ header {
 #block-superfish-1 {
   height: 2.750em;
   bottom: 1px;
+  position: absolute;
+  margin-left: 10px;
 }
 
 .lt-ie9 #block-superfish-1 {
@@ -1208,9 +1214,7 @@ header {
 }
 
 #block-superfish-2 {
-  position: absolute;
-  bottom: 1px;
-  right: .75%;
+  margin-right: 10px;
   text-transform: uppercase;
   background-image: url("https://ocg.cancer.gov/sites/all/themes/ocg/images/datasets-diagonal.png") !important;
   background-repeat: repeat-x;
@@ -1221,6 +1225,7 @@ header {
   font-size: 1em;
   padding-right: 1%;
   width: 250px;
+  float: right;
 }
 
 #block-superfish-2 .sf-depth-1 > a {
@@ -3507,6 +3512,15 @@ span.newtab {
 }
 
 @media all and (max-width: 1160px) {
+
+  #block-superfish-1 {
+    left: 1%;
+  }
+
+  #block-superfish-2 {
+    right: 1%;
+  }
+
   .front .view-announcement .views-field-body, .view-announcement .views-field-body {
     float: left;
     padding-left: 40px;
@@ -3663,7 +3677,7 @@ span.newtab {
   #navigation {
     padding-left: 0;
     padding-right: 0;
-    margin-top: 20px;
+    background: none;
   }
 
   #navigation li.sf-depth-1 ul {
@@ -3684,6 +3698,11 @@ span.newtab {
 
   #navigation li.sf-depth-1 ul li.sf-depth-2 a {
     font-size: 1em;
+  }
+
+  .region-navigation {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1 {
@@ -3707,6 +3726,7 @@ span.newtab {
     z-index: 2;
     position: relative;
     width: 100%;
+    margin-left: 0;
   }
 
   .lt-ie9 #block-superfish-1 {
@@ -3720,6 +3740,7 @@ span.newtab {
     background-color: #614E37;
     border-radius: 0;
     box-shadow: 2px 2px 2px #614E37;
+    left: 0;
   }
 
   #block-superfish-1 .slicknav_menu {
@@ -3729,7 +3750,6 @@ span.newtab {
   .js .slicknav_menu {
     display: table;
     margin: 0 auto;
-    padding: 0;
   }
 
   .slicknav_btn {
@@ -3768,6 +3788,7 @@ span.newtab {
     box-shadow: 2px 2px 2px #900;
     right: 0;
     z-index: 2;
+    margin-right: 0;
     
   }
 
@@ -3900,6 +3921,15 @@ span.newtab {
     padding-bottom: 0;
   }
 
+  #logo img {
+    margin-left: 0;
+  }
+
+  .region-header {
+    clear: both;
+    float: none;
+  }
+
   #main {
     margin-top: 0;
   }
@@ -3909,26 +3939,31 @@ span.newtab {
   }
 
   #navigation {
-    top: 0;
     margin-top: 0;
   }
 
   #block-menu-menu-utility-menu {
-    float: left;
     margin: 0 auto;
-    width: 100%
+  }
+
+  #block-menu-menu-utility-menu li:first-child {
+    padding-left: 0;
   }
 
   #block-search-form {
     float: none;
     margin: 0 auto;
-    width: 100%
+  }
+
+  #block-search-form.block {
+    margin-bottom: 1em;
   }
 
   #block-menu-menu-utility-menu ul {
     margin-top: 0;
     margin-bottom: 0;
-    float: left;
+    float: none;
+    padding: 0;
   }
 
   .front .node-2 img {
