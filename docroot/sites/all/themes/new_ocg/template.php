@@ -138,3 +138,16 @@ function new_ocg_preprocess_node(&$variables) {
     drupal_add_js(drupal_get_path('theme', 'new_ocg') . '/js/target_methods.js');
   }
 }
+
+/**
+ * VSCC icons
+ */
+
+function new_ocg_vscc_element_black_icons($vars) {
+      $image_vars = array(
+        'path' => drupal_get_path('theme', 'new_ocg') . '/images/vscc/' . $vars['element'] . '.png',
+        'alt' => t($vars['element']),
+        'title' => t($vars['element']),
+      );
+      return theme('image', $image_vars);
+    }
