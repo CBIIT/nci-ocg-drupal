@@ -3479,8 +3479,27 @@ span.newtab {
   color: #900;
 }
 
+#main #content .view-id-news_and_publications .views-slideshow-pager-field-item.active span {
+  height: 15px;
+    width: 15px;
+    background: #000 none repeat scroll 0% 0%;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 5%;
+}
+
 #main #content .view-id-news_and_publications .views-slideshow-pager-field-item.active a {
   color: black;
+  visibility: hidden;
+	position: relative;
+}
+
+#main #content .view-id-news_and_publications .views-slideshow-pager-field-item.active a:after {
+  visibility: visible;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "\0020";
 }
 
 .view-id-news_and_publications #vscc_controls_next_news_and_publications-block_2,
