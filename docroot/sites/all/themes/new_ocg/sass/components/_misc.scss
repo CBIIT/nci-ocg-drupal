@@ -1568,6 +1568,18 @@ span.noicon {
     font-weight: normal;
 }
 
+.view-publications.view-display-id-page_2 .views-row {
+  padding-bottom: 0;
+}
+
+.view-publications.view-display-id-page_2 .views-field-field-publication-summary {
+  margin-bottom: 40px;
+}
+
+.view-resources.view-display-id-page_2 .views-row {
+  padding-bottom: 15px;
+}
+
 .views-row .views-field-view-node {
   bottom: 30px;
   position: absolute;
@@ -2437,7 +2449,6 @@ span.date-display-single {
 }
 
 .not-front .views-row .views-field-view-node {
-    bottom: auto;
     position: inherit;
 }
 
