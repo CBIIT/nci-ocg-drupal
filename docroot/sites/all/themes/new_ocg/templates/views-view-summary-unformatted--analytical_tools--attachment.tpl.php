@@ -18,4 +18,4 @@
     <?php endif; ?>
   <?php print !empty($options['inline']) ? '</span>' : '</div>'; ?>
 <?php endforeach; ?>
-      <a href="/analytical-tools/all">| All</a>
+      <a href="/analytical-tools/all">All</a>
