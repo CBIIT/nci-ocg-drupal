@@ -3122,6 +3122,14 @@ h3, h4 {
     padding-bottom: 10px;
 }
 
+.view-taxonomy-term .view-content .views-row .views-field-field-image .field-content {
+    float: left;
+}
+
+.view-taxonomy-term .view-content .views-row .views-field-field-image .field-content figcaption {
+    margin-right: 10px;
+}
+
 .view-taxonomy-term .views-field-field-enews-physician {
     font-size: 12px;
     line-height: 18px;
