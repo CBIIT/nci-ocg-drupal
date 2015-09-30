@@ -3495,14 +3495,13 @@ span.newtab {
 .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
 .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
 .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5 {
-  margin: auto;
-  width: 10%;
+  text-align: center;
 }
 
 .view-id-news_and_publications .views-slideshow-pager-field-item {
-  float: left;
+  display: inline-block;
   font-size: 20px;
-  margin-left: 10%;
+  margin-left: 3%;
 }
 
 #main #content .view-id-news_and_publications .views-slideshow-pager-field-item a {
