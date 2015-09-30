@@ -17,7 +17,7 @@ if (!empty(drupal_get_query_parameters())) {
 }
 $total = array();
 ?>
-<?php if ($tool_type_parameter != 83): ?>
+<?php if ($tool_type_parameter != 91): ?>
   <?php foreach ($rows as $id => $row): ?>
     <?php
     $tool_type = 'tool_type=' . $tool_type_parameter;
