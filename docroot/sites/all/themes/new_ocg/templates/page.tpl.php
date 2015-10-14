@@ -65,9 +65,6 @@
   <div id="main">
     
     <div id="pre-content">
-      <?php print render($page['highlighted']); ?>
-      <?php print $breadcrumb; ?>
-      <?php print render($page['pre_content']); ?>
       <div id="block-block-7" class="block block-block addthis first odd">
         <?php 
         if ((arg(0) == 'node') && (is_numeric(arg(1)))) {
@@ -91,6 +88,9 @@
         print '<a href="/' . $printurl . '" style="border-left:none;padding-left:0;">Print</a>';
         ?>
       </div>
+      <?php print render($page['highlighted']); ?>
+      <?php print $breadcrumb; ?>
+      <?php print render($page['pre_content']); ?>
     </div>
     <div id="content" class="column" role="main">
       <a id="main-content"></a>

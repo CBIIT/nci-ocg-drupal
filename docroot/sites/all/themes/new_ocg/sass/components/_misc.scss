@@ -1317,8 +1317,17 @@ header, .region-navigation {
   margin-bottom: 0;
 }
 
+.region-highlighted {
+  clear: right;
+}
+
 #block-block-3 p {
   margin: 0;
+}
+
+.datasets-dashboard .right {
+  clear: right;
+  display: none;
 }
 
 .datasets {
@@ -1971,12 +1980,11 @@ h2 {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-size: 12px;
     float: right;
-    margin-top: -45px;
     margin-bottom: 0px;
 }
 
 .not-front .addthis {
-  margin-top: -75px;
+  clear: right;
 }
 
 .addthis a {
@@ -3651,7 +3659,7 @@ span.newtab {
   }
 
   .not-front .addthis {
-    margin-top: -1.563em;
+    
   }
 
   #block-views-program-sidebar-block-2 img {
@@ -3768,6 +3776,13 @@ span.newtab {
     padding-right: 1%;
   }
 
+}
+
+@media all and (max-width: 960px) {
+  .datasets-dashboard .right {
+    clear: right;
+    display: inherit;
+  }
 }
 
 @media all and (max-width: 800px) {
