@@ -4004,6 +4004,14 @@ span.newtab {
   }
 }
 
+@media all and (max-width: 630px) {
+
+  .grey-block .view .more-link {
+    top: -5px;
+    right: 0px;
+  }
+}
+
 @media all and (max-width: 600px) {
   #block-views-programs-block-3, 
   #block-views-programs-block-2,
