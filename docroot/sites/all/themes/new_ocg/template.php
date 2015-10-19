@@ -142,12 +142,19 @@ function new_ocg_preprocess_node(&$variables) {
 /**
  * VSCC icons
  */
-
 function new_ocg_vscc_element_black_icons($vars) {
-      $image_vars = array(
-        'path' => drupal_get_path('theme', 'new_ocg') . '/images/vscc/' . $vars['element'] . '.png',
-        'alt' => t($vars['element']),
-        'title' => t($vars['element']),
-      );
-      return theme('image', $image_vars);
+  $image_vars = array(
+      'path' => drupal_get_path('theme', 'new_ocg') . '/images/vscc/' . $vars['element'] . '.png',
+      'alt' => t($vars['element']),
+      'title' => t($vars['element']),
+  );
+  return theme('image', $image_vars);
+}
+
+function new_ocg_preprocess_views_view(&$variables) {
+  if ($variables['view']->name == 'analytical_tools') {
+    if ($variables['view']->current_display == 'page' && $variables['view']->filter['field_type_of_analytic_tool_target_id']->value[0] == 86) {
+      $variables['footer'] = '';
     }
+  }
+}
