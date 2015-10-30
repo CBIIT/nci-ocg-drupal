@@ -19,7 +19,7 @@ $(document).ready (function (){
     $("table > tbody").addClass("tablestyles");
 
     // add even/odd clsses to table rows
-   $(".tablestyles > tr:odd").addClass("even");
+   //$(".tablestyles > tr:odd").addClass("even");
    $(".tablestyles > tr:not(.even)").addClass("odd");
 			
 			
