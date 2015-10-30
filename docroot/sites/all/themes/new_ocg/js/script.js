@@ -19,8 +19,8 @@ $(document).ready (function (){
     $("table > tbody").addClass("tablestyles");
 
     // add even/odd clsses to table rows
-   $(".tablestyles > tr:not(.odd").addClass("even");
-   $(".tablestyles > tr:not(.even)").addClass("odd");
+   $(".tablestyles > tr:odd").addClass("even");
+   $(".tablestyles > tr:not(.odd)").addClass("odd");
 			
 			
   // Find all instances of the string "CTD2" and wrap a <sup> tag around the 2
