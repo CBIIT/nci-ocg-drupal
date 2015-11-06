@@ -1,12 +1,12 @@
 name = Automated Logout
 description = Adds automated timed logout
 core = 7.x
-files[] = autologout.module
+files[]=tests/autologout.test
 configure = admin/config/people/autologout
 
-; Information added by drupal.org packaging script on 2012-04-23
-version = "7.x-2.0-beta1"
+; Information added by Drupal.org packaging script on 2015-09-06
+version = "7.x-4.4"
 core = "7.x"
 project = "autologout"
-datestamp = "1335196872"
+datestamp = "1441543440"
 

@@ -12,8 +12,5 @@ $Id: INSTALL.txt,v 1.2 2009/04/17 14:05:51 jvandervort Exp $
 
 4. Set-up the module at administer > configure > people > autologout
 
-5. If you want the autologout block displayed go to administer > structure > blocks and enable it 
-  somewhere on the page, you must have Javascript Timer 
-  <http://drupal.org/project/jstimer> installed to use the countdown block
 
 

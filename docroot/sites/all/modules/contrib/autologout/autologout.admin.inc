@@ -1,26 +1,16 @@
 <?php
-// $Id$
-
 
 /**
  * @file
- * contains all admin pages, settings, and validate.
- *
- * This file will only be parsed when processing admin menu options.
- * See http://drupal.org/node/146172
+ * Contains all admin pages, settings, and validate.
  */
-
 
 /**
  * Settings form for menu callback
  */
-function autologout_admin_settings() {
-  _autologout_debug("autologout_settings()");
-
-  if (!user_access('administer autologout')) {
-    drupal_access_denied();
-    return;
-  }
+function autologout_settings() {
+  $form = array();
+  $timeout = variable_get('autologout_timeout', 1800);
 
   if (module_exists('jstimer')) {
     if (!module_exists('jst_timer')) {
@@ -28,146 +18,162 @@ function autologout_admin_settings() {
     }
 
     if (variable_get('jstimer_js_load_option', 0) != 1) {
-      drupal_set_message(t('The Javascript timer module\'s "Javascript load options" setting should be set to "Every page" for the dynamic countdown to work in the automated logout block.'), 'error');
+      drupal_set_message(t("The Javascript timer module's 'Javascript load options' setting should be set to 'Every page' for the dynamic countdown to work in the automated logout block."), 'error');
     }
   }
 
-  $form = array();
-  $form['autologout'] = array(
-    '#type'  => 'fieldset',
-    '#title' => t('Automated Logout settings'),
-    '#tree'  => TRUE
-  );
-  $form['autologout']['markup1'] = array(
-    '#type'  => 'markup',
-    '#value' => t('Set-up your site policy by role:-'),
-  );
-  $form['autologout']['enabled'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Enable module'),
-    '#default_value' => _autologout_local_settings('enabled'),
-    '#description' => t('Uncheck this and save settings to disable Automated Logout')
-  );
-  $form['autologout']['timeout'] = array(
+  $form['autologout_timeout'] = array(
     '#type' => 'textfield',
     '#title' => t('Timeout value in seconds'),
-    '#default_value' => _autologout_local_settings('timeout'),
+    '#default_value' => $timeout,
+    '#size' => 8,
+    '#weight' => -10,
+    '#description' => t('The length of inactivity time, in seconds, before automated log out.  Must be 60 seconds or greater. Will not be used if role timeout is activated.'),
+  );
+
+  $form['autologout_max_timeout'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Max timeout setting'),
+    '#default_value' => variable_get('autologout_max_timeout', '172800'),
     '#size' => 10,
     '#maxlength' => 12,
-    '#description' => t('The length of inactivity time, in seconds, before Automated Logout.  Must be 60 seconds or greater.')
-  );
-  $form['autologout']['use_watchdog'] = array(
-   '#type' => 'checkbox',
-   '#title' => t('Enable watchdog Automated Logout logging'),
-   '#default_value' => _autologout_local_settings('use_watchdog'),
-   '#description' => t('Enable logging of automatically logged out users')
-  );
-  $form['autologout']['markup2'] = array(
-    '#type' => 'markup',
-    '#value' => theme('autologout_generic', 0),
+    '#weight' => -8,
+    '#description' => t('The maximum logout threshold time that can be set by users who have the permission to set user level timeouts.'),
   );
 
-  foreach (user_roles(TRUE) as $role) {
-    $form['autologout'][$role] = array(
-      '#type' => 'select',
-      '#title' => $role,
-      '#options' => array('0' => t('Enforce'), '1' => t('Exclude'), '2' => t('By user')),
-      '#default_value' => _autologout_local_settings($role)
-    );
-  }
-
-  $markup3_items = array(
-    t('Enforce : all users in this role will be auto-logged out'),
-    t('Exclude : all users in this role are excluded from auto-logout functionality'),
-    t('By user : all users in this role can select to switch off this functionality')
-  );
-  $markup3 = theme('item_list', $markup3_items, t('Policy description')) . t('Please note: If a user is found to be in a role that allows disabling this feature, this overrides any enforcement');
-  $form['autologout']['markup3'] = array(
-   '#type' => 'markup',
-   '#value' => $markup3
-  );
-
-  $form['autologout']['logout_message']  = array(
+  $form['autologout_padding'] = array(
     '#type' => 'textfield',
-    '#title' => t('Display a message at logout'),
-    '#default_value' => _autologout_local_settings('logout_message'),
-    '#size' => 40,
-    '#description' => t('If you want to display a message to the users when they are logged out.')
+    '#title' => t('Timeout padding'),
+    '#default_value' => variable_get('autologout_padding', 10),
+    '#size' => 8,
+    '#weight' => -6,
+    '#description' => t('How many seconds to give a user to respond to the logout dialog before ending their session.'),
   );
 
-  $form['autologout']['redirect_url']  = array(
+  $form['autologout_role_logout'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Role Timeout'),
+    '#default_value' => variable_get('autologout_role_logout', FALSE),
+    '#weight' => -4,
+    '#description' => t('Enable each role to have its own timeout threshold, a refresh maybe required for changes to take effect. Any role not ticked will use the default timeout value. Any role can have a value of 0 which means that they will never be logged out.'),
+  );
+
+  $form['autologout_redirect_url']  = array(
     '#type' => 'textfield',
     '#title' => t('Redirect URL at logout'),
-    '#default_value' => _autologout_local_settings('redirect_url'),
+    '#default_value' => variable_get('autologout_redirect_url', 'user/login'),
     '#size' => 40,
-    '#description' => t('If you want to redirect users to another page when they are logged out. (default: autologout/logout)')
+    '#description' => t('Send users to this internal page when they are logged out.'),
   );
 
-  $form['autologout']['refresh_delta'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Browser refresh delay'),
-    '#default_value' => _autologout_local_settings('refresh_delta'),
-    '#size' => 10,
-    '#maxlength' => 12,
-    '#description' => t("The length of time, in seconds, after a timeout that a browser refresh is forced. Setting this to -1 (negative number) disables the browser refresh facility entirely."),
+  $form['autologout_no_dialog'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Do not display the logout dialog'),
+    '#default_value' => variable_get('autologout_no_dialog', FALSE),
+    '#description' => t('Enable this if you want users to logout right away and skip displaying the logout dialog.'),
   );
 
-  $form['block_settings'] = array(
-    '#type'  => 'fieldset',
-    '#title' => t('Autologout warning block')
-  );
+  $form['autologout_use_alt_logout_method'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Use alternate logout method'),
+    '#default_value' => variable_get('autologout_use_alt_logout_method', FALSE),
+    '#description' => t('Normally when auto logout is triggered, it is done via an AJAX service call. Sites that use an SSO provider, such as CAS, are likely to see this request fail with the error "Origin is not allowed by Access-Control-Allow-Origin". The alternate appraoch is to have the auto logout trigger a page redirect to initiate the logout process instead.'),
+  ); 
 
-  $form['block_settings']['block_title']  = array(
-    '#type' => 'textfield',
-    '#title' => t('Block title'),
-    '#default_value' => _autologout_local_settings('block_title'),
+  $form['autologout_message']  = array(
+    '#type' => 'textarea',
+    '#title' => t('Message to display in the logout dialog'),
+    '#default_value' => variable_get('autologout_message', 'Your session is about to expire. Do you want to reset it?'),
     '#size' => 40,
-    '#description' => t('The title of the logout warning block.')
+    '#description' => t('This message must be plain text as it might appear in a JavaScript confirm dialog.'),
+  );
+
+  $form['autologout_inactivity_message']  = array(
+    '#type' => 'textarea',
+    '#title' => t('Message to display to the user after they are logged out.'),
+    '#default_value' => variable_get('autologout_inactivity_message', 'You have been logged out due to inactivity.'),
+    '#size' => 40,
+    '#description' => t('This message is displayed after the user was logged out due to inactivity. You can leave this blank to show no message to the user.'),
+  );
+
+  $form['autologout_use_watchdog'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Enable watchdog Automated Logout logging'),
+    '#default_value' => variable_get('autologout_use_watchdog', ''),
+    '#description' => t('Enable logging of automatically logged out users'),
+  );
+
+  $form['autologout_enforce_admin'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Enforce auto logout on admin pages'),
+    '#default_value' => variable_get('autologout_enforce_admin', FALSE),
+    '#description' => t('If checked, then users will be automatically logged out when administering the site.'),
   );
 
   if (module_exists('jstimer') && module_exists('jst_timer')) {
-    $form['block_settings']['autologout_jstimer_format']  = array(
-      '#title' => t('Javascript timer output format string'),
-      '#type' => 'textarea',
-      '#rows' => 2,
+    $form['autologout_jstimer_format']  = array(
+      '#type' => 'textfield',
+      '#title' => t('Autologout block time format'),
       '#default_value' => variable_get('autologout_jstimer_format', '%hours%:%mins%:%secs%'),
-      '#description' => t('Change the display of the dynamic timer.  Available replacement values are: %day%, %month%, %year%, %dow%, %moy%, %years%, %ydays%, %days%, %hours%, %mins%, and %secs%.')
+      '#description' => t('Change the display of the dynamic timer.  Available replacement values are: %day%, %month%, %year%, %dow%, %moy%, %years%, %ydays%, %days%, %hours%, %mins%, and %secs%.'),
     );
   }
 
-  $form['autologout_one_session'] = array(
-    '#type'  => 'fieldset',
-    '#title' => t('One Session settings'),
-    '#tree'  => TRUE,
-    '#description' => t('One session will provide enforcement for "one session" per user. If a user logs in when another session for that user is active the other session will be deactivated. The user will be notified and the event logged.'),
+  $form['table'] = array(
+    '#type' => 'item',
+    '#weight' => -2,
+    '#title' => t('If Enabled every user in role will be logged out based on that roles timeout, unless the user has an individual timeout set.'),
+    '#theme' => 'autologout_render_table',
   );
-  $values = variable_get('autologout_one_session', 0);
 
-  foreach (user_roles(TRUE) as $role) {
-    $this_value = $values[$role];
+  foreach (user_roles(TRUE) as $key => $role) {
 
-    $form['autologout_one_session'][$role] = array(
-      '#type' => 'select',
-      '#title' => $role,
-      '#options' => array('1' => t('Enforce'), '0' => t('Exclude')),
-      '#default_value' => (isset($values[$role]) ? $values[$role] : 0),
+    $form['table']['autologout_roles']['autologout_role_' . $key . '_timeout'] = array(
+      '#type' => 'textfield',
+      '#default_value' => variable_get('autologout_role_' . $key . '_timeout', $timeout),
+      '#size' => 8,
+      '#theme' => 'textfield',
+    );
+
+  }
+
+  foreach (user_roles(TRUE) as $key => $role) {
+    $form['table']['autologout_roles']['autologout_role_' . $key] = array(
+      '#type' => 'checkbox',
+      '#default_value' => variable_get('autologout_role_' . $key, FALSE),
+      '#theme' => 'checkbox',
     );
   }
-  $markup4_items = array(
-    t('Enforce : all users in this role will be only allowed one session.'),
-    t('Exclude : all users in this role are excluded from one session functionality.'),
-  );
-  $markup4 = theme('item_list', $markup4_items, t('Policy description')) . t('Please note: If a user is found to be in a role that allows disabling this feature, this overrides any enforcement');
-  $form['autologout_one_session']['markup4'] = array(
-   '#type' => 'markup',
-   '#value' => $markup4,
-  );
+
   return system_settings_form($form);
 }
 
+/**
+ * Settings validation.
+ */
+function autologout_settings_validate($form, &$form_state) {
+  $max_timeout = $form_state['values']['autologout_max_timeout'];
+  $role_timeout = _autologout_get_role_timeout();
 
-function autologout_admin_settings_validate($form, $form_state) {
-  if ( $form_state['values']['autologout']['timeout'] < 60 ) {
-    form_set_error('autologout][timeout', t('You must specify a timeout value 60 seconds or greater'));
+  // Validate timeouts for each role.
+  foreach (user_roles(TRUE) as $key => $role) {
+    if (empty($form_state['values']['autologout_role_' . $key])) {
+      // Don't validate role timeouts for non enabled roles.
+      continue;
+    }
+
+    $timeout = $form_state['values']['autologout_role_' . $key . '_timeout'];
+    $validate = autologout_timeout_validate($timeout, $max_timeout);
+
+    if (!$validate) {
+      form_set_error('autologout_role_' . $key . '_timeout', t('%role role timeout must be an integer greater than 60, less then %max or 0 to disable autologout for that role.', array('%role' => $role, '%max' => $max_timeout)));
+    }
+  }
+
+  $timeout = $form_state['values']['autologout_timeout'];
+
+  // Validate timeout.
+  if (!is_numeric($timeout) || ((int) $timeout != $timeout) || $timeout < 60 || $timeout > $max_timeout) {
+    form_set_error('autologout_timeout', t('The timeout must be an integer greater than 60 and less then %max.', array('%max' => $max_timeout)));
   }
 }
