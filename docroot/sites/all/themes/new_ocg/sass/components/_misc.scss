@@ -3583,6 +3583,8 @@ span.newtab {
 .node-type-target-methods .region-sidebar-first {
   position: fixed;
   width: 10%;
+  bottom: 380px;
+  top: 350px;
 }
 
 .node-type-target-methods .region-sidebar-first .view-display-id-legend {
@@ -3600,6 +3602,89 @@ span.newtab {
 
 #node-986 p, #node-981 p {
   margin-bottom: 1em;
+}
+
+/*
+* CGCI Data Matrix
+*
+*/
+
+.view-cgci-data-matrix table {
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif !important;
+}
+
+.view-cgci-data-matrix th {
+color: #FFF;
+vertical-align: bottom;
+border-right: 1px solid #EBEBEB;
+border-bottom: 1px solid #EBEBEB;
+font-size: 14px;
+font-weight: 400;
+white-space: nowrap;
+text-align: left;
+}
+
+.view-cgci-data-matrix th.disease {
+    background-color: #BD5E1B;
+    min-width: 50px;
+}
+
+.view-cgci-data-matrix table td {
+    padding: 5px 10px;
+}
+
+.view-cgci-data-matrix td {
+    background-color: #FFFFF0;
+    border-right: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.view-cgci-data-matrix td.disease {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.view-cgci-data-matrix td.colN {
+    min-width: 50px;
+}
+
+.view-cgci-data-matrix td.outer {
+    padding: 0px;
+    vertical-align: top;
+}
+
+.view-cgci-data-matrix div.cellheader {
+    margin: 0px;
+    background-color: #FFCC80;
+    color: #000;
+    vertical-align: top;
+    padding: 5px 7px 10px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.view-cgci-data-matrix div.cellbody {
+    margin: 0px;
+    vertical-align: top;
+    padding: 5px 10px 15px;
+    min-height: 50px;
+}
+
+.view-cgci-data-matrix a.protected, .view-cgci-data-matrix a.protected:visited {
+    color: #C23D00 !important;
+    text-decoration: none;
+}
+
+.view-cgci-data-matrix a.protected:hover, .view-cgci-data-matrix a.protected:focus {
+    color: #C23D00 !important;
+    text-decoration: underline;
+}
+
+.view-cgci-data-matrix a {
+    color: #814B0F !important;
+    text-decoration: none;
 }
 
 @media all and (max-width: 1160px) {
@@ -3776,12 +3861,23 @@ span.newtab {
     padding-right: 1%;
   }
 
+  .node-type-target-methods .region-sidebar-first {
+    width: 15%;
+  }
+
 }
 
 @media all and (max-width: 960px) {
   .datasets-dashboard .right {
     clear: right;
     display: inherit;
+  }
+
+  .node-type-target-methods .region-sidebar-first {
+    position: relative;
+    width: 33.33%;
+    top: auto;
+    bottom: auto;
   }
 }
 
@@ -4139,6 +4235,10 @@ span.newtab {
   .front #postscript-first .two-col .view .more-link,
   .front #postscript-second .two-col .view .more-link {
     top: 25px;
+  }
+
+  .node-type-target-methods .region-sidebar-first {
+    width: auto;
   }
 }
 
