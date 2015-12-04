@@ -1,8 +1,8 @@
 (function($) {
   Drupal.behaviors.targetMethods = {
     attach: function(context, settings) {
-      $('.view-display-id-description span').hide();
-      $('.view-display-id-projects_description span').hide();
+      $('.view-display-id-description .hide-description').hide();
+      $('.view-display-id-projects_description .hide-description').hide();
 
       $(".views-field-field-sample-preparation-protoco a").click(function(e) {
         e.preventDefault();
