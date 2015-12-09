@@ -1,6 +1,8 @@
 (function($) {
   Drupal.behaviors.targetMethods = {
     attach: function(context, settings) {
+      $('.view-display-id-description .field-item span').show();
+      $('.view-display-id-projects_description .field-item span').show();
       $('.view-display-id-description .hide-description').hide();
       $('.view-display-id-projects_description .hide-description').hide();
 
@@ -10,6 +12,7 @@
         history.replaceState(null, '', $this.attr('href'));
         var url = window.location.hash;
         $('.view-display-id-description .hide-description').hide();
+        $('.view-display-id-description .field-item span').show();
         $(url).show();
       });
       $(".views-field-field-data-analysis-protocols a").click(function(e) {
@@ -18,6 +21,7 @@
         history.replaceState(null, '', $this.attr('href'));
         var url = window.location.hash;
         $('.view-display-id-projects_description .hide-description').hide();
+        $('.view-display-id-projects_description .field-item span').show();
         $(url).show();
       });
     }
