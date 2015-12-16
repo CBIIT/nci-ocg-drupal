@@ -3580,13 +3580,6 @@ span.newtab {
   width: 43%;
 }
 
-.node-type-target-methods .region-sidebar-first {
-  position: fixed;
-  width: 10%;
-  bottom: 380px;
-  top: 350px;
-}
-
 .node-type-target-methods .region-sidebar-first .view-display-id-legend {
   width: 100%;
 }
@@ -3861,10 +3854,6 @@ text-align: left;
     padding-right: 1%;
   }
 
-  .node-type-target-methods .region-sidebar-first {
-    width: 15%;
-  }
-
 }
 
 @media all and (max-width: 960px) {
@@ -3873,12 +3862,6 @@ text-align: left;
     display: inherit;
   }
 
-  .node-type-target-methods .region-sidebar-first {
-    position: relative;
-    width: 33.33%;
-    top: auto;
-    bottom: auto;
-  }
 }
 
 @media all and (max-width: 800px) {
@@ -4237,9 +4220,6 @@ text-align: left;
     top: 25px;
   }
 
-  .node-type-target-methods .region-sidebar-first {
-    width: auto;
-  }
 }
 
 @media all and (max-width: 320px) {
