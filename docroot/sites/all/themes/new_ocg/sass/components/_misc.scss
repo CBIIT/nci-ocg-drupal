@@ -2858,6 +2858,11 @@ html.js fieldset.collapsed {
   overflow: visible;
 }
 
+.node-type-target-methods .views-accordion .fieldset-wrapper {
+  padding: 0;
+  width: 100% !important;
+}
+
 fieldset.collapse-processed span.fieldset-legend {
   background: url(../images/expanded-accordion.png) no-repeat 5px 60% !important;
 }
