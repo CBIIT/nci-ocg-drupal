@@ -6,7 +6,7 @@
       $('.view-display-id-description .views-row').hide();
       $('.view-display-id-projects_description .hide-description').hide();
 
-      $(".views-field-field-sample-preparation-protoco a").click(function(e) {
+      $(".view-display-id-table .views-field-field-sample-preparation-protoco a").click(function(e) {
         e.preventDefault();
         var $this = $(this);
         history.replaceState(null, '', $this.attr('href'));
@@ -15,7 +15,7 @@
         $(url).parent().parent().parent().show();
         $(url).show();
       });
-      $(".views-field-field-data-analysis-protocols a").click(function(e) {
+      $(".view-display-id-projects_table .views-field-field-data-analysis-protocols a").click(function(e) {
         e.preventDefault();
         var $this = $(this);
         history.replaceState(null, '', $this.attr('href'));
