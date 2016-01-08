@@ -17,6 +17,7 @@
  *   field id, then row number. This matches the index in $rows.
  * @ingroup views_templates
  */
+//dpm(get_defined_vars());
 ?>
 <table <?php
 if ($classes) {
@@ -194,37 +195,8 @@ if ($classes) {
           <?php } else { ?>
             <td class='outer colN'><div class="cellheader"></div></td>
           <?php } ?>
-          <?php if ($disease->field_sequence->value()) { ?>
-            <?php foreach ($disease->field_sequence->field_column_header as $sequence): ?>
-              <td class='outer colN'>
-                <div class="cellheader"><?php print $sequence->field_link->title->value(); ?></div>
-                <div class='cellbody'>
-                  <?php foreach ($sequence->field_column_values as $i => $column_values): ?>
-                    <?php $field_link = field_view_field('field_collection_item', entity_load_single('field_collection_item', $column_values->item_id->value()), 'field_link'); ?>
-                    <?php
-                    if (!empty($field_link['#items'][0]['attributes']['title'])) {
-                      $link_title = 'title="' . $field_link['#items'][0]['attributes']['title'] . '"';
-                    } else {
-                      $link_title = '';
-                    }
-                    ?>
-                    <?php if ($column_values->field_availability->value() == 'Unavailable'): ?>
-                      <span <?php print $link_title; ?>><?php print $column_values->field_link->title->value(); ?></span>
-                      <br />
-                    <?php endif; ?>
-                    <?php if ($column_values->field_availability->value() == 'Protected'): ?>
-                      <a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '†'; ?></a>
-                      <br />
-                    <?php endif; ?>
-                    <?php if ($column_values->field_availability->value() == 'Public'): ?>
-                      <a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '*'; ?></a>
-                      <br />
-                    <?php endif; ?>
-                  <?php endforeach; ?>
-                </div>
-              </td>
-            <?php endforeach; ?>
-          <?php } ?>
+          
+          <?php print views_embed_view('cgci_data_matrix', 'column_header', $node); ?>
           <?php if ($disease->field_other->value()) { ?>
             <td class='outer colN'>
               <?php if ($disease->field_other->value()): ?>
@@ -259,7 +231,7 @@ if ($classes) {
             </td>
           <?php } else { ?>
             <td class='outer colN'><div class="cellheader"></div></td>
-          <?php } ?>
+            <?php } ?>
         </tr>
       <?php endforeach; ?>
     <?php endforeach; ?>
