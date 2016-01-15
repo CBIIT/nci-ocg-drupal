@@ -6,7 +6,6 @@
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728148
  */
-dpm(views_get_page_view());
 ?>
 
 <div id="page">

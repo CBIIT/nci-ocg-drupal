@@ -120,6 +120,11 @@ function new_ocg_preprocess_page(&$variables, $hook) {
   global $base_url;
   drupal_theme_initialize();
   $variables['new_logo'] = theme_get_setting('logo_path');
+  
+  
+  if (($views_page = views_get_page_view()) && $views_page->name === "cgci_data_matrix") {
+    $variables['theme_hook_suggestions'][] = 'page__views__cgci';
+  }
 }
 
 function new_ocg_preprocess_node(&$variables) {
