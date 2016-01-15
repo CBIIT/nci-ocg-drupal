@@ -125,7 +125,7 @@ if ($classes) {
               <?php endforeach; ?>
             </td>
           <?php } else { ?>
-            <td class='outer colN'></td>
+            <td class='outer colN'><div class="cellheader"></div></td>
           <?php } ?>
           <?php if ($disease->field_copy_number->value()) { ?>
             <td class='outer colW'>
@@ -158,7 +158,7 @@ if ($classes) {
               <?php endforeach; ?>
             </td>
           <?php } else { ?>
-            <td class='outer colN'></td>
+            <td class='outer colN'><div class="cellheader"></div></td>
           <?php } ?>
           <?php if ($disease->field_mirna->value()) { ?>
             <td class='outer colN'>
