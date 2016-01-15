@@ -3612,6 +3612,10 @@ span.newtab {
 *
 */
 
+.page-cgci-data-matrix table, .page-cgci-data-matrix .sticky-header {
+  table-layout: fixed;
+}
+
 .page-cgci-data-matrix .cgci-title {
   float: left;
   position: relative;
@@ -3657,7 +3661,6 @@ border-right: 1px solid #EBEBEB;
 border-bottom: 1px solid #EBEBEB;
 font-size: 14px;
 font-weight: 400;
-white-space: nowrap;
 text-align: left;
 }
 
@@ -3699,7 +3702,6 @@ text-align: left;
     height: 30px;
     font-size: 14px;
     font-weight: 400;
-    white-space: nowrap;
 }
 
 .view-cgci-data-matrix div.cellbody {
