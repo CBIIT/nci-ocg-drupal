@@ -3612,6 +3612,40 @@ span.newtab {
 *
 */
 
+.page-cgci-data-matrix .cgci-title {
+  float: left;
+  position: relative;
+  min-height: 80px;
+}
+
+.page-cgci-data-matrix .cgci-image {
+  float: right;
+}
+
+.page-cgci-data-matrix .view-display-id-primary_disease {
+  width: 100%;
+}
+
+.page-cgci-data-matrix .views-label {
+    color: #323232;
+    font-weight: normal;
+    text-transform: none;
+    float: none;
+    display: inline;
+    padding: 0;
+}
+
+.page-cgci-data-matrix .view-display-id-last_updated {
+  font-style: italic;
+  color: #323232;
+  position: absolute;
+  bottom: 0;
+}
+
+.page-cgci-data-matrix .view-display-id-last_updated .views-row {
+  margin-bottom: 0;
+}
+
 .view-cgci-data-matrix table {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif !important;
 }
