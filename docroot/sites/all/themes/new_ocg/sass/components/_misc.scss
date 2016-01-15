@@ -3612,25 +3612,25 @@ span.newtab {
 *
 */
 
-.page-cgci-data-matrix table, .page-cgci-data-matrix .sticky-header {
+.page-programs-cgci-data-matrix table, .page-programs-cgci-data-matrix .sticky-header {
   table-layout: fixed;
 }
 
-.page-cgci-data-matrix .cgci-title {
+.page-programs-cgci-data-matrix .cgci-title {
   float: left;
   position: relative;
   min-height: 80px;
 }
 
-.page-cgci-data-matrix .cgci-image {
+.page-programs-cgci-data-matrix .cgci-image {
   float: right;
 }
 
-.page-cgci-data-matrix .view-display-id-primary_disease {
+.page-programs-cgci-data-matrix .view-display-id-primary_disease {
   width: 100%;
 }
 
-.page-cgci-data-matrix .views-label {
+.page-programs-cgci-data-matrix .views-label {
     color: #323232;
     font-weight: normal;
     text-transform: none;
@@ -3639,14 +3639,14 @@ span.newtab {
     padding: 0;
 }
 
-.page-cgci-data-matrix .view-display-id-last_updated {
+.page-programs-cgci-data-matrix .view-display-id-last_updated {
   font-style: italic;
   color: #323232;
   position: absolute;
   bottom: 0;
 }
 
-.page-cgci-data-matrix .view-display-id-last_updated .views-row {
+.page-programs-cgci-data-matrix .view-display-id-last_updated .views-row {
   margin-bottom: 0;
 }
 
