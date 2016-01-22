@@ -93,11 +93,12 @@
       <?php print render($page['pre_content']); ?>
     </div>
     <div id="content" class="column" role="main">
+      <?php print $messages; ?>
       <a id="main-content"></a>
       <div class="cgci-title">
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
-        <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
+        <h1 class="page__title title dataMatrixHeader" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print views_embed_view('cgci_data_matrix', 'last_updated'); ?>
       </div>
@@ -105,7 +106,6 @@
     <img class="cgci-image" style="width: 186px; height: 80px;" class="media-element file-default" typeof="foaf:Image" src="/sites/default/files/CGCIBanner_2013_11_27_BIGGER.jpg" width="719" height="310" alt="">
       </div>
       <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?>

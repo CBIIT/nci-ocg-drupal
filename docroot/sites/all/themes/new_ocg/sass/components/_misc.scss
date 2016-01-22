@@ -3670,6 +3670,14 @@ text-align: left;
     min-width: 50px;
 }
 
+.view-cgci-data-matrix th.diseasebanner {
+    vertical-align: middle;
+}
+
+.view-cgci-data-matrix tbody tr {
+  background-color: #FFFFF0 !important;
+}
+
 .view-cgci-data-matrix table td {
     padding: 5px 10px;
 }
@@ -3692,6 +3700,31 @@ text-align: left;
 .view-cgci-data-matrix td.outer {
     padding: 0px;
     vertical-align: top;
+}
+
+.view-cgci-data-matrix td.outer table {
+  border: none;
+  margin: 0;
+  width: 100%;
+}
+
+.view-cgci-data-matrix td.outer table th {
+  border: none;
+  border-bottom: none;
+  border-right: none !important;
+  padding: 0;
+}
+
+.view-cgci-data-matrix td.outer table .tablestyles tr {
+  padding: 0;
+  border-bottom: none !important;
+}
+
+.view-cgci-data-matrix td.outer table td {
+  border: none;
+  border-bottom: none !important;
+  border-right: none !important;
+  padding: 0;
 }
 
 .view-cgci-data-matrix div.cellheader {

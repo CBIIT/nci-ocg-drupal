@@ -23,7 +23,7 @@ $column1 = array_search(1, array_column($rows, 'field_column_number'));
 
 if (!is_numeric($column1)) {
   ?>
-  <td class='outer colN'>
+  <td class='outer colN' headers="<?php print $rows[$column1]['item_id_1']; ?>-rh seq_ch <?php print $rows[$column1]['nid']; ?>-bn">
     <div class="cellheader"></div>
     <div class='cellbody'></div>
   </td>
@@ -37,9 +37,21 @@ if (!is_numeric($column1)) {
   <?php if ($rows[$column1]['field_availability'] == 'Public'): ?>
     <?php $header = '<a class="public" target="_blank"' . $rows[$column1]['field_link'] . ' href="' . $rows[$column1]['field_link_1'] . '">' . $rows[$column1]['field_link'] . '*</a><br />'; ?>
   <?php endif; ?>
-  <td class='outer colN'>
-    <div class="cellheader"><?php print $header; ?></div>
-    <div class='cellbody'><?php print $rows[$column1]['view']; ?></div>
+  <td class='outer colN' headers="<?php print $rows[$column1]['item_id_1']; ?>-rh seq_ch <?php print $rows[$column1]['nid']; ?>-bn">
+    <table class="cell">
+      <tbody>
+        <tr>
+          <th id="<?php print $rows[$column1]['item_id_1']; ?>_1" scope="col" class="cellheader">
+      <div class="cellheader"><?php print $header; ?></div>
+    </th>
+  </tr>
+  <tr>
+    <td class="cellbody" headers="<?php print $rows[$column1]['item_id_1']; ?>_rh seq_ch <?php print $rows[$column1]['nid']; ?>_bn <?php print $rows[$column1]['item_id_1']; ?>_1">
+      <div class='cellbody'><?php print $rows[$column1]['view']; ?></div>
+    </td>
+  </tr>
+  </tbody>
+  </table>
   </td>
 <?php } ?>
 
@@ -48,7 +60,7 @@ $column2 = array_search(2, array_column($rows, 'field_column_number'));
 
 if (!is_numeric($column2)) {
   ?>
-  <td class='outer colN'>
+  <td class='outer colN' headers="<?php print $rows[$column2]['item_id_1']; ?>-rh seq_ch <?php print $rows[$column2]['nid']; ?>-bn">
     <div class="cellheader"></div>
     <div class='cellbody'></div>
   </td>
@@ -62,9 +74,21 @@ if (!is_numeric($column2)) {
   <?php if ($rows[$column2]['field_availability'] == 'Public'): ?>
     <?php $header = '<a class="public" target="_blank"' . $rows[$column2]['field_link'] . ' href="' . $rows[$column2]['field_link_1'] . '">' . $rows[$column2]['field_link'] . '*</a><br />'; ?>
   <?php endif; ?>
-  <td class='outer colN'>
+  <td class='outer colN' headers="<?php print $rows[$column2]['item_id_1']; ?>-rh seq_ch <?php print $rows[$column2]['nid']; ?>-bn">
+    <table class="cell">
+      <tbody>
+        <tr>
+          <th id="<?php print $rows[$column2]['item_id_1']; ?>_2" scope="col" class="cellheader">
     <div class="cellheader"><?php print $header; ?></div>
+    </th>
+  </tr>
+  <tr>
+    <td class="cellbody" headers="<?php print $rows[$column2]['item_id_1']; ?>_rh seq_ch <?php print $rows[$column2]['nid']; ?>_bn <?php print $rows[$column2]['item_id_1']; ?>_2">
     <div class='cellbody'><?php print $rows[$column2]['view']; ?></div>
+    </td>
+  </tr>
+  </tbody>
+  </table>
   </td>
 <?php } ?>
 
@@ -73,7 +97,7 @@ $column3 = array_search(3, array_column($rows, 'field_column_number'));
 
 if (!is_numeric($column3)) {
   ?>
-  <td class='outer colN'>
+  <td class='outer colN' headers="<?php print $rows[$column3]['item_id_1']; ?>-rh seq_ch <?php print $rows[$column3]['nid']; ?>-bn">
     <div class="cellheader"></div>
     <div class='cellbody'></div>
   </td>
@@ -87,9 +111,21 @@ if (!is_numeric($column3)) {
   <?php if ($rows[$column3]['field_availability'] == 'Public'): ?>
     <?php $header = '<a class="public" target="_blank"' . $rows[$column3]['field_link'] . ' href="' . $rows[$column3]['field_link_1'] . '">' . $rows[$column3]['field_link'] . '*</a><br />'; ?>
   <?php endif; ?>
-  <td class='outer colN'>
+  <td class='outer colN' headers="<?php print $rows[$column3]['item_id_1']; ?>-rh seq_ch <?php print $rows[$column3]['nid']; ?>-bn">
+    <table class="cell">
+      <tbody>
+        <tr>
+          <th id="<?php print $rows[$column3]['item_id_1']; ?>_3" scope="col" class="cellheader">
     <div class="cellheader"><?php print $header; ?></div>
+    </th>
+  </tr>
+  <tr>
+    <td class="cellbody" headers="<?php print $rows[$column3]['item_id_1']; ?>_rh seq_ch <?php print $rows[$column3]['nid']; ?>_bn <?php print $rows[$column3]['item_id_1']; ?>_3">
     <div class='cellbody'><?php print $rows[$column3]['view']; ?></div>
+    </td>
+  </tr>
+  </tbody>
+  </table>
   </td>
 <?php } ?>
 
