@@ -230,8 +230,7 @@ if ($classes) {
     <?php } else { ?>
       <td class='outer colN' headers="<?php print $disease->item_id->value(); ?>-rh mirna_ch <?php print $node; ?>-bn"><div class="cellheader"></div></td>
     <?php } ?>
-
-    <?php print views_embed_view('cgci_data_matrix', 'column_header', $node); ?>
+    <?php print views_embed_view('cgci_data_matrix', 'column_header', $disease->item_id->value()); ?>
     <?php if ($disease->field_other->value()) { ?>
       <td class='outer colN' headers="<?php print $disease->item_id->value(); ?>-rh other_ch <?php print $node; ?>-bn">
         <table class="cell">
