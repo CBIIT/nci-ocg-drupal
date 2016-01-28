@@ -67,7 +67,9 @@ if ($classes) {
       <?php foreach ($wrapper->field_disease as $disease): ?>
         <tr>
           <th id="<?php print $disease->item_id->value(); ?>-rh"class="diseasebanner rowheader" scope="row">
-            <a href="<?php print $disease->field_link->url->value() ?>"><?php print $disease->field_link->title->value() ?></a>
+            <?php if (!empty($disease->field_link->url->value()) && !empty($disease->field_link->title->value())): ?>
+              <a href="<?php print $disease->field_link->url->value() ?>"><?php print $disease->field_link->title->value() ?></a>
+            <?php endif; ?>
           </th>
           <td class="colSN" headers="<?php print $disease->item_id->value(); ?>-rh patient_ch <?php print $node; ?>-bn">
             <?php foreach ($disease->field_patient_data as $patient_data): ?>
@@ -79,17 +81,21 @@ if ($classes) {
                 $link_title = '';
               }
               ?>
-              <?php if ($patient_data->field_availability->value() == 'Unavailable'): ?>
-                <span class='patientcellelem' <?php print $link_title; ?>><?php print $patient_data->field_link->title->value(); ?></span>
-                <br />
+              <?php if (!empty($patient_data->field_link->title->value())): ?>
+                <?php if ($patient_data->field_availability->value() == 'Unavailable'): ?>
+                  <span class='patientcellelem' <?php print $link_title; ?>><?php print $patient_data->field_link->title->value(); ?></span>
+                  <br />
+                <?php endif; ?>
               <?php endif; ?>
-              <?php if ($patient_data->field_availability->value() == 'Protected'): ?>
-                <a class="protected patientcellelem" target="_blank" <?php print $link_title; ?> href='<?php print $patient_data->field_link->url->value(); ?>'><?php print $patient_data->field_link->title->value() . '†'; ?></a>
-                <br />
-              <?php endif; ?>
-              <?php if ($patient_data->field_availability->value() == 'Public'): ?>
-                <a class="public patientcellelem" target="_blank" <?php print $link_title; ?> href='<?php print $patient_data->field_link->url->value(); ?>'><?php print $patient_data->field_link->title->value() . '*'; ?></a>
-                <br />
+              <?php if (!empty($patient_data->field_link->title->value()) && !empty($patient_data->field_link->url->value())): ?>
+                <?php if ($patient_data->field_availability->value() == 'Protected'): ?>
+                  <a class="protected patientcellelem" target="_blank" <?php print $link_title; ?> href='<?php print $patient_data->field_link->url->value(); ?>'><?php print $patient_data->field_link->title->value() . '†'; ?></a>
+                  <br />
+                <?php endif; ?>
+                <?php if ($patient_data->field_availability->value() == 'Public'): ?>
+                  <a class="public patientcellelem" target="_blank" <?php print $link_title; ?> href='<?php print $patient_data->field_link->url->value(); ?>'><?php print $patient_data->field_link->title->value(); ?></a>
+                  <br />
+                <?php endif; ?>
               <?php endif; ?>
             <?php endforeach; ?>
           </td>
@@ -100,7 +106,22 @@ if ($classes) {
                   <?php foreach ($disease->field_gene_expression->field_column_header as $gene_expression): ?>
                     <tr>
                       <th id="<?php print $disease->item_id->value(); ?>_gep" scope="col" class="cellheader">
-                  <div class="cellheader"><?php print $gene_expression->field_link->title->value(); ?></div>
+                        <?php if (!empty($gene_expression->field_link->title->value())): ?>
+                          <?php if ($gene_expression->field_availability->value() == 'Unavailable'): ?>
+                            <div class="cellheader"><?php print $gene_expression->field_link->title->value(); ?></div>
+                            <br />
+                          <?php endif; ?>
+                        <?php endif; ?>
+                        <?php if (!empty($gene_expression->field_link->title->value()) && !empty($gene_expression->field_link->url->value())): ?>
+                          <?php if ($gene_expression->field_availability->value() == 'Protected'): ?>
+                            <div class="cellheader"><a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $gene_expression->field_link->url->value(); ?>'><?php print $gene_expression->field_link->title->value() . '†'; ?></a></div>
+                            <br />
+                          <?php endif; ?>
+                          <?php if ($gene_expression->field_availability->value() == 'Public'): ?>
+                            <div class="cellheader"><a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $gene_expression->field_link->url->value(); ?>'><?php print $gene_expression->field_link->title->value(); ?></a></div>
+                            <br />
+                          <?php endif; ?>
+                        <?php endif; ?>
                   </th>
             </tr>
             <tr>
@@ -115,17 +136,21 @@ if ($classes) {
                       $link_title = '';
                     }
                     ?>
-                    <?php if ($column_values->field_availability->value() == 'Unavailable'): ?>
-                      <span <?php print $link_title; ?>><?php print $column_values->field_link->title->value(); ?></span>
-                      <br />
+                    <?php if (!empty($column_values->field_link->title->value())): ?>
+                      <?php if ($column_values->field_availability->value() == 'Unavailable'): ?>
+                        <span <?php print $link_title; ?>><?php print $column_values->field_link->title->value(); ?></span>
+                        <br />
+                      <?php endif; ?>
                     <?php endif; ?>
-                    <?php if ($column_values->field_availability->value() == 'Protected'): ?>
-                      <a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '†'; ?></a>
-                      <br />
-                    <?php endif; ?>
-                    <?php if ($column_values->field_availability->value() == 'Public'): ?>
-                      <a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '*'; ?></a>
-                      <br />
+                    <?php if (!empty($column_values->field_link->title->value()) && !empty($column_values->field_link->url->value())): ?>
+                      <?php if ($column_values->field_availability->value() == 'Protected'): ?>
+                        <a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '†'; ?></a>
+                        <br />
+                      <?php endif; ?>
+                      <?php if ($column_values->field_availability->value() == 'Public'): ?>
+                        <a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '*'; ?></a>
+                        <br />
+                      <?php endif; ?>
                     <?php endif; ?>
                   <?php endforeach; ?>
                 </div>
@@ -141,63 +166,32 @@ if ($classes) {
     <?php if ($disease->field_copy_number->value()) { ?>
       <td class='outer colW' headers="<?php print $disease->item_id->value(); ?>-rh cna_ch <?php print $node; ?>-bn">
         <table class="cell">
-                <tbody>
-        <?php foreach ($disease->field_copy_number->field_column_header as $copy_number): ?>
-                  <tr>
-                      <th id="<?php print $disease->item_id->value(); ?>_cna" scope="col" class="cellheader">
-          <div class="cellheader"><?php print $copy_number->field_link->title->value(); ?></div>
-        </th>
+          <tbody>
+            <?php foreach ($disease->field_copy_number->field_column_header as $copy_number): ?>
+              <tr>
+                <th id="<?php print $disease->item_id->value(); ?>_cna" scope="col" class="cellheader">
+                  <?php if (!empty($copy_number->field_link->title->value())): ?>
+                          <?php if ($copy_number->field_availability->value() == 'Unavailable'): ?>
+                            <div class="cellheader"><?php print $copy_number->field_link->title->value(); ?></div>
+                            <br />
+                          <?php endif; ?>
+                        <?php endif; ?>
+                        <?php if (!empty($copy_number->field_link->title->value()) && !empty($copy_number->field_link->url->value())): ?>
+                          <?php if ($copy_number->field_availability->value() == 'Protected'): ?>
+                            <div class="cellheader"><a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $copy_number->field_link->url->value(); ?>'><?php print $copy_number->field_link->title->value() . '†'; ?></a></div>
+                            <br />
+                          <?php endif; ?>
+                          <?php if ($copy_number->field_availability->value() == 'Public'): ?>
+                            <div class="cellheader"><a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $copy_number->field_link->url->value(); ?>'><?php print $copy_number->field_link->title->value(); ?></a></div>
+                            <br />
+                          <?php endif; ?>
+                        <?php endif; ?>
+          </th>
         </tr>
         <tr>
           <td class="cellbody" headers="<?php print $disease->item_id->value(); ?>_rh cna_ch <?php print $node; ?>_bn <?php print $disease->item_id->value(); ?>_cna">
-          <div class='cellbody'>
-            <?php foreach ($copy_number->field_column_values as $i => $column_values): ?>
-              <?php $field_link = field_view_field('field_collection_item', entity_load_single('field_collection_item', $column_values->item_id->value()), 'field_link'); ?>
-              <?php
-              if (!empty($field_link['#items'][0]['attributes']['title'])) {
-                $link_title = 'title="' . $field_link['#items'][0]['attributes']['title'] . '"';
-              } else {
-                $link_title = '';
-              }
-              ?>
-              <?php if ($column_values->field_availability->value() == 'Unavailable'): ?>
-                <span <?php print $link_title; ?>><?php print $column_values->field_link->title->value(); ?></span>
-                <br />
-              <?php endif; ?>
-              <?php if ($column_values->field_availability->value() == 'Protected'): ?>
-                <a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '†'; ?></a>
-                <br />
-              <?php endif; ?>
-              <?php if ($column_values->field_availability->value() == 'Public'): ?>
-                <a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '*'; ?></a>
-                <br />
-              <?php endif; ?>
-            <?php endforeach; ?>
-          </div>
-          </td>
-        </tr>
-        <?php endforeach; ?>
-        </tbody>
-</table>
-      </td>
-    <?php } else { ?>
-      <td class='outer colN' headers="<?php print $disease->item_id->value(); ?>-rh cna_ch <?php print $node; ?>-bn"><div class="cellheader"></div></td>
-    <?php } ?>
-    <?php if ($disease->field_mirna->value()) { ?>
-      <td class='outer colN' headers="<?php print $disease->item_id->value(); ?>-rh mirna_ch <?php print $node; ?>-bn">
-        <table class="cell">
-                <tbody>
-        <?php if ($disease->field_mirna->value()): ?>
-          <?php foreach ($disease->field_mirna->field_column_header as $mirna): ?>
-                  <tr>
-                      <th id="<?php print $disease->item_id->value(); ?>_mirna" scope="col" class="cellheader">
-            <div class="cellheader"><?php print $mirna->field_link->title->value(); ?></div>
-        </th>
-        </tr>
-        <tr>
-          <td class="cellbody" headers="<?php print $disease->item_id->value(); ?>_rh mirna_ch <?php print $node; ?>_bn <?php print $disease->item_id->value(); ?>_mirna">
             <div class='cellbody'>
-              <?php foreach ($mirna->field_column_values as $i => $column_values): ?>
+              <?php foreach ($copy_number->field_column_values as $i => $column_values): ?>
                 <?php $field_link = field_view_field('field_collection_item', entity_load_single('field_collection_item', $column_values->item_id->value()), 'field_link'); ?>
                 <?php
                 if (!empty($field_link['#items'][0]['attributes']['title'])) {
@@ -206,26 +200,95 @@ if ($classes) {
                   $link_title = '';
                 }
                 ?>
-                <?php if ($column_values->field_availability->value() == 'Unavailable'): ?>
-                  <span <?php print $link_title; ?>><?php print $column_values->field_link->title->value(); ?></span>
-                  <br />
+                <?php if (!empty($column_values->field_link->title->value())): ?>
+                  <?php if ($column_values->field_availability->value() == 'Unavailable'): ?>
+                    <span <?php print $link_title; ?>><?php print $column_values->field_link->title->value(); ?></span>
+                    <br />
+                  <?php endif; ?>
                 <?php endif; ?>
-                <?php if ($column_values->field_availability->value() == 'Protected'): ?>
-                  <a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '†'; ?></a>
-                  <br />
-                <?php endif; ?>
-                <?php if ($column_values->field_availability->value() == 'Public'): ?>
-                  <a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '*'; ?></a>
-                  <br />
+                <?php if (!empty($column_values->field_link->title->value()) && !empty($column_values->field_link->url->value())): ?>
+                  <?php if ($column_values->field_availability->value() == 'Protected'): ?>
+                    <a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '†'; ?></a>
+                    <br />
+                  <?php endif; ?>
+                  <?php if ($column_values->field_availability->value() == 'Public'): ?>
+                    <a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '*'; ?></a>
+                    <br />
+                  <?php endif; ?>
                 <?php endif; ?>
               <?php endforeach; ?>
             </div>
-            </td>
+          </td>
         </tr>
-          <?php endforeach; ?>
-        <?php endif; ?>
-        </tbody>
-</table>
+      <?php endforeach; ?>
+      </tbody>
+      </table>
+      </td>
+    <?php } else { ?>
+      <td class='outer colN' headers="<?php print $disease->item_id->value(); ?>-rh cna_ch <?php print $node; ?>-bn"><div class="cellheader"></div></td>
+    <?php } ?>
+    <?php if ($disease->field_mirna->value()) { ?>
+      <td class='outer colN' headers="<?php print $disease->item_id->value(); ?>-rh mirna_ch <?php print $node; ?>-bn">
+        <table class="cell">
+          <tbody>
+            <?php if ($disease->field_mirna->value()): ?>
+              <?php foreach ($disease->field_mirna->field_column_header as $mirna): ?>
+                <tr>
+                  <th id="<?php print $disease->item_id->value(); ?>_mirna" scope="col" class="cellheader">
+              <?php if (!empty($mirna->field_link->title->value())): ?>
+                          <?php if ($mirna->field_availability->value() == 'Unavailable'): ?>
+                            <div class="cellheader"><?php print $mirna->field_link->title->value(); ?></div>
+                            <br />
+                          <?php endif; ?>
+                        <?php endif; ?>
+                        <?php if (!empty($mirna->field_link->title->value()) && !empty($mirna->field_link->url->value())): ?>
+                          <?php if ($mirna->field_availability->value() == 'Protected'): ?>
+                            <div class="cellheader"><a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $mirna->field_link->url->value(); ?>'><?php print $mirna->field_link->title->value() . '†'; ?></a></div>
+                            <br />
+                          <?php endif; ?>
+                          <?php if ($mirna->field_availability->value() == 'Public'): ?>
+                            <div class="cellheader"><a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $mirna->field_link->url->value(); ?>'><?php print $mirna->field_link->title->value(); ?></a></div>
+                            <br />
+                          <?php endif; ?>
+                        <?php endif; ?>
+            </th>
+          </tr>
+          <tr>
+            <td class="cellbody" headers="<?php print $disease->item_id->value(); ?>_rh mirna_ch <?php print $node; ?>_bn <?php print $disease->item_id->value(); ?>_mirna">
+              <div class='cellbody'>
+                <?php foreach ($mirna->field_column_values as $i => $column_values): ?>
+                  <?php $field_link = field_view_field('field_collection_item', entity_load_single('field_collection_item', $column_values->item_id->value()), 'field_link'); ?>
+                  <?php
+                  if (!empty($field_link['#items'][0]['attributes']['title'])) {
+                    $link_title = 'title="' . $field_link['#items'][0]['attributes']['title'] . '"';
+                  } else {
+                    $link_title = '';
+                  }
+                  ?>
+                  <?php if (!empty($column_values->field_link->title->value())): ?>
+                    <?php if ($column_values->field_availability->value() == 'Unavailable'): ?>
+                      <span <?php print $link_title; ?>><?php print $column_values->field_link->title->value(); ?></span>
+                      <br />
+                    <?php endif; ?>
+                  <?php endif; ?>
+                  <?php if (!empty($column_values->field_link->title->value()) && !empty($column_values->field_link->url->value())): ?>
+                    <?php if ($column_values->field_availability->value() == 'Protected'): ?>
+                      <a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '†'; ?></a>
+                      <br />
+                    <?php endif; ?>
+                    <?php if ($column_values->field_availability->value() == 'Public'): ?>
+                      <a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '*'; ?></a>
+                      <br />
+                    <?php endif; ?>
+                  <?php endif; ?>
+                <?php endforeach; ?>
+              </div>
+            </td>
+          </tr>
+        <?php endforeach; ?>
+      <?php endif; ?>
+      </tbody>
+      </table>
       </td>
     <?php } else { ?>
       <td class='outer colN' headers="<?php print $disease->item_id->value(); ?>-rh mirna_ch <?php print $node; ?>-bn"><div class="cellheader"></div></td>
@@ -234,46 +297,65 @@ if ($classes) {
     <?php if ($disease->field_other->value()) { ?>
       <td class='outer colN' headers="<?php print $disease->item_id->value(); ?>-rh other_ch <?php print $node; ?>-bn">
         <table class="cell">
-                <tbody>
-        <?php if ($disease->field_other->value()): ?>
-          <?php foreach ($disease->field_other->field_column_header as $other): ?>
-                  <tr>
-                      <th id="<?php print $disease->item_id->value(); ?>_other" scope="col" class="cellheader">
-            <div class="cellheader"><?php print $other->field_link->title->value(); ?></div>
-        </th>
-        </tr>
-        <tr>
-          <td class="cellbody" headers="<?php print $disease->item_id->value(); ?>_rh other_ch <?php print $node; ?>_bn <?php print $disease->item_id->value(); ?>_other">
-            <div class='cellbody'>
-              <?php foreach ($other->field_column_values as $i => $column_values): ?>
-                <?php $field_link = field_view_field('field_collection_item', entity_load_single('field_collection_item', $column_values->item_id->value()), 'field_link'); ?>
-                <?php
-                if (!empty($field_link['#items'][0]['attributes']['title'])) {
-                  $link_title = 'title="' . $field_link['#items'][0]['attributes']['title'] . '"';
-                } else {
-                  $link_title = '';
-                }
-                ?>
-                <?php if ($column_values->field_availability->value() == 'Unavailable'): ?>
-                  <span <?php print $link_title; ?>><?php print $column_values->field_link->title->value(); ?></span>
-                  <br />
-                <?php endif; ?>
-                <?php if ($column_values->field_availability->value() == 'Protected'): ?>
-                  <a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '†'; ?></a>
-                  <br />
-                <?php endif; ?>
-                <?php if ($column_values->field_availability->value() == 'Public'): ?>
-                  <a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '*'; ?></a>
-                  <br />
-                <?php endif; ?>
-              <?php endforeach; ?>
-            </div>
-        </td>
-        </tr>
-          <?php endforeach; ?>
-        <?php endif; ?>
-        </tbody>
-</table>
+          <tbody>
+            <?php if ($disease->field_other->value()): ?>
+              <?php foreach ($disease->field_other->field_column_header as $other): ?>
+                <tr>
+                  <th id="<?php print $disease->item_id->value(); ?>_other" scope="col" class="cellheader">
+              <?php if (!empty($other->field_link->title->value())): ?>
+                          <?php if ($other->field_availability->value() == 'Unavailable'): ?>
+                            <div class="cellheader"><?php print $other->field_link->title->value(); ?></div>
+                            <br />
+                          <?php endif; ?>
+                        <?php endif; ?>
+                        <?php if (!empty($other->field_link->title->value()) && !empty($other->field_link->url->value())): ?>
+                          <?php if ($other->field_availability->value() == 'Protected'): ?>
+                            <div class="cellheader"><a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $other->field_link->url->value(); ?>'><?php print $other->field_link->title->value() . '†'; ?></a></div>
+                            <br />
+                          <?php endif; ?>
+                          <?php if ($other->field_availability->value() == 'Public'): ?>
+                            <div class="cellheader"><a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $other->field_link->url->value(); ?>'><?php print $other->field_link->title->value(); ?></a></div>
+                            <br />
+                          <?php endif; ?>
+                        <?php endif; ?>
+            </th>
+          </tr>
+          <tr>
+            <td class="cellbody" headers="<?php print $disease->item_id->value(); ?>_rh other_ch <?php print $node; ?>_bn <?php print $disease->item_id->value(); ?>_other">
+              <div class='cellbody'>
+                <?php foreach ($other->field_column_values as $i => $column_values): ?>
+                  <?php $field_link = field_view_field('field_collection_item', entity_load_single('field_collection_item', $column_values->item_id->value()), 'field_link'); ?>
+                  <?php
+                  if (!empty($field_link['#items'][0]['attributes']['title'])) {
+                    $link_title = 'title="' . $field_link['#items'][0]['attributes']['title'] . '"';
+                  } else {
+                    $link_title = '';
+                  }
+                  ?>
+                  <?php if (!empty($column_values->field_link->title->value())): ?>
+                    <?php if ($column_values->field_availability->value() == 'Unavailable'): ?>
+                      <span <?php print $link_title; ?>><?php print $column_values->field_link->title->value(); ?></span>
+                      <br />
+                    <?php endif; ?>
+                  <?php endif; ?>
+                  <?php if (!empty($column_values->field_link->title->value()) && !empty($column_values->field_link->url->value())): ?>
+                    <?php if ($column_values->field_availability->value() == 'Protected'): ?>
+                      <a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '†'; ?></a>
+                      <br />
+                    <?php endif; ?>
+                    <?php if ($column_values->field_availability->value() == 'Public'): ?>
+                      <a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $column_values->field_link->url->value(); ?>'><?php print $column_values->field_link->title->value() . '*'; ?></a>
+                      <br />
+                    <?php endif; ?>
+                  <?php endif; ?>
+                <?php endforeach; ?>
+              </div>
+            </td>
+          </tr>
+        <?php endforeach; ?>
+      <?php endif; ?>
+      </tbody>
+      </table>
       </td>
     <?php } else { ?>
       <td class='outer colN' headers="<?php print $disease->item_id->value(); ?>-rh other_ch <?php print $node; ?>-bn"><div class="cellheader"></div></td>
