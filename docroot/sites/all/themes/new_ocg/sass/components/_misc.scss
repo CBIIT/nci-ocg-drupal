@@ -3679,6 +3679,12 @@ text-align: left;
     vertical-align: middle;
 }
 
+.view-cgci-data-matrix .patient-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .view-cgci-data-matrix tbody tr {
   background-color: #FFFFF0 !important;
 }

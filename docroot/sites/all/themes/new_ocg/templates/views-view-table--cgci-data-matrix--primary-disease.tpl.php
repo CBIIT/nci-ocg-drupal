@@ -72,6 +72,7 @@ if ($classes) {
             <?php endif; ?>
           </th>
           <td class="colSN" headers="<?php print $disease->item_id->value(); ?>-rh patient_ch <?php print $node; ?>-bn">
+            <div class="patient-data">
             <?php foreach ($disease->field_patient_data as $patient_data): ?>
               <?php $field_link = field_view_field('field_collection_item', entity_load_single('field_collection_item', $patient_data->item_id->value()), 'field_link'); ?>
               <?php
@@ -98,6 +99,7 @@ if ($classes) {
                 <?php endif; ?>
               <?php endif; ?>
             <?php endforeach; ?>
+            </div>
           </td>
           <?php if ($disease->field_gene_expression->value()) { ?>
             <td class='outer colN' headers="<?php print $disease->item_id->value(); ?>-rh gep_ch <?php print $node; ?>-bn">
@@ -109,17 +111,14 @@ if ($classes) {
                         <?php if (!empty($gene_expression->field_link->title->value())): ?>
                           <?php if ($gene_expression->field_availability->value() == 'Unavailable'): ?>
                             <div class="cellheader"><?php print $gene_expression->field_link->title->value(); ?></div>
-                            <br />
                           <?php endif; ?>
                         <?php endif; ?>
                         <?php if (!empty($gene_expression->field_link->title->value()) && !empty($gene_expression->field_link->url->value())): ?>
                           <?php if ($gene_expression->field_availability->value() == 'Protected'): ?>
                             <div class="cellheader"><a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $gene_expression->field_link->url->value(); ?>'><?php print $gene_expression->field_link->title->value() . '†'; ?></a></div>
-                            <br />
                           <?php endif; ?>
                           <?php if ($gene_expression->field_availability->value() == 'Public'): ?>
                             <div class="cellheader"><a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $gene_expression->field_link->url->value(); ?>'><?php print $gene_expression->field_link->title->value(); ?></a></div>
-                            <br />
                           <?php endif; ?>
                         <?php endif; ?>
                   </th>
@@ -173,17 +172,14 @@ if ($classes) {
                   <?php if (!empty($copy_number->field_link->title->value())): ?>
                           <?php if ($copy_number->field_availability->value() == 'Unavailable'): ?>
                             <div class="cellheader"><?php print $copy_number->field_link->title->value(); ?></div>
-                            <br />
                           <?php endif; ?>
                         <?php endif; ?>
                         <?php if (!empty($copy_number->field_link->title->value()) && !empty($copy_number->field_link->url->value())): ?>
                           <?php if ($copy_number->field_availability->value() == 'Protected'): ?>
                             <div class="cellheader"><a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $copy_number->field_link->url->value(); ?>'><?php print $copy_number->field_link->title->value() . '†'; ?></a></div>
-                            <br />
                           <?php endif; ?>
                           <?php if ($copy_number->field_availability->value() == 'Public'): ?>
                             <div class="cellheader"><a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $copy_number->field_link->url->value(); ?>'><?php print $copy_number->field_link->title->value(); ?></a></div>
-                            <br />
                           <?php endif; ?>
                         <?php endif; ?>
           </th>
@@ -238,17 +234,14 @@ if ($classes) {
               <?php if (!empty($mirna->field_link->title->value())): ?>
                           <?php if ($mirna->field_availability->value() == 'Unavailable'): ?>
                             <div class="cellheader"><?php print $mirna->field_link->title->value(); ?></div>
-                            <br />
                           <?php endif; ?>
                         <?php endif; ?>
                         <?php if (!empty($mirna->field_link->title->value()) && !empty($mirna->field_link->url->value())): ?>
                           <?php if ($mirna->field_availability->value() == 'Protected'): ?>
                             <div class="cellheader"><a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $mirna->field_link->url->value(); ?>'><?php print $mirna->field_link->title->value() . '†'; ?></a></div>
-                            <br />
                           <?php endif; ?>
                           <?php if ($mirna->field_availability->value() == 'Public'): ?>
                             <div class="cellheader"><a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $mirna->field_link->url->value(); ?>'><?php print $mirna->field_link->title->value(); ?></a></div>
-                            <br />
                           <?php endif; ?>
                         <?php endif; ?>
             </th>
@@ -305,17 +298,14 @@ if ($classes) {
               <?php if (!empty($other->field_link->title->value())): ?>
                           <?php if ($other->field_availability->value() == 'Unavailable'): ?>
                             <div class="cellheader"><?php print $other->field_link->title->value(); ?></div>
-                            <br />
                           <?php endif; ?>
                         <?php endif; ?>
                         <?php if (!empty($other->field_link->title->value()) && !empty($other->field_link->url->value())): ?>
                           <?php if ($other->field_availability->value() == 'Protected'): ?>
                             <div class="cellheader"><a class="protected" target="_blank" <?php print $link_title; ?> href='<?php print $other->field_link->url->value(); ?>'><?php print $other->field_link->title->value() . '†'; ?></a></div>
-                            <br />
                           <?php endif; ?>
                           <?php if ($other->field_availability->value() == 'Public'): ?>
                             <div class="cellheader"><a class="public" target="_blank" <?php print $link_title; ?> href='<?php print $other->field_link->url->value(); ?>'><?php print $other->field_link->title->value(); ?></a></div>
-                            <br />
                           <?php endif; ?>
                         <?php endif; ?>
             </th>
