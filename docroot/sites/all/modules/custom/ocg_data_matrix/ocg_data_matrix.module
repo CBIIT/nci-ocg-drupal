@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OCG Data Matrix feature.
+ */
+
+include_once 'ocg_data_matrix.features.inc';
