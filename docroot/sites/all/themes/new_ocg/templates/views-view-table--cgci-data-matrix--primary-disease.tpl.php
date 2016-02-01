@@ -68,7 +68,7 @@ if ($classes) {
         <tr>
           <th id="<?php print $disease->item_id->value(); ?>-rh"class="diseasebanner rowheader" scope="row">
             <?php if (!empty($disease->field_link->url->value()) && !empty($disease->field_link->title->value())): ?>
-              <a href="<?php print $disease->field_link->url->value() ?>"><?php print $disease->field_link->title->value() ?></a>
+              <a target="_blank" href="<?php print $disease->field_link->url->value() ?>"><?php print $disease->field_link->title->value() ?></a>
             <?php endif; ?>
           </th>
           <td class="colSN" headers="<?php print $disease->item_id->value(); ?>-rh patient_ch <?php print $node; ?>-bn">

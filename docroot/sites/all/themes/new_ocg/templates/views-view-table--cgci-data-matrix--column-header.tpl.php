@@ -32,10 +32,10 @@ if (!is_numeric($column1)) {
     <?php $header = '<span' . $rows[$column1]['field_link'] . '>' . $rows[$column1]['field_link'] . '</span><br />'; ?>
   <?php endif; ?>
   <?php if ($rows[$column1]['field_availability'] == 'Protected'): ?>
-    <?php $header = '<a class="protected" target="_blank"' . $rows[$column1]['field_link'] . ' href="' . $rows[$column1]['field_link_1'] . '">' . $rows[$column1]['field_link'] . '†</a><br />'; ?>
+    <?php $header = '<a class="protected" target="_blank"' . $rows[$column1]['field_link'] . ' href="' . $rows[$column1]['field_link_1'] . '">' . $rows[$column1]['field_link'] . '</a><br />'; ?>
   <?php endif; ?>
   <?php if ($rows[$column1]['field_availability'] == 'Public'): ?>
-    <?php $header = '<a class="public" target="_blank"' . $rows[$column1]['field_link'] . ' href="' . $rows[$column1]['field_link_1'] . '">' . $rows[$column1]['field_link'] . '*</a><br />'; ?>
+    <?php $header = '<a class="public" target="_blank"' . $rows[$column1]['field_link'] . ' href="' . $rows[$column1]['field_link_1'] . '">' . $rows[$column1]['field_link'] . '</a><br />'; ?>
   <?php endif; ?>
   <td class='outer colN' headers="<?php print $rows[$column1]['item_id_1']; ?>-rh seq_ch <?php print $rows[$column1]['nid']; ?>-bn">
     <table class="cell">
@@ -69,10 +69,10 @@ if (!is_numeric($column2)) {
     <?php $header = '<span' . $rows[$column2]['field_link'] . '>' . $rows[$column2]['field_link'] . '</span><br />'; ?>
   <?php endif; ?>
   <?php if ($rows[$column2]['field_availability'] == 'Protected'): ?>
-    <?php $header = '<a class="protected" target="_blank"' . $rows[$column2]['field_link'] . ' href="' . $rows[$column2]['field_link_1'] . '">' . $rows[$column2]['field_link'] . '†</a><br />'; ?>
+    <?php $header = '<a class="protected" target="_blank"' . $rows[$column2]['field_link'] . ' href="' . $rows[$column2]['field_link_1'] . '">' . $rows[$column2]['field_link'] . '</a><br />'; ?>
   <?php endif; ?>
   <?php if ($rows[$column2]['field_availability'] == 'Public'): ?>
-    <?php $header = '<a class="public" target="_blank"' . $rows[$column2]['field_link'] . ' href="' . $rows[$column2]['field_link_1'] . '">' . $rows[$column2]['field_link'] . '*</a><br />'; ?>
+    <?php $header = '<a class="public" target="_blank"' . $rows[$column2]['field_link'] . ' href="' . $rows[$column2]['field_link_1'] . '">' . $rows[$column2]['field_link'] . '</a><br />'; ?>
   <?php endif; ?>
   <td class='outer colN' headers="<?php print $rows[$column2]['item_id_1']; ?>-rh seq_ch <?php print $rows[$column2]['nid']; ?>-bn">
     <table class="cell">
@@ -106,10 +106,10 @@ if (!is_numeric($column3)) {
     <?php $header = '<span' . $rows[$column3]['field_link'] . '>' . $rows[$column3]['field_link'] . '</span><br />'; ?>
   <?php endif; ?>
   <?php if ($rows[$column3]['field_availability'] == 'Protected'): ?>
-    <?php $header = '<a class="protected" target="_blank"' . $rows[$column3]['field_link'] . ' href="' . $rows[$column3]['field_link_1'] . '">' . $rows[$column3]['field_link'] . '†</a><br />'; ?>
+    <?php $header = '<a class="protected" target="_blank"' . $rows[$column3]['field_link'] . ' href="' . $rows[$column3]['field_link_1'] . '">' . $rows[$column3]['field_link'] . '</a><br />'; ?>
   <?php endif; ?>
   <?php if ($rows[$column3]['field_availability'] == 'Public'): ?>
-    <?php $header = '<a class="public" target="_blank"' . $rows[$column3]['field_link'] . ' href="' . $rows[$column3]['field_link_1'] . '">' . $rows[$column3]['field_link'] . '*</a><br />'; ?>
+    <?php $header = '<a class="public" target="_blank"' . $rows[$column3]['field_link'] . ' href="' . $rows[$column3]['field_link_1'] . '">' . $rows[$column3]['field_link'] . '</a><br />'; ?>
   <?php endif; ?>
   <td class='outer colN' headers="<?php print $rows[$column3]['item_id_1']; ?>-rh seq_ch <?php print $rows[$column3]['nid']; ?>-bn">
     <table class="cell">
