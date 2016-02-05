@@ -67,6 +67,18 @@ $(document).ready (function (){
       history.replaceState(null, '', '#' + $this.parent().parent().parent().attr('id'));
       $('.view-display-id-projects_description span').hide();
   });
+  
+  $(".expand-collapse").click(function(e) {
+    if($('fieldset').hasClass('collapsed')) {
+      $('fieldset').removeClass('collapsed');
+      $(this).text('Collapse All');
+      e.preventDefault();
+    } else {
+      $('fieldset').addClass('collapsed');
+      $(this).text('Expand All');
+      e.preventDefault();
+    }
+  });
 	
 }); // end doc ready
 
