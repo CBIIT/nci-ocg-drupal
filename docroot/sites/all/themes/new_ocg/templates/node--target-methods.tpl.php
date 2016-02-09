@@ -108,6 +108,7 @@
       print views_embed_view('target_methods', 'table');
       //print views_embed_view('target_methods', 'legend');
       print views_embed_view('target_methods', 'description');
+      print '<p><a class="expand-collapse" href="#">Expand All</a></p>';
       print views_embed_view('target_methods', 'projects');
     ?>
     <!-- /div -->
