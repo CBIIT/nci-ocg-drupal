@@ -3780,6 +3780,17 @@ text-align: left;
     text-decoration: none;
 }
 
+/*
+* Centering images in CKEditor
+*
+*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
 @media all and (max-width: 1160px) {
 
   #block-superfish-1 {
