@@ -171,8 +171,8 @@ function custom_views_query_alter(&$view, &$query) {
             'direction' => 'DESC',
         )
     );
-    $query->where[0]['type'] = 'OR';
-    $query->where[0]['conditions'][0]['value'][':field_data_field_news_program_field_news_program_target_id'] = $query->where[0]['conditions'][1]['value'][':field_data_field_publication_program_field_publication_program_target_id'];
+    //$query->where[0]['type'] = 'OR';
+    //$query->where[0]['conditions'][0]['value'][':field_data_field_news_program_field_news_program_target_id'] = $query->where[0]['conditions'][1]['value'][':field_data_field_publication_program_field_publication_program_target_id'];
   }
   if ($view->name == 'news_and_publications' && $view->current_display == 'block_4') {
     // override the ordering
@@ -184,8 +184,8 @@ function custom_views_query_alter(&$view, &$query) {
             'direction' => 'DESC',
         )
     );
-    $query->where[0]['type'] = 'OR';
-    $query->where[0]['conditions'][0]['value'][':field_data_field_news_program_field_news_program_target_id'] = $query->where[0]['conditions'][1]['value'][':field_data_field_publication_program_field_publication_program_target_id'];
+    //$query->where[0]['type'] = 'OR';
+    //$query->where[0]['conditions'][0]['value'][':field_data_field_news_program_field_news_program_target_id'] = $query->where[0]['conditions'][1]['value'][':field_data_field_publication_program_field_publication_program_target_id'];
   }
   if ($view->name == 'news_and_publications' && $view->current_display == 'block_5') {
     // override the ordering
@@ -197,8 +197,8 @@ function custom_views_query_alter(&$view, &$query) {
             'direction' => 'DESC',
         )
     );
-    $query->where[0]['type'] = 'OR';
-    $query->where[0]['conditions'][0]['value'][':field_data_field_news_program_field_news_program_target_id'] = $query->where[0]['conditions'][1]['value'][':field_data_field_publication_program_field_publication_program_target_id'];
+    //$query->where[0]['type'] = 'OR';
+    //$query->where[0]['conditions'][0]['value'][':field_data_field_news_program_field_news_program_target_id'] = $query->where[0]['conditions'][1]['value'][':field_data_field_publication_program_field_publication_program_target_id'];
   }
 }
 
