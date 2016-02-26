@@ -3781,6 +3781,64 @@ text-align: left;
 }
 
 /*
+* TARGET Data Matrix
+*
+*/
+
+.page-programs-target-data-matrix table, .page-programs-target-data-matrix .sticky-header {
+  table-layout: fixed;
+}
+
+.page-programs-target-data-matrix .cgci-title {
+  float: left;
+  position: relative;
+  min-height: 80px;
+  width: 50%;
+}
+
+.page-programs-target-data-matrix .cgci-image {
+  float: right;
+}
+
+.page-programs-target-data-matrix .view-display-id-target_primary_disease {
+  width: 100%;
+  float: right;
+}
+
+.page-programs-target-data-matrix .views-label {
+    color: #323232;
+    font-weight: normal;
+    text-transform: none;
+    float: none;
+    display: inline;
+    padding: 0;
+}
+
+.page-programs-target-data-matrix #postscript-first {
+  float: left;
+  padding-left: 10px;
+}
+
+.view-display-id-target_primary_disease th.disease {
+  background-color: #588EBC;
+}
+
+.view-display-id-target_primary_disease a {
+  color: #369 !important;
+}
+
+.page-programs-target-data-matrix .view-display-id-target_last_updated {
+  font-style: italic;
+  color: #323232;
+  position: absolute;
+  bottom: 0;
+}
+
+.page-programs-target-data-matrix .view-display-id-target_last_updated .views-row {
+  margin-bottom: 0;
+}
+
+/*
 * Centering images in CKEditor
 *
 */
