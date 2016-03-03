@@ -101,6 +101,14 @@
         <h1 class="page__title title dataMatrixHeader" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print views_embed_view('cgci_data_matrix', 'target_last_updated'); ?>
+      <div class="methods-link">
+        For all projects experimental methods please see the 
+        <a href="https://ocg.cancer.gov/programs/target/target-methods" title="" alt="" target="_blank">
+            <img style="height:10px" alt="TARGET Banner" src="/sites/all/themes/new_ocg/images/double-arrow-right-128.png">
+            TARGET Experimental Methods Page
+            <img style="height:10px" alt="TARGET Banner" src="/sites/all/themes/new_ocg/images/double-arrow-left-128.png">
+        </a>
+    </div>
       </div>
       <div>
     <img class="cgci-image" style="width: 186px; height: 80px;" class="media-element file-default" typeof="foaf:Image" src="/sites/default/files/Target_banner.jpg" width="719" height="310" alt="">

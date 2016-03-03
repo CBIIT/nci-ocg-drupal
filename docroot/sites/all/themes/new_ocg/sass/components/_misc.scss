@@ -3831,11 +3831,19 @@ text-align: left;
   font-style: italic;
   color: #323232;
   position: absolute;
-  bottom: 0;
+  bottom: 30%;
 }
 
 .page-programs-target-data-matrix .view-display-id-target_last_updated .views-row {
   margin-bottom: 0;
+}
+
+.methods-link {
+  margin-top:5px;
+  font-size:16px;
+  position: absolute;
+  bottom: 0;
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
 }
 
 /*
