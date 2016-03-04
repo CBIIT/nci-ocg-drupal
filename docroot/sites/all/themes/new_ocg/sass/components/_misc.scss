@@ -4266,6 +4266,14 @@ text-align: left;
     top: -5px;
     right: 0px;
   }
+
+  .section-programs .grey-block .view .more-link {
+    top: -5px;
+    right: auto;
+    left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 @media all and (max-width: 600px) {
