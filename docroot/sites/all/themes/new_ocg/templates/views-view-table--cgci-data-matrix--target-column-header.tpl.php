@@ -79,12 +79,12 @@ if (!is_numeric($column2)) {
       <tbody>
         <tr>
           <th id="<?php print $rows[$column2]['item_id_1']; ?>_2" scope="col" class="cellheader">
-    <div class="cellheader"><?php print $header; ?></div>
+      <div class="cellheader"><?php print $header; ?></div>
     </th>
   </tr>
   <tr>
     <td class="cellbody" headers="<?php print $rows[$column2]['item_id_1']; ?>_rh seq_ch <?php print $rows[$column2]['nid']; ?>_bn <?php print $rows[$column2]['item_id_1']; ?>_2">
-    <div class='cellbody'><?php print $rows[$column2]['view']; ?></div>
+      <div class='cellbody'><?php print $rows[$column2]['view']; ?></div>
     </td>
   </tr>
   </tbody>
@@ -116,12 +116,12 @@ if (!is_numeric($column3)) {
       <tbody>
         <tr>
           <th id="<?php print $rows[$column3]['item_id_1']; ?>_3" scope="col" class="cellheader">
-    <div class="cellheader"><?php print $header; ?></div>
+      <div class="cellheader"><?php print $header; ?></div>
     </th>
   </tr>
   <tr>
     <td class="cellbody" headers="<?php print $rows[$column3]['item_id_1']; ?>_rh seq_ch <?php print $rows[$column3]['nid']; ?>_bn <?php print $rows[$column3]['item_id_1']; ?>_3">
-    <div class='cellbody'><?php print $rows[$column3]['view']; ?></div>
+      <div class='cellbody'><?php print $rows[$column3]['view']; ?></div>
     </td>
   </tr>
   </tbody>
@@ -129,7 +129,7 @@ if (!is_numeric($column3)) {
   </td>
 <?php } ?>
 
-  <?php
+<?php
 $column4 = array_search(4, array_column($rows, 'field_column_number'));
 
 if (!is_numeric($column4)) {
@@ -153,12 +153,12 @@ if (!is_numeric($column4)) {
       <tbody>
         <tr>
           <th id="<?php print $rows[$column4]['item_id_1']; ?>_3" scope="col" class="cellheader">
-    <div class="cellheader"><?php print $header; ?></div>
+      <div class="cellheader"><?php print $header; ?></div>
     </th>
   </tr>
   <tr>
     <td class="cellbody" headers="<?php print $rows[$column4]['item_id_1']; ?>_rh seq_ch <?php print $rows[$column4]['nid']; ?>_bn <?php print $rows[$column4]['item_id_1']; ?>_3">
-    <div class='cellbody'><?php print $rows[$column4]['view']; ?></div>
+      <div class='cellbody'><?php print $rows[$column4]['view']; ?></div>
     </td>
   </tr>
   </tbody>
