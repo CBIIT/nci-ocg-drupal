@@ -34,17 +34,17 @@ if ($classes) {
           if ($header_classes[$field]) {
             print 'class="colheader ' . $header_classes[$field] . '" ';
           }
-          ?> scope="col">
+          ?> scope="col" style="width: 9%;">
                 <?php print $label; ?>
           </th>
         <?php endforeach; ?>
-        <th id="patient_ch" class="colheader" scope="col">Patient Data</th>
-        <th id="gep_ch" class="colheader" scope="col">Gene Expression</th>
-        <th id="cna_ch" class="colheader" scope="col">Copy Number</th>
-        <th id="meth_ch" class="colheader" scope="col">Methylation</th>
-        <th id="mirna_ch" class="colheader" scope="col">miRNA</th>
-        <th id="seq_ch" class="colheader" colspan="4" scope="col">Sequence</th>
-        <th id="other_ch" class="colheader" scope="col">Other</th>
+        <th id="patient_ch" class="colheader" scope="col" style="width: 7%;">Patient Data</th>
+        <th id="gep_ch" class="colheader" scope="col" style="width: 15%;">Gene Expression</th>
+        <th id="cna_ch" class="colheader" scope="col" style="width: 9%;">Copy Number</th>
+        <th id="meth_ch" class="colheader" scope="col"style="width: 9%;">Methylation</th>
+        <th id="mirna_ch" class="colheader" scope="col" style="width: 9%;">miRNA</th>
+        <th id="seq_ch" class="colheader" colspan="4" scope="col" style="width: 42%;">Sequence</th>
+        <th id="other_ch" class="colheader" scope="col" style="width: 9%;">Other</th>
       </tr>
     </thead>
   <?php endif; ?>
