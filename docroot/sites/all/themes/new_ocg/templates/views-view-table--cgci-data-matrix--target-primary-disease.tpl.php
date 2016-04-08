@@ -22,7 +22,7 @@
 if ($classes) {
   print 'class="' . $classes . '" ';
 }
-?><?php print $attributes; ?> width="100%">
+?><?php print $attributes; ?> width="100%" style="min-width: 1020px;">
     <?php if (!empty($title) || !empty($caption)) : ?>
     <caption><?php print $caption . $title; ?></caption>
   <?php endif; ?>
