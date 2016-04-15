@@ -3850,6 +3850,10 @@ text-align: left;
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
 }
 
+.view-display-id-cgci_small_screen {
+  display: none;
+}
+
 /*
 * Centering images in CKEditor
 *
@@ -4261,6 +4265,14 @@ text-align: left;
     vertical-align: top;
     margin-top: 1.5em;
     width: 100%;
+  }
+  
+  .view-display-id-cgci_small_screen {
+    display: inherit;
+  }
+  
+  .view-display-id-primary_disease {
+    display: none;
   }
 }
 
