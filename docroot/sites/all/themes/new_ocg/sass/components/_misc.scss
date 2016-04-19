@@ -4424,6 +4424,25 @@ text-align: left;
 
 }
 
+@media all and (max-width: 400px) {
+  
+  .view-display-id-cgci_small_screen {
+    padding-top: 20px;
+  }
+  
+  .page-programs-cgci-data-matrix .cgci-title {
+    width: 100%;
+  }
+  
+  .page-programs-cgci-data-matrix .view-display-id-last_updated {
+    position: relative;
+  }
+  
+  .page-programs-cgci-data-matrix .cgci-image {
+    float: none;
+  }
+}
+
 @media all and (max-width: 320px) {
   .archive .left {
     padding-right: 0;
