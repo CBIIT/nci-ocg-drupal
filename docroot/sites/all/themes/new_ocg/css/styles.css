@@ -5686,9 +5686,10 @@ span.newtab {
     width: 100%;
   }
 
-  /*.view-display-id-primary_disease {
+  /* line 4275, ../sass/components/_misc.scss */
+  .view-display-id-primary_disease {
     display: none;
-  }*/
+  }
 }
 @media all and (max-width: 630px) {
   /* line 4282, ../sass/components/_misc.scss */
