@@ -3850,8 +3850,35 @@ text-align: left;
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
 }
 
+/*
+* Data Matrices Small Screen
+*
+*/
+
 .view-display-id-cgci_small_screen {
   display: none;
+}
+
+.view-display-id-cgci_small_screen .cols-0 {
+  width: 100%;
+}
+
+.view-display-id-cgci_small_screen .disease-heading {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.view-display-id-cgci_small_screen .views-label {
+  background-color: #900 !important;
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+  color: #fff;
+  padding: 10px;
+}
+
+.view-display-id-cgci_small_screen .field-content {
+  float: left;
 }
 
 /*
