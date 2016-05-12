@@ -239,4 +239,27 @@ function custom_form_views_exposed_form_alter(&$form, &$form_state) {
     
   }
   
+  if ($form['#id'] == 'views-exposed-form-cgci-data-matrix-target-small-screen') {
+    $options = array('' => '<select>');
+    $query = new EntityFieldQuery();
+    
+    $query->entityCondition('entity_type', 'node')
+      ->entityCondition('bundle', 'target_data_matrix')
+      ->propertyCondition('status', NODE_PUBLISHED)
+      ->addMetaData('account', user_load(1)); // Run the query as user 1.
+
+    $result = $query->execute();
+    $nodes = $result['node'];
+    foreach($nodes as $nid) {
+      $node = node_load($nid->nid);
+      $value = $node->title;
+      $options[$value] = $value;
+    }
+    
+    $form['title']['#type'] = 'select';
+    $form['title']['#options'] = $options;
+    $form['title']['#size'] = 1;
+    
+  }
+  
 }
