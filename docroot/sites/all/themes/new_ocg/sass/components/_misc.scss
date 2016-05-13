@@ -3881,6 +3881,32 @@ text-align: left;
   float: left;
 }
 
+.view-display-id-target_small_screen {
+  display: none;
+}
+
+.view-display-id-target_small_screen .cols-0 {
+  width: 100%;
+}
+
+.view-display-id-target_small_screen .disease-heading {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.view-display-id-target_small_screen .views-label {
+  background-color: #900 !important;
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+  color: #fff;
+  padding: 10px;
+}
+
+.view-display-id-target_small_screen .field-content {
+  float: left;
+}
+
 /*
 * Centering images in CKEditor
 *
@@ -4295,6 +4321,15 @@ text-align: left;
   }
   
   .view-display-id-cgci_small_screen {
+    display: inherit;
+    width: 100%;
+  }
+  
+  .view-display-id-target_primary_disease {
+    display: none;
+  }
+  
+  .view-display-id-target_small_screen {
     display: inherit;
     width: 100%;
   }
