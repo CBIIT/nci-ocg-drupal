@@ -38,8 +38,8 @@ if ($classes) {
                 <?php print $label; ?>
           </th>
         <?php endforeach; ?>
-        <th id="patient_ch" class="colheader" scope="col" style="width: 7%;">Patient Data</th>
-        <th id="gep_ch" class="colheader" scope="col" style="width: 15%;">Gene Expression</th>
+        <th id="patient_ch" class="colheader" scope="col" style="width: 9%;">Patient Data</th>
+        <th id="gep_ch" class="colheader" scope="col" style="width: 13%;">Gene Expression</th>
         <th id="cna_ch" class="colheader" scope="col" style="width: 9%;">Copy Number</th>
         <th id="meth_ch" class="colheader" scope="col"style="width: 9%;">Methylation</th>
         <th id="mirna_ch" class="colheader" scope="col" style="width: 9%;">miRNA</th>
