@@ -4503,6 +4503,22 @@ text-align: left;
   .page-programs-cgci-data-matrix .cgci-image {
     float: none;
   }
+  
+  .view-display-id-target_small_screen {
+    padding-top: 20px;
+  }
+  
+  .page-programs-target-data-matrix .cgci-title {
+    width: 100%;
+  }
+  
+  .page-programs-target-data-matrix .view-display-id-last_updated {
+    position: relative;
+  }
+  
+  .page-programs-target-data-matrix .cgci-image {
+    float: none;
+  }
 }
 
 @media all and (max-width: 320px) {

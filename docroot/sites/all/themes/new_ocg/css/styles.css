@@ -5950,20 +5950,40 @@ span.newtab {
   .page-programs-cgci-data-matrix .cgci-image {
     float: none;
   }
+
+  /* line 4507, ../sass/components/_misc.scss */
+  .view-display-id-target_small_screen {
+    padding-top: 20px;
+  }
+
+  /* line 4511, ../sass/components/_misc.scss */
+  .page-programs-target-data-matrix .cgci-title {
+    width: 100%;
+  }
+
+  /* line 4515, ../sass/components/_misc.scss */
+  .page-programs-target-data-matrix .view-display-id-last_updated {
+    position: relative;
+  }
+
+  /* line 4519, ../sass/components/_misc.scss */
+  .page-programs-target-data-matrix .cgci-image {
+    float: none;
+  }
 }
 @media all and (max-width: 320px) {
-  /* line 4509, ../sass/components/_misc.scss */
+  /* line 4525, ../sass/components/_misc.scss */
   .archive .left {
     padding-right: 0;
   }
 
-  /* line 4513, ../sass/components/_misc.scss */
+  /* line 4529, ../sass/components/_misc.scss */
   .archive .views-row .data-matrix {
     top: 0;
     left: 215px;
   }
 
-  /* line 4520, ../sass/components/_misc.scss */
+  /* line 4536, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5 {
@@ -5972,17 +5992,17 @@ span.newtab {
   }
 }
 @media all and (max-width: 250px) {
-  /* line 4527, ../sass/components/_misc.scss */
+  /* line 4543, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu ul {
     font-size: 0.75em;
   }
 
-  /* line 4531, ../sass/components/_misc.scss */
+  /* line 4547, ../sass/components/_misc.scss */
   .corner.three-col .views-row .data-matrix {
     right: 1%;
   }
 
-  /* line 4535, ../sass/components/_misc.scss */
+  /* line 4551, ../sass/components/_misc.scss */
   .data-matrix a {
     width: 100%;
     font-size: 0.75em;
@@ -5991,7 +6011,7 @@ span.newtab {
     padding-right: 7%;
   }
 
-  /* line 4545, ../sass/components/_misc.scss */
+  /* line 4561, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5 {
@@ -5999,7 +6019,7 @@ span.newtab {
     width: 40%;
   }
 
-  /* line 4550, ../sass/components/_misc.scss */
+  /* line 4566, ../sass/components/_misc.scss */
   .front #postscript-first .two-col .view .views-field-nothing {
     top: 50px;
   }
