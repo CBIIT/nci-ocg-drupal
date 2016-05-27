@@ -3685,7 +3685,7 @@ text-align: left;
   height: 124px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-size: 14px;
 }
 
@@ -4306,6 +4306,13 @@ text-align: left;
   .front #postscript-second .two-col .view .more-link {
     position: absolute;
     top: 25px;
+  }
+  
+  .view-cgci-data-matrix div.cellheader,
+  .view-cgci-data-matrix th,
+  .view-cgci-data-matrix td.outer table td,
+  .view-cgci-data-matrix .patient-data {
+    font-size: 1em;
   }
 
 }
