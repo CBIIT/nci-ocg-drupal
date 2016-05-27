@@ -4308,6 +4308,15 @@ text-align: left;
     top: 25px;
   }
   
+  .page-programs-target-data-matrix {
+    .view-cgci-data-matrix div.cellheader,
+    .view-cgci-data-matrix th,
+    .view-cgci-data-matrix td.outer table td,
+    .view-cgci-data-matrix .patient-data {
+      font-size: 0.9em;
+    }
+  }
+  
   .view-cgci-data-matrix div.cellheader,
   .view-cgci-data-matrix th,
   .view-cgci-data-matrix td.outer table td,
