@@ -4102,10 +4102,45 @@ text-align: left;
 
 }
 
+@media all and (max-width: 1220px) {
+  .page-programs-target-data-matrix {
+    .view-cgci-data-matrix div.cellheader {
+      height: 60px;
+    }
+  }
+
+}
+
 @media all and (max-width: 960px) {
   .datasets-dashboard .right {
     clear: right;
     display: inherit;
+  }
+  
+  .page-programs-cgci-data-matrix {
+    .view-cgci-data-matrix div.cellheader {
+      height: 50px;
+    }
+  }
+
+}
+
+@media all and (max-width: 820px) {
+
+  .page-programs-target-data-matrix {
+    .view-cgci-data-matrix div.cellheader,
+    .view-cgci-data-matrix th,
+    .view-cgci-data-matrix td.outer table td,
+    .view-cgci-data-matrix .patient-data {
+      font-size: 0.9em;
+    }
+  }
+  
+  .view-cgci-data-matrix div.cellheader,
+  .view-cgci-data-matrix th,
+  .view-cgci-data-matrix td.outer table td,
+  .view-cgci-data-matrix .patient-data {
+    font-size: 1em;
   }
 
 }
@@ -4308,11 +4343,17 @@ text-align: left;
     top: 25px;
   }
   
+}
+
+@media all and (max-width: 770px) {
+
   .page-programs-target-data-matrix {
     .view-cgci-data-matrix div.cellheader,
     .view-cgci-data-matrix th,
     .view-cgci-data-matrix td.outer table td,
-    .view-cgci-data-matrix .patient-data {
+    .view-cgci-data-matrix .patient-data,
+    .view-cgci-data-matrix .public,
+    .view-cgci-data-matrix .protected {
       font-size: 0.9em;
     }
   }
@@ -4321,7 +4362,7 @@ text-align: left;
   .view-cgci-data-matrix th,
   .view-cgci-data-matrix td.outer table td,
   .view-cgci-data-matrix .patient-data {
-    font-size: 1em;
+    font-size: 0.985em;
   }
 
 }
