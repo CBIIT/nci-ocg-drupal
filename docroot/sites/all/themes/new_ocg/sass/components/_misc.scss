@@ -1456,8 +1456,14 @@ h2.block-title {
     background-repeat: no-repeat;
 }
 
+#block-views-programs-block-1 .view-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .corner.three-col .views-row {
-width: 24%;
+width: 45%;
 margin-right: 14px;
 padding-bottom: 15px;
 margin-bottom: 15px;
