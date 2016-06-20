@@ -2186,14 +2186,14 @@ header, .region-navigation {
 
 /* line 1200, ../sass/components/_misc.scss */
 #navigation li.sf-depth-1.first ul {
-  width: 40em !important;
+  width: 60em !important;
   max-width: none !important;
 }
 
 /* line 1205, ../sass/components/_misc.scss */
-#menu-452-1, #menu-453-1, #menu-427-1, #menu-546-1 {
+#menu-452-1, #menu-453-1, #menu-427-1, #menu-546-1, #menu-5431-1 {
   overflow: hidden;
-  width: 23% !important;
+  width: 20% !important;
 }
 
 /* line 1210, ../sass/components/_misc.scss */
@@ -5582,7 +5582,7 @@ span.newtab {
   }
 
   /* line 4193, ../sass/components/_misc.scss */
-  #menu-452-1, #menu-453-1, #menu-427-1, #menu-546-1 {
+  #menu-452-1, #menu-453-1, #menu-427-1, #menu-546-1, #menu-5431-1 {
     width: 100% !important;
   }
 
