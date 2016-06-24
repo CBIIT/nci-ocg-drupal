@@ -18,7 +18,6 @@
  *   field id, then row number. This matches the index in $rows.
  * @ingroup views_templates
  */
-dpm($view->result[0]->field_field_column_one_heading);
 ?>
 <table <?php if ($classes) { print 'class="'. $classes . '" '; } ?><?php print $attributes; ?>>
    <?php if (!empty($title) || !empty($caption)) : ?>
