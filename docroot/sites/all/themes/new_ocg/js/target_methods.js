@@ -24,6 +24,15 @@
         $('.view-display-id-projects_description .field-item span').show();
         $(url).show();
       });
+      $(".view-display-id-projects_table .views-field-field-column-three a").click(function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        history.replaceState(null, '', $this.attr('href'));
+        var url = window.location.hash;
+        $('.view-display-id-projects_description .hide-description').hide();
+        $('.view-display-id-projects_description .field-item span').show();
+        $(url).show();
+      });
     }
   };
 
