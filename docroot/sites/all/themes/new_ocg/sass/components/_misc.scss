@@ -3859,6 +3859,82 @@ text-align: left;
 }
 
 /*
+* CTD2 Data Portal
+*
+*/
+
+.view-ctd2-data-portal {
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+}
+
+.view-ctd2-data-portal th.colheader {
+    background-color: rgb(153, 0, 0);
+    color: #fff;
+    vertical-align: middle;
+    border-right: 1px solid rgb(235, 235, 235);
+    border-bottom: 1px solid rgb(235, 235, 235);
+    font-size: 16px;
+    font-weight: normal;
+    white-space: nowrap;
+    text-align: left;
+}
+
+th.projbanner {
+  color: white;
+  font-size: 16px;
+  background-color: #F25F2D;
+  border-right: 1px solid rgb(235, 235, 235);
+  border-bottom: 1px solid rgb(235, 235, 235);
+  vertical-align: middle;
+  height: 20px;
+  font-weight: normal !important;
+  text-align: left;
+}
+
+th.projbanner a {
+  color: white !important;
+}
+
+.view-ctd2-data-portal .projcell {
+  min-height: 100px;
+  position: relative;
+}
+
+.view-ctd2-data-portal td,
+.view-ctd2-data-portal .views-field-field-project-title {
+  background-color: #FFFFF0;
+  border-right: 1px solid rgb(235, 235, 235);
+  border-bottom: 1px solid rgb(235, 235, 235);
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.view-ctd2-data-portal .views-field-field-project-title {
+  padding-bottom: 0;
+}
+
+.view-ctd2-data-portal td a,
+.view-ctd2-data-portal .views-field-field-project-title a {
+  color: darkblue !important;
+  text-decoration: none;
+}
+
+.view-display-id-paper {
+  position: absolute;
+  bottom: 0;
+}
+
+.view-display-id-paper .views-row {
+  margin-bottom: 0;
+}
+
+.view-ctd2-data-portal ul {
+  list-style-image: none !important;
+  list-style-type: disc!important;
+}
+
+/*
 * Data Matrices Small Screen
 *
 */
