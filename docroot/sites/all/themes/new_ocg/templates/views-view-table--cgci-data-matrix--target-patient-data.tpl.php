@@ -48,7 +48,7 @@
                   <br />
                 <?php endif; ?>
                 <?php if ($row['field_availability'] == 'Public'): ?>
-                  <a class="public patientcellelem" target="_blank" href=''<?php print $row['field_link_1']; ?>'><?php print $row['field_link']; ?></a>
+                  <a class="public patientcellelem" target="_blank" href='<?php print $row['field_link_1']; ?>'><?php print $row['field_link']; ?></a>
                   <br />
                 <?php endif; ?>
           </td>

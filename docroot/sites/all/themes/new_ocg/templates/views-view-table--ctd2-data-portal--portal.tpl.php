@@ -42,7 +42,7 @@
     <?php foreach ($rows as $row_count => $row): ?>
       <tr <?php if ($row_classes[$row_count]) { print 'class="' . implode(' ', $row_classes[$row_count]) .'"';  } ?>>
         <?php foreach ($row as $field => $content): ?>
-          <th id="broad_bn" scope="col" colspan="5" class="projbanner">
+          <th id="<?php print $result[0]->nid; ?>_bn" scope="col" colspan="5" class="projbanner">
             <?php print $content; ?>
           </th>
         <?php endforeach; ?>
