@@ -142,7 +142,6 @@ function new_ocg_preprocess_node(&$variables) {
 
     $variables['author_journal'] = $auth_journal;
   } elseif ($variables['type'] == 'target_methods') {
-    //drupal_add_js(libraries_get_path('history.js') . '/scripts/bundled/html4+html5/jquery.history.js');
     drupal_add_js(drupal_get_path('theme', 'new_ocg') . '/js/target_methods.js');
   }
 }

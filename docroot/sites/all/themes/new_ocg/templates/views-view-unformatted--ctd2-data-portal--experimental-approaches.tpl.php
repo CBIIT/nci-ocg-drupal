@@ -6,8 +6,8 @@
  *
  * @ingroup views_templates
  */
-dpm($view->result);
-dpm(field_collection_item_load($view->args));
+//dpm($view->result);
+//dpm(field_collection_item_load($view->args));
 
 ?>
 <?php if (!empty($rows[0])) { ?>
