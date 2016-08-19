@@ -4017,12 +4017,34 @@ th.projbanner a {
   align-items: baseline;
 }
 
+.view-display-id-homepage_links table {
+  border: none;
+}
+
+.view-display-id-homepage_links .tablestyles tr.even,
+.view-display-id-homepage_links .tablestyles tr.odd {
+  background-color: none;
+  border-bottom: none;
+}
+
+.view-display-id-homepage_links .tablestyles tr.odd td,
+.view-display-id-homepage_links .tablestyles tr.odd th,
+.view-display-id-homepage_links .tablestyles tr.even td,
+.view-display-id-homepage_links .tablestyles tr.even th {
+  border-right: none;
+}
+
+.view-display-id-homepage_links img {
+  max-width: none;
+}
+
 .view-display-id-homepage_links .views-field-field-homepage-link {
   padding: 25px 5px;
   text-align: center;
   color: #fff;
   margin-right: 20px;
   width: 100px;
+  height: 50px;
 }
 
 .view-display-id-homepage_links .brown {
