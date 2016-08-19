@@ -4011,31 +4011,31 @@ th.projbanner a {
 *
 */
 
-.view-display-id-homepage_links .view-content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-
-.view-display-id-homepage_links table {
+.view-display-id-homepage_programs table {
   border: none;
 }
 
-.view-display-id-homepage_links .tablestyles tr.even,
-.view-display-id-homepage_links .tablestyles tr.odd {
+.view-display-id-homepage_programs .tablestyles tr.even,
+.view-display-id-homepage_programs .tablestyles tr.odd {
   background-color: none;
   border-bottom: none;
 }
 
-.view-display-id-homepage_links .tablestyles tr.odd td,
-.view-display-id-homepage_links .tablestyles tr.odd th,
-.view-display-id-homepage_links .tablestyles tr.even td,
-.view-display-id-homepage_links .tablestyles tr.even th {
+.view-display-id-homepage_programs .tablestyles tr.odd td,
+.view-display-id-homepage_programs .tablestyles tr.odd th,
+.view-display-id-homepage_programs .tablestyles tr.even td,
+.view-display-id-homepage_programs .tablestyles tr.even th {
   border-right: none;
 }
 
-.view-display-id-homepage_links img {
+.view-display-id-homepage_programs img {
   max-width: none;
+}
+
+.view-display-id-homepage_links .view-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
 }
 
 .view-display-id-homepage_links .views-field-field-homepage-link {

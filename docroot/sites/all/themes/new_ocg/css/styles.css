@@ -5395,35 +5395,35 @@ th.projbanner a {
 *
 */
 /* line 4014, ../sass/components/_misc.scss */
-.view-display-id-homepage_links .view-content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-
-/* line 4020, ../sass/components/_misc.scss */
-.view-display-id-homepage_links table {
+.view-display-id-homepage_programs table {
   border: none;
 }
 
-/* line 4025, ../sass/components/_misc.scss */
-.view-display-id-homepage_links .tablestyles tr.even,
-.view-display-id-homepage_links .tablestyles tr.odd {
+/* line 4019, ../sass/components/_misc.scss */
+.view-display-id-homepage_programs .tablestyles tr.even,
+.view-display-id-homepage_programs .tablestyles tr.odd {
   background-color: none;
   border-bottom: none;
 }
 
-/* line 4033, ../sass/components/_misc.scss */
-.view-display-id-homepage_links .tablestyles tr.odd td,
-.view-display-id-homepage_links .tablestyles tr.odd th,
-.view-display-id-homepage_links .tablestyles tr.even td,
-.view-display-id-homepage_links .tablestyles tr.even th {
+/* line 4027, ../sass/components/_misc.scss */
+.view-display-id-homepage_programs .tablestyles tr.odd td,
+.view-display-id-homepage_programs .tablestyles tr.odd th,
+.view-display-id-homepage_programs .tablestyles tr.even td,
+.view-display-id-homepage_programs .tablestyles tr.even th {
   border-right: none;
 }
 
-/* line 4037, ../sass/components/_misc.scss */
-.view-display-id-homepage_links img {
+/* line 4031, ../sass/components/_misc.scss */
+.view-display-id-homepage_programs img {
   max-width: none;
+}
+
+/* line 4035, ../sass/components/_misc.scss */
+.view-display-id-homepage_links .view-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
 }
 
 /* line 4041, ../sass/components/_misc.scss */
