@@ -5396,14 +5396,14 @@ th.projbanner a {
 */
 /* line 4014, ../sass/components/_misc.scss */
 .view-display-id-homepage_programs table {
-  border: none;
+  border: none !important;
 }
 
 /* line 4019, ../sass/components/_misc.scss */
 .view-display-id-homepage_programs .tablestyles tr.even,
 .view-display-id-homepage_programs .tablestyles tr.odd {
-  background-color: none;
-  border-bottom: none;
+  background-color: none !important;
+  border-bottom: none !important;
 }
 
 /* line 4027, ../sass/components/_misc.scss */
@@ -5411,7 +5411,7 @@ th.projbanner a {
 .view-display-id-homepage_programs .tablestyles tr.odd th,
 .view-display-id-homepage_programs .tablestyles tr.even td,
 .view-display-id-homepage_programs .tablestyles tr.even th {
-  border-right: none;
+  border-right: none !important;
 }
 
 /* line 4031, ../sass/components/_misc.scss */

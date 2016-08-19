@@ -4012,20 +4012,20 @@ th.projbanner a {
 */
 
 .view-display-id-homepage_programs table {
-  border: none;
+  border: none !important;
 }
 
 .view-display-id-homepage_programs .tablestyles tr.even,
 .view-display-id-homepage_programs .tablestyles tr.odd {
-  background-color: none;
-  border-bottom: none;
+  background-color: none !important;
+  border-bottom: none !important;
 }
 
 .view-display-id-homepage_programs .tablestyles tr.odd td,
 .view-display-id-homepage_programs .tablestyles tr.odd th,
 .view-display-id-homepage_programs .tablestyles tr.even td,
 .view-display-id-homepage_programs .tablestyles tr.even th {
-  border-right: none;
+  border-right: none !important;
 }
 
 .view-display-id-homepage_programs img {
