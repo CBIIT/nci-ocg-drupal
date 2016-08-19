@@ -4006,6 +4006,37 @@ th.projbanner a {
   margin-right: auto
 }
 
+/*
+* Homepage
+*
+*/
+
+.view-display-id-homepage_links .view-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.view-display-id-homepage_links views-field-field-homepage-link {
+  padding: 25px 5px;
+  text-align: center;
+  color: #fff;
+  margin-right: 20px;
+  width: 100px;
+}
+
+.view-display-id-homepage_links .brown {
+  background-color: #774928;
+}
+
+.view-display-id-homepage_links .orange {
+  background-color: #F95704;
+}
+
+.view-display-id-homepage_links .red {
+  background-color: #900;
+}
+
 @media all and (max-width: 1160px) {
 
   #block-superfish-1 {
