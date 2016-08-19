@@ -5402,7 +5402,7 @@ th.projbanner a {
 /* line 4019, ../sass/components/_misc.scss */
 .view-display-id-homepage_programs .tablestyles tr.even,
 .view-display-id-homepage_programs .tablestyles tr.odd {
-  background-color: none !important;
+  background-color: #fff !important;
   border-bottom: none !important;
 }
 
