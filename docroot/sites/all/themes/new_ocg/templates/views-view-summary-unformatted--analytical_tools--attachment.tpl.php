@@ -41,8 +41,7 @@ $total = array();
     } else {
       $items_per_page = '';
     }
-    $new_url = filter_xss(current_path());
-    $row->url = '/' . $new_url . '?' . $tool_type . $items_per_page . $page_number . '#' . $row->link;
+    $row->url = '/programs/ctd2/analytical-tools/?' . $tool_type . $items_per_page . $page_number . '#' . $row->link;
     ?>
 
     <?php print (!empty($options['inline']) ? '<span' : '<div') . ' class="views-summary views-summary-unformatted">'; ?>
