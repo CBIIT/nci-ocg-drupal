@@ -3879,6 +3879,10 @@ text-align: left;
     text-align: left;
 }
 
+.view-ctd2-data-portal tr {
+  vertical-align: top;
+}
+
 th.projbanner {
   color: white;
   font-size: 16px;
@@ -3896,8 +3900,6 @@ th.projbanner a {
 }
 
 .view-ctd2-data-portal .projcell {
-  min-height: 100px;
-  position: relative;
 }
 
 .view-ctd2-data-portal td,
@@ -3921,8 +3923,7 @@ th.projbanner a {
 }
 
 .view-display-id-paper {
-  position: absolute;
-  bottom: 0;
+  padding-top: 80px;
 }
 
 .view-display-id-paper .views-field-field-paper-link img {
