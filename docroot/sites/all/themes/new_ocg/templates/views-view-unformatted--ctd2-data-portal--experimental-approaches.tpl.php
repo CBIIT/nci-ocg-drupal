@@ -19,7 +19,7 @@ if (!empty($view->result[0]->field_field_span_rows)) {
 }
 ?>
 <?php foreach ($rows as $id => $row): ?>
-  <td class="outer colSW" rowspan="<?php print $rowspan; ?>" headers="expapp_ch <?php print $view->args[0] . '_rh' ?> broad_bn broad1_rh broad2_rh broad3_rh broad4_rh">
+  <td class="outer colSW" rowspan="<?php print $rowspan; ?>" style="vertical-align: middle;" headers="expapp_ch <?php print $view->args[0] . '_rh' ?> broad_bn broad1_rh broad2_rh broad3_rh broad4_rh">
   <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
     <?php print $row; ?>
   </div>

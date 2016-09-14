@@ -16,7 +16,7 @@ if (!empty($view->result[0]->field_field_span_rows)) {
 }
 ?>
 <?php foreach ($rows as $id => $row): ?>
-  <td rowspan="<?php print $rowspan; ?>">
+  <td rowspan="<?php print $rowspan; ?>" style="vertical-align: middle;">
   <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
     <?php print $row; ?>
   </div>
