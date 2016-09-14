@@ -3866,7 +3866,7 @@ text-align: left;
 .page-programs-ctd2-data-portal .ctd2-title {
     float: left;
     position: relative;
-    min-height: 80px;
+    min-height: 105px;
     width: 50%;
 }
 
@@ -3877,6 +3877,31 @@ text-align: left;
 .page-programs-ctd2-data-portal .view-display-id-portal {
     width: 100%;
     float: right;
+}
+
+.page-programs-ctd2-data-portal .view-display-id-updated {
+    font-style: italic;
+    color: #323232;
+    position: absolute;
+    bottom: 40%;
+}
+
+.page-programs-ctd2-data-portal .view-display-id-updated .views-row {
+    margin-bottom: 0;
+}
+
+.page-programs-ctd2-data-portal .views-label {
+      color: #323232;
+    font-weight: normal;
+    text-transform: none;
+    float: none;
+    display: inline;
+    padding: 0;
+}
+
+.page-programs-ctd2-data-portal .methods-link a, .page-programs-ctd2-data-portal .methods-link a:visited {
+  color: darkblue !important;
+  text-decoration: none !important;
 }
 
 .view-ctd2-data-portal {

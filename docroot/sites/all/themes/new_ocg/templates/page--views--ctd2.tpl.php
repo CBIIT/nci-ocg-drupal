@@ -100,7 +100,7 @@
       <?php if ($title): ?>
         <h1 class="page__title title dataMatrixHeader" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
-      <?php print views_embed_view('cgci_data_matrix', 'target_last_updated'); ?>
+      <?php print views_embed_view('ctd2_data_portal', 'updated'); ?>
       <div class="methods-link">
         Click here to access <a href="https://ocg.cancer.gov/programs/ctd2/analytical-tools" title="" alt="" target="_blank">
             <img style="height:10px" alt="TARGET Banner" src="/sites/all/themes/new_ocg/images/double-arrow-right-128.png">
@@ -108,7 +108,7 @@
             <img style="height:10px" alt="TARGET Banner" src="/sites/all/themes/new_ocg/images/double-arrow-left-128.png">
         </a>
         <br />
-        Note: Users must use data with discretion and acknowledge the <a href="https://ocg.cancer.gov/programs/ctd2/ctd2-publication-guidelines">CTD² Network</a>
+        Note: Users must use data with <a href="https://ocg.cancer.gov/sites/default/files/CTD2CaveatEmptor_final.pdf">discretion</a> and acknowledge the <a href="https://ocg.cancer.gov/programs/ctd2/ctd2-publication-guidelines">CTD² Network</a>
     </div>
       </div>
       <div>
