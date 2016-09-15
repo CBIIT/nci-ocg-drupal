@@ -4057,6 +4057,19 @@ th.projbanner a {
 *
 */
 
+.view-homepage {
+  padding-top: 20px;
+}
+
+.view-homepage,
+#block-views-programs-homepage-programs,
+#block-views-homepage-block-1 {
+  border-bottom-style: solid;
+  border-color: #808080;
+  border-bottom-width: thick;
+  padding-bottom: 20px;
+}
+
 .view-homepage .views-field-field-ocg-mission-image,
 .view-homepage .views-field-field-data-access-image{
   float: right;
@@ -4095,6 +4108,11 @@ th.projbanner a {
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link a .ext,
 .view-homepage .views-field-field-ocg-mission-links .field-content .data-link a ext {
   display: none;
+}
+
+#block-views-programs-homepage-programs h2,
+block-views-homepage-block-1 h2 {
+  font-size: 2.3em;
 }
 
 .view-display-id-homepage_programs table {
