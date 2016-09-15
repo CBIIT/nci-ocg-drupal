@@ -4063,6 +4063,27 @@ th.projbanner a {
   margin-right: 50px;
 }
 
+.views-field views-field-field-ocg-mission-links .field-content {
+  display: flex;
+  padding-top: 50px;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.views-field views-field-field-ocg-mission-links .field-content .mission-link {
+  width: 100px;
+  padding: 25px 5px;
+  text-align: center;
+  background-color: #808080;
+  margin-right: 20px;
+}
+
+.views-field views-field-field-ocg-mission-links .field-content .mission-link a,
+.views-field views-field-field-ocg-mission-links .field-content .mission-link a:visited,
+.views-field views-field-field-ocg-mission-links .field-content .mission-link a:hover {
+  color: #fff;
+}
+
 .view-display-id-homepage_programs table {
   border: none !important;
 }
