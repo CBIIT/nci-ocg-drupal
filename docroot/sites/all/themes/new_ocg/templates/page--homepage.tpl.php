@@ -65,8 +65,6 @@
   <div id="main">
     
     <div id="pre-content">
-      <?php print render($page['highlighted']); ?>
-      <?php print $breadcrumb; ?>
       <?php print render($page['pre_content']); ?>
     </div>
     <div id="content" class="column" role="main">
