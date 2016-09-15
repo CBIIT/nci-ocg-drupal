@@ -5453,7 +5453,7 @@ th.projbanner a {
 }
 
 /* line 4066, ../sass/components/_misc.scss */
-.views-field views-field-field-ocg-mission-links .field-content {
+.view-homepage views-field-field-ocg-mission-links .field-content {
   display: flex;
   padding-top: 50px;
   justify-content: flex-start;
@@ -5461,7 +5461,7 @@ th.projbanner a {
 }
 
 /* line 4073, ../sass/components/_misc.scss */
-.views-field views-field-field-ocg-mission-links .field-content .mission-link {
+.view-homepage views-field-field-ocg-mission-links .field-content .mission-link {
   width: 100px;
   padding: 25px 5px;
   text-align: center;
@@ -5470,9 +5470,9 @@ th.projbanner a {
 }
 
 /* line 4083, ../sass/components/_misc.scss */
-.views-field views-field-field-ocg-mission-links .field-content .mission-link a,
-.views-field views-field-field-ocg-mission-links .field-content .mission-link a:visited,
-.views-field views-field-field-ocg-mission-links .field-content .mission-link a:hover {
+.view-homepage views-field-field-ocg-mission-links .field-content .mission-link a,
+.view-homepage views-field-field-ocg-mission-links .field-content .mission-link a:visited,
+.view-homepage views-field-field-ocg-mission-links .field-content .mission-link a:hover {
   color: #fff;
 }
 
