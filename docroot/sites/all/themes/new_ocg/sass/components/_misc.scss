@@ -4057,20 +4057,23 @@ th.projbanner a {
 *
 */
 
-.view-homepage .views-field-field-ocg-mission-image {
+.view-homepage .views-field-field-ocg-mission-image,
+.view-homepage .views-field-field-data-access-image{
   float: right;
   margin-left: 50px;
   margin-right: 50px;
 }
 
-.view-homepage .views-field-field-ocg-mission-links .field-content {
+.view-homepage .views-field-field-ocg-mission-links .field-content,
+.view-homepage .views-field-field-data-access-links .field-content{
   display: flex;
   padding-top: 50px;
   justify-content: flex-start;
   align-items: baseline;
 }
 
-.view-homepage .views-field-field-ocg-mission-links .field-content .mission-link {
+.view-homepage .views-field-field-ocg-mission-links .field-content .mission-link,
+.view-homepage .views-field-field-data-access-links .field-content .data-link {
   width: 100px;
   padding: 25px 5px;
   text-align: center;
@@ -4080,8 +4083,16 @@ th.projbanner a {
 
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link a,
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link a:visited,
-.view-homepage .views-field-field-ocg-mission-links .field-content .mission-link a:hover {
-  color: #fff;
+.view-homepage .views-field-field-ocg-mission-links .field-content .mission-link a:hover,
+.view-homepage .views-field-field-data-access-links .field-content .data-link a,
+.view-homepage .views-field-field-data-access-links .field-content .data-link a:visited,
+.view-homepage .views-field-field-data-access-links .field-content .data-link a:hover {
+  color: #fff !important;
+}
+
+.view-homepage .views-field-field-ocg-mission-links .field-content .mission-link a .ext,
+.view-homepage .views-field-field-ocg-mission-links .field-content .data-link a ext {
+  display: none;
 }
 
 .view-display-id-homepage_programs table {
