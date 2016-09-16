@@ -211,6 +211,17 @@ function custom_views_query_alter(&$view, &$query) {
         )
     );
   }
+  if ($view->name == 'publications' && $view->current_display == 'homepage_news_publications') {
+    // override the ordering
+    // this is because the two different date fields are one or the other
+    // but not both fields, so we coalesce.
+    $query->orderby = array(
+        array(
+            'field' => 'COALESCE( field_data_field_publication_date_field_publication_date_val, field_data_field_news_date_field_news_date_value)',
+            'direction' => 'DESC',
+        )
+    );
+  }
 }
 
 function custom_views_pre_render(&$view) {
