@@ -130,7 +130,7 @@ function new_ocg_preprocess_page(&$variables, $hook) {
   if (($views_page = views_get_page_view()) && $views_page->name === "ctd2_data_portal" && $views_page->current_display === "portal") {
     $variables['theme_hook_suggestions'][] = 'page__views__ctd2';
   }
-  if (($views_page = views_get_page_view()) && $views_page->name === "homepage" && $views_page->current_display === "page") {
+  if (($views_page = views_get_page_view()) && $views_page->name === "homepage" && $views_page->current_display === "homepage_mission") {
     $variables['theme_hook_suggestions'][] = 'page__homepage';
   }
 }

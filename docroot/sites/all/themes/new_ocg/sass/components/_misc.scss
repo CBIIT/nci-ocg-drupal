@@ -878,9 +878,8 @@ h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
 }
 
 #navigation {
-  background: url(../images/header.png) no-repeat 70% top;
+  background-color: #fff2cc;
   height: 49px;
-  border-bottom: solid 1px #EEDF6E;
 }
 
 #header {
@@ -1024,8 +1023,6 @@ header, .region-navigation {
 
 #block-superfish-1 {
   height: 2.750em;
-  bottom: 1px;
-  position: absolute;
   margin-left: 10px;
 }
 
@@ -1039,12 +1036,21 @@ header, .region-navigation {
 
 #navigation .menu li {
     float: left;
-    padding: 0 0.938em 0 0.313em;
     list-style-type: none;
     list-style-image: none;
     text-transform: uppercase;
-    font-size: 20px;
-    background: url("../images/nav-link.png") no-repeat scroll right center transparent;
+    font-size: 24px;
+    padding-right: 0.5em;
+}
+
+#navigation .menu li a:after {
+  content: "/";
+  padding-left: 0.5em;
+}
+
+#navigation .menu li.last a:after {
+  content: "";
+  padding-left: 0;
 }
 
 .lt-ie9 #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1 {
@@ -1052,7 +1058,7 @@ header, .region-navigation {
 }
 
 #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1 {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .lt-ie9 #navigation .menu li#menu-451-1 {
@@ -1195,6 +1201,11 @@ header, .region-navigation {
   font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
   padding: 0.188em 0;
   text-transform: capitalize !important;
+}
+
+#navigation li.sf-depth-1 ul li.sf-depth-2 ul li.sf-depth-3 a:after,
+#navigation li.sf-depth-1 ul li.sf-depth-2 a:after {
+  content: "";
 }
 
 #navigation li.sf-depth-1.first ul {
@@ -4057,8 +4068,19 @@ th.projbanner a {
 *
 */
 
-.view-homepage {
+.page-home #main #content {
+  min-height: inherit;
+  padding-bottom: 0;
+}
+
+.page-home #page-title {
+  padding-left: 10px;
+}
+
+.view-display-id-homepage_mission {
   padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #block-views-programs-homepage-programs {
@@ -4066,27 +4088,50 @@ th.projbanner a {
   border-top-color: #808080;
   border-top-width: thick;
   padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #block-views-programs-homepage-programs,
-#block-views-homepage-block-1 {
+#block-views-homepage-homepage-data-access {
   border-bottom-style: solid;
   border-bottom-color: #808080;
   border-bottom-width: thick;
   margin-bottom: 20px;
 }
 
+#block-views-homepage-homepage-data-access {
+  padding-bottom: 20px;
+}
+
+#block-views-programs-homepage-programs .views-field-field-image {
+  padding-left: 0;
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+
+#block-views-programs-homepage-programs .views-field-field-image img {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(128,128,128,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(128,128,128,1);
+  box-shadow: 10px 10px 5px 0px rgba(128,128,128,1);
+}
+
+#block-views-homepage-homepage-data-access,
+#postscript-first {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .view-homepage .views-field-field-ocg-mission-image,
-.view-homepage .views-field-field-data-access-image{
+.view-homepage .views-field-field-data-access-image {
   float: right;
   margin-left: 50px;
-  margin-right: 50px;
 }
 
 .view-homepage .views-field-field-ocg-mission-links .field-content,
 .view-homepage .views-field-field-data-access-links .field-content{
   display: flex;
-  padding-top: 50px;
+  padding-top: 20px;
   justify-content: flex-start;
   align-items: baseline;
 }
@@ -4117,8 +4162,22 @@ th.projbanner a {
 }
 
 #block-views-programs-homepage-programs h2,
-block-views-homepage-block-1 h2 {
+#block-views-homepage-homepage-data-access h2,
+.page-home .region-postscript-first h2 {
   font-size: 2.3em;
+}
+
+#block-views-homepage-homepage-data-access h2 {
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.page-home .region-postscript-first h2 {
+  color: #808080;
+}
+
+.page-home .region-postscript-first h2.block-title {
+  line-height: inherit;
 }
 
 .view-display-id-homepage_programs table {
@@ -4168,6 +4227,88 @@ block-views-homepage-block-1 h2 {
 .view-display-id-homepage_links .red {
   background-color: #900;
 }
+
+.view-display-id-homepage_data_access .views-row {
+  margin-bottom: 0;
+}
+
+.page-home .region-postscript-first {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#block-views-27184a66566baa7691d253aeb9fc40aa,
+#block-views-70b4183ed1123291b6d64484c47ed1ba {
+  width: 50%;
+}
+
+#block-views-27184a66566baa7691d253aeb9fc40aa {
+  padding-right: 20px;
+}
+
+.page-home .region-postscript-first .title-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #808080;
+  border-bottom-width: thin;
+  margin-bottom: 20px;
+}
+
+.page-home .region-postscript-first .view-link {
+  display: flex;
+}
+
+.page-home .region-postscript-first .view-link a {
+  color: #808080;
+  text-decoration: none;
+  line-height: 0.5em;
+}
+
+.page-home .region-postscript-first .view .views-row {
+  margin-bottom: 20px;
+}
+
+.view-display-id-homepage_news_publications .views-field-title a,
+.view-display-id-homepage_newsletter .views-field-title a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: darkred;
+}
+
+.view-display-id-homepage_news_publications .left,
+.view-display-id-homepage_newsletter .left {
+  padding-right: 3%;
+}
+
+.view-display-id-homepage_news_publications .all-programs {
+  overflow: hidden;
+  background-color: #767676;
+  width: 70px;
+  line-height: auto;
+  text-align: center;
+  color: #fff !important;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-bottom: 0;
+  font-size: 12px;
+  padding-bottom: 1px;
+  padding-top: 3px;
+  width: 125px;
+  text-transform: uppercase;
+}
+
+.view-display-id-homepage_news_publications .views-field-views-conditional,
+.view-display-id-homepage_news_publications .views-field-field-publication-date,
+.view-display-id-homepage_news_publications .views-field-field-news-date,
+.view-display-id-homepage_newsletter .views-field-field-issue-date {
+  padding-bottom: 5px;
+}
+
+
 
 @media all and (max-width: 1160px) {
 
