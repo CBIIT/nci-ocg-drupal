@@ -1,0 +1,12 @@
+name = History.js Library
+description = Benjamin Lupton's History.js exposed to the libraries api
+dependencies[] = libraries
+configure = admin/config/history_js
+core = 7.x
+
+; Information added by drupal.org packaging script on 2013-09-30
+version = "7.x-1.0+1-dev"
+core = "7.x"
+project = "history_js"
+datestamp = "1380581939"
+

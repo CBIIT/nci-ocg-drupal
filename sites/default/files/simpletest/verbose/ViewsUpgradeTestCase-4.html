@@ -1,0 +1,332 @@
+<hr />ID #4 (<a href="ViewsUpgradeTestCase-3.html">Previous</a> | <a href="ViewsUpgradeTestCase-5.html">Next</a>)<hr />POST request to: admin/structure/views/import<hr />Ending URL: http://ocg/admin/structure/views/view/comments_recent/edit<hr />Fields: <code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">array&nbsp;(<br />&nbsp;&nbsp;</span><span style="color: #DD0000">'name'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,<br />&nbsp;&nbsp;</span><span style="color: #DD0000">'view'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$view&nbsp;=&nbsp;new&nbsp;view;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$view-&gt;name&nbsp;=&nbsp;"comments_recent";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$view-&gt;description&nbsp;=&nbsp;"Contains&nbsp;a&nbsp;block&nbsp;and&nbsp;a&nbsp;page&nbsp;to&nbsp;list&nbsp;recent&nbsp;comments;&nbsp;the&nbsp;block&nbsp;will&nbsp;automatically&nbsp;link&nbsp;to&nbsp;the&nbsp;page,&nbsp;which&nbsp;displays&nbsp;the&nbsp;comment&nbsp;body&nbsp;as&nbsp;well&nbsp;as&nbsp;a&nbsp;link&nbsp;to&nbsp;the&nbsp;node.";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$view-&gt;tag&nbsp;=&nbsp;"default";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$view-&gt;base_table&nbsp;=&nbsp;"comments";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$view-&gt;human_name&nbsp;=&nbsp;"";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$view-&gt;core&nbsp;=&nbsp;0;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$view-&gt;api_version&nbsp;=&nbsp;"3.0-alpha1";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$view-&gt;disabled&nbsp;=&nbsp;FALSE;&nbsp;/*&nbsp;Edit&nbsp;this&nbsp;to&nbsp;true&nbsp;to&nbsp;make&nbsp;a&nbsp;default&nbsp;view&nbsp;disabled&nbsp;initially&nbsp;*/<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Display:&nbsp;Defaults&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler&nbsp;=&nbsp;$view-&gt;new_display("default",&nbsp;"Defaults",&nbsp;"default");<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["title"]&nbsp;=&nbsp;"Recent&nbsp;comments";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["use_more"]&nbsp;=&nbsp;TRUE;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["access"]["type"]&nbsp;=&nbsp;"none";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["cache"]["type"]&nbsp;=&nbsp;"none";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["query"]["type"]&nbsp;=&nbsp;"views_query";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["exposed_form"]["type"]&nbsp;=&nbsp;"basic";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["pager"]["type"]&nbsp;=&nbsp;"some";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["pager"]["options"]["items_per_page"]&nbsp;=&nbsp;5;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["style_plugin"]&nbsp;=&nbsp;"list";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["row_plugin"]&nbsp;=&nbsp;"fields";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Relationship:&nbsp;Comment:&nbsp;Node&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["relationships"]["nid"]["id"]&nbsp;=&nbsp;"nid";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["relationships"]["nid"]["table"]&nbsp;=&nbsp;"comments";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["relationships"]["nid"]["field"]&nbsp;=&nbsp;"nid";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Field:&nbsp;Comment:&nbsp;Title&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["subject"]["id"]&nbsp;=&nbsp;"subject";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["subject"]["table"]&nbsp;=&nbsp;"comments";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["subject"]["field"]&nbsp;=&nbsp;"subject";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["subject"]["label"]&nbsp;=&nbsp;"";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["subject"]["link_to_comment"]&nbsp;=&nbsp;1;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Field:&nbsp;Comment:&nbsp;Post&nbsp;date&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["timestamp"]["id"]&nbsp;=&nbsp;"timestamp";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["timestamp"]["table"]&nbsp;=&nbsp;"comments";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["timestamp"]["field"]&nbsp;=&nbsp;"timestamp";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["timestamp"]["label"]&nbsp;=&nbsp;"";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["timestamp"]["date_format"]&nbsp;=&nbsp;"time&nbsp;ago";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Sort&nbsp;criterion:&nbsp;Comment:&nbsp;Post&nbsp;date&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["sorts"]["timestamp"]["id"]&nbsp;=&nbsp;"timestamp";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["sorts"]["timestamp"]["table"]&nbsp;=&nbsp;"comments";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["sorts"]["timestamp"]["field"]&nbsp;=&nbsp;"timestamp";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["sorts"]["timestamp"]["order"]&nbsp;=&nbsp;"DESC";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Filter:&nbsp;Node:&nbsp;Published&nbsp;or&nbsp;admin&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["filters"]["status_extra"]["id"]&nbsp;=&nbsp;"status_extra";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["filters"]["status_extra"]["table"]&nbsp;=&nbsp;"node";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["filters"]["status_extra"]["field"]&nbsp;=&nbsp;"status_extra";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["filters"]["status_extra"]["relationship"]&nbsp;=&nbsp;"nid";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["filters"]["status_extra"]["group"]&nbsp;=&nbsp;0;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["filters"]["status_extra"]["expose"]["operator"]&nbsp;=&nbsp;FALSE;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Display:&nbsp;Page&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler&nbsp;=&nbsp;$view-&gt;new_display("page",&nbsp;"Page",&nbsp;"page");<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["defaults"]["items_per_page"]&nbsp;=&nbsp;FALSE;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["defaults"]["style_plugin"]&nbsp;=&nbsp;FALSE;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["style_plugin"]&nbsp;=&nbsp;"list";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["defaults"]["style_options"]&nbsp;=&nbsp;FALSE;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["defaults"]["row_plugin"]&nbsp;=&nbsp;FALSE;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["row_plugin"]&nbsp;=&nbsp;"fields";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["row_options"]["inline"]&nbsp;=&nbsp;array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title"&nbsp;=&gt;&nbsp;"title",<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"timestamp"&nbsp;=&gt;&nbsp;"timestamp",<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["row_options"]["separator"]&nbsp;=&nbsp;"&amp;nbsp;";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["defaults"]["row_options"]&nbsp;=&nbsp;FALSE;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["defaults"]["fields"]&nbsp;=&nbsp;FALSE;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Field:&nbsp;Node:&nbsp;Title&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["title"]["id"]&nbsp;=&nbsp;"title";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["title"]["table"]&nbsp;=&nbsp;"node";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["title"]["field"]&nbsp;=&nbsp;"title";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["title"]["relationship"]&nbsp;=&nbsp;"nid";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["title"]["label"]&nbsp;=&nbsp;"Reply&nbsp;to";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["title"]["link_to_node"]&nbsp;=&nbsp;1;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Field:&nbsp;Comment:&nbsp;Post&nbsp;date&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["timestamp"]["id"]&nbsp;=&nbsp;"timestamp";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["timestamp"]["table"]&nbsp;=&nbsp;"comments";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["timestamp"]["field"]&nbsp;=&nbsp;"timestamp";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["timestamp"]["label"]&nbsp;=&nbsp;"";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["timestamp"]["date_format"]&nbsp;=&nbsp;"time&nbsp;ago";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Field:&nbsp;Comment:&nbsp;Title&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["subject"]["id"]&nbsp;=&nbsp;"subject";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["subject"]["table"]&nbsp;=&nbsp;"comments";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["subject"]["field"]&nbsp;=&nbsp;"subject";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["subject"]["label"]&nbsp;=&nbsp;"";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["subject"]["link_to_comment"]&nbsp;=&nbsp;1;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Field:&nbsp;Comment:&nbsp;Body&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["comment"]["id"]&nbsp;=&nbsp;"comment";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["comment"]["table"]&nbsp;=&nbsp;"comments";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["comment"]["field"]&nbsp;=&nbsp;"comment";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["fields"]["comment"]["label"]&nbsp;=&nbsp;"";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["path"]&nbsp;=&nbsp;"comments/recent";<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Display:&nbsp;Block&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler&nbsp;=&nbsp;$view-&gt;new_display("block",&nbsp;"Block",&nbsp;"block");<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$handler-&gt;display-&gt;display_options["block_description"]&nbsp;=&nbsp;"Recent&nbsp;comments&nbsp;view"<br />;'</span><span style="color: #007700">,<br />&nbsp;&nbsp;</span><span style="color: #DD0000">'op'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Import'</span><span style="color: #007700">,<br />&nbsp;&nbsp;</span><span style="color: #DD0000">'form_build_id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'form-1PaJ7t29vxt2h2xYHNAzmM20iEXkkZc9h-kaGWj_TcY'</span><span style="color: #007700">,<br />&nbsp;&nbsp;</span><span style="color: #DD0000">'form_token'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'D6xWgCoFzM7geA4CkOZmFVJCSTuaECI3Rtpmurh6Gxk'</span><span style="color: #007700">,<br />&nbsp;&nbsp;</span><span style="color: #DD0000">'form_id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'views_ui_import_page'</span><span style="color: #007700">,<br />)</span>
+</span>
+</code><hr /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://ocg/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Home | Drupal</title>
+  <style type="text/css" media="all">@import url("http://ocg/modules/system/system.base.css?nebask");
+@import url("http://ocg/modules/system/system.menus.css?nebask");
+@import url("http://ocg/modules/system/system.messages.css?nebask");
+@import url("http://ocg/modules/system/system.theme.css?nebask");</style>
+<style type="text/css" media="all">@import url("http://ocg/modules/system/system.admin.css?nebask");
+@import url("http://ocg/misc/ui/jquery.ui.core.css?nebask");
+@import url("http://ocg/misc/ui/jquery.ui.theme.css?nebask");
+@import url("http://ocg/misc/ui/jquery.ui.tabs.css?nebask");
+@import url("http://ocg/misc/ui/jquery.ui.button.css?nebask");
+@import url("http://ocg/misc/ui/jquery.ui.resizable.css?nebask");
+@import url("http://ocg/misc/ui/jquery.ui.dialog.css?nebask");</style>
+<style type="text/css" media="all">@import url("http://ocg/modules/comment/comment.css?nebask");
+@import url("http://ocg/modules/field/theme/field.css?nebask");
+@import url("http://ocg/modules/node/node.css?nebask");
+@import url("http://ocg/modules/search/search.css?nebask");
+@import url("http://ocg/modules/user/user.css?nebask");
+@import url("http://ocg/sites/all/modules/contrib/views/css/views.css?nebask");</style>
+<style type="text/css" media="all">@import url("http://ocg/sites/all/modules/contrib/ctools/css/ctools.css?nebask");
+@import url("http://ocg/sites/all/modules/contrib/ctools/css/button.css?nebask");
+@import url("http://ocg/sites/all/modules/contrib/ctools/css/dropbutton.css?nebask");
+@import url("http://ocg/sites/all/modules/contrib/views/css/views-admin.css?nebask");</style>
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="http://ocg/sites/all/modules/contrib/views/css/ie/views-admin.ie7.css?nebask" media="all" />
+<![endif]-->
+<style type="text/css" media="all">@import url("http://ocg/sites/all/modules/contrib/views/css/views-admin.theme.css?nebask");
+@import url("http://ocg/sites/all/modules/contrib/views/css/views-admin.contextual.css?nebask");
+@import url("http://ocg/sites/all/modules/contrib/views/css/views-admin.ctools.css?nebask");</style>
+<style type="text/css" media="all">@import url("http://ocg/themes/bartik/css/layout.css?nebask");
+@import url("http://ocg/themes/bartik/css/style.css?nebask");
+@import url("http://ocg/themes/bartik/css/colors.css?nebask");</style>
+<style type="text/css" media="print">@import url("http://ocg/themes/bartik/css/print.css?nebask");</style>
+<style type="text/css" media="all">@import url("http://ocg/sites/all/modules/contrib/views/css/views-admin.bartik.css?nebask");</style>
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="http://ocg/themes/bartik/css/ie.css?nebask" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="http://ocg/themes/bartik/css/ie6.css?nebask" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="http://ocg/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="http://ocg/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://ocg/misc/drupal.js?nebask"></script>
+<script type="text/javascript" src="http://ocg/misc/ui/jquery.ui.core.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="http://ocg/misc/ui/jquery.ui.widget.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="http://ocg/misc/jquery.cookie.js?v=1.0"></script>
+<script type="text/javascript" src="http://ocg/misc/jquery.form.js?v=2.52"></script>
+<script type="text/javascript" src="http://ocg/misc/ui/jquery.ui.tabs.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="http://ocg/misc/ui/jquery.ui.button.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="http://ocg/misc/ui/jquery.ui.mouse.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="http://ocg/misc/ui/jquery.ui.draggable.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="http://ocg/misc/ui/jquery.ui.position.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="http://ocg/misc/ui/jquery.ui.resizable.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="http://ocg/misc/ui/jquery.ui.dialog.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="http://ocg/sites/all/modules/contrib/views/js/jquery.ui.dialog.patch.js?v=1.8.7"></script>
+<script type="text/javascript" src="http://ocg/misc/ajax.js?v=7.32"></script>
+<script type="text/javascript" src="http://ocg/sites/all/modules/contrib/views/js/base.js?nebask"></script>
+<script type="text/javascript" src="http://ocg/misc/progress.js?v=7.32"></script>
+<script type="text/javascript" src="http://ocg/sites/all/modules/contrib/views/js/ajax.js?nebask"></script>
+<script type="text/javascript" src="http://ocg/sites/all/modules/contrib/ctools/js/dropbutton.js?nebask"></script>
+<script type="text/javascript" src="http://ocg/sites/all/modules/contrib/ctools/js/dependent.js?nebask"></script>
+<script type="text/javascript" src="http://ocg/sites/all/modules/contrib/ctools/js/collapsible-div.js?nebask"></script>
+<script type="text/javascript" src="http://ocg/misc/tabledrag.js?nebask"></script>
+<script type="text/javascript" src="http://ocg/sites/all/modules/contrib/views/js/views-admin.js?nebask"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bartik","theme_token":"SrDiiNnk3QSFzCpqUY-n35g6L3mmUZ8mdnT1VbqHz08","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/ui\/jquery.ui.core.min.js":1,"misc\/ui\/jquery.ui.widget.min.js":1,"misc\/jquery.cookie.js":1,"misc\/jquery.form.js":1,"misc\/ui\/jquery.ui.tabs.min.js":1,"misc\/ui\/jquery.ui.button.min.js":1,"misc\/ui\/jquery.ui.mouse.min.js":1,"misc\/ui\/jquery.ui.draggable.min.js":1,"misc\/ui\/jquery.ui.position.min.js":1,"misc\/ui\/jquery.ui.resizable.min.js":1,"misc\/ui\/jquery.ui.dialog.min.js":1,"sites\/all\/modules\/contrib\/views\/js\/jquery.ui.dialog.patch.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/views\/js\/ajax.js":1,"sites\/all\/modules\/contrib\/ctools\/js\/dropbutton.js":1,"sites\/all\/modules\/contrib\/ctools\/js\/dependent.js":1,"sites\/all\/modules\/contrib\/ctools\/js\/collapsible-div.js":1,"misc\/tabledrag.js":1,"sites\/all\/modules\/contrib\/views\/js\/views-admin.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/system\/system.admin.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.tabs.css":1,"misc\/ui\/jquery.ui.button.css":1,"misc\/ui\/jquery.ui.resizable.css":1,"misc\/ui\/jquery.ui.dialog.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/button.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/dropbutton.css":1,"sites\/all\/modules\/contrib\/views\/css\/views-admin.css":1,"sites\/all\/modules\/contrib\/views\/css\/ie\/views-admin.ie7.css":1,"sites\/all\/modules\/contrib\/views\/css\/views-admin.theme.css":1,"sites\/all\/modules\/contrib\/views\/css\/views-admin.contextual.css":1,"sites\/all\/modules\/contrib\/views\/css\/views-admin.ctools.css":1,"themes\/bartik\/css\/layout.css":1,"themes\/bartik\/css\/style.css":1,"themes\/bartik\/css\/colors.css":1,"themes\/bartik\/css\/print.css":1,"sites\/all\/modules\/contrib\/views\/css\/views-admin.bartik.css":1,"themes\/bartik\/css\/ie.css":1,"themes\/bartik\/css\/ie6.css":1}},"views":{"ajax":{"id":"#views-ajax-body","title":"#views-ajax-title","popup":"#views-ajax-popup","defaultForm":"\u003Cdiv class=\u0022message\u0022\u003EClick on an item to edit that item\u0027s details.\u003C\/div\u003E"}},"viewsImplicitFormSubmission":{"views-ui-preview-form":{"defaultButton":"preview-submit"}},"ajax":{"preview-submit":{"wrapper":"views-preview-wrapper","event":"click","progress":{"type":"throbber"},"method":"replaceWith","url":"\/admin\/structure\/views\/view\/comments_recent\/preview\/page\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Update preview"}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front logged-in no-sidebars page-admin page-admin-structure page-admin-structure-views page-admin-structure-views-view page-admin-structure-views-view-comments-recent page-admin-structure-views-view-comments-recent-edit" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+
+  <div id="header" class="with-secondary-menu"><div class="section clearfix">
+
+          <a href="/" title="Home" rel="home" id="logo">
+        <img src="http://ocg/themes/bartik/logo.png" alt="Home" />
+      </a>
+    
+          <div id="name-and-slogan">
+
+                              <div id="site-name">
+              <strong>
+                <a href="/" title="Home" rel="home"><span>Drupal</span></a>
+              </strong>
+            </div>
+                  
+        
+      </div> <!-- /#name-and-slogan -->
+    
+    
+          <div id="main-menu" class="navigation">
+        <h2 class="element-invisible">Main menu</h2><ul id="main-menu-links" class="links clearfix"><li class="menu-175 first last"><a href="/">Home</a></li>
+</ul>      </div> <!-- /#main-menu -->
+    
+          <div id="secondary-menu" class="navigation">
+        <h2 class="element-invisible">Secondary menu</h2><ul id="secondary-menu-links" class="links inline clearfix"><li class="menu-2 first"><a href="/user">My account</a></li>
+<li class="menu-15 last"><a href="/user/logout">Log out</a></li>
+</ul>      </div> <!-- /#secondary-menu -->
+    
+  </div></div> <!-- /.section, /#header -->
+
+  
+  
+  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
+
+    
+    
+    <div id="content" class="column"><div class="section">
+            <a id="main-content"></a>
+                    <h1 class="title" id="page-title">
+          Home        </h1>
+                          <div class="tabs">
+                  </div>
+                          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div class="views-edit-view views-admin clearfix"><form class="form-edit" action="/admin/structure/views/view/comments_recent/edit" method="post" id="views-ui-edit-form" accept-charset="UTF-8"><div><div class="view-changed messages warning form-wrapper" id="edit-changed">* All changes are stored temporarily. Click Save to make your changes permanent. Click Cancel to discard your changes.</div><div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-actions-save" name="op" value="Save" class="form-submit" /><input type="submit" id="edit-actions-cancel" name="op" value="Cancel" class="form-submit" /></div><div>Modify the display(s) of your view below or add new displays.</div><h1 class="unit-title clearfix">Displays</h1>
+<div class="views-displays"><div class="views-display-top clearfix" id="views-display-top"><div class="ctools-no-js ctools-dropbutton ctools-button" id="ctools-button-9"><div class="ctools-link"><a href="#" class="ctools-twisty ctools-text">open</a></div><div class="ctools-content"><ul><li class="edit-details first"><a href="/admin/structure/views/nojs/edit-details/comments_recent" class="views-ajax-link">edit view name/description</a></li>
+<li class="analyze"><a href="/admin/structure/views/nojs/analyze/comments_recent/page" class="views-ajax-link">analyze view</a></li>
+<li class="clone"><a href="/admin/structure/views/view/comments_recent/clone">clone view</a></li>
+<li class="export"><a href="/admin/structure/views/view/comments_recent/export">export view</a></li>
+<li class="reorder last"><a href="/admin/structure/views/nojs/reorder-displays/comments_recent/page" class="views-ajax-link">reorder displays</a></li>
+</ul></div></div><h2 class="element-invisible">Secondary tabs</h2><ul id = "views-display-menu-tabs" class="tabs secondary"><li class="active"><a href="/admin/structure/views/view/comments_recent/edit/page">Page<span class="element-invisible">(active tab)</span></a></li>
+<li><a href="/admin/structure/views/view/comments_recent/edit/block">Block</a></li>
+</ul><input class="add-display form-submit" type="submit" id="edit-displays-top-add-display-attachment" name="op" value="Add Attachment" /><input class="add-display form-submit" type="submit" id="edit-displays-top-add-display-block" name="op" value="Add Block" /><input class="add-display form-submit" type="submit" id="edit-displays-top-add-display-feed" name="op" value="Add Feed" /><input class="add-display form-submit" type="submit" id="edit-displays-top-add-display-page" name="op" value="Add Page" /></div><div class="views-display-settings box-margin ctools-collapsible-container form-wrapper" id="edit-display-settings"><h2 id="edit-display-settings-title" class="ctools-collapsible-handle">Page details</h2><div class="ctools-collapsible-content form-wrapper" id="edit-display-settings-content"><div class="views-display-tab form-wrapper" id="views-tab-page"><div id="edit-display-settings-details" class="form-wrapper"><div id="edit-display-settings-top" class="views-ui-display-tab-actions views-ui-display-tab-bucket clearfix form-wrapper"><div class="ctools-no-js ctools-button ctools-dropbutton"><div class="ctools-link"><a href="#" class="ctools-twisty ctools-text">open</a></div><div class="ctools-content"><ul class="horizontal right actions"><li class="view"><a href="/comments/recent" id="edit-displays-settings-settings-content-tab-content-details-top-actions-path">view Page</a></li><li class="duplicate"><input type="submit" id="edit-displays-settings-settings-content-tab-content-details-top-actions-duplicate" name="op" value="clone Page" class="form-submit" /></li><li class="delete"><input type="submit" id="edit-displays-settings-settings-content-tab-content-details-top-actions-delete" name="op" value="delete Page" class="form-submit" /></li><li class="disable"><input type="submit" id="edit-displays-settings-settings-content-tab-content-details-top-actions-disable" name="op" value="disable Page" class="form-submit" /></li></ul></div></div><div class="views-display-setting views-ui-display-tab-setting odd clearfix" >
+      <span class="label">Display name:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/display_title" class="views-ajax-link " title="Page" id="views-page-display-title">Page</a>  </div>
+</div><div id="edit-display-settings-main" class="clearfix views-display-columns form-wrapper"><div class="views-display-column first form-wrapper" id="edit-displays-settings-settings-content-tab-content-details-columns-first"><div class="views-ui-display-tab-bucket title" >
+          <h3>Title</h3>
+    <div class="views-display-setting views-ui-display-tab-setting defaulted even clearfix" >
+      <span class="label">Title:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/title" class="views-ajax-link " title="Change the title that this display will use." id="views-page-title">Recent comments</a>  </div>
+</div>
+<div class="views-ui-display-tab-bucket format" >
+          <h3>Format</h3>
+    <div class="views-display-setting views-ui-display-tab-setting overridden odd clearfix"  title="Overridden">
+      <span class="label">Format:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/style_plugin" class="views-ajax-link " title="Change the way content is formatted." id="views-page-style-plugin">HTML list</a><span class="label">&nbsp;|&nbsp;</span><a href="/admin/structure/views/nojs/display/comments_recent/page/style_options" class="views-ajax-link views-button-configure" title="Change settings for this format" id="views-page-style-options"><span>Settings</span></a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting overridden even clearfix"  title="Overridden">
+      <span class="label">Show:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/row_plugin" class="views-ajax-link " title="Change the way each row in the view is styled." id="views-page-row-plugin">Fields</a><span class="label">&nbsp;|&nbsp;</span><a href="/admin/structure/views/nojs/display/comments_recent/page/row_options" class="views-ajax-link views-button-configure" title="Change settings for this style" id="views-page-row-options"><span>Settings</span></a>  </div>
+</div>
+<div class="views-ui-display-tab-bucket fields overridden"  title="Overridden">
+        <div class="ctools-no-js ctools-dropbutton ctools-button views-ui-settings-bucket-operations" id="ctools-button-1"><div class="ctools-link"><a href="#" class="ctools-twisty ctools-text">open</a></div><div class="ctools-content"><ul class="actions horizontal right"><li class="add first"><a href="/admin/structure/views/nojs/add-item/comments_recent/page/field" class="icon compact add views-ajax-link" title="Add" id="views-add-field">Add</a></li>
+<li class="rearrange last"><a href="/admin/structure/views/nojs/rearrange/comments_recent/page/field" class="icon compact rearrange views-ajax-link" title="Rearrange" id="views-rearrange-field">Rearrange</a></li>
+</ul></div></div>        <h3>Fields</h3>
+    <div class="views-display-setting views-ui-display-tab-setting page-field-title odd clearfix" >
+        <a href="/admin/structure/views/nojs/config-item/comments_recent/page/field/title" class="views-ajax-link">(Content) Content: Title (Reply to)</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting page-field-timestamp even clearfix" >
+        <a href="/admin/structure/views/nojs/config-item/comments_recent/page/field/timestamp" class="views-ajax-link">Comment: Updated date</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting page-field-subject odd clearfix" >
+        <a href="/admin/structure/views/nojs/config-item/comments_recent/page/field/subject" class="views-ajax-link">Comment: Title</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting page-field-comment even clearfix" >
+        <a href="/admin/structure/views/nojs/config-item/comments_recent/page/field/comment" class="views-ajax-link">Comment: Comment</a>  </div>
+</div>
+<div class="views-ui-display-tab-bucket filter-criteria" >
+        <div class="ctools-no-js ctools-dropbutton ctools-button views-ui-settings-bucket-operations" id="ctools-button-2"><div class="ctools-link"><a href="#" class="ctools-twisty ctools-text">open</a></div><div class="ctools-content"><ul class="actions horizontal right"><li class="add first"><a href="/admin/structure/views/nojs/add-item/comments_recent/page/filter" class="icon compact add views-ajax-link" title="Add" id="views-add-filter">Add</a></li>
+<li class="rearrange last"><a href="/admin/structure/views/nojs/rearrange-filter/comments_recent/page/filter" class="icon compact rearrange views-ajax-link" title="Rearrange" id="views-rearrange-filter">And/Or, Rearrange</a></li>
+</ul></div></div>        <h3>Filter criteria</h3>
+    <div class="views-display-setting views-ui-display-tab-setting page-filter-status-extra odd clearfix" >
+        <a href="/admin/structure/views/nojs/config-item/comments_recent/page/filter/status_extra" class="views-ajax-link">(Content) Content: Published or admin</a>  </div>
+</div>
+<div class="views-ui-display-tab-bucket sort-criteria" >
+        <div class="ctools-no-js ctools-dropbutton ctools-button views-ui-settings-bucket-operations" id="ctools-button-3"><div class="ctools-link"><a href="#" class="ctools-twisty ctools-text">open</a></div><div class="ctools-content"><ul class="actions horizontal right"><li class="add first"><a href="/admin/structure/views/nojs/add-item/comments_recent/page/sort" class="icon compact add views-ajax-link" title="Add" id="views-add-sort">Add</a></li>
+<li class="rearrange last"><a href="/admin/structure/views/nojs/rearrange/comments_recent/page/sort" class="icon compact rearrange views-ajax-link" title="Rearrange" id="views-rearrange-sort">Rearrange</a></li>
+</ul></div></div>        <h3>Sort criteria</h3>
+    <div class="views-display-setting views-ui-display-tab-setting page-sort-timestamp even clearfix" >
+        <a href="/admin/structure/views/nojs/config-item/comments_recent/page/sort/timestamp" class="views-ajax-link">Comment: Updated date (desc)</a>  </div>
+</div>
+</div><div class="views-display-column second form-wrapper" id="edit-displays-settings-settings-content-tab-content-details-columns-second"><div class="views-ui-display-tab-bucket page-settings" >
+          <h3>Page settings</h3>
+    <div class="views-display-setting views-ui-display-tab-setting odd clearfix" >
+      <span class="label">Path:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/path" class="views-ajax-link " title="/comments/recent" id="views-page-path">/comments/recent</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting even clearfix" >
+      <span class="label">Menu:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/menu" class="views-ajax-link " title="No menu" id="views-page-menu">No menu</a>  </div>
+</div>
+<div class="views-ui-display-tab-bucket access" >
+        <div class="views-display-setting views-ui-display-tab-setting defaulted odd clearfix" >
+      <span class="label">Access:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/access" class="views-ajax-link " title="Specify access control type for this display." id="views-page-access">None</a>  </div>
+</div>
+<div class="views-ui-display-tab-bucket header" >
+        <div class="ctools-no-js ctools-button views-ui-settings-bucket-operations" id="ctools-button-4"><div class="ctools-content"><ul class="actions horizontal right"><li class="add first last"><a href="/admin/structure/views/nojs/add-item/comments_recent/page/header" class="icon compact add views-ajax-link" title="Add" id="views-add-header">Add</a></li>
+</ul></div></div>        <h3>Header</h3>
+    </div>
+<div class="views-ui-display-tab-bucket footer" >
+        <div class="ctools-no-js ctools-button views-ui-settings-bucket-operations" id="ctools-button-5"><div class="ctools-content"><ul class="actions horizontal right"><li class="add first last"><a href="/admin/structure/views/nojs/add-item/comments_recent/page/footer" class="icon compact add views-ajax-link" title="Add" id="views-add-footer">Add</a></li>
+</ul></div></div>        <h3>Footer</h3>
+    </div>
+<div class="views-ui-display-tab-bucket pager" >
+          <h3>Pager</h3>
+    <div class="views-display-setting views-ui-display-tab-setting defaulted even clearfix" >
+      <span class="label">Use pager:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/pager" class="views-ajax-link " title="Change this display&#039;s pager setting." id="views-page-pager">Display a specified number of items</a><span class="label">&nbsp;|&nbsp;</span><a href="/admin/structure/views/nojs/display/comments_recent/page/pager_options" class="views-ajax-link views-button-configure" title="Change settings for this pager type." id="views-page-pager-options"><span>5 items</span></a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting defaulted odd clearfix" >
+      <span class="label">More link:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/use_more" class="views-ajax-link " title="Specify whether this display will provide a &quot;more&quot; link." id="views-page-use-more">Yes</a>  </div>
+</div>
+</div><div class="views-display-column third ctools-collapsible-container ctools-collapsible-remember ctools-collapsed form-wrapper" id="views-ui-advanced-column-comments_recent"><h3 class="ctools-collapsible-handle"><a href="">Advanced</a></h3><div class="ctools-collapsible-content form-wrapper" id="edit-displays-settings-settings-content-tab-content-details-columns-third-collapse"><div class="views-ui-display-tab-bucket contextual-filters" >
+        <div class="ctools-no-js ctools-button views-ui-settings-bucket-operations" id="ctools-button-6"><div class="ctools-content"><ul class="actions horizontal right"><li class="add first last"><a href="/admin/structure/views/nojs/add-item/comments_recent/page/argument" class="icon compact add views-ajax-link" title="Add" id="views-add-argument">Add</a></li>
+</ul></div></div>        <h3>Contextual filters</h3>
+    </div>
+<div class="views-ui-display-tab-bucket relationships" >
+        <div class="ctools-no-js ctools-dropbutton ctools-button views-ui-settings-bucket-operations" id="ctools-button-7"><div class="ctools-link"><a href="#" class="ctools-twisty ctools-text">open</a></div><div class="ctools-content"><ul class="actions horizontal right"><li class="add first"><a href="/admin/structure/views/nojs/add-item/comments_recent/page/relationship" class="icon compact add views-ajax-link" title="Add" id="views-add-relationship">Add</a></li>
+<li class="rearrange last"><a href="/admin/structure/views/nojs/rearrange/comments_recent/page/relationship" class="icon compact rearrange views-ajax-link" title="Rearrange" id="views-rearrange-relationship">Rearrange</a></li>
+</ul></div></div>        <h3>Relationships</h3>
+    <div class="views-display-setting views-ui-display-tab-setting page-relationship-nid even clearfix" >
+        <a href="/admin/structure/views/nojs/config-item/comments_recent/page/relationship/nid" class="views-ajax-link">Comment: Content</a>  </div>
+</div>
+<div class="views-ui-display-tab-bucket no-results-behavior" >
+        <div class="ctools-no-js ctools-button views-ui-settings-bucket-operations" id="ctools-button-8"><div class="ctools-content"><ul class="actions horizontal right"><li class="add first last"><a href="/admin/structure/views/nojs/add-item/comments_recent/page/empty" class="icon compact add views-ajax-link" title="Add" id="views-add-empty">Add</a></li>
+</ul></div></div>        <h3>No results behavior</h3>
+    </div>
+<div class="views-ui-display-tab-bucket exposed-form" >
+          <h3>Exposed form</h3>
+    <div class="views-display-setting views-ui-display-tab-setting odd clearfix" >
+      <span class="label">Exposed form in block:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/exposed_block" class="views-ajax-link " title="Allow the exposed form to appear in a block instead of the view." id="views-page-exposed-block">No</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting defaulted even clearfix" >
+      <span class="label">Exposed form style:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/exposed_form" class="views-ajax-link " title="Select the kind of exposed filter to use." id="views-page-exposed-form">Basic</a><span class="label">&nbsp;|&nbsp;</span><a href="/admin/structure/views/nojs/display/comments_recent/page/exposed_form_options" class="views-ajax-link views-button-configure" title="Exposed form settings for this exposed form style." id="views-page-exposed-form-options"><span>Settings</span></a>  </div>
+</div>
+<div class="views-ui-display-tab-bucket other" >
+          <h3>Other</h3>
+    <div class="views-display-setting views-ui-display-tab-setting odd clearfix" >
+      <span class="label">Machine Name:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/display_id" class="views-ajax-link " title="Change the machine name of this display." id="views-page-display-id">page</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting even clearfix" >
+      <span class="label">Comment:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/display_comment" class="views-ajax-link " title="Comment or document this display." id="views-page-display-comment">No comment</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting defaulted odd clearfix" >
+      <span class="label">Use AJAX:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/use_ajax" class="views-ajax-link " title="Change whether or not this display will use AJAX." id="views-page-use-ajax">No</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting defaulted even clearfix" >
+      <span class="label">Hide attachments in summary:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/hide_attachment_summary" class="views-ajax-link " title="Change whether or not to display attachments when displaying a contextual filter summary." id="views-page-hide-attachment-summary">No</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting defaulted odd clearfix" >
+      <span class="label">Hide contextual links:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/hide_admin_links" class="views-ajax-link " title="Change whether or not to display contextual links for this view." id="views-page-hide-admin-links">No</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting defaulted even clearfix" >
+      <span class="label">Use aggregation:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/group_by" class="views-ajax-link " title="Allow grouping and aggregation (calculation) of fields." id="views-page-group-by">No</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting defaulted odd clearfix" >
+      <span class="label">Query settings:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/query" class="views-ajax-link " title="Allow to set some advanced settings for the query plugin" id="views-page-query">Settings</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting even clearfix" >
+      <span class="label">Field Language:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/field_language" class="views-ajax-link " title="All fields which support translations will be displayed in the selected language." id="views-page-field-language">Current user's language</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting defaulted odd clearfix" >
+      <span class="label">Caching:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/cache" class="views-ajax-link " title="Specify caching type for this display." id="views-page-cache">None</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting defaulted even clearfix" >
+      <span class="label">CSS class:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/css_class" class="views-ajax-link " title="Change the CSS class name(s) that will be added to this display." id="views-page-css-class">None</a>  </div>
+<div class="views-display-setting views-ui-display-tab-setting odd clearfix" >
+      <span class="label">Theme:</span>
+        <a href="/admin/structure/views/nojs/display/comments_recent/page/analyze-theme" class="views-ajax-link " title="Get information on how to theme this display" id="views-page-analyze-theme">Information</a>  </div>
+</div>
+</div></div></div></div></div></div></div></div><div id="views-ajax-popup" class="form-wrapper"><h2 id="views-ajax-title"></h2><div id="views-ajax-body" class="form-wrapper"><div class="message">Click on an item to edit that item's details.</div></div></div><input type="hidden" name="form_build_id" value="form-L8-gIpf2wvEXqqKI-PRP89XkAmZx6wlYSByE8LtynTY" />
+<input type="hidden" name="form_token" value="StMEMccsBCSQenbivaDYAwU8hvVjWmLxDn3HmP2z8Ps" />
+<input type="hidden" name="form_id" value="views_ui_edit_form" />
+</div></form></div><div id="views-preview-wrapper" class="views-admin clearfix"><form class="clearfix" action="/admin/structure/views/view/comments_recent/preview/page" method="post" id="views-ui-preview-form" accept-charset="UTF-8"><div><div class="form-item form-type-checkbox form-item-live-preview">
+ <input type="checkbox" id="edit-displays-live-preview" name="live_preview" value="1" checked="checked" class="form-checkbox" />  <label class="option" for="edit-displays-live-preview">Auto preview </label>
+
+</div>
+<div class="form-item form-type-textfield form-item-view-args">
+  <label for="preview-args">Preview with contextual filters: </label>
+ <input type="text" id="preview-args" name="view_args" value="" size="60" maxlength="128" class="form-text" />
+<div class="description">Separate contextual filter values with a "/". For example, <em class="placeholder">40/12/10</em>.</div>
+</div>
+<div id="preview-submit-wrapper"><input class="arguments-preview ctools-auto-submit-click form-submit" type="submit" id="preview-submit" name="op" value="Update preview" /></div><input type="hidden" name="form_build_id" value="form-AFW2NBhtoKEPbbUzEqEBYuRFZraEb_rRoqdMfX_v2Eg" />
+<input type="hidden" name="form_token" value="BYv_XPhocfOn2BO-tHAPn3Jqa8FIZFRwBoBUIJoaTds" />
+<input type="hidden" name="form_id" value="views_ui_preview_form" />
+</div></form><div id="views-live-preview"></div></div>  </div>
+</div>
+  </div>
+      
+    </div></div> <!-- /.section, /#content -->
+
+    
+  </div></div> <!-- /#main, /#main-wrapper -->
+
+  
+  <div id="footer-wrapper"><div class="section">
+
+    
+          <div id="footer" class="clearfix">
+          <div class="region region-footer">
+    <div id="block-system-powered-by" class="block block-system">
+
+    
+  <div class="content">
+    <span>Powered by <a href="http://drupal.org">Drupal</a></span>  </div>
+</div>
+  </div>
+      </div> <!-- /#footer -->
+    
+  </div></div> <!-- /.section, /#footer-wrapper -->
+
+</div></div> <!-- /#page, /#page-wrapper -->
+  </body>
+</html>
