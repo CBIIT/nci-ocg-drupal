@@ -108,5 +108,8 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+  <!-- **** NCI Web Analytics  - DO NOT ALTER **** -->
+  <script language="JavaScript" type="text/javascript" src="//static.cancer.gov/webanalytics/wa_ocg_pageload.js"></script>
+  <!-- **** End NCI Web Analytics Page **** -->
 </body>
 </html>
