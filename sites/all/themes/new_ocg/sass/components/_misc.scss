@@ -878,8 +878,10 @@ h1.title, h2.node-title, h2.block-title, h2.title, h2.comment-form, h3.title {
 }
 
 #navigation {
-  background-color: #fff2cc;
+  background: url(../images/header.png) no-repeat 70% top;
+  /*background-color: #fff2cc;*/
   height: 49px;
+  border-bottom: solid 1px #EEDF6E;
 }
 
 #header {
@@ -1023,6 +1025,8 @@ header, .region-navigation {
 
 #block-superfish-1 {
   height: 2.750em;
+  bottom: 1px;
+  position: absolute;
   margin-left: 10px;
 }
 
@@ -1036,14 +1040,16 @@ header, .region-navigation {
 
 #navigation .menu li {
     float: left;
+    padding: 0 0.938em 0 0.313em;
     list-style-type: none;
     list-style-image: none;
     text-transform: uppercase;
-    font-size: 24px;
-    padding-right: 0.5em;
+    font-size: 20px;
+    background: url("../images/nav-link.png") no-repeat scroll right center transparent;
+    /*padding-right: 0.5em;*/
 }
 
-#navigation .menu li a:after {
+/*#navigation .menu li a:after {
   content: "/";
   padding-left: 0.5em;
 }
@@ -1051,14 +1057,14 @@ header, .region-navigation {
 #navigation .menu li.last a:after {
   content: "";
   padding-left: 0;
-}
+}*/
 
 .lt-ie9 #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1 {
   
 }
 
 #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1 {
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
 
 .lt-ie9 #navigation .menu li#menu-451-1 {
@@ -1203,10 +1209,10 @@ header, .region-navigation {
   text-transform: capitalize !important;
 }
 
-#navigation li.sf-depth-1 ul li.sf-depth-2 ul li.sf-depth-3 a:after,
+/*#navigation li.sf-depth-1 ul li.sf-depth-2 ul li.sf-depth-3 a:after,
 #navigation li.sf-depth-1 ul li.sf-depth-2 a:after {
   content: "";
-}
+}*/
 
 #navigation li.sf-depth-1.first ul {
   width: 40em !important;
