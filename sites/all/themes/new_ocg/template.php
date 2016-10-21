@@ -171,3 +171,67 @@ function new_ocg_preprocess_views_view(&$variables) {
     }
   }
 }
+
+/**
+ * Function for adding rowspan classes for CTD2 Data Portal
+ */
+
+function ctd2_row_classes($item_id, $nid, $field) {
+  try {
+    $class = '';
+    $field_collection = entity_metadata_wrapper('field_collection_item', $item_id);
+    if (!empty($field_collection->$field->value()) && !empty($field_collection->$field[0]->field_span_rows->value())) {
+      $node = node_load($nid);
+      $row_ids = field_get_items('node', $node, 'field_row');
+      $row_classes = array_slice($row_ids, $field_collection->field_row_number->value(), $field_collection->$field[0]->field_span_rows->value());
+      foreach($row_classes as $row_class) {
+        $class = $class . ' ' . $row_class['value'] . '_rh';
+      }
+    
+      return $class;
+    }
+  
+  }
+  catch (EntityMetadataWrapperException $exc) {
+    watchdog(
+      'CTD2 Data Portal',
+      'EntityMetadataWrapper exception in %function() @trace',
+      array('%function' => __FUNCTION__, '@trace' => $exc->getTraceAsString()),
+      WATCHDOG_ERROR
+    );
+  }
+}
+
+function ctd2_pi_row_classes($item_id, $nid, $field) {
+  try {
+    $class = '';
+    $field_collection = entity_metadata_wrapper('field_collection_item', $item_id);
+    if (!empty($field_collection->$field->value())) {
+      $node = node_load($nid);
+      $row_ids = field_get_items('node', $node, 'field_row');
+      $row_classes = array_slice($row_ids, $field_collection->field_row_number->value(), count($row_ids));
+      foreach($row_classes as $row_class) {
+        $class = $class . ' ' . $row_class['value'] . '_rh';
+      }
+    
+      return $class;
+    }
+  
+  }
+  catch (EntityMetadataWrapperException $exc) {
+    watchdog(
+      'CTD2 Data Portal',
+      'EntityMetadataWrapper exception in %function() @trace',
+      array('%function' => __FUNCTION__, '@trace' => $exc->getTraceAsString()),
+      WATCHDOG_ERROR
+    );
+  }
+}
+
+function ctd2_row_count($nid) {
+    $node = node_load($nid);
+    $rows = field_get_items('node', $node, 'field_row');
+    $row_count = count($rows);
+    
+    return $row_count;
+}

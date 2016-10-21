@@ -16,7 +16,7 @@ if (!empty($view->result[0]->field_field_span_rows)) {
 }
 ?>
 <?php foreach ($rows as $id => $row): ?>
-  <td rowspan="<?php print $rowspan; ?>" style="vertical-align: middle;">
+  <td rowspan="<?php print $rowspan; ?>" style="vertical-align: middle;" headers="contact_ch <?php print $view->result[0]->nid . '_bn ' . $view->args[0] . '_rh' . ctd2_row_classes($view->args[0], $view->result[0]->nid, 'field_ctd2_contact_name');?>">
   <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
     <?php print $row; ?>
   </div>

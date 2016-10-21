@@ -6,9 +6,6 @@
  *
  * @ingroup views_templates
  */
-//dpm($view->result);
-//dpm(field_collection_item_load($view->args));
-
 ?>
 <?php if (!empty($rows[0])) { ?>
 <?php 
@@ -17,9 +14,10 @@ if (!empty($view->result[0]->field_field_span_rows)) {
 } else {
   $rowspan = 1;
 }
+
 ?>
 <?php foreach ($rows as $id => $row): ?>
-  <td class="outer colSW" rowspan="<?php print $rowspan; ?>" style="vertical-align: middle;" headers="expapp_ch <?php print $view->args[0] . '_rh' ?> broad_bn broad1_rh broad2_rh broad3_rh broad4_rh">
+  <td class="outer colSW" rowspan="<?php print $rowspan; ?>" style="vertical-align: middle;" headers="expapp_ch <?php print $view->result[0]->nid . '_bn ' . $view->args[0] . '_rh' . ctd2_row_classes($view->args[0], $view->result[0]->nid, 'field_experimental_approaches');?>">
   <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
     <?php print $row; ?>
   </div>
