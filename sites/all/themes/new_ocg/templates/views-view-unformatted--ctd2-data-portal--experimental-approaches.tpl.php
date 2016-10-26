@@ -6,6 +6,7 @@
  *
  * @ingroup views_templates
  */
+
 ?>
 <?php if (!empty($rows[0])) { ?>
 <?php 
