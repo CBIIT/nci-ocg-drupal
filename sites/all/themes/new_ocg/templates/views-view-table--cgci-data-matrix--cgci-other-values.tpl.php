@@ -34,7 +34,7 @@
                   <a class="public patientcellelem" target="_blank" href='<?php print $row['field_link_1']; ?>'><?php print $row['field_link'] . '*'; ?></a>
                   <br />
                 <?php endif; ?>
-                <?php print $row['view']; ?>
+                <?php if (!empty($row['view'])) { print $row['view']; } ?>
           
     <?php endforeach; ?>
  
