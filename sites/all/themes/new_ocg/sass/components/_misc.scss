@@ -4213,17 +4213,18 @@ th.projbanner a {
   align-items: baseline;
 }
 
-.view-display-id-homepage_links .views-field-field-homepage-link {
-  padding: 25px 5px;
+.view-display-id-homepage_links .views-field-field-link-icon {
   text-align: center;
-  color: #fff;
-  margin-right: 20px;
-  width: 100px;
-  height: 50px;
 }
 
-.view-display-id-homepage_links .brown {
-  background-color: #774928;
+.view-display-id-homepage_links .views-field-field-homepage-link {
+  text-align: center;
+}
+
+.view-display-id-homepage_links .analytical_tools {
+  background-image: url('/sites/all/themes/new_ocg/images/homepage/analytical_tools.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .view-display-id-homepage_links .orange {
