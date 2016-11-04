@@ -1022,8 +1022,13 @@ header, .region-navigation {
 }
 
 #block-superfish-1 {
-  height: 2.750em;
   margin-left: 10px;
+}
+
+#block-superfish-1 .content {
+  display: flex;
+  align-items: center;
+  height: 49px;
 }
 
 .lt-ie9 #block-superfish-1 {
@@ -1053,12 +1058,22 @@ header, .region-navigation {
   padding-left: 0;
 }
 
-.lt-ie9 #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1 {
+.lt-ie9 #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1, #menu-6568-1, #menu-6119-1, #menu-6002-1 {
   
 }
 
-#menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1 {
-  margin-top: 1em;
+#menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1, #menu-6568-1, #menu-6119-1, #menu-6002-1 {
+  
+}
+
+#menu-6568-1 span, #menu-6119-1 span, #menu-6002-1 span {
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+  font-weight: normal;
+  color: #fff2cc;
+  text-decoration: none;
+  padding: 11px;
+  border: medium none;
+  background-color: #900;
 }
 
 .lt-ie9 #navigation .menu li#menu-451-1 {
@@ -4205,6 +4220,11 @@ th.projbanner a {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.view-display-id-homepage_links .views-row {
+  width: 20%;
 }
 
 .view-display-id-homepage_links .views-field-field-link-icon {
@@ -4213,20 +4233,6 @@ th.projbanner a {
 
 .view-display-id-homepage_links .views-field-field-homepage-link {
   text-align: center;
-}
-
-.view-display-id-homepage_links .analytical_tools {
-  background-image: url('/sites/all/themes/new_ocg/images/homepage/analytical_tools.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.view-display-id-homepage_links .orange {
-  background-color: #F95704;
-}
-
-.view-display-id-homepage_links .red {
-  background-color: #900;
 }
 
 .view-display-id-homepage_data_access .views-row {
@@ -4571,7 +4577,7 @@ th.projbanner a {
     padding-right: 0;
   }
 
-  #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1 {
+  #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1, #menu-6568-1, #menu-6119-1, #menu-6002-1 {
     margin-top: 0;
   }
 
