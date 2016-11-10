@@ -1153,9 +1153,8 @@ header, .region-navigation {
 }
 
 #navigation li.sf-depth-1 ul {
-  background: #614e37 url(../images/dropdown-top.gif) repeat-x;
+  background-color: #614e37;
   padding-left: 0.938em;
-  margin-left: -0.625em;
   padding-top: 1.250em;
   padding-bottom: 0.625em;
   max-width: 11em;
@@ -1165,7 +1164,7 @@ header, .region-navigation {
 .sf-menu li:hover > ul,
 .sf-menu li.sfHover > ul {
   left: 0;
-  top: 1em;
+  top: 1.4em;
 }
 
 #navigation li.sf-depth-1 ul li.sf-depth-2 {
@@ -4153,13 +4152,16 @@ th.projbanner a {
 
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link,
 .view-homepage .views-field-field-data-access-links .field-content .data-link {
-  width: 100px;
-  height: 50px;
+  /*width: 100px;
+  height: 50px;*/
   padding: 25px 5px;
   text-align: center;
-  background-color: #808080;
+  background-color: #900;
   margin-right: 20px;
-  color: #fff !important
+  color: #fff !important;
+  font-weight: bold;
+  flex: 1 100%;
+  border: 3px outset #900;
 }
 
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link a,
