@@ -4150,6 +4150,21 @@ th.projbanner a {
   margin-top: 0;
 }
 
+.view-display-id-homepage_mission .views-field-field-ocg-mission-body,
+.view-display-id-homepage_mission .views-field-field-learn-more-link,
+.view-display-id-homepage_mission .views-field-field-email-update-link,
+.view-display-id-homepage_mission .views-field-field-twitter-link,
+.view-display-id-homepage_data_access .views-field-field-data-access-body,
+.view-display-id-homepage_data_access .data-link {
+  font-size: 1.25em;
+}
+
+.view-display-id-homepage_mission .views-field-field-learn-more-link {
+  background-color: #fff2cc;
+  float: left;
+  padding: 1%;
+}
+
 .view-homepage .views-field-field-email-update-link {
   position: absolute;
   bottom: 0;
@@ -4158,7 +4173,14 @@ th.projbanner a {
 .view-homepage .views-field-field-twitter-link {
   position: absolute;
   bottom: 0;
-  right: 50%;
+  right: 45%;
+}
+
+.view-homepage .views-field-field-email-update-link img,
+.view-homepage .views-field-field-twitter-link img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
 }
 
 .view-homepage .views-field-field-ocg-mission-links .field-content,
