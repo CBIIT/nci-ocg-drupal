@@ -1223,13 +1223,13 @@ header, .region-navigation {
 }
 
 #navigation li.sf-depth-1.first ul {
-  width: 40em !important;
+  width: 60em !important;
   max-width: none!important;
 }
 
-#menu-452-1, #menu-453-1, #menu-427-1, #menu-546-1 {
+#menu-452-1, #menu-453-1, #menu-427-1, #menu-5431-1, #menu-546-1 {
   overflow: hidden;  
-  width: 23% !important;
+  width: 20% !important;
 }
 
 #navigation ul.links li.last {
@@ -4097,6 +4097,10 @@ th.projbanner a {
   padding-right: 10px;
 }
 
+.view-display-id-homepage_mission .views-row {
+  position: relative;
+}
+
 #block-views-programs-homepage-programs {
   border-top-style: solid;
   border-top-color: #808080;
@@ -4140,6 +4144,21 @@ th.projbanner a {
 .view-homepage .views-field-field-data-access-image {
   float: right;
   margin-left: 50px;
+}
+
+.view-display-id-homepage_mission h1 {
+  margin-top: 0;
+}
+
+.view-homepage .views-field-field-email-update-link {
+  position: absolute;
+  bottom: 0;
+}
+
+.view-homepage .views-field-field-twitter-link {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
 }
 
 .view-homepage .views-field-field-ocg-mission-links .field-content,
