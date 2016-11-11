@@ -285,3 +285,17 @@ function custom_form_views_exposed_form_alter(&$form, &$form_state) {
   }
   
 }
+
+/**
+ * Alter the menu tree and its configuration before the tree is rendered.
+ *
+ * @param $tree
+ *   An array containing the unrendered menu tree.
+ * @param $config
+ *   An array containing the configuration of the tree.
+ */
+function custom_menu_block_tree_alter(&$tree, &$config) {
+  if ($config['admin_title'] == 'Footer Main Menu') {
+    unset($tree['50000 Data Access 6119']);
+  }
+}
