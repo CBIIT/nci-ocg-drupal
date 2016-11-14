@@ -4186,23 +4186,27 @@ th.projbanner a {
 .view-homepage .views-field-field-ocg-mission-links .field-content,
 .view-homepage .views-field-field-data-access-links .field-content{
   display: flex;
-  padding-top: 20px;
-  justify-content: flex-start;
-  align-items: baseline;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link,
 .view-homepage .views-field-field-data-access-links .field-content .data-link {
   /*width: 100px;
   height: 50px;*/
-  padding: 25px 5px;
+  padding: 20px 5px;
   text-align: center;
   background-color: #900;
   margin-right: 20px;
   color: #fff !important;
   font-weight: bold;
-  flex: 1 100%;
   border: 3px outset #900;
+  display: flex;
+}
+
+.view-homepage .views-field-field-data-access-links .field-content .data-link-text {
+  width: 150px;
+  align-self: center;
 }
 
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link a,
@@ -4244,7 +4248,7 @@ th.projbanner a {
 
 .view-display-id-homepage_programs .tablestyles tr.even,
 .view-display-id-homepage_programs .tablestyles tr.odd {
-  background-color: #fff !important;
+  background-color: transparent !important;
   border-bottom: none !important;
 }
 
