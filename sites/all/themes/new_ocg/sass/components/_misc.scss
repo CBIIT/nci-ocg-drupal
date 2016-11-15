@@ -1334,12 +1334,6 @@ header, .region-navigation {
 #pre-content {
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 3em;
-  padding-top: 1.6em;
-}
-
-.not-front #pre-content {
-  margin-bottom: 0;
 }
 
 .region-highlighted {
@@ -4272,7 +4266,8 @@ th.projbanner a {
 }
 
 .view-display-id-homepage_links .views-row {
-  width: 20%;
+  width: 15%;
+  padding-right: 5%;
 }
 
 .view-display-id-homepage_links .views-field-field-link-icon {
