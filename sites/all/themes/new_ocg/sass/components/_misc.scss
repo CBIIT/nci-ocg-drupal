@@ -1035,8 +1035,8 @@ header, .region-navigation {
 
 }
 
-.lt-ie9 #navigation .menu li {
-
+.lt-ie9 #navigation .menu {
+  padding: 13.5px;
 }
 
 #navigation .menu li {
@@ -1044,7 +1044,7 @@ header, .region-navigation {
     list-style-type: none;
     list-style-image: none;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 20px;
     padding-right: 0.5em;
 }
 
@@ -1071,7 +1071,7 @@ header, .region-navigation {
   font-weight: normal;
   color: #fff2cc;
   text-decoration: none;
-  padding: 11px;
+  padding: 13.5px;
   border: medium none;
   background-color: #900;
 }
@@ -4168,7 +4168,7 @@ th.projbanner a {
 .view-homepage .views-field-field-twitter-link {
   position: absolute;
   bottom: 0;
-  right: 45%;
+  right: 35%;
 }
 
 .view-homepage .views-field-field-email-update-link img,
@@ -4187,8 +4187,8 @@ th.projbanner a {
 
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link,
 .view-homepage .views-field-field-data-access-links .field-content .data-link {
-  /*width: 100px;
-  height: 50px;*/
+  width: 12%;
+  /* height: 50px;*/
   padding: 20px 5px;
   text-align: center;
   background-color: #900;
@@ -4197,10 +4197,11 @@ th.projbanner a {
   font-weight: bold;
   border: 3px outset #900;
   display: flex;
+  float: left;
 }
 
 .view-homepage .views-field-field-data-access-links .field-content .data-link-text {
-  width: 150px;
+  width: 100%;
   align-self: center;
 }
 
@@ -4268,6 +4269,7 @@ th.projbanner a {
 .view-display-id-homepage_links .views-row {
   width: 15%;
   padding-right: 5%;
+  float: left;
 }
 
 .view-display-id-homepage_links .views-field-field-link-icon {
@@ -4293,8 +4295,14 @@ th.projbanner a {
   width: 50%;
 }
 
+.no-flexbox #block-views-27184a66566baa7691d253aeb9fc40aa,
+.no-flexbox #block-views-70b4183ed1123291b6d64484c47ed1ba {
+  float: left;
+  width: 48%;
+}
+
 #block-views-27184a66566baa7691d253aeb9fc40aa {
-  padding-right: 20px;
+  padding-right: 2%;
 }
 
 .page-home .region-postscript-first .title-line {
@@ -4551,6 +4559,10 @@ th.projbanner a {
       height: 60px;
     }
   }
+  
+  .view-homepage .views-field-field-twitter-link {
+    right: 50%;
+  }
 
 }
 
@@ -4565,7 +4577,33 @@ th.projbanner a {
       height: 50px;
     }
   }
+  
+  .view-homepage .views-field-field-data-access-links .field-content .data-link {
+    width: 25%;
+  }
+  
+  .page-home .region-postscript-first .title-line {
+    align-items: center;
+    flex-direction: column;
+  }
 
+  .front #postscript-first h2.block-title, .front #postscript-second h2.block-title {
+    padding-bottom: 5px;
+    text-align: center;
+    line-height: 1em;
+  }
+}
+
+@media all and (max-width: 870px) {
+  .view-homepage .views-field-field-email-update-link,
+  .view-homepage .views-field-field-twitter-link {
+    position: relative;
+    float: right;
+  }
+  
+  .view-homepage .views-field-field-twitter-link {
+    right: 0;
+  }
 }
 
 @media all and (max-width: 820px) {
@@ -4584,6 +4622,16 @@ th.projbanner a {
   .view-cgci-data-matrix td.outer table td,
   .view-cgci-data-matrix .patient-data {
     font-size: 1em;
+  }
+  
+  .view-homepage .views-field-field-email-update-link,
+  .view-homepage .views-field-field-twitter-link {
+    position: relative;
+    float: right;
+  }
+  
+  .view-homepage .views-field-field-twitter-link {
+    right: 0;
   }
 
 }
@@ -4642,6 +4690,10 @@ th.projbanner a {
     position: relative;
     width: 100%;
     margin-left: 0;
+  }
+  
+  #block-superfish-1 .content {
+    height: inherit;
   }
 
   .lt-ie9 #block-superfish-1 {
@@ -4787,6 +4839,17 @@ th.projbanner a {
     top: 25px;
   }
   
+  .view-display-id-homepage_programs .odd,
+  .view-display-id-homepage_programs .even {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .view-display-id-homepage_links .views-row {
+    width: inherit;
+}
+  
 }
 
 @media all and (max-width: 770px) {
@@ -4846,6 +4909,11 @@ th.projbanner a {
   .view-display-id-primary_disease {
     display: none;
   }
+  
+  .view-homepage .views-field-field-ocg-mission-image, .view-homepage .views-field-field-data-access-image {
+    display: none;
+  }
+  
 }
 
 @media all and (max-width: 630px) {
@@ -4862,6 +4930,15 @@ th.projbanner a {
     padding-top: 5px;
     padding-bottom: 5px;
   }
+  
+  .view-homepage .views-field-field-data-access-links .field-content {
+    flex-wrap: wrap;
+  }
+  
+  .view-homepage .views-field-field-data-access-links .field-content .data-link {
+    width: 50%;
+    margin-bottom: 10px;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -4872,7 +4949,9 @@ th.projbanner a {
   #block-views-resources-block-1,
   #block-views-e-newsletter-block-2,
   #block-views-fe78d79853e84f0f15f21f1ffeee8437,
-  #block-views-30ee87c9713e54cfa382e640694d1d45 {
+  #block-views-30ee87c9713e54cfa382e640694d1d45,
+  #block-views-27184a66566baa7691d253aeb9fc40aa,
+  #block-views-70b4183ed1123291b6d64484c47ed1ba {
     width: 100%;
   }
 
@@ -4894,6 +4973,11 @@ th.projbanner a {
     position: absolute;
     right: 5%;
     top: 10px;
+  }
+  
+  .page-home .region-postscript-first {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -4994,6 +5078,22 @@ th.projbanner a {
   .front #postscript-second .two-col .view .more-link {
     top: 25px;
   }
+  
+  .view-homepage .views-field-field-email-update-link,
+  .view-homepage .views-field-field-twitter-link {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  .view-display-id-homepage_programs img {
+    max-width: 100%;
+  }
+  
+  #block-views-programs-homepage-programs .views-field-field-image {
+    padding-left: 0;
+    padding-bottom: 10px;
+    padding-right: 0;
+}
 
 }
 
