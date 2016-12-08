@@ -3525,7 +3525,7 @@ span.newtab {
 
 .views_slideshow_cycle_main {                                                      
   width: 100%;                                                                     
- .views-slideshow-cycle-main-frame {width: 100% !important; height: auto;}
+ .views-slideshow-cycle-main-frame, .views-slideshow-cycle-main-frame-row {width: 100% !important; height: auto;}
 }
 
 .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,

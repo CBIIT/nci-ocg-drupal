@@ -4834,7 +4834,7 @@ span.newtab {
   width: 100%;
 }
 /* line 3528, ../sass/components/_misc.scss */
-.views_slideshow_cycle_main .views-slideshow-cycle-main-frame {
+.views_slideshow_cycle_main .views-slideshow-cycle-main-frame, .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {
   width: 100% !important;
   height: auto;
 }
