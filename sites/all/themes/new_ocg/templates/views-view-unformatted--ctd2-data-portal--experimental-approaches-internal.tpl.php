@@ -23,4 +23,8 @@ if (!empty($view->result[0]->field_field_span_rows)) {
   </div>
   </td>
 <?php endforeach; ?>
+<?php } else { ?>
+  <td class="outer colSW" rowspan="<?php print $rowspan; ?>" style="vertical-align: middle;" headers="expapp_ch <?php print $view->result[0]->nid . '_bn ' . $view->args[0] . '_rh' . ctd2_row_classes($view->args[0], $view->result[0]->nid, 'field_experimental_approaches');?>">
+    <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>></div>
+  </td>
 <?php } ?>

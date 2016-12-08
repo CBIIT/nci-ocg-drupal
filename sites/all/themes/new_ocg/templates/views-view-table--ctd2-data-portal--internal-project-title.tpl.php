@@ -28,12 +28,12 @@
             </div>
           </th>
         
-          <?php print views_embed_view('ctd2_data_portal', 'experimental_approaches', $result[$row_count]->field_collection_item_field_data_field_row_item_id); ?>
+          <?php print views_embed_view('ctd2_data_portal', 'experimental_approaches_internal', $result[$row_count]->field_collection_item_field_data_field_row_item_id); ?>
           <td class="outer colN" headers="data_ch <?php print $result[$row_count]->nid . '_bn ' . $result[$row_count]->field_collection_item_field_data_field_row_item_id . '_rh'; ?>"><?php print views_embed_view('ctd2_data_portal', 'data', $result[$row_count]->field_collection_item_field_data_field_row_item_id); ?></td>
           <?php 
-          $view_result = views_get_view_result('ctd2_data_portal', 'principal_investigator', $result[$row_count]->field_collection_item_field_data_field_row_item_id);
+          $view_result = views_get_view_result('ctd2_data_portal', 'principal_investigator_internal', $result[$row_count]->field_collection_item_field_data_field_row_item_id);
           if(!empty($view_result[0]->field_field_pi_link)){ ?>
-          <?php print views_embed_view('ctd2_data_portal', 'principal_investigator', $result[$row_count]->field_collection_item_field_data_field_row_item_id); ?>
+          <?php print views_embed_view('ctd2_data_portal', 'principal_investigator_internal', $result[$row_count]->field_collection_item_field_data_field_row_item_id); ?>
           <?php } ?>
           <?php print views_embed_view('ctd2_data_portal', 'contact_name', $result[$row_count]->field_collection_item_field_data_field_row_item_id); ?>
       <?php endforeach; ?>
