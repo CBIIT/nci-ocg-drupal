@@ -296,6 +296,7 @@ function custom_form_views_exposed_form_alter(&$form, &$form_state) {
  */
 function custom_menu_block_tree_alter(&$tree, &$config) {
   if ($config['admin_title'] == 'Footer Main Menu') {
+    unset($tree['50000 Data Access 6568']);
     unset($tree['49957 Data Access 6568']);
     unset($tree['50000 Data Access 6119']);
   }
