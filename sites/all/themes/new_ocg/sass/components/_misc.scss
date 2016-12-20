@@ -3879,34 +3879,40 @@ text-align: left;
 *
 */
 
-.page-programs-ctd2-data-portal .ctd2-title {
+.page-programs-ctd2-data-portal .ctd2-title,
+.page-programs-ctd2-data-portal-network .ctd2-title {
     float: left;
     position: relative;
     min-height: 105px;
     width: 50%;
 }
 
-.page-programs-ctd2-data-portal .ctd2-image {
+.page-programs-ctd2-data-portal .ctd2-image,
+.page-programs-ctd2-data-portal-network .ctd2-image {
   float: right;
 }
 
-.page-programs-ctd2-data-portal .view-display-id-portal {
+.page-programs-ctd2-data-portal .view-display-id-portal,
+.page-programs-ctd2-data-portal-network .view-display-id-internal_portal {
     width: 100%;
     float: right;
 }
 
-.page-programs-ctd2-data-portal .view-display-id-updated {
+.page-programs-ctd2-data-portal .view-display-id-updated,
+.page-programs-ctd2-data-portal-network .view-display-id-updated {
     font-style: italic;
     color: #323232;
     position: absolute;
     bottom: 40%;
 }
 
-.page-programs-ctd2-data-portal .view-display-id-updated .views-row {
+.page-programs-ctd2-data-portal .view-display-id-updated .views-row,
+.page-programs-ctd2-data-portal-network .view-display-id-updated .views-row {
     margin-bottom: 0;
 }
 
-.page-programs-ctd2-data-portal .views-label {
+.page-programs-ctd2-data-portal .views-label,
+.page-programs-ctd2-data-portal-network .views-label {
       color: #323232;
     font-weight: normal;
     text-transform: none;
@@ -3915,7 +3921,8 @@ text-align: left;
     padding: 0;
 }
 
-.page-programs-ctd2-data-portal .methods-link a, .page-programs-ctd2-data-portal .methods-link a:visited {
+.page-programs-ctd2-data-portal .methods-link a, .page-programs-ctd2-data-portal .methods-link a:visited,
+.page-programs-ctd2-data-portal-network .methods-link a, .page-programs-ctd2-data-portal-network .methods-link a:visited {
   color: darkblue !important;
   text-decoration: none !important;
 }
