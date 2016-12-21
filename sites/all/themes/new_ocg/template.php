@@ -121,7 +121,7 @@ function new_ocg_preprocess_page(&$variables, $hook) {
   drupal_theme_initialize();
   $variables['new_logo'] = theme_get_setting('logo_path');
   
-  if (($views_page = views_get_page_view()) && $views_page->name === "cgci_data_matrix") {
+  if (($views_page = views_get_page_view()) && $views_page->name === "cgci_data_matrix" && $views_page->current_display === "primary_disease") {
     $variables['theme_hook_suggestions'][] = 'page__views__cgci';
   }
   if (($views_page = views_get_page_view()) && $views_page->name === "cgci_data_matrix" && $views_page->current_display === "target_primary_disease") {
