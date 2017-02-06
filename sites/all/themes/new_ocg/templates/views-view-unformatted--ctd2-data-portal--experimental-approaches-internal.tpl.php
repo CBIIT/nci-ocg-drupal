@@ -8,6 +8,7 @@
  */
 
 ?>
+<?php if (ctd2_ea_row_count_internal($view->result[0]->nid) > 0) { ?>
 <?php if (!empty($rows[0])) { ?>
 <?php 
 if (!empty($view->result[0]->field_field_span_rows)) {
@@ -26,5 +27,11 @@ if (!empty($view->result[0]->field_field_span_rows)) {
 <?php } else { ?>
   <td class="outer colSW" rowspan="<?php print $rowspan; ?>" style="vertical-align: middle;" headers="expapp_ch <?php print $view->result[0]->nid . '_bn ' . $view->args[0] . '_rh' . ctd2_row_classes($view->args[0], $view->result[0]->nid, 'field_experimental_approaches');?>">
     <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>></div>
+  </td>
+<?php } ?>
+<?php } else { ?>
+  <td class="outer colSW" rowspan="1" style="vertical-align: middle;" headers="expapp_ch <?php print $view->result[0]->nid . '_bn ' . $view->args[0] . '_rh' . ctd2_row_classes($view->args[0], $view->result[0]->nid, 'field_experimental_approaches');?>">
+  <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
+  </div>
   </td>
 <?php } ?>

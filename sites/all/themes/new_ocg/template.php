@@ -246,6 +246,23 @@ function ctd2_row_count($nid) {
     return $count;
 }
 
+function ctd2_ea_row_count($nid) {
+    $node = node_load($nid);
+    $rows = field_get_items('node', $node, 'field_row');
+    $count = 0;
+    foreach($rows as $row) {
+      $fc_item = field_collection_item_load($row['value']);
+      $internal = $fc_item->field_internal[LANGUAGE_NONE][0]['value'];
+      if($internal == 0) {
+        if(!empty($fc_item->field_experimental_approaches)){
+          $count++;
+        }
+      }
+    }
+    
+    return $count;
+}
+
 function ctd2_row_count_internal($nid) {
     $node = node_load($nid);
     $rows = field_get_items('node', $node, 'field_row');
@@ -255,6 +272,23 @@ function ctd2_row_count_internal($nid) {
       $internal = $fc_item->field_internal[LANGUAGE_NONE][0]['value'];
       if($internal == 1){
         $count++;
+      }
+    }
+    
+    return $count;
+}
+
+function ctd2_ea_row_count_internal($nid) {
+    $node = node_load($nid);
+    $rows = field_get_items('node', $node, 'field_row');
+    $count = 0;
+    foreach($rows as $row) {
+      $fc_item = field_collection_item_load($row['value']);
+      $internal = $fc_item->field_internal[LANGUAGE_NONE][0]['value'];
+      if($internal == 1) {
+        if(!empty($fc_item->field_experimental_approaches)){
+          $count++;
+        }
       }
     }
     
