@@ -31,10 +31,11 @@
             <?php print $label; ?>
           </th>
         <?php endforeach; ?>
-        <th id="expapp_ch" class="colheader" scope="col" width="16%">Experimental<br>Approaches</th>
-        <th id="data_ch" class="colheader" scope="col" width="11%">Data</th>
-        <th id="pi_ch" class="colheader" scope="col"width="15%">Principal<br>Investigator</th>
-        <th id="contact_ch" class="colheader" scope="col" width="12%">Contact Name</th>
+        <th id="expapp_ch" class="colheader" scope="col" width="14%">Experimental<br>Approaches</th>
+        <th id="data_ch" class="colheader" scope="col" width="9%">Data</th>
+        <th id="pi_ch" class="colheader" scope="col"width="13%">Principal<br>Investigator</th>
+        <th id="contact_ch" class="colheader" scope="col" width="10%">Contact Name</th>
+        <th id="contact_ch" class="colheader" scope="col" width="8%">Submission Date</th>
       </tr>
     </thead>
   <?php endif; ?>
@@ -42,7 +43,7 @@
     <?php foreach ($rows as $row_count => $row): ?>
       <tr <?php if ($row_classes[$row_count]) { print 'class="' . implode(' ', $row_classes[$row_count]) .'"';  } ?>>
         <?php foreach ($row as $field => $content): ?>
-          <th id="<?php print $result[0]->nid; ?>_bn" scope="col" colspan="5" class="projbanner">
+          <th id="<?php print $result[0]->nid; ?>_bn" scope="col" colspan="6" class="projbanner">
             <?php print $content; ?>
           </th>
         <?php endforeach; ?>

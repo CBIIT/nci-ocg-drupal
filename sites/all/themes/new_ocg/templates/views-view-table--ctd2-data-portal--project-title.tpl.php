@@ -36,6 +36,7 @@
           <?php print views_embed_view('ctd2_data_portal', 'principal_investigator', $result[$row_count]->field_collection_item_field_data_field_row_item_id); ?>
           <?php } ?>
           <?php print views_embed_view('ctd2_data_portal', 'contact_name', $result[$row_count]->field_collection_item_field_data_field_row_item_id); ?>
+          <?php print views_embed_view('ctd2_data_portal', 'submission_date', $result[$row_count]->field_collection_item_field_data_field_row_item_id); ?>
       <?php endforeach; ?>
       </tr>
     <?php endforeach; ?>
