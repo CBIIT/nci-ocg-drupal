@@ -4,3 +4,7 @@
   height: 200px;
   background-size: cover;
 }
+
+#navigation .block-superfish ul.sf-menu li a {
+  font-size: 20px;
+}
