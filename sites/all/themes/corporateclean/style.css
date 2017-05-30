@@ -425,7 +425,7 @@ table { border-spacing:0; border:0; width:100%;  }
 
 table td, table th { border:1px solid #bbbbbb; }
 
-table th { background:#222222; color:#ffffff; font-weight:bold; }
+table th { background:#de6a00; color:#ffffff; font-weight:bold; }
 
 table tr.odd { background:transparent; }
 
