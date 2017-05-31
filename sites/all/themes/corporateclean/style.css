@@ -23,7 +23,7 @@ input, textarea, select { font-family: "Lucida Grande","Lucida Sans Unicode",Seg
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6,
 #footer-bottom h1, #footer-bottom h2, #footer-bottom h3, #footer-bottom h4, #footer-bottom h5, #footer-bottom h6 { text-shadow:none; }
 
-p { margin:0 0 25px 0; }
+p { margin:0 0 10px 0; }
 
 a, li a.active { text-decoration:none; }
 
@@ -425,7 +425,7 @@ table { border-spacing:0; border:0; width:100%;  }
 
 table td, table th { border:1px solid #bbbbbb; }
 
-table th { background:#222222; color:#ffffff; font-weight:bold; }
+table th { background:#de6a00; color:#ffffff; font-weight:bold; }
 
 table tr.odd { background:transparent; }
 
