@@ -5,6 +5,32 @@
   background-size: cover;
 }
 
-#navigation .block-superfish ul.sf-menu li a {
+#navigation .block-superfish ul.sf-menu li a, #navigation .block-superfish ul.sf-menu li li a {
   font-size: 20px;
+}
+
+#navigation .block-superfish ul.sf-menu li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#content {
+  background: #ffffff;
+}
+
+.nolink {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  float: left;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  padding: 10px 30px 10px 10px;
+  text-transform: uppercase;
+}
+
+.nolink:hover {
+  color: #de6a00;
 }
