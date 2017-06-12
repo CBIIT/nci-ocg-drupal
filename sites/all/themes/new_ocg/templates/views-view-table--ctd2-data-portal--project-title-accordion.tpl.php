@@ -19,7 +19,7 @@
  * @ingroup views_templates
  */
 ?>
-<table>
+<table class="accordion-table">
     <?php foreach ($rows as $row_count => $row): ?>
       <tr <?php if ($row_classes[$row_count]) { print 'class="' . implode(' ', $row_classes[$row_count]) .'"';  } ?>>
         <?php foreach ($row as $field => $content): ?>

@@ -17,7 +17,7 @@
     }
     ?>
     <?php foreach ($rows as $id => $row): ?>
-      <td class="outer colSW" rowspan="<?php print $rowspan; ?>" style="vertical-align: middle;" headers="expapp_ch <?php print $view->result[0]->nid . '_bn ' . $view->args[0] . '_rh' . ctd2_row_classes($view->args[0], $view->result[0]->nid, 'field_experimental_approaches'); ?>">
+      <td width="14%" class="outer colSW" rowspan="<?php print $rowspan; ?>" style="vertical-align: middle;" headers="expapp_ch <?php print $view->result[0]->nid . '_bn ' . $view->args[0] . '_rh' . ctd2_row_classes($view->args[0], $view->result[0]->nid, 'field_experimental_approaches'); ?>">
         <div<?php if ($classes_array[$id]) {
         print ' class="' . $classes_array[$id] . '"';
       } ?>>
@@ -34,7 +34,7 @@
 
   if ($view->result[0]->field_collection_item_field_data_field_row_item_id == $current_row) {
     ?>
-    <td class="outer colSW" rowspan="1" style="vertical-align: middle;" headers="expapp_ch <?php print $view->result[0]->nid . '_bn ' . $view->args[0] . '_rh' . ctd2_row_classes($view->args[0], $view->result[0]->nid, 'field_experimental_approaches'); ?>"></td>
+    <td width="14%" class="outer colSW" rowspan="1" style="vertical-align: middle;" headers="expapp_ch <?php print $view->result[0]->nid . '_bn ' . $view->args[0] . '_rh' . ctd2_row_classes($view->args[0], $view->result[0]->nid, 'field_experimental_approaches'); ?>"></td>
   <?php
   } else {
     $span_included = FALSE;
@@ -56,7 +56,7 @@
     }
     if ($span_included == FALSE) {
       ?>
-      <td class="outer colSW" rowspan="1" style="vertical-align: middle;" headers="expapp_ch <?php print $view->result[0]->nid . '_bn ' . $view->args[0] . '_rh' . ctd2_row_classes($view->args[0], $view->result[0]->nid, 'field_experimental_approaches'); ?>"></td>    
+      <td width="14%" class="outer colSW" rowspan="1" style="vertical-align: middle;" headers="expapp_ch <?php print $view->result[0]->nid . '_bn ' . $view->args[0] . '_rh' . ctd2_row_classes($view->args[0], $view->result[0]->nid, 'field_experimental_approaches'); ?>"></td>    
     <?php
     }
   }

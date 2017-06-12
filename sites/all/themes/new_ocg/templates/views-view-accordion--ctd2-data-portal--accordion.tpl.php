@@ -19,7 +19,8 @@
  */
 
 ?>
-<table <?php if ($classes) { print 'class="'. $classes . '" '; } ?><?php print $attributes; ?> width="100%">
+
+<table class="views-table sticky-enabled cols-1 tableheader-processed sticky-table" width="100%">
    <?php if (!empty($title) || !empty($caption)) : ?>
      <caption><?php print $caption . $title; ?></caption>
   <?php endif; ?>

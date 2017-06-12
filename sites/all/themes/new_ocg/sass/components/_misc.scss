@@ -3880,7 +3880,8 @@ text-align: left;
 */
 
 .page-programs-ctd2-data-portal .ctd2-title,
-.page-programs-ctd2-data-portal-network .ctd2-title {
+.page-programs-ctd2-data-portal-network .ctd2-title,
+.page-programs-ctd2-data-portal-accordion .ctd2-title {
     float: left;
     position: relative;
     min-height: 105px;
@@ -3888,18 +3889,21 @@ text-align: left;
 }
 
 .page-programs-ctd2-data-portal .ctd2-image,
-.page-programs-ctd2-data-portal-network .ctd2-image {
+.page-programs-ctd2-data-portal-network .ctd2-image,
+.page-programs-ctd2-data-portal-accordion .ctd2-image {
   float: right;
 }
 
 .page-programs-ctd2-data-portal .view-display-id-portal,
-.page-programs-ctd2-data-portal-network .view-display-id-internal_portal {
+.page-programs-ctd2-data-portal-network .view-display-id-internal_portal,
+.page-programs-ctd2-data-portal-accordion .view-display-id-accordion {
     width: 100%;
     float: right;
 }
 
 .page-programs-ctd2-data-portal .view-display-id-updated,
-.page-programs-ctd2-data-portal-network .view-display-id-updated {
+.page-programs-ctd2-data-portal-network .view-display-id-updated,
+.page-programs-ctd2-data-portal-accordion .view-display-id-updated {
     font-style: italic;
     color: #323232;
     position: absolute;
@@ -3907,12 +3911,14 @@ text-align: left;
 }
 
 .page-programs-ctd2-data-portal .view-display-id-updated .views-row,
-.page-programs-ctd2-data-portal-network .view-display-id-updated .views-row {
+.page-programs-ctd2-data-portal-network .view-display-id-updated .views-row,
+.page-programs-ctd2-data-portal-accordion .view-display-id-updated .views-row {
     margin-bottom: 0;
 }
 
 .page-programs-ctd2-data-portal .views-label,
-.page-programs-ctd2-data-portal-network .views-label {
+.page-programs-ctd2-data-portal-network .views-label,
+.page-programs-ctd2-data-portal-accordion .views-label {
       color: #323232;
     font-weight: normal;
     text-transform: none;
@@ -3922,7 +3928,8 @@ text-align: left;
 }
 
 .page-programs-ctd2-data-portal .methods-link a, .page-programs-ctd2-data-portal .methods-link a:visited,
-.page-programs-ctd2-data-portal-network .methods-link a, .page-programs-ctd2-data-portal-network .methods-link a:visited {
+.page-programs-ctd2-data-portal-network .methods-link a, .page-programs-ctd2-data-portal-network .methods-link a:visited,
+.page-programs-ctd2-data-portal-accordion .methods-link a, .page-programs-ctd2-data-portal-accordion .methods-link a:visited {
   color: darkblue !important;
   text-decoration: none !important;
 }
@@ -3941,6 +3948,7 @@ text-align: left;
     font-weight: normal;
     white-space: nowrap;
     text-align: left;
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
 }
 
 .view-ctd2-data-portal tr {
@@ -4005,6 +4013,38 @@ th.projbanner a {
 
 .view-ctd2-data-portal .views-field-field-contact-link li {
   list-style: none;
+}
+
+.view-id-ctd2_data_portal fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.view-id-ctd2_data_portal fieldset legend {
+  color: white;
+  font-size: 16px;
+  background-color: #F25F2D;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  vertical-align: middle;
+  height: 31px;
+  font-weight: normal !important;
+  
+  width:100%;
+}
+
+.view-id-ctd2_data_portal .fieldset-legend a {
+  color: white !important;
+}
+
+html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.accordion-table {
+  margin: 0;
 }
 
 /*
