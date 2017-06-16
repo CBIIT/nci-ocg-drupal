@@ -19,6 +19,8 @@
  * @ingroup views_templates
  */
 ?>
+<br />
+<?php //print '<p><a class="expand-collapse" href="#">Expand All</a></p>'; ?>
 <table <?php if ($classes) { print 'class="'. $classes . '" '; } ?><?php print $attributes; ?> width="100%">
    <?php if (!empty($title) || !empty($caption)) : ?>
      <caption><?php print $caption . $title; ?></caption>
@@ -26,11 +28,7 @@
   <?php //if (!empty($header)) : ?>
     <thead>
       <tr>
-        <?php foreach ($header as $field => $label): ?>
-          <th id="projtitle_ch" class="colheader" scope="col" width="46%">
-            <?php print $label; ?>
-          </th>
-        <?php endforeach; ?>
+        <th id="projtitle_ch" class="colheader" scope="col" width="46%">Project Title</th>
         <th id="expapp_ch" class="colheader" scope="col" width="14%">Experimental<br>Approaches</th>
         <th id="data_ch" class="colheader" scope="col" width="9%">Data</th>
         <th id="pi_ch" class="colheader" scope="col"width="13%">Principal<br>Investigator</th>
@@ -47,7 +45,6 @@
             <?php print $content; ?>
           </th>
         <?php endforeach; ?>
-        <?php print views_embed_view('ctd2_data_portal', 'project_title', $result[$row_count]->nid); ?>
       </tr>
     <?php endforeach; ?>
   </tbody>

@@ -19,8 +19,8 @@
  * @ingroup views_templates
  */
 ?>
-<table class="accordion-table">
-    <?php foreach ($rows as $row_count => $row): ?>
+  <table class="accordion-table"> 
+  <?php foreach ($rows as $row_count => $row): ?>
       <tr <?php if ($row_classes[$row_count]) { print 'class="' . implode(' ', $row_classes[$row_count]) .'"';  } ?>>
         <?php foreach ($row as $field => $content): ?>
           <th width="46%" id="<?php print $result[$row_count]->field_collection_item_field_data_field_row_item_id . '_rh'; ?>" scope="row"<?php if ($field_classes[$field][$row_count]) { print 'class="rowheader '. $field_classes[$field][$row_count] . '" '; } ?><?php print drupal_attributes($field_attributes[$field][$row_count]); ?>>
@@ -41,4 +41,4 @@
       <?php endforeach; ?>
       </tr>
     <?php endforeach; ?>
-</table>
+  </table>
