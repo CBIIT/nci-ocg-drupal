@@ -33,7 +33,7 @@
         <th id="data_ch" class="colheader" scope="col" width="9%">Data</th>
         <th id="pi_ch" class="colheader" scope="col"width="13%">Principal<br>Investigator</th>
         <th id="contact_ch" class="colheader" scope="col" width="10%">Contact Name</th>
-        <th id="contact_ch" class="colheader" scope="col" width="8%">Submission Date</th>
+        <th id="submission_ch" class="colheader" scope="col" width="8%">Submission<br>Date</th>
       </tr>
     </thead>
   <?php //endif; ?>

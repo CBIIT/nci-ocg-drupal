@@ -3954,6 +3954,10 @@ text-align: left;
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
 }
 
+.view-id-ctd2_data_portal table {
+  table-layout: fixed;
+}
+
 .view-ctd2-data-portal th.colheader {
     background-color: rgb(153, 0, 0);
     color: #fff;
