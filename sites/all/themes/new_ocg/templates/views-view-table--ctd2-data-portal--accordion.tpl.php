@@ -20,6 +20,8 @@
  */
 ?>
 <br />
+<p><a class="open-close" href="#">Expand All</a></p>
+
 <?php //print '<p><a class="expand-collapse" href="#">Expand All</a></p>'; ?>
 <table <?php if ($classes) { print 'class="'. $classes . '" '; } ?><?php print $attributes; ?> width="100%">
    <?php if (!empty($title) || !empty($caption)) : ?>
