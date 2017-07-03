@@ -19,11 +19,11 @@
  */
 ?>
 <?php
-foreach ($rows as $row) {
+foreach ($rows as $row_number => $row) {
   
   switch ($row['field_availability']) {
     case 'Unavailable':
-      $header = '<span' . $rows[$column1]['field_link'] . '>' . $row['field_link'] . '</span><br />';
+      $header = '<span>' . $row['field_link'] . '</span><br />';
       break;
     case 'Protected':
       $header = '<a class="protected" target="_blank"' . $row['field_link'] . ' href="' . $row['field_link_1'] . '">' . $row['field_link'] . '</a><br />';
