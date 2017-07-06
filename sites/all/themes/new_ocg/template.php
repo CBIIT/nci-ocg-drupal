@@ -302,23 +302,22 @@ function ctd2_ea_row_count_internal($nid) {
 }
 
 function embed_cgci_view($viewname, $display, $filter, $view_label) {
-  
-  $viewcheck = views_get_view($viewname) or die('no such view');
-  $viewcheck->set_display($display);
-  $viewcheck->args = array($filter);
-  $viewcheck->pre_execute();
-  $viewcheck->execute();
 
-    //if (!empty($viewcheck->result[0]->field_collection_item_field_data_field_column_header_item_id)) {
-      $embed = views_embed_view($viewname, $display, $filter);
+  $embed = views_embed_view($viewname, $display, $filter);
   
-      $output = '<div class="views-field views-field-view">
-                  <span class="views-label views-label-view">' . $view_label. ': </span>
-                  <span class="field-content">' . 
-                    $embed . 
-                  '</span>
-                </div>';  
+  $output = '<div class="views-field views-field-view">
+              <span class="views-label views-label-view">' . $view_label. ': </span>
+              <span class="field-content">' . 
+                $embed . 
+              '</span>
+            </div>';  
       
-      return $output;      
-    //}
+  return $output;      
+}
+
+function embed_target_view($viewname, $display, $filter) {
+
+  $embed = views_embed_view($viewname, $display, $filter);
+  
+  return $embed;      
 }

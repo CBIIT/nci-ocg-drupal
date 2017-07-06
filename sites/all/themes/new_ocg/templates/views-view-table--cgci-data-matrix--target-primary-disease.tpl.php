@@ -102,12 +102,12 @@ if ($classes) {
             <?php endforeach; ?>
             </div>
           </td>
-          <?php print views_embed_view('cgci_data_matrix', 'target_gene_expression_column_header', $disease->item_id->value()); ?>
-          <?php print views_embed_view('cgci_data_matrix', 'target_copy_number_column_header', $disease->item_id->value()); ?>
-          <?php print views_embed_view('cgci_data_matrix', 'target_methylation_column_header', $disease->item_id->value()); ?>
-          <?php print views_embed_view('cgci_data_matrix', 'target_mirna_column_header', $disease->item_id->value()); ?>
-          <?php print views_embed_view('cgci_data_matrix', 'target_column_header', $disease->item_id->value()); ?>
-          <?php print views_embed_view('cgci_data_matrix', 'target_other_column_header', $disease->item_id->value()); ?>
+          <?php print embed_target_view('cgci_data_matrix', 'target_gene_expression_column_header', $disease->item_id->value()); ?>
+          <?php print embed_target_view('cgci_data_matrix', 'target_copy_number_column_header', $disease->item_id->value()); ?>
+          <?php print embed_target_view('cgci_data_matrix', 'target_methylation_column_header', $disease->item_id->value()); ?>
+          <?php print embed_target_view('cgci_data_matrix', 'target_mirna_column_header', $disease->item_id->value()); ?>
+          <?php print embed_target_view('cgci_data_matrix', 'target_column_header', $disease->item_id->value()); ?>
+          <?php print embed_target_view('cgci_data_matrix', 'target_other_column_header', $disease->item_id->value()); ?>
     </tr>
   <?php endforeach; ?>
 <?php endforeach; ?>
