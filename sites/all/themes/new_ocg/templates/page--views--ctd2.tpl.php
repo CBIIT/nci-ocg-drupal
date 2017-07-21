@@ -112,7 +112,7 @@
     </div>
       </div>
       <div>
-    <img class="ctd2-image" style="height: 105px;" class="media-element file-default" typeof="foaf:Image" src="/sites/default/files/cdt2_banner.jpg" width="719" height="310" alt="">
+        <a href="/programs/ctd2"><img class="ctd2-image" style="height: 105px;" class="media-element file-default" typeof="foaf:Image" src="/sites/default/files/cdt2_banner.jpg" width="719" height="310" alt=""></a>
       </div>
       <?php print render($title_suffix); ?>
       <?php print render($tabs); ?>
