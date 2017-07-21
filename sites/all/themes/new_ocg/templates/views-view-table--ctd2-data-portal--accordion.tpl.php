@@ -20,9 +20,8 @@
  */
 ?>
 <br />
-<p><a class="open-close" href="#">Expand All</a></p>
+<p class="expand-flex"><a class="open-close-all" href="#">Expand All</a> <a class="open-close-new" href="#">Expand All New Projects</a> <a class="open-close-completed" href="#">Expand All Completed Projects</a></p>
 
-<?php //print '<p><a class="expand-collapse" href="#">Expand All</a></p>'; ?>
 <table <?php if ($classes) { print 'class="'. $classes . '" '; } ?><?php print $attributes; ?> width="100%">
    <?php if (!empty($title) || !empty($caption)) : ?>
      <caption><?php print $caption . $title; ?></caption>
@@ -43,7 +42,7 @@
     <?php foreach ($rows as $row_count => $row): ?>
       <tr <?php if ($row_classes[$row_count]) { print 'class="' . implode(' ', $row_classes[$row_count]) .'"';  } ?>>
         <?php foreach ($row as $field => $content): ?>
-          <th id="<?php print $result[$row_count]->nid; ?>_bn" scope="col" colspan="6" class="projbanner">
+          <th id="<?php print $result[$row_count]->nid; ?>_bn" scope="col" colspan="6" class="projbanner <?php print $result[$row_count]->field_field_status[0]['rendered']['#markup']; ?>">
             <?php print $content; ?>
           </th>
         <?php endforeach; ?>

@@ -80,7 +80,7 @@ $(document).ready (function (){
     }
   });
   
-  $(".open-close").click(function(e) {
+  $(".open-close-all").click(function(e) {
     if($('.views-field-field-institute').hasClass('ui-corner-all')) {
       $('.ui-accordion-header').removeClass('ui-corner-all').addClass('ui-accordion-header-active ui-state-active ui-corner-top').attr({'aria-selected':'true','tabindex':'0'});
       $('.ui-accordion-header .ui-icon').removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s');
@@ -92,6 +92,40 @@ $(document).ready (function (){
       $('.ui-accordion-header .ui-icon').removeClass('ui-icon-triangle-1-s').addClass('ui-icon-triangle-1-e');
       $('.ui-accordion-content').removeClass('ui-accordion-content-active').attr({'aria-expanded':'false','aria-hidden':'true'}).hide();
       $(this).text('Expand All');
+      e.preventDefault();
+    }
+    
+  });
+  
+  $(".open-close-new").click(function(e) {
+    if($('.New').hasClass('ui-corner-all')) {
+      $('.New').removeClass('ui-corner-all').addClass('ui-accordion-header-active ui-state-active ui-corner-top').attr({'aria-selected':'true','tabindex':'0'});
+      $('.New .ui-icon').removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s');
+      $('.New').siblings('.ui-accordion-content').addClass('ui-accordion-content-active').attr({'aria-expanded':'true','aria-hidden':'false'}).show();
+      $(this).text('Collapse All New Projects');
+      e.preventDefault();
+    } else {
+      $('.New').removeClass('ui-accordion-header-active ui-state-active ui-corner-top').addClass('ui-corner-all').attr({'aria-selected':'false','tabindex':'-1'});
+      $('.New .ui-icon').removeClass('ui-icon-triangle-1-s').addClass('ui-icon-triangle-1-e');
+      $('.New').siblings('.ui-accordion-content').removeClass('ui-accordion-content-active').attr({'aria-expanded':'false','aria-hidden':'true'}).hide();
+      $(this).text('Expand All New Projects');
+      e.preventDefault();
+    }
+    
+  });
+  
+  $(".open-close-completed").click(function(e) {
+    if($('.Completed').hasClass('ui-corner-all')) {
+      $('.Completed').removeClass('ui-corner-all').addClass('ui-accordion-header-active ui-state-active ui-corner-top').attr({'aria-selected':'true','tabindex':'0'});
+      $('.Completed .ui-icon').removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s');
+      $('.Completed').siblings('.ui-accordion-content').addClass('ui-accordion-content-active').attr({'aria-expanded':'true','aria-hidden':'false'}).show();
+      $(this).text('Collapse All Completed Projects');
+      e.preventDefault();
+    } else {
+      $('.Completed').removeClass('ui-accordion-header-active ui-state-active ui-corner-top').addClass('ui-corner-all').attr({'aria-selected':'false','tabindex':'-1'});
+      $('.Completed .ui-icon').removeClass('ui-icon-triangle-1-s').addClass('ui-icon-triangle-1-e');
+      $('.Completed').siblings('.ui-accordion-content').removeClass('ui-accordion-content-active').attr({'aria-expanded':'false','aria-hidden':'true'}).hide();
+      $(this).text('Expand All Completed Projects');
       e.preventDefault();
     }
     

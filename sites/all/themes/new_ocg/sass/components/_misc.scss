@@ -3941,6 +3941,11 @@ text-align: left;
   text-decoration: none !important;
 }
 
+.expand-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .view-display-id-accordion {
   width: 100%
 }
@@ -3987,9 +3992,42 @@ th.projbanner {
   text-align: left;
 }
 
+th.New {
+  color: white;
+  font-size: 16px;
+  background-color: #F25F2D;
+  border-right: 1px solid rgb(235, 235, 235);
+  border-bottom: 1px solid rgb(235, 235, 235);
+  vertical-align: middle;
+  height: 20px;
+  font-weight: normal !important;
+  text-align: left;
+}
+
+th.Completed {
+  background: #969696;
+  background: -moz-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #969696), color-stop(40%, #939393), color-stop(100%, #797979));
+  background: -webkit-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  background: -o-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  background: -ms-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
+  background: linear-gradient(to bottom, #969696 1%, #939393 40%, #797979 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#797979',GradientType=0 );
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#797979',GradientType=0 );
+}
+
 th.projbanner a {
   color: white !important;
 }
+
+.Completed .ui-icon {
+    background-image: url(../images/ui-icons_990000_256x240.png) !important;
+}
+
+.New .ui-icon {
+    background-image: url(../images/ui-icons_ffffff_256x240.png) !important;
+}
+
 
 .view-ctd2-data-portal .projcell {
 }
