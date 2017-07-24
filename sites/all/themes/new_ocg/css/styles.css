@@ -5371,7 +5371,7 @@ th.projbanner {
 }
 
 /* line 3995, ../sass/components/_misc.scss */
-th.New {
+th.current {
   color: white;
   font-size: 16px;
   background-color: #F25F2D;
@@ -5384,7 +5384,7 @@ th.New {
 }
 
 /* line 4007, ../sass/components/_misc.scss */
-th.Completed {
+th.completed {
   background: #969696;
   background: -moz-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #969696), color-stop(40%, #939393), color-stop(100%, #797979));
@@ -5402,12 +5402,12 @@ th.projbanner a {
 }
 
 /* line 4023, ../sass/components/_misc.scss */
-.Completed .ui-icon {
+.completed .ui-icon {
   background-image: url(../images/ui-icons_990000_256x240.png) !important;
 }
 
 /* line 4027, ../sass/components/_misc.scss */
-.New .ui-icon {
+.current .ui-icon {
   background-image: url(../images/ui-icons_ffffff_256x240.png) !important;
 }
 

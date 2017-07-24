@@ -20,7 +20,7 @@
  */
 ?>
 <br />
-<p class="expand-flex"><a class="open-close-all" href="#">Expand All</a> <a class="open-close-new" href="#">Expand All New Projects</a> <a class="open-close-completed" href="#">Expand All Completed Projects</a></p>
+<p class="expand-flex"><a class="open-close-all" href="#">Expand All</a> <a class="open-close-current" href="#">Expand All Current Projects</a> <a class="open-close-completed" href="#">Expand All Completed Projects</a></p>
 
 <table <?php if ($classes) { print 'class="'. $classes . '" '; } ?><?php print $attributes; ?> width="100%">
    <?php if (!empty($title) || !empty($caption)) : ?>

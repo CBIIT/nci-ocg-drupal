@@ -3992,7 +3992,7 @@ th.projbanner {
   text-align: left;
 }
 
-th.New {
+th.current {
   color: white;
   font-size: 16px;
   background-color: #F25F2D;
@@ -4004,7 +4004,7 @@ th.New {
   text-align: left;
 }
 
-th.Completed {
+th.completed {
   background: #969696;
   background: -moz-linear-gradient(top, #969696 1%, #939393 40%, #797979 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #969696), color-stop(40%, #939393), color-stop(100%, #797979));
@@ -4020,11 +4020,11 @@ th.projbanner a {
   color: white !important;
 }
 
-.Completed .ui-icon {
+.completed .ui-icon {
     background-image: url(../images/ui-icons_990000_256x240.png) !important;
 }
 
-.New .ui-icon {
+.current .ui-icon {
     background-image: url(../images/ui-icons_ffffff_256x240.png) !important;
 }
 
