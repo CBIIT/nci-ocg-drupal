@@ -97,6 +97,10 @@ $(document).ready (function (){
       $('.completed').removeClass('ui-accordion-header-active ui-state-active ui-corner-top').addClass('ui-corner-all').attr({'aria-selected':'false','tabindex':'-1'});
       $('.completed .ui-icon').removeClass('ui-icon-triangle-1-s').addClass('ui-icon-triangle-1-e');
       $('.completed').siblings('.ui-accordion-content').removeClass('ui-accordion-content-active').attr({'aria-expanded':'false','aria-hidden':'true'}).hide();
+      var rows = $('.views-table tr.row-sort').length;
+      for(i=0; i<=rows; i++){
+        $('.row-'+ i).appendTo('table.views-table');
+      }
       $(this).text('Expand All');
       $('.open-close-current').text('Expand All Current Projects');
       $('.open-close-completed').text('Expand All Completed Projects');
@@ -106,16 +110,26 @@ $(document).ready (function (){
   });
   
   $(".open-close-current").click(function(e) {
-    if($('.current').hasClass('ui-corner-all')) {
+    if($('.current').hasClass('ui-corner-all')) { 
       $('.current').removeClass('ui-corner-all').addClass('ui-accordion-header-active ui-state-active ui-corner-top').attr({'aria-selected':'true','tabindex':'0'});
       $('.current .ui-icon').removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s');
       $('.current').siblings('.ui-accordion-content').addClass('ui-accordion-content-active').attr({'aria-expanded':'true','aria-hidden':'false'}).show();
+      if($('tr').is('.row-1.current-row')) {
+        console.log('Hello');
+        $('.row-1').siblings('tr.current-row').insertAfter($('.row-1'));
+      } else {
+        $('tr.current-row').insertBefore($('.row-1'));
+      }     
       $(this).text('Collapse All Current Projects');
       e.preventDefault();
     } else {
       $('.current').removeClass('ui-accordion-header-active ui-state-active ui-corner-top').addClass('ui-corner-all').attr({'aria-selected':'false','tabindex':'-1'});
       $('.current .ui-icon').removeClass('ui-icon-triangle-1-s').addClass('ui-icon-triangle-1-e');
       $('.current').siblings('.ui-accordion-content').removeClass('ui-accordion-content-active').attr({'aria-expanded':'false','aria-hidden':'true'}).hide();
+      var rows = $('.views-table tr.row-sort').length;
+      for(i=0; i<=rows; i++){
+        $('.row-'+ i).appendTo('table.views-table');
+      }
       $(this).text('Expand All Current Projects');
       e.preventDefault();
     }
@@ -127,12 +141,21 @@ $(document).ready (function (){
       $('.completed').removeClass('ui-corner-all').addClass('ui-accordion-header-active ui-state-active ui-corner-top').attr({'aria-selected':'true','tabindex':'0'});
       $('.completed .ui-icon').removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s');
       $('.completed').siblings('.ui-accordion-content').addClass('ui-accordion-content-active').attr({'aria-expanded':'true','aria-hidden':'false'}).show();
+      if($('tr').is('.row-1.completed-row')) {
+        $('.row-1').siblings('tr.completed-row').insertAfter($('.row-1'));
+      } else {
+        $('tr.completed-row').insertBefore($('.row-1'));
+      }
       $(this).text('Collapse All Completed Projects');
       e.preventDefault();
     } else {
       $('.completed').removeClass('ui-accordion-header-active ui-state-active ui-corner-top').addClass('ui-corner-all').attr({'aria-selected':'false','tabindex':'-1'});
       $('.completed .ui-icon').removeClass('ui-icon-triangle-1-s').addClass('ui-icon-triangle-1-e');
       $('.completed').siblings('.ui-accordion-content').removeClass('ui-accordion-content-active').attr({'aria-expanded':'false','aria-hidden':'true'}).hide();
+      var rows = $('.views-table tr.row-sort').length;
+      for(i=0; i<=rows; i++){
+        $('.row-'+ i).appendTo('table.views-table');
+      }
       $(this).text('Expand All Completed Projects');
       e.preventDefault();
     }

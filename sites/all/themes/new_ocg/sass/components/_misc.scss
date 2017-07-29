@@ -4016,6 +4016,10 @@ th.completed {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#797979',GradientType=0 );
 }
 
+.ui-state-active {
+  background: none;
+}
+
 th.projbanner a {
   color: white !important;
 }
