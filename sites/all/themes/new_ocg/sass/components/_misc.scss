@@ -4487,7 +4487,18 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   padding-bottom: 5px;
 }
 
+/* TARGET Publications */
 
+.view-project-features .views-label-field-view-field-embed {
+  color: #900;
+  text-transform: none;
+  font-weight: normal;
+  float: none;
+}
+
+.view-project-features .view-target-publications {
+  float: left;
+}
 
 @media all and (max-width: 1160px) {
 
