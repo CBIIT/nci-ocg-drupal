@@ -200,6 +200,19 @@ function custom_views_query_alter(&$view, &$query) {
     //$query->where[0]['type'] = 'OR';
     //$query->where[0]['conditions'][0]['value'][':field_data_field_news_program_field_news_program_target_id'] = $query->where[0]['conditions'][1]['value'][':field_data_field_publication_program_field_publication_program_target_id'];
   }
+  if ($view->name == 'news_and_publications' && $view->current_display == 'not_ctd2') {
+    // override the ordering
+    // this is because the two different date fields are one or the other
+    // but not both fields, so we coalesce.
+    $query->orderby = array(
+        array(
+            'field' => 'COALESCE( field_data_field_publication_date_field_publication_date_val, field_data_field_news_date_field_news_date_value)',
+            'direction' => 'DESC',
+        )
+    );
+    //$query->where[0]['type'] = 'OR';
+    //$query->where[0]['conditions'][0]['value'][':field_data_field_news_program_field_news_program_target_id'] = $query->where[0]['conditions'][1]['value'][':field_data_field_publication_program_field_publication_program_target_id'];
+  }
   if ($view->name == 'publications' && $view->current_display == 'featured_news_publications') {
     // override the ordering
     // this is because the two different date fields are one or the other
@@ -234,6 +247,18 @@ function custom_views_pre_render(&$view) {
     foreach ($view->result as $result) {
       $result->node_title_upper = strtoupper($result->node_title);
     }
+  }
+  if ($view->name == 'news_and_publications' && $view->current_display == 'block_5') {
+    //Load views_2
+    $view2 = views_get_view('news_and_publications'); //View Name
+    $view2->preview('not_ctd2'); //View Display
+
+    //Check for empty results
+    if(empty($view2->result)){
+      return;
+    }
+
+    $view->result = array_merge($view->result, $view2->result);
   }
 }
 
