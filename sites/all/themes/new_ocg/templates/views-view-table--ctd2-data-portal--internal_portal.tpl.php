@@ -27,15 +27,15 @@
     <thead>
       <tr>
         <?php foreach ($header as $field => $label): ?>
-          <th id="projtitle_ch" class="colheader" scope="col" width="46%">
+          <th id="projtitle_ch" class="colheader" scope="col" width="45%">
             <?php print $label; ?>
           </th>
         <?php endforeach; ?>
         <th id="expapp_ch" class="colheader" scope="col" width="14%">Experimental<br>Approaches</th>
         <th id="data_ch" class="colheader" scope="col" width="9%">Data</th>
         <th id="pi_ch" class="colheader" scope="col"width="13%">Principal<br>Investigator</th>
-        <th id="contact_ch" class="colheader" scope="col" width="10%">Contact Name</th>
-        <th id="contact_ch" class="colheader" scope="col" width="8%">Submission Date</th>
+        <th id="contact_ch" class="colheader" scope="col" width="9%">Contact Name</th>
+        <th id="contact_ch" class="colheader" scope="col" width="10%">Submission<br>Date</th>
       </tr>
     </thead>
   <?php endif; ?>
