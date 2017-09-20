@@ -4297,15 +4297,24 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 
 .view-homepage .views-field-field-ocg-mission-links .field-content,
 .view-homepage .views-field-field-data-access-links .field-content{
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-inline-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
+  -ms-flex-pack: center;
 }
 
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link,
 .view-homepage .views-field-field-data-access-links .field-content .data-link {
   width: 12%;
-  /* height: 50px;*/
+  height: 40px;
   padding: 20px 5px;
   text-align: center;
   background-color: #900;
@@ -4314,7 +4323,6 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   font-weight: bold;
   border: 3px outset #900;
   display: flex;
-  float: left;
 }
 
 .view-homepage .views-field-field-data-access-links .field-content .data-link-text {
