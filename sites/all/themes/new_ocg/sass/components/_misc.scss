@@ -4326,6 +4326,16 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   float: left;
 }
 
+.lt-ie9 .views-field-field-data-access-links .field-content .data-link {
+    width: 20%;
+    margin-right: 2.5%;
+}
+
+.lt-ie9 .view-homepage .views-field-field-data-access-links .field-content {
+    margin: auto;
+    width: 65%;
+}
+
 .view-homepage .views-field-field-data-access-links .field-content .data-link-text {
   width: 100%;
   align-self: center;
