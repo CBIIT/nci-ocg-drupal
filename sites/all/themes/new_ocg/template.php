@@ -301,6 +301,30 @@ function ctd2_ea_row_count_internal($nid) {
     return $count;
 }
 
+function ctd2_pi_row_count_internal($nid, $fc_id) {
+    $rows = views_get_view_result('ctd2_data_portal', 'internal_project_title', $nid);
+    $row_ids = array();
+    foreach($rows as $row) {
+      $fc_item = field_collection_item_load($row->field_collection_item_field_data_field_row_item_id);
+      $internal = $fc_item->field_internal[LANGUAGE_NONE][0]['value'];
+      if($internal == 1) {
+        $row_ids[] = $fc_item->item_id;
+        }
+      }
+    $position = array_search($fc_id, $row_ids) + 1;
+    $new_array = array_slice($row_ids, $position);
+    $row_span = 1;
+    foreach ($new_array as $array_element) {
+      $pi_item = field_collection_item_load($array_element);
+      if (!empty($pi_item->field_principal_investigator)) {
+        break;
+      }
+      $row_span++;
+      
+    }
+    return $row_span;
+}
+
 function embed_cgci_view($viewname, $display, $filter, $view_label) {
 
   $embed = views_embed_view($viewname, $display, $filter);
