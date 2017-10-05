@@ -211,7 +211,7 @@ function ctd2_row_classes($item_id, $nid, $field) {
   }
 }
 
-function ctd2_pi_row_classes_internal($nid) {
+function ctd2_pi_row_classes_internal($nid, $fc_id) {
   try {
     $rows = views_get_view_result('ctd2_data_portal', 'internal_project_title', $nid);
     $row_ids = array();
@@ -246,7 +246,7 @@ function ctd2_pi_row_classes_internal($nid) {
   }
 }
 
-function ctd2_pi_row_classes($nid) {
+function ctd2_pi_row_classes($nid, $fc_id) {
   try {
     $rows = views_get_view_result('ctd2_data_portal', 'project_title', $nid);
     $row_ids = array();
