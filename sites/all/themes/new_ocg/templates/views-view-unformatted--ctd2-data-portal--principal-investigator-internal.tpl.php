@@ -10,7 +10,7 @@
 <?php if (!empty($rows[0])) { ?>
 
 <?php foreach ($rows as $id => $row): ?>
-  <td class="outer colNM" rowspan="<?php print ctd2_pi_row_count_internal($view->result[0]->nid, $view->args[0]); ?>" style="vertical-align: middle; text-align: center;" headers="pi_ch <?php print $view->result[0]->nid . '_bn ' . $view->args[0] . '_rh' . ctd2_pi_row_classes($view->args[0], $view->result[0]->nid, 'field_principal_investigator');?>">
+  <td class="outer colNM" rowspan="<?php print ctd2_pi_row_count_internal($view->result[0]->nid, $view->args[0]); ?>" style="vertical-align: middle; text-align: center;" headers="pi_ch <?php print $view->result[0]->nid . '_bn ' . ctd2_pi_row_classes_internal($view->result[0]->nid) . $view->args[0] . '_rh';?>">
   <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
     <?php print $row; ?>
   </div>

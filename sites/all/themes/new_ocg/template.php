@@ -211,22 +211,66 @@ function ctd2_row_classes($item_id, $nid, $field) {
   }
 }
 
-function ctd2_pi_row_classes($item_id, $nid, $field) {
+function ctd2_pi_row_classes_internal($nid) {
   try {
-    $class = '';
-    $field_collection = entity_metadata_wrapper('field_collection_item', $item_id);
-    if (!empty($field_collection->$field->value())) {
-      $node = node_load($nid);
-      $row_ids = field_get_items('node', $node, 'field_row');
-      $row_classes = array_slice($row_ids, $field_collection->field_row_number->value(), count($row_ids));
-      foreach($row_classes as $row_class) {
-        $class = $class . ' ' . $row_class['value'] . '_rh';
+    $rows = views_get_view_result('ctd2_data_portal', 'internal_project_title', $nid);
+    $row_ids = array();
+    foreach($rows as $row) {
+      $fc_item = field_collection_item_load($row->field_collection_item_field_data_field_row_item_id);
+      $internal = $fc_item->field_internal[LANGUAGE_NONE][0]['value'];
+      if($internal == 1) {
+        $row_ids[] = $fc_item->item_id;
+        }
       }
-    
-      return $class;
+    $position = array_search($fc_id, $row_ids) + 1;
+    $new_array = array_slice($row_ids, $position);
+    $pi_list = '';
+    foreach ($new_array as $array_element) {
+      $pi_item = field_collection_item_load($array_element);
+      if (!empty($pi_item->field_principal_investigator)) {
+        break;
+      }
+      $pi_list .= $array_element . '_rh, ';
+      
     }
-  
+    return $pi_list;
   }
+  
+  catch (EntityMetadataWrapperException $exc) {
+    watchdog(
+      'CTD2 Data Portal',
+      'EntityMetadataWrapper exception in %function() @trace',
+      array('%function' => __FUNCTION__, '@trace' => $exc->getTraceAsString()),
+      WATCHDOG_ERROR
+    );
+  }
+}
+
+function ctd2_pi_row_classes($nid) {
+  try {
+    $rows = views_get_view_result('ctd2_data_portal', 'project_title', $nid);
+    $row_ids = array();
+    foreach($rows as $row) {
+      $fc_item = field_collection_item_load($row->field_collection_item_field_data_field_row_item_id);
+      $internal = $fc_item->field_internal[LANGUAGE_NONE][0]['value'];
+      if($internal == 0) {
+        $row_ids[] = $fc_item->item_id;
+        }
+      }
+    $position = array_search($fc_id, $row_ids) + 1;
+    $new_array = array_slice($row_ids, $position);
+    $pi_list = '';
+    foreach ($new_array as $array_element) {
+      $pi_item = field_collection_item_load($array_element);
+      if (!empty($pi_item->field_principal_investigator)) {
+        break;
+      }
+      $pi_list .= $array_element . '_rh, ';
+      
+    }
+    return $pi_list;
+  }
+  
   catch (EntityMetadataWrapperException $exc) {
     watchdog(
       'CTD2 Data Portal',
@@ -308,6 +352,30 @@ function ctd2_pi_row_count_internal($nid, $fc_id) {
       $fc_item = field_collection_item_load($row->field_collection_item_field_data_field_row_item_id);
       $internal = $fc_item->field_internal[LANGUAGE_NONE][0]['value'];
       if($internal == 1) {
+        $row_ids[] = $fc_item->item_id;
+        }
+      }
+    $position = array_search($fc_id, $row_ids) + 1;
+    $new_array = array_slice($row_ids, $position);
+    $row_span = 1;
+    foreach ($new_array as $array_element) {
+      $pi_item = field_collection_item_load($array_element);
+      if (!empty($pi_item->field_principal_investigator)) {
+        break;
+      }
+      $row_span++;
+      
+    }
+    return $row_span;
+}
+
+function ctd2_pi_row_count($nid, $fc_id) {
+    $rows = views_get_view_result('ctd2_data_portal', 'project_title', $nid);
+    $row_ids = array();
+    foreach($rows as $row) {
+      $fc_item = field_collection_item_load($row->field_collection_item_field_data_field_row_item_id);
+      $internal = $fc_item->field_internal[LANGUAGE_NONE][0]['value'];
+      if($internal == 0) {
         $row_ids[] = $fc_item->item_id;
         }
       }
