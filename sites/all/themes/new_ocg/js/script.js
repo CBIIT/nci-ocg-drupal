@@ -60,7 +60,7 @@ $(document).ready (function (){
     $(document.getElementById(url)).removeClass('collapsed');
   }
   
-  $('.fieldset-title').click(function () {
+  $('.view-centers .fieldset-title').click(function () {
       var $this = $(this);
       $('fieldset').addClass('collapsed');
       $this.parent().parent().parent().removeClass('collapsed');
@@ -115,7 +115,6 @@ $(document).ready (function (){
       $('.current .ui-icon').removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s');
       $('.current').siblings('.ui-accordion-content').addClass('ui-accordion-content-active').attr({'aria-expanded':'true','aria-hidden':'false'}).show();
       if($('tr').is('.row-1.current-row')) {
-        console.log('Hello');
         $('.row-1').siblings('tr.current-row').insertAfter($('.row-1'));
       } else {
         $('tr.current-row').insertBefore($('.row-1'));
