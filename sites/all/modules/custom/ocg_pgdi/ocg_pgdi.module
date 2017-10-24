@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OCG PGDI feature.
+ */
+
+include_once 'ocg_pgdi.features.inc';
