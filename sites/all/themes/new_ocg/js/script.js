@@ -68,6 +68,14 @@ $(document).ready (function (){
       $('.view-display-id-projects_description span').hide();
   });
   
+  $('.views-field-field-current-project .anchor').click(function () {
+      var $this = $(this);
+      $('fieldset').addClass('collapsed');
+      var link = $this.attr('href').split('#');
+      $('#'+link[1]).removeClass('collapsed');
+      $('.view-display-id-projects_description span').hide();
+  });
+  
   $(".expand-collapse").click(function(e) {
     if($('fieldset').hasClass('collapsed')) {
       $('fieldset').removeClass('collapsed');
