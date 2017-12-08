@@ -29,6 +29,15 @@ function custom_form_alter(&$form, &$form_state, $form_id) {
       }
       break;
   }
+  if ($form['#id'] == 'views-exposed-form-pgdi-content-pgdi-display'){
+    foreach ($form['dynamic-field'] as $key => $dynamic_field){
+      if(is_numeric($key)){
+        $form['dynamic-field'][$key]['check']['#title'] = $dynamic_field['title']['#markup'];
+        $form['dynamic-field'][$key]['title']['#access'] = FALSE;
+      }
+    }
+    $form['dynamic-field']['#theme'] = '';
+  }
 }
 
 /**

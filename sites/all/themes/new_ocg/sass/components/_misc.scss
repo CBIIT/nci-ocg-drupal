@@ -4524,6 +4524,64 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   float: left;
 }
 
+/* PGDI */
+
+.view-display-id-pgdi_display .view-filters {
+  display: flex;
+  justify-content: center;
+}
+
+.views-widget-filter-dynamic-field .views-widget {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: center;
+}
+
+.views-widget-filter-dynamic-field .description, #views-exposed-form-pgdi-content-pgdi-display .views-submit-button {
+  float: right;
+}
+
+.views-widget-filter-dynamic-field input[type=checkbox] {
+   position: absolute;
+   left: -9999px;
+    /*For mobile, it's typically better to position checkbox on top of clickable
+      area and turn opacity to 0 instead. */
+}
+
+.views-widget-filter-dynamic-field .form-type-checkbox {
+  width: 12.5%;
+}
+
+.views-widget-filter-dynamic-field .form-type-checkbox label { 
+  -webkit-appearance: push-button;
+  -moz-appearance: button;
+  cursor: pointer;
+  padding: 5px;
+  width: 150px;
+  height: 80px;
+  text-align: center;
+}
+
+.views-widget-filter-dynamic-field .form-type-checkbox {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.views-widget-filter-dynamic-field .form-type-checkbox:last-child {
+  margin-right: 0;
+}
+
+.views-widget-filter-dynamic-field input[type=checkbox]:checked ~ label {
+   background: #900;
+   color: #fff
+}
+
+.views-widget-filter-dynamic-field select {
+  display: none;
+}
+
 @media all and (max-width: 1160px) {
 
   #block-superfish-1 {
