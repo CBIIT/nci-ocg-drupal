@@ -40,6 +40,11 @@ Drupal.behaviors.wardead = {
 						target.hide();
 					}
 				});
+        $('.pgdi-column input[type=checkbox]').on('change', function (e) {
+          if ($('input[type=checkbox]:checked').length > 10) {
+            $(this).prop('checked', false);
+          }
+        });
 			}					
 	};
 })(jQuery);

@@ -4526,6 +4526,25 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 
 /* PGDI */
 
+#views-exposed-form-pgdi-content-pgdi-display .views-exposed-widgets {
+  width: 100%;
+  text-align: center;
+}
+
+.views-widget-filter-field_project_country_tid,
+.views-widget-filter-field_icd_10_code_tid,
+.views-widget-filter-field_patient_age_range_value,
+.views-widget-filter-field_gender_value {
+  width: 20%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#views-exposed-form-pgdi-content-pgdi-display .views-exposed-form .views-exposed-widget {
+  float: none;
+  padding: 0;
+}
+
 .view-display-id-pgdi_display .view-filters {
   display: flex;
   justify-content: center;
@@ -4533,14 +4552,12 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 
 .views-widget-filter-dynamic-field .views-widget {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: stretch;
-  align-content: center;
 }
 
-.views-widget-filter-dynamic-field .description, #views-exposed-form-pgdi-content-pgdi-display .views-submit-button {
-  float: right;
+.pgdi-column {
+  flex: 1;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .views-widget-filter-dynamic-field input[type=checkbox] {
@@ -4550,23 +4567,28 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
       area and turn opacity to 0 instead. */
 }
 
-.views-widget-filter-dynamic-field .form-type-checkbox {
-  width: 12.5%;
-}
-
 .views-widget-filter-dynamic-field .form-type-checkbox label { 
-  -webkit-appearance: push-button;
-  -moz-appearance: button;
   cursor: pointer;
   padding: 5px;
-  width: 150px;
-  height: 80px;
+  width: 140px;
+  height: 90px;
   text-align: center;
+  display: block;
+  border-radius: 5px; 
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border: 0px solid #900;
+  background-color: #e5e3e3;
 }
 
 .views-widget-filter-dynamic-field .form-type-checkbox {
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.views-widget-filter-dynamic-field .form-type-checkbox:checked {
+  background: #900;
+  color: #fff
 }
 
 .views-widget-filter-dynamic-field .form-type-checkbox:last-child {
@@ -4578,8 +4600,52 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
    color: #fff
 }
 
+.views-widget-filter-dynamic-field input[type=checkbox]:checked + label {
+   background: #900;
+   color: #fff
+}
+
 .views-widget-filter-dynamic-field select {
   display: none;
+}
+
+.view-display-id-pgdi_display table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.view-display-id-pgdi_display tr.odd, .view-display-id-pgdi_display tr.even {
+  background-color: #FFFFF0 !important;
+}
+
+.view-display-id-pgdi_display .feed-icon {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.view-display-id-pgdi_display .feed-icon img {
+  display: none;
+}
+
+.view-display-id-pgdi_display .feed-icon a:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.view-display-id-pgdi_display .feed-icon a[href="/programs/target/pgdi-filtered-export.xls"]:after {
+  content: 'Download the Filtered XLS File';
+  margin-right: 30px;
+  background-color: #588EBC;
+  padding: 5px;
+  color: #fff;
+}
+
+.view-display-id-pgdi_display .feed-icon a[href="/programs/target/pgdi-full-export.xls"]:after {
+  content: 'Download the Full Data XLS File';
+  background-color: #588EBC;
+  padding: 5px;
+  color: #fff;
 }
 
 @media all and (max-width: 1160px) {

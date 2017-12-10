@@ -35,6 +35,56 @@ function custom_form_alter(&$form, &$form_state, $form_id) {
         $form['dynamic-field'][$key]['check']['#title'] = $dynamic_field['title']['#markup'];
         $form['dynamic-field'][$key]['title']['#access'] = FALSE;
       }
+      switch ($key) {
+        case 0:
+          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          break;
+        case 7:
+          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          break;
+        case 8:
+          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          break;
+        case 14:
+          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          break;
+        case 15:
+          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          break;
+        case 20:
+          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          break;
+        case 21:
+          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          break;
+        case 28:
+          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          break;
+        case 29:
+          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          break;
+        case 35:
+          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          break;
+        case 36:
+          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          break;
+        case 39:
+          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          break;
+        case 40:
+          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          break;
+        case 44:
+          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          break;
+        case 45:
+          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          break;
+        case 46:
+          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          break;
+      }
     }
     $form['dynamic-field']['#theme'] = '';
   }
