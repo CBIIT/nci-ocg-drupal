@@ -4526,6 +4526,10 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 
 /* PGDI */
 
+#views-exposed-form-pgdi-content-pgdi-display {
+  width: 100%;
+}
+
 #views-exposed-form-pgdi-content-pgdi-display .views-exposed-widgets {
   width: 100%;
   text-align: center;
@@ -4550,8 +4554,9 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   justify-content: center;
 }
 
-.views-widget-filter-dynamic-field .views-widget {
-  display: flex;
+.views-widget-filter-secondary legend {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .pgdi-column {
@@ -4560,17 +4565,17 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   vertical-align: top;
 }
 
-.views-widget-filter-dynamic-field input[type=checkbox] {
+.views-widget-filter-secondary input[type=checkbox] {
    position: absolute;
    left: -9999px;
     /*For mobile, it's typically better to position checkbox on top of clickable
       area and turn opacity to 0 instead. */
 }
 
-.views-widget-filter-dynamic-field .form-type-checkbox label { 
+.views-widget-filter-secondary .form-type-checkbox label { 
   cursor: pointer;
   padding: 5px;
-  width: 140px;
+  width: 130px;
   height: 90px;
   text-align: center;
   display: block;
@@ -4581,31 +4586,32 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   background-color: #e5e3e3;
 }
 
-.views-widget-filter-dynamic-field .form-type-checkbox {
+.views-widget-filter-secondary .form-type-checkbox {
   margin-right: 5px;
   margin-bottom: 5px;
+  margin-left: 5px;
 }
 
-.views-widget-filter-dynamic-field .form-type-checkbox:checked {
+.views-widget-filter-secondary .form-type-checkbox:checked {
   background: #900;
   color: #fff
 }
 
-.views-widget-filter-dynamic-field .form-type-checkbox:last-child {
+.views-widget-filter-secondary .form-type-checkbox:last-child {
   margin-right: 0;
 }
 
-.views-widget-filter-dynamic-field input[type=checkbox]:checked ~ label {
+.views-widget-filter-secondary input[type=checkbox]:checked ~ label {
    background: #900;
    color: #fff
 }
 
-.views-widget-filter-dynamic-field input[type=checkbox]:checked + label {
+.views-widget-filter-secondary input[type=checkbox]:checked + label {
    background: #900;
    color: #fff
 }
 
-.views-widget-filter-dynamic-field select {
+.views-widget-filter-secondary select {
   display: none;
 }
 
@@ -4651,7 +4657,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 /* Youtube Videos */
 
 #block-views-youtube-videos-sidebar {
-  background: linear-gradient(to bottom, #FD5D39 0%, #FE7F38 100%) repeat scroll 0% 0% transparent;
+  background: #F25F2D;
   padding: 15px;
   text-align: center;
 }
