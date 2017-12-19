@@ -30,63 +30,64 @@ function custom_form_alter(&$form, &$form_state, $form_id) {
       break;
   }
   if ($form['#id'] == 'views-exposed-form-pgdi-content-pgdi-display'){
-    foreach ($form['dynamic-field'] as $key => $dynamic_field){
+    //dpm(get_defined_vars());
+    foreach ($form['secondary']['dynamic-field'] as $key => $dynamic_field){
       if(is_numeric($key)){
-        $form['dynamic-field'][$key]['check']['#title'] = $dynamic_field['title']['#markup'];
-        $form['dynamic-field'][$key]['title']['#access'] = FALSE;
+        $form['secondary']['dynamic-field'][$key]['check']['#title'] = $dynamic_field['title']['#markup'];
+        $form['secondary']['dynamic-field'][$key]['title']['#access'] = FALSE;
       }
       switch ($key) {
         case 0:
-          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
         case 7:
-          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
         case 8:
-          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
         case 14:
-          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
         case 15:
-          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
         case 20:
-          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
         case 21:
-          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
         case 28:
-          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
         case 29:
-          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
         case 35:
-          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
         case 36:
-          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
         case 39:
-          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
         case 40:
-          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
         case 44:
-          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
         case 45:
-          $form['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
         case 46:
-          $form['dynamic-field'][$key]['#suffix'] = '</div>';
+          $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
       }
     }
-    $form['dynamic-field']['#theme'] = '';
+    $form['secondary']['dynamic-field']['#theme'] = '';
   }
 }
 
