@@ -4540,8 +4540,13 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 .views-widget-filter-field_project_country_tid,
 .views-widget-filter-field_icd_10_code_tid,
 .views-widget-filter-field_patient_age_range_value,
-.views-widget-filter-field_gender_value {
-  width: 20%;
+.views-widget-filter-field_gender_value,
+.views-widget-filter-field_cancer_diagnosis_value,
+.views-widget-filter-field_total_number_patient_wxs_value,
+.views-widget-filter-field_total_number_patient_wgs_value,
+.views-widget-filter-field_total_patient_transcriptom_value,
+.views-widget-filter-field_was_clinical_outcome_data__value {
+  width: 18%;
   display: inline-block;
   margin-bottom: 20px;
 }
