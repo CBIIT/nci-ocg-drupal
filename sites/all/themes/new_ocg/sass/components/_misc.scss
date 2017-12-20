@@ -4666,7 +4666,12 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 #block-views-youtube-videos-sidebar {
   background: #f5c900;
   padding: 15px;
-  text-align: center;
+}
+
+#block-views-youtube-videos-sidebar h2 {
+  color: #323232;
+  font-size: 15.6px;
+  padding-bottom: 10px;
 }
 
 #block-views-youtube-videos-sidebar:before {
@@ -4682,8 +4687,12 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 
 #block-views-youtube-videos-sidebar a {
-  color: white;
+  color: #323232;
   font-weight: bold;
+}
+
+#block-views-youtube-videos-sidebar .views-field-lightbox2 img {
+  vertical-align: bottom;
 }
 
 @media all and (max-width: 1160px) {
