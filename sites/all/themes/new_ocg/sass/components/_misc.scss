@@ -4664,14 +4664,16 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 /* Youtube Videos */
 
 #block-views-youtube-videos-sidebar {
-  background: #f5c900;
+  background: #FFCC80;
   padding: 15px;
 }
 
 #block-views-youtube-videos-sidebar h2 {
-  color: #323232;
+  color: #774928;
   font-size: 15.6px;
   padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
 #block-views-youtube-videos-sidebar:before {
@@ -4686,9 +4688,25 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     width: 0px;
 }
 
+#block-views-youtube-videos-sidebar ul {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  list-style-image: url(../images/bullet.gif);
+}
+
+#block-views-youtube-videos-sidebar .views-row {
+  margin-bottom: 0;
+  line-height: normal;
+}
+
 #block-views-youtube-videos-sidebar a {
   color: #323232;
-  font-weight: bold;
+  text-decoration: none;
+}
+
+#block-views-youtube-videos-sidebar a:hover {
+  text-decoration: underline;
 }
 
 #block-views-youtube-videos-sidebar .views-field-lightbox2 img {
