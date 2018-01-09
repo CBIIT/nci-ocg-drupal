@@ -4627,8 +4627,17 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   table-layout: fixed;
 }
 
-.view-display-id-pgdi_display tr.odd, .view-display-id-pgdi_display tr.even {
+.view-display-id-pgdi_display tr.odd {
   background-color: #FFFFF0 !important;
+}
+
+.view-display-id-pgdi_display tr.even {
+  background-color: #FFFFFF !important;
+}
+
+.view-display-id-pgdi_display td {
+  text-align: center;
+  border-right: 1px solid #ebebeb !important
 }
 
 .view-display-id-pgdi_display .feed-icon {
@@ -4646,7 +4655,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   text-decoration: none;
 }
 
-.view-display-id-pgdi_display .feed-icon a[href="/programs/target/pgdi-filtered-export.xls"]:after {
+.view-display-id-pgdi_display .feed-icon a[href^="/programs/target/pgdi-filtered-export.xls"]:after {
   content: 'Download the Filtered XLS File';
   margin-right: 30px;
   background-color: #588EBC;
@@ -4654,7 +4663,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   color: #fff;
 }
 
-.view-display-id-pgdi_display .feed-icon a[href="/programs/target/pgdi-full-export.xls"]:after {
+.view-display-id-pgdi_display .feed-icon a[href^="/programs/target/pgdi-full-export.xls"]:after {
   content: 'Download the Full Data XLS File';
   background-color: #588EBC;
   padding: 5px;

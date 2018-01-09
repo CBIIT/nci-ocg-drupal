@@ -40,28 +40,34 @@ function custom_form_alter(&$form, &$form_state, $form_id) {
         case 0:
           $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
-        case 7:
+        case 5:
           $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
-        case 8:
+        case 6:
           $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
-        case 14:
+        case 10:
           $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
-        case 15:
+        case 11:
           $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
-        case 20:
+        case 16:
           $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
-        case 21:
+        case 17:
           $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
-        case 28:
+        case 23:
           $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
-        case 29:
+        case 24:
+          $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
+          break;
+        case 30:
+          $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
+          break;
+        case 31:
           $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
         case 35:
@@ -70,19 +76,13 @@ function custom_form_alter(&$form, &$form_state, $form_id) {
         case 36:
           $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
-        case 39:
+        case 41:
           $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
-        case 40:
+        case 42:
           $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
           break;
         case 44:
-          $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
-          break;
-        case 45:
-          $form['secondary']['dynamic-field'][$key]['#prefix'] = '<div class="pgdi-column">';
-          break;
-        case 46:
           $form['secondary']['dynamic-field'][$key]['#suffix'] = '</div>';
           break;
       }
