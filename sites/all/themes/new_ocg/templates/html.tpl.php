@@ -76,6 +76,7 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html <?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
 
 <head profile="<?php print $grddl_profile; ?>">
+  <script src="//assets.adobedtm.com/f1bfa9f7170c81b1a9a9ecdcc6c5215ee0b03c84/satelliteLib-1805f47ab8b0b32d6d90f8745328a690f8726c90.js"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=8">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
@@ -111,5 +112,6 @@
   <!-- **** NCI Web Analytics  - DO NOT ALTER **** -->
   <script language="JavaScript" type="text/javascript" src="//static.cancer.gov/webanalytics/wa_ocg_pageload.js"></script>
   <!-- **** End NCI Web Analytics Page **** -->
+  <script type="text/javascript">_satellite.pageBottom();</script>
 </body>
 </html>
