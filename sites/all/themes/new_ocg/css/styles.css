@@ -3938,17 +3938,16 @@ html.js fieldset.collapsible .fieldset-legend {
 html.js fieldset.collapsed {
   height: auto;
   margin-bottom: 1px;
-  overflow: hidden;
   height: 38px !important;
 }
 
-/* line 2745, ../sass/components/_misc.scss */
+/* line 2744, ../sass/components/_misc.scss */
 .ui-widget {
   font-family: Helvetica,Arial,"Nimbus Sans L",sans-serif;
   font-size: 13px;
 }
 
-/* line 2750, ../sass/components/_misc.scss */
+/* line 2749, ../sass/components/_misc.scss */
 .view.view-taxonomy-term {
   overflow: visible;
 }
@@ -3958,12 +3957,12 @@ html.js fieldset.collapsed {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   line-height: 20px;
 }*/
-/* line 2760, ../sass/components/_misc.scss */
+/* line 2759, ../sass/components/_misc.scss */
 .views-accordion .views-row {
   margin-bottom: 0;
 }
 
-/* line 2764, ../sass/components/_misc.scss */
+/* line 2763, ../sass/components/_misc.scss */
 .views-accordion fieldset {
   border: none;
   padding: 0;
@@ -3971,7 +3970,7 @@ html.js fieldset.collapsed {
   height: 100%;
 }
 
-/* line 2771, ../sass/components/_misc.scss */
+/* line 2770, ../sass/components/_misc.scss */
 .views-accordion legend {
   background-image: none;
   border: none;
@@ -3984,13 +3983,13 @@ html.js fieldset.collapsed {
   font-size: 18px;
 }
 
-/* line 2783, ../sass/components/_misc.scss */
+/* line 2782, ../sass/components/_misc.scss */
 .views-accordion legend {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 2788, ../sass/components/_misc.scss */
+/* line 2787, ../sass/components/_misc.scss */
 .views-accordion legend a {
   color: #fff !important;
   padding-left: 1.3em;
@@ -3999,17 +3998,17 @@ html.js fieldset.collapsed {
   padding-bottom: 10px;
 }
 
-/* line 2796, ../sass/components/_misc.scss */
+/* line 2795, ../sass/components/_misc.scss */
 .views-accordion legend a:hover {
   color: white !important;
 }
 
-/* line 2800, ../sass/components/_misc.scss */
+/* line 2799, ../sass/components/_misc.scss */
 .views-accordion legend a a {
   padding: 0;
 }
 
-/* line 2804, ../sass/components/_misc.scss */
+/* line 2803, ../sass/components/_misc.scss */
 .views-accordion legend:hover {
   background: #796245;
   /* Old browsers */
@@ -4031,12 +4030,12 @@ html.js fieldset.collapsed {
   /* IE8+ */
 }
 
-/* line 2825, ../sass/components/_misc.scss */
+/* line 2824, ../sass/components/_misc.scss */
 .views-accordion .fieldset-legend span.summary {
   display: none;
 }
 
-/* line 2829, ../sass/components/_misc.scss */
+/* line 2828, ../sass/components/_misc.scss */
 .views-accordion fieldset.collapsed legend {
   background: #969696;
   /* Old browsers */
@@ -4058,7 +4057,7 @@ html.js fieldset.collapsed {
   /* IE8+ */
 }
 
-/* line 2850, ../sass/components/_misc.scss */
+/* line 2849, ../sass/components/_misc.scss */
 .views-accordion fieldset legend {
   background: #796245;
   /* Old browsers */
@@ -4080,48 +4079,48 @@ html.js fieldset.collapsed {
   /* IE8+ */
 }
 
-/* line 2871, ../sass/components/_misc.scss */
+/* line 2870, ../sass/components/_misc.scss */
 .views-accordion .ui-accordion-content {
   border: none;
   font-size: 13px;
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
 }
 
-/* line 2877, ../sass/components/_misc.scss */
+/* line 2876, ../sass/components/_misc.scss */
 .views-accordion .fieldset-wrapper {
   padding: 20px 50px;
   width: 80% !important;
   overflow: visible;
 }
 
-/* line 2883, ../sass/components/_misc.scss */
+/* line 2882, ../sass/components/_misc.scss */
 .node-type-target-methods .views-accordion .fieldset-wrapper {
   padding: 0;
   width: 100% !important;
 }
 
-/* line 2888, ../sass/components/_misc.scss */
+/* line 2887, ../sass/components/_misc.scss */
 fieldset.collapse-processed span.fieldset-legend {
   background: url(../images/expanded-accordion.png) no-repeat 5px 60% !important;
 }
 
-/* line 2893, ../sass/components/_misc.scss */
+/* line 2892, ../sass/components/_misc.scss */
 fieldset.collapsed span.fieldset-legend {
   background: url(../images/default-accordion.png) no-repeat 5px 50% !important;
   margin-left: 0;
 }
 
-/* line 2899, ../sass/components/_misc.scss */
+/* line 2898, ../sass/components/_misc.scss */
 .page-news-publications-e-newsletters .views-accordion h2 {
   color: #774928;
 }
 
-/* line 2903, ../sass/components/_misc.scss */
+/* line 2902, ../sass/components/_misc.scss */
 .page-news-publications-e-newsletters .views-accordion h2 span {
   color: #990000;
 }
 
-/* line 2907, ../sass/components/_misc.scss */
+/* line 2906, ../sass/components/_misc.scss */
 .page-news-publications-e-newsletters .views-accordion h3 a.toggle {
   background-image: none;
   border: none;
@@ -4157,13 +4156,13 @@ fieldset.collapsed span.fieldset-legend {
   /* IE8+ */
 }
 
-/* line 2942, ../sass/components/_misc.scss */
+/* line 2941, ../sass/components/_misc.scss */
 .page-news-publications-e-newsletters .views-accordion h3 a.toggle {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 2947, ../sass/components/_misc.scss */
+/* line 2946, ../sass/components/_misc.scss */
 .page-news-publications-e-newsletters .views-accordion h3 a.toggle:hover {
   background: #796245;
   /* Old browsers */
@@ -4185,7 +4184,7 @@ fieldset.collapsed span.fieldset-legend {
   /* IE8+ */
 }
 
-/* line 2968, ../sass/components/_misc.scss */
+/* line 2967, ../sass/components/_misc.scss */
 .page-news-publications-e-newsletters .views-accordion h3.collapsed a {
   background: #969696;
   /* Old browsers */
@@ -4207,7 +4206,7 @@ fieldset.collapsed span.fieldset-legend {
   /* IE8+ */
 }
 
-/* line 2989, ../sass/components/_misc.scss */
+/* line 2988, ../sass/components/_misc.scss */
 .page-news-publications-e-newsletters .views-accordion h3.collapsed a:hover {
   background: #796245;
   /* Old browsers */
@@ -4229,17 +4228,17 @@ fieldset.collapsed span.fieldset-legend {
   /* IE8+ */
 }
 
-/* line 3010, ../sass/components/_misc.scss */
+/* line 3009, ../sass/components/_misc.scss */
 .page-news-publications-e-newsletters .views-accordion .view-grouping-content {
   padding: 20px 50px;
 }
 
-/* line 3014, ../sass/components/_misc.scss */
+/* line 3013, ../sass/components/_misc.scss */
 .page-news-publications-e-newsletters .views-accordion .view-grouping-content .views-row {
   margin-bottom: 15px;
 }
 
-/* line 3018, ../sass/components/_misc.scss */
+/* line 3017, ../sass/components/_misc.scss */
 .page-news-publications-e-newsletters .views-accordion .view-grouping-content .views-field-title span {
   text-transform: uppercase;
   color: #646464;
@@ -4247,7 +4246,7 @@ fieldset.collapsed span.fieldset-legend {
   margin-bottom: 6px;
 }
 
-/* line 3025, ../sass/components/_misc.scss */
+/* line 3024, ../sass/components/_misc.scss */
 .page-news-publications-e-newsletters .views-accordion .view-grouping-content .views-field-title a {
   color: #990000 !important;
   font-size: 19px;
@@ -4256,7 +4255,7 @@ fieldset.collapsed span.fieldset-legend {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 3033, ../sass/components/_misc.scss */
+/* line 3032, ../sass/components/_misc.scss */
 .page-taxonomy-term .image-caption, .page-taxonomy-term .field-name-field-publication-image-caption, .page-taxonomy-term .field-name-field-news-image-caption, .node-type-publication .image-caption, .node-type-publication .field-name-field-publication-image-caption, .node-type-publication .field-name-field-news-image-caption, .node-type-news .image-caption, .node-type-news .field-name-field-publication-image-caption, .node-type-news .field-name-field-news-image-caption {
   font-weight: bold;
   font-size: 12px;
@@ -4265,62 +4264,62 @@ fieldset.collapsed span.fieldset-legend {
   padding-bottom: 10px;
 }
 
-/* line 3041, ../sass/components/_misc.scss */
+/* line 3040, ../sass/components/_misc.scss */
 .node-type-publication .field-journal-name, .node-type-publication .field-name-field-publication-journal {
   padding-bottom: 10px;
   font-size: 12px;
   line-height: 18px;
 }
 
-/* line 3047, ../sass/components/_misc.scss */
+/* line 3046, ../sass/components/_misc.scss */
 .node-type-publication .field-journal-name p {
   padding-top: 10px;
 }
 
-/* line 3051, ../sass/components/_misc.scss */
+/* line 3050, ../sass/components/_misc.scss */
 .node-type-publication .field-name-title span {
   font-size: 18.2px;
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   line-height: 1.1em;
 }
 
-/* line 3057, ../sass/components/_misc.scss */
+/* line 3056, ../sass/components/_misc.scss */
 .not-front.page-node .field-type-datetime {
   padding-bottom: 10px;
 }
 
-/* line 3061, ../sass/components/_misc.scss */
+/* line 3060, ../sass/components/_misc.scss */
 .not-front.page-node .field-name-body {
   padding-top: 10px;
 }
 
-/* line 3065, ../sass/components/_misc.scss */
+/* line 3064, ../sass/components/_misc.scss */
 .view {
   overflow: hidden;
 }
 
-/* line 3069, ../sass/components/_misc.scss */
+/* line 3068, ../sass/components/_misc.scss */
 .view-program-header {
   position: relative;
 }
 
-/* line 3073, ../sass/components/_misc.scss */
+/* line 3072, ../sass/components/_misc.scss */
 .region-sidebar-second .data-matrix {
   position: static;
 }
 
-/* line 3077, ../sass/components/_misc.scss */
+/* line 3076, ../sass/components/_misc.scss */
 .view-program-header .data-matrix {
   width: 100%;
   padding: 0px;
 }
 
-/* line 3082, ../sass/components/_misc.scss */
+/* line 3081, ../sass/components/_misc.scss */
 .region-sidebar-second .view-program-header .corner {
   width: 100% !important;
 }
 
-/* line 3090, ../sass/components/_misc.scss */
+/* line 3089, ../sass/components/_misc.scss */
 #block-views-program-header-block-1 .views-field-field-programs-using-data p,
 #block-views-program-header-block-2 .views-field-field-programs-using-data p,
 #block-views-program-header-block-1 .views-field-field-link-to-data-page p,
@@ -4329,7 +4328,7 @@ fieldset.collapsed span.fieldset-legend {
   padding: 0 20px;
 }
 
-/* line 3094, ../sass/components/_misc.scss */
+/* line 3093, ../sass/components/_misc.scss */
 .qtip-background {
   background-color: #776349;
   color: #fff;
@@ -4337,18 +4336,18 @@ fieldset.collapsed span.fieldset-legend {
   line-height: 1.25em;
 }
 
-/* line 3102, ../sass/components/_misc.scss */
+/* line 3101, ../sass/components/_misc.scss */
 #block-views-program-header-ctd2-block .views-field-field-programs-link-data-source,
 #block-views-program-header-ctd2-block .views-field-views-conditional-1 {
   position: relative;
 }
 
-/* line 3106, ../sass/components/_misc.scss */
+/* line 3105, ../sass/components/_misc.scss */
 #block-views-program-header-ctd2-block .views-field-views-conditional-1 {
   padding-top: 10px;
 }
 
-/* line 3111, ../sass/components/_misc.scss */
+/* line 3110, ../sass/components/_misc.scss */
 #block-views-program-header-ctd2-block .views-field-field-programs-link-data-source .views-field-tooltip-icon,
 #block-views-program-header-ctd2-block .views-field-views-conditional-1 .views-field-tooltip-icon {
   position: absolute;
@@ -4356,12 +4355,12 @@ fieldset.collapsed span.fieldset-legend {
   right: 15px;
 }
 
-/* line 3117, ../sass/components/_misc.scss */
+/* line 3116, ../sass/components/_misc.scss */
 #block-views-program-header-ctd2-block .views-field-views-conditional-1 .views-field-tooltip-icon {
   top: 7px;
 }
 
-/* line 3121, ../sass/components/_misc.scss */
+/* line 3120, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-content .views-row {
   margin-bottom: 10px;
   padding-bottom: 15px;
@@ -4369,37 +4368,37 @@ fieldset.collapsed span.fieldset-legend {
   overflow: visible;
 }
 
-/* line 3128, ../sass/components/_misc.scss */
+/* line 3127, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-e-newsletter-issue-title .views-row h1 {
   color: #774928;
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
-/* line 3134, ../sass/components/_misc.scss */
+/* line 3133, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-e-newsletter-issue-title .views-row h1 span {
   color: #900;
 }
 
-/* line 3138, ../sass/components/_misc.scss */
+/* line 3137, ../sass/components/_misc.scss */
 .view-taxonomy-term .attachment-before h3 {
   margin-bottom: 22px;
 }
 
-/* line 3142, ../sass/components/_misc.scss */
+/* line 3141, ../sass/components/_misc.scss */
 h3, h4 {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
-/* line 3147, ../sass/components/_misc.scss */
+/* line 3146, ../sass/components/_misc.scss */
 .view-taxonomy-term .attachment-before h3 a {
   color: #900 !important;
   font-size: 19px;
   line-height: 23px;
 }
 
-/* line 3153, ../sass/components/_misc.scss */
+/* line 3152, ../sass/components/_misc.scss */
 .view-taxonomy-term .attachment-before h3 span {
   color: #646464;
   font-size: 21px;
@@ -4407,28 +4406,28 @@ h3, h4 {
   text-transform: uppercase;
 }
 
-/* line 3160, ../sass/components/_misc.scss */
+/* line 3159, ../sass/components/_misc.scss */
 .view-taxonomy-term .attachment-before {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 5px solid #E1E1E1;
 }
 
-/* line 3166, ../sass/components/_misc.scss */
+/* line 3165, ../sass/components/_misc.scss */
 .view-taxonomy-term .attachment-before .views-row {
   margin-bottom: 0px;
   padding-bottom: 0px;
   border-bottom: medium none;
 }
 
-/* line 3172, ../sass/components/_misc.scss */
+/* line 3171, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-content .views-row .views-field-title h2 {
   color: #900;
   font-size: 22px;
   line-height: 25px;
 }
 
-/* line 3178, ../sass/components/_misc.scss */
+/* line 3177, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-content .views-row .views-field-title h2 span {
   color: #646464;
   font-size: 26px;
@@ -4436,67 +4435,67 @@ h3, h4 {
   text-transform: uppercase;
 }
 
-/* line 3185, ../sass/components/_misc.scss */
+/* line 3184, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-content .views-row img {
   padding-right: 15px;
   padding-bottom: 10px;
 }
 
-/* line 3190, ../sass/components/_misc.scss */
+/* line 3189, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-content .views-row .views-field-field-image .field-content {
   float: left;
 }
 
-/* line 3194, ../sass/components/_misc.scss */
+/* line 3193, ../sass/components/_misc.scss */
 .view-taxonomy-term .view-content .views-row .views-field-field-image .field-content figcaption {
   margin-right: 10px;
 }
 
-/* line 3198, ../sass/components/_misc.scss */
+/* line 3197, ../sass/components/_misc.scss */
 .view-taxonomy-term .views-field-field-enews-physician {
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 10px;
 }
 
-/* line 3204, ../sass/components/_misc.scss */
+/* line 3203, ../sass/components/_misc.scss */
 table {
   border: 1px solid #ebebeb;
 }
-/* line 3206, ../sass/components/_misc.scss */
+/* line 3205, ../sass/components/_misc.scss */
 table th {
   padding: 5px 10px;
   border-right: 1px solid #ebebeb;
 }
-/* line 3210, ../sass/components/_misc.scss */
+/* line 3209, ../sass/components/_misc.scss */
 table td {
   padding: 5px 10px;
 }
 
-/* line 3215, ../sass/components/_misc.scss */
+/* line 3214, ../sass/components/_misc.scss */
 .tablestyles tr.odd {
   background-color: #fff;
   border-bottom: 1px solid #ebebeb;
 }
-/* line 3219, ../sass/components/_misc.scss */
+/* line 3218, ../sass/components/_misc.scss */
 .tablestyles tr.odd td,
 .tablestyles tr.odd th {
   border-right: 1px solid #ebebeb !important;
 }
 
-/* line 3224, ../sass/components/_misc.scss */
+/* line 3223, ../sass/components/_misc.scss */
 .tablestyles tr.even {
   /* Some tables have rows marked even or odd. */
   background-color: #fcfcea !important;
   border-bottom: 1px solid #ebebeb !important;
 }
-/* line 3228, ../sass/components/_misc.scss */
+/* line 3227, ../sass/components/_misc.scss */
 .tablestyles tr.even td,
 .tablestyles tr.even th {
   border-right: 1px solid #ebebeb !important;
 }
 
-/* line 3235, ../sass/components/_misc.scss */
+/* line 3234, ../sass/components/_misc.scss */
 .tablestyles thead tr,
 .tablestyles tr.header,
 thead tr {
@@ -4504,7 +4503,7 @@ thead tr {
   color: #fff;
 }
 
-/* line 3240, ../sass/components/_misc.scss */
+/* line 3239, ../sass/components/_misc.scss */
 span.newtab {
   text-indent: -999999px;
   background: url("../images/newtab.png") no-repeat scroll 0% 0% transparent;
@@ -4512,34 +4511,34 @@ span.newtab {
   width: 9px;
 }
 
-/* line 3247, ../sass/components/_misc.scss */
+/* line 3246, ../sass/components/_misc.scss */
 .front #main #postscript-first ul, .front #main #postscript-second ul, #main #content ul {
   list-style-type: none;
   list-style-image: url("../images/bullet.gif");
 }
 
-/* line 3252, ../sass/components/_misc.scss */
+/* line 3251, ../sass/components/_misc.scss */
 .not-front #main #content p a {
   text-decoration: underline;
 }
 
-/* line 3256, ../sass/components/_misc.scss */
+/* line 3255, ../sass/components/_misc.scss */
 .page-node-21 #block-views-publications-block-2 {
   width: 70%;
 }
 
-/* line 3260, ../sass/components/_misc.scss */
+/* line 3259, ../sass/components/_misc.scss */
 .page-node-21 #block-views-last-updated-block {
   float: left;
 }
 
-/* line 3264, ../sass/components/_misc.scss */
+/* line 3263, ../sass/components/_misc.scss */
 .landing-page.view-e-newsletter .views-row .field-content {
   padding: 5px 20px;
   margin-bottom: 0;
 }
 
-/* line 3269, ../sass/components/_misc.scss */
+/* line 3268, ../sass/components/_misc.scss */
 .landing-page.view-e-newsletter h2.block-title {
   font-size: 15.6px;
   font-weight: 700;
@@ -4557,33 +4556,33 @@ span.newtab {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faf4bf',endColorstr='#faec7a',GradientType=0);
 }
 
-/* line 3286, ../sass/components/_misc.scss */
+/* line 3285, ../sass/components/_misc.scss */
 .landing-page.view-e-newsletter .views-row .views-field-field-issue-date .field-content {
   padding: 0;
 }
 
-/* line 3290, ../sass/components/_misc.scss */
+/* line 3289, ../sass/components/_misc.scss */
 .landing-page.view-e-newsletter h3.field-content {
   color: #767676;
 }
 
-/* line 3295, ../sass/components/_misc.scss */
+/* line 3294, ../sass/components/_misc.scss */
 .sf-menu.sf-style-default li,
 .sf-menu.sf-style-default.sf-navbar {
   background: none;
 }
 
-/* line 3298, ../sass/components/_misc.scss */
+/* line 3297, ../sass/components/_misc.scss */
 .sf-menu.sf-style-default li li {
   background: none;
 }
 
-/* line 3301, ../sass/components/_misc.scss */
+/* line 3300, ../sass/components/_misc.scss */
 .sf-menu.sf-style-default li li li {
   background: none;
 }
 
-/* line 3308, ../sass/components/_misc.scss */
+/* line 3307, ../sass/components/_misc.scss */
 .sf-menu.sf-style-default li:hover,
 .sf-menu.sf-style-default li.sfHover,
 .sf-menu.sf-style-default a:focus,
@@ -4593,7 +4592,7 @@ span.newtab {
   outline: 0;
 }
 
-/* line 3313, ../sass/components/_misc.scss */
+/* line 3312, ../sass/components/_misc.scss */
 .field-type-entityreference .views-label, .field-type-entityreference .field-label {
   color: #7d7d7d;
   font-weight: bold;
@@ -4602,12 +4601,12 @@ span.newtab {
   padding: 5px 10px 5px 0;
 }
 
-/* line 3321, ../sass/components/_misc.scss */
+/* line 3320, ../sass/components/_misc.scss */
 .field-type-entityreference .field-items {
   float: none;
 }
 
-/* line 3325, ../sass/components/_misc.scss */
+/* line 3324, ../sass/components/_misc.scss */
 .field-type-entityreference a {
   background-color: #7d7d7d;
   padding: 1px 10px 0;
@@ -4621,7 +4620,7 @@ span.newtab {
   width: auto;
 }
 
-/* line 3338, ../sass/components/_misc.scss */
+/* line 3337, ../sass/components/_misc.scss */
 .view-program-abbreviation {
   float: left;
   clear: both;
@@ -4631,7 +4630,7 @@ span.newtab {
   padding: 5px 10px 5px 0;
 }
 
-/* line 3347, ../sass/components/_misc.scss */
+/* line 3346, ../sass/components/_misc.scss */
 .views-label, .field-label {
   color: #7d7d7d;
   font-weight: bold;
@@ -4641,7 +4640,7 @@ span.newtab {
   padding: 5px 10px 5px 0;
 }
 
-/* line 3356, ../sass/components/_misc.scss */
+/* line 3355, ../sass/components/_misc.scss */
 .views-row .program, .views-row .program-tag {
   overflow: hidden;
   background-color: #767676;
@@ -4658,36 +4657,36 @@ span.newtab {
   padding-top: 3px;
 }
 
-/* line 3372, ../sass/components/_misc.scss */
+/* line 3371, ../sass/components/_misc.scss */
 #block-views-last-updated-block {
   clear: both;
 }
 
-/* line 3376, ../sass/components/_misc.scss */
+/* line 3375, ../sass/components/_misc.scss */
 #block-views-last-updated-block .view-last-updated {
   font-size: 12px;
   color: #646464;
 }
 
-/* line 3381, ../sass/components/_misc.scss */
+/* line 3380, ../sass/components/_misc.scss */
 .last-updated-block {
   font-size: 12px;
   color: #646464;
 }
 
-/* line 3386, ../sass/components/_misc.scss */
+/* line 3385, ../sass/components/_misc.scss */
 .not-front #main #content {
   min-height: 700px;
   padding-bottom: 120px;
 }
 
-/* line 3391, ../sass/components/_misc.scss */
+/* line 3390, ../sass/components/_misc.scss */
 #block-views-last-updated-block {
   position: absolute;
   bottom: 30px;
 }
 
-/* line 3396, ../sass/components/_misc.scss */
+/* line 3395, ../sass/components/_misc.scss */
 .views-row .program-all-programs {
   overflow: hidden;
   background-color: #767676;
@@ -4706,7 +4705,7 @@ span.newtab {
   text-transform: uppercase;
 }
 
-/* line 3414, ../sass/components/_misc.scss */
+/* line 3413, ../sass/components/_misc.scss */
 .view-display-id-featured_news_publications .all-programs {
   overflow: hidden;
   background-color: #767676;
@@ -4724,22 +4723,22 @@ span.newtab {
   text-transform: uppercase;
 }
 
-/* line 3431, ../sass/components/_misc.scss */
+/* line 3430, ../sass/components/_misc.scss */
 .front #block-views-announcement-block {
   padding-top: 40px;
 }
 
-/* line 3435, ../sass/components/_misc.scss */
+/* line 3434, ../sass/components/_misc.scss */
 .front #block-views-announcement-block h5 {
   margin-top: 0;
 }
 
-/* line 3439, ../sass/components/_misc.scss */
+/* line 3438, ../sass/components/_misc.scss */
 .front .view-announcement, .view-announcement {
   position: relative;
 }
 
-/* line 3443, ../sass/components/_misc.scss */
+/* line 3442, ../sass/components/_misc.scss */
 .front .view-announcement .view-header, .view-announcement .view-header {
   position: absolute;
   top: 25%;
@@ -4747,7 +4746,7 @@ span.newtab {
   z-index: 1;
 }
 
-/* line 3450, ../sass/components/_misc.scss */
+/* line 3449, ../sass/components/_misc.scss */
 .front .view-announcement .view-header a, .view-announcement .view-header a {
   background-image: url(../images/x-button.png);
   background-repeat: no-repeat;
@@ -4757,7 +4756,7 @@ span.newtab {
   width: 32px;
 }
 
-/* line 3459, ../sass/components/_misc.scss */
+/* line 3458, ../sass/components/_misc.scss */
 .front .view-announcement .views-row, .view-announcement .views-row {
   width: 100%;
   padding-top: 12px;
@@ -4776,7 +4775,7 @@ span.newtab {
   background-size: 100%;
 }
 
-/* line 3477, ../sass/components/_misc.scss */
+/* line 3476, ../sass/components/_misc.scss */
 .lt-ie9 .front .view-announcement .views-row, .lt-ie9 .view-announcement .views-row {
   width: 100%;
   padding-top: 12px;
@@ -4787,7 +4786,7 @@ span.newtab {
   filter: none;
 }
 
-/* line 3487, ../sass/components/_misc.scss */
+/* line 3486, ../sass/components/_misc.scss */
 .front .view-announcement .views-row:before, .view-announcement .views-row:before {
   border-color: #ffd87c #fcfeff #ffd87c #fcfeff;
   content: "";
@@ -4800,12 +4799,12 @@ span.newtab {
   width: 0;
 }
 
-/* line 3499, ../sass/components/_misc.scss */
+/* line 3498, ../sass/components/_misc.scss */
 .front .view-announcement .views-row:before, .view-announcement a {
   color: #990000;
 }
 
-/* line 3508, ../sass/components/_misc.scss */
+/* line 3507, ../sass/components/_misc.scss */
 .front .view-announcement span, .view-announcement span,
 .front .view-announcement span, .view-announcement h1,
 .front .view-announcement span, .view-announcement h2,
@@ -4815,13 +4814,13 @@ span.newtab {
   color: #614e37;
 }
 
-/* line 3513, ../sass/components/_misc.scss */
+/* line 3512, ../sass/components/_misc.scss */
 .front .view-announcement span, .view-announcement span {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
   font-weight: normal;
 }
 
-/* line 3518, ../sass/components/_misc.scss */
+/* line 3517, ../sass/components/_misc.scss */
 .front .view-announcement .views-field-body, .view-announcement .views-field-body {
   margin: 0 auto;
   width: 100%;
@@ -4829,38 +4828,38 @@ span.newtab {
   color: #fff;
 }
 
-/* line 3525, ../sass/components/_misc.scss */
+/* line 3524, ../sass/components/_misc.scss */
 .front .view-announcement .views-field-body, .view-announcement .views-field-body .field-content {
   padding-top: 10px;
   padding-left: 10px;
 }
 
-/* line 3530, ../sass/components/_misc.scss */
+/* line 3529, ../sass/components/_misc.scss */
 .data-matrix {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 3536, ../sass/components/_misc.scss */
+/* line 3535, ../sass/components/_misc.scss */
 #print-mail-form input[type="reset"],
 #print-mail-form input[type="submit"] {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 3541, ../sass/components/_misc.scss */
+/* line 3540, ../sass/components/_misc.scss */
 .corner.three-col h2.block-title {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 3546, ../sass/components/_misc.scss */
+/* line 3545, ../sass/components/_misc.scss */
 .landing-page.view-e-newsletter h2.block-title {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 3551, ../sass/components/_misc.scss */
+/* line 3550, ../sass/components/_misc.scss */
 .landing-page.view-e-newsletter .views-field-title p {
   font-family: "FranklinGothicFSMedCdRegular", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
@@ -4870,17 +4869,17 @@ span.newtab {
 * Views slideshow for program landing pages
 *
 */
-/* line 3561, ../sass/components/_misc.scss */
+/* line 3560, ../sass/components/_misc.scss */
 .views_slideshow_cycle_main {
   width: 100%;
 }
-/* line 3563, ../sass/components/_misc.scss */
+/* line 3562, ../sass/components/_misc.scss */
 .views_slideshow_cycle_main .views-slideshow-cycle-main-frame, .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {
   width: 100% !important;
   height: auto;
 }
 
-/* line 3569, ../sass/components/_misc.scss */
+/* line 3568, ../sass/components/_misc.scss */
 .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
 .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
 .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5,
@@ -4888,20 +4887,20 @@ span.newtab {
   text-align: center;
 }
 
-/* line 3573, ../sass/components/_misc.scss */
+/* line 3572, ../sass/components/_misc.scss */
 .view-id-news_and_publications .views-slideshow-pager-field-item {
   display: inline-block;
   font-size: 20px;
   margin-left: 3%;
 }
 
-/* line 3579, ../sass/components/_misc.scss */
+/* line 3578, ../sass/components/_misc.scss */
 #main #content .view-id-news_and_publications .views-slideshow-pager-field-item a {
   text-decoration: none;
   color: #900;
 }
 
-/* line 3584, ../sass/components/_misc.scss */
+/* line 3583, ../sass/components/_misc.scss */
 #main #content .view-id-news_and_publications .views-slideshow-pager-field-item.active span {
   height: 15px;
   width: 15px;
@@ -4911,14 +4910,14 @@ span.newtab {
   margin-top: 5%;
 }
 
-/* line 3593, ../sass/components/_misc.scss */
+/* line 3592, ../sass/components/_misc.scss */
 #main #content .view-id-news_and_publications .views-slideshow-pager-field-item.active a {
   color: black;
   visibility: hidden;
   position: relative;
 }
 
-/* line 3599, ../sass/components/_misc.scss */
+/* line 3598, ../sass/components/_misc.scss */
 #main #content .view-id-news_and_publications .views-slideshow-pager-field-item.active a:after {
   visibility: visible;
   position: absolute;
@@ -4927,7 +4926,7 @@ span.newtab {
   content: "\0020";
 }
 
-/* line 3610, ../sass/components/_misc.scss */
+/* line 3609, ../sass/components/_misc.scss */
 .view-id-news_and_publications #vscc_controls_next_news_and_publications-block_2,
 .view-id-news_and_publications #vscc_controls_next_news_and_publications-block_4,
 .view-id-news_and_publications #vscc_controls_next_news_and_publications-block_5,
@@ -4939,17 +4938,17 @@ span.newtab {
 * Target Methods
 *
 */
-/* line 3619, ../sass/components/_misc.scss */
+/* line 3618, ../sass/components/_misc.scss */
 .views-field-field-sample-preparation-protoco img {
   margin-right: 1%;
 }
 
-/* line 3623, ../sass/components/_misc.scss */
+/* line 3622, ../sass/components/_misc.scss */
 .views-field-field-sample-preparation-protoco a {
   font-size: 14px;
 }
 
-/* line 3627, ../sass/components/_misc.scss */
+/* line 3626, ../sass/components/_misc.scss */
 .view-display-id-table {
   display: inline-block;
   vertical-align: top;
@@ -4957,7 +4956,7 @@ span.newtab {
   padding-right: 5%;
 }
 
-/* line 3634, ../sass/components/_misc.scss */
+/* line 3633, ../sass/components/_misc.scss */
 .view-display-id-legend {
   display: inline-block;
   vertical-align: top;
@@ -4965,7 +4964,7 @@ span.newtab {
   width: 45%;
 }
 
-/* line 3641, ../sass/components/_misc.scss */
+/* line 3640, ../sass/components/_misc.scss */
 .node-target-methods .fixed-position {
   position: fixed;
   background-color: white;
@@ -4973,17 +4972,17 @@ span.newtab {
   width: 43%;
 }
 
-/* line 3648, ../sass/components/_misc.scss */
+/* line 3647, ../sass/components/_misc.scss */
 .node-type-target-methods .region-sidebar-first .view-display-id-legend {
   width: 100%;
 }
 
-/* line 3652, ../sass/components/_misc.scss */
+/* line 3651, ../sass/components/_misc.scss */
 .view-display-id-projects_table table, .view-display-id-table table {
   width: 100%;
 }
 
-/* line 3656, ../sass/components/_misc.scss */
+/* line 3655, ../sass/components/_misc.scss */
 .view-target-methods .views-field-field-sample-preparation-protoco .field-name-field-full-title {
   font-size: 14px;
   font-weight: bold;
@@ -4993,7 +4992,7 @@ span.newtab {
 * Node 986 - CTD2 Analytical Tools Page
 *
 */
-/* line 3666, ../sass/components/_misc.scss */
+/* line 3665, ../sass/components/_misc.scss */
 #node-986 p, #node-981 p {
   margin-bottom: 1em;
 }
@@ -5002,12 +5001,12 @@ span.newtab {
 * CGCI Data Matrix
 *
 */
-/* line 3675, ../sass/components/_misc.scss */
+/* line 3674, ../sass/components/_misc.scss */
 .page-programs-cgci-data-matrix table, .page-programs-cgci-data-matrix .sticky-header {
   table-layout: fixed;
 }
 
-/* line 3679, ../sass/components/_misc.scss */
+/* line 3678, ../sass/components/_misc.scss */
 .page-programs-cgci-data-matrix .cgci-title {
   float: left;
   position: relative;
@@ -5015,18 +5014,18 @@ span.newtab {
   width: 50%;
 }
 
-/* line 3686, ../sass/components/_misc.scss */
+/* line 3685, ../sass/components/_misc.scss */
 .page-programs-cgci-data-matrix .cgci-image {
   float: right;
 }
 
-/* line 3690, ../sass/components/_misc.scss */
+/* line 3689, ../sass/components/_misc.scss */
 .page-programs-cgci-data-matrix .view-display-id-primary_disease {
   width: 100%;
   float: right;
 }
 
-/* line 3695, ../sass/components/_misc.scss */
+/* line 3694, ../sass/components/_misc.scss */
 .page-programs-cgci-data-matrix .views-label {
   color: #323232;
   font-weight: normal;
@@ -5036,7 +5035,7 @@ span.newtab {
   padding: 0;
 }
 
-/* line 3704, ../sass/components/_misc.scss */
+/* line 3703, ../sass/components/_misc.scss */
 .page-programs-cgci-data-matrix .view-display-id-last_updated {
   font-style: italic;
   color: #323232;
@@ -5044,23 +5043,23 @@ span.newtab {
   bottom: 0;
 }
 
-/* line 3711, ../sass/components/_misc.scss */
+/* line 3710, ../sass/components/_misc.scss */
 .page-programs-cgci-data-matrix .view-display-id-last_updated .views-row {
   margin-bottom: 0;
 }
 
-/* line 3715, ../sass/components/_misc.scss */
+/* line 3714, ../sass/components/_misc.scss */
 .page-programs-cgci-data-matrix #postscript-first {
   float: left;
   padding-left: 10px;
 }
 
-/* line 3720, ../sass/components/_misc.scss */
+/* line 3719, ../sass/components/_misc.scss */
 .view-cgci-data-matrix table {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif !important;
 }
 
-/* line 3724, ../sass/components/_misc.scss */
+/* line 3723, ../sass/components/_misc.scss */
 .view-cgci-data-matrix th {
   color: #FFF;
   vertical-align: bottom;
@@ -5071,18 +5070,18 @@ span.newtab {
   text-align: left;
 }
 
-/* line 3734, ../sass/components/_misc.scss */
+/* line 3733, ../sass/components/_misc.scss */
 .view-cgci-data-matrix th.disease {
   background-color: #BD5E1B;
   min-width: 50px;
 }
 
-/* line 3739, ../sass/components/_misc.scss */
+/* line 3738, ../sass/components/_misc.scss */
 .view-cgci-data-matrix th.diseasebanner {
   vertical-align: top;
 }
 
-/* line 3743, ../sass/components/_misc.scss */
+/* line 3742, ../sass/components/_misc.scss */
 .view-cgci-data-matrix .patient-data {
   height: 124px;
   display: flex;
@@ -5091,58 +5090,58 @@ span.newtab {
   font-size: 14px;
 }
 
-/* line 3751, ../sass/components/_misc.scss */
+/* line 3750, ../sass/components/_misc.scss */
 .view-cgci-data-matrix tbody tr {
   background-color: #FFFFF0 !important;
 }
 
-/* line 3755, ../sass/components/_misc.scss */
+/* line 3754, ../sass/components/_misc.scss */
 .view-cgci-data-matrix tbody tr.even {
   background-color: #FFFFF0 !important;
 }
 
-/* line 3759, ../sass/components/_misc.scss */
+/* line 3758, ../sass/components/_misc.scss */
 .view-cgci-data-matrix tbody tr.odd {
   background-color: #FFFFF0 !important;
 }
 
-/* line 3763, ../sass/components/_misc.scss */
+/* line 3762, ../sass/components/_misc.scss */
 .view-cgci-data-matrix table td {
   padding: 5px 10px;
 }
 
-/* line 3767, ../sass/components/_misc.scss */
+/* line 3766, ../sass/components/_misc.scss */
 .view-cgci-data-matrix td {
   background-color: #FFFFF0;
   border-right: 1px solid #EBEBEB;
   border-bottom: 1px solid #EBEBEB;
 }
 
-/* line 3773, ../sass/components/_misc.scss */
+/* line 3772, ../sass/components/_misc.scss */
 .view-cgci-data-matrix td.disease {
   font-size: 14px;
   font-weight: 400;
 }
 
-/* line 3778, ../sass/components/_misc.scss */
+/* line 3777, ../sass/components/_misc.scss */
 .view-cgci-data-matrix td.colN {
   min-width: 50px;
 }
 
-/* line 3782, ../sass/components/_misc.scss */
+/* line 3781, ../sass/components/_misc.scss */
 .view-cgci-data-matrix td.outer {
   padding: 0px;
   vertical-align: top;
 }
 
-/* line 3787, ../sass/components/_misc.scss */
+/* line 3786, ../sass/components/_misc.scss */
 .view-cgci-data-matrix td.outer table {
   border: none;
   margin: 0;
   width: 100%;
 }
 
-/* line 3793, ../sass/components/_misc.scss */
+/* line 3792, ../sass/components/_misc.scss */
 .view-cgci-data-matrix td.outer table th {
   border: none;
   border-bottom: none;
@@ -5150,13 +5149,13 @@ span.newtab {
   padding: 0;
 }
 
-/* line 3800, ../sass/components/_misc.scss */
+/* line 3799, ../sass/components/_misc.scss */
 .view-cgci-data-matrix td.outer table .tablestyles tr {
   padding: 0;
   border-bottom: none !important;
 }
 
-/* line 3805, ../sass/components/_misc.scss */
+/* line 3804, ../sass/components/_misc.scss */
 .view-cgci-data-matrix td.outer table td {
   border: none;
   border-bottom: none !important;
@@ -5164,7 +5163,7 @@ span.newtab {
   padding: 0;
 }
 
-/* line 3812, ../sass/components/_misc.scss */
+/* line 3811, ../sass/components/_misc.scss */
 .view-cgci-data-matrix div.cellheader {
   margin: 0px;
   background-color: #FFCC80;
@@ -5177,7 +5176,7 @@ span.newtab {
   line-height: 1.25em;
 }
 
-/* line 3824, ../sass/components/_misc.scss */
+/* line 3823, ../sass/components/_misc.scss */
 .view-cgci-data-matrix div.cellbody {
   margin: 0px;
   vertical-align: top;
@@ -5185,19 +5184,19 @@ span.newtab {
   min-height: 50px;
 }
 
-/* line 3831, ../sass/components/_misc.scss */
+/* line 3830, ../sass/components/_misc.scss */
 .view-cgci-data-matrix a.protected, .view-cgci-data-matrix a.protected:visited {
   color: #C23D00 !important;
   text-decoration: none;
 }
 
-/* line 3836, ../sass/components/_misc.scss */
+/* line 3835, ../sass/components/_misc.scss */
 .view-cgci-data-matrix a.protected:hover, .view-cgci-data-matrix a.protected:focus {
   color: #C23D00 !important;
   text-decoration: underline;
 }
 
-/* line 3841, ../sass/components/_misc.scss */
+/* line 3840, ../sass/components/_misc.scss */
 .view-cgci-data-matrix a {
   color: #814B0F !important;
   text-decoration: none;
@@ -5207,12 +5206,12 @@ span.newtab {
 * TARGET Data Matrix
 *
 */
-/* line 3851, ../sass/components/_misc.scss */
+/* line 3850, ../sass/components/_misc.scss */
 .page-programs-target-data-matrix table, .page-programs-target-data-matrix .sticky-header {
   table-layout: fixed;
 }
 
-/* line 3855, ../sass/components/_misc.scss */
+/* line 3854, ../sass/components/_misc.scss */
 .page-programs-target-data-matrix .cgci-title {
   float: left;
   position: relative;
@@ -5220,18 +5219,18 @@ span.newtab {
   width: 50%;
 }
 
-/* line 3862, ../sass/components/_misc.scss */
+/* line 3861, ../sass/components/_misc.scss */
 .page-programs-target-data-matrix .cgci-image {
   float: right;
 }
 
-/* line 3866, ../sass/components/_misc.scss */
+/* line 3865, ../sass/components/_misc.scss */
 .page-programs-target-data-matrix .view-display-id-target_primary_disease {
   width: 100%;
   float: right;
 }
 
-/* line 3871, ../sass/components/_misc.scss */
+/* line 3870, ../sass/components/_misc.scss */
 .page-programs-target-data-matrix .views-label {
   color: #323232;
   font-weight: normal;
@@ -5241,23 +5240,23 @@ span.newtab {
   padding: 0;
 }
 
-/* line 3880, ../sass/components/_misc.scss */
+/* line 3879, ../sass/components/_misc.scss */
 .page-programs-target-data-matrix #postscript-first {
   float: left;
   padding-left: 10px;
 }
 
-/* line 3885, ../sass/components/_misc.scss */
+/* line 3884, ../sass/components/_misc.scss */
 .view-display-id-target_primary_disease th.disease {
   background-color: #588EBC;
 }
 
-/* line 3889, ../sass/components/_misc.scss */
+/* line 3888, ../sass/components/_misc.scss */
 .view-display-id-target_primary_disease a, .view-display-id-target_small_screen a {
   color: #369 !important;
 }
 
-/* line 3893, ../sass/components/_misc.scss */
+/* line 3892, ../sass/components/_misc.scss */
 .page-programs-target-data-matrix .view-display-id-target_last_updated {
   font-style: italic;
   color: #323232;
@@ -5265,12 +5264,12 @@ span.newtab {
   bottom: 30%;
 }
 
-/* line 3900, ../sass/components/_misc.scss */
+/* line 3899, ../sass/components/_misc.scss */
 .page-programs-target-data-matrix .view-display-id-target_last_updated .views-row {
   margin-bottom: 0;
 }
 
-/* line 3904, ../sass/components/_misc.scss */
+/* line 3903, ../sass/components/_misc.scss */
 .methods-link {
   margin-top: 5px;
   font-size: 16px;
@@ -5283,7 +5282,7 @@ span.newtab {
 * CTD2 Data Portal
 *
 */
-/* line 3920, ../sass/components/_misc.scss */
+/* line 3919, ../sass/components/_misc.scss */
 .page-programs-ctd2-data-portal .ctd2-title,
 .page-programs-ctd2-data-portal-network .ctd2-title,
 .page-programs-ctd2-data-portal-accordion .ctd2-title,
@@ -5294,7 +5293,7 @@ span.newtab {
   width: 50%;
 }
 
-/* line 3930, ../sass/components/_misc.scss */
+/* line 3929, ../sass/components/_misc.scss */
 .page-programs-ctd2-data-portal .ctd2-image,
 .page-programs-ctd2-data-portal-network .ctd2-image,
 .page-programs-ctd2-data-portal-accordion .ctd2-image,
@@ -5302,7 +5301,7 @@ span.newtab {
   float: right;
 }
 
-/* line 3937, ../sass/components/_misc.scss */
+/* line 3936, ../sass/components/_misc.scss */
 .page-programs-ctd2-data-portal .view-display-id-portal,
 .page-programs-ctd2-data-portal-network .view-display-id-internal_portal,
 .page-programs-ctd2-data-portal-accordion .view-display-id-accordion,
@@ -5311,7 +5310,7 @@ span.newtab {
   float: right;
 }
 
-/* line 3945, ../sass/components/_misc.scss */
+/* line 3944, ../sass/components/_misc.scss */
 .page-programs-ctd2-data-portal .view-display-id-updated,
 .page-programs-ctd2-data-portal-network .view-display-id-updated,
 .page-programs-ctd2-data-portal-accordion .view-display-id-updated,
@@ -5322,7 +5321,7 @@ span.newtab {
   bottom: 40%;
 }
 
-/* line 3955, ../sass/components/_misc.scss */
+/* line 3954, ../sass/components/_misc.scss */
 .page-programs-ctd2-data-portal .view-display-id-updated .views-row,
 .page-programs-ctd2-data-portal-network .view-display-id-updated .views-row,
 .page-programs-ctd2-data-portal-accordion .view-display-id-updated .views-row,
@@ -5330,7 +5329,7 @@ span.newtab {
   margin-bottom: 0;
 }
 
-/* line 3962, ../sass/components/_misc.scss */
+/* line 3961, ../sass/components/_misc.scss */
 .page-programs-ctd2-data-portal .views-label,
 .page-programs-ctd2-data-portal-network .views-label,
 .page-programs-ctd2-data-portal-accordion .views-label,
@@ -5343,7 +5342,7 @@ span.newtab {
   padding: 0;
 }
 
-/* line 3974, ../sass/components/_misc.scss */
+/* line 3973, ../sass/components/_misc.scss */
 .page-programs-ctd2-data-portal .methods-link a, .page-programs-ctd2-data-portal .methods-link a:visited,
 .page-programs-ctd2-data-portal-network .methods-link a, .page-programs-ctd2-data-portal-network .methods-link a:visited,
 .page-programs-ctd2-data-portal-accordion .methods-link a, .page-programs-ctd2-data-portal-accordion .methods-link a:visited,
@@ -5352,34 +5351,34 @@ span.newtab {
   text-decoration: none !important;
 }
 
-/* line 3979, ../sass/components/_misc.scss */
+/* line 3978, ../sass/components/_misc.scss */
 .expand-flex {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 3984, ../sass/components/_misc.scss */
+/* line 3983, ../sass/components/_misc.scss */
 .view-display-id-accordion {
   width: 100%;
 }
 
-/* line 3989, ../sass/components/_misc.scss */
+/* line 3988, ../sass/components/_misc.scss */
 .view-display-id-accordion .projbanner,
 .view-display-id-accordion .ui-accordion .ui-accordion-content {
   padding: 0;
 }
 
-/* line 3993, ../sass/components/_misc.scss */
+/* line 3992, ../sass/components/_misc.scss */
 .view-ctd2-data-portal {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
 }
 
-/* line 3997, ../sass/components/_misc.scss */
+/* line 3996, ../sass/components/_misc.scss */
 .view-id-ctd2_data_portal table {
   table-layout: fixed;
 }
 
-/* line 4001, ../sass/components/_misc.scss */
+/* line 4000, ../sass/components/_misc.scss */
 .view-ctd2-data-portal th.colheader {
   background-color: #990000;
   color: #fff;
@@ -5393,12 +5392,12 @@ span.newtab {
   font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
 }
 
-/* line 4014, ../sass/components/_misc.scss */
+/* line 4013, ../sass/components/_misc.scss */
 .view-ctd2-data-portal tr {
   vertical-align: top;
 }
 
-/* line 4018, ../sass/components/_misc.scss */
+/* line 4017, ../sass/components/_misc.scss */
 th.projbanner {
   color: white;
   font-size: 16px;
@@ -5411,7 +5410,7 @@ th.projbanner {
   text-align: left;
 }
 
-/* line 4030, ../sass/components/_misc.scss */
+/* line 4029, ../sass/components/_misc.scss */
 th.current {
   color: white;
   font-size: 16px;
@@ -5424,7 +5423,7 @@ th.current {
   text-align: left;
 }
 
-/* line 4042, ../sass/components/_misc.scss */
+/* line 4041, ../sass/components/_misc.scss */
 th.completed {
   color: white;
   font-size: 16px;
@@ -5437,27 +5436,27 @@ th.completed {
   text-align: left;
 }
 
-/* line 4054, ../sass/components/_misc.scss */
+/* line 4053, ../sass/components/_misc.scss */
 .ui-state-active {
   background: none;
 }
 
-/* line 4058, ../sass/components/_misc.scss */
+/* line 4057, ../sass/components/_misc.scss */
 th.projbanner a {
   color: white !important;
 }
 
-/* line 4062, ../sass/components/_misc.scss */
+/* line 4061, ../sass/components/_misc.scss */
 .completed .ui-icon {
   background-image: url(../images/ui-icons_990000_256x240.png) !important;
 }
 
-/* line 4066, ../sass/components/_misc.scss */
+/* line 4065, ../sass/components/_misc.scss */
 .current .ui-icon {
   background-image: url(../images/ui-icons_ffffff_256x240.png) !important;
 }
 
-/* line 4075, ../sass/components/_misc.scss */
+/* line 4074, ../sass/components/_misc.scss */
 .view-ctd2-data-portal td,
 .view-ctd2-data-portal .views-field-field-project-title {
   background-color: #FFFFF0;
@@ -5468,59 +5467,59 @@ th.projbanner a {
   text-align: left;
 }
 
-/* line 4084, ../sass/components/_misc.scss */
+/* line 4083, ../sass/components/_misc.scss */
 .view-ctd2-data-portal .views-field-field-project-title {
   padding-bottom: 0;
   padding-right: 0;
 }
 
-/* line 4090, ../sass/components/_misc.scss */
+/* line 4089, ../sass/components/_misc.scss */
 .view-ctd2-data-portal td a,
 .view-ctd2-data-portal .views-field-field-project-title a {
   color: darkblue !important;
   text-decoration: none;
 }
 
-/* line 4095, ../sass/components/_misc.scss */
+/* line 4094, ../sass/components/_misc.scss */
 .view-display-id-paper {
   padding-top: 80px;
 }
 
-/* line 4099, ../sass/components/_misc.scss */
+/* line 4098, ../sass/components/_misc.scss */
 .view-display-id-paper .views-field-field-paper-link img {
   width: 15px;
 }
 
-/* line 4103, ../sass/components/_misc.scss */
+/* line 4102, ../sass/components/_misc.scss */
 .view-display-id-paper .views-row {
   margin-bottom: 0;
 }
 
-/* line 4107, ../sass/components/_misc.scss */
+/* line 4106, ../sass/components/_misc.scss */
 .view-ctd2-data-portal ul {
   list-style-image: none !important;
   list-style-type: disc !important;
 }
 
-/* line 4112, ../sass/components/_misc.scss */
+/* line 4111, ../sass/components/_misc.scss */
 .view-ctd2-data-portal .views-field-field-contact-link li {
   list-style: none;
 }
 
-/* line 4116, ../sass/components/_misc.scss */
+/* line 4115, ../sass/components/_misc.scss */
 .view-id-ctd2_data_portal fieldset {
   border: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 4122, ../sass/components/_misc.scss */
+/* line 4121, ../sass/components/_misc.scss */
 .view-id-ctd2_data_portal.views-accordion .fieldset-wrapper {
   width: 100% !important;
   padding: 0;
 }
 
-/* line 4127, ../sass/components/_misc.scss */
+/* line 4126, ../sass/components/_misc.scss */
 .view-id-ctd2_data_portal .views-field-field-institute-1 {
   color: white;
   font-size: 16px;
@@ -5530,24 +5529,24 @@ th.projbanner a {
   padding-bottom: 5px;
 }
 
-/* line 4136, ../sass/components/_misc.scss */
+/* line 4135, ../sass/components/_misc.scss */
 .view-id-ctd2_data_portal .views-field-field-institute-1 a {
   color: white !important;
 }
 
-/* line 4140, ../sass/components/_misc.scss */
+/* line 4139, ../sass/components/_misc.scss */
 html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   padding-left: 20px;
   padding-top: 5px;
 }
 
-/* line 4145, ../sass/components/_misc.scss */
+/* line 4144, ../sass/components/_misc.scss */
 .accordion-table {
   margin: 0;
   width: 100%;
 }
 
-/* line 4150, ../sass/components/_misc.scss */
+/* line 4149, ../sass/components/_misc.scss */
 .view-display-id-accordion_block .ui-state-default {
   border: none;
   background: none;
@@ -5557,23 +5556,23 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 * Data Matrices Small Screen
 *
 */
-/* line 4160, ../sass/components/_misc.scss */
+/* line 4159, ../sass/components/_misc.scss */
 .view-display-id-cgci_small_screen {
   display: none;
 }
 
-/* line 4164, ../sass/components/_misc.scss */
+/* line 4163, ../sass/components/_misc.scss */
 .view-display-id-cgci_small_screen .cols-0 {
   width: 100%;
 }
 
-/* line 4168, ../sass/components/_misc.scss */
+/* line 4167, ../sass/components/_misc.scss */
 .view-display-id-cgci_small_screen .disease-heading {
   margin-bottom: 20px;
   font-size: 20px;
 }
 
-/* line 4173, ../sass/components/_misc.scss */
+/* line 4172, ../sass/components/_misc.scss */
 .view-display-id-cgci_small_screen .views-label {
   background-color: #900 !important;
   width: 100%;
@@ -5583,28 +5582,28 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   padding: 10px;
 }
 
-/* line 4182, ../sass/components/_misc.scss */
+/* line 4181, ../sass/components/_misc.scss */
 .view-display-id-cgci_small_screen .field-content {
   float: left;
 }
 
-/* line 4186, ../sass/components/_misc.scss */
+/* line 4185, ../sass/components/_misc.scss */
 .view-display-id-target_small_screen {
   display: none;
 }
 
-/* line 4190, ../sass/components/_misc.scss */
+/* line 4189, ../sass/components/_misc.scss */
 .view-display-id-target_small_screen .cols-0 {
   width: 100%;
 }
 
-/* line 4194, ../sass/components/_misc.scss */
+/* line 4193, ../sass/components/_misc.scss */
 .view-display-id-target_small_screen .disease-heading {
   margin-bottom: 20px;
   font-size: 20px;
 }
 
-/* line 4199, ../sass/components/_misc.scss */
+/* line 4198, ../sass/components/_misc.scss */
 .view-display-id-target_small_screen .views-label {
   background-color: #900 !important;
   width: 100%;
@@ -5614,7 +5613,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   padding: 10px;
 }
 
-/* line 4208, ../sass/components/_misc.scss */
+/* line 4207, ../sass/components/_misc.scss */
 .view-display-id-target_small_screen .field-content {
   float: left;
 }
@@ -5623,7 +5622,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 * Centering images in CKEditor
 *
 */
-/* line 4217, ../sass/components/_misc.scss */
+/* line 4216, ../sass/components/_misc.scss */
 .center {
   display: block;
   margin-left: auto;
@@ -5634,30 +5633,30 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 * Homepage
 *
 */
-/* line 4228, ../sass/components/_misc.scss */
+/* line 4227, ../sass/components/_misc.scss */
 .page-home #main #content {
   min-height: inherit;
   padding-bottom: 0;
 }
 
-/* line 4233, ../sass/components/_misc.scss */
+/* line 4232, ../sass/components/_misc.scss */
 .page-home #page-title {
   padding-left: 10px;
 }
 
-/* line 4237, ../sass/components/_misc.scss */
+/* line 4236, ../sass/components/_misc.scss */
 .view-display-id-homepage_mission {
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* line 4243, ../sass/components/_misc.scss */
+/* line 4242, ../sass/components/_misc.scss */
 .view-display-id-homepage_mission .views-row {
   position: relative;
 }
 
-/* line 4247, ../sass/components/_misc.scss */
+/* line 4246, ../sass/components/_misc.scss */
 #block-views-programs-homepage-programs {
   border-top-style: solid;
   border-top-color: #808080;
@@ -5667,7 +5666,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   padding-right: 10px;
 }
 
-/* line 4257, ../sass/components/_misc.scss */
+/* line 4256, ../sass/components/_misc.scss */
 #block-views-programs-homepage-programs,
 #block-views-homepage-homepage-data-access {
   border-bottom-style: solid;
@@ -5676,50 +5675,50 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   margin-bottom: 20px;
 }
 
-/* line 4264, ../sass/components/_misc.scss */
+/* line 4263, ../sass/components/_misc.scss */
 #block-views-homepage-homepage-data-access {
   padding-bottom: 20px;
 }
 
-/* line 4268, ../sass/components/_misc.scss */
+/* line 4267, ../sass/components/_misc.scss */
 #block-views-programs-homepage-programs .views-field-field-image {
   padding-left: 0;
   padding-bottom: 50px;
   padding-right: 20px;
 }
 
-/* line 4274, ../sass/components/_misc.scss */
+/* line 4273, ../sass/components/_misc.scss */
 #block-views-programs-homepage-programs .views-row-last .views-field-field-image {
   padding-bottom: 30px;
 }
 
-/* line 4278, ../sass/components/_misc.scss */
+/* line 4277, ../sass/components/_misc.scss */
 #block-views-programs-homepage-programs .views-field-field-image img {
   -webkit-box-shadow: 10px 10px 5px 0px gray;
   -moz-box-shadow: 10px 10px 5px 0px gray;
   box-shadow: 10px 10px 5px 0px gray;
 }
 
-/* line 4285, ../sass/components/_misc.scss */
+/* line 4284, ../sass/components/_misc.scss */
 #block-views-homepage-homepage-data-access,
 #postscript-first {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* line 4291, ../sass/components/_misc.scss */
+/* line 4290, ../sass/components/_misc.scss */
 .view-homepage .views-field-field-ocg-mission-image,
 .view-homepage .views-field-field-data-access-image {
   float: right;
   margin-left: 50px;
 }
 
-/* line 4296, ../sass/components/_misc.scss */
+/* line 4295, ../sass/components/_misc.scss */
 .view-display-id-homepage_mission h1 {
   margin-top: 0;
 }
 
-/* line 4305, ../sass/components/_misc.scss */
+/* line 4304, ../sass/components/_misc.scss */
 .view-display-id-homepage_mission .views-field-field-ocg-mission-body,
 .view-display-id-homepage_mission .views-field-field-learn-more-link,
 .view-display-id-homepage_mission .views-field-field-email-update-link,
@@ -5729,27 +5728,27 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   font-size: 1.25em;
 }
 
-/* line 4309, ../sass/components/_misc.scss */
+/* line 4308, ../sass/components/_misc.scss */
 .view-display-id-homepage_mission .views-field-field-learn-more-link {
   background-color: #fff2cc;
   float: left;
   padding: 1%;
 }
 
-/* line 4315, ../sass/components/_misc.scss */
+/* line 4314, ../sass/components/_misc.scss */
 .view-homepage .views-field-field-email-update-link {
   position: absolute;
   bottom: 0;
 }
 
-/* line 4320, ../sass/components/_misc.scss */
+/* line 4319, ../sass/components/_misc.scss */
 .view-homepage .views-field-field-twitter-link {
   position: absolute;
   bottom: 0;
   right: 35%;
 }
 
-/* line 4327, ../sass/components/_misc.scss */
+/* line 4326, ../sass/components/_misc.scss */
 .view-homepage .views-field-field-email-update-link img,
 .view-homepage .views-field-field-twitter-link img {
   width: 30px;
@@ -5757,7 +5756,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   vertical-align: middle;
 }
 
-/* line 4334, ../sass/components/_misc.scss */
+/* line 4333, ../sass/components/_misc.scss */
 .view-homepage .views-field-field-ocg-mission-links .field-content,
 .view-homepage .views-field-field-data-access-links .field-content {
   height: 100%;
@@ -5774,7 +5773,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   -ms-flex-pack: center;
 }
 
-/* line 4350, ../sass/components/_misc.scss */
+/* line 4349, ../sass/components/_misc.scss */
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link,
 .view-homepage .views-field-field-data-access-links .field-content .data-link {
   width: 12%;
@@ -5790,25 +5789,25 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   float: left;
 }
 
-/* line 4364, ../sass/components/_misc.scss */
+/* line 4363, ../sass/components/_misc.scss */
 .lt-ie9 .views-field-field-data-access-links .field-content .data-link {
   width: 20%;
   margin-right: 2.5%;
 }
 
-/* line 4369, ../sass/components/_misc.scss */
+/* line 4368, ../sass/components/_misc.scss */
 .lt-ie9 .view-homepage .views-field-field-data-access-links .field-content {
   margin: auto;
   width: 65%;
 }
 
-/* line 4374, ../sass/components/_misc.scss */
+/* line 4373, ../sass/components/_misc.scss */
 .view-homepage .views-field-field-data-access-links .field-content .data-link-text {
   width: 100%;
   align-self: center;
 }
 
-/* line 4384, ../sass/components/_misc.scss */
+/* line 4383, ../sass/components/_misc.scss */
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link a,
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link a:visited,
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link a:hover,
@@ -5818,48 +5817,48 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   color: #fff !important;
 }
 
-/* line 4389, ../sass/components/_misc.scss */
+/* line 4388, ../sass/components/_misc.scss */
 .view-homepage .views-field-field-ocg-mission-links .field-content .mission-link a .ext,
 .view-homepage .views-field-field-ocg-mission-links .field-content .data-link a ext {
   display: none;
 }
 
-/* line 4395, ../sass/components/_misc.scss */
+/* line 4394, ../sass/components/_misc.scss */
 #block-views-programs-homepage-programs h2,
 #block-views-homepage-homepage-data-access h2,
 .page-home .region-postscript-first h2 {
   font-size: 2.3em;
 }
 
-/* line 4399, ../sass/components/_misc.scss */
+/* line 4398, ../sass/components/_misc.scss */
 #block-views-homepage-homepage-data-access h2 {
   margin-top: 0;
   padding-bottom: 20px;
 }
 
-/* line 4404, ../sass/components/_misc.scss */
+/* line 4403, ../sass/components/_misc.scss */
 .page-home .region-postscript-first h2 {
   color: #808080;
 }
 
-/* line 4408, ../sass/components/_misc.scss */
+/* line 4407, ../sass/components/_misc.scss */
 .page-home .region-postscript-first h2.block-title {
   line-height: inherit;
 }
 
-/* line 4412, ../sass/components/_misc.scss */
+/* line 4411, ../sass/components/_misc.scss */
 .view-display-id-homepage_programs table {
   border: none !important;
 }
 
-/* line 4417, ../sass/components/_misc.scss */
+/* line 4416, ../sass/components/_misc.scss */
 .view-display-id-homepage_programs .tablestyles tr.even,
 .view-display-id-homepage_programs .tablestyles tr.odd {
   background-color: transparent !important;
   border-bottom: none !important;
 }
 
-/* line 4425, ../sass/components/_misc.scss */
+/* line 4424, ../sass/components/_misc.scss */
 .view-display-id-homepage_programs .tablestyles tr.odd td,
 .view-display-id-homepage_programs .tablestyles tr.odd th,
 .view-display-id-homepage_programs .tablestyles tr.even td,
@@ -5867,17 +5866,17 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   border-right: none !important;
 }
 
-/* line 4429, ../sass/components/_misc.scss */
+/* line 4428, ../sass/components/_misc.scss */
 .view-display-id-homepage_programs img {
   max-width: none;
 }
 
-/* line 4433, ../sass/components/_misc.scss */
+/* line 4432, ../sass/components/_misc.scss */
 .view-display-id-homepage_programs .views-field-body {
   vertical-align: top;
 }
 
-/* line 4437, ../sass/components/_misc.scss */
+/* line 4436, ../sass/components/_misc.scss */
 .view-display-id-homepage_links .view-content {
   display: flex;
   justify-content: flex-start;
@@ -5885,54 +5884,54 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   flex-wrap: wrap;
 }
 
-/* line 4444, ../sass/components/_misc.scss */
+/* line 4443, ../sass/components/_misc.scss */
 .view-display-id-homepage_links .views-row {
   width: 15%;
   padding-right: 5%;
   float: left;
 }
 
-/* line 4450, ../sass/components/_misc.scss */
+/* line 4449, ../sass/components/_misc.scss */
 .view-display-id-homepage_links .views-field-field-link-icon {
   text-align: center;
 }
 
-/* line 4454, ../sass/components/_misc.scss */
+/* line 4453, ../sass/components/_misc.scss */
 .view-display-id-homepage_links .views-field-field-homepage-link {
   text-align: center;
 }
 
-/* line 4458, ../sass/components/_misc.scss */
+/* line 4457, ../sass/components/_misc.scss */
 .view-display-id-homepage_data_access .views-row {
   margin-bottom: 0;
 }
 
-/* line 4462, ../sass/components/_misc.scss */
+/* line 4461, ../sass/components/_misc.scss */
 .page-home .region-postscript-first {
   display: flex;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* line 4469, ../sass/components/_misc.scss */
+/* line 4468, ../sass/components/_misc.scss */
 #block-views-27184a66566baa7691d253aeb9fc40aa,
 #block-views-70b4183ed1123291b6d64484c47ed1ba {
   width: 50%;
 }
 
-/* line 4474, ../sass/components/_misc.scss */
+/* line 4473, ../sass/components/_misc.scss */
 .no-flexbox #block-views-27184a66566baa7691d253aeb9fc40aa,
 .no-flexbox #block-views-70b4183ed1123291b6d64484c47ed1ba {
   float: left;
   width: 48%;
 }
 
-/* line 4479, ../sass/components/_misc.scss */
+/* line 4478, ../sass/components/_misc.scss */
 #block-views-27184a66566baa7691d253aeb9fc40aa {
   padding-right: 2%;
 }
 
-/* line 4483, ../sass/components/_misc.scss */
+/* line 4482, ../sass/components/_misc.scss */
 .page-home .region-postscript-first .title-line {
   display: flex;
   justify-content: space-between;
@@ -5944,24 +5943,24 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   margin-bottom: 20px;
 }
 
-/* line 4494, ../sass/components/_misc.scss */
+/* line 4493, ../sass/components/_misc.scss */
 .page-home .region-postscript-first .view-link {
   display: flex;
 }
 
-/* line 4498, ../sass/components/_misc.scss */
+/* line 4497, ../sass/components/_misc.scss */
 .page-home .region-postscript-first .view-link a {
   color: #808080;
   text-decoration: none;
   line-height: 0.5em;
 }
 
-/* line 4504, ../sass/components/_misc.scss */
+/* line 4503, ../sass/components/_misc.scss */
 .page-home .region-postscript-first .view .views-row {
   margin-bottom: 20px;
 }
 
-/* line 4509, ../sass/components/_misc.scss */
+/* line 4508, ../sass/components/_misc.scss */
 .view-display-id-homepage_news_publications .views-field-title a,
 .view-display-id-homepage_newsletter .views-field-title a {
   font-size: 1.25em;
@@ -5969,13 +5968,13 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   color: darkred;
 }
 
-/* line 4516, ../sass/components/_misc.scss */
+/* line 4515, ../sass/components/_misc.scss */
 .view-display-id-homepage_news_publications .left,
 .view-display-id-homepage_newsletter .left {
   padding-right: 3%;
 }
 
-/* line 4520, ../sass/components/_misc.scss */
+/* line 4519, ../sass/components/_misc.scss */
 .view-display-id-homepage_news_publications .all-programs {
   overflow: hidden;
   background-color: #767676;
@@ -5993,7 +5992,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   text-transform: uppercase;
 }
 
-/* line 4540, ../sass/components/_misc.scss */
+/* line 4539, ../sass/components/_misc.scss */
 .view-display-id-homepage_news_publications .views-field-views-conditional,
 .view-display-id-homepage_news_publications .views-field-field-publication-date,
 .view-display-id-homepage_news_publications .views-field-field-news-date,
@@ -6002,7 +6001,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 
 /* TARGET Publications */
-/* line 4546, ../sass/components/_misc.scss */
+/* line 4545, ../sass/components/_misc.scss */
 .view-project-features .views-label-field-view-field-embed {
   color: #900;
   text-transform: none;
@@ -6010,24 +6009,24 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   float: none;
 }
 
-/* line 4553, ../sass/components/_misc.scss */
+/* line 4552, ../sass/components/_misc.scss */
 .view-project-features .view-target-publications {
   float: left;
 }
 
 /* PGDI */
-/* line 4559, ../sass/components/_misc.scss */
+/* line 4558, ../sass/components/_misc.scss */
 #views-exposed-form-pgdi-content-pgdi-display {
   width: 100%;
 }
 
-/* line 4563, ../sass/components/_misc.scss */
+/* line 4562, ../sass/components/_misc.scss */
 #views-exposed-form-pgdi-content-pgdi-display .views-exposed-widgets {
   width: 100%;
   text-align: center;
 }
 
-/* line 4576, ../sass/components/_misc.scss */
+/* line 4575, ../sass/components/_misc.scss */
 .views-widget-filter-field_project_country_tid,
 .views-widget-filter-field_icd_10_code_tid,
 .views-widget-filter-field_patient_age_range_value,
@@ -6042,32 +6041,32 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   margin-bottom: 20px;
 }
 
-/* line 4582, ../sass/components/_misc.scss */
+/* line 4581, ../sass/components/_misc.scss */
 #views-exposed-form-pgdi-content-pgdi-display .views-exposed-form .views-exposed-widget {
   float: none;
   padding: 0;
 }
 
-/* line 4587, ../sass/components/_misc.scss */
+/* line 4586, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display .view-filters {
   display: flex;
   justify-content: center;
 }
 
-/* line 4592, ../sass/components/_misc.scss */
+/* line 4591, ../sass/components/_misc.scss */
 .views-widget-filter-secondary legend {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 4597, ../sass/components/_misc.scss */
+/* line 4596, ../sass/components/_misc.scss */
 .pgdi-column {
   flex: 1;
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 4603, ../sass/components/_misc.scss */
+/* line 4602, ../sass/components/_misc.scss */
 .views-widget-filter-secondary input[type=checkbox] {
   position: absolute;
   left: -9999px;
@@ -6075,7 +6074,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     area and turn opacity to 0 instead. */
 }
 
-/* line 4610, ../sass/components/_misc.scss */
+/* line 4609, ../sass/components/_misc.scss */
 .views-widget-filter-secondary .form-type-checkbox label {
   cursor: pointer;
   padding: 5px;
@@ -6090,82 +6089,82 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   background-color: #e5e3e3;
 }
 
-/* line 4624, ../sass/components/_misc.scss */
+/* line 4623, ../sass/components/_misc.scss */
 .views-widget-filter-secondary .form-type-checkbox {
   margin-right: 5px;
   margin-bottom: 5px;
   margin-left: 5px;
 }
 
-/* line 4630, ../sass/components/_misc.scss */
+/* line 4629, ../sass/components/_misc.scss */
 .views-widget-filter-secondary .form-type-checkbox:checked {
   background: #900;
   color: white;
 }
 
-/* line 4635, ../sass/components/_misc.scss */
+/* line 4634, ../sass/components/_misc.scss */
 .views-widget-filter-secondary .form-type-checkbox:last-child {
   margin-right: 0;
 }
 
-/* line 4639, ../sass/components/_misc.scss */
+/* line 4638, ../sass/components/_misc.scss */
 .views-widget-filter-secondary input[type=checkbox]:checked ~ label {
   background: #900;
   color: white;
 }
 
-/* line 4644, ../sass/components/_misc.scss */
+/* line 4643, ../sass/components/_misc.scss */
 .views-widget-filter-secondary input[type=checkbox]:checked + label {
   background: #900;
   color: white;
 }
 
-/* line 4649, ../sass/components/_misc.scss */
+/* line 4648, ../sass/components/_misc.scss */
 .views-widget-filter-secondary select {
   display: none;
 }
 
-/* line 4653, ../sass/components/_misc.scss */
+/* line 4652, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display table {
   width: 100%;
   table-layout: fixed;
 }
 
-/* line 4658, ../sass/components/_misc.scss */
+/* line 4657, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display tr.odd {
   background-color: #FFFFF0 !important;
 }
 
-/* line 4662, ../sass/components/_misc.scss */
+/* line 4661, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display tr.even {
   background-color: #FFFFFF !important;
 }
 
-/* line 4666, ../sass/components/_misc.scss */
+/* line 4665, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display td {
   text-align: center;
   border-right: 1px solid #ebebeb !important;
 }
 
-/* line 4671, ../sass/components/_misc.scss */
+/* line 4670, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display .feed-icon {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-/* line 4677, ../sass/components/_misc.scss */
+/* line 4676, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display .feed-icon img {
   display: none;
 }
 
-/* line 4681, ../sass/components/_misc.scss */
+/* line 4680, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display .feed-icon a:hover {
   color: #fff !important;
   text-decoration: none;
 }
 
-/* line 4686, ../sass/components/_misc.scss */
+/* line 4685, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display .feed-icon a[href^="/programs/target/pgdi-filtered-export.xls"]:after {
   content: 'Download the Filtered XLS File';
   margin-right: 30px;
@@ -6174,7 +6173,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   color: #fff;
 }
 
-/* line 4694, ../sass/components/_misc.scss */
+/* line 4693, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display .feed-icon a[href^="/programs/target/pgdi-full-export.xls"]:after {
   content: 'Download the Full Data XLS File';
   background-color: #588EBC;
@@ -6183,14 +6182,14 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 
 /* Youtube Videos */
-/* line 4703, ../sass/components/_misc.scss */
+/* line 4702, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar {
   background: #f5c900;
   background: linear-gradient(to bottom, #f5c900 0%, #fef6d5 80%, #faf4bf 100%) repeat scroll 0% 0% transparent;
   padding: 15px;
 }
 
-/* line 4709, ../sass/components/_misc.scss */
+/* line 4708, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar h2 {
   color: #774928;
   font-size: 15.6px;
@@ -6199,7 +6198,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   font-weight: bold;
 }
 
-/* line 4717, ../sass/components/_misc.scss */
+/* line 4716, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar:before {
   content: "";
   position: absolute;
@@ -6212,14 +6211,14 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   width: 0px;
 }
 
-/* line 4729, ../sass/components/_misc.scss */
+/* line 4728, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar ul {
   margin: 0;
   list-style-type: none;
   list-style-image: url(../images/play-button.png);
 }
 
-/* line 4735, ../sass/components/_misc.scss */
+/* line 4734, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar .views-row {
   margin-bottom: 0;
   line-height: normal;
@@ -6227,59 +6226,59 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   overflow: visible;
 }
 
-/* line 4742, ../sass/components/_misc.scss */
+/* line 4741, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar .views-row .views-field-lightbox2 {
   vertical-align: top;
   display: inline-block;
   font-weight: bold;
 }
 
-/* line 4748, ../sass/components/_misc.scss */
+/* line 4747, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar a {
   color: #323232;
   text-decoration: none;
 }
 
-/* line 4753, ../sass/components/_misc.scss */
+/* line 4752, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar a:hover {
   text-decoration: underline;
 }
 
-/* line 4757, ../sass/components/_misc.scss */
+/* line 4756, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar .views-field-lightbox2 img {
   vertical-align: bottom;
   padding-right: 5px;
 }
 
 @media all and (max-width: 1160px) {
-  /* line 4764, ../sass/components/_misc.scss */
+  /* line 4763, ../sass/components/_misc.scss */
   #block-superfish-1 {
     left: 1%;
   }
 
-  /* line 4768, ../sass/components/_misc.scss */
+  /* line 4767, ../sass/components/_misc.scss */
   #block-superfish-2 {
     right: 1%;
   }
 
-  /* line 4772, ../sass/components/_misc.scss */
+  /* line 4771, ../sass/components/_misc.scss */
   .front .view-announcement .views-field-body, .view-announcement .views-field-body {
     float: left;
     padding-left: 40px;
     width: 80%;
   }
 
-  /* line 4778, ../sass/components/_misc.scss */
+  /* line 4777, ../sass/components/_misc.scss */
   .corner.three-col .views-row {
     margin-right: 1%;
   }
 
-  /* line 4786, ../sass/components/_misc.scss */
+  /* line 4785, ../sass/components/_misc.scss */
   .corner.three-col .views-row .data-matrix {
     right: 1%;
   }
 
-  /* line 4790, ../sass/components/_misc.scss */
+  /* line 4789, ../sass/components/_misc.scss */
   .data-matrix a {
     width: 100%;
     font-size: 1em;
@@ -6287,45 +6286,45 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     padding-right: 7%;
   }
 
-  /* line 4797, ../sass/components/_misc.scss */
+  /* line 4796, ../sass/components/_misc.scss */
   #footer #block-menu-block-2 {
     float: none;
   }
 
-  /* line 4801, ../sass/components/_misc.scss */
+  /* line 4800, ../sass/components/_misc.scss */
   .menu-block-2 > .menu, .NIH {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  /* line 4810, ../sass/components/_misc.scss */
+  /* line 4809, ../sass/components/_misc.scss */
   #footer .block-menu-block ul li {
     width: auto;
   }
 
-  /* line 4814, ../sass/components/_misc.scss */
+  /* line 4813, ../sass/components/_misc.scss */
   #footer .block-menu-block ul li {
     font-size: 1.063em;
   }
 
-  /* line 4822, ../sass/components/_misc.scss */
+  /* line 4821, ../sass/components/_misc.scss */
   #block-views-program-sidebar-block-2 img {
     width: 100%;
   }
 
-  /* line 4826, ../sass/components/_misc.scss */
+  /* line 4825, ../sass/components/_misc.scss */
   .two-sidebars #main, .sidebar-first #main {
     background: white;
   }
 
-  /* line 4830, ../sass/components/_misc.scss */
+  /* line 4829, ../sass/components/_misc.scss */
   .page-news-publications-e-newsletters .views-accordion .view-grouping-content {
     padding: 0;
     padding-right: 5%;
   }
 
-  /* line 4835, ../sass/components/_misc.scss */
+  /* line 4834, ../sass/components/_misc.scss */
   .view-program-abbreviation {
     float: left;
     clear: both;
@@ -6335,7 +6334,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     padding: 5px 10px 5px 0;
   }
 
-  /* line 4844, ../sass/components/_misc.scss */
+  /* line 4843, ../sass/components/_misc.scss */
   .views-label, .field-label {
     color: #7d7d7d;
     font-weight: bold;
@@ -6345,83 +6344,83 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     padding: 5px 10px 5px 0;
   }
 
-  /* line 4853, ../sass/components/_misc.scss */
+  /* line 4852, ../sass/components/_misc.scss */
   .nci-inner img, #logo {
     width: 50%;
   }
 
-  /* line 4857, ../sass/components/_misc.scss */
+  /* line 4856, ../sass/components/_misc.scss */
   .view-programs .view-content {
     display: flex;
   }
 
-  /* line 4861, ../sass/components/_misc.scss */
+  /* line 4860, ../sass/components/_misc.scss */
   #block-views-programs-block-3 .view-programs .view-content, #block-views-programs-block-2 .view-programs .view-content {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  /* line 4866, ../sass/components/_misc.scss */
+  /* line 4865, ../sass/components/_misc.scss */
   #block-views-programs-block-4 .view-programs .view-content {
     display: inherit;
   }
 
-  /* line 4870, ../sass/components/_misc.scss */
+  /* line 4869, ../sass/components/_misc.scss */
   #block-views-programs-block-1 .views-row {
     height: inherit;
     flex: 1;
   }
 
-  /* line 4875, ../sass/components/_misc.scss */
+  /* line 4874, ../sass/components/_misc.scss */
   .corner.three-col .views-row .views-field-title {
     padding-top: 0.5em;
     font-size: 1.381em;
     line-height: 1.375em;
   }
 
-  /* line 4881, ../sass/components/_misc.scss */
+  /* line 4880, ../sass/components/_misc.scss */
   .corner.three-col .views-row .views-field-body {
     font-size: 13px;
   }
 
-  /* line 4885, ../sass/components/_misc.scss */
+  /* line 4884, ../sass/components/_misc.scss */
   .corner.three-col .views-row .views-field-title {
     padding: 0px 0.5em;
   }
 
-  /* line 4889, ../sass/components/_misc.scss */
+  /* line 4888, ../sass/components/_misc.scss */
   .corner.three-col .views-row .views-field-body, .corner.three-col .views-row .views-field-view-node {
     padding: 0 0.938em;
   }
 
-  /* line 4893, ../sass/components/_misc.scss */
+  /* line 4892, ../sass/components/_misc.scss */
   .views-row .views-field-view-node {
     font-size: 0.938em;
     bottom: 2%;
   }
 
-  /* line 4898, ../sass/components/_misc.scss */
+  /* line 4897, ../sass/components/_misc.scss */
   .two-sidebars #main, .sidebar-first #main {
     background: white;
   }
 
-  /* line 4902, ../sass/components/_misc.scss */
+  /* line 4901, ../sass/components/_misc.scss */
   .page-node-314 #page-inner {
     width: 980px;
   }
 
-  /* line 4906, ../sass/components/_misc.scss */
+  /* line 4905, ../sass/components/_misc.scss */
   .page-node-21 #block-views-publications-block-2 {
     width: 100%;
   }
 
-  /* line 4910, ../sass/components/_misc.scss */
+  /* line 4909, ../sass/components/_misc.scss */
   .page-node-21 #block-views-e-newsletter-block-1.right {
     float: left;
     width: 100%;
   }
 
-  /* line 4918, ../sass/components/_misc.scss */
+  /* line 4917, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5,
@@ -6430,14 +6429,14 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     width: 15%;
   }
 
-  /* line 4923, ../sass/components/_misc.scss */
+  /* line 4922, ../sass/components/_misc.scss */
   #footer .block-menu-block .menu-block-2 > ul {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
   }
 
-  /* line 4929, ../sass/components/_misc.scss */
+  /* line 4928, ../sass/components/_misc.scss */
   #footer .block-menu-block .menu-block-2 > ul > li {
     float: left;
     font-size: 17px;
@@ -6446,51 +6445,51 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     padding-right: 1%;
   }
 
-  /* line 4937, ../sass/components/_misc.scss */
+  /* line 4936, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .view-display-id-target_last_updated {
     position: relative;
   }
 
-  /* line 4941, ../sass/components/_misc.scss */
+  /* line 4940, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .methods-link {
     position: relative;
   }
 }
 @media all and (max-width: 1220px) {
-  /* line 4949, ../sass/components/_misc.scss */
+  /* line 4948, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .view-cgci-data-matrix div.cellheader {
     height: 60px;
   }
 
-  /* line 4954, ../sass/components/_misc.scss */
+  /* line 4953, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-twitter-link {
     right: 50%;
   }
 }
 @media all and (max-width: 960px) {
-  /* line 4961, ../sass/components/_misc.scss */
+  /* line 4960, ../sass/components/_misc.scss */
   .datasets-dashboard .right {
     clear: right;
     display: inherit;
   }
 
-  /* line 4967, ../sass/components/_misc.scss */
+  /* line 4966, ../sass/components/_misc.scss */
   .page-programs-cgci-data-matrix .view-cgci-data-matrix div.cellheader {
     height: 50px;
   }
 
-  /* line 4972, ../sass/components/_misc.scss */
+  /* line 4971, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-data-access-links .field-content .data-link {
     width: 25%;
   }
 
-  /* line 4976, ../sass/components/_misc.scss */
+  /* line 4975, ../sass/components/_misc.scss */
   .page-home .region-postscript-first .title-line {
     align-items: center;
     flex-direction: column;
   }
 
-  /* line 4981, ../sass/components/_misc.scss */
+  /* line 4980, ../sass/components/_misc.scss */
   .front #postscript-first h2.block-title, .front #postscript-second h2.block-title {
     padding-bottom: 5px;
     text-align: center;
@@ -6498,20 +6497,20 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   }
 }
 @media all and (max-width: 870px) {
-  /* line 4990, ../sass/components/_misc.scss */
+  /* line 4989, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-email-update-link,
   .view-homepage .views-field-field-twitter-link {
     position: relative;
     float: right;
   }
 
-  /* line 4995, ../sass/components/_misc.scss */
+  /* line 4994, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-twitter-link {
     right: 0;
   }
 }
 @media all and (max-width: 820px) {
-  /* line 5006, ../sass/components/_misc.scss */
+  /* line 5005, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .view-cgci-data-matrix div.cellheader,
   .page-programs-target-data-matrix .view-cgci-data-matrix th,
   .page-programs-target-data-matrix .view-cgci-data-matrix td.outer table td,
@@ -6519,7 +6518,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     font-size: 0.9em;
   }
 
-  /* line 5014, ../sass/components/_misc.scss */
+  /* line 5013, ../sass/components/_misc.scss */
   .view-cgci-data-matrix div.cellheader,
   .view-cgci-data-matrix th,
   .view-cgci-data-matrix td.outer table td,
@@ -6527,27 +6526,27 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     font-size: 1em;
   }
 
-  /* line 5019, ../sass/components/_misc.scss */
+  /* line 5018, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-email-update-link,
   .view-homepage .views-field-field-twitter-link {
     position: relative;
     float: right;
   }
 
-  /* line 5024, ../sass/components/_misc.scss */
+  /* line 5023, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-twitter-link {
     right: 0;
   }
 }
 @media all and (max-width: 800px) {
-  /* line 5031, ../sass/components/_misc.scss */
+  /* line 5030, ../sass/components/_misc.scss */
   #navigation {
     padding-left: 0;
     padding-right: 0;
     background: none;
   }
 
-  /* line 5037, ../sass/components/_misc.scss */
+  /* line 5036, ../sass/components/_misc.scss */
   #navigation li.sf-depth-1 ul {
     background-image: none;
     top: 0;
@@ -6559,44 +6558,44 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     overflow: hidden;
   }
 
-  /* line 5048, ../sass/components/_misc.scss */
+  /* line 5047, ../sass/components/_misc.scss */
   #navigation li.sf-depth-1.first ul {
     width: 100% !important;
     max-width: none !important;
   }
 
-  /* line 5053, ../sass/components/_misc.scss */
+  /* line 5052, ../sass/components/_misc.scss */
   #navigation li.sf-depth-1 ul li.sf-depth-2 a {
     font-size: 1em;
   }
 
-  /* line 5057, ../sass/components/_misc.scss */
+  /* line 5056, ../sass/components/_misc.scss */
   .region-navigation {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 5062, ../sass/components/_misc.scss */
+  /* line 5061, ../sass/components/_misc.scss */
   #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1, #menu-6568-1, #menu-6119-1, #menu-6002-1 {
     margin-top: 0;
   }
 
-  /* line 5066, ../sass/components/_misc.scss */
+  /* line 5065, ../sass/components/_misc.scss */
   #menu-452-1, #menu-453-1, #menu-427-1, #menu-546-1 {
     width: 100% !important;
   }
 
-  /* line 5070, ../sass/components/_misc.scss */
+  /* line 5069, ../sass/components/_misc.scss */
   #menu-1379-2 > span, #menu-1406-2 > span {
     display: none;
   }
 
-  /* line 5074, ../sass/components/_misc.scss */
+  /* line 5073, ../sass/components/_misc.scss */
   .lt-ie9 #menu-1379-2 > span {
     display: none;
   }
 
-  /* line 5078, ../sass/components/_misc.scss */
+  /* line 5077, ../sass/components/_misc.scss */
   #block-superfish-1 {
     height: auto;
     z-index: 2;
@@ -6605,12 +6604,12 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     margin-left: 0;
   }
 
-  /* line 5086, ../sass/components/_misc.scss */
+  /* line 5085, ../sass/components/_misc.scss */
   #block-superfish-1 .content {
     height: inherit;
   }
 
-  /* line 5090, ../sass/components/_misc.scss */
+  /* line 5089, ../sass/components/_misc.scss */
   .lt-ie9 #block-superfish-1 {
     height: auto;
     z-index: 2;
@@ -6618,7 +6617,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     width: 100%;
   }
 
-  /* line 5097, ../sass/components/_misc.scss */
+  /* line 5096, ../sass/components/_misc.scss */
   #block-superfish-1 {
     background-color: #614E37;
     border-radius: 0;
@@ -6626,18 +6625,18 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     left: 0;
   }
 
-  /* line 5104, ../sass/components/_misc.scss */
+  /* line 5103, ../sass/components/_misc.scss */
   #block-superfish-1 .slicknav_menu {
     background-color: #614E37;
   }
 
-  /* line 5108, ../sass/components/_misc.scss */
+  /* line 5107, ../sass/components/_misc.scss */
   .js .slicknav_menu {
     display: table;
     margin: 0 auto;
   }
 
-  /* line 5113, ../sass/components/_misc.scss */
+  /* line 5112, ../sass/components/_misc.scss */
   .slicknav_btn {
     margin: 0;
     text-decoration: none;
@@ -6646,30 +6645,30 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     padding: 0;
   }
 
-  /* line 5121, ../sass/components/_misc.scss */
+  /* line 5120, ../sass/components/_misc.scss */
   .slicknav_nav .slicknav_row:hover {
     background: none;
   }
 
-  /* line 5125, ../sass/components/_misc.scss */
+  /* line 5124, ../sass/components/_misc.scss */
   .slicknav_nav a:hover {
     background: none;
     color: #fff;
   }
 
-  /* line 5130, ../sass/components/_misc.scss */
+  /* line 5129, ../sass/components/_misc.scss */
   #block-superfish-2 .slicknav_menu a.sf-depth-1.menuparent {
     display: none;
   }
 
-  /* line 5134, ../sass/components/_misc.scss */
+  /* line 5133, ../sass/components/_misc.scss */
   .responsive-menus.responsified span.toggler {
     background-color: #614E37;
     border-radius: 0;
     box-shadow: 2px 2px 2px #614E37;
   }
 
-  /* line 5140, ../sass/components/_misc.scss */
+  /* line 5139, ../sass/components/_misc.scss */
   #block-superfish-2 {
     position: relative;
     width: 100%;
@@ -6682,7 +6681,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     margin-right: 0;
   }
 
-  /* line 5153, ../sass/components/_misc.scss */
+  /* line 5152, ../sass/components/_misc.scss */
   #block-superfish-2 .slicknav_menu {
     font-size: 16px;
     box-sizing: border-box;
@@ -6690,78 +6689,78 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     padding: 5px;
   }
 
-  /* line 5160, ../sass/components/_misc.scss */
+  /* line 5159, ../sass/components/_misc.scss */
   #block-superfish-2 li.sf-depth-1 ul {
     background: #900;
   }
 
-  /* line 5164, ../sass/components/_misc.scss */
+  /* line 5163, ../sass/components/_misc.scss */
   .responsive-menus.responsified .responsive-menus-simple {
     background-color: #614E37;
   }
 
-  /* line 5168, ../sass/components/_misc.scss */
+  /* line 5167, ../sass/components/_misc.scss */
   .front .node-2 {
     margin-bottom: 0;
   }
 
-  /* line 5172, ../sass/components/_misc.scss */
+  /* line 5171, ../sass/components/_misc.scss */
   .front .node-2 img {
     width: 50%;
   }
 
-  /* line 5176, ../sass/components/_misc.scss */
+  /* line 5175, ../sass/components/_misc.scss */
   #block-views-programs-block-1 {
     margin-top: 0;
   }
 
-  /* line 5180, ../sass/components/_misc.scss */
+  /* line 5179, ../sass/components/_misc.scss */
   .view-programs .view-content {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  /* line 5185, ../sass/components/_misc.scss */
+  /* line 5184, ../sass/components/_misc.scss */
   #block-views-programs-block-1 .views-row {
     height: inherit;
     width: 49%;
     flex: none;
   }
 
-  /* line 5191, ../sass/components/_misc.scss */
+  /* line 5190, ../sass/components/_misc.scss */
   .corner.three-col h2.block-title {
     font-size: 2.250em;
   }
 
-  /* line 5195, ../sass/components/_misc.scss */
+  /* line 5194, ../sass/components/_misc.scss */
   .not-front .views-row .views-field-view-node, .not-front .views-row .views-field-field-program-website {
     float: left;
   }
 
-  /* line 5199, ../sass/components/_misc.scss */
+  /* line 5198, ../sass/components/_misc.scss */
   .ds-3col-stacked > .group-left {
     width: 40%;
     float: left;
   }
 
-  /* line 5204, ../sass/components/_misc.scss */
+  /* line 5203, ../sass/components/_misc.scss */
   .ds-3col-stacked > .group-middle {
     float: left;
     width: 50%;
   }
 
-  /* line 5209, ../sass/components/_misc.scss */
+  /* line 5208, ../sass/components/_misc.scss */
   .ds-3col-stacked > .group-right {
     float: right;
     width: 2%;
   }
 
-  /* line 5214, ../sass/components/_misc.scss */
+  /* line 5213, ../sass/components/_misc.scss */
   .page-node-314 #page-inner {
     width: 800px;
   }
 
-  /* line 5221, ../sass/components/_misc.scss */
+  /* line 5220, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5,
@@ -6770,7 +6769,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     width: 20%;
   }
 
-  /* line 5228, ../sass/components/_misc.scss */
+  /* line 5227, ../sass/components/_misc.scss */
   .front #postscript-first .two-col .view .views-field-nothing,
   .front #postscript-first .two-col .view .more-link,
   .front #postscript-second .two-col .view .more-link {
@@ -6778,7 +6777,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     top: 25px;
   }
 
-  /* line 5234, ../sass/components/_misc.scss */
+  /* line 5233, ../sass/components/_misc.scss */
   .view-display-id-homepage_programs .odd,
   .view-display-id-homepage_programs .even {
     display: flex;
@@ -6786,13 +6785,13 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     align-items: center;
   }
 
-  /* line 5240, ../sass/components/_misc.scss */
+  /* line 5239, ../sass/components/_misc.scss */
   .view-display-id-homepage_links .views-row {
     width: inherit;
   }
 }
 @media all and (max-width: 770px) {
-  /* line 5254, ../sass/components/_misc.scss */
+  /* line 5253, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .view-cgci-data-matrix div.cellheader,
   .page-programs-target-data-matrix .view-cgci-data-matrix th,
   .page-programs-target-data-matrix .view-cgci-data-matrix td.outer table td,
@@ -6802,7 +6801,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     font-size: 0.9em;
   }
 
-  /* line 5262, ../sass/components/_misc.scss */
+  /* line 5261, ../sass/components/_misc.scss */
   .view-cgci-data-matrix div.cellheader,
   .view-cgci-data-matrix th,
   .view-cgci-data-matrix td.outer table td,
@@ -6811,7 +6810,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   }
 }
 @media all and (max-width: 700px) {
-  /* line 5272, ../sass/components/_misc.scss */
+  /* line 5271, ../sass/components/_misc.scss */
   .view-display-id-table {
     display: inline-block;
     vertical-align: top;
@@ -6819,7 +6818,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     padding-right: 0%;
   }
 
-  /* line 5279, ../sass/components/_misc.scss */
+  /* line 5278, ../sass/components/_misc.scss */
   .view-display-id-legend {
     display: inline-block;
     vertical-align: top;
@@ -6827,41 +6826,41 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     width: 100%;
   }
 
-  /* line 5286, ../sass/components/_misc.scss */
+  /* line 5285, ../sass/components/_misc.scss */
   .view-display-id-cgci_small_screen {
     display: inherit;
     width: 100%;
   }
 
-  /* line 5291, ../sass/components/_misc.scss */
+  /* line 5290, ../sass/components/_misc.scss */
   .view-display-id-target_primary_disease {
     display: none;
   }
 
-  /* line 5295, ../sass/components/_misc.scss */
+  /* line 5294, ../sass/components/_misc.scss */
   .view-display-id-target_small_screen {
     display: inherit;
     width: 100%;
   }
 
-  /* line 5300, ../sass/components/_misc.scss */
+  /* line 5299, ../sass/components/_misc.scss */
   .view-display-id-primary_disease {
     display: none;
   }
 
-  /* line 5304, ../sass/components/_misc.scss */
+  /* line 5303, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-ocg-mission-image, .view-homepage .views-field-field-data-access-image {
     display: none;
   }
 }
 @media all and (max-width: 630px) {
-  /* line 5312, ../sass/components/_misc.scss */
+  /* line 5311, ../sass/components/_misc.scss */
   .grey-block .view .more-link {
     top: -5px;
     right: 0px;
   }
 
-  /* line 5317, ../sass/components/_misc.scss */
+  /* line 5316, ../sass/components/_misc.scss */
   .section-programs .grey-block .view .more-link {
     top: -5px;
     right: auto;
@@ -6870,19 +6869,19 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     padding-bottom: 5px;
   }
 
-  /* line 5325, ../sass/components/_misc.scss */
+  /* line 5324, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-data-access-links .field-content {
     flex-wrap: wrap;
   }
 
-  /* line 5329, ../sass/components/_misc.scss */
+  /* line 5328, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-data-access-links .field-content .data-link {
     width: 50%;
     margin-bottom: 10px;
   }
 }
 @media all and (max-width: 600px) {
-  /* line 5345, ../sass/components/_misc.scss */
+  /* line 5344, ../sass/components/_misc.scss */
   #block-views-programs-block-3,
   #block-views-programs-block-2,
   #block-views-publications-block-1,
@@ -6896,12 +6895,12 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     width: 100%;
   }
 
-  /* line 5349, ../sass/components/_misc.scss */
+  /* line 5348, ../sass/components/_misc.scss */
   .page-node-314 #page-inner {
     width: 600px;
   }
 
-  /* line 5356, ../sass/components/_misc.scss */
+  /* line 5355, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5,
@@ -6910,7 +6909,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     width: 25%;
   }
 
-  /* line 5363, ../sass/components/_misc.scss */
+  /* line 5362, ../sass/components/_misc.scss */
   .front #postscript-first .two-col .view .views-field-nothing,
   .front #postscript-first .two-col .view .more-link,
   .front #postscript-second .two-col .view .more-link {
@@ -6919,73 +6918,73 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     top: 10px;
   }
 
-  /* line 5369, ../sass/components/_misc.scss */
+  /* line 5368, ../sass/components/_misc.scss */
   .page-home .region-postscript-first {
     flex-direction: column;
     align-items: center;
   }
 }
 @media all and (max-width: 560px) {
-  /* line 5377, ../sass/components/_misc.scss */
+  /* line 5376, ../sass/components/_misc.scss */
   .outer-header {
     height: auto;
   }
 
-  /* line 5381, ../sass/components/_misc.scss */
+  /* line 5380, ../sass/components/_misc.scss */
   #logo {
     width: 100%;
     padding-top: 0;
     padding-bottom: 0;
   }
 
-  /* line 5387, ../sass/components/_misc.scss */
+  /* line 5386, ../sass/components/_misc.scss */
   #logo img {
     margin-left: 0;
   }
 
-  /* line 5391, ../sass/components/_misc.scss */
+  /* line 5390, ../sass/components/_misc.scss */
   .region-header {
     clear: both;
     float: none;
   }
 
-  /* line 5396, ../sass/components/_misc.scss */
+  /* line 5395, ../sass/components/_misc.scss */
   #main {
     margin-top: 0;
   }
 
-  /* line 5400, ../sass/components/_misc.scss */
+  /* line 5399, ../sass/components/_misc.scss */
   #pre-content {
     padding-top: 5.5em;
   }
 
-  /* line 5404, ../sass/components/_misc.scss */
+  /* line 5403, ../sass/components/_misc.scss */
   #navigation {
     margin-top: 0;
   }
 
-  /* line 5408, ../sass/components/_misc.scss */
+  /* line 5407, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu {
     margin: 0 auto;
   }
 
-  /* line 5412, ../sass/components/_misc.scss */
+  /* line 5411, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu li:first-child {
     padding-left: 0;
   }
 
-  /* line 5416, ../sass/components/_misc.scss */
+  /* line 5415, ../sass/components/_misc.scss */
   #block-search-form {
     float: none;
     margin: 0 auto;
   }
 
-  /* line 5421, ../sass/components/_misc.scss */
+  /* line 5420, ../sass/components/_misc.scss */
   #block-search-form.block {
     margin-bottom: 1em;
   }
 
-  /* line 5425, ../sass/components/_misc.scss */
+  /* line 5424, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu ul {
     margin-top: 0;
     margin-bottom: 0;
@@ -6993,40 +6992,40 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     padding: 0;
   }
 
-  /* line 5432, ../sass/components/_misc.scss */
+  /* line 5431, ../sass/components/_misc.scss */
   .front .node-2 img {
     display: none;
   }
 
-  /* line 5436, ../sass/components/_misc.scss */
+  /* line 5435, ../sass/components/_misc.scss */
   #block-views-programs-block-1 .views-row {
     height: inherit;
     width: 100%;
     flex: none;
   }
 
-  /* line 5442, ../sass/components/_misc.scss */
+  /* line 5441, ../sass/components/_misc.scss */
   .corner.three-col .views-row {
     margin-right: 0;
   }
 
-  /* line 5446, ../sass/components/_misc.scss */
+  /* line 5445, ../sass/components/_misc.scss */
   .data-matrix a {
     background-position: 90% top;
   }
 
-  /* line 5450, ../sass/components/_misc.scss */
+  /* line 5449, ../sass/components/_misc.scss */
   .menu-block-2 > .menu {
     flex-direction: column;
   }
 
-  /* line 5454, ../sass/components/_misc.scss */
+  /* line 5453, ../sass/components/_misc.scss */
   #block-views-last-updated-block {
     position: relative;
     bottom: 0;
   }
 
-  /* line 5462, ../sass/components/_misc.scss */
+  /* line 5461, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5,
@@ -7035,26 +7034,26 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     width: 30%;
   }
 
-  /* line 5469, ../sass/components/_misc.scss */
+  /* line 5468, ../sass/components/_misc.scss */
   .front #postscript-first .two-col .view .views-field-nothing,
   .front #postscript-first .two-col .view .more-link,
   .front #postscript-second .two-col .view .more-link {
     top: 25px;
   }
 
-  /* line 5474, ../sass/components/_misc.scss */
+  /* line 5473, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-email-update-link,
   .view-homepage .views-field-field-twitter-link {
     float: left;
     padding-top: 10px;
   }
 
-  /* line 5479, ../sass/components/_misc.scss */
+  /* line 5478, ../sass/components/_misc.scss */
   .view-display-id-homepage_programs img {
     max-width: 100%;
   }
 
-  /* line 5483, ../sass/components/_misc.scss */
+  /* line 5482, ../sass/components/_misc.scss */
   #block-views-programs-homepage-programs .views-field-field-image {
     padding-left: 0;
     padding-bottom: 10px;
@@ -7062,64 +7061,64 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   }
 }
 @media all and (max-width: 400px) {
-  /* line 5493, ../sass/components/_misc.scss */
+  /* line 5492, ../sass/components/_misc.scss */
   .view-display-id-cgci_small_screen {
     padding-top: 20px;
   }
 
-  /* line 5497, ../sass/components/_misc.scss */
+  /* line 5496, ../sass/components/_misc.scss */
   .page-programs-cgci-data-matrix .cgci-title {
     width: 100%;
   }
 
-  /* line 5501, ../sass/components/_misc.scss */
+  /* line 5500, ../sass/components/_misc.scss */
   .page-programs-cgci-data-matrix .view-display-id-last_updated {
     position: relative;
   }
 
-  /* line 5505, ../sass/components/_misc.scss */
+  /* line 5504, ../sass/components/_misc.scss */
   .page-programs-cgci-data-matrix .cgci-image {
     float: none;
   }
 
-  /* line 5509, ../sass/components/_misc.scss */
+  /* line 5508, ../sass/components/_misc.scss */
   .view-display-id-target_small_screen {
     padding-top: 20px;
   }
 
-  /* line 5513, ../sass/components/_misc.scss */
+  /* line 5512, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .cgci-title {
     width: 100%;
   }
 
-  /* line 5517, ../sass/components/_misc.scss */
+  /* line 5516, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .view-display-id-target_last_updated {
     position: relative;
   }
 
-  /* line 5521, ../sass/components/_misc.scss */
+  /* line 5520, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .methods-link {
     position: relative;
   }
 
-  /* line 5525, ../sass/components/_misc.scss */
+  /* line 5524, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .cgci-image {
     float: none;
   }
 }
 @media all and (max-width: 320px) {
-  /* line 5531, ../sass/components/_misc.scss */
+  /* line 5530, ../sass/components/_misc.scss */
   .archive .left {
     padding-right: 0;
   }
 
-  /* line 5535, ../sass/components/_misc.scss */
+  /* line 5534, ../sass/components/_misc.scss */
   .archive .views-row .data-matrix {
     top: 0;
     left: 215px;
   }
 
-  /* line 5543, ../sass/components/_misc.scss */
+  /* line 5542, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5,
@@ -7129,17 +7128,17 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   }
 }
 @media all and (max-width: 250px) {
-  /* line 5550, ../sass/components/_misc.scss */
+  /* line 5549, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu ul {
     font-size: 0.75em;
   }
 
-  /* line 5554, ../sass/components/_misc.scss */
+  /* line 5553, ../sass/components/_misc.scss */
   .corner.three-col .views-row .data-matrix {
     right: 1%;
   }
 
-  /* line 5558, ../sass/components/_misc.scss */
+  /* line 5557, ../sass/components/_misc.scss */
   .data-matrix a {
     width: 100%;
     font-size: 0.75em;
@@ -7148,7 +7147,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     padding-right: 7%;
   }
 
-  /* line 5569, ../sass/components/_misc.scss */
+  /* line 5568, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5,
@@ -7157,7 +7156,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     width: 40%;
   }
 
-  /* line 5574, ../sass/components/_misc.scss */
+  /* line 5573, ../sass/components/_misc.scss */
   .front #postscript-first .two-col .view .views-field-nothing {
     top: 50px;
   }
