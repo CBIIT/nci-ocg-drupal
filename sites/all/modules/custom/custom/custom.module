@@ -320,6 +320,38 @@ function custom_views_pre_render(&$view) {
 
     $view->result = array_merge($view->result, $view2->result);
   }
+  if ($view->name == 'github_issues' && $view->current_display == 'dashboard') {
+    //Load views_2
+    $view2 = views_get_view('github_issues'); //View Name
+    $view2->preview('block_1'); //View Display
+    $view3 = views_get_view('github_issues'); //View Name
+    $view3->preview('block_2'); //View Display
+    $view4 = views_get_view('github_issues'); //View Name
+    $view4->preview('block_3'); //View Display
+
+    //Check for empty results
+    if(empty($view2->result)){
+      return;
+    }
+
+    $view->result = array_merge($view->result, $view2->result, $view3->result, $view4->result);
+  }
+  if ($view->name == 'github_issues' && $view->current_display == 'views_data_export_1') {
+    //Load views_2
+    $view2 = views_get_view('github_issues'); //View Name
+    $view2->preview('views_data_export_2'); //View Display
+    $view3 = views_get_view('github_issues'); //View Name
+    $view3->preview('views_data_export_3'); //View Display
+    $view4 = views_get_view('github_issues'); //View Name
+    $view4->preview('views_data_export_4'); //View Display
+    //Check for empty results
+    if(empty($view2->result)){
+      return;
+    }
+
+    $view->result = array_merge($view->result, $view2->result, $view3->result, $view4->result);
+  }
+
 }
 
 function custom_form_views_exposed_form_alter(&$form, &$form_state) {
