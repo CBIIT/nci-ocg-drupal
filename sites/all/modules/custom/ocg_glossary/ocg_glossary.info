@@ -1,0 +1,5 @@
+name = OCG Glossary
+description = Extends the CKEditor Link module to provide glossary descriptions and anchor links for the glossary page.
+core = 7.x
+package = OCG
+dependencies[] = ckeditor_link

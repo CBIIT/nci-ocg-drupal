@@ -300,12 +300,21 @@ function custom_views_query_alter(&$view, &$query) {
 function custom_views_pre_render(&$view) {
   // only execute code on 'analytical_tools page display'
   if ($view->name == 'analytical_tools' && $view->current_display == 'page') {
-
+    
     $view->field['title_1']->field_alias = 'node_title_upper';
 
     // loop through each node, and assign an uppercased node title to the 'node_title_upper' datamember
     foreach ($view->result as $result) {
       $result->node_title_upper = strtoupper($result->node_title);
+    }
+  }
+  if ($view->name == 'glossary_terms' && $view->current_display == 'glossary_page') {
+    
+    $view->field['name_1']->field_alias = 'term_name_upper';
+
+    // loop through each node, and assign an uppercased node title to the 'node_title_upper' datamember
+    foreach ($view->result as $result) {
+      $result->term_name_upper = strtoupper($result->taxonomy_term_data_name);
     }
   }
   if ($view->name == 'news_and_publications' && $view->current_display == 'block_5') {

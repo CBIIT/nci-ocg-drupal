@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * Declare the path types handled by the module.
+ *
+ * @return
+ *   An array of the types handled by the module.
+ *   Each value is either a type name or a sub-array with the following
+ *   attributes:
+ *    - 'type'
+ *         The type name. Required.
+ *    - 'file'
+ *         A file that will be included before other hooks are invoked.
+ *         The file should be relative to the implementing module's directory.
+ */
+function ocg_glossary_ckeditor_link_types() {
+  return array(
+    'glossary',
+    array('type' => 'glossary', 'file' => 'includes/ocg_glossary.glossary.inc'),
+  );
+}
