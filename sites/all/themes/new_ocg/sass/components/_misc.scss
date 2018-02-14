@@ -1475,6 +1475,25 @@ h2.block-title {
     background-repeat: no-repeat;
 }
 
+#block-views-program-sidebar-block-2 .view .views-row,
+#block-views-program-sidebar-block-2 .view .views-row p {
+    margin-bottom: 0;
+}
+
+#block-views-program-sidebar-block-2 {
+  color: #774928;
+  padding: 9px 15px 5px;
+  border-bottom: 1px solid #FAE21D;
+  background: linear-gradient(to bottom,#faf4bf 0%,#fef6d5 30%,#faec7a 100%) repeat scroll 0% 0% transparent;
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+  font-size: 15.6px;
+}
+
+#block-views-program-sidebar-block-2 a {
+  color: #774928;
+  text-decoration: none;
+}
+
 #block-views-programs-block-1 .view-content {
     display: flex;
     justify-content: center;
