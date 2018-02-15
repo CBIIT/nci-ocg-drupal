@@ -4763,6 +4763,22 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   font-weight: bold;
 }
 
+_:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views-row .views-field-lightbox2 {
+ display: block; 
+}
+
+.msie #block-views-youtube-videos-sidebar .views-row .views-field-lightbox2 {
+ display: block; 
+}
+
+_:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views-row .views-field-lightbox2 .field-content {
+  display: inline-block;
+}
+
+.msie #block-views-youtube-videos-sidebar .views-row .views-field-lightbox2 .field-content {
+  display: inline-block;
+}
+
 #block-views-youtube-videos-sidebar a {
   color: #323232;
   text-decoration: none;
