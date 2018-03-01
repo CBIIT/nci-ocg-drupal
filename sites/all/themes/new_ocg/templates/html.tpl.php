@@ -79,7 +79,7 @@
 
 <head profile="<?php print $grddl_profile; ?>">
   <?php if (!user_is_logged_in()) { ?>
-  <!-- script src="//assets.adobedtm.com/f1bfa9f7170c81b1a9a9ecdcc6c5215ee0b03c84/satelliteLib-1805f47ab8b0b32d6d90f8745328a690f8726c90.js"></script -->
+  <script src="//assets.adobedtm.com/f1bfa9f7170c81b1a9a9ecdcc6c5215ee0b03c84/satelliteLib-1805f47ab8b0b32d6d90f8745328a690f8726c90.js"></script>
   <?php } ?>
   <meta http-equiv="X-UA-Compatible" content="IE=8">
   <?php print $head; ?>
@@ -117,7 +117,7 @@
   <script language="JavaScript" type="text/javascript" src="//static.cancer.gov/webanalytics/wa_ocg_pageload.js"></script>
   <!-- **** End NCI Web Analytics Page **** -->
   <?php if (!user_is_logged_in()) { ?>
-  <!-- script type="text/javascript">_satellite.pageBottom();</script -->
+  <script type="text/javascript">_satellite.pageBottom();</script>
   <?php } ?>
 </body>
 </html>
