@@ -413,3 +413,19 @@ function embed_target_view($viewname, $display, $filter) {
   
   return $embed;      
 }
+
+/**
+ * Render a glossify link.
+ */
+function new_ocg_glossify_links($vars) {
+  module_load_include('inc','pathauto','pathauto');
+  $clean_string = pathauto_cleanstring(check_plain($vars['text']));
+  $url = 'about-ocg/glossary#'. $clean_string;
+  drupal_add_css(drupal_get_path('module', 'glossify') . '/glossify.css');
+  if ($vars['tip']) {
+    return '<a title="' . strip_tags($vars['tip']) . '" class="glossify-link" href="' . $url . '">' . check_plain($vars['text']) . '<img src = "/' . drupal_get_path('module', 'glossify') . '/info.png" /></a>';
+  }
+  else {
+    return '<a class="glossify-link" href="' . $url . '">' . check_plain($vars['text']) . '<img src = "/' . drupal_get_path('module', 'glossify') . '/info.png" /></a>';
+  }
+}
