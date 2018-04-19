@@ -423,9 +423,9 @@ function new_ocg_glossify_links($vars) {
   $url = 'about-ocg/glossary#'. $clean_string;
   drupal_add_css(drupal_get_path('module', 'glossify') . '/glossify.css');
   if ($vars['tip']) {
-    return '<a title="' . strip_tags($vars['tip']) . '" class="glossify-link" href="' . $url . '">' . check_plain($vars['text']) . '<img src = "/' . drupal_get_path('module', 'glossify') . '/info.png" /></a>';
+    return '<a title="' . strip_tags($vars['tip']) . '" class="glossify-link" href="' . $url . '">' . check_plain($vars['text']) . '<img src = "/' . drupal_get_path('module', 'views_field_tooltip') . '/images/help.png" /></a>';
   }
   else {
-    return '<a class="glossify-link" href="' . $url . '">' . check_plain($vars['text']) . '<img src = "/' . drupal_get_path('module', 'glossify') . '/info.png" /></a>';
+    return '<a class="glossify-link" href="' . $url . '">' . check_plain($vars['text']) . '<img src = "/' . drupal_get_path('module', 'views_field_tooltip') . '/images/help.png" /></a>';
   }
 }
