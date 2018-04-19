@@ -4793,6 +4793,18 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
   padding-right: 5px;
 }
 
+/* Glossary */
+
+#glossary-exclude {
+  text-decoration: none !important;
+  color: #323232 !important;
+}
+
+.glossify-link img {
+    width: 12px;
+    height: 12px;
+}
+
 @media all and (max-width: 1160px) {
 
   #block-superfish-1 {
