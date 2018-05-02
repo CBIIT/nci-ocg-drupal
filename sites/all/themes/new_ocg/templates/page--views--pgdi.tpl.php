@@ -103,7 +103,7 @@
       <?php print views_embed_view('pgdi_content', 'last_updated'); ?>
       </div>
       <div>
-    <img class="cgci-image" style="width: 186px; height: 80px;" class="media-element file-default" typeof="foaf:Image" src="/sites/default/files/CGCIBanner_2013_11_27_BIGGER.jpg" width="719" height="310" alt="">
+    <img class="cgci-image" style="width: 186px; height: 80px;" class="media-element file-default" typeof="foaf:Image" src="/sites/default/files/PGDI_banner.png" width="719" height="310" alt="">
       </div>
       <?php print render($title_suffix); ?>
       <?php print render($tabs); ?>
