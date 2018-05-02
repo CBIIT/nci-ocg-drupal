@@ -3694,23 +3694,27 @@ span.newtab {
   table-layout: fixed;
 }
 
-.page-programs-cgci-data-matrix .cgci-title {
+.page-programs-cgci-data-matrix .cgci-title,
+.page-programs-target-pgdi-display .cgci-title {
   float: left;
   position: relative;
   min-height: 80px;
   width: 50%;
 }
 
-.page-programs-cgci-data-matrix .cgci-image {
+.page-programs-cgci-data-matrix .cgci-image,
+.page-programs-target-pgdi-display .cgci-image {
   float: right;
 }
 
-.page-programs-cgci-data-matrix .view-display-id-primary_disease {
+.page-programs-cgci-data-matrix .view-display-id-primary_disease,
+.page-programs-target-pgdi-display .view-display-id-pgdi_display {
   width: 100%;
   float: right;
 }
 
-.page-programs-cgci-data-matrix .views-label {
+.page-programs-cgci-data-matrix .views-label,
+.page-programs-target-pgdi-display .views-label {
     color: #323232;
     font-weight: normal;
     text-transform: none;
@@ -3719,14 +3723,16 @@ span.newtab {
     padding: 0;
 }
 
-.page-programs-cgci-data-matrix .view-display-id-last_updated {
+.page-programs-cgci-data-matrix .view-display-id-last_updated,
+.page-programs-target-pgdi-display .view-display-id-last_updated {
   font-style: italic;
   color: #323232;
   position: absolute;
   bottom: 0;
 }
 
-.page-programs-cgci-data-matrix .view-display-id-last_updated .views-row {
+.page-programs-cgci-data-matrix .view-display-id-last_updated .views-row
+.page-programs-target-pgdi-display .view-display-id-last_updated .views-row {
   margin-bottom: 0;
 }
 
@@ -4588,6 +4594,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 .views-widget-filter-field_patient_age_range_value,
 .views-widget-filter-field_gender_value,
 .views-widget-filter-field_cancer_diagnosis_value,
+.views-widget-filter-field_cancer_type_tid,
 .views-widget-filter-field_total_number_patient_wxs_value,
 .views-widget-filter-field_total_number_patient_wgs_value,
 .views-widget-filter-field_total_patient_transcriptom_value,
@@ -5544,7 +5551,8 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
     width: 100%;
   }
   
-  .page-programs-cgci-data-matrix .view-display-id-last_updated {
+  .page-programs-cgci-data-matrix .view-display-id-last_updated,
+  .page-programs-target-pgdi-display .view-display-id-last_updated {
     position: relative;
   }
   
