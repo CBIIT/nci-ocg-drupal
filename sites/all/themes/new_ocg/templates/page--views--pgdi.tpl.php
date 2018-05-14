@@ -95,15 +95,25 @@
     <div id="content" class="column" role="main">
       <?php print $messages; ?>
       <a id="main-content"></a>
-      <div class="cgci-title">
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
+      <div class="display-header">
+        <div class="cgci-title">
+        <?php print render($title_prefix); ?>
+        <?php if ($title): ?>
         <h1 class="page__title title dataMatrixHeader" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print views_embed_view('pgdi_content', 'last_updated'); ?>
-      </div>
-      <div>
-    <img class="cgci-image" style="width: 186px; height: 80px;" class="media-element file-default" typeof="foaf:Image" src="/sites/default/files/PGDI_banner.png" width="719" height="310" alt="">
+        <?php endif; ?>
+        <?php print views_embed_view('pgdi_content', 'last_updated'); ?>
+        </div>
+        <div class="target-data">
+          <a href="/programs/target/using-target-data"><img typeof="foaf:Image" src="/sites/default/files/styles/80x80/public/USING%20DATA.png" width="75" height="80" alt="Link to instructions on how to use the data" title="Link to instructions on how to use the data"></a>
+          <a href="/programs/target/using-target-data">Using TARGET Data</a>
+        </div>
+        <div class="target-methods">
+          <a href="/programs/target/target-methods"><img typeof="foaf:Image" src="/sites/default/files/styles/80x80/public/PROCEDURES%20METHODS%20ICON.png" width="76" height="80" alt="Link to Procedures and Methods" title="Link to Procedures and Methods"></a>
+          <a href="/programs/target/target-methods">TARGET Methods</a>
+        </div>
+        <div>
+          <img class="cgci-image" style="height: 80px;" class="media-element file-default" typeof="foaf:Image" src="/sites/default/files/PGDI_banner.png" width="719" height="310" alt="">
+        </div>
       </div>
       <?php print render($title_suffix); ?>
       <?php print render($tabs); ?>

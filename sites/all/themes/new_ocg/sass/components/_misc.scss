@@ -3694,8 +3694,7 @@ span.newtab {
   table-layout: fixed;
 }
 
-.page-programs-cgci-data-matrix .cgci-title,
-.page-programs-target-pgdi-display .cgci-title {
+.page-programs-cgci-data-matrix .cgci-title {
   float: left;
   position: relative;
   min-height: 80px;
@@ -3723,8 +3722,7 @@ span.newtab {
     padding: 0;
 }
 
-.page-programs-cgci-data-matrix .view-display-id-last_updated,
-.page-programs-target-pgdi-display .view-display-id-last_updated {
+.page-programs-cgci-data-matrix .view-display-id-last_updated {
   font-style: italic;
   color: #323232;
   position: absolute;
@@ -4579,6 +4577,33 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 
 /* PGDI */
+
+.display-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.page-programs-target-pgdi-display .cgci-title h1 {
+  padding-bottom: 8px;
+}
+
+.page-programs-target-pgdi-display .view-display-id-last_updated {
+  font-style: italic;
+  color: #323232;
+  bottom: 0;
+}
+
+.page-programs-target-pgdi-display .target-data,
+.page-programs-target-pgdi-display .target-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#block-block-42 img {
+  width: 100%;
+}
 
 #views-exposed-form-pgdi-content-pgdi-display {
   width: 100%;
