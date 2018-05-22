@@ -1,4 +1,4 @@
-<div id="data-portal-app" ng-controller="datacontroller">
+<div id="data-portal-app" ng-controller="datacontroller" ng-cloak>
 
   <div class="portal-navigation">
     <div id="centers">
