@@ -66,6 +66,7 @@ if ($classes) {
         <?php endforeach; ?>
       </tr>
       <?php foreach ($wrapper->field_target_disease as $disease): ?>
+      <?php if ($disease->field_public->value() == TRUE): ?>
         <tr>
           <th id="<?php print $disease->item_id->value(); ?>-rh"class="diseasebanner rowheader" scope="row">
             <?php if (!empty($disease->field_link->url->value()) && !empty($disease->field_link->title->value())): ?>
@@ -109,6 +110,7 @@ if ($classes) {
           <?php print embed_target_view('cgci_data_matrix', 'target_column_header', $disease->item_id->value()); ?>
           <?php print embed_target_view('cgci_data_matrix', 'target_other_column_header', $disease->item_id->value()); ?>
     </tr>
+    <?php endif; ?>
   <?php endforeach; ?>
 <?php endforeach; ?>
 </tbody>
