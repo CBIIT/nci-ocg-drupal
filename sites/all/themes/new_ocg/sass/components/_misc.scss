@@ -3878,7 +3878,10 @@ text-align: left;
   float: left;
   position: relative;
   min-height: 80px;
-  width: 50%;
+}
+
+.page-programs-target-data-matrix .cgci-title h1 {
+  padding-bottom: 8px;
 }
 
 .page-programs-target-data-matrix .cgci-image {
@@ -3915,8 +3918,6 @@ text-align: left;
 .page-programs-target-data-matrix .view-display-id-target_last_updated {
   font-style: italic;
   color: #323232;
-  position: absolute;
-  bottom: 30%;
 }
 
 .page-programs-target-data-matrix .view-display-id-target_last_updated .views-row {
@@ -4661,6 +4662,10 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   padding-bottom: 5px;
 }
 
+#block-views-publications-block-2 .views-field-body p {
+  padding-left: 170px;
+}
+
 /* TARGET Publications */
 
 .view-project-features .views-label-field-view-field-embed {
@@ -4693,7 +4698,10 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 
 .page-programs-target-pgdi-display .target-data,
-.page-programs-target-pgdi-display .target-methods {
+.page-programs-target-pgdi-display .target-methods,
+.page-programs-target-data-matrix .target-data,
+.page-programs-target-data-matrix .target-methods,
+.page-programs-target-data-matrix .pgdi-overview{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -5082,7 +5090,7 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
   .page-node-21 #block-views-publications-block-2 {
     width: 100%;
   }
-
+  
   .page-node-21 #block-views-e-newsletter-block-1.right {
     float: left;
     width: 100%
@@ -5437,6 +5445,10 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
   .view-cgci-data-matrix td.outer table td,
   .view-cgci-data-matrix .patient-data {
     font-size: 0.985em;
+  }
+  
+  #block-views-publications-block-2 .views-field-body p {
+    padding-left: 0;
   }
 
 }
