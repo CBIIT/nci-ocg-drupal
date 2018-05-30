@@ -105,6 +105,10 @@
       <?php endif; ?>
       <?php print views_embed_view('cgci_data_matrix', 'target_last_updated'); ?>
           </div>
+          <div class="target-home">
+            <a href="/programs/target"><img typeof="foaf:Image" src="/sites/default/files/styles/80x80/public/TARGET%20ICON.png?itok=wh03aPv8" width="52" height="80" alt="DNA Helix with bullseye target. Links to TARGET Homepage" title="Link to TARGET Homepage"></a>
+            <a href="/programs/target">TARGET Program </a>
+          </div>
           <div class="target-data">
             <a href="/programs/target/using-target-data"><img typeof="foaf:Image" src="/sites/default/files/styles/80x80/public/USING%20DATA.png" width="75" height="80" alt="Link to instructions on how to use the data" title="Link to instructions on how to use the data"></a>
             <a href="/programs/target/using-target-data">Using TARGET Data</a>
