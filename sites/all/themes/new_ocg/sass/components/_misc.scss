@@ -4185,7 +4185,9 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 
 #data-portal-app #centers,
 #data-portal-app #center-title,
-#data-portal-app #project-title {
+#data-portal-app #method-title,
+#data-portal-app #project-title,
+#data-portal-app #method-project-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4199,14 +4201,16 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   padding: 0.5%
 }
 
-#data-portal-app #center-title {
+#data-portal-app #center-title,
+#data-portal-app #method-title{
   width: 45%;
   border: 3px solid #900;
   margin-right: 1%;
   padding: 0.5%
 }
 
-#data-portal-app #project-title {
+#data-portal-app #project-title,
+#data-portal-app #method-project-title {
   width: 35%;
   border: 3px solid #900;
   padding: 0.5%
@@ -4225,7 +4229,8 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   padding-left: 7%;
 }
 
-#data-portal-app #row-info {
+#data-portal-app #row-info,
+#data-portal-app #method-row-info {
   display: flex;
   margin-top: 20px;
 }
@@ -4247,7 +4252,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   margin: 0;
 }
 
-#data-portal-app .appraoches-description,
+#data-portal-app .approaches-description,
 #data-portal-app #data,
 #data-portal-app #investigator,
 #data-portal-app #contact,
@@ -4255,7 +4260,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   margin-bottom: 20px;
 }
 
-#data-portal-app .appraoches-description div,
+#data-portal-app .approaches-description div,
 #data-portal-app .appraoches-description p,
 #data-portal-app .approaches-listing div,
 #data-portal-app .approaches-listing p {

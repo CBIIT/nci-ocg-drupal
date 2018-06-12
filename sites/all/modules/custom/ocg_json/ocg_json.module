@@ -69,6 +69,7 @@ function ocg_json_data() {
           if($row_wrapper->field_internal->value() == 0) {
             $node_array[$array_number]['node']['row'][$row_number]['row_number'] = $row_wrapper->field_row_number->value();
             $node_array[$array_number]['node']['row'][$row_number]['project_title'] = $row_wrapper->field_project_title->value();
+            $node_array[$array_number]['node']['row'][$row_number]['assay_type'] = $row_wrapper->field_assay_type->value();
             foreach ($row_wrapper->field_paper as $field_paper) {
               $node_array[$array_number]['node']['row'][$row_number]['paper'][$paper_number]['paper_link'] = $field_paper->field_paper_link->value();
               $paper_number++;
