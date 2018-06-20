@@ -114,7 +114,6 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
       });
     })
     $scope.methods = assaysObj;
-    console.log(assaysObj);
   });
 
   $scope.clickChoice = 'centers';
@@ -147,6 +146,14 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
       result = items;
     };
     return result;
+  };
+  
+  $scope.class = "highlight";
+  $scope.changeClass = function(){
+    if ($scope.class === "highlight")
+      $scope.class = "lowlight";
+    else
+      $scope.class = "highlight";
   };
 }).filter('sameRowNumber', function () {
   return function (values, rowNumber) {

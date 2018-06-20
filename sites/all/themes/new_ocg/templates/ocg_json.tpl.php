@@ -2,23 +2,23 @@
 
   <div class="portal-navigation">
     <div id="centers">
-      <a href ng-click="clickChoice = 'centers'; setRow(); projectTitle = ctd2nodes.nodes[0].node.title.title" class="centers-inner">{{ctd2nodes.nodes.length}} Centers</a>
-      <a href ng-click="clickChoice = 'method'; setMethod(methods[0].node[0].id, method.node[0].row_number); methodTitle = methods[0]">{{methods.length}} Methods</a>
+      <a href ng-click="clickChoice = 'centers'; setRow(); projectTitle = ctd2nodes.nodes[0].node.title.title;" ng-class="class" class="centers-inner highlight">{{ctd2nodes.nodes.length}} Centers</a>
+      <a href ng-click="clickChoice = 'method'; setMethod(methods[0].node[0].id, method.node[0].row_number); methodTitle = methods[0];" class="lowlight">{{methods.length}} Methods</a>
     </div>
 
     <div id="center-title" ng-show="revealData(clickChoice)">
-      <div class="center-title-inner">
+      <div ng-class="center-title-inner">
         <div ng-repeat="project in ctd2nodes.nodes" class="project">
-          <div class="title"><a ng-click="$parent.projectTitle = project.node.title.title; setRow(project.node.row[0].row_number)">{{ project.node.title.title}}</a></div>
+          <div class="title"><a ng-click="$parent.projectTitle = project.node.title.title; setRow(project.node.row[0].row_number); changeClass()" ng-class="{highlight:$first}">{{ project.node.title.title}}</a></div>
           <div class="dataset-count">{{project.node.row.length}} Datasets</div>
         </div>
       </div>
     </div>
     
     <div id="method-title" ng-show="!revealData(clickChoice)">
-      <div class="method-title-inner">
+      <div ng-class="method-title-inner">
         <div ng-repeat="method in methods" class="project">
-          <div class="title"><a ng-click="$parent.methodTitle = method">{{method.assay}}</a></div>
+          <div class="title"><a ng-click="$parent.methodTitle = method; changeClass()" ng-class="{highlight:$first}">{{method.assay}}</a></div>
           <div class="dataset-count">{{method.number}} Datasets</div>
         </div>
       </div>
@@ -27,8 +27,8 @@
     <div id="project-title" ng-show="revealData(clickChoice)">
       <div class="project-title-inner">
         <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle | limitTo:1">
-          <div ng-repeat="row in project.node.row">
-            <a ng-click="setRow(row.row_number)">{{row.project_title.title}}</a>
+          <div ng-repeat="row in project.node.row" class="project-title-inner-row">
+            <a ng-click="setRow(row.row_number); changeClass()" ng-class="{highlight:$first}">{{row.project_title.title}}</a>
           </div>
         </div>
       </div>
@@ -37,8 +37,8 @@
     <div id="method-project-title" ng-show="!revealData(clickChoice)">
       <div class="project-title-inner">
         <div ng-repeat="method in methods | filter:methodTitle | limitTo:1">
-          <div ng-repeat="row in method.node | limitTo:1">
-            <a ng-click="setMethod(row.id, row.row_number)">{{row.project_title}}</a>
+          <div ng-repeat="row in method.node | limitTo:1" class="project-title-inner-row">
+            <a ng-click="setMethod(row.id, row.row_number); changeClass()" ng-class="{highlight:$first}">{{row.project_title}}</a>
           </div>
         </div>
       </div>
