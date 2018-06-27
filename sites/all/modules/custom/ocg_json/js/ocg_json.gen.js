@@ -114,6 +114,22 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
       });
     })
     $scope.methods = assaysObj;
+    $scope.idSelectedCenter = $scope.ctd2nodes.nodes[0].node.id;
+    $scope.setSelectedCenter = function (idSelectedCenter) {
+      $scope.idSelectedCenter = idSelectedCenter;
+    };
+    $scope.idSelectedProject = $scope.ctd2nodes.nodes[0].node.row[0].project_title.title;
+    $scope.setSelectedProject = function (idSelectedProject) {
+      $scope.idSelectedProject = idSelectedProject;
+    };
+    $scope.idSelectedAssay = $scope.methods[0].assay;
+    $scope.setSelectedAssay = function (idSelectedAssay) {
+      $scope.idSelectedAssay = idSelectedAssay;
+    };
+    $scope.idSelectedAssayProject = $scope.methods[0].node[0].project_title;
+    $scope.setSelectedAssayProject = function (idSelectedAssayProject) {
+      $scope.idSelectedAssayProject = idSelectedAssayProject;
+    };
   });
 
   $scope.clickChoice = 'centers';
@@ -148,12 +164,12 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
     return result;
   };
   
-  $scope.class = "highlight";
+  $scope.class = ['highlight'];
   $scope.changeClass = function(){
-    if ($scope.class === "highlight")
-      $scope.class = "lowlight";
+    if($scope.class.indexOf('highlight') == -1)
+      $scope.class.push('highlight');
     else
-      $scope.class = "highlight";
+      $scope.class.pop('highlight');
   };
 }).filter('sameRowNumber', function () {
   return function (values, rowNumber) {
