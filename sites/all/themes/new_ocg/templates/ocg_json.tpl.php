@@ -134,7 +134,7 @@
             <h2>{{row.dpp_title}}</h2>
             <div class="approaches-description">
               <div ng-bind-html="row.dpp_body | crop: 200"></div><a href="{{row.project_title_url}}"> {{row.dpp_body.length > 200 ? 'Read More...' : ''}}</a>
-            </div>4
+            </div>
 
             <div id="data">
               <h3 class="data-header">Data</h3>
