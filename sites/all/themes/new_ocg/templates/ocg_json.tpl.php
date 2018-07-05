@@ -7,7 +7,7 @@
     </div>
 
     <div id="center-title" ng-show="revealData(clickChoice)">
-      <div ng-class="center - title - inner">
+      <div ng-class="center-title-inner">
         <div ng-repeat="project in ctd2nodes.nodes" class="project">
           <div class="title"><a ng-click="$parent.projectTitle = project.node.title.title; setRow(project.node.row[0].row_number); setSelectedCenter(project.node.id); setSelectedProject(project.node.row[0].project_title.title)" ng-class="{highlight:project.node.id === idSelectedCenter}">{{ project.node.title.title}}</a></div>
           <div class="dataset-count">{{project.node.row.length}} Datasets</div>
@@ -16,7 +16,7 @@
     </div>
 
     <div id="method-title" ng-show="!revealData(clickChoice)">
-      <div ng-class="method - title - inner">
+      <div ng-class="method-title-inner">
         <div ng-repeat="method in methods" class="project">
           <div class="title"><a ng-click="$parent.methodTitle = method; setSelectedAssay(method.assay); setSelectedAssayProject(method.node[0].project_title)" ng-class="{highlight:method.assay === idSelectedAssay}">{{method.assay}}</a></div>
           <div class="dataset-count">{{method.number}} Datasets</div>
