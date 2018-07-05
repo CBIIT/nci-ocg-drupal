@@ -27,13 +27,13 @@ $total = array();
         $page_number = '';
       } else {
         $total[] = $row->count;
-        if (array_sum($total) <= $items_per_page_parameter) {
+        if (((array_sum($total)-$row->count)+1) <= $items_per_page_parameter) {
           $page_number = '';
         } else {
-          if (!is_float(array_sum($total) / $items_per_page_parameter)) {
-            $page = floor(array_sum($total) / $items_per_page_parameter) - 1;
+          if (!is_float(((array_sum($total)-$row->count)+1)/$items_per_page_parameter)) {
+            $page = floor(((array_sum($total)-$row->count)+1)/$items_per_page_parameter)-1;
           } else {
-            $page = floor(array_sum($total) / $items_per_page_parameter);
+            $page = floor(((array_sum($total)-$row->count)+1)/$items_per_page_parameter);
           }
           $page_number = '&page=' . $page;
         }
