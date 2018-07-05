@@ -33,13 +33,20 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
               var investigatorCount = 0;
               var contactCount = 0;
               var paperCount = 0;
+              if (row.dpp) {
+                var dppTitle = row.dpp.title;
+                var dppBody = row.dpp.body;
+              } else {
+                var dppTitle = '';
+                var dppBody = '';
+              }
               assaysObj[assayObjKey].node[count] = {
                 id: nodes.node.id,
                 row_number: row.row_number,
                 project_title: row.project_title.title,
                 project_title_url: row.project_title.url,
-                dpp_title: row.dpp.title,
-                dpp_body: row.dpp.body,
+                dpp_title: dppTitle,
+                dpp_body: dppBody,
                 dpp: {},
                 data: {},
                 investigator: {},
@@ -47,7 +54,7 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
                 submission_date: row.submission_date,
                 paper: {}
               };
-              if (typeof row.dpp[0] !== 'undefined') {
+              if (row.dpp) {
                 angular.forEach(row.dpp, function (dppRow, dppKey) {
                   assaysObj[assayObjKey].node[count].dpp[dppCount] = {dpp_title: dppRow.dpp_title, dpp_body: dppRow.dpp_body};
                   dppCount++
