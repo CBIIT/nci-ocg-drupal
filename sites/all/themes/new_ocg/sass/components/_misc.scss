@@ -4180,7 +4180,18 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 
 #data-portal-app .highlight {
-  color: #900 !important;
+  color: white !important;
+  background-color: #900;
+  padding: 2px;
+}
+
+#data-portal-app #centers .highlight {
+  background: none;
+  padding: 0;
+}
+
+#data-portal-app #centers .highlight img {
+  opacity: 0.5;
 }
 
 #data-portal-app .lowlight {
@@ -4191,7 +4202,6 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   display: flex;
 }
 
-#data-portal-app #centers,
 #data-portal-app #center-title,
 #data-portal-app #method-title,
 #data-portal-app #project-title,
@@ -4199,6 +4209,13 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+#data-portal-app #centers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -4211,22 +4228,16 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 
 #data-portal-app #centers {
-  width: 20%;
-  margin-right: -3%;
-  padding: 0.5%;
-  -webkit-clip-path: polygon(0% 0%, 78% 0%, 100% 50%, 78% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 78% 0%, 100% 50%, 78% 100%, 0% 100%);
-  background-color: #fff2cc;
   align-items: center;
 }
 
 #data-portal-app #center-title,
 #data-portal-app #method-title{
-  width: 45%;
+  width: 50%;
   margin-right: -2%;
   padding: 0.5%;
-  webkit-clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 0% 100%, 10% 50%, 0% 0%);
-  clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 0% 100%, 10% 50%, 0% 0%);
+  -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
   background-color: #fff2cc;
   position: relative;
 }
@@ -4247,18 +4258,21 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 
 #data-portal-app #project-title,
 #data-portal-app #method-project-title {
-  width: 35%;
+  width: 50%;
   padding: 0.5%;
   -webkit-clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
   clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
   background-color: #fff2cc;
 }
 
+#data-portal-app .center-title-inner,
+#data-portal-app .method-title-inner {
+ width: 95%; 
+}
+
 #data-portal-app .project-title-inner,
-#data-portal-app .method-title-inner,
-#data-portal-app .center-title-inner {
-  padding-left: 10%;
-  padding-right: 10%;
+#data-portal-app .method-title-inner {
+  width: 80%;
 }
 
 #data-portal-app .project-title-inner-row {
