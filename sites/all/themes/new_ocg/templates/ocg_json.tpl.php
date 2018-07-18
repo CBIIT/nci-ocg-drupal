@@ -1,8 +1,8 @@
 <div id="data-portal-app" ng-controller="datacontroller" ng-cloak>
   
   <div id="centers">
-    <a href ng-click="clickChoice = 'centers'; setRow(); projectTitle = ctd2nodes.nodes[0].node.title.title; setSelectedCenter(ctd2nodes.nodes[0].node.id); setSelectedProject(ctd2nodes.nodes[0].node.row[0].project_title.title)" ng-class="{'highlight':revealData(clickChoice), '':!highlight}" class="centers-inner highlight"><img src="/sites/default/files/Round_Landmark_Icon_Generic_Building.svg_.png" style="width: 75px;" /></a>
-    <a href ng-click="clickChoice = 'method'; setMethod(methods[0].node[0].id, method.node[0].row_number); methodTitle = methods[0]; setSelectedAssay(methods[0].assay); setSelectedAssayProject(methods[0].node[0].project_title)" ng-class="{'highlight':!revealData(clickChoice), '':!highlight}" class="lowlight"><img src="/sites/default/files/Test_Tube_Free_Flat_Vector_Icon.jpg" style="width: 75px;" /></a>
+    <a href ng-click="clickChoice = 'centers'; setRow(); projectTitle = ctd2nodes.nodes[0].node.title.title; setSelectedCenter(ctd2nodes.nodes[0].node.id); setSelectedProject(ctd2nodes.nodes[0].node.row[0].project_title.title)" ng-class="{'highlight':revealData(clickChoice), '':!highlight}" class="centers-inner highlight"><img src="/sites/default/files/Round_Landmark_Icon_Generic_Building.svg_.png" style="width: 75px;" alt="{{ctd2nodes.nodes.length}} Centers" title="{{ctd2nodes.nodes.length}} Centers" /></a>
+    <a href ng-click="clickChoice = 'method'; setMethod(methods[0].node[0].id, method.node[0].row_number); methodTitle = methods[0]; setSelectedAssay(methods[0].assay); setSelectedAssayProject(methods[0].node[0].project_title)" ng-class="{'highlight':!revealData(clickChoice), '':!highlight}" class="lowlight"><img src="/sites/default/files/Test_Tube_Free_Flat_Vector_Icon.jpg" style="width: 75px;" alt="{{methods.length}} Methods" title="{{methods.length}} Methods" /></a>
   </div>
 
   <div class="portal-navigation">
