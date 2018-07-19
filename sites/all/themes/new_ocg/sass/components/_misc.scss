@@ -4134,8 +4134,49 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   background: none;
 }
 
+.ctd2-json .ctd2-title {
+  float: left;
+  position: relative;
+  min-height: 105px;
+  width: 50%;
+}
+
+.ctd2-json .views-label {
+  color: #323232;
+  font-weight: normal;
+  text-transform: none;
+  float: none;
+  display: inline;
+  padding: 0;
+}
+
+.ctd2-json .view-display-id-updated {
+  font-style: italic;
+  color: #323232;
+  position: absolute;
+  bottom: 40%;
+}
+
+.ctd2-json .methods-link a {
+  color: darkblue !important;
+  text-decoration: none !important;
+}
+
+.ctd2-json .ctd2-image {
+  float: right;
+}
+
+.ctd2-description,
+.datasets-number {
+  float: left;
+}
+
+.ctd2-description {
+  padding-top: 20px;
+}
+
 #data-portal-app {
-  
+  float: left;
 }
 
 #data-portal-app .highlight {
@@ -4174,7 +4215,6 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 #data-portal-app #centers {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
 }
 
