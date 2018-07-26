@@ -1,23 +1,3 @@
-<div class="ctd2-json">
-  <div class="ctd2-title">
-    <h1 class="page__title title dataMatrixHeader" id="page-title">CTD² Data Portal</h1>
-    <?php print views_embed_view('ctd2_data_portal', 'updated'); ?>
-    <div class="methods-link">
-      Click here to access <a href="https://ocg.cancer.gov/programs/ctd2/analytical-tools" title="" alt="" target="_blank">
-        <img style="height:10px" alt="TARGET Banner" src="/sites/all/themes/new_ocg/images/double-arrow-right-128.png">
-        CTD² Analytical Tools
-        <img style="height:10px" alt="TARGET Banner" src="/sites/all/themes/new_ocg/images/double-arrow-left-128.png">
-      </a>
-      <br>
-      Note: Users must use data with <a href="https://ocg.cancer.gov/sites/default/files/CTD2CaveatEmptor_final.pdf">discretion</a> and acknowledge the <a href="https://ocg.cancer.gov/programs/ctd2/ctd2-publication-guidelines">CTD² Network</a>
-    </div>
-  </div>
-  <div>
-    <a href="/programs/ctd2"><img class="ctd2-image" style="height: 105px;" class="media-element file-default" typeof="foaf:Image" src="/sites/default/files/cdt2_banner.jpg" width="719" height="310" alt=""></a>
-  </div>
-</div>
-
-<p class="ctd2-description">The Cancer Target Discovery and Development (CTD<sup>2</sup>) Network’s goals are to bridge the knowledge of cancer genetics and biology to improvements in the clinic, and while clinical trials per se are not a component, generating data which would allow to start the clinical trials is one of the purviews.&nbsp;The CTD<sup>2</sup> Data Portal provides access to raw/analyzed primary data generated from different types of approaches e.g. chemical genetics (small-molecules, natural products); genome-wide gain-of-function (cDNA expression libraries, CRISPRa); genome-wide loss-of-function (siRNA, shRNA, CRISPR/Cas9, CRISPRi); protein-protein interactions; and <i>in vivo </i>gain and loss-of function studies.</p>
 <p class="datasets-number">There are currently 49 datasets and can be sorted by Center or the Assay Method.</p>
 <div id="data-portal-app" ng-controller="datacontroller" ng-cloak>
 
@@ -75,7 +55,7 @@
           <div ng-repeat="row in project.node.row| sameRowNumber:filterRow | limitTo:1">
             <h2>{{row.dpp.title}}</h2>
             <div class="approaches-description">
-              <div ng-bind-html="row.dpp.body | crop: 200"></div><a href="{{row.project_title.url}}"> {{row.dpp.body.length > 200 ? 'Read More...' : ''}}</a>
+              <div ng-bind-html="row.dpp.body | crop: 200"></div><a href="/{{row.project_title.url}}"> {{row.dpp.body.length > 200 ? 'Read More...' : ''}}</a>
             </div>
 
             <div id="data">
@@ -83,7 +63,7 @@
               <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle | limitTo:1">
                 <div ng-repeat="row in project.node.row| sameRowNumber:filterRow | limitTo:1">
                   <div ng-repeat="data in row.data">
-                    Access the <a href="/{{data.data_link.url}}">{{data.data_link.title}}</a>
+                    Access the <a href="{{data.data_link.url}}">{{data.data_link.title}}</a>
                   </div>
                 </div>
               </div>
@@ -92,7 +72,7 @@
             <h3 class="approaches-header">Experimental Approaches</h3>
             <div ng-repeat="approach in row.dpp" class="approaches-listing">
               <div class="approaches-listing-title">{{approach.dpp_title}}</div>
-              <div ng-bind-html="approach.dpp_body | crop: 150"></div><a href="{{row.project_title.url}}"> {{approach.dpp_body.length > 150 ? 'Read More...' : ''}}</a>
+              <div ng-bind-html="approach.dpp_body | crop: 150"></div><a href="/{{row.project_title.url}}"> {{approach.dpp_body.length > 150 ? 'Read More...' : ''}}</a>
             </div>
           </div>
         </div>
@@ -118,28 +98,28 @@
           <div ng-repeat="row in project.node.row| sameRowNumber:filterRow | limitTo:1">
             <div ng-repeat="contact in row.contact">
               <div ng-repeat="contact_link in contact.contact_link">
-                <a href="/{{contact_link.url}}">{{contact_link.title}}</a>
+                <a href="{{contact_link.url}}">{{contact_link.title}}</a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="submission-date">
+      <!-- div id="submission-date">
         <h3 class="submission-date-header">Submission Date</h3>
         <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle | limitTo:1">
           <div ng-repeat="row in project.node.row| sameRowNumber:filterRow | limitTo:1">
             <div>{{row.submission_date * 1000| date : "y-MM-dd"}}</div>
           </div>
         </div>
-      </div>
+      </div -->
 
       <div id="reference">
         <h3 class="reference-header">Reference</h3>
         <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle | limitTo:1">
           <div ng-repeat="row in project.node.row| sameRowNumber:filterRow | limitTo:1">
             <div ng-repeat="paper in row.paper">
-              <a href="/{{paper.paper_link.url}}">{{paper.paper_link.title}}</a>
+              <a href="{{paper.paper_link.url}}">{{paper.paper_link.title}}</a>
             </div>
           </div>
         </div>
@@ -155,7 +135,7 @@
           <div ng-repeat="(key, row) in filterMethodRow(method.node)" ng-if="$index < 1">
             <h2>{{row.dpp_title}}</h2>
             <div class="approaches-description">
-              <div ng-bind-html="row.dpp_body | crop: 200"></div><a href="{{row.project_title_url}}"> {{row.dpp_body.length > 200 ? 'Read More...' : ''}}</a>
+              <div ng-bind-html="row.dpp_body | crop: 200"></div><a href="/{{row.project_title_url}}"> {{row.dpp_body.length > 200 ? 'Read More...' : ''}}</a>
             </div>
 
             <div id="data">
@@ -163,7 +143,7 @@
               <div ng-repeat="method in methods| filter:methodTitle | limitTo:1">
                 <div ng-repeat="(key, row) in filterMethodRow(method.node)" ng-if="$index < 1">
                   <div ng-repeat="data in row.data">
-                    Access the <a href="/{{data.data_url}}">{{data.data_title}}</a>
+                    Access the <a href="{{data.data_url}}">{{data.data_title}}</a>
                   </div>
                 </div>
               </div>
@@ -172,7 +152,7 @@
             <h3 class="approaches-header">Experimental Approaches</h3>
             <div ng-repeat="approach in row.dpp" class="approaches-listing">
               <div class="approaches-listing-title">{{approach.dpp_title}}</div>
-              <div ng-bind-html="approach.dpp_body | crop: 150"></div><a href="{{row.project_title_url}}"> {{approach.dpp_body.length > 150 ? 'Read More...' : ''}}</a>
+              <div ng-bind-html="approach.dpp_body | crop: 150"></div><a href="/{{row.project_title_url}}"> {{approach.dpp_body.length > 150 ? 'Read More...' : ''}}</a>
             </div>
           </div>
         </div>
@@ -198,28 +178,28 @@
           <div ng-repeat="(key, row) in filterMethodRow(method.node)" ng-if="$index < 1">
             <div ng-repeat="contact in row.contact">
               <div ng-repeat="contact_link in contact.contact_link">
-                <a href="/{{contact_link.url}}">{{contact_link.title}}</a>
+                <a href="{{contact_link.url}}">{{contact_link.title}}</a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="submission-date">
+      <!-- div id="submission-date">
         <h3 class="submission-date-header">Submission Date</h3>
         <div ng-repeat="method in methods| filter:methodTitle | limitTo:1">
           <div ng-repeat="(key, row) in filterMethodRow(method.node)" ng-if="$index < 1">
             <div>{{row.submission_date * 1000| date : "y-MM-dd"}}</div>
           </div>
         </div>
-      </div>
+      </div -->
 
       <div id="reference">
         <h3 class="reference-header">Reference</h3>
         <div ng-repeat="method in methods| filter:methodTitle | limitTo:1">
           <div ng-repeat="(key, row) in filterMethodRow(method.node)" ng-if="$index < 1">
             <div ng-repeat="paper in row.paper">
-              <a href="/{{paper.paper_url}}">{{paper.paper_title}}</a>
+              <a href="{{paper.paper_url}}">{{paper.paper_title}}</a>
             </div>
           </div>
         </div>

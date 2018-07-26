@@ -4134,11 +4134,13 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   background: none;
 }
 
-.ctd2-json .ctd2-title {
-  float: left;
-  position: relative;
-  min-height: 105px;
-  width: 50%;
+#block-views-ctd2-data-portal-updated {
+  margin-bottom: 0;
+}
+
+.ctd2-json h2 {
+  font-size: 2.3em;
+  text-transform: none !important;
 }
 
 .ctd2-json .views-label {
@@ -4153,8 +4155,6 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 .ctd2-json .view-display-id-updated {
   font-style: italic;
   color: #323232;
-  position: absolute;
-  bottom: 40%;
 }
 
 .ctd2-json .methods-link a {
@@ -4169,10 +4169,6 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 .ctd2-description,
 .datasets-number {
   float: left;
-}
-
-.ctd2-description {
-  padding-top: 20px;
 }
 
 #data-portal-app {

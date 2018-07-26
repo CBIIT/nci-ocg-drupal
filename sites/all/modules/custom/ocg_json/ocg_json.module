@@ -14,7 +14,7 @@ function ocg_json_menu() {
     'delivery callback' => 'drupal_json_output'
   );
   
-  $items['programs/ctd2/data-portal-new'] = array(
+  $items['programs/ctd2/data-portal'] = array(
     'page callback' => 'ocg_json_page',
     'access arguments' => array('access content') ,
   );
