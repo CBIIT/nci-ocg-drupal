@@ -4232,10 +4232,19 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   align-items: center;
 }
 
+#data-portal-app #centers .centers-inner {
+  flex-grow: 0;
+}
+
+#data-portal-app #centers .lowlight,
+#data-portal-app #centers .data-stack {
+  flex-grow: 1;
+}
+
 #data-portal-app #center-title,
 #data-portal-app #method-title{
-  width: 50%;
-  margin-right: -2%;
+  width: 52%;
+  margin-right: -4%;
   padding: 0.5%;
   -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
@@ -4259,7 +4268,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 
 #data-portal-app #project-title,
 #data-portal-app #method-project-title {
-  width: 50%;
+  width: 52%;
   padding: 0.5%;
   -webkit-clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
   clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
@@ -4322,6 +4331,12 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 #data-portal-app #contact,
 #data-portal-app #submission-date {
   margin-bottom: 20px;
+}
+
+#data-portal-app #data .using-data,
+#data-portal-app #data .data-header {
+  display: inline;
+  vertical-align: middle;
 }
 
 #data-portal-app .approaches-description div,

@@ -4,6 +4,7 @@
   <div id="centers">
     <a href ng-click="clickChoice = 'centers'; setRow(); projectTitle = ctd2nodes.nodes[0].node.title.title; setSelectedCenter(ctd2nodes.nodes[0].node.id); setSelectedProject(ctd2nodes.nodes[0].node.row[0].project_title.title)" ng-class="{'highlight':revealData(clickChoice), '':!highlight}" class="centers-inner highlight"><img src="/sites/default/files/Round_Landmark_Icon_Generic_Building.svg_.png" style="width: 75px;" alt="{{ctd2nodes.nodes.length}} Centers" title="{{ctd2nodes.nodes.length}} Centers" /></a>
     <a href ng-click="clickChoice = 'method'; setMethod(methods[0].node[0].id, method.node[0].row_number); methodTitle = methods[0]; setSelectedAssay(methods[0].assay); setSelectedAssayProject(methods[0].node[0].project_title)" ng-class="{'highlight':!revealData(clickChoice), '':!highlight}" class="lowlight"><img src="/sites/default/files/Test_Tube_Free_Flat_Vector_Icon_Outline.jpg" style="width: 75px;" alt="{{methods.length}} Methods" title="{{methods.length}} Methods" /></a>
+    <div class="data-stack"><img src="/sites/default/files/styles/80x80/public/Data%20stack.png" /></div>
   </div>
 
   <div class="portal-navigation">
@@ -11,8 +12,9 @@
     <div id="center-title" ng-show="revealData(clickChoice)">
       <div class="center-title-inner">
         <div ng-repeat="project in ctd2nodes.nodes" class="project">
-          <div class="title"><a ng-click="$parent.projectTitle = project.node.title.title; setRow(project.node.row[0].row_number); setSelectedCenter(project.node.id); setSelectedProject(project.node.row[0].project_title.title)" ng-class="{highlight:project.node.id === idSelectedCenter}">{{ project.node.title.title}}</a></div>
-          <div class="dataset-count">{{project.node.row.length}} Datasets</div>
+          <div class="title" ng-show="project.node.row.length"><a ng-click="$parent.projectTitle = project.node.title.title; setRow(project.node.row[0].row_number); setSelectedCenter(project.node.id); setSelectedProject(project.node.row[0].project_title.title)" ng-class="{highlight:project.node.id === idSelectedCenter}">{{ project.node.title.title}}</a></div>
+          <div class="title" ng-if="project.node.row.length == NULL">{{project.node.title.title}}</div>
+          <div class="dataset-count">{{project.node.row.length ? project.node.row.length : 0}} Datasets</div>
         </div>
       </div>
     </div>
@@ -59,6 +61,7 @@
             </div>
 
             <div id="data">
+              <img class="using-data" src="/sites/default/files/styles/80x80/public/USING%20DATA.png" />
               <h3 class="data-header">Data</h3>
               <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle | limitTo:1">
                 <div ng-repeat="row in project.node.row| sameRowNumber:filterRow | limitTo:1">
