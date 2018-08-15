@@ -5573,52 +5573,46 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   float: right;
 }
 
-/* line 4171, ../sass/components/_misc.scss */
-.ctd2-description,
-.datasets-number {
+/* line 4170, ../sass/components/_misc.scss */
+.ctd2-description {
   float: left;
 }
 
-/* line 4175, ../sass/components/_misc.scss */
-#data-portal-app {
-  float: left;
-}
-
-/* line 4179, ../sass/components/_misc.scss */
+/* line 4174, ../sass/components/_misc.scss */
 #data-portal-app .highlight {
   color: white !important;
   background-color: #900;
   padding: 2px;
 }
 
-/* line 4185, ../sass/components/_misc.scss */
+/* line 4180, ../sass/components/_misc.scss */
 #data-portal-app #centers .highlight {
   background: none;
   padding: 0;
   padding-right: 10px;
 }
 
-/* line 4191, ../sass/components/_misc.scss */
+/* line 4186, ../sass/components/_misc.scss */
 #data-portal-app #centers a {
   padding-right: 10px;
 }
 
-/* line 4195, ../sass/components/_misc.scss */
+/* line 4190, ../sass/components/_misc.scss */
 #data-portal-app #centers .highlight img {
   opacity: 0.5;
 }
 
-/* line 4199, ../sass/components/_misc.scss */
+/* line 4194, ../sass/components/_misc.scss */
 #data-portal-app .lowlight {
   color: #774928;
 }
 
-/* line 4203, ../sass/components/_misc.scss */
+/* line 4198, ../sass/components/_misc.scss */
 #data-portal-app .portal-navigation {
   display: flex;
 }
 
-/* line 4210, ../sass/components/_misc.scss */
+/* line 4205, ../sass/components/_misc.scss */
 #data-portal-app #center-title,
 #data-portal-app #method-title,
 #data-portal-app #project-title,
@@ -5627,6 +5621,12 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* line 4213, ../sass/components/_misc.scss */
+#data-portal-app #center-title,
+#data-portal-app #method-title {
+  justify-content: flex-start;
 }
 
 /* line 4217, ../sass/components/_misc.scss */

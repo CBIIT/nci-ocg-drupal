@@ -13,7 +13,8 @@
       <div class="center-title-inner">
         <div ng-repeat="project in ctd2nodes.nodes" class="project" ng-cloak>
           <div class="title" ng-show="project.node.row[0].project_title != NULL"><a ng-click="$parent.projectTitle = project.node.title.title; setRow(project.node.row[0].row_number); setSelectedCenter(project.node.id); setSelectedProject(project.node.row[0].project_title.title)" ng-class="{highlight:project.node.id === idSelectedCenter}">{{ project.node.title.title}}</a></div>
-          <div class="title" ng-if="project.node.row[0].project_title == NULL">{{project.node.title.title}}</div>
+          <div title="Formerly of University of Texas MD Anderson Cancer Center." class="title" ng-if="project.node.row[0].project_title == NULL && project.node.title.title == 'Oregon Health and Science University (2)'">{{project.node.title.title}}</div>
+          <div class="title" ng-if="project.node.row[0].project_title == NULL && project.node.title.title != 'Oregon Health and Science University (2)'">{{project.node.title.title}}</div>
           <div class="dataset-count">{{project.node.row[0].project_title != NULL ? project.node.row.length : 0}} Datasets</div>
         </div>
       </div>

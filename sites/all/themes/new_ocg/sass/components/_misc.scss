@@ -4167,12 +4167,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   float: right;
 }
 
-.ctd2-description,
-.datasets-number {
-  float: left;
-}
-
-#data-portal-app {
+.ctd2-description {
   float: left;
 }
 
@@ -4212,6 +4207,11 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#data-portal-app #center-title,
+#data-portal-app #method-title {
+  justify-content: flex-start;
 }
 
 #data-portal-app #centers {
