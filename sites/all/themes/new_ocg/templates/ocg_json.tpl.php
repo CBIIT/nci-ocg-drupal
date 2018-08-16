@@ -1,4 +1,4 @@
-<p class="datasets-number">There are currently 49 datasets and can be sorted by Center or the Assay Method.</p>
+<p class="datasets-number">There are currently 49 datasets and can be sorted by Center or the assay type.</p>
 <div id="data-portal-app" ng-controller="datacontroller" ng-cloak>
 
   <div id="centers" ng-cloak>
