@@ -1,4 +1,6 @@
 <div id="data-portal-app" ng-controller="datacontroller" ng-cloak>
+  
+  <div class="datasets-number">There are currently {{row_count}} datasets and can be sorted by Center or the assay type.</div>
 
   <div id="centers" ng-cloak>
     <a href ng-click="clickChoice = 'centers'; setRow(); projectTitle = ctd2nodes.nodes[0].node.title.title; setSelectedCenter(ctd2nodes.nodes[0].node.id); setSelectedProject(ctd2nodes.nodes[0].node.row[0].project_title.title)" ng-class="{'highlight':revealData(clickChoice), '':!highlight}" class="centers-inner highlight"><img src="/sites/default/files/Round_Landmark_Icon_Generic_Building.svg_.png" style="width: 75px;" alt="{{ctd2nodes.nodes.length}} Centers" title="{{ctd2nodes.nodes.length}} Centers" /></a>
@@ -12,8 +14,7 @@
       <div class="center-title-inner">
         <div ng-repeat="project in ctd2nodes.nodes" class="project" ng-cloak>
           <div class="title" ng-show="project.node.row[0].project_title != NULL"><a ng-click="$parent.projectTitle = project.node.title.title; setRow(project.node.row[0].row_number); setSelectedCenter(project.node.id); setSelectedProject(project.node.row[0].project_title.title)" ng-class="{highlight:project.node.id === idSelectedCenter}">{{ project.node.title.title}}</a></div>
-          <div title="Formerly of University of Texas MD Anderson Cancer Center." class="title" ng-if="project.node.row[0].project_title == NULL && project.node.title.title == 'Oregon Health and Science University (2)'">{{project.node.title.title}}</div>
-          <div class="title" ng-if="project.node.row[0].project_title == NULL && project.node.title.title != 'Oregon Health and Science University (2)'">{{project.node.title.title}}</div>
+          <div title="{{project.node.title.attributes.title}}" class="title" ng-if="project.node.row[0].project_title == NULL">{{project.node.title.title}}</div>
           <div class="dataset-count">{{project.node.row[0].project_title != NULL ? project.node.row.length : 0}} Datasets</div>
         </div>
       </div>

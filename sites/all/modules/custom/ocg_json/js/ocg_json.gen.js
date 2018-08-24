@@ -2,14 +2,18 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
   $http.get('/programs/ctd2/data-portal-json').success(function (result) {
     $scope.ctd2nodes = result;
     const assayList = [];
+    var row_count = 0;
     angular.forEach($scope.ctd2nodes.nodes, function (nodes, key) {
       angular.forEach(nodes.node.row, function (row, key) {
+        if (row.project_title !== null) {
+          row_count++;
+        }
         angular.forEach(row.assay_type, function (assay_type, key) {
           assayList.push({assay: assay_type.name});
         });
       });
     });
-
+    $scope.row_count = row_count;
     assays = assayList.reduce(function (tally, method) {
       tally[method.assay] = (tally[method.assay] || 0) + 1;
       return tally;
