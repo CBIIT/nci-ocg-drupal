@@ -31,7 +31,7 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
       angular.forEach($scope.ctd2nodes.nodes, function (nodes, nodesKey) {
         angular.forEach(nodes.node.row, function (row, rowKey) {
           angular.forEach(row.assay_type, function (assay_type, assayKey) {
-            if (assays.assay == assay_type.name) {
+            if (assays.assay === assay_type.name) {
               var dppCount = 0;
               var dataCount = 0;
               var investigatorCount = 0;
@@ -61,7 +61,7 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
               if (row.dpp) {
                 angular.forEach(row.dpp, function (dppRow, dppKey) {
                   assaysObj[assayObjKey].node[count].dpp[dppCount] = {dpp_title: dppRow.dpp_title, dpp_body: dppRow.dpp_body};
-                  dppCount++
+                  dppCount++;
                 });
               }
               ;
@@ -123,7 +123,7 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
           });
         });
       });
-    })
+    });
     $scope.methods = assaysObj;
     $scope.idSelectedCenter = $scope.ctd2nodes.nodes[0].node.id;
     $scope.setSelectedCenter = function (idSelectedCenter) {
@@ -145,11 +145,11 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
 
   $scope.clickChoice = 'centers';
   $scope.revealData = function (value) {
-    if (value == 'centers')
+    if (value === 'centers')
       return true;
     else
       return false;
-  }
+  };
   $scope.filterRow = '';
   $scope.filterId = '';
   $scope.setRow = function (row) {
@@ -159,7 +159,7 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
   $scope.setMethod = function (id, row) {
     $scope.filterId = id;
     $scope.filterRow = row;
-  }
+  };
   
   $scope.filterMethodRow = function(items) {
     var result = {};
@@ -177,7 +177,7 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
   
   $scope.class = ['highlight'];
   $scope.changeClass = function(){
-    if($scope.class.indexOf('highlight') == -1)
+    if($scope.class.indexOf('highlight') === -1)
       $scope.class.push('highlight');
     else
       $scope.class.pop('highlight');
@@ -191,9 +191,9 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
     // filter when we have a selected groupId
     return values.filter(function (value) {
       return value.row_number === rowNumber;
-    })
-  }
-}).filter('crop', function () {
+    });
+  };
+}).filter('crop', ['$sce',function($sce) {
   return function (input, limit, respectWordBoundaries, suffix) {
     if (input === null || input === undefined || limit === null || limit === undefined || limit === '') {
       return input;
@@ -213,11 +213,11 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
 
     var trimmedString = input.substr(0, limit);
     if (respectWordBoundaries) {
-      return trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))) + suffix;
+      return $sce.trustAsHtml(trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))) + suffix);
     }
-    return trimmedString + suffix;
-  }
-});
+    return $sce.trustAsHtml(trimmedString + suffix);
+  };
+}]);
 
 jQuery(document).ready(function () {
   angular.bootstrap(document.getElementById('data-portal-app'), ['app']);
