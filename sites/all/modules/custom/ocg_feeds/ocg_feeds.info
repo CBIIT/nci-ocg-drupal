@@ -1,0 +1,6 @@
+name = OCG Feeds
+description = Feeds extension to import inline images.
+core = 7.x
+package = OCG
+dependencies[] = feeds
+dependencies[] = simplehtmldom
