@@ -3650,6 +3650,28 @@ span.newtab {
   margin-bottom: 1em;
 }
 
+.view-id-analytical_tools .view-content .views-row {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #808080;
+  padding-bottom: 20px;
+  
+  .views-field-body p {
+    margin-bottom: 1em;
+  }
+  .views-field-view-1 .views-row {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .views-field-view .views-row {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+
+
 /*
 * CGCI Data Matrix
 *
