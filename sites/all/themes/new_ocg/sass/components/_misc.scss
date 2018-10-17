@@ -3668,6 +3668,9 @@ span.newtab {
     border-bottom: none;
     padding-bottom: 0;
   }
+  .views-field-title {
+    font-size: 1.25em;
+  }
 }
 
 
@@ -4911,6 +4914,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   -webkit-border-radius: 5px; 
   border: 0px solid #900;
   background-color: #e5e3e3;
+  font-size: 1.3em;
 }
 
 .views-widget-filter-secondary .form-type-checkbox {
