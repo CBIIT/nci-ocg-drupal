@@ -635,11 +635,16 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
     }
 
     // Check if any still remaning (hidden fields, already excluded fields).
+    $view_fields_ontop = array();
     if (!empty($view_fields)) {
       foreach ($view_fields as $field_title => $field_info) {
-        $view_fields_ordered[$field_title] = $field_info;
+        $view_fields_ontop[$field_title] = $field_info;
       }
     }
+    // Add them to beginning of array as their field's content might be used by
+    // following fields as replacements. They are already excluded, so they
+    // will not mess up sort order of visible fields.
+    $view_fields_ordered = $view_fields_ontop + $view_fields_ordered;
     $this->view->field = $view_fields_ordered;
   }
 
