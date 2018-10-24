@@ -14,8 +14,20 @@ function ocg_json_menu() {
     'delivery callback' => 'drupal_json_output'
   );
   
+  $items['programs/ctd2/data-portal-json-network'] = array(
+    'title' => 'CTD2 Data Portal JSON',
+    'page callback' => 'ocg_json_network_data',
+    'access callback' => TRUE,
+    'delivery callback' => 'drupal_json_output'
+  );
+  
   $items['programs/ctd2/data-portal'] = array(
     'page callback' => 'ocg_json_page',
+    'access arguments' => array('access content') ,
+  );
+  
+  $items['programs/ctd2/data-portal-network'] = array(
+    'page callback' => 'ocg_json_network_page',
     'access arguments' => array('access content') ,
   );
 
@@ -26,7 +38,10 @@ function ocg_json_theme() {
   return array(
     'ocg_json' => array(
       'template' => 'ocg_json',
-    ) ,
+    ),
+    'ocg_json_network' => array(
+      'template' => 'ocg_json_network',
+    ),
   );
 }
 
@@ -39,6 +54,13 @@ function ocg_json_page() {
   $path = drupal_get_path('module', 'ocg_json');
   drupal_add_js($path . '/js/ocg_json.gen.js');
   return theme('ocg_json');
+}
+
+function ocg_json_network_page() {
+  drupal_add_library('angularjs', 'angularjs');
+  $path = drupal_get_path('module', 'ocg_json');
+  drupal_add_js($path . '/js/ocg_json_network.gen.js');
+  return theme('ocg_json_network');
 }
 
 function ocg_json_data() {
@@ -117,6 +139,103 @@ function ocg_json_data() {
         }
         $array_number++;
       }
+      
+      $arrs['nodes'] = $node_array;
+    }
+    
+    return $arrs;
+    //return drupal_json_encode($arrs);
+    //dpm($arrs);
+    //dpm($node_array);
+    //return 'Hello Ian';
+  }
+  
+  catch (EntityMetadataWrapperException $exc) {
+    watchdog(
+      'CTD2 Data Portal',
+      'EntityMetadataWrapper exception in %function() @trace',
+      array('%function' => __FUNCTION__, '@trace' => $exc->getTraceAsString()),
+      WATCHDOG_ERROR
+    );
+  }
+}
+
+function ocg_json_network_data() {
+  try {
+    $view_results = views_get_view_result('ctd2_data_portal', 'page_2');
+    foreach ($view_results as $view_result) {
+      $nids[] = $view_result->nid;
+    }
+    $nodes = node_load_multiple($nids);
+    $arrs = array();
+    $node_array = array();
+    $array_number = 0;
+    foreach ($nodes as $node_key => $node) {
+      $row_number = 0;
+      $wrapper = entity_metadata_wrapper('node', $node);
+      //if ($wrapper->field_internal->value() == 0) {
+        $node_array[$array_number]['node']['id'] = $node->nid;
+        $node_array[$array_number]['node']['title'] = $wrapper->field_institute->value();
+        foreach ($wrapper->field_row->value() as $field_row) {
+          $paper_number = 0;
+          $approaches_number = 0;
+          $dpp_number = 0;
+          $data_number = 0;
+          $investigator_number = 0;
+          $contact_number = 0;
+          $fc_row = field_collection_item_load($field_row->item_id);
+          $row_wrapper = entity_metadata_wrapper('field_collection_item', $fc_row);
+          if($row_wrapper->field_internal->value() == 1) {
+            $node_array[$array_number]['node']['row'][$row_number]['row_number'] = $row_wrapper->field_row_number->value();
+            $node_array[$array_number]['node']['row'][$row_number]['project_title'] = $row_wrapper->field_project_title->value();
+            $node_array[$array_number]['node']['row'][$row_number]['assay_type'] = $row_wrapper->field_assay_type->value();
+            foreach ($row_wrapper->field_paper as $field_paper) {
+              $node_array[$array_number]['node']['row'][$row_number]['paper'][$paper_number]['paper_link'] = $field_paper->field_paper_link->value();
+              $paper_number++;
+            }
+            foreach ($row_wrapper->field_experimental_approaches as $field_approaches) {
+              $node_array[$array_number]['node']['row'][$row_number]['approaches'][$approaches_number]['span_rows'] = $field_approaches->field_span_rows->value();
+              foreach ($field_approaches->field_text as $key => $field_text) {
+                $node_array[$array_number]['node']['row'][$row_number]['approaches'][$approaches_number]['field_text'][$key] = $field_text->value();
+              }
+              $approaches_number++;
+            }
+            foreach ($row_wrapper->field_ctd2_data_project_page as $field_data_project_page) {
+              //$node_array[$array_number]['node']['row'][$row_number]['dpp'] = $field_data_project_page->field_dpp_approaches->value();
+              $node_array[$array_number]['node']['row'][$row_number]['dpp']['title'] = $field_data_project_page->title->value();
+              $node_array[$array_number]['node']['row'][$row_number]['dpp']['body'] = $field_data_project_page->body->value->value();
+              
+             foreach ($field_data_project_page->field_dpp_approaches->value() as $dpp_value) {
+                $fc_dpp = field_collection_item_load($dpp_value->item_id);
+                $dpp_wrapper = entity_metadata_wrapper('field_collection_item', $fc_dpp);
+                $node_array[$array_number]['node']['row'][$row_number]['dpp'][$dpp_number]['dpp_title'] = $dpp_wrapper->field_dpp_title->value();
+                $node_array[$array_number]['node']['row'][$row_number]['dpp'][$dpp_number]['dpp_body'] = $dpp_wrapper->field_dpp_body->value->value();
+                $dpp_number++;
+              }
+            }
+            foreach ($row_wrapper->field_data as $field_data) {
+              foreach ($field_data->field_data_link as $key => $data_link) {
+                $node_array[$array_number]['node']['row'][$row_number]['data'][$data_number]['data_link'] = $field_data->field_data_link->value();
+              }
+              $data_number++;
+            }
+            foreach ($row_wrapper->field_principal_investigator as $field_investigator) {
+              $node_array[$array_number]['node']['row'][$row_number]['investigator'][$investigator_number]['investigator'] = $field_investigator->field_pi_link->value();
+              $investigator_number++;
+            }
+            foreach ($row_wrapper->field_ctd2_contact_name as $field_contact) {
+              $node_array[$array_number]['node']['row'][$row_number]['contact'][$contact_number]['span_rows'] = $field_contact->field_span_rows->value();
+              foreach ($field_contact->field_contact_link as $key => $contact_link) {
+                $node_array[$array_number]['node']['row'][$row_number]['contact'][$contact_number]['contact_link'] = $field_contact->field_contact_link->value();
+              }
+              $contact_number++;
+            }
+            $node_array[$array_number]['node']['row'][$row_number]['submission_date'] = $row_wrapper->field_submission_date->value();
+            $row_number++;
+          }
+        }
+        $array_number++;
+      //}
       
       $arrs['nodes'] = $node_array;
     }
