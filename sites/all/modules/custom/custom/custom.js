@@ -42,7 +42,8 @@ Drupal.behaviors.wardead = {
 				});
         
         $('.pgdi-column input[type=checkbox]:checked').siblings('label').css({"background-color":"#900"});
-        $('.pgdi-column input[type=checkbox]:checked').siblings('label').css({"color":"#fff"});
+        $('.pgdi-column input[type=checkbox]:checked').siblings('label').css({"color":"#faec7a"});
+        $('.pgdi-column input[type=checkbox]:checked').siblings('label').css({"font-weight":"bold"});
         
         $('.pgdi-column input[type=checkbox]').on('change', function (e) {
           if ($('input[type=checkbox]:checked').length > 10) {
@@ -51,7 +52,8 @@ Drupal.behaviors.wardead = {
           if ($(this).is(':checked')) {
             $(this).attr('checked', 'checked');
             $(this).siblings('label').css({"background-color":"#900"});
-            $(this).siblings('label').css({"color":"#fff"});
+            $(this).siblings('label').css({"color":"#faec7a"});
+            $(this).siblings('label').css({"font-weight":"bold"});
           } else {
             $(this).siblings('label').css({"background-color":"#e5e3e3"});
             $(this).siblings('label').css({"color":"#323232"});
