@@ -4,9 +4,9 @@ package = "Input filters"
 dependencies[] = filter
 core = 7.x
 configure = admin/config/content/formats
-; Information added by drupal.org packaging script on 2013-07-31
-version = "7.x-4.0-beta1"
+; Information added by Drupal.org packaging script on 2015-05-22
+version = "7.x-4.0-beta1+15-dev"
 core = "7.x"
 project = "glossify"
-datestamp = "1375311669"
+datestamp = "1432307882"
 
