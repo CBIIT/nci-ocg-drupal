@@ -119,9 +119,10 @@
       </div -->
 
       <div id="reference">
-        <h3 class="reference-header">Reference</h3>
+        <!-- h3 class="reference-header" ng-if="ctd2nodes.nodes[0].node[0].row[0].paper[0].paper_link.url == NULL">Reference</h3 -->
         <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle | limitTo:1">
           <div ng-repeat="row in project.node.row| sameRowNumber:filterRow | limitTo:1">
+            <h3 class="reference-header" ng-if="row.paper[0].paper_link.url !== NULL">Reference</h3>
             <div ng-repeat="paper in row.paper">
               <a href="{{paper.paper_link.url}}">{{paper.paper_link.title}}</a>
             </div>
@@ -200,9 +201,10 @@
       </div -->
 
       <div id="reference">
-        <h3 class="reference-header">Reference</h3>
+        <!-- h3 class="reference-header">Reference</h3 -->
         <div ng-repeat="method in methods| filter:methodTitle | limitTo:1">
           <div ng-repeat="(key, row) in filterMethodRow(method.node)" ng-if="$index < 1">
+            <h3 class="reference-header" ng-if="row.paper[0].paper_title !== NULL">Reference</h3>
             <div ng-repeat="paper in row.paper">
               <a href="{{paper.paper_url}}">{{paper.paper_title}}</a>
             </div>
