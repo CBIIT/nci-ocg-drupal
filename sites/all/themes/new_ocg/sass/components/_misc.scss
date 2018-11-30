@@ -5093,6 +5093,28 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
   position: relative;
 }
 
+/* E-Newsletters */
+
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image img {
+  max-width: none;
+}
+
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 table,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.odd td,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.odd th,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.odd,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.even td,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.even th,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.even {
+  border: none !important;
+  background: none !important;
+}
+
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image {
+  vertical-align: top;
+  padding-top: 9px;
+}
+
 @media all and (max-width: 1160px) {
 
   #block-superfish-1 {
