@@ -98,7 +98,6 @@ function ocg_feeds_feeds_processor_targets($entity_type, $bundle) {
  * Mapping callback.
  */
 function ocg_feeds_set_target($source, $entity, $target, $value, $mapping) {
-  dpm(get_defined_vars());
   if ($value[0]) {
     $record = array(
         'fid' => $entity->field_image['und'][0]['fid'],
@@ -109,7 +108,6 @@ function ocg_feeds_set_target($source, $entity, $target, $value, $mapping) {
         'width' => $value[3],
         'height' => $value[4]
     );
-    dpm($record);
     drupal_write_record('manualcrop', $record);
   }
 }
