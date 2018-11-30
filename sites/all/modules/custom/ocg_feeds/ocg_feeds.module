@@ -76,4 +76,40 @@ function ocg_feeds_feeds_after_save(FeedsSource $source, $entity, $item, $entity
       }
     }
   }  // end foreach
-}  // end my_module_feeds_after_save
+}
+
+/**
+ * Implements hook_feeds_processor_targets().
+ */
+function ocg_feeds_feeds_processor_targets($entity_type, $bundle) {
+  $targets = array();
+
+  // Provide new target.
+  $targets['manual_crop'] = array(
+    'name' => t('Manual Crop'),
+    'description' => t('Adds Manual Crop dimensions to images'),
+    'callback' => 'ocg_feeds_set_target',
+  );
+
+  return $targets;
+}
+
+/**
+ * Mapping callback.
+ */
+function ocg_feeds_set_target($source, $entity, $target, $value, $mapping) {
+  dpm(get_defined_vars());
+  if ($value[0]) {
+    $record = array(
+        'fid' => $entity->field_image['und'][0]['fid'],
+        'vid' => 0,
+        'style_name' => $value[0],
+        'x' => $value[1],
+        'y' => $value[2],
+        'width' => $value[3],
+        'height' => $value[4]
+    );
+    dpm($record);
+    drupal_write_record('manualcrop', $record);
+  }
+}
