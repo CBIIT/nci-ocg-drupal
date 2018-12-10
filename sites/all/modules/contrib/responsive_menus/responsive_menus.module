@@ -30,6 +30,7 @@ function responsive_menus_permission() {
     'administer responsive menus' => array(
       'title' => t('Administer Responsive Menus'),
       'description' => t('Configure settings for responsive menus module.'),
+      'restrict access' => TRUE,
     ),
   );
 }
@@ -148,6 +149,13 @@ function responsive_menus_libraries_info() {
       ),
     ),
   );
+  $sidr_theme = variable_get('responsive_menus_sidr_menu_theme', 'dark');
+  if ($sidr_theme == 'light') {
+    $libraries['sidr']['files']['css'] = array('stylesheets/jquery.sidr.light.css');
+  }
+  elseif ($sidr_theme == 'custom') {
+    unset($libraries['sidr']['files']['css']);
+  }
 
   $libraries['GoogleNexusWebsiteMenu'] = array(
     'name' => 'Google Nexus (codrops)',
@@ -275,18 +283,35 @@ function responsive_menus_admin_form_submit($form, &$form_state) {
   // Exclude unnecessary elements.
   form_state_values_clean($form_state);
 
+  // Which field types to run filter_xss() on.
+  $filter_types = array(
+    'textfield',
+    'textarea',
+  );
+
   foreach ($form_state['values'] as $key => $value) {
     if (is_array($value) && isset($form_state['values']['array_filter'])) {
       $value = array_keys(array_filter($value));
     }
     if ($key == 'responsive_menus_style_settings') {
       foreach ($value as $style_key => $style_value) {
-        variable_set($style_key, $style_value);
+        // If the field is a type we should filter.
+        if (in_array($form['responsive_menus_style_settings'][$style_key]['#type'], $filter_types, TRUE)) {
+          variable_set($style_key, filter_xss($style_value));
+        }
+        else {
+          variable_set($style_key, $style_value);
+        }
       }
     }
     else {
       variable_set($key, $value);
     }
+  }
+
+  // Clear libraries cache if Sidr style in use to allow theme to be updated.
+  if ($form_state['values']['responsive_menus_style'] == 'sidr') {
+    cache_clear_all('*', 'cache_libraries', TRUE);
   }
 
   drupal_set_message(t('The configuration options have been saved.'));
@@ -740,6 +765,17 @@ function responsive_menus_sidr_style_settings() {
     ),
     '#default_value' => variable_get('responsive_menus_sidr_menu_side', array('left' => 'Left')),
   );
+  $form['responsive_menus_sidr_menu_theme'] = array(
+    '#type' => 'select',
+    '#title' => t('Theme'),
+    '#options' => array(
+      'dark' => t('Dark'),
+      'light' => t('Light'),
+      'custom' => t('Custom'),
+    ),
+    '#default_value' => variable_get('responsive_menus_sidr_menu_theme', 'dark'),
+    '#description' => t('Select which <a href="@theme">theme</a> will be used to style the menu. If "Custom" is selected, no CSS will be added; you will need to add your own styles.', array('@theme' => 'http://www.berriart.com/sidr/#themes')),
+  );
   $form['responsive_menus_sidr_animation_speed'] = array(
     '#type' => 'textfield',
     '#title' => t('Sidr animation speed'),
@@ -777,13 +813,13 @@ function responsive_menus_sidr_style_settings() {
   $form['responsive_menus_sidr_on_open'] = array(
     '#type' => 'textarea',
     '#title' => t('onOpen callback (function)'),
-    '#description' => t('See !documentation for examples.', array('!documentation' => l(t('Sidr documentation'), 'http://www.berriart.com/sidr/#documentation'))),
+    '#description' => t("Enter Javacript to be called when the menu is opened.  Example: alert('Great job'); See !documentation for examples.", array('!documentation' => l(t('Sidr documentation'), 'http://www.berriart.com/sidr/#documentation'))),
     '#default_value' => variable_get('responsive_menus_sidr_on_open', ''),
   );
   $form['responsive_menus_sidr_on_close'] = array(
     '#type' => 'textarea',
     '#title' => t('onClose callback (function)'),
-    '#description' => t('See !documentation for examples.', array('!documentation' => l(t('Sidr documentation'), 'http://www.berriart.com/sidr/#documentation'))),
+    '#description' => t("Enter Javacript to be called when the menu is closed.  Example: alert('Great job'); See !documentation for examples.", array('!documentation' => l(t('Sidr documentation'), 'http://www.berriart.com/sidr/#documentation'))),
     '#default_value' => variable_get('responsive_menus_sidr_on_close', ''),
   );
 
@@ -1225,8 +1261,25 @@ function responsive_menus_execute($style = NULL, $js_defaults = array()) {
       drupal_add_css($css_file);
     }
   }
+
+  $filtered_settings = array();
+  foreach ($style_info['js_settings']($js_defaults) as $setting_index => $setting) {
+    if (!is_array($setting)) {
+      $filtered_settings[$setting_index] = filter_xss_admin($setting);
+    }
+    else {
+      foreach ($setting as $sub_index => $sub_value) {
+        $filtered_settings[$setting_index][$sub_index] = filter_xss_admin($sub_value);
+      }
+    }
+  }
+
+  if (!isset($filtered_settings['selectors'])) {
+    $filtered_settings['selectors'] = array();
+  }
+
   // Add JS settings.
-  $js_settings[$data['execute_index']] = $style_info['js_settings']($js_defaults);
+  $js_settings[$data['execute_index']] = $filtered_settings;
   $js_settings[$data['execute_index']]['responsive_menus_style'] = $style;
   drupal_alter('responsive_menus_execute', $js_settings);
   drupal_add_js(array('responsive_menus' => $js_settings), 'setting');
@@ -1248,3 +1301,4 @@ function _responsive_menus_mlpm_get_css() {
   $mlpm_css[] = $path . '/mlpm/css/jquery.multilevelpushmenu.css';
   return $mlpm_css;
 }
+
