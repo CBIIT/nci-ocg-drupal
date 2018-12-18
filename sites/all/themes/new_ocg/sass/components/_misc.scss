@@ -3103,24 +3103,35 @@ fieldset.collapsed span.fieldset-legend {
 }
 
 .view-taxonomy-term .view-content .views-row {
-    margin-bottom: 10px;
-    padding-bottom: 15px;
-    border-bottom: 5px solid #E1E1E1;
-    overflow: visible;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 5px solid #E1E1E1;
+  overflow: visible;
 }
 
 .view-taxonomy-term .view-e-newsletter-issue-title .views-row h1 {
-    color: #774928;
-    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+  color: #774928;
+  font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
 font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .view-taxonomy-term .view-e-newsletter-issue-title .views-row h1 span {
-    color: #900;
+  color: #900;
+}
+
+.section-news-publications .view-display-id-attachment_1 .views-field-title p {
+  margin-bottom: 0;
+}
+
+.section-news-publications .view-display-id-attachment_1 table {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .view-taxonomy-term .attachment-before h3 {
-    margin-bottom: 22px;
+  margin-bottom: 5px;
 }
 
 h3, h4 {
