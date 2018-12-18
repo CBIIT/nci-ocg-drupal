@@ -1791,6 +1791,9 @@ span.noicon {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 #footer .block-menu-block ul {
@@ -1853,6 +1856,10 @@ span.noicon {
 #footer .block-menu-block ul li li {
     font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
     font-weight: normal;
+}
+
+#block-block-6 p {
+  margin-bottom: 0.5em;
 }
 
 .NIH p {
@@ -5280,6 +5287,8 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   #footer .block-menu-block .menu-block-2 > ul > li {
