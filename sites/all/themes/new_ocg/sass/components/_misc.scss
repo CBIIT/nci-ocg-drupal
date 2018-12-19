@@ -5113,6 +5113,11 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
 
 /* E-Newsletters */
 
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image {
+  display: flex;
+  justify-content: center;
+}
+
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image img {
   max-width: none;
 }
