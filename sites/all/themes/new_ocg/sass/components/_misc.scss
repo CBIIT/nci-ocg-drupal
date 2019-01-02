@@ -1788,9 +1788,8 @@ span.noicon {
 }
 
 #footer .block-menu-block .menu-block-2 > ul {
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
+  display: flex;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
