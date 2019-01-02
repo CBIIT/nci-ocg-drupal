@@ -23,7 +23,7 @@
     <div id="method-title" ng-show="!revealData(clickChoice)">
       <div class="method-title-inner">
         <div ng-repeat="method in methods" class="project">
-          <div class="title"><a ng-click="$parent.methodTitle = method; setSelectedAssay(method.assay); setSelectedAssayProject(method.node[0].project_title)" ng-class="{highlight:method.assay === idSelectedAssay}">{{method.assay}}</a></div>
+          <div class="title"><a ng-click="$parent.methodTitle = method; setMethod(method.row[0].id, method.row[0].row_number); setSelectedAssay(method.assay); setSelectedAssayProject(method.node[0].project_title)" ng-class="{highlight:method.assay === idSelectedAssay}">{{method.assay}}</a></div>
           <div class="dataset-count">{{method.number}} Datasets</div>
         </div>
       </div>

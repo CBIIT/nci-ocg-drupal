@@ -125,7 +125,6 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
       });
     });
     $scope.methods = assaysObj;
-    console.log($scope.methods);
     $scope.idSelectedCenter = $scope.ctd2nodes.nodes[0].node.id;
     $scope.setSelectedCenter = function (idSelectedCenter) {
       $scope.idSelectedCenter = idSelectedCenter;
