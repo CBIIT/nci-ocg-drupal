@@ -63,18 +63,18 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
                   assaysObj[assayObjKey].node[count].dpp[dppCount] = {dpp_title: dppRow.dpp_title, dpp_body: dppRow.dpp_body};
                   dppCount++;
                 });
-              }
-              ;
-              if (typeof row.data[0] !== 'undefined') {
-                angular.forEach(row.data, function (dataRow, dataKey) {
-                  if (dataRow.data_link !== null) {
-                    assaysObj[assayObjKey].node[count].data[dataCount] = {data_title: dataRow.data_link.title, data_url: dataRow.data_link.url};
-                    dataCount++;
-                  }
-                  ;
-                });
-              }
-              ;
+              };
+              if(row.data) {
+                if (typeof row.data[0] !== 'undefined') {
+                  angular.forEach(row.data, function (dataRow, dataKey) {
+                    if (dataRow.data_link !== null) {
+                      assaysObj[assayObjKey].node[count].data[dataCount] = {data_title: dataRow.data_link.title, data_url: dataRow.data_link.url};
+                      dataCount++;
+                    }
+                    ;
+                  });
+                };
+              };
               if (typeof row.investigator !== 'undefined') {
                 if (typeof row.investigator[0] !== 'undefined') {
                   angular.forEach(row.investigator, function (investigatorRow, investigatorKey) {
@@ -125,6 +125,7 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
       });
     });
     $scope.methods = assaysObj;
+    console.log($scope.methods);
     $scope.idSelectedCenter = $scope.ctd2nodes.nodes[0].node.id;
     $scope.setSelectedCenter = function (idSelectedCenter) {
       $scope.idSelectedCenter = idSelectedCenter;
