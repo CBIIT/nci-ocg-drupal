@@ -5148,6 +5148,20 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
   padding-top: 9px;
 }
 
+/* HCMI */
+
+div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
+  text-decoration: none !important;
+}
+
+.view-hcmi-resources .view-resources .views-field-body p {
+  margin-bottom: 0;
+}
+
+.view-hcmi-resources .view-resources .views-field-field-resource-link-link {
+  margin-top: 1.5em;
+}
+
 @media all and (max-width: 1160px) {
 
   #block-superfish-1 {
