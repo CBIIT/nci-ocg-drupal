@@ -73,7 +73,7 @@
               </div>
             </div>
 
-            <h3 class="approaches-header">Experimental Approaches</h3>
+            <h3 class="approaches-header" ng-if="row.dpp[0].dpp_body !== NULL">Experimental Approaches</h3>
             <div ng-repeat="approach in row.dpp" class="approaches-listing">
               <div class="approaches-listing-title">{{approach.dpp_title}}</div>
               <div ng-bind-html="approach.dpp_body | crop: 150"></div><a href="/{{row.project_title.url}}"> {{approach.dpp_body.length > 150 ? 'Read More...' : ''}}</a>
@@ -155,7 +155,7 @@
               </div>
             </div>
 
-            <h3 class="approaches-header">Experimental Approaches</h3>
+            <h3 class="approaches-header" ng-if="row.dpp[0].dpp_body !== NULL">Experimental Approaches</h3>
             <div ng-repeat="approach in row.dpp" class="approaches-listing">
               <div class="approaches-listing-title">{{approach.dpp_title}}</div>
               <div ng-bind-html="approach.dpp_body | crop: 150"></div><a href="/{{row.project_title_url}}"> {{approach.dpp_body.length > 150 ? 'Read More...' : ''}}</a>
