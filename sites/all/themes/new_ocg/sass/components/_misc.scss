@@ -3991,6 +3991,7 @@ text-align: left;
 }
 
 .page-programs-ctd2-data-portal .view-display-id-updated .views-row,
+.page-programs-ctd2-data-portal-network .view-display-id-updated_network .views-row,
 .page-programs-ctd2-data-portal-network .view-display-id-updated .views-row,
 .page-programs-ctd2-data-portal-accordion .view-display-id-updated .views-row,
 .page-programs-ctd2-data-portal-accordion1 .view-display-id-updated .views-row {
@@ -4193,7 +4194,8 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   background: none;
 }
 
-#block-views-ctd2-data-portal-updated {
+#block-views-ctd2-data-portal-updated,
+#block-views-3154ad4782ce731a9dff4ab90f404680 {
   margin-bottom: 5px;
 }
 
@@ -4211,7 +4213,8 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   padding: 0;
 }
 
-.ctd2-json .view-display-id-updated {
+.ctd2-json .view-display-id-updated,
+.ctd2-json .view-display-id-updated_network {
   font-style: italic;
   color: #323232;
   position: relative;
@@ -5159,7 +5162,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
 }
 
 .view-hcmi-resources .view-resources .views-field-field-resource-link-link {
-  margin-top: 1.5em;
+  margin-top: 5px;
 }
 
 @media all and (max-width: 1160px) {
