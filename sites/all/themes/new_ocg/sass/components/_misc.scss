@@ -5126,12 +5126,14 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
 
 /* E-Newsletters */
 
-.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image {
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-views-conditional {
   display: flex;
   justify-content: center;
 }
 
-.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image img {
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image img,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-views-conditional img {
   max-width: none;
 }
 
@@ -5146,7 +5148,8 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
   background: none !important;
 }
 
-.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image {
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-views-conditional {
   vertical-align: top;
   padding-top: 9px;
 }
