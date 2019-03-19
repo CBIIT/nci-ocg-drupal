@@ -5127,13 +5127,15 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
 /* E-Newsletters */
 
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image,
-.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-views-conditional {
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-views-conditional,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_2 .views-field-views-conditional {
   display: flex;
   justify-content: center;
 }
 
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image img,
-.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-views-conditional img {
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-views-conditional img,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_2 .views-field-views-conditional img {
   max-width: none;
 }
 
@@ -5143,13 +5145,22 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.odd,
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.even td,
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.even th,
-.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.even {
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.even,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_2 table,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_2 .tablestyles tr.odd td,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_2 .tablestyles tr.odd th,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_2 .tablestyles tr.odd,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_2 .tablestyles tr.even td,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_2 .tablestyles tr.even th,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_2 .tablestyles tr.even {
   border: none !important;
   background: none !important;
 }
 
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image,
-.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-views-conditional {
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-views-conditional,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_2 .views-field-field-image,
+.section-news-publications .view-taxonomy-term .view-display-id-attachment_2 .views-field-views-conditional{
   vertical-align: top;
   padding-top: 9px;
 }
