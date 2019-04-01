@@ -2426,6 +2426,21 @@ span.date-display-single {
   border-bottom: 5px solid #e1e1e1;
 }
 
+.view-hcmi-resources {
+  border-bottom: none !important;
+  .views-label-field-follow-up-crfs,
+  .views-label-field-enrollment-crfs {
+    text-transform: none;
+    color: #323232;
+  }
+  .views-row {
+    padding-bottom: 0 !important;
+  }
+  .views-field-field-follow-up-crfs ul {
+    margin-bottom: 0 !important;
+  }
+}
+
 .archive .view .right {
   width: 62%;
   padding-left: 0;
