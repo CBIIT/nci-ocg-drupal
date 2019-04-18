@@ -168,6 +168,9 @@ $(document).ready (function (){
     }
     
   });
+  window.addEventListener('load', function(){
+    $('.g-recaptcha iframe').attr('title','Recaptcha');
+  });
 	
 }); // end doc ready
 
