@@ -21,7 +21,6 @@
  * regardless of any changes in the aliasing that might happen if
  * the view is modified.
  */
-dpm($row);
 global $base_root;
 $alias = $base_root . '/' . drupal_get_path_alias('node/'.$row->nid);
 $image = $base_root . '/sites/default/files/' . $row->field_field_image[0]['rendered']['#item']['filename'];
