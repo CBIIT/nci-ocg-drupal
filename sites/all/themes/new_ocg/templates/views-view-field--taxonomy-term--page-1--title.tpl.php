@@ -21,13 +21,16 @@
  * regardless of any changes in the aliasing that might happen if
  * the view is modified.
  */
+dpm($row);
 global $base_root;
 $alias = $base_root . '/' . drupal_get_path_alias('node/'.$row->nid);
+$image = $base_root . '/sites/default/files/' . $row->field_field_image[0]['rendered']['#item']['filename'];
+$description = $row->field_body[0]['raw']['summary'];
 ?>
 <a name="<?php print $row->nid; ?>"></a>
 <span><?php print $row->field_field_enews_category[0]['rendered']['#label']; ?></span>
 <span class="share-buttons">
-  <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:title="<?php print $row->node_title; ?>">
+  <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:title="<?php print $row->node_title; ?>" addthis:description="<?php print $description; ?>" addthis:media="<?php print $image; ?>">
     <a class="addthis_button_facebook" addthis:url="<?php print $alias ?>?cid=fb_ocg-updates_sharedposts"></a>
     <a class="addthis_button_twitter" addthis:url="<?php print $alias ?>?cid=tw_ocg-updates_sharedposts"></a>
     <a class="addthis_button_linkedin" addthis:url="<?php print $alias ?>?cid=li_ocg-updates_sharedposts"></a>
