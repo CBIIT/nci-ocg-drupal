@@ -66,7 +66,7 @@
               <img class="using-data" src="/sites/default/files/styles/80x80/public/USING%20DATA.png" />
               <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle | limitTo:1">
                 <div ng-repeat="row in project.node.row| sameRowNumber:filterRow | limitTo:1">
-                  <div ng-repeat="data in row.data">
+                  <div ng-repeat="data in row.data" class="data-row">
                     Access the <a href="{{data.data_link.url}}">{{data.data_link.title}}</a>
                   </div>
                 </div>
@@ -148,7 +148,7 @@
               <img class="using-data" src="/sites/default/files/styles/80x80/public/USING%20DATA.png" />
               <div ng-repeat="method in methods| filter:methodTitle | limitTo:1">
                 <div ng-repeat="(key, row) in filterMethodRow(method.node)" ng-if="$index < 1">
-                  <div ng-repeat="data in row.data">
+                  <div ng-repeat="data in row.data" class="data-row">
                     Access the <a href="{{data.data_url}}">{{data.data_title}}</a>
                   </div>
                 </div>
