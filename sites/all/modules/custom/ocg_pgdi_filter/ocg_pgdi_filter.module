@@ -1,0 +1,137 @@
+<?php
+
+/**
+ * Implements hook_form_FORMID_alter
+ */
+function ocg_pgdi_filter_form_pgdi_node_form_alter(&$form, &$form_state, $form_id) {
+  $selected_diagnosis = array();
+  
+  foreach ($form['field_cancer_information']['und'] as $key => $cancer_information) {
+    if (is_int($key)) {
+      $cancer_type_options = array();
+      $cancer_type_options['_none'] = '- None -';
+      $cancer_diagnosis_options = array();
+      $cancer_diagnosis_options['_none'] = '- None -';
+      $icd10_options = array();
+      $icd10_options['_none'] = '- None -';
+      $cancer_type_value = $form['field_cancer_information']['und'][$key]['field_cancer_type_icd10']['und']['#default_value'];
+      if (!empty($cancer_type_value)) {
+        $children = taxonomy_get_children($cancer_type_value[0], 9);
+        $parents = taxonomy_get_tree(9, 0, 1);
+        foreach ($parents as $icd10) {
+          $cancer_type_options[$icd10->tid] = $icd10->name;
+        }
+        foreach($children as $child_key => $child){
+          $cancer_diagnosis_options[$child_key] = $child->name;
+          $icd10_options[$child_key] = $child->field_icd_10_term['und'][0]['safe_value'];
+        }
+      } else {
+        $parents = taxonomy_get_tree(9, 0, 1);
+        $first_parent = reset($parents);
+        $children = taxonomy_get_children($first_parent->tid, 9);
+        foreach ($parents as $icd10) {
+          $cancer_type_options[$icd10->tid] = $icd10->name;
+          foreach($children as $child_key => $child){
+            $cancer_diagnosis_options[$child_key] = $child->name;
+            $icd10_options[$child_key] = $child->field_icd_10_term['und'][0]['safe_value'];
+          }
+        }
+      }
+      $selected_diagnosis[$key] = isset($form_state['values']['field_cancer_information']['und'][$key]['field_cancer_diagnosis_icd10']['und'][0]['tid']) ? $form_state['values']['field_cancer_information']['und'][$key]['field_cancer_diagnosis_icd10']['und'][0]['tid'] : $form['field_cancer_information']['und'][$key]['field_cancer_diagnosis_icd10']['und']['#default_value'];
+      $form['field_cancer_information']['und'][$key]['field_cancer_type_icd10']['und']['#options'] = $cancer_type_options;
+      $form['field_cancer_information']['und'][$key]['field_cancer_type_icd10']['und']['#ajax'] = array(
+        'event' => 'change',
+        'callback' => 'callbacks_wrapper',
+        'wrapper' => 'cancer-diagnosis-replace-'.$key,
+        'method' => 'replace',
+      );
+      $form['field_cancer_information']['und'][$key]['field_cancer_diagnosis_icd10']['und']['#prefix'] = '<div id="cancer-diagnosis-replace-'.$key.'">';
+      $form['field_cancer_information']['und'][$key]['field_cancer_diagnosis_icd10']['und']['#suffix'] = '</div>';
+      $form['field_cancer_information']['und'][$key]['field_cancer_diagnosis_icd10']['und']['#options'] = $cancer_diagnosis_options;
+      $form['field_cancer_information']['und'][$key]['field_cancer_diagnosis_icd10']['und']['#default_value'] = $selected_diagnosis[$key];
+      $form['field_cancer_information']['und'][$key]['field_cancer_diagnosis_icd10']['und']['#ajax'] = array(
+        'event' => 'change',
+        'callback' => 'icd10_dropdown_callback',
+        'wrapper' => 'icd10-replace-'.$key,
+        'method' => 'replace',
+      );
+      $form['field_cancer_information']['und'][$key]['field_icd_10']['und']['#prefix'] = '<div id="icd10-replace-'.$key.'">';
+      $form['field_cancer_information']['und'][$key]['field_icd_10']['und']['#suffix'] = '</div>';
+      $form['field_cancer_information']['und'][$key]['field_icd_10']['#validated'] = TRUE;
+      $form['field_cancer_information']['und'][$key]['field_icd_10']['und']['#disabled'] = TRUE;
+      $form['field_cancer_information']['und'][$key]['field_icd_10']['und']['#options'] = $icd10_options;
+      $form['field_cancer_information']['und'][$key]['field_icd_10']['und']['#default_value'] = $selected_diagnosis[$key];
+    }
+  }
+}
+
+/**
+ * Filters the dropdown and returns it to the form.
+ *
+ *
+ * @return array
+ *   Renderable array (the second and third dropdown)
+ */
+function callbacks_wrapper($form, $form_state) {
+  $commands = array();
+  foreach ($form['field_cancer_information']['und'] as $key => $cancer_information) {
+    if (is_int($key)) {
+      $parent = $form_state['input']['field_cancer_information']['und'][$key]['field_cancer_type_icd10']['und'];
+      if ($parent == '_none') {
+        $parents = taxonomy_get_tree(9, 0, 1);
+        $first_parent = reset($parents);
+        $parent = $first_parent->tid;
+      }
+      $children = taxonomy_get_children($parent, 9);
+      $options = array();
+      $options['_none'] = '- None -';
+      $icd10_options = array();
+      $icd10_options['_none'] = '- None -';
+      if (!empty($children)) {
+        foreach($children as $child_key => $child){
+          $options[$child_key] = $child->name;
+          $icd10_options[$child_key] = $child->field_icd_10_term['und'][0]['safe_value'];
+        }
+      } else {
+        $parents = taxonomy_get_tree(9, 0, 1);
+        foreach ($parents as $icd10) {
+          $cancer_type_options[$icd10->tid] = $icd10->name;
+          $children = taxonomy_get_children($icd10->tid, 9);
+          foreach($children as $child_key => $child){
+            $options[$child_key] = $child->name;
+            $icd10_options[$child_key] = $child->field_icd_10_term['und'][0]['safe_value'];
+          }
+        }
+      }
+      $form['field_cancer_information']['und'][$key]['field_cancer_type_icd10']['und']['#default_value'] = $parent;
+      $form['field_cancer_information']['und'][$key]['field_cancer_diagnosis_icd10']['und']['#options'] = $options;
+      $form['field_cancer_information']['und'][$key]['field_icd_10']['und']['#options'] = $icd10_options;
+      $form_state['rebuild'] = TRUE;
+      $commands[] = ajax_command_replace('#cancer-diagnosis-replace-'.$key, drupal_render($form['field_cancer_information']['und'][$key]['field_cancer_diagnosis_icd10']));
+      $commands[] = ajax_command_replace('#icd10-replace-'.$key, drupal_render($form['field_cancer_information']['und'][$key]['field_icd_10']));
+    }
+  }
+  return array('#type' => 'ajax', '#commands' => $commands);
+}
+
+function icd10_dropdown_callback($form, $form_state) {
+  $commands = array();
+  foreach ($form['field_cancer_information']['und'] as $key => $cancer_information) {
+    if (is_int($key)) {
+      $option = array();
+      $index = $form_state['input']['field_cancer_information']['und'][$key]['field_cancer_diagnosis_icd10']['und'];
+      if ($index == '_none') {
+        $option[$index] = '- None -';
+      } else {
+        $term = taxonomy_term_load($index);
+        $option[$index] = $term->field_icd_10_term['und'][0]['safe_value'];
+      }
+      $form['field_cancer_information']['und'][$key]['field_cancer_diagnosis_icd10']['und']['#default_value'] = $index;
+      $form['field_cancer_information']['und'][$key]['field_icd_10']['und']['#options'] = $option;
+      $commands[] = ajax_command_replace('#cancer-diagnosis-replace-'.$key, drupal_render($form['field_cancer_information']['und'][$key]['field_cancer_diagnosis_icd10']));
+      $commands[] = ajax_command_replace('#icd10-replace-'.$key, drupal_render($form['field_cancer_information']['und'][$key]['field_icd_10']));
+    }
+  }
+  $form_state['rebuild'] = TRUE;
+  return array('#type' => 'ajax', '#commands' => $commands);
+}
