@@ -3512,8 +3512,8 @@ span.newtab {
 
 .front .view-announcement .view-header, .view-announcement .view-header {
   position: absolute;
-  top: 25%;
-  right: 2%;
+  top: 8%;
+  right: 0.5%;
   z-index: 1;
 }
 
@@ -3594,8 +3594,17 @@ span.newtab {
 
 .front .view-announcement .views-field-body, .view-announcement .views-field-body .field-content {
   padding-top: 0;
-  padding-left: 10px;
-  width: 97%;
+  padding-left: 0;
+  width: 100%;
+}
+
+.front .view-announcement .views-field-body .field-content {
+  padding-left: 1.25%;
+  width: 96%;
+}
+
+.front .view-announcement h3 {
+  margin-bottom: 0;
 }
 
 .data-matrix {
@@ -4479,7 +4488,8 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 
 #data-portal-app #data .data-row {
-  background-color: #fff2cc;
+  border: solid 2px #990000;
+  padding-left: 10px;
 }
 
 #data-portal-app .approaches-description div,
