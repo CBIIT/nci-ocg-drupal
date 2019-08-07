@@ -2475,9 +2475,6 @@ span.date-display-single {
     text-transform: none;
     color: #323232;
   }
-  .views-row {
-    padding-bottom: 0 !important;
-  }
   .views-field-field-follow-up-crfs ul {
     margin-bottom: 0 !important;
   }
@@ -2492,7 +2489,8 @@ span.date-display-single {
   margin-bottom: 5px;
 }
 
-.archive .views-row {
+.archive .views-row,
+.hcmi-resources .views-row {
   position: relative;
   border-bottom: 1px dotted #d7d7d7;
   padding-bottom: 25px;
