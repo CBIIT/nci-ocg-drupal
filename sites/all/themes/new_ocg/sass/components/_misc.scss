@@ -4943,10 +4943,18 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 .page-programs-target-data-matrix .target-home,
 .page-programs-target-data-matrix .target-data,
 .page-programs-target-data-matrix .target-methods,
-.page-programs-target-data-matrix .pgdi-overview{
+.page-programs-target-data-matrix .target-awg,
+.page-programs-target-data-matrix .pgdi-overview
+{
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.page-programs-target-data-matrix .target-home img {
+  height: 80px !important;
 }
 
 #block-block-42 img {

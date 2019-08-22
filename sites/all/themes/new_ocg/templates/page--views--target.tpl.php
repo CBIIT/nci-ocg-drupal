@@ -106,8 +106,8 @@
       <?php print views_embed_view('cgci_data_matrix', 'target_last_updated'); ?>
           </div>
           <div class="target-home">
-            <a href="/programs/target"><img typeof="foaf:Image" src="/sites/default/files/styles/80x80/public/TARGET%20ICON.png?itok=wh03aPv8" width="52" height="80" alt="DNA Helix with bullseye target. Links to TARGET Homepage" title="Link to TARGET Homepage"></a>
-            <a href="/programs/target">TARGET Program </a>
+            <a href="/programs/target"><img typeof="foaf:Image" src="/sites/default/files/TARGET_Banner_Cropped.jpg" width="52" height="80" alt="Links to TARGET Homepage" title="Link to TARGET Homepage"></a>
+            <a href="/programs/target">TARGET Program</a>
           </div>
           <div class="target-data">
             <a href="/programs/target/using-target-data"><img typeof="foaf:Image" src="/sites/default/files/styles/80x80/public/USING%20DATA.png" width="75" height="80" alt="Link to instructions on how to use the data" title="Link to instructions on how to use the data"></a>
@@ -117,12 +117,13 @@
             <a href="/programs/target/target-methods"><img typeof="foaf:Image" src="/sites/default/files/styles/80x80/public/PROCEDURES%20METHODS%20ICON.png" width="76" height="80" alt="Link to Procedures and Methods" title="Link to Procedures and Methods"></a>
             <a href="/programs/target/target-methods">TARGET Methods</a>
           </div>
+          <div class="target-awg">
+            <a href="/programs/target/projects/target-analysis-working-group"><img typeof="foaf:Image" src="/sites/default/files/styles/80x80/public/TARGET%20ICON.png?itok=wh03aPv8" width="52" height="80" alt="DNA Helix with bullseye target. Links to TARGET Analysis Working Group" title="Link to TARGET Analysis Working Group"></a>
+            <a href="/programs/target/projects/target-analysis-working-group">TARGET Analysis Working Group</a>
+          </div>
           <div class="pgdi-overview">
             <a href="/programs/target/pgdi/overview"><img typeof="foaf:Image" src="/sites/default/files/styles/80x80/public/PGDI_Icon-for-Home-Page.png?itok=YLIiSqV5" width="80" height="80" alt="Pediatric Resource" title="Pediatric Resource"></a>
             <a href="/programs/target/pgdi/overview">Pediatric Resource</a>
-          </div>
-          <div>
-            <img class="cgci-image" style="width: 186px; height: 80px;" class="media-element file-default" typeof="foaf:Image" src="/sites/default/files/Target_banner.jpg" width="719" height="310" alt="">
           </div>
         </div>
         <?php print render($title_suffix); ?>
