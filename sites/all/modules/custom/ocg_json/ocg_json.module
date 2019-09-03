@@ -64,6 +64,9 @@ function ocg_json_network_page() {
 }
 
 function ocg_json_data() {
+  $cache = cache_get('data-portal-json');
+  $arrs = $cache->data;
+  if (!$arrs) {
   try {
     $view_results = views_get_view_result('ctd2_data_portal', 'page_1');
     foreach ($view_results as $view_result) {
@@ -142,12 +145,8 @@ function ocg_json_data() {
       
       $arrs['nodes'] = $node_array;
     }
-    
+    cache_set('data-portal-json', $arrs);
     return $arrs;
-    //return drupal_json_encode($arrs);
-    //dpm($arrs);
-    //dpm($node_array);
-    //return 'Hello Ian';
   }
   
   catch (EntityMetadataWrapperException $exc) {
@@ -158,9 +157,14 @@ function ocg_json_data() {
       WATCHDOG_ERROR
     );
   }
+  }
+  return $arrs;
 }
 
 function ocg_json_network_data() {
+  $cache = cache_get('data-portal-json-network');
+  $arrs = $cache->data;
+  if (!$arrs) {
   try {
     $view_results = views_get_view_result('ctd2_data_portal', 'page_2');
     foreach ($view_results as $view_result) {
@@ -235,16 +239,11 @@ function ocg_json_network_data() {
           }
         }
         $array_number++;
-      //}
       
       $arrs['nodes'] = $node_array;
     }
-    
+    cache_set('data-portal-json-network', $arrs);
     return $arrs;
-    //return drupal_json_encode($arrs);
-    //dpm($arrs);
-    //dpm($node_array);
-    //return 'Hello Ian';
   }
   
   catch (EntityMetadataWrapperException $exc) {
@@ -255,4 +254,6 @@ function ocg_json_network_data() {
       WATCHDOG_ERROR
     );
   }
+  }
+  return $arrs;
 }
