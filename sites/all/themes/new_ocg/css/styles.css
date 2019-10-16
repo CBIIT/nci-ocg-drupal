@@ -6441,21 +6441,31 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
+  float: left;
 }
 
-/* line 4929, ../sass/components/_misc.scss */
+/* line 4930, ../sass/components/_misc.scss */
+#block-block-43 {
+  float: right;
+}
+/* line 4933, ../sass/components/_misc.scss */
+#block-block-43 p {
+  margin: 0;
+}
+
+/* line 4938, ../sass/components/_misc.scss */
 .page-programs-target-pgdi-display .cgci-title h1 {
   padding-bottom: 8px;
 }
 
-/* line 4933, ../sass/components/_misc.scss */
+/* line 4942, ../sass/components/_misc.scss */
 .page-programs-target-pgdi-display .view-display-id-last_updated {
   font-style: italic;
   color: #323232;
   bottom: 0;
 }
 
-/* line 4948, ../sass/components/_misc.scss */
+/* line 4957, ../sass/components/_misc.scss */
 .page-programs-target-pgdi-display .target-data,
 .page-programs-target-pgdi-display .target-methods,
 .page-programs-target-pgdi-display .target-home,
@@ -6472,28 +6482,28 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   flex-basis: 0;
 }
 
-/* line 4956, ../sass/components/_misc.scss */
+/* line 4965, ../sass/components/_misc.scss */
 .page-programs-target-data-matrix .target-home img {
   height: 80px !important;
 }
 
-/* line 4960, ../sass/components/_misc.scss */
+/* line 4969, ../sass/components/_misc.scss */
 #block-block-42 img {
   width: 100%;
 }
 
-/* line 4964, ../sass/components/_misc.scss */
+/* line 4973, ../sass/components/_misc.scss */
 #views-exposed-form-pgdi-content-pgdi-display {
   width: 100%;
 }
 
-/* line 4968, ../sass/components/_misc.scss */
+/* line 4977, ../sass/components/_misc.scss */
 #views-exposed-form-pgdi-content-pgdi-display .views-exposed-widgets {
   width: 100%;
   text-align: center;
 }
 
-/* line 4982, ../sass/components/_misc.scss */
+/* line 4991, ../sass/components/_misc.scss */
 .views-widget-filter-field_project_country_tid,
 .views-widget-filter-field_icd_10_code_tid,
 .views-widget-filter-field_patient_age_range_value,
@@ -6509,32 +6519,32 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   margin-bottom: 20px;
 }
 
-/* line 4988, ../sass/components/_misc.scss */
+/* line 4997, ../sass/components/_misc.scss */
 #views-exposed-form-pgdi-content-pgdi-display .views-exposed-form .views-exposed-widget {
   float: none;
   padding: 0;
 }
 
-/* line 4993, ../sass/components/_misc.scss */
+/* line 5002, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display .view-filters {
   display: flex;
   justify-content: center;
 }
 
-/* line 4998, ../sass/components/_misc.scss */
+/* line 5007, ../sass/components/_misc.scss */
 .views-widget-filter-secondary legend {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 5003, ../sass/components/_misc.scss */
+/* line 5012, ../sass/components/_misc.scss */
 .pgdi-column {
   flex: 1;
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 5009, ../sass/components/_misc.scss */
+/* line 5018, ../sass/components/_misc.scss */
 .views-widget-filter-secondary input[type=checkbox] {
   position: absolute;
   left: -9999px;
@@ -6542,7 +6552,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
     area and turn opacity to 0 instead. */
 }
 
-/* line 5016, ../sass/components/_misc.scss */
+/* line 5025, ../sass/components/_misc.scss */
 .views-widget-filter-secondary .form-type-checkbox label {
   cursor: pointer;
   padding: 5px;
@@ -6559,83 +6569,83 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   font-weight: bold;
 }
 
-/* line 5032, ../sass/components/_misc.scss */
+/* line 5041, ../sass/components/_misc.scss */
 .views-widget-filter-secondary .form-type-checkbox {
   margin-right: 5px;
   margin-bottom: 5px;
   margin-left: 5px;
 }
 
-/* line 5038, ../sass/components/_misc.scss */
+/* line 5047, ../sass/components/_misc.scss */
 .views-widget-filter-secondary .form-type-checkbox:checked {
   background: #900;
   color: white;
 }
 
-/* line 5043, ../sass/components/_misc.scss */
+/* line 5052, ../sass/components/_misc.scss */
 .views-widget-filter-secondary .form-type-checkbox:last-child {
   margin-right: 0;
 }
 
-/* line 5047, ../sass/components/_misc.scss */
+/* line 5056, ../sass/components/_misc.scss */
 .views-widget-filter-secondary input[type=checkbox]:checked ~ label {
   background: #900;
   color: white;
 }
 
-/* line 5052, ../sass/components/_misc.scss */
+/* line 5061, ../sass/components/_misc.scss */
 .views-widget-filter-secondary input[type=checkbox]:checked + label {
   background: #900;
   color: #faec7a;
   font-weight: bold;
 }
 
-/* line 5058, ../sass/components/_misc.scss */
+/* line 5067, ../sass/components/_misc.scss */
 .views-widget-filter-secondary select {
   display: none;
 }
 
-/* line 5062, ../sass/components/_misc.scss */
+/* line 5071, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display table {
   width: 100%;
   table-layout: fixed;
 }
 
-/* line 5067, ../sass/components/_misc.scss */
+/* line 5076, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display tr.odd {
   background-color: #FFFFF0 !important;
 }
 
-/* line 5071, ../sass/components/_misc.scss */
+/* line 5080, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display tr.even {
   background-color: #FFFFFF !important;
 }
 
-/* line 5075, ../sass/components/_misc.scss */
+/* line 5084, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display td {
   text-align: center;
   border-right: 1px solid #ebebeb !important;
 }
 
-/* line 5080, ../sass/components/_misc.scss */
+/* line 5089, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display .feed-icon {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-/* line 5086, ../sass/components/_misc.scss */
+/* line 5095, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display .feed-icon img {
   display: none;
 }
 
-/* line 5090, ../sass/components/_misc.scss */
+/* line 5099, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display .feed-icon a:hover {
   color: #fff !important;
   text-decoration: none;
 }
 
-/* line 5095, ../sass/components/_misc.scss */
+/* line 5104, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display .feed-icon a[href^="/programs/target/pgdi-filtered-export.xls"]:after {
   content: 'Download the Filtered XLS File';
   margin-right: 30px;
@@ -6644,7 +6654,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   color: #fff;
 }
 
-/* line 5103, ../sass/components/_misc.scss */
+/* line 5112, ../sass/components/_misc.scss */
 .view-display-id-pgdi_display .feed-icon a[href^="/programs/target/pgdi-full-export.xls"]:after {
   content: 'Download the Full Data XLS File';
   background-color: #588EBC;
@@ -6653,14 +6663,14 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 
 /* Youtube Videos */
-/* line 5112, ../sass/components/_misc.scss */
+/* line 5121, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar {
   background: #f5c900;
   background: linear-gradient(to bottom, #f5c900 0%, #fef6d5 80%, #faf4bf 100%) repeat scroll 0% 0% transparent;
   padding: 15px;
 }
 
-/* line 5118, ../sass/components/_misc.scss */
+/* line 5127, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar h2 {
   color: #774928;
   font-size: 15.6px;
@@ -6669,7 +6679,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   font-weight: bold;
 }
 
-/* line 5126, ../sass/components/_misc.scss */
+/* line 5135, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar:before {
   content: "";
   position: absolute;
@@ -6682,14 +6692,14 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   width: 0px;
 }
 
-/* line 5138, ../sass/components/_misc.scss */
+/* line 5147, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar ul {
   margin: 0;
   list-style-type: none;
   list-style-image: url(../images/play-button.png);
 }
 
-/* line 5144, ../sass/components/_misc.scss */
+/* line 5153, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar .views-row {
   margin-bottom: 0;
   line-height: normal;
@@ -6697,58 +6707,58 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   overflow: visible;
 }
 
-/* line 5151, ../sass/components/_misc.scss */
+/* line 5160, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar .views-row .views-field-lightbox2 {
   vertical-align: top;
   display: inline-block;
   font-weight: bold;
 }
 
-/* line 5157, ../sass/components/_misc.scss */
+/* line 5166, ../sass/components/_misc.scss */
 _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views-row .views-field-lightbox2 {
   display: block;
 }
 
-/* line 5161, ../sass/components/_misc.scss */
+/* line 5170, ../sass/components/_misc.scss */
 .msie #block-views-youtube-videos-sidebar .views-row .views-field-lightbox2 {
   display: block;
 }
 
-/* line 5165, ../sass/components/_misc.scss */
+/* line 5174, ../sass/components/_misc.scss */
 _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views-row .views-field-lightbox2 .field-content {
   display: inline-block;
 }
 
-/* line 5169, ../sass/components/_misc.scss */
+/* line 5178, ../sass/components/_misc.scss */
 .msie #block-views-youtube-videos-sidebar .views-row .views-field-lightbox2 .field-content {
   display: inline-block;
 }
 
-/* line 5173, ../sass/components/_misc.scss */
+/* line 5182, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar a {
   color: #323232;
   text-decoration: none;
 }
 
-/* line 5178, ../sass/components/_misc.scss */
+/* line 5187, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar a:hover {
   text-decoration: underline;
 }
 
-/* line 5182, ../sass/components/_misc.scss */
+/* line 5191, ../sass/components/_misc.scss */
 #block-views-youtube-videos-sidebar .views-field-lightbox2 img {
   vertical-align: bottom;
   padding-right: 5px;
 }
 
 /* Glossary */
-/* line 5189, ../sass/components/_misc.scss */
+/* line 5198, ../sass/components/_misc.scss */
 #glossary-exclude {
   text-decoration: none !important;
   color: #323232 !important;
 }
 
-/* line 5194, ../sass/components/_misc.scss */
+/* line 5203, ../sass/components/_misc.scss */
 .glossify-link img {
   width: 12px;
   height: 12px;
@@ -6756,14 +6766,14 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
 }
 
 /* Gene Tooltips */
-/* line 5202, ../sass/components/_misc.scss */
+/* line 5211, ../sass/components/_misc.scss */
 .gene-tooltip {
   color: #C55208 !important;
   position: relative;
 }
 
 /* E-Newsletters */
-/* line 5211, ../sass/components/_misc.scss */
+/* line 5220, ../sass/components/_misc.scss */
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image,
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-views-conditional,
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_2 .views-field-views-conditional {
@@ -6771,14 +6781,14 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
   justify-content: center;
 }
 
-/* line 5218, ../sass/components/_misc.scss */
+/* line 5227, ../sass/components/_misc.scss */
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image img,
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-views-conditional img,
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_2 .views-field-views-conditional img {
   max-width: none;
 }
 
-/* line 5235, ../sass/components/_misc.scss */
+/* line 5244, ../sass/components/_misc.scss */
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 table,
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.odd td,
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.odd th,
@@ -6797,7 +6807,7 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
   background: none !important;
 }
 
-/* line 5243, ../sass/components/_misc.scss */
+/* line 5252, ../sass/components/_misc.scss */
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-field-image,
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_1 .views-field-views-conditional,
 .section-news-publications .view-taxonomy-term .view-display-id-attachment_2 .views-field-field-image,
@@ -6806,61 +6816,61 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
   padding-top: 9px;
 }
 
-/* line 5248, ../sass/components/_misc.scss */
+/* line 5257, ../sass/components/_misc.scss */
 .share-buttons {
   float: right;
 }
 
 /* HCMI */
-/* line 5254, ../sass/components/_misc.scss */
+/* line 5263, ../sass/components/_misc.scss */
 div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
   text-decoration: none !important;
 }
 
-/* line 5258, ../sass/components/_misc.scss */
+/* line 5267, ../sass/components/_misc.scss */
 .page-programs-hcmi-resources h1 {
   margin-bottom: 5px;
 }
 
-/* line 5262, ../sass/components/_misc.scss */
+/* line 5271, ../sass/components/_misc.scss */
 .view-hcmi-resources .view-resources .views-field-body p {
   margin-bottom: 0;
 }
 
-/* line 5266, ../sass/components/_misc.scss */
+/* line 5275, ../sass/components/_misc.scss */
 .view-hcmi-resources .view-resources .views-field-field-resource-link-link {
   margin-top: 5px;
 }
 
 @media all and (max-width: 1160px) {
-  /* line 5272, ../sass/components/_misc.scss */
+  /* line 5281, ../sass/components/_misc.scss */
   #block-superfish-1 {
     left: 1%;
   }
 
-  /* line 5276, ../sass/components/_misc.scss */
+  /* line 5285, ../sass/components/_misc.scss */
   #block-superfish-2 {
     right: 1%;
   }
 
-  /* line 5280, ../sass/components/_misc.scss */
+  /* line 5289, ../sass/components/_misc.scss */
   .front .view-announcement .views-field-body, .view-announcement .views-field-body {
     float: left;
     padding-left: 40px;
     width: 80%;
   }
 
-  /* line 5286, ../sass/components/_misc.scss */
+  /* line 5295, ../sass/components/_misc.scss */
   .corner.three-col .views-row {
     margin-right: 1%;
   }
 
-  /* line 5294, ../sass/components/_misc.scss */
+  /* line 5303, ../sass/components/_misc.scss */
   .corner.three-col .views-row .data-matrix {
     right: 1%;
   }
 
-  /* line 5298, ../sass/components/_misc.scss */
+  /* line 5307, ../sass/components/_misc.scss */
   .data-matrix a {
     width: 100%;
     font-size: 1em;
@@ -6868,45 +6878,45 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     padding-right: 7%;
   }
 
-  /* line 5305, ../sass/components/_misc.scss */
+  /* line 5314, ../sass/components/_misc.scss */
   #footer #block-menu-block-2 {
     float: none;
   }
 
-  /* line 5309, ../sass/components/_misc.scss */
+  /* line 5318, ../sass/components/_misc.scss */
   .menu-block-2 > .menu, .NIH {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  /* line 5318, ../sass/components/_misc.scss */
+  /* line 5327, ../sass/components/_misc.scss */
   #footer .block-menu-block ul li {
     width: auto;
   }
 
-  /* line 5322, ../sass/components/_misc.scss */
+  /* line 5331, ../sass/components/_misc.scss */
   #footer .block-menu-block ul li {
     font-size: 1.063em;
   }
 
-  /* line 5330, ../sass/components/_misc.scss */
+  /* line 5339, ../sass/components/_misc.scss */
   #block-views-program-sidebar-block-2 img {
     width: 100%;
   }
 
-  /* line 5334, ../sass/components/_misc.scss */
+  /* line 5343, ../sass/components/_misc.scss */
   .two-sidebars #main, .sidebar-first #main {
     background: white;
   }
 
-  /* line 5338, ../sass/components/_misc.scss */
+  /* line 5347, ../sass/components/_misc.scss */
   .page-news-publications-e-newsletters .views-accordion .view-grouping-content {
     padding: 0;
     padding-right: 5%;
   }
 
-  /* line 5343, ../sass/components/_misc.scss */
+  /* line 5352, ../sass/components/_misc.scss */
   .view-program-abbreviation {
     float: left;
     clear: both;
@@ -6916,7 +6926,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     padding: 5px 10px 5px 0;
   }
 
-  /* line 5352, ../sass/components/_misc.scss */
+  /* line 5361, ../sass/components/_misc.scss */
   .views-label, .field-label {
     color: #7d7d7d;
     font-weight: bold;
@@ -6926,83 +6936,83 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     padding: 5px 10px 5px 0;
   }
 
-  /* line 5361, ../sass/components/_misc.scss */
+  /* line 5370, ../sass/components/_misc.scss */
   .nci-inner img, #logo {
     width: 50%;
   }
 
-  /* line 5365, ../sass/components/_misc.scss */
+  /* line 5374, ../sass/components/_misc.scss */
   .view-programs .view-content {
     display: flex;
   }
 
-  /* line 5369, ../sass/components/_misc.scss */
+  /* line 5378, ../sass/components/_misc.scss */
   #block-views-programs-block-3 .view-programs .view-content, #block-views-programs-block-2 .view-programs .view-content {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  /* line 5374, ../sass/components/_misc.scss */
+  /* line 5383, ../sass/components/_misc.scss */
   #block-views-programs-block-4 .view-programs .view-content {
     display: inherit;
   }
 
-  /* line 5378, ../sass/components/_misc.scss */
+  /* line 5387, ../sass/components/_misc.scss */
   #block-views-programs-block-1 .views-row {
     height: inherit;
     flex: 1;
   }
 
-  /* line 5383, ../sass/components/_misc.scss */
+  /* line 5392, ../sass/components/_misc.scss */
   .corner.three-col .views-row .views-field-title {
     padding-top: 0.5em;
     font-size: 1.381em;
     line-height: 1.375em;
   }
 
-  /* line 5389, ../sass/components/_misc.scss */
+  /* line 5398, ../sass/components/_misc.scss */
   .corner.three-col .views-row .views-field-body {
     font-size: 13px;
   }
 
-  /* line 5393, ../sass/components/_misc.scss */
+  /* line 5402, ../sass/components/_misc.scss */
   .corner.three-col .views-row .views-field-title {
     padding: 0px 0.5em;
   }
 
-  /* line 5397, ../sass/components/_misc.scss */
+  /* line 5406, ../sass/components/_misc.scss */
   .corner.three-col .views-row .views-field-body, .corner.three-col .views-row .views-field-view-node {
     padding: 0 0.938em;
   }
 
-  /* line 5401, ../sass/components/_misc.scss */
+  /* line 5410, ../sass/components/_misc.scss */
   .views-row .views-field-view-node {
     font-size: 0.938em;
     bottom: 2%;
   }
 
-  /* line 5406, ../sass/components/_misc.scss */
+  /* line 5415, ../sass/components/_misc.scss */
   .two-sidebars #main, .sidebar-first #main {
     background: white;
   }
 
-  /* line 5410, ../sass/components/_misc.scss */
+  /* line 5419, ../sass/components/_misc.scss */
   .page-node-314 #page-inner {
     width: 980px;
   }
 
-  /* line 5414, ../sass/components/_misc.scss */
+  /* line 5423, ../sass/components/_misc.scss */
   .page-node-21 #block-views-publications-block-2 {
     width: 100%;
   }
 
-  /* line 5418, ../sass/components/_misc.scss */
+  /* line 5427, ../sass/components/_misc.scss */
   .page-node-21 #block-views-e-newsletter-block-1.right {
     float: left;
     width: 100%;
   }
 
-  /* line 5426, ../sass/components/_misc.scss */
+  /* line 5435, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5,
@@ -7011,7 +7021,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     width: 15%;
   }
 
-  /* line 5431, ../sass/components/_misc.scss */
+  /* line 5440, ../sass/components/_misc.scss */
   #footer .block-menu-block .menu-block-2 > ul {
     margin-left: auto;
     margin-right: auto;
@@ -7020,7 +7030,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     margin-bottom: 0;
   }
 
-  /* line 5439, ../sass/components/_misc.scss */
+  /* line 5448, ../sass/components/_misc.scss */
   #footer .block-menu-block .menu-block-2 > ul > li {
     float: left;
     font-size: 17px;
@@ -7029,51 +7039,51 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     padding-right: 1%;
   }
 
-  /* line 5447, ../sass/components/_misc.scss */
+  /* line 5456, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .view-display-id-target_last_updated {
     position: relative;
   }
 
-  /* line 5451, ../sass/components/_misc.scss */
+  /* line 5460, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .methods-link {
     position: relative;
   }
 }
 @media all and (max-width: 1220px) {
-  /* line 5459, ../sass/components/_misc.scss */
+  /* line 5468, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .view-cgci-data-matrix div.cellheader {
     height: 60px;
   }
 
-  /* line 5464, ../sass/components/_misc.scss */
+  /* line 5473, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-twitter-link {
     right: 50%;
   }
 }
 @media all and (max-width: 960px) {
-  /* line 5471, ../sass/components/_misc.scss */
+  /* line 5480, ../sass/components/_misc.scss */
   .datasets-dashboard .right {
     clear: right;
     display: inherit;
   }
 
-  /* line 5477, ../sass/components/_misc.scss */
+  /* line 5486, ../sass/components/_misc.scss */
   .page-programs-cgci-data-matrix .view-cgci-data-matrix div.cellheader {
     height: 50px;
   }
 
-  /* line 5482, ../sass/components/_misc.scss */
+  /* line 5491, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-data-access-links .field-content .data-link {
     width: 25%;
   }
 
-  /* line 5486, ../sass/components/_misc.scss */
+  /* line 5495, ../sass/components/_misc.scss */
   .page-home .region-postscript-first .title-line {
     align-items: center;
     flex-direction: column;
   }
 
-  /* line 5491, ../sass/components/_misc.scss */
+  /* line 5500, ../sass/components/_misc.scss */
   .front #postscript-first h2.block-title, .front #postscript-second h2.block-title {
     padding-bottom: 5px;
     text-align: center;
@@ -7081,20 +7091,20 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
   }
 }
 @media all and (max-width: 870px) {
-  /* line 5500, ../sass/components/_misc.scss */
+  /* line 5509, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-email-update-link,
   .view-homepage .views-field-field-twitter-link {
     position: relative;
     float: right;
   }
 
-  /* line 5505, ../sass/components/_misc.scss */
+  /* line 5514, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-twitter-link {
     right: 0;
   }
 }
 @media all and (max-width: 820px) {
-  /* line 5516, ../sass/components/_misc.scss */
+  /* line 5525, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .view-cgci-data-matrix div.cellheader,
   .page-programs-target-data-matrix .view-cgci-data-matrix th,
   .page-programs-target-data-matrix .view-cgci-data-matrix td.outer table td,
@@ -7102,7 +7112,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     font-size: 0.9em;
   }
 
-  /* line 5524, ../sass/components/_misc.scss */
+  /* line 5533, ../sass/components/_misc.scss */
   .view-cgci-data-matrix div.cellheader,
   .view-cgci-data-matrix th,
   .view-cgci-data-matrix td.outer table td,
@@ -7110,27 +7120,27 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     font-size: 1em;
   }
 
-  /* line 5529, ../sass/components/_misc.scss */
+  /* line 5538, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-email-update-link,
   .view-homepage .views-field-field-twitter-link {
     position: relative;
     float: right;
   }
 
-  /* line 5534, ../sass/components/_misc.scss */
+  /* line 5543, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-twitter-link {
     right: 0;
   }
 }
 @media all and (max-width: 800px) {
-  /* line 5541, ../sass/components/_misc.scss */
+  /* line 5550, ../sass/components/_misc.scss */
   #navigation {
     padding-left: 0;
     padding-right: 0;
     background: none;
   }
 
-  /* line 5547, ../sass/components/_misc.scss */
+  /* line 5556, ../sass/components/_misc.scss */
   #navigation li.sf-depth-1 ul {
     background-image: none;
     top: 0;
@@ -7142,44 +7152,44 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     overflow: hidden;
   }
 
-  /* line 5558, ../sass/components/_misc.scss */
+  /* line 5567, ../sass/components/_misc.scss */
   #navigation li.sf-depth-1.first ul {
     width: 100% !important;
     max-width: none !important;
   }
 
-  /* line 5563, ../sass/components/_misc.scss */
+  /* line 5572, ../sass/components/_misc.scss */
   #navigation li.sf-depth-1 ul li.sf-depth-2 a {
     font-size: 1em;
   }
 
-  /* line 5567, ../sass/components/_misc.scss */
+  /* line 5576, ../sass/components/_misc.scss */
   .region-navigation {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 5572, ../sass/components/_misc.scss */
+  /* line 5581, ../sass/components/_misc.scss */
   #menu-451-1, #menu-666-1, #menu-447-1, #menu-344-1, #menu-6568-1, #menu-6119-1, #menu-6002-1 {
     margin-top: 0;
   }
 
-  /* line 5576, ../sass/components/_misc.scss */
+  /* line 5585, ../sass/components/_misc.scss */
   #menu-452-1, #menu-453-1, #menu-427-1, #menu-546-1 {
     width: 100% !important;
   }
 
-  /* line 5580, ../sass/components/_misc.scss */
+  /* line 5589, ../sass/components/_misc.scss */
   #menu-1379-2 > span, #menu-1406-2 > span {
     display: none;
   }
 
-  /* line 5584, ../sass/components/_misc.scss */
+  /* line 5593, ../sass/components/_misc.scss */
   .lt-ie9 #menu-1379-2 > span {
     display: none;
   }
 
-  /* line 5588, ../sass/components/_misc.scss */
+  /* line 5597, ../sass/components/_misc.scss */
   #block-superfish-1 {
     height: auto;
     z-index: 2;
@@ -7188,12 +7198,12 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     margin-left: 0;
   }
 
-  /* line 5596, ../sass/components/_misc.scss */
+  /* line 5605, ../sass/components/_misc.scss */
   #block-superfish-1 .content {
     height: inherit;
   }
 
-  /* line 5600, ../sass/components/_misc.scss */
+  /* line 5609, ../sass/components/_misc.scss */
   .lt-ie9 #block-superfish-1 {
     height: auto;
     z-index: 2;
@@ -7201,7 +7211,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     width: 100%;
   }
 
-  /* line 5607, ../sass/components/_misc.scss */
+  /* line 5616, ../sass/components/_misc.scss */
   #block-superfish-1 {
     background-color: #614E37;
     border-radius: 0;
@@ -7209,18 +7219,18 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     left: 0;
   }
 
-  /* line 5614, ../sass/components/_misc.scss */
+  /* line 5623, ../sass/components/_misc.scss */
   #block-superfish-1 .slicknav_menu {
     background-color: #614E37;
   }
 
-  /* line 5618, ../sass/components/_misc.scss */
+  /* line 5627, ../sass/components/_misc.scss */
   .js .slicknav_menu {
     display: table;
     margin: 0 auto;
   }
 
-  /* line 5623, ../sass/components/_misc.scss */
+  /* line 5632, ../sass/components/_misc.scss */
   .slicknav_btn {
     margin: 0;
     text-decoration: none;
@@ -7229,30 +7239,30 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     padding: 0;
   }
 
-  /* line 5631, ../sass/components/_misc.scss */
+  /* line 5640, ../sass/components/_misc.scss */
   .slicknav_nav .slicknav_row:hover {
     background: none;
   }
 
-  /* line 5635, ../sass/components/_misc.scss */
+  /* line 5644, ../sass/components/_misc.scss */
   .slicknav_nav a:hover {
     background: none;
     color: #fff;
   }
 
-  /* line 5640, ../sass/components/_misc.scss */
+  /* line 5649, ../sass/components/_misc.scss */
   #block-superfish-2 .slicknav_menu a.sf-depth-1.menuparent {
     display: none;
   }
 
-  /* line 5644, ../sass/components/_misc.scss */
+  /* line 5653, ../sass/components/_misc.scss */
   .responsive-menus.responsified span.toggler {
     background-color: #614E37;
     border-radius: 0;
     box-shadow: 2px 2px 2px #614E37;
   }
 
-  /* line 5650, ../sass/components/_misc.scss */
+  /* line 5659, ../sass/components/_misc.scss */
   #block-superfish-2 {
     position: relative;
     width: 100%;
@@ -7265,7 +7275,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     margin-right: 0;
   }
 
-  /* line 5663, ../sass/components/_misc.scss */
+  /* line 5672, ../sass/components/_misc.scss */
   #block-superfish-2 .slicknav_menu {
     font-size: 16px;
     box-sizing: border-box;
@@ -7273,78 +7283,78 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     padding: 5px;
   }
 
-  /* line 5670, ../sass/components/_misc.scss */
+  /* line 5679, ../sass/components/_misc.scss */
   #block-superfish-2 li.sf-depth-1 ul {
     background: #900;
   }
 
-  /* line 5674, ../sass/components/_misc.scss */
+  /* line 5683, ../sass/components/_misc.scss */
   .responsive-menus.responsified .responsive-menus-simple {
     background-color: #614E37;
   }
 
-  /* line 5678, ../sass/components/_misc.scss */
+  /* line 5687, ../sass/components/_misc.scss */
   .front .node-2 {
     margin-bottom: 0;
   }
 
-  /* line 5682, ../sass/components/_misc.scss */
+  /* line 5691, ../sass/components/_misc.scss */
   .front .node-2 img {
     width: 50%;
   }
 
-  /* line 5686, ../sass/components/_misc.scss */
+  /* line 5695, ../sass/components/_misc.scss */
   #block-views-programs-block-1 {
     margin-top: 0;
   }
 
-  /* line 5690, ../sass/components/_misc.scss */
+  /* line 5699, ../sass/components/_misc.scss */
   .view-programs .view-content {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  /* line 5695, ../sass/components/_misc.scss */
+  /* line 5704, ../sass/components/_misc.scss */
   #block-views-programs-block-1 .views-row {
     height: inherit;
     width: 49%;
     flex: none;
   }
 
-  /* line 5701, ../sass/components/_misc.scss */
+  /* line 5710, ../sass/components/_misc.scss */
   .corner.three-col h2.block-title {
     font-size: 2.250em;
   }
 
-  /* line 5705, ../sass/components/_misc.scss */
+  /* line 5714, ../sass/components/_misc.scss */
   .not-front .views-row .views-field-view-node, .not-front .views-row .views-field-field-program-website {
     float: left;
   }
 
-  /* line 5709, ../sass/components/_misc.scss */
+  /* line 5718, ../sass/components/_misc.scss */
   .ds-3col-stacked > .group-left {
     width: 40%;
     float: left;
   }
 
-  /* line 5714, ../sass/components/_misc.scss */
+  /* line 5723, ../sass/components/_misc.scss */
   .ds-3col-stacked > .group-middle {
     float: left;
     width: 50%;
   }
 
-  /* line 5719, ../sass/components/_misc.scss */
+  /* line 5728, ../sass/components/_misc.scss */
   .ds-3col-stacked > .group-right {
     float: right;
     width: 2%;
   }
 
-  /* line 5724, ../sass/components/_misc.scss */
+  /* line 5733, ../sass/components/_misc.scss */
   .page-node-314 #page-inner {
     width: 800px;
   }
 
-  /* line 5731, ../sass/components/_misc.scss */
+  /* line 5740, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5,
@@ -7353,7 +7363,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     width: 20%;
   }
 
-  /* line 5738, ../sass/components/_misc.scss */
+  /* line 5747, ../sass/components/_misc.scss */
   .front #postscript-first .two-col .view .views-field-nothing,
   .front #postscript-first .two-col .view .more-link,
   .front #postscript-second .two-col .view .more-link {
@@ -7361,7 +7371,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     top: 25px;
   }
 
-  /* line 5744, ../sass/components/_misc.scss */
+  /* line 5753, ../sass/components/_misc.scss */
   .view-display-id-homepage_programs .odd,
   .view-display-id-homepage_programs .even {
     display: flex;
@@ -7369,13 +7379,13 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     align-items: center;
   }
 
-  /* line 5750, ../sass/components/_misc.scss */
+  /* line 5759, ../sass/components/_misc.scss */
   .view-display-id-homepage_links .views-row {
     width: inherit;
   }
 }
 @media all and (max-width: 770px) {
-  /* line 5764, ../sass/components/_misc.scss */
+  /* line 5773, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .view-cgci-data-matrix div.cellheader,
   .page-programs-target-data-matrix .view-cgci-data-matrix th,
   .page-programs-target-data-matrix .view-cgci-data-matrix td.outer table td,
@@ -7385,7 +7395,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     font-size: 0.9em;
   }
 
-  /* line 5772, ../sass/components/_misc.scss */
+  /* line 5781, ../sass/components/_misc.scss */
   .view-cgci-data-matrix div.cellheader,
   .view-cgci-data-matrix th,
   .view-cgci-data-matrix td.outer table td,
@@ -7393,13 +7403,13 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     font-size: 0.985em;
   }
 
-  /* line 5776, ../sass/components/_misc.scss */
+  /* line 5785, ../sass/components/_misc.scss */
   #block-views-publications-block-2 .views-field-body p {
     padding-left: 0;
   }
 }
 @media all and (max-width: 700px) {
-  /* line 5786, ../sass/components/_misc.scss */
+  /* line 5795, ../sass/components/_misc.scss */
   .view-display-id-table {
     display: inline-block;
     vertical-align: top;
@@ -7407,7 +7417,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     padding-right: 0%;
   }
 
-  /* line 5793, ../sass/components/_misc.scss */
+  /* line 5802, ../sass/components/_misc.scss */
   .view-display-id-legend {
     display: inline-block;
     vertical-align: top;
@@ -7415,41 +7425,41 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     width: 100%;
   }
 
-  /* line 5800, ../sass/components/_misc.scss */
+  /* line 5809, ../sass/components/_misc.scss */
   .view-display-id-cgci_small_screen {
     display: inherit;
     width: 100%;
   }
 
-  /* line 5805, ../sass/components/_misc.scss */
+  /* line 5814, ../sass/components/_misc.scss */
   .view-display-id-target_primary_disease {
     display: none;
   }
 
-  /* line 5809, ../sass/components/_misc.scss */
+  /* line 5818, ../sass/components/_misc.scss */
   .view-display-id-target_small_screen {
     display: inherit;
     width: 100%;
   }
 
-  /* line 5814, ../sass/components/_misc.scss */
+  /* line 5823, ../sass/components/_misc.scss */
   .view-display-id-primary_disease {
     display: none;
   }
 
-  /* line 5818, ../sass/components/_misc.scss */
+  /* line 5827, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-ocg-mission-image, .view-homepage .views-field-field-data-access-image {
     display: none;
   }
 }
 @media all and (max-width: 630px) {
-  /* line 5826, ../sass/components/_misc.scss */
+  /* line 5835, ../sass/components/_misc.scss */
   .grey-block .view .more-link {
     top: -5px;
     right: 0px;
   }
 
-  /* line 5831, ../sass/components/_misc.scss */
+  /* line 5840, ../sass/components/_misc.scss */
   .section-programs .grey-block .view .more-link {
     top: -5px;
     right: auto;
@@ -7458,19 +7468,19 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     padding-bottom: 5px;
   }
 
-  /* line 5839, ../sass/components/_misc.scss */
+  /* line 5848, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-data-access-links .field-content {
     flex-wrap: wrap;
   }
 
-  /* line 5843, ../sass/components/_misc.scss */
+  /* line 5852, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-data-access-links .field-content .data-link {
     width: 50%;
     margin-bottom: 10px;
   }
 }
 @media all and (max-width: 600px) {
-  /* line 5859, ../sass/components/_misc.scss */
+  /* line 5868, ../sass/components/_misc.scss */
   #block-views-programs-block-3,
   #block-views-programs-block-2,
   #block-views-publications-block-1,
@@ -7484,12 +7494,12 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     width: 100%;
   }
 
-  /* line 5863, ../sass/components/_misc.scss */
+  /* line 5872, ../sass/components/_misc.scss */
   .page-node-314 #page-inner {
     width: 600px;
   }
 
-  /* line 5870, ../sass/components/_misc.scss */
+  /* line 5879, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5,
@@ -7498,7 +7508,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     width: 25%;
   }
 
-  /* line 5877, ../sass/components/_misc.scss */
+  /* line 5886, ../sass/components/_misc.scss */
   .front #postscript-first .two-col .view .views-field-nothing,
   .front #postscript-first .two-col .view .more-link,
   .front #postscript-second .two-col .view .more-link {
@@ -7507,73 +7517,73 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     top: 10px;
   }
 
-  /* line 5883, ../sass/components/_misc.scss */
+  /* line 5892, ../sass/components/_misc.scss */
   .page-home .region-postscript-first {
     flex-direction: column;
     align-items: center;
   }
 }
 @media all and (max-width: 560px) {
-  /* line 5891, ../sass/components/_misc.scss */
+  /* line 5900, ../sass/components/_misc.scss */
   .outer-header {
     height: auto;
   }
 
-  /* line 5895, ../sass/components/_misc.scss */
+  /* line 5904, ../sass/components/_misc.scss */
   #logo {
     width: 100%;
     padding-top: 0;
     padding-bottom: 0;
   }
 
-  /* line 5901, ../sass/components/_misc.scss */
+  /* line 5910, ../sass/components/_misc.scss */
   #logo img {
     margin-left: 0;
   }
 
-  /* line 5905, ../sass/components/_misc.scss */
+  /* line 5914, ../sass/components/_misc.scss */
   .region-header {
     clear: both;
     float: none;
   }
 
-  /* line 5910, ../sass/components/_misc.scss */
+  /* line 5919, ../sass/components/_misc.scss */
   #main {
     margin-top: 0;
   }
 
-  /* line 5914, ../sass/components/_misc.scss */
+  /* line 5923, ../sass/components/_misc.scss */
   #pre-content {
     padding-top: 5.5em;
   }
 
-  /* line 5918, ../sass/components/_misc.scss */
+  /* line 5927, ../sass/components/_misc.scss */
   #navigation {
     margin-top: 0;
   }
 
-  /* line 5922, ../sass/components/_misc.scss */
+  /* line 5931, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu {
     margin: 0 auto;
   }
 
-  /* line 5926, ../sass/components/_misc.scss */
+  /* line 5935, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu li:first-child {
     padding-left: 0;
   }
 
-  /* line 5930, ../sass/components/_misc.scss */
+  /* line 5939, ../sass/components/_misc.scss */
   #block-search-form {
     float: none;
     margin: 0 auto;
   }
 
-  /* line 5935, ../sass/components/_misc.scss */
+  /* line 5944, ../sass/components/_misc.scss */
   #block-search-form.block {
     margin-bottom: 1em;
   }
 
-  /* line 5939, ../sass/components/_misc.scss */
+  /* line 5948, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu ul {
     margin-top: 0;
     margin-bottom: 0;
@@ -7581,40 +7591,40 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     padding: 0;
   }
 
-  /* line 5946, ../sass/components/_misc.scss */
+  /* line 5955, ../sass/components/_misc.scss */
   .front .node-2 img {
     display: none;
   }
 
-  /* line 5950, ../sass/components/_misc.scss */
+  /* line 5959, ../sass/components/_misc.scss */
   #block-views-programs-block-1 .views-row {
     height: inherit;
     width: 100%;
     flex: none;
   }
 
-  /* line 5956, ../sass/components/_misc.scss */
+  /* line 5965, ../sass/components/_misc.scss */
   .corner.three-col .views-row {
     margin-right: 0;
   }
 
-  /* line 5960, ../sass/components/_misc.scss */
+  /* line 5969, ../sass/components/_misc.scss */
   .data-matrix a {
     background-position: 90% top;
   }
 
-  /* line 5964, ../sass/components/_misc.scss */
+  /* line 5973, ../sass/components/_misc.scss */
   .menu-block-2 > .menu {
     flex-direction: column;
   }
 
-  /* line 5968, ../sass/components/_misc.scss */
+  /* line 5977, ../sass/components/_misc.scss */
   #block-views-last-updated-block {
     position: relative;
     bottom: 0;
   }
 
-  /* line 5976, ../sass/components/_misc.scss */
+  /* line 5985, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5,
@@ -7623,26 +7633,26 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     width: 30%;
   }
 
-  /* line 5983, ../sass/components/_misc.scss */
+  /* line 5992, ../sass/components/_misc.scss */
   .front #postscript-first .two-col .view .views-field-nothing,
   .front #postscript-first .two-col .view .more-link,
   .front #postscript-second .two-col .view .more-link {
     top: 25px;
   }
 
-  /* line 5988, ../sass/components/_misc.scss */
+  /* line 5997, ../sass/components/_misc.scss */
   .view-homepage .views-field-field-email-update-link,
   .view-homepage .views-field-field-twitter-link {
     float: left;
     padding-top: 10px;
   }
 
-  /* line 5993, ../sass/components/_misc.scss */
+  /* line 6002, ../sass/components/_misc.scss */
   .view-display-id-homepage_programs img {
     max-width: 100%;
   }
 
-  /* line 5997, ../sass/components/_misc.scss */
+  /* line 6006, ../sass/components/_misc.scss */
   #block-views-programs-homepage-programs .views-field-field-image {
     padding-left: 0;
     padding-bottom: 10px;
@@ -7650,65 +7660,65 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
   }
 }
 @media all and (max-width: 400px) {
-  /* line 6007, ../sass/components/_misc.scss */
+  /* line 6016, ../sass/components/_misc.scss */
   .view-display-id-cgci_small_screen {
     padding-top: 20px;
   }
 
-  /* line 6011, ../sass/components/_misc.scss */
+  /* line 6020, ../sass/components/_misc.scss */
   .page-programs-cgci-data-matrix .cgci-title {
     width: 100%;
   }
 
-  /* line 6016, ../sass/components/_misc.scss */
+  /* line 6025, ../sass/components/_misc.scss */
   .page-programs-cgci-data-matrix .view-display-id-last_updated,
   .page-programs-target-pgdi-display .view-display-id-last_updated {
     position: relative;
   }
 
-  /* line 6020, ../sass/components/_misc.scss */
+  /* line 6029, ../sass/components/_misc.scss */
   .page-programs-cgci-data-matrix .cgci-image {
     float: none;
   }
 
-  /* line 6024, ../sass/components/_misc.scss */
+  /* line 6033, ../sass/components/_misc.scss */
   .view-display-id-target_small_screen {
     padding-top: 20px;
   }
 
-  /* line 6028, ../sass/components/_misc.scss */
+  /* line 6037, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .cgci-title {
     width: 100%;
   }
 
-  /* line 6032, ../sass/components/_misc.scss */
+  /* line 6041, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .view-display-id-target_last_updated {
     position: relative;
   }
 
-  /* line 6036, ../sass/components/_misc.scss */
+  /* line 6045, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .methods-link {
     position: relative;
   }
 
-  /* line 6040, ../sass/components/_misc.scss */
+  /* line 6049, ../sass/components/_misc.scss */
   .page-programs-target-data-matrix .cgci-image {
     float: none;
   }
 }
 @media all and (max-width: 320px) {
-  /* line 6046, ../sass/components/_misc.scss */
+  /* line 6055, ../sass/components/_misc.scss */
   .archive .left {
     padding-right: 0;
   }
 
-  /* line 6050, ../sass/components/_misc.scss */
+  /* line 6059, ../sass/components/_misc.scss */
   .archive .views-row .data-matrix {
     top: 0;
     left: 215px;
   }
 
-  /* line 6058, ../sass/components/_misc.scss */
+  /* line 6067, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5,
@@ -7718,17 +7728,17 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
   }
 }
 @media all and (max-width: 250px) {
-  /* line 6065, ../sass/components/_misc.scss */
+  /* line 6074, ../sass/components/_misc.scss */
   #block-menu-menu-utility-menu ul {
     font-size: 0.75em;
   }
 
-  /* line 6069, ../sass/components/_misc.scss */
+  /* line 6078, ../sass/components/_misc.scss */
   .corner.three-col .views-row .data-matrix {
     right: 1%;
   }
 
-  /* line 6073, ../sass/components/_misc.scss */
+  /* line 6082, ../sass/components/_misc.scss */
   .data-matrix a {
     width: 100%;
     font-size: 0.75em;
@@ -7737,7 +7747,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     padding-right: 7%;
   }
 
-  /* line 6084, ../sass/components/_misc.scss */
+  /* line 6093, ../sass/components/_misc.scss */
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_2,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_4,
   .view-id-news_and_publications #widget_pager_bottom_news_and_publications-block_5,
@@ -7746,7 +7756,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     width: 40%;
   }
 
-  /* line 6089, ../sass/components/_misc.scss */
+  /* line 6098, ../sass/components/_misc.scss */
   .front #postscript-first .two-col .view .views-field-nothing {
     top: 50px;
   }

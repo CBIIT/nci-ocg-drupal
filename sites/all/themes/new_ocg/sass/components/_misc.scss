@@ -4924,6 +4924,15 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
+  float: left;
+}
+
+#block-block-43 {
+  float: right;
+  
+  p {
+    margin: 0;
+  }
 }
 
 .page-programs-target-pgdi-display .cgci-title h1 {
