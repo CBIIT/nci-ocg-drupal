@@ -5258,6 +5258,14 @@ _:-ms-lang(x), _:-webkit-full-screen, #block-views-youtube-videos-sidebar .views
   float:right;
 }
 
+.printpdf-icon {
+  float: right;
+  img {
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
 /* HCMI */
 
 div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
