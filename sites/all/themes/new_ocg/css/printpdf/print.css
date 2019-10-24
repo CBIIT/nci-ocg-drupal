@@ -1,0 +1,175 @@
+body {
+  margin: 1em;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+th {
+  text-align: left; /* LTR */
+  color: #006;
+  border-bottom: 1px solid #ccc;
+}
+tr.odd {
+  background-color: #ddd;
+}
+tr.even {
+  background-color: #fff;
+}
+td {
+  padding: 5px;
+}
+#menu {
+  visibility: hidden;
+}
+#main {
+  margin: 1em;
+}
+a:link {
+  color: #000;
+}
+a:visited {
+  color: #000;
+}
+a:hover {
+  color: #00f;
+}
+a:link img,
+a:visited img {
+  border: 0;
+}
+.print-footnote {
+  font-size: xx-small;
+}
+img.print-logo {
+  border: 0;
+}
+.print-site_name {
+}
+.print-breadcrumb {
+  font-size: x-small;
+}
+.print-title {
+}
+.print-submitted {
+  font-size: small;
+}
+.print-created {
+  font-size: small;
+}
+.print-taxonomy {
+  text-align: right;
+}
+.print-taxonomy li {
+  display: inline;
+}
+.print-content {
+}
+.print-hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  color: #9e9e9e;
+  background-color: #9e9e9e;
+}
+.print-message {
+  border: medium dotted blue;
+  padding: 1em;
+}
+.print-source_url {
+  font-size: small;
+}
+.print-links {
+  font-size: small;
+}
+.print-footer {
+  text-align: center;
+}
+
+.view-taxonomy-term .view-content .views-row img {
+    padding-right: 15px;
+    padding-bottom: 10px;
+    max-width: 800px;
+    height: auto;
+}
+
+.view-taxonomy-term .attachment-before {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #E1E1E1;
+}
+
+.view-taxonomy-term .view-e-newsletter-issue-title .views-row h1 {
+    color: #774928;
+    font-family: "FranklinGothicFSMedCdRegular","Arial Narrow",Arial,sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.view-taxonomy-term .view-e-newsletter-issue-title .views-row h1 span {
+    color: #900;
+}
+
+.printpdf-icon, .views-field-field-issue-date .print-footnote {
+  display: none;
+}
+
+.view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.odd td,
+.view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.odd th,
+.view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.odd,
+.view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.even td, 
+.view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.even th, 
+.view-taxonomy-term .view-display-id-attachment_1 .tablestyles tr.even,
+.view-taxonomy-term .view-display-id-attachment_2 table,
+.view-taxonomy-term .view-display-id-attachment_2 .tablestyles tr.odd td,
+.view-taxonomy-term .view-display-id-attachment_2 .tablestyles tr.odd th,
+.view-taxonomy-term .view-display-id-attachment_2 .tablestyles tr.odd,
+.view-taxonomy-term .view-display-id-attachment_2 .tablestyles tr.even td,
+.view-taxonomy-term .view-display-id-attachment_2 .tablestyles tr.even th,
+.view-taxonomy-term .view-display-id-attachment_2 .tablestyles tr.even {
+    border: none !important;
+    background: none !important;
+}
+
+.view-taxonomy-term .attachment-before h3 span {
+    color: #646464;
+    font-size: 21px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.view-taxonomy-term .attachment-before h3 a {
+    color: #900 !important;
+    font-size: 19px;
+    line-height: 23px;
+}
+
+.view-taxonomy-term .view-content .views-row .views-field-title h2 span {
+    color: #646464;
+    font-size: 26px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.view-taxonomy-term .view-content .views-row .views-field-title h2 {
+    color: #900;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+.view-taxonomy-term .views-field-field-enews-physician {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+figure {
+    margin: 0;
+}
+
+.view-taxonomy-term .view-content .views-row .views-field-field-image .field-content {
+    float: left;
+}
+
+.rtecenter {
+    text-align: center;
+}
