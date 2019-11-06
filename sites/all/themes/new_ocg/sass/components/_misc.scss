@@ -3632,6 +3632,17 @@ span.newtab {
 }
 
 /*
+* TARGET Methods
+*
+*/
+
+.node-type-target-methods .views-field-field-sample-preparation-protoco a,
+.node-type-target-methods .views-field-field-data-analysis-protocols a,
+.node-type-target-methods .views-field-field-column-three a {
+  text-decoration: underline !important;
+}
+
+/*
 * Views slideshow for program landing pages
 *
 */
