@@ -1,10 +1,12 @@
 <div id="data-portal-app" ng-controller="datacontroller" ng-cloak>
   
   <div class="datasets-number">There are currently {{row_count}} datasets and can be sorted by Center or the assay type.</div>
+  
+  <div style="margin-top: 10px;">Users must use data with <a href="https://ocg.cancer.gov/sites/default/files/CTD2CaveatEmptor_final.pdf">discretion</a> and acknowledge the <a href="https://ocg.cancer.gov/programs/ctd2/ctd2-publication-guidelines">CTD2 Network</a>.</div>
 
   <div id="centers" ng-cloak>
-    <a href ng-click="clickChoice = 'centers'; setRow(); projectTitle = ctd2nodes.nodes[0].node.title.title; setSelectedCenter(ctd2nodes.nodes[0].node.id); setSelectedProject(ctd2nodes.nodes[0].node.row[0].project_title.title)" ng-class="{'highlight':revealData(clickChoice), '':!highlight}" class="centers-inner highlight"><img src="/sites/default/files/Round_Landmark_Icon_Generic_Building.svg_.png" style="width: 75px;" alt="{{ctd2nodes.nodes.length}} Centers" title="{{ctd2nodes.nodes.length}} Centers" /></a>
-    <a href ng-click="clickChoice = 'method'; setMethod(methods[0].node[0].id, method.node[0].row_number); methodTitle = methods[0]; setSelectedAssay(methods[0].assay); setSelectedAssayProject(methods[0].node[0].project_title)" ng-class="{'highlight':!revealData(clickChoice), '':!highlight}" class="lowlight"><img src="/sites/default/files/Test_Tube_Free_Flat_Vector_Icon_Outline.jpg" style="width: 75px;" alt="{{methods.length}} Methods" title="{{methods.length}} Methods" /></a>
+    <a href ng-click="clickChoice = 'centers'; setRow(); projectTitle = ctd2nodes.nodes[0].node.title.title; setSelectedCenter(ctd2nodes.nodes[0].node.id); setSelectedProject(ctd2nodes.nodes[0].node.row[0].project_title.title)" ng-class="{'highlight':revealData(clickChoice), '':!highlight}" class="centers-icon centers-inner highlight"><img src="/sites/default/files/Round_Landmark_Icon_Generic_Building.svg_.png" style="width: 75px;" alt="{{ctd2nodes.nodes.length}} Centers" title="{{ctd2nodes.nodes.length}} Centers" /><span>Centers</span></a>
+    <a href ng-click="clickChoice = 'method'; setMethod(methods[0].node[0].id, method.node[0].row_number); methodTitle = methods[0]; setSelectedAssay(methods[0].assay); setSelectedAssayProject(methods[0].node[0].project_title)" ng-class="{'highlight':!revealData(clickChoice), '':!highlight}" class="methods-icon lowlight"><img src="/sites/default/files/Test_Tube_Free_Flat_Vector_Icon_Outline.jpg" style="width: 75px;" alt="{{methods.length}} Methods" title="{{methods.length}} Methods" /><span>Methods</span></a>
     <div class="data-stack"></div>
   </div>
 

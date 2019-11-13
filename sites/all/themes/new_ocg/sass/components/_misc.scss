@@ -4329,6 +4329,16 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   width: 100%;
 }
 
+#data-portal-app .centers-icon,
+#data-portal-app .methods-icon {
+  display: flex;
+  flex-direction: column;
+  span {
+    color: #774928 !important;
+    text-align: center;
+  }
+}
+
 #data-portal-app .highlight {
   color: white !important;
   background-color: #900;
