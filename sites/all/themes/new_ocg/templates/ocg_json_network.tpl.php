@@ -1,4 +1,4 @@
-<div id="data-portal-app" ng-controller="datacontroller" ng-cloak>
+<div id="ng-app data-portal-app" ng-app="app" ng-controller="datacontroller" ng-cloak>
   
   <div class="datasets-number">There are currently {{row_count}} datasets and can be sorted by Center or the assay type.</div>
   
