@@ -5746,7 +5746,7 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 
 /* line 4324, ../sass/components/_misc.scss */
-#data-portal-app {
+#ng-app {
   width: 100%;
 }
 
@@ -5756,57 +5756,57 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 
 /* line 4333, ../sass/components/_misc.scss */
-#data-portal-app .centers-icon,
-#data-portal-app .methods-icon {
+#ng-app .centers-icon,
+#ng-app .methods-icon {
   display: flex;
   flex-direction: column;
 }
 /* line 4336, ../sass/components/_misc.scss */
-#data-portal-app .centers-icon span,
-#data-portal-app .methods-icon span {
+#ng-app .centers-icon span,
+#ng-app .methods-icon span {
   color: #774928 !important;
   text-align: center;
 }
 
 /* line 4342, ../sass/components/_misc.scss */
-#data-portal-app .highlight {
+#ng-app .highlight {
   color: white !important;
   background-color: #900;
   padding: 2px;
 }
 
 /* line 4348, ../sass/components/_misc.scss */
-#data-portal-app #centers .highlight {
+#ng-app #centers .highlight {
   background: none;
   padding: 0;
   padding-right: 10px;
 }
 
 /* line 4354, ../sass/components/_misc.scss */
-#data-portal-app #centers a {
+#ng-app #centers a {
   padding-right: 10px;
 }
 
 /* line 4358, ../sass/components/_misc.scss */
-#data-portal-app #centers .highlight img {
+#ng-app #centers .highlight img {
   opacity: 0.5;
 }
 
 /* line 4362, ../sass/components/_misc.scss */
-#data-portal-app .lowlight {
+#ng-app .lowlight {
   color: #774928;
 }
 
 /* line 4366, ../sass/components/_misc.scss */
-#data-portal-app .portal-navigation {
+#ng-app .portal-navigation {
   display: flex;
 }
 
 /* line 4373, ../sass/components/_misc.scss */
-#data-portal-app #center-title,
-#data-portal-app #method-title,
-#data-portal-app #project-title,
-#data-portal-app #method-project-title {
+#ng-app #center-title,
+#ng-app #method-title,
+#ng-app #project-title,
+#ng-app #method-project-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5814,46 +5814,46 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 
 /* line 4381, ../sass/components/_misc.scss */
-#data-portal-app #center-title,
-#data-portal-app #method-title {
+#ng-app #center-title,
+#ng-app #method-title {
   justify-content: flex-start;
 }
 
 /* line 4385, ../sass/components/_misc.scss */
-#data-portal-app #centers {
+#ng-app #centers {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 /* line 4395, ../sass/components/_misc.scss */
-#data-portal-app #centers a,
-#data-portal-app #center-title a,
-#data-portal-app #method-title a,
-#data-portal-app #project-title a,
-#data-portal-app #method-project-title a {
+#ng-app #centers a,
+#ng-app #center-title a,
+#ng-app #method-title a,
+#ng-app #project-title a,
+#ng-app #method-project-title a {
   font-weight: bold;
 }
 
 /* line 4399, ../sass/components/_misc.scss */
-#data-portal-app #centers {
+#ng-app #centers {
   align-items: center;
 }
 
 /* line 4403, ../sass/components/_misc.scss */
-#data-portal-app #centers .centers-inner {
+#ng-app #centers .centers-inner {
   flex-grow: 0;
 }
 
 /* line 4408, ../sass/components/_misc.scss */
-#data-portal-app #centers .lowlight,
-#data-portal-app #centers .data-stack {
+#ng-app #centers .lowlight,
+#ng-app #centers .data-stack {
   flex-grow: 1;
 }
 
 /* line 4413, ../sass/components/_misc.scss */
-#data-portal-app #center-title,
-#data-portal-app #method-title {
+#ng-app #center-title,
+#ng-app #method-title {
   width: 52%;
   margin-right: -4%;
   padding: 0.5%;
@@ -5863,8 +5863,8 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
   position: relative;
 }
 
-/*#data-portal-app #center-title::before,
-#data-portal-app #method-title::before {
+/*#ng-app #center-title::before,
+#ng-app #method-title::before {
   content: '';
   display: block;
   width: 44%;
@@ -5877,8 +5877,8 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 */
 /* line 4438, ../sass/components/_misc.scss */
-#data-portal-app #project-title,
-#data-portal-app #method-project-title {
+#ng-app #project-title,
+#ng-app #method-project-title {
   width: 52%;
   padding: 0.5%;
   -webkit-clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
@@ -5887,107 +5887,107 @@ html.js .view-id-ctd2_data_portal fieldset.collapsible .fieldset-legend {
 }
 
 /* line 4447, ../sass/components/_misc.scss */
-#data-portal-app .center-title-inner,
-#data-portal-app .method-title-inner {
+#ng-app .center-title-inner,
+#ng-app .method-title-inner {
   width: 95%;
 }
 
 /* line 4451, ../sass/components/_misc.scss */
-#data-portal-app .project-title-inner {
+#ng-app .project-title-inner {
   width: 80%;
 }
 
 /* line 4455, ../sass/components/_misc.scss */
-#data-portal-app .project-title-inner-row {
+#ng-app .project-title-inner-row {
   padding-bottom: 5px;
 }
 
 /* line 4459, ../sass/components/_misc.scss */
-#data-portal-app .project {
+#ng-app .project {
   display: flex;
 }
 
 /* line 4463, ../sass/components/_misc.scss */
-#data-portal-app .project .title {
+#ng-app .project .title {
   width: 80%;
 }
 
 /* line 4467, ../sass/components/_misc.scss */
-#data-portal-app .project .dataset-count {
+#ng-app .project .dataset-count {
   width: 22%;
   padding-left: 3%;
 }
 
 /* line 4473, ../sass/components/_misc.scss */
-#data-portal-app #row-info,
-#data-portal-app #method-row-info {
+#ng-app #row-info,
+#ng-app #method-row-info {
   display: flex;
   margin-top: 20px;
 }
 
 /* line 4478, ../sass/components/_misc.scss */
-#data-portal-app .row-info-approaches {
+#ng-app .row-info-approaches {
   width: 65%;
 }
 
 /* line 4482, ../sass/components/_misc.scss */
-#data-portal-app .row-info-remaining {
+#ng-app .row-info-remaining {
   width: 35%;
   padding-left: 5%;
 }
 
 /* line 4487, ../sass/components/_misc.scss */
-#data-portal-app h2 {
+#ng-app h2 {
   margin-top: 0;
 }
 
 /* line 4491, ../sass/components/_misc.scss */
-#data-portal-app #experimental-approaches p {
+#ng-app #experimental-approaches p {
   margin: 0;
 }
 
 /* line 4499, ../sass/components/_misc.scss */
-#data-portal-app .approaches-description,
-#data-portal-app #data,
-#data-portal-app #investigator,
-#data-portal-app #contact,
-#data-portal-app #submission-date {
+#ng-app .approaches-description,
+#ng-app #data,
+#ng-app #investigator,
+#ng-app #contact,
+#ng-app #submission-date {
   margin-bottom: 20px;
 }
 
 /* line 4504, ../sass/components/_misc.scss */
-#data-portal-app #data .using-data,
-#data-portal-app #data .data-header {
+#ng-app #data .using-data,
+#ng-app #data .data-header {
   display: inline;
   vertical-align: middle;
 }
 
 /* line 4509, ../sass/components/_misc.scss */
-#data-portal-app #data .using-data {
+#ng-app #data .using-data {
   height: 40px;
 }
 
 /* line 4513, ../sass/components/_misc.scss */
-#data-portal-app #data {
+#ng-app #data {
   border: solid 2px #990000;
   padding-left: 10px;
 }
 
 /* line 4521, ../sass/components/_misc.scss */
-#data-portal-app .approaches-description div,
-#data-portal-app .appraoches-description p,
-#data-portal-app .approaches-listing div,
-#data-portal-app .approaches-listing p {
+#ng-app .approaches-description div,
+#ng-app .appraoches-description p,
+#ng-app .approaches-listing div,
+#ng-app .approaches-listing p {
   display: inline;
 }
 
 /* line 4525, ../sass/components/_misc.scss */
-#data-portal-app .approaches-listing {
+#ng-app .approaches-listing {
   margin-bottom: 10px;
 }
 
 /* line 4529, ../sass/components/_misc.scss */
-#data-portal-app .approaches-listing-title {
+#ng-app .approaches-listing-title {
   font-style: italic;
   font-weight: bold;
 }

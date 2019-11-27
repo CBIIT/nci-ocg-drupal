@@ -220,5 +220,5 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
 }]);
 
 jQuery(document).ready(function () {
-  angular.bootstrap(document.getElementById('data-portal-app'), ['app']);
+  angular.bootstrap(document.getElementById('ng-app'), ['app']);
 });
