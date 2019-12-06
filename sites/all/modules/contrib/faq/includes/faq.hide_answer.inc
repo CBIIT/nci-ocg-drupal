@@ -8,7 +8,7 @@
 /**
  * Create FAQ page if set to show/hide answer when question is clicked.
  *
- * @param &$variables
+ * @param array &$variables
  *   Array reference of arguments given to the theme() function.
  */
 function template_preprocess_faq_hide_answer(&$variables) {
@@ -35,7 +35,7 @@ function template_preprocess_faq_hide_answer(&$variables) {
 /**
  * Create categorized FAQ page if set to show answer when question is clicked.
  *
- * @param &$variables
+ * @param array &$variables
  *   Array reference of arguments given to the theme() function.
  */
 function template_preprocess_faq_category_hide_answer(&$variables) {
@@ -63,7 +63,7 @@ function template_preprocess_faq_category_hide_answer(&$variables) {
   $this_page = $_GET['q'];
   $get_child_terms = 0;
   // Check if we're on a faq page.
-  if (arg(0) == 'faq-page') {
+  if (arg(0) == _faq_path()) {
     // Check if we're on a categorized faq page.
     if (is_numeric(arg(1))) {
       $get_child_terms = arg(1);
@@ -76,7 +76,6 @@ function template_preprocess_faq_category_hide_answer(&$variables) {
     $show_term_page_children = TRUE;
   }
 
-
   // Get number of questions, and account for hidden sub-categories.
   $count = 0;
   if ($display_faq_count && $hide_child_terms) {
@@ -86,7 +85,7 @@ function template_preprocess_faq_category_hide_answer(&$variables) {
 
   // Get taxonomy image.
   $variables['term_image'] = '';
-  if (module_exists('taxonomy_image')) {
+  if (module_exists('taxonomy_image') && function_exists('taxonomy_image_display')) {
     $variables['term_image'] = taxonomy_image_display($term->tid, array('class' => 'faq-tax-image'));
   }
 
@@ -94,7 +93,7 @@ function template_preprocess_faq_category_hide_answer(&$variables) {
   $variables['category_depth'] = $term->depth;
   $variables['category_name'] = check_plain(faq_tt("taxonomy:term:$term->tid:name", $term->name));
   if ($category_display == 'hide_qa') {
-    $variables['header_title'] = l(faq_tt("taxonomy:term:$term->tid:name", $term->name), "faq/$term->tid");
+    $variables['header_title'] = l(faq_tt("taxonomy:term:$term->tid:name", $term->name), "faq-page/$term->tid");
   }
   else {
     $variables['header_title'] = check_plain(faq_tt("taxonomy:term:$term->tid:name", $term->name));
@@ -121,7 +120,7 @@ function template_preprocess_faq_category_hide_answer(&$variables) {
 
   // Configure sub-category bodies (theme recursively).
   $variables['subcat_body_list'] = array();
-  if (($get_child_terms && $category_display == 'categories_inline') || ((($show_term_page_children && $this_page != 'faq-page') || $hide_child_terms) && $category_display == 'hide_qa')) {
+  if (($get_child_terms && $category_display == 'categories_inline') || ((($show_term_page_children && $this_page != _faq_path()) || $hide_child_terms) && $category_display == 'hide_qa')) {
     $variables['subcat_body_list'] = faq_get_child_categories_faqs($term, 'faq_category_hide_answer', $default_weight, $default_sorting, $category_display, $variables['class'], $parent_term);
   }
 
@@ -145,4 +144,3 @@ function template_preprocess_faq_category_hide_answer(&$variables) {
   $variables['nodes'] = $nodes;
   $variables['question_count'] = $count;
 }
-
