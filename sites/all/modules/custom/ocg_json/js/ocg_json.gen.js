@@ -1,6 +1,6 @@
 /* global a, b */
-
-var app = angular.module('app', []).controller('datacontroller', function ($scope, $http) {
+var app = angular.module("app", []);
+app.controller('datacontroller', function ($scope, $http) {
   $http.get('/programs/ctd2/data-portal-json').success(function (result) {
     $scope.ctd2nodes = result;
     const assayList = [];
