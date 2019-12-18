@@ -1,3 +1,5 @@
+/* global a, b */
+
 var app = angular.module('app', ['ngSanitize']).controller('datacontroller', function ($scope, $http) {
   $http.get('/programs/ctd2/data-portal-json').success(function (result) {
     $scope.ctd2nodes = result;
