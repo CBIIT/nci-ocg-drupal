@@ -1,5 +1,6 @@
-var app = angular.module('app', ['ngSanitize']).controller('datacontroller', function ($scope, $http) {
-  $http.get('/programs/ctd2/data-portal-json-network').success(function (result) {
+/* global a, b */
+var app = angular.module("app", []);
+app.controller('datacontroller', function ($scope, $http) {
     $scope.ctd2nodes = result;
     const assayList = [];
     var row_count = 0;
@@ -24,7 +25,7 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
       assaysObj.push({assay: key, number: number, node: {}});
     });
 
-    assaysObj = assaysObj.sort((a, b) => a.assay.localeCompare(b.assay));
+    assaysObj = assaysObj.sort(function (a, b) {a.assay.localeCompare(b.assay);});
 
     angular.forEach(assaysObj, function (assays, assayObjKey) {
       var count = 0;
@@ -220,5 +221,5 @@ var app = angular.module('app', ['ngSanitize']).controller('datacontroller', fun
 }]);
 
 jQuery(document).ready(function () {
-  angular.bootstrap(document.getElementById('ng-app'), ['app']);
+  //angular.bootstrap(document.getElementById('ng-app'), ['app']);
 });
