@@ -26,7 +26,8 @@ app.controller('datacontroller', function ($scope, $http) {
       assaysObj.push({assay: key, number: number, node: {}});
     });
 
-    assaysObj = assaysObj.sort((a, b) => a.localeCompare(b));
+    //assaysObj = assaysObj.sort((a, b) => a.localeCompare(b));
+    assaysObj = assaysObj.sort(function (a, b) {a.localeCompare(b)});
 
     angular.forEach(assaysObj, function (assays, assayObjKey) {
       var count = 0;
