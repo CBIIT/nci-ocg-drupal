@@ -30,7 +30,6 @@ function custom_form_alter(&$form, &$form_state, $form_id) {
       break;
   }
   if ($form['#id'] == 'views-exposed-form-pgdi-content-pgdi-display'){
-    //dpm(get_defined_vars());
     foreach ($form['secondary']['dynamic-field'] as $key => $dynamic_field){
       if(is_numeric($key)){
         $form['secondary']['dynamic-field'][$key]['check']['#title'] = $dynamic_field['title']['#markup'];
@@ -425,7 +424,7 @@ function custom_menu_block_tree_alter(&$tree, &$config) {
     foreach ($tree as $branch_key => $branch) {
       foreach ($branch as $key => $leaf) {
         if ($key == 'link') {
-          if ($leaf['link_title'] == 'Data Access') {
+          if ($leaf['link_title'] == 'Data') {
             unset($tree[$branch_key]);
           }
         }
