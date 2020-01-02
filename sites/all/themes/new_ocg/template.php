@@ -445,3 +445,5 @@ function new_ocg_glossify_links($vars) {
     return '<a class="glossify-link" href="' . $url . '">' . check_plain($vars['text']) . '<img src = "/' . drupal_get_path('module', 'views_field_tooltip') . '/images/help.png" /></a>';
   }
 }
+
+drupal_add_js(drupal_get_path('theme', 'new_ocg') . '/js/banner.js', array('weight' => 50, 'scope' => 'footer'));
