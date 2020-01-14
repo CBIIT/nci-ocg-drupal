@@ -1,6 +1,7 @@
 /* global a, b */
 var app = angular.module("app", []);
 app.controller('datacontroller', function ($scope, $http) {
+  $http.get('/programs/ctd2/data-portal-json-network').success(function (result) {
     $scope.ctd2nodes = result;
     const assayList = [];
     var row_count = 0;
