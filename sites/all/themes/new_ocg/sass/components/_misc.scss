@@ -3864,11 +3864,12 @@ text-align: left;
 }
 
 .view-cgci-data-matrix .patient-data {
-  height: 124px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   font-size: 14px;
+  padding-top: 47px;
 }
 
 .view-cgci-data-matrix tbody tr {
