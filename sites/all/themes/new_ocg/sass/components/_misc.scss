@@ -3316,6 +3316,43 @@ span.newtab {
     list-style-image: url("../images/bullet.gif");
 }
 
+.front #main #postscript-first ul[style*="circle"], .front #main #postscript-second ul[style*="circle"], #main #content ul[style*="circle"],
+.front #main #postscript-first ul[style*="disc"], .front #main #postscript-second ul[style*="disc"], #main #content ul[style*="disc"],
+.front #main #postscript-first ul[style*="square"], .front #main #postscript-second ul[style*="square"], #main #content ul[style*="square"] {
+  list-style-image: none;
+}
+
+.front #main #postscript-first ul li, .front #main #postscript-second ul li, #main #content ul li {
+    list-style-type: none;
+}
+
+.front #main #postscript-first ul[style*="circle"] li::before, .front #main #postscript-second ul[style*="circle"] li::before, #main #content ul[style*="circle"] li::before {
+  content: "\25E6";
+  color: #900;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 17px;
+}
+
+.front #main #postscript-first ul[style*="disc"] li::before, .front #main #postscript-second ul[style*="disc"] li::before, #main #content ul[style*="disc"] li::before {
+  content: "\2022";
+  color: #900;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 17px;
+}
+
+.front #main #postscript-first ul[style*="square"] li::before, .front #main #postscript-second ul[style*="square"] li::before, #main #content ul[style*="square"] li::before {
+  content: "\25AA";
+  color: #900;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 17px;
+}
+
 .not-front #main #content p a {
     text-decoration: underline;
 }
