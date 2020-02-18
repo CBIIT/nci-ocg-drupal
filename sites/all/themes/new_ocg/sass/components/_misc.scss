@@ -1156,7 +1156,7 @@ header, .region-navigation {
 #navigation li.sf-depth-1 ul {
   background-color: #614e37;
   padding-left: 0.938em;
-  padding-top: 0.250em;
+  padding-top: 1.250em;
   padding-bottom: 0.625em;
   max-width: 11em;
   overflow: hidden;
@@ -1206,7 +1206,7 @@ header, .region-navigation {
   background-image: none;
   overflow: hidden;
   width: 100% !important;
-  padding-top: 0;
+  padding-top: 0.313em;;
   padding-left: 1.250em;
   padding-bottom: 0;
 }
@@ -1214,7 +1214,7 @@ header, .region-navigation {
 #navigation li.sf-depth-1 ul li.sf-depth-2 ul li.sf-depth-3 {
   background-image: none;
   font-family: "FranklinGothicFSCdRegular", "Arial Narrow", Arial, sans-serif;
-  padding: 0;
+  padding: 0.188em 0;
   text-transform: capitalize !important;
 }
 
@@ -3901,12 +3901,8 @@ text-align: left;
 }
 
 .view-cgci-data-matrix .patient-data {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   font-size: 14px;
-  padding-top: 47px;
+  padding-top: 17px;
 }
 
 .view-cgci-data-matrix tbody tr {
