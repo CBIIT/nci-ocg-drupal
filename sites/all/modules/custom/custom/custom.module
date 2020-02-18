@@ -162,13 +162,6 @@ function custom_views_pre_view(&$view, &$display_id, &$args) {
   }
 }
 
-function custom_views_pre_build(&$view) {
-  if (($view->name == 'publications') && ($display_id == 'page_3')) {
-    dpm($view->query->pager->options);
-    $view->query->pager->options['items_per_page'] = 50;
-  }
-}
-
 /**
  * Return a list of nodes by their content type.
  *
