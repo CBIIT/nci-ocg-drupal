@@ -173,3 +173,8 @@ figure {
 .rtecenter {
     text-align: center;
 }
+
+.print-content img {
+  width:75%;
+  height:auto;
+}
