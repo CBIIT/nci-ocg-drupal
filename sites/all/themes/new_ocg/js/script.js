@@ -56,9 +56,16 @@ $(document).ready (function (){
 // Center Pages tabs
   var hash = window.location.hash;
   var url = window.location.hash.slice(1);
+  console.log(url);
   if(url){ 
     $(document.getElementById(url)).removeClass('collapsed');
   }
+  
+  $("a.open-accordion").on("click", function() {
+    var ref = $(this).data("page");
+    $("fieldset.collapsible").addClass('collapsed');
+    $(ref).removeClass('collapsed');
+  });
   
   $('.view-centers .fieldset-title').click(function () {
       var $this = $(this);
