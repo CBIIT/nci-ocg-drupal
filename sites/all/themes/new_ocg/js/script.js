@@ -56,7 +56,6 @@ $(document).ready (function (){
 // Center Pages tabs
   var hash = window.location.hash;
   var url = window.location.hash.slice(1);
-  console.log(url);
   if(url){ 
     $(document.getElementById(url)).removeClass('collapsed');
   }
