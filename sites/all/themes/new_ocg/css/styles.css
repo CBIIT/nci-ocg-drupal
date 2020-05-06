@@ -4557,7 +4557,7 @@ table td {
 /* line 3286, ../sass/components/_misc.scss */
 .tablestyles tr.odd td,
 .tablestyles tr.odd th {
-  border-right: 1px solid #ebebeb !important;
+  border-right: 1px solid #ebebeb;
 }
 
 /* line 3291, ../sass/components/_misc.scss */
@@ -4569,7 +4569,7 @@ table td {
 /* line 3295, ../sass/components/_misc.scss */
 .tablestyles tr.even td,
 .tablestyles tr.even th {
-  border-right: 1px solid #ebebeb !important;
+  border-right: 1px solid #ebebeb;
 }
 
 /* line 3302, ../sass/components/_misc.scss */
