@@ -33,7 +33,7 @@
 
     <div id="project-title" ng-show="revealData(clickChoice)">
       <div class="project-title-inner">
-        <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle | limitTo:1">
+        <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle:true | limitTo:1">
           <div ng-repeat="row in project.node.row" class="project-title-inner-row">
             <a ng-click="setRow(row.row_number); changeClass(); setSelectedProject(row.project_title.title)" ng-class="{highlight:row.project_title.title === idSelectedProject}">{{row.project_title.title}}</a>
           </div>
@@ -43,7 +43,7 @@
 
     <div id="method-project-title" ng-show="!revealData(clickChoice)">
       <div class="project-title-inner">
-        <div ng-repeat="method in methods| filter:methodTitle | limitTo:1">
+        <div ng-repeat="method in methods| filter:methodTitle:true | limitTo:1">
           <div ng-repeat="row in method.node| limitTo:1" class="project-title-inner-row">
             <a ng-click="setMethod(row.id, row.row_number); setSelectedAssayProject(row.project_title)" ng-class="{highlight:row.project_title === idSelectedAssayProject}">{{row.project_title}}</a>
           </div>
@@ -56,7 +56,7 @@
     <div class="row-info-approaches">
       <div id="experimental-approaches">
 
-        <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle | limitTo:1">
+        <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle:true | limitTo:1">
           <div ng-repeat="row in project.node.row| sameRowNumber:filterRow | limitTo:1">
             <h2>{{row.dpp.title}}</h2>
             <div class="approaches-description">
@@ -66,7 +66,7 @@
             <div id="data">
               <h3 class="data-header">Data</h3>
               <img class="using-data" src="/sites/default/files/styles/80x80/public/USING%20DATA.png" />
-              <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle | limitTo:1">
+              <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle:true | limitTo:1">
                 <div ng-repeat="row in project.node.row| sameRowNumber:filterRow | limitTo:1" class="data-row">
                   <div ng-repeat="data in row.data">
                     Access the <a href="{{data.data_link.url}}">{{data.data_link.title}}</a>
@@ -89,7 +89,7 @@
 
       <div id="investigator">
         <h3 class="investigator-header">Principal Investigator</h3>
-        <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle | limitTo:1">
+        <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle:true | limitTo:1">
           <div ng-repeat="row in project.node.row| sameRowNumber:filterRow | limitTo:1">
             <div ng-repeat="investigator in row.investigator">
               <div>{{investigator.investigator}}</div>
@@ -100,7 +100,7 @@
 
       <div id="contact">
         <h3 class="contact-header">Contact Name</h3>
-        <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle | limitTo:1">
+        <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle:true | limitTo:1">
           <div ng-repeat="row in project.node.row| sameRowNumber:filterRow | limitTo:1">
             <div ng-repeat="contact in row.contact">
               <div ng-repeat="contact_link in contact.contact_link">
@@ -122,7 +122,7 @@
 
       <div id="reference">
         <!-- h3 class="reference-header" ng-if="ctd2nodes.nodes[0].node[0].row[0].paper[0].paper_link.url == NULL">Reference</h3 -->
-        <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle | limitTo:1">
+        <div ng-repeat="project in ctd2nodes.nodes| filter:projectTitle:true | limitTo:1">
           <div ng-repeat="row in project.node.row| sameRowNumber:filterRow | limitTo:1">
             <h3 class="reference-header" ng-if="row.paper[0].paper_link.url !== NULL">Reference</h3>
             <div ng-repeat="paper in row.paper">
@@ -138,7 +138,7 @@
     <div class="row-info-approaches">
       <div id="experimental-approaches">
 
-        <div ng-repeat="method in methods| filter:methodTitle | limitTo:1">
+        <div ng-repeat="method in methods| filter:methodTitle:true | limitTo:1">
           <div ng-repeat="(key, row) in filterMethodRow(method.node)" ng-if="$index < 1">
             <h2>{{row.dpp_title}}</h2>
             <div class="approaches-description">
@@ -148,7 +148,7 @@
             <div id="data">
               <h3 class="data-header">Data</h3>
               <img class="using-data" src="/sites/default/files/styles/80x80/public/USING%20DATA.png" />
-              <div ng-repeat="method in methods| filter:methodTitle | limitTo:1">
+              <div ng-repeat="method in methods| filter:methodTitle:true | limitTo:1">
                 <div ng-repeat="(key, row) in filterMethodRow(method.node)" ng-if="$index < 1" class="data-row">
                   <div ng-repeat="data in row.data">
                     Access the <a href="{{data.data_url}}">{{data.data_title}}</a>
@@ -171,7 +171,7 @@
 
       <div id="investigator">
         <h3 class="investigator-header">Principal Investigator</h3>
-        <div ng-repeat="method in methods| filter:methodTitle | limitTo:1">
+        <div ng-repeat="method in methods| filter:methodTitle:true | limitTo:1">
           <div ng-repeat="(key, row) in filterMethodRow(method.node)" ng-if="$index < 1">
             <div ng-repeat="investigator in row.investigator">
               <div>{{investigator.investigator}}</div>
@@ -182,7 +182,7 @@
 
       <div id="contact">
         <h3 class="contact-header">Contact Name</h3>
-        <div ng-repeat="method in methods| filter:methodTitle | limitTo:1">
+        <div ng-repeat="method in methods| filter:methodTitle:true | limitTo:1">
           <div ng-repeat="(key, row) in filterMethodRow(method.node)" ng-if="$index < 1">
             <div ng-repeat="contact in row.contact">
               <div ng-repeat="contact_link in contact.contact_link">
@@ -204,7 +204,7 @@
 
       <div id="reference">
         <!-- h3 class="reference-header">Reference</h3 -->
-        <div ng-repeat="method in methods| filter:methodTitle | limitTo:1">
+        <div ng-repeat="method in methods| filter:methodTitle:true | limitTo:1">
           <div ng-repeat="(key, row) in filterMethodRow(method.node)" ng-if="$index < 1">
             <h3 class="reference-header" ng-if="row.paper[0].paper_title !== NULL">Reference</h3>
             <div ng-repeat="paper in row.paper">
