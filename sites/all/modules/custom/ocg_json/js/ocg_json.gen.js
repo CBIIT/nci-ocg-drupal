@@ -1,6 +1,6 @@
 /* global a, b */
 var app = angular.module("app", []);
-app.controller('datacontroller', function ($scope, $http) {
+app.controller('datacontroller', function ($scope, $timeout, $interval, $http) {
   $http.get('/programs/ctd2/data-portal-json').success(function (result) {
     $scope.ctd2nodes = result;
     const assayList = [];
@@ -127,6 +127,32 @@ app.controller('datacontroller', function ($scope, $http) {
       });
     });
     $scope.methods = assaysObj;
+    
+    var keepGoing = true;
+    var title = $scope.ctd2nodes.nodes[0].node.title.title;
+    
+    $scope.stop = function(title) {
+      keepGoing = false;
+      $scope.idSelectedProjectTitle = title;
+    };
+    
+    var timeoutTimer = 3000;
+    
+    angular.forEach($scope.ctd2nodes.nodes, function (item, idx) {
+      if(idx == 0 || item.node.row[0].project_title == null){
+        
+      } else {
+        var landingLoop = $timeout(function () {
+          if(keepGoing) {
+            $scope.idSelectedCenter = item.node.id;
+            $scope.idSelectedProjectTitle = item.node.title.title;
+            $scope.idSelectedProject = item.node.row[0].project_title.title;
+          };
+        }, timeoutTimer);
+        timeoutTimer += 3000;
+       };
+    });
+    
     $scope.idSelectedCenter = $scope.ctd2nodes.nodes[0].node.id;
     $scope.setSelectedCenter = function (idSelectedCenter) {
       $scope.idSelectedCenter = idSelectedCenter;
