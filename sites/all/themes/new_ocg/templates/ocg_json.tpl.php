@@ -35,7 +35,7 @@
       <div class="project-title-inner">
         <div ng-repeat="project in ctd2nodes.nodes| filter:idSelectedProjectTitle:true | limitTo:1">
           <div ng-repeat="row in project.node.row" class="project-title-inner-row">
-            <a ng-click="setRow(row.row_number); changeClass(); setSelectedProject(row.project_title.title)" ng-class="{highlight:row.project_title.title === idSelectedProject}">{{row.project_title.title}}</a>
+            <a ng-click="setRow(row.row_number); changeClass(); setSelectedProject(row.project_title.title); stop(project.node.title.title)" ng-class="{highlight:row.project_title.title === idSelectedProject}">{{row.project_title.title}}</a>
           </div>
         </div>
       </div>
