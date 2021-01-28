@@ -55,7 +55,7 @@ async function renderBuckets() {
             return color(i);
           })
           .append("svg:title").text(function (d, i) {
-    return buckets[i].key + " " + buckets[i].doc_count + " Models";
+    return buckets[i].key + "\n" + buckets[i].doc_count + " Models";
   });
 
   document.getElementById("total").innerHTML = total + " Models";
