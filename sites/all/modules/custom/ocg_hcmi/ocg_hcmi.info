@@ -1,0 +1,4 @@
+name = OCG HCMI Searchable Catalog Import
+description = Importing data from HCMI Searchable Catalog
+core = 7.x
+package = OCG

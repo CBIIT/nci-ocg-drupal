@@ -5377,6 +5377,44 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
   margin-top: 5px;
 }
 
+#block-ocg-hcmi-ocg-hcmi {
+  h2 {
+    color: #fff;
+    border-bottom: none;
+    padding: 10px 15px 5px;
+    background: -moz-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #990000), color-stop(40%, #a22727), color-stop(100%, #810202));
+    background: -webkit-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+    background: -o-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+    background: -ms-linear-gradient(top, #990000 0%, #a22727 40%, #810202 100%);
+    background: linear-gradient(to bottom, #990000 0%, #a22727 40%, #810202 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#810202',GradientType=0 );
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#810202',GradientType=0 );
+    font-size: 15.6px;
+  }
+  .content {
+    text-align: center;
+    width: 100%;
+    min-height: 55px;
+    float: left;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 100%) repeat scroll 0% 0% transparent;
+  }
+  .content::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-width: 23px 23px 0px 0px;
+    border-style: solid;
+    border-color: transparent #FFF;
+    display: block;
+    width: 0px;
+  }
+}
+
 @media all and (max-width: 1160px) {
 
   #block-superfish-1 {
