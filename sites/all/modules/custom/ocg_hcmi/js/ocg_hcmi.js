@@ -26,8 +26,8 @@ async function renderBuckets() {
   var color = d3.scale.ordinal()
           .range(["#448aff", "#fdd835", "#f06292", "#aeea00", "#7e57c2", "#80deea", "#ff9100", "#8c9eff", "#c51162", "#81d4fa", "#ffff00", "#388e3c", "#f8bbd0", "#2962ff", "#d1c4e9", "#d81b60", "#5d4037", "#80cbc4"]);
 
-  var width = 200;
-  var height = 200;
+  var width = 232;
+  var height = 232;
   var pie = d3.layout.pie().sort(null).value(function (d) {
     return d.doc_count;
   });
@@ -36,9 +36,11 @@ async function renderBuckets() {
           .outerRadius(width / 2 * 0.9)
           .innerRadius(width / 2 * 0.5)
   var svg = d3.select('donut').append('svg')
-          .attr({width: width, height: height})
+          .attr({width: '100%', height: '100%'})
+          .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
+          .attr('preserveAspectRatio','xMinYMin')
           .append('g')
-          .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+          .attr('transform', 'translate(' + Math.min(width,height) / 2 + ',' + Math.min(width,height) / 2 + ')');
 
   svg.selectAll('path').data(pie(buckets))
           .enter().append('a')

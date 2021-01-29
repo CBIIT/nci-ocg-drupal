@@ -28,7 +28,7 @@ function ocg_hcmi_block_view($delta='') {
 }
 
 function ocg_hcmi_view() {
-  $block = "<div ng-app='myApp'><donut></donut><h3 id='total'></h3></div>";
+  $block = "<h4>Models by Primary Site</h4><div ng-app='myApp'><donut></donut></div><a id='total' href='https://hcmi-searchable-catalog.nci.nih.gov/'>Models</a>";
   
   drupal_add_js('https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js', 'external');
   drupal_add_js(drupal_get_path('module', 'ocg_hcmi') . '/js/ocg_hcmi.js');

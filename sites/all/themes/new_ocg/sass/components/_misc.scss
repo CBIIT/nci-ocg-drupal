@@ -5391,6 +5391,7 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#810202',GradientType=0 );
     -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#810202',GradientType=0 );
     font-size: 15.6px;
+    text-align: center;
   }
   .content {
     text-align: center;
@@ -5401,6 +5402,13 @@ div[about="/programs/hcmi/nci-cancer-model-development"] a[name] {
     position: relative;
     overflow: hidden;
     background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 100%) repeat scroll 0% 0% transparent;
+    h4 {
+      margin-top: 5px;
+      font-size: 1.2em;
+    }
+    #total {
+      font-size: 1em;
+    }
   }
   .content::before {
     content: "";
