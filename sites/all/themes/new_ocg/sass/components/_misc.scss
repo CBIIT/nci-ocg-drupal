@@ -3747,6 +3747,16 @@ span.newtab {
   float: right;
 }
 
+.view-id-news_and_publications .vscc-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.view-id-news_and_publications .widget_pager_bottom {
+  display: flex;
+  justify-content: center;
+}
+
 /*
 * Target Methods
 *
