@@ -122,8 +122,8 @@
             <a href="/programs/target/projects/target-analysis-working-group">TARGET Analysis Working Group</a>
           </div>
           <div class="pgdi-overview">
-            <a href="/programs/target/pgdi/overview"><img typeof="foaf:Image" src="/sites/default/files/styles/80x80/public/PGDI_Icon-for-Home-Page.png?itok=YLIiSqV5" width="80" height="80" alt="Pediatric Resource" title="Pediatric Resource"></a>
-            <a href="/programs/target/pgdi/overview">Pediatric Resource</a>
+            <a href="https://datascience.cancer.gov/resources/nci-data-catalog/pediatric-genomic-data-inventory"><img typeof="foaf:Image" src="/sites/default/files/styles/80x80/public/PGDI_Icon-for-Home-Page.png?itok=YLIiSqV5" width="80" height="80" alt="Pediatric Resource" title="Pediatric Resource"></a>
+            <a href="https://datascience.cancer.gov/resources/nci-data-catalog/pediatric-genomic-data-inventory">Pediatric Resource</a>
           </div>
         </div>
         <?php print render($title_suffix); ?>
