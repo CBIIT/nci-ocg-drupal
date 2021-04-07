@@ -178,3 +178,15 @@ figure {
   width:75%;
   height:auto;
 }
+
+.icon {
+  width: 18px !important;
+  height: 24px !important;
+  padding: 0 !important;
+}
+
+.tsv {
+  width: 30px !important;
+  height: 16px !important;
+  padding:0 !important;
+}
