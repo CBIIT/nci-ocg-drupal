@@ -1,18 +1,21 @@
 /* global a, b */
 var app = angular.module("app", []);
 app.controller('datacontroller', function ($scope, $timeout, $http) {
-  $http.get('/programs/ctd2/data-portal-json-network').success(function (result) {
-    $scope.ctd2nodes = result;
+  $http.get('/programs/ctd2/data-portal-json-network').then(function (result) {
+    $scope.ctd2nodes = result.data;
     const assayList = [];
     var row_count = 0;
-    angular.forEach($scope.ctd2nodes.nodes, function (nodes, key) {
-      angular.forEach(nodes.node.row, function (row, key) {
-        if (row.project_title !== null) {
-          row_count++;
-        }
-        angular.forEach(row.assay_type, function (assay_type, key) {
-          assayList.push({assay: assay_type.name});
+    angular.forEach($scope.ctd2nodes, function (nodes, key) {
+      angular.forEach(nodes, function (node, key) {
+        angular.forEach(node.node.row, function (row, key) {
+          if (row.project_title !== null) {
+            row_count++;
+          }
+          angular.forEach(row.assay_type, function (assay_type, key) {
+            assayList.push({assay: assay_type.name});
+          });
         });
+        
       });
     });
     $scope.row_count = row_count;
@@ -65,16 +68,18 @@ app.controller('datacontroller', function ($scope, $timeout, $http) {
                   assaysObj[assayObjKey].node[count].dpp[dppCount] = {dpp_title: dppRow.dpp_title, dpp_body: dppRow.dpp_body};
                   dppCount++;
                 });
-              };
-                if (typeof row.data[0] !== 'undefined') {
-                  angular.forEach(row.data, function (dataRow, dataKey) {
-                    if (dataRow.data_link !== null) {
-                      assaysObj[assayObjKey].node[count].data[dataCount] = {data_title: dataRow.data_link.title, data_url: dataRow.data_link.url};
-                      dataCount++;
-                    }
-                    ;
-                  });
-                };
+              }
+              ;
+              if (typeof row.data[0] !== 'undefined') {
+                angular.forEach(row.data, function (dataRow, dataKey) {
+                  if (dataRow.data_link !== null) {
+                    assaysObj[assayObjKey].node[count].data[dataCount] = {data_title: dataRow.data_link.title, data_url: dataRow.data_link.url};
+                    dataCount++;
+                  }
+                  ;
+                });
+              }
+              ;
               if (typeof row.investigator !== 'undefined') {
                 if (typeof row.investigator[0] !== 'undefined') {
                   angular.forEach(row.investigator, function (investigatorRow, investigatorKey) {
@@ -188,6 +193,7 @@ app.controller('datacontroller', function ($scope, $timeout, $http) {
   };
   
   $scope.filterMethodRow = function(items) {
+    //console.log(items);
     var result = {};
     if ($scope.filterRow && $scope.filterId) {
       angular.forEach(items, function(value, key) {
@@ -198,6 +204,7 @@ app.controller('datacontroller', function ($scope, $timeout, $http) {
     } else {
       result = items;
     };
+    //console.log(result);
     return result;
   };
   
@@ -210,10 +217,14 @@ app.controller('datacontroller', function ($scope, $timeout, $http) {
   };
 }).filter('sameRowNumber', function () {
   return function (values, rowNumber) {
+    if(!Array.isArray(values)){
+      Object.entries(values);
+    }
     if (!rowNumber) {
       // initially don't filter
       return values;
     }
+    //values = Object.entries(values);
     // filter when we have a selected groupId
     return values.filter(function (value) {
       return value.row_number === rowNumber;

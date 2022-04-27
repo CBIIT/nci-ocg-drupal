@@ -1,18 +1,21 @@
 /* global a, b */
 var app = angular.module("app", []);
 app.controller('datacontroller', function ($scope, $timeout, $http) {
-  $http.get('/programs/ctd2/data-portal-json').success(function (result) {
-    $scope.ctd2nodes = result;
+  $http.get('/programs/ctd2/data-portal-json').then(function (result) {
+    $scope.ctd2nodes = result.data;
     const assayList = [];
     var row_count = 0;
-    angular.forEach($scope.ctd2nodes.nodes, function (nodes, key) {
-      angular.forEach(nodes.node.row, function (row, key) {
-        if (row.project_title !== null) {
-          row_count++;
-        }
-        angular.forEach(row.assay_type, function (assay_type, key) {
-          assayList.push({assay: assay_type.name});
+    angular.forEach($scope.ctd2nodes, function (nodes, key) {
+      angular.forEach(nodes, function (node, key) {
+        angular.forEach(node.node.row, function (row, key) {
+          if (row.project_title !== null) {
+            row_count++;
+          }
+          angular.forEach(row.assay_type, function (assay_type, key) {
+            assayList.push({assay: assay_type.name});
+          });
         });
+        
       });
     });
     $scope.row_count = row_count;
@@ -190,6 +193,7 @@ app.controller('datacontroller', function ($scope, $timeout, $http) {
   };
   
   $scope.filterMethodRow = function(items) {
+    //console.log(items);
     var result = {};
     if ($scope.filterRow && $scope.filterId) {
       angular.forEach(items, function(value, key) {
@@ -200,6 +204,7 @@ app.controller('datacontroller', function ($scope, $timeout, $http) {
     } else {
       result = items;
     };
+    //console.log(result);
     return result;
   };
   
@@ -212,10 +217,14 @@ app.controller('datacontroller', function ($scope, $timeout, $http) {
   };
 }).filter('sameRowNumber', function () {
   return function (values, rowNumber) {
+    if(!Array.isArray(values)){
+      Object.entries(values);
+    }
     if (!rowNumber) {
       // initially don't filter
       return values;
     }
+    //values = Object.entries(values);
     // filter when we have a selected groupId
     return values.filter(function (value) {
       return value.row_number === rowNumber;
