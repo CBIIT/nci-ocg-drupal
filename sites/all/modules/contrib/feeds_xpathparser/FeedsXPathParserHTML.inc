@@ -52,6 +52,9 @@ class FeedsXPathParserHTML extends FeedsXPathParserBase {
       $raw = $fetcher_result->getRaw();
     }
 
+    // Some versions of PHP do not handle null bytes.
+    $raw = str_replace("\0", '', $raw);
+
     $document = new DOMDocument();
     $document->strictErrorChecking = FALSE;
     $document->recover = TRUE;

@@ -17,9 +17,9 @@ files[] = tests/AddThisPermissionsTestCase.test
 
 configure = admin/config/user-interface/addthis
 
-; Information added by Drupal.org packaging script on 2015-06-15
-version = "7.x-4.0-alpha6"
+; Information added by Drupal.org packaging script on 2016-11-18
+version = "7.x-4.0-alpha6+46-dev"
 core = "7.x"
 project = "addthis"
-datestamp = "1434368594"
+datestamp = "1479482342"
 

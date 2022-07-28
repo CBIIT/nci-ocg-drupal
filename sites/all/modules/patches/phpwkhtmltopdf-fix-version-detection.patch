@@ -1,0 +1,15 @@
+diff --git a/phpwkhtmltopdf.module b/phpwkhtmltopdf.module
+index f7dcc92..9571285 100644
+--- a/phpwkhtmltopdf.module
++++ b/phpwkhtmltopdf.module
+@@ -11,8 +11,8 @@ function phpwkhtmltopdf_libraries_info() {
+       'vendor url' => 'https://github.com/mikehaertl/phpwkhtmltopdf',
+       'download url' => 'https://github.com/mikehaertl/phpwkhtmltopdf/archive/2.0.1.tar.gz',
+       'version arguments' => array(
+-        'file' => 'src/Pdf.php',
+-        'pattern' => '/version ([0-9\.\w-]+)/',
++        'file' => 'CHANGELOG.md',
++        'pattern' => '/\#\# ([0-9\.\w-]+)/',
+       ),
+       'files' => array(
+         'php' => array(

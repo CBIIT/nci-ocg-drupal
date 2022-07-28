@@ -1,0 +1,28 @@
+name = Deploy Add-on
+description = Working implementation of Deploy.
+package = Deployment
+core = 7.x
+dependencies[] = ctools
+dependencies[] = deploy
+dependencies[] = deploy_auto_plan
+dependencies[] = deploy_services
+dependencies[] = deploy_ui
+dependencies[] = entity_menu_links
+dependencies[] = libraries
+dependencies[] = redirect_uuid
+dependencies[] = rest_server
+dependencies[] = services
+dependencies[] = transliteration
+dependencies[] = uuid
+dependencies[] = uuid_path
+dependencies[] = uuid_services
+features[features_api][] = api:2
+features[ctools][] = services:services:3
+features[ctools][] = deploy:deploy_endpoints:1
+features[deploy_endpoints][] = next
+
+; Information added by Drupal.org packaging script on 2018-07-23
+version = "7.x-1.6"
+core = "7.x"
+project = "deploy_addon"
+datestamp = "1532352798"

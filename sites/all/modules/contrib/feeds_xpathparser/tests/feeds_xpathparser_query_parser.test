@@ -80,5 +80,8 @@ class FeedsXPathParserQueryParserTestCase extends DrupalUnitTestCase {
 
     $parser = new FeedsXPathParserQueryParser('Ülküdak');
     $this->assertEqual($parser->getQuery(), '__default__:Ülküdak');
+
+    $parser = new FeedsXPathParserQueryParser('concat("Gülbar", " ", "Ülküdak")');
+    $this->assertEqual($parser->getQuery(), 'concat("Gülbar", " ", "Ülküdak")');
   }
 }

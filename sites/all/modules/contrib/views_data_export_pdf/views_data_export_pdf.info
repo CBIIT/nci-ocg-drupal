@@ -1,0 +1,20 @@
+name = Views Data Export PDF
+description = "Extension to VDE, which allows PDF files export utilizing WkHtmlToPdf library"
+configure = admin/config/content/views_data_export_pdf
+package = Views
+core = 7.x
+
+dependencies[] = views_data_export
+dependencies[] = phpwkhtmltopdf
+dependencies[] = libraries
+
+; Plugins
+files[] = plugins/views_data_export_pdf_plugin_display_export.inc
+files[] = plugins/views_data_export_pdf_plugin_style_export.inc
+
+; Information added by Drupal.org packaging script on 2017-09-01
+version = "7.x-1.1"
+core = "7.x"
+project = "views_data_export_pdf"
+datestamp = "1504271947"
+

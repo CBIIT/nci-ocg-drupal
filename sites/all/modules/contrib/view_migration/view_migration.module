@@ -1,0 +1,56 @@
+<?php 
+
+/**
+	* Hook implemetation
+*/
+
+/*
+ * Implements hook_menu();
+ */
+ function view_migration_menu(){
+ 	$items = [];
+	 $items['admin/config/view-migration'] = array(
+		'title' => 'Views Migration',
+		'description' => 'Generate YAML configuration files for Drupal 8 views import.',
+		'position' => 'right',
+		'weight' => -5,
+		'page callback' => 'system_admin_menu_block_page',
+		'access arguments' => array('administer site configuration'),
+		'file' => 'system.admin.inc',
+		'file path' => drupal_get_path('module', 'system'),
+	);
+	
+	$items['admin/config/view-migration/settings'] = array(
+		'title' => 'Generate Views Form',
+		'description' => 'Generate all Views.',
+		'page callback' => 'drupal_get_form',
+		'page arguments' => array('views_migration_admin_settings'),
+		'access arguments' => array('administer site configuration'),
+		'type' => MENU_NORMAL_ITEM,
+		'file' => 'view_migration.admin.inc',
+		);
+		
+	return $items;
+}
+
+/**
+ * @file
+ * Administration page callbacks for the Views module.
+ *
+ * Form builder. Configure Views
+ *
+ * @see custom_view_menu()
+ */
+function views_migration_admin_settings() {
+  $form = [];
+  
+  $form['path'] = array(
+	'#title' => t('Enter views export path here'),
+	'#type' => 'textfield',
+	'#description' => t('For example: D:\Drupal_Setup\drupal7\sites\default\files\views_exports'),
+	'#required' => TRUE
+  );
+  
+  $form['#submit'][] = 'view_migration_admin_settings_submit';
+  return system_settings_form($form);
+}

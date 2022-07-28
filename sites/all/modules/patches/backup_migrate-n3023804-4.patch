@@ -1,0 +1,13 @@
+diff --git a/includes/destinations.inc b/includes/destinations.inc
+index 94bdcaa..f093ab7 100644
+--- a/includes/destinations.inc
++++ b/includes/destinations.inc
+@@ -843,6 +843,8 @@ public function list_files() {
+       if ($this->cache_files) {
+         $this->file_cache_set($files);
+       }
++      // Clean up any previous abandoned tmp files before going further.
++      backup_migrate_include('files');
+       _backup_migrate_temp_files_delete();
+     }
+ 

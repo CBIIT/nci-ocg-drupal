@@ -177,6 +177,71 @@ $(document).ready (function (){
   window.addEventListener('load', function(){
     $('.g-recaptcha iframe').attr('title','Recaptcha');
   });
+  
+  // Grab all the excerpt class
+    $('.excerpt').each(function () {
+        //console.log($(this).html());
+        // Run formatWord function and specify the length of words display to viewer
+        $(this).html(formatWords($(this).html(), 30));
+        //console.log($(this).html());
+
+        // Hide the extra words
+        $(this).find('span').hide();
+
+    // Apply click event to read more link
+    }).click(function () {
+
+        // Grab the hidden span and anchor
+        var more_text = $(this).find('span.more_text');
+        var more_link = $(this).find('a.more_link');
+
+        // Toggle visibility using hasClass
+        // I know you can use is(':visible') but it doesn't work in IE8 somehow...
+        if (more_text.hasClass('hide')) {
+            more_text.show();
+            more_link.html(' » hide');
+            more_text.removeClass('hide');
+        } else {
+            more_text.hide();
+            more_link.html(' « more');
+            more_text.addClass('hide');
+        }
+
+        return false;
+
+    });
+
+// Accept a paragraph and return a formatted paragraph with additional html tags
+function formatWords(sentence, show) {
+console.log(sentence);
+console.log(show);
+    // split all the words and store it in an array
+    var words = sentence.split(' ');
+    var new_sentence = '';
+console.log(words);
+    // loop through each word
+    for (i = 0; i < words.length; i++) {
+
+        // process words that will visible to viewer
+        if (i <= show) {
+            new_sentence += words[i] + ' ';
+
+        // process the rest of the words
+        } else {
+
+            // add a span at start
+            if (i == (show + 1)) new_sentence += '... <span class="more_text hide">';       
+
+            new_sentence += words[i] + ' ';
+
+            // close the span tag and add read more link in the very end
+            if (words[i+1] == null) new_sentence += '</span><a href="#" class="more_link"> » more</a>';
+        }
+    } 
+
+    return new_sentence;
+
+}
 	
 }); // end doc ready
 

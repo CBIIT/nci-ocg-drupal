@@ -54,14 +54,14 @@ class AddThis {
   // Twitter.
   const TWITTER_VIA_KEY = 'addthis_twitter_via';
   const TWITTER_VIA_DEFAULT = 'AddThis';
-  const TWITTER_TEMPLATE_KEY = 'addthis_twitter_template';
-  const TWITTER_TEMPLATE_DEFAULT = '{{title}} {{url}} via @AddThis';
+  const TWITTER_TEXT_KEY = 'addthis_twitter_text';
+  const TWITTER_TEXT_DEFAULT = 'Check this out: ';
 
   // External resources.
-  const DEFAULT_BOOKMARK_URL = 'http://www.addthis.com/bookmark.php?v=300';
-  const DEFAULT_SERVICES_CSS_URL = 'http://cache.addthiscdn.com/icons/v1/sprites/services.css';
-  const DEFAULT_SERVICES_JSON_URL = 'http://cache.addthiscdn.com/services/v1/sharing.en.json';
-  const DEFAULT_WIDGET_JS_URL = 'http://s7.addthis.com/js/300/addthis_widget.js';
+  const DEFAULT_BOOKMARK_URL = '//www.addthis.com/bookmark.php?v=300';
+  const DEFAULT_SERVICES_CSS_URL = '//cache.addthiscdn.com/icons/v1/sprites/services.css';
+  const DEFAULT_SERVICES_JSON_URL = '//cache.addthiscdn.com/services/v1/sharing.en.json';
+  const DEFAULT_WIDGET_JS_URL = '//s7.addthis.com/js/300/addthis_widget.js';
   const DEFAULT_WIDGET_JS_LOAD_DOMREADY = TRUE;
   const DEFAULT_WIDGET_JS_LOAD_ASYNC = FALSE;
 
@@ -82,6 +82,7 @@ class AddThis {
 
   // Styles.
   const CSS_32x32 = 'addthis_32x32_style';
+  const CSS_20x20 = 'addthis_20x20_style';
   const CSS_16x16 = 'addthis_16x16_style';
 
   private static $instance;
@@ -251,11 +252,11 @@ class AddThis {
   }
 
   public function getServicesCssUrl() {
-    return check_url(variable_get(AddThis::SERVICES_CSS_URL_KEY, self::DEFAULT_SERVICES_CSS_URL));
+    return check_url($this->prefixUrlScheme(variable_get(AddThis::SERVICES_CSS_URL_KEY, self::DEFAULT_SERVICES_CSS_URL)));
   }
 
   public function getServicesJsonUrl() {
-    return check_url(variable_get(AddThis::SERVICES_JSON_URL_KEY, self::DEFAULT_SERVICES_JSON_URL));
+    return check_url($this->prefixUrlScheme(variable_get(AddThis::SERVICES_JSON_URL_KEY, self::DEFAULT_SERVICES_JSON_URL)));
   }
 
   public function getEnabledServices() {
@@ -329,11 +330,11 @@ class AddThis {
   }
 
   public function getBaseWidgetJsUrl() {
-    return check_url(variable_get(self::WIDGET_JS_URL_KEY, self::DEFAULT_WIDGET_JS_URL));
+    return check_url($this->prefixUrlScheme(variable_get(self::WIDGET_JS_URL_KEY, self::DEFAULT_WIDGET_JS_URL)));
   }
 
   public function getBaseBookmarkUrl() {
-    return check_url(variable_get(self::BOOKMARK_URL_KEY, self::DEFAULT_BOOKMARK_URL));
+    return check_url($this->prefixUrlScheme(variable_get(self::BOOKMARK_URL_KEY, self::DEFAULT_BOOKMARK_URL)));
   }
 
   public function getCoBrand() {
@@ -348,8 +349,8 @@ class AddThis {
     return variable_get(self::TWITTER_VIA_KEY, self::TWITTER_VIA_DEFAULT);
   }
 
-  public function getTwitterTemplate() {
-    return variable_get(self::TWITTER_TEMPLATE_KEY, self::TWITTER_TEMPLATE_DEFAULT);
+  public function getTwitterText() {
+    return variable_get(self::TWITTER_TEXT_KEY, self::TWITTER_TEXT_DEFAULT);
   }
 
   public function isClickbackTrackingEnabled() {
@@ -383,15 +384,11 @@ class AddThis {
 
   /**
    * Transform the entity title to a attribute.
-   *
-   * @remarks
-   *   The title of the entity and site can not contain double-qoutes. These are
-   *   encoded into html chars.
    */
   private function getAttributeTitle($entity) {
     if (isset($entity->title)) {
       return array(
-        self::TITLE_ATTRIBUTE => htmlentities($entity->title . ' - ' . variable_get('site_name'), ENT_COMPAT),
+        self::TITLE_ATTRIBUTE => $entity->title . ' - ' . variable_get('site_name'),
       );
     }
     return array();
@@ -463,5 +460,11 @@ class AddThis {
       $url = (strpos($url, 'http://') === 0 ? 'https://' . substr($url, 7) : $url);
     }
     return $url;
+  }
+
+  public function prefixUrlScheme($url) {
+    global $is_https;
+    $url = preg_replace("(^https?:)i", "", $url );
+    return ($is_https ? 'https:' : 'http:') . $url;
   }
 }

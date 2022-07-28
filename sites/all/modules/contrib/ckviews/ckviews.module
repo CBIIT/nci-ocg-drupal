@@ -1,0 +1,182 @@
+<?php
+/**
+ * Implements hook_menu()
+ */
+function ckviews_menu() {
+  $items = array();
+
+  $items['ckviews/views'] = array(
+    'page callback' => 'ckviews_blocks_ajax',
+    'access arguments' => array('access content'),
+  );
+
+  $items['ckviews/block/%/%/%'] = array(
+    'page callback' => 'ckviews_block_ajax',
+    'page arguments' => array(2, 3, 4),
+    'access arguments' => array('access content'),
+  );
+
+  return $items;
+}
+
+/**
+ * Render a specific block
+ */
+function ckviews_get_block($module, $delta, $category, $check_roles = FALSE) {
+  $block = block_load($module, $delta);
+
+  // Check user roles if required.
+  if ($check_roles) {
+    global $user;
+    $block_roles = _ckviews_roles();
+    if (isset($block_roles[$block->module][$block->delta]) && !array_intersect($block_roles[$block->module][$block->delta], array_keys($user->roles))) {
+      return '';
+    }
+  }
+
+  $final_delta = explode("-", $delta);
+  if($category < 1){
+    $outputx = views_embed_view($final_delta[0], $final_delta[1]);
+  } else {
+    $outputx = views_embed_view($final_delta[0], $final_delta[1], $category);
+  }
+
+  $block->subject = '<none>';
+  $block->region = 'none';
+  if (isset($outputx)) {
+    $render = array(
+      'elements' => array(
+        '#block' => $block,
+        '#children' => render($outputx)
+      )
+    );
+    $output = theme('block', $render);
+  }
+  else {
+    $output = 'Empty Content';
+  }
+
+  return $output;
+}
+
+/**
+ * Page callback for getting a list of blocks.
+ */
+function ckviews_blocks_ajax() {
+  header('Cache-Control: private, no-cache, no-store, must-revalidate, max-age=0');
+  header('Pragma: no-cache');
+  drupal_page_is_cacheable(FALSE);
+
+  $options = array();
+  $result = db_query('SELECT * FROM {views_display} vd, {views_view} vv WHERE vv.vid=vd.vid');
+  foreach ($result as $record) {
+    $options['[block:views=' . $record->name . '-' . $record->id . ']'] = $record->human_name . ":" . $record->id;
+  }
+  drupal_json_output($options);
+}
+
+/**
+ * Page callback for rendering a block
+ */
+function ckviews_block_ajax($module, $delta, $category) {
+  // Disable client-side caching.
+  header('Cache-Control: private, no-cache, no-store, must-revalidate, max-age=0');
+  header('Pragma: no-cache');
+  // Disable server-side caching.
+  drupal_page_is_cacheable(FALSE);
+
+  $block = ckviews_get_block($module, $delta, $category);
+  drupal_json_output(array('html' => ($block ? $block : '(Empty Block)')));
+}
+
+/**
+ * Implements hook_ckeditor_plugin().
+ *
+ * @return type
+ */
+function ckviews_ckeditor_plugin() {
+  $plugins = array();
+  $plugins['ckviews'] = array(
+    'name' => 'ckviews',
+    'desc' => t('Plugin for adding Views Display blocks within ckeditor'),
+    'path' => drupal_get_path('module', 'ckviews') . '/plugins/ckviews/',
+    'buttons' => array(
+      'Ckviews' => array('label' => 'Ckviews', 'icon' => 'icons/ckviews.png'),
+    )
+  );
+  return $plugins;
+}
+
+/**
+ * Implementation of hook_filter_info().
+ */
+function ckviews_filter_info() {
+  $filters['ckviews'] = array(
+    'title' => t('Ckviews'),
+    'description' => t('Inserts the contents of a block into a textarea using [block:views=delta] tags.'),
+    'process callback' => '_ckviews',
+    'settings callback' => '_ckviews_settings',
+    'default settings' => array(
+    'check_roles' => 0,
+    ),
+    'cache' => FALSE,
+  );
+  return $filters;
+}
+
+/**
+ * Filter replacement callback.
+ *
+ * @param type $text
+ * @param type $filter
+ * @param type $format
+ * @return type
+ */
+function _ckviews($text, $filter, $format) {
+if (preg_match_all("/\[block:views=\w+-\w+\/\d++/i", $text, $match)) {
+    foreach ($match[0] as $key => $value) {
+      $raw_tags[] = $match[0][$key] . "]";
+      $module = 'views';
+      $delta = $match[0][$key];
+      $delta_parts = explode("=", $delta);
+      $delta_parts2 = explode("/", $delta_parts[1]);
+      $final_delta = $delta_parts2;
+      $check_roles = !empty($filter->settings['check_roles']);
+      $repl[] =  ckviews_get_block($module, $final_delta[0], $final_delta[1], $check_roles);
+    }
+
+    return str_replace($raw_tags, $repl, $text);
+  }
+  return $text;
+}
+
+/**
+ * Settings callback for the drupal block filter.
+ */
+function _ckviews_settings($form, &$form_state, $filter, $format, $defaults) {
+  $filter->settings += $defaults;
+  $settings['check_roles'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Check the roles assigned by the Block module'),
+    '#default_value' => $filter->settings['check_roles'],
+    '#description' => t('Without this checked, anyone can see drupal blocks.'),
+  );
+  return $settings;
+}
+
+/**
+ * Helper function to load and cache the block roles.
+ */
+function _ckviews_roles() {
+  // Build an array of roles for each block.
+  $block_roles = &drupal_static(__FUNCTION__, NULL);
+  if (!isset($block_roles)) {
+    $block_roles = array();
+    $result = db_query('SELECT module, delta, rid FROM {block_role}');
+
+    foreach ($result as $record) {
+      $block_roles[$record->module][$record->delta][] = $record->rid;
+    }
+  }
+  return $block_roles;
+}

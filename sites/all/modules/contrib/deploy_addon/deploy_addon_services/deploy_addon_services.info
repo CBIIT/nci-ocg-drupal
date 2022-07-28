@@ -1,0 +1,14 @@
+name = Deploy Add-on Services
+description = Provides services endpoint configuration for Deploy Add-on.
+core = 7.x
+package = Deployment
+
+dependencies[] = deploy_addon
+dependencies[] = services
+dependencies[] = uuid
+
+; Information added by Drupal.org packaging script on 2018-07-23
+version = "7.x-1.6"
+core = "7.x"
+project = "deploy_addon"
+datestamp = "1532352798"

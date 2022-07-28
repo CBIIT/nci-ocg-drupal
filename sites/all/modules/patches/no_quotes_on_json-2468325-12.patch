@@ -1,0 +1,28 @@
+diff --git a/views/theme/views-views-json-style-simple.tpl.php b/views/theme/views-views-json-style-simple.tpl.php
+index 39a7586..0e76b6c 100644
+--- a/views/theme/views-views-json-style-simple.tpl.php
++++ b/views/theme/views-views-json-style-simple.tpl.php
+@@ -61,6 +61,10 @@ else {
+     // type and stop further processing of the page.
+     $content_type = ($options['content_type'] == 'default') ? 'application/json' : $options['content_type'];
+     drupal_add_http_header("Content-Type", "$content_type; charset=utf-8");
++    // If the string contains valid JSON inside quotes, remove the wrapping quotes.
++    $json = preg_replace_callback('/(?:\"({|\[)(?:.|\s)*?(}|\])\")/', function ($match) {
++      return (views_json_isValidJSON(trim(stripslashes($match[0]), '"'))) ? trim(stripslashes($match[0]), '"') : $match[0];
++    }, $json);
+     print $json;
+     drupal_page_footer();
+     exit;
+diff --git a/views_json.module b/views_json.module
+index c5230b5..a4f598e 100644
+--- a/views_json.module
++++ b/views_json.module
+@@ -428,3 +428,8 @@ function _views_json_json_encode($rows, $bitmask = NULL) {
+   }
+   return $json;
+ }
++
++function views_json_isValidJSON($string) {
++  json_decode($string);
++  return (json_last_error() == JSON_ERROR_NONE);
++}

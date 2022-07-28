@@ -1,0 +1,29 @@
+diff --git a/docroot/sites/all/modules/contrib/link/link.module b/docroot/sites/all/modules/contrib/link/link.module
+index c6618b8..223706f 100644
+--- a/docroot/sites/all/modules/contrib/link/link.module
++++ b/docroot/sites/all/modules/contrib/link/link.module
+@@ -1500,6 +1500,24 @@ function link_field_item_property_info() {
+     'label' => t('The attributes of the link.'),
+     'setter callback' => 'entity_property_verbatim_set',
+     'getter callback' => 'link_attribute_property_get',
++    'property info' => array(
++      'target' => array(
++        'label' => t('Link target'),
++        'type' => 'text',
++      ),
++      'class' => array(
++        'label' => t('Additional CSS Class'),
++        'type' => 'text',
++      ),
++      'rel' => array(
++        'label' => t('Rel attribute'),
++        'type' => 'text',
++      ),
++      'title' => array(
++        'label' => t("Default link 'title' attribute"),
++        'type' => 'text',
++      ),
++    ),
+   );
+   return $properties;
+ }

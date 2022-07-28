@@ -1,0 +1,159 @@
+<?php
+/**
+ * @file
+ * Code for the Deploy Add-on Content module.
+ */
+
+include_once 'deploy_addon_content.features.inc';
+
+/**
+ * Implements hook_menu().
+ */
+function deploy_addon_content_menu() {
+  $items = array();
+
+  $items['admin/structure/deploy/plans/list/%ctools_export_ui/add-content'] = array(
+    'title' => 'Add Content',
+    'access arguments' => array('edit deployment plans'),
+    'page callback' => 'drupal_goto',
+    'page arguments' => ['admin/structure/deploy/content'],
+    'type' => MENU_LOCAL_ACTION,
+    'weight' => 10,
+  );
+
+  $items['admin/structure/deploy/content/to-plan'] = array(
+    'title' => 'Go to User Plan',
+    'access callback' => 'deploy_addon_content_access',
+    'page callback' => 'deploy_addon_content_goto_plan',
+    'type' => MENU_LOCAL_ACTION,
+  );
+
+  $items['admin/config/content/deploy-addon/deploy-adhoc-plan'] = array(
+    'title' => 'Create Ad Hoc Deploy Plan',
+    'description' => 'Create an Ad Hoc Deployment Plan.',
+    'page callback' => 'deploy_addon_content_adhoc_plan_page',
+    'access arguments' => array('create deploy plan adhoc'),
+    'type' => MENU_LOCAL_TASK,
+    'file' => 'deploy_addon_content.admin.inc',
+  );
+
+  $items['user/%user/deploy-adhoc-plan'] = array(
+    'title' => 'Ad Hoc Deploy Plan',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('deploy_addon_content_user_adhoc_plan_form', 1),
+    'access callback' => 'deploy_addon_user_edit_access',
+    'access arguments' => array(1),
+    'type' => MENU_LOCAL_TASK,
+    'file' => 'deploy_addon_content.forms.inc',
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_menu_alter().
+ *
+ * This hack is needed because Drupal doesn't allow wildcards for menu paths
+ * that originate from different callbacks.
+ */
+function deploy_addon_content_menu_alter(&$items) {
+
+  foreach (preg_grep('#^admin/structure/deploy/content/([^/]+)$#' , array_keys($items)) as $path) {
+    if ('admin/structure/deploy/content/to-plan' == $path) {
+      continue;
+    }
+
+    $items["{$path}/to-plan"] = $items['admin/structure/deploy/content/to-plan'];
+  }
+
+  unset($items['admin/structure/deploy/content/to-plan']);
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function deploy_addon_content_module_implements_alter(&$implementations, $hook) {
+
+  if ('menu_alter' != $hook) {
+    return;
+  }
+
+  // Ensure our hook_menu_alter() fires after views.
+  $implementation = $implementations['deploy_addon_content'];
+  unset($implementations['deploy_addon_content']);
+  $implementations['deploy_addon_content'] = $implementation;
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function deploy_addon_content_user_login(&$edit, $account) {
+  // Automatically set ad hoc plan if user setting enabled.
+  if (!empty($account->data['deploy_adhoc_plan_auto_login']) &&
+    deploy_plan_load($account->name)) {
+    drupal_set_message(t('Deploy adhoc plan activated.'));
+    deploy_auto_plan_set_session($account->name);
+  }
+}
+
+/**
+ * Access callback for user settings.
+ */
+function deploy_addon_user_edit_access($account) {
+  if (user_access('create deploy plan adhoc') && user_edit_access($account)) {
+    return TRUE;
+  }
+  return FALSE;
+}
+
+/**
+ * Access callback.
+ *
+ * @param string $plan_name
+ *   The name of the deployment plan.
+ * @param string $perm
+ *   The permission to check for.
+ *
+ * @return bool
+ *   TRUE if the user has access.
+ */
+function deploy_addon_content_access($plan_name = NULL, $perm = 'view deployment plans') {
+
+  global $user;
+  if (!$plan_name) {
+
+    if (empty($user->name)) {
+      // User isn't loaded properly. We have to deny access.
+      return FALSE;
+    }
+
+    $plan_name = $user->name;
+  }
+
+  $plan = deploy_plan_load($plan_name);
+  if (!$plan) {
+    // The user plan doesn't exist, we can't do much.
+    return FALSE;
+  }
+
+  return ($plan->name == $user->name
+    && (user_access($perm) || user_access('administer deployment plans')));
+}
+
+/**
+ * Page callback to return user to their own plan.
+ */
+function deploy_addon_content_goto_plan() {
+
+  global $user;
+
+  $plan = deploy_plan_load($user->name);
+  if (!$plan) {
+    // Because of the permissions check this shouldn't be possible, but let's
+    // allow for it anyway.
+    return t('User plan not found.');
+  }
+
+  $plan_path = "admin/structure/deploy/plans/list/{$plan->name}";
+  drupal_goto(url($plan_path));
+}

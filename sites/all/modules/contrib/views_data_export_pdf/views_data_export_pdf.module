@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Main module functions and hooks.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function views_data_export_pdf_menu() {
+  $items['admin/config/content/views_data_export_pdf'] = array(
+    'title' => 'Views data export PDF',
+    'description' => 'Configure the settings for Views data export PDF.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('views_data_export_pdf_settings_form'),
+    'type' => MENU_NORMAL_ITEM,
+    'access arguments' => array('administer views_data_export_pdf'),
+    'file' => 'views_data_export_pdf.admin.inc',
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function views_data_export_permission() {
+  $permissions['administer views_data_export_pdf'] = array(
+    'title' => t('Administer Views data export PDF'),
+    'description' => t('Allow users to administer the Views data export PDF settings.'),
+    // We make this restricted because you can set the path to the wkhtmltopdf
+    // binary from the settings page. It isn't vulnerable to injection but
+    // it's probably not a setting you want everyone configuring anyway.
+    'restrict access' => TRUE,
+  );
+
+  return $permissions;
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function views_data_export_pdf_views_api() {
+  // Using version 2 because Views Data Export still uses it too.
+  return array(
+    'api' => 2,
+  );
+}

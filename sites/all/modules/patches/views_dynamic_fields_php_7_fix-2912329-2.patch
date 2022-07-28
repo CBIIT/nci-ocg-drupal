@@ -1,0 +1,22 @@
+diff --git a/handlers/views_handler_filter_dynamic_fields.inc b/handlers/views_handler_filter_dynamic_fields.inc
+index 0f0485e..361e62f 100644
+--- a/handlers/views_handler_filter_dynamic_fields.inc
++++ b/handlers/views_handler_filter_dynamic_fields.inc
+@@ -337,7 +337,7 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+               //        not its status (checked/unchecked) so we don't use it
+               // @see https://www.drupal.org/node/2368771
+               '#attributes'
+-              => $def_disabled ? array('style' => 'visibility: hidden') : '',
++              => $def_disabled ? array('style' => 'visibility: hidden') : array(),
+               '#description' => check_plain($def_desc));
+             $form['value'][$key]['title'] = array('#markup' => $def_title);
+             $form['value'][$key]['sort'] = array(
+@@ -397,7 +397,7 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+                 //        not its status (checked/unchecked) so we don't use it
+                 // @see https://www.drupal.org/node/2368771
+                 '#attributes'
+-                => $def_disabled ? array('style' => 'visibility: hidden') : '',
++                => $def_disabled ? array('style' => 'visibility: hidden') : array(),
+                 '#description' => check_plain($def_desc));
+             $form['value'][$key]['title']
+               = array('#markup' => $def_title);

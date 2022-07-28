@@ -77,7 +77,7 @@ class AddThisScriptManager {
   public function correctSchemaIfHttps($url) {
     if (is_string($url) && $this->isHttps()) {
       return str_replace('http://', 'https://', $url);
-    } 
+    }
     else {
       return $url;
     }
@@ -101,7 +101,7 @@ class AddThisScriptManager {
       $widget_js = new AddThisWidgetJsUrl($this->getWidgetJsUrl());
 
       $pubid = $this->addthis->getProfileId();
-      if (isset($pubid) && !empty($pubid) && is_string($pubid)) {
+      if (!empty($pubid) && is_string($pubid)) {
         $widget_js->addAttribute('pubid', $pubid);
       }
 
@@ -118,7 +118,7 @@ class AddThisScriptManager {
       // Only when the script is not loaded after the DOM is ready we include
       // the script with #attached.
       if (!$domready) {
-        $element['#attached']['js'][$this->getWidgetJsUrl()] = array(
+        $element['#attached']['js'][$widget_js->getFullUrl()] = array(
             'type' => 'external',
             'scope' => 'footer',
         );
@@ -133,7 +133,7 @@ class AddThisScriptManager {
               'addthis' => array(
                   'async' => $async,
                   'domready' => $domready,
-                  'widget_url' => $this->getWidgetJsUrl(),
+                  'widget_url' => $widget_js->getFullUrl(),
 
                   'addthis_config' => $this->getJsAddThisConfig(),
                   'addthis_share' => $this->getJsAddThisShare(),
@@ -225,7 +225,16 @@ class AddThisScriptManager {
         'templates' => $configuration['templates'],
       );
     }
-    $addthis_share['templates']['twitter'] = $this->addthis->getTwitterTemplate();
+
+    $twitter_via = $this->addthis->getTwitterVia();
+    if (!empty($twitter_via)) {
+      $addthis_share['passthrough']['twitter']['via'] = $twitter_via;
+    }
+
+    $twitter_text = $this->addthis->getTwitterText();
+    if (!empty($twitter_text)) {
+      $addthis_share['passthrough']['twitter']['text'] = $twitter_text;
+    }
 
     drupal_alter('addthis_configuration_share', $configuration);
     return $addthis_share;

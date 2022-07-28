@@ -4,6 +4,7 @@
  * @file
  * Tests for reCAPTCHA module.
  */
+
 class ReCaptchaBasicTest extends DrupalWebTestCase {
 
   /**
@@ -21,7 +22,7 @@ class ReCaptchaBasicTest extends DrupalWebTestCase {
   /**
    * {@inheritdoc}
    */
-  function setUp() {
+  public function setUp() {
     parent::setUp('captcha', 'recaptcha');
     module_load_include('inc', 'captcha');
 
@@ -45,7 +46,7 @@ class ReCaptchaBasicTest extends DrupalWebTestCase {
   /**
    * Test access to the administration page.
    */
-  function testReCaptchaAdminAccess() {
+  public function testReCaptchaAdminAccess() {
     $this->drupalLogin($this->admin_user);
     $this->drupalGet('admin/config/people/captcha/recaptcha');
     $this->assertNoText(t('Access denied'), 'Admin users should be able to access the reCAPTCHA admin page', 'reCAPTCHA');
@@ -55,7 +56,7 @@ class ReCaptchaBasicTest extends DrupalWebTestCase {
   /**
    * Test the reCAPTCHA settings form.
    */
-  function testReCaptchaAdminSettingsForm() {
+  public function testReCaptchaAdminSettingsForm() {
     $this->drupalLogin($this->admin_user);
 
     $site_key = $this->randomName(40);
@@ -88,7 +89,7 @@ class ReCaptchaBasicTest extends DrupalWebTestCase {
   /**
    * Testing the protection of the user login form.
    */
-  function testReCaptchaOnLoginForm() {
+  public function testReCaptchaOnLoginForm() {
     global $language;
 
     $site_key = $this->randomName(40);;
@@ -170,7 +171,8 @@ class ReCaptchaBasicTest extends DrupalWebTestCase {
     // Check for error message.
     $this->assertText(t('The answer you entered for the CAPTCHA was not correct.'), 'CAPTCHA should block user login form', 'reCAPTCHA');
 
-    // And make sure that user is not logged in: check for name and password fields on ?q=user
+    // And make sure that user is not logged in: check for name and password
+    // fields on ?q=user.
     $this->drupalGet('user');
     $this->assertField('name', t('Username field found.'), 'reCAPTCHA');
     $this->assertField('pass', t('Password field found.'), 'reCAPTCHA');

@@ -1,0 +1,22 @@
+diff --git a/handlers/views_handler_filter_dynamic_fields.inc b/handlers/views_handler_filter_dynamic_fields.inc
+index b586c63..5392785 100644
+--- a/handlers/views_handler_filter_dynamic_fields.inc
++++ b/handlers/views_handler_filter_dynamic_fields.inc
+@@ -333,7 +333,7 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+               // Set field to readonly rather than disbaling them.
+               // @see http://drupal.org/node/2291727
+               '#attributes'
+-              => $def_disabled ? array('readonly' => 'readonly') : '',
++              => $def_disabled ? array('readonly' => 'readonly') : array(),
+               '#description' => check_plain($def_desc));
+             $form['value'][$key]['title'] = array('#markup' => $def_title);
+             $form['value'][$key]['sort'] = array(
+@@ -389,7 +389,7 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+                 // Set field to readonly rather than disbaling them.
+                 // @see http://drupal.org/node/2291727
+                 '#attributes'
+-                => $def_disabled ? array('readonly' => 'readonly') : '',
++                => $def_disabled ? array('readonly' => 'readonly') : array(),
+                 '#description' => check_plain($def_desc));
+             $form['value'][$key]['title']
+               = array('#markup' => $def_title);

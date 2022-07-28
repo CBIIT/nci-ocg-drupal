@@ -1,0 +1,291 @@
+diff --git a/handlers/views_handler_filter_dynamic_fields.inc b/handlers/views_handler_filter_dynamic_fields.inc
+index 0f0485e..82f0694 100644
+--- a/handlers/views_handler_filter_dynamic_fields.inc
++++ b/handlers/views_handler_filter_dynamic_fields.inc
+@@ -60,13 +60,12 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+    */
+   public function init(&$view, &$options) {
+     parent::init($view, $options);
+-    $this->view_fields = $view->get_items('field');
++    $this->view_fields = $view->display_handler->get_handlers('field');
+     $this->remove_combined_fields($view);
+-
+     // Select all fields by default when setting up a new filter.
+     $this->options['filterable_fields']
+       = empty($this->options['filterable_fields'])
+-        ? array_keys($this->view_fields) : $this->options['filterable_fields'];
++      ? array_keys($this->view_fields) : $this->options['filterable_fields'];
+   }
+ 
+   /**
+@@ -76,13 +75,13 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+     $this->combined_fields = array();
+     $style_columns
+       = isset($view
+-              ->display_handler
+-              ->default_display
+-              ->options['style_options']['columns'])
+-                ? $view
+-                  ->display_handler
+-                  ->default_display
+-                  ->options['style_options']['columns'] : NULL;
++        ->display_handler
++        ->default_display
++        ->options['style_options']['columns'])
++      ? $view
++        ->display_handler
++        ->default_display
++        ->options['style_options']['columns'] : NULL;
+     if (is_array($style_columns)) {
+       foreach ($style_columns as $key => $name) {
+         if (isset($this->view_fields[$key]) && $key != $name) {
+@@ -106,15 +105,16 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+     // Get all non-excluded fields.
+     $view_fields = $this->view_fields;
+     foreach ($view_fields as $field_name => $field) {
+-      if (empty($field['label'])) {
+-        $field_label = ucfirst($field['id']);
++      $field_options = $field->options;
++      if (empty($field_options['label'])) {
++        $field_label = ucfirst($field_options['id']);
+       }
+       else {
+-        $field_label = $field['label'];
++        $field_label = $field_options['label'];
+       }
+ 
+       // Do not allow pre-configured excluded fields in the filter.
+-      if (isset($field['exclude']) && $field['exclude']) {
++      if (isset($field_options['exclude']) && $field_options['exclude']) {
+         $fields_excluded[$field_name] = $field_label;
+       }
+       else {
+@@ -213,15 +213,18 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+     // Create fields to be displayed as part of the filter.
+     foreach ($view_fields as $field_name => $field) {
+ 
++      $field_options = $field->options;
+       // Apply filterable fields options removing any field not in the set of
+       // filterable fields.
+       if (!empty($filterable_fields) &&
+-          !isset($filterable_fields[$field_name])) {
++        !isset($filterable_fields[$field_name])
++      ) {
+         continue;
+       }
+ 
+       if (!isset($_SESSION[$this->view->name]['perm_exc']) &&
+-          isset($field['exclude']) && $field['exclude']) {
++        isset($field_options['exclude']) && $field_options['exclude']
++      ) {
+ 
+         // Fields already marked as 'exclude from display' in the original
+         // view should be omitted.
+@@ -231,20 +234,21 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+ 
+       if (!isset($_SESSION[$this->view->name]['perm_exc'][$field_name])) {
+ 
+-        // Use the field id as label if label is empty
++        // Use the field id as label if label is empty.
+         // @see http://drupal.org/node/1951742
+-        if (empty($field['label'])) {
+-          $all_fields[$field_name] = ucfirst($field['id']);
++        if (empty($field_options['label'])) {
++          $all_fields[$field_name] = ucfirst($field_options['id']);
+         }
+         else {
+-          $all_fields[$field_name] = $field['label'];
++          $all_fields[$field_name] = $field_options['label'];
+         }
+ 
+         $field_names[] = $field_name;
+ 
+         // Get fields to display in the plain (unfiltered) view.
+         if (isset($defaults_filterable_fields[$field_name]) &&
+-            $defaults_filterable_fields[$field_name] == $field_name) {
++          $defaults_filterable_fields[$field_name] == $field_name
++        ) {
+           $field_names_defaults[$field_name] = $field_name;
+         }
+       }
+@@ -289,11 +293,11 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+           '#type' => 'select',
+           '#no_convert' => $this->options['checkboxes'],
+           '#title' => $this->options['expose']['label']
+-          ? $this->options['expose']['label'] : t('Fields'),
++            ? $this->options['expose']['label'] : t('Fields'),
+           '#options' => $all_fields,
+           '#description' => $this->options['description']
+-          ? check_plain($this->options['description'])
+-          : t('Select the field to display in the view'),
++            ? check_plain($this->options['description'])
++            : t('Select the field to display in the view'),
+         );
+         $displayed_field_names = $field_names;
+       }
+@@ -308,24 +312,25 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+           // Regenerate the sortable table.
+           foreach ($exposed_input_fields as $oldid => $oldvalue) {
+             $def_check = (isset($oldvalue['check']) && $oldvalue['check']) ||
+-                          empty($all_fields[$exposed_field_names[$oldid]]);
++              empty($all_fields[$exposed_field_names[$oldid]]);
+             $def_sort = $oldvalue['sort'] ? $oldvalue['sort'] : $key;
+             $def_disabled = empty($all_fields[$exposed_field_names[$oldid]]);
+             $def_title = '';
+             if (isset($all_fields[$exposed_field_names[$oldid]])
+-              && !empty($all_fields[$exposed_field_names[$oldid]])) {
++              && !empty($all_fields[$exposed_field_names[$oldid]])
++            ) {
+               $def_title = $all_fields[$exposed_field_names[$oldid]];
+             }
+             else {
+-              if (empty($view_fields[$exposed_field_names[$oldid]]['label'])) {
+-                $def_title = ucfirst($view_fields[$exposed_field_names[$oldid]]['id']);
++              if (empty($view_fields[$exposed_field_names[$oldid]]->options['label'])) {
++                $def_title = ucfirst($view_fields[$exposed_field_names[$oldid]]->options['id']);
+               }
+               else {
+-                $def_title = $view_fields[$exposed_field_names[$oldid]]['label'];
++                $def_title = $view_fields[$exposed_field_names[$oldid]]->options['label'];
+               }
+             }
+             $def_desc = empty($all_fields[$exposed_field_names[$oldid]])
+-            ? t('Visible') : '';
++              ? t('Visible') : '';
+             $form['value'][$key]['check'] = array(
+               '#type' => 'checkbox',
+               '#value' => $def_check,
+@@ -338,7 +343,8 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+               // @see https://www.drupal.org/node/2368771
+               '#attributes'
+               => $def_disabled ? array('style' => 'visibility: hidden') : '',
+-              '#description' => check_plain($def_desc));
++              '#description' => check_plain($def_desc)
++            );
+             $form['value'][$key]['title'] = array('#markup' => $def_title);
+             $form['value'][$key]['sort'] = array(
+               '#type' => 'weight',
+@@ -361,7 +367,7 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+           foreach ($view_fields as $field_title => $field_info) {
+ 
+             // Skip over permanently excluded fields.
+-            if (isset($field_info['exclude']) && $field_info['exclude']) {
++            if (isset($field_info->options['exclude']) && $field_info->options['exclude']) {
+               continue;
+             }
+             // Display only default filterable fields
+@@ -378,27 +384,28 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+               $def_title = $all_fields[$field_title];
+             }
+             else {
+-              if (empty($view_fields[$field_title]['label'])) {
+-                $def_title = ucfirst($view_fields[$field_title]['id']);
++              if (empty($view_fields[$field_title]->options['label'])) {
++                $def_title = ucfirst($view_fields[$field_title]->options['id']);
+               }
+               else {
+-                $def_title = $view_fields[$field_title]['label'];
++                $def_title = $view_fields[$field_title]->options['label'];
+               }
+             }
+             $form['value'][$key]['check']
+               = array(
+-                '#type' => 'checkbox',
+-                '#value' => $def_check,
+-
+-                // Set field to hidden style rather than disabling them.
+-                // @see http://drupal.org/node/2291727
+-                // notes: disabled attribute prevents the item to be submitted
+-                //        readonly attribute only protects the checkbox value and
+-                //        not its status (checked/unchecked) so we don't use it
+-                // @see https://www.drupal.org/node/2368771
+-                '#attributes'
+-                => $def_disabled ? array('style' => 'visibility: hidden') : '',
+-                '#description' => check_plain($def_desc));
++              '#type' => 'checkbox',
++              '#value' => $def_check,
++
++              // Set field to hidden style rather than disabling them.
++              // @see http://drupal.org/node/2291727
++              // notes: disabled attribute prevents the item to be submitted
++              //        readonly attribute only protects the checkbox value and
++              //        not its status (checked/unchecked) so we don't use it
++              // @see https://www.drupal.org/node/2368771
++              '#attributes'
++              => $def_disabled ? array('style' => 'visibility: hidden') : '',
++              '#description' => check_plain($def_desc)
++            );
+             $form['value'][$key]['title']
+               = array('#markup' => $def_title);
+             $form['value'][$key]['sort'] = array(
+@@ -436,8 +443,8 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+           '#type' => 'checkbox',
+           '#default_value' => $this->options['reverse'],
+           '#title' => $this->options['reverse_label']
+-          ? $this->options['reverse_label']
+-          : t('Selected fields will be excluded'),
++            ? $this->options['reverse_label']
++            : t('Selected fields will be excluded'),
+           '#description'
+           => t('Check this to exclude the selected fields from the view.'),
+         );
+@@ -479,7 +486,8 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+       // Default view when no filtering is applied.
+       if (empty($exposed_input_fields)) {
+         if (!in_array($field_name, array_keys($defaults_filterable_fields)) &&
+-            isset($filterable_fields[$field_name])) {
++          isset($filterable_fields[$field_name])
++        ) {
+           $this->view->field[$field_name]->options['exclude'] = 1;
+         }
+       }
+@@ -538,7 +546,8 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+       // Add the combined field to the exclusion array
+       // if parent is filterable and excluded.
+       if (isset($combined_fields[$efield]) &&
+-          $this->options['filterable_fields'][$efield] !== 0) {
++        $this->options['filterable_fields'][$efield] !== 0
++      ) {
+         $fields_to_exclude[$combined_fields[$efield]] = $combined_fields[$efield];
+       }
+ 
+@@ -554,8 +563,9 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+ 
+       // Exclude only the fields chosen as excludable in filter options.
+       if (empty($filterable_fields) ||
+-          (isset($this->options['filterable_fields'][$field_to_exclude]) &&
+-            $this->options['filterable_fields'][$field_to_exclude] !== 0)) {
++        (isset($this->options['filterable_fields'][$field_to_exclude]) &&
++          $this->options['filterable_fields'][$field_to_exclude] !== 0)
++      ) {
+         $this->view->field[$field_to_exclude]->options['exclude'] = 1;
+       }
+     }
+@@ -613,7 +623,8 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+       // Add the combined field to the exclusion array if parent
+       // is filterable and excluded.
+       if (isset($combined_fields[$efield]) &&
+-          $this->options['filterable_fields'][$efield] !== 0) {
++        $this->options['filterable_fields'][$efield] !== 0
++      ) {
+         $fields_to_exclude[$combined_fields[$efield]]
+           = $combined_fields[$efield];
+       }
+@@ -650,8 +661,7 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+     }
+     $this->view->field = $view_fields_ordered;
+   }
+-
+-
++  
+   /**
+    * Do nothing in the query.
+    *
+@@ -659,5 +669,6 @@ class views_handler_filter_dynamic_fields extends views_handler_filter {
+    *
+    * @see \views\handler\views_handler_filter::query()
+    */
+-  public function query() {}
++  public function query() {
++  }
+ }
